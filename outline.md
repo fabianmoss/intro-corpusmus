@@ -2,7 +2,7 @@
 
 ## 0 Background
 
-- Computational Musicology
+- Computational Musicology: bridging historical and systematic approaches (Honing, 2006)
 - Software
 - Programming skills
 - Musicological knowledge 
@@ -26,6 +26,10 @@ MusicXML, MIDI, MEI, humdrum **kern
 
 Notation Software: Sibelius, Finale, MuseScore
 
+## Frequencies, Probabilities, Distributions, Entropy  
+
+... methodological interlude?
+
 ##2  Sequences
 
 ### 2.1 Melody
@@ -46,6 +50,8 @@ parsing?
 
 Choro / Jazz lead sheets
 
+Giraud papers
+
 ## 4 Style Analysis
 
 - hierarchical clustering
@@ -57,7 +63,26 @@ Choro / Jazz lead sheets
   - notes (tpc corpus)
 - performance data (look up datasets, spotify APIs)
 
+## Audio
+
+Müller Notebooks
+
+
+
 ## References
 
-1. Jurafsky and Martin (2009). Speech and Language Processing: An Introduction to Natural Language Processing, Computational Linguistics, and Speech Recognition. 
-2. Manning and Schütze (1999). Foundations of Statistical Natural Language Processing. 
+1. Burgoyne (2011). Stochastik Processes and Database-Driven Musicology.
+2. Gupta (2014). Music Data Analysis: A State-of-the-art Survey.
+3. Honing (2006). On the Growing Role of Observation, Formalization and Experimental Method in Musicology.
+4. Huron (2013). On the Virtuous and the Vexatious in an Age of Big Data.
+5. Jurafsky and Martin (2009). Speech and Language Processing: An Introduction to Natural Language Processing, Computational Linguistics, and Speech Recognition. 
+6. Manning and Schütze (1999). Foundations of Statistical Natural Language Processing. 
+7. Marsden (2016). Music Analysis by Computer: Ontology and Epistemology.
+8. McKay (2014). Statistical Reasoning in Music Analysis. 
+9. Meredith (2016). Computational Music Analysis.
+10. Müller (2015). Fundamentals of Music Processing.
+11. Neuwirth and Rohrmeier (2016). Wie wissenschaftlich muss Musiktheorie sein? Chancen und Herausforderungen musikalischer Korpusforschung. 
+12. Pugin (2015). The Challenge of Data in Digital Musicology.
+13. Schaffer (2016). What is Computational Musicology?
+14. Serra (2014). Creating Research Corpora for the Computational Study of Music: the Case of the CompMus project.
+15. Volk et al. (2011). Unfolding the Potential of Computational Musicology.

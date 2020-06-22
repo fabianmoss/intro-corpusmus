@@ -1,11 +1,17 @@
 # Introduction to Computational Musicology
 
+
+
+# Structure I (topics)
+
 ## 0 Background
 
 - Computational Musicology: bridging historical and systematic approaches (Honing, 2006)
 - Software
 - Programming skills
 - Musicological knowledge 
+- Python Programming for the Humanities: http://www.karsdorp.io/python-course/ 
+- Programming Historian: https://programminghistorian.org/en/lessons/
 
 ##1 Representations
 
@@ -56,16 +62,35 @@ Giraud papers
 
 - hierarchical clustering
 - classification
-- attribution
+- attribution (Bruch/Spitta Briefwechsel? Josquin?)
 - dimensionality reduction
 - topic modeling 
   - text (writings, books, letters)
   - notes (tpc corpus)
 - performance data (look up datasets, spotify APIs)
 
+## Networks
+
+Metadata / Letters / Authors... (CROSS?)
+
+
+
 ## Audio
 
 Müller Notebooks
+
+
+
+
+
+# Structure II (corpora)
+
+1. 19th-century piano music (DCML)
+2. Pop-music charts 1958-1991 (McGill)
+3. Electronic music 1950-1990 (Collins)
+4. Choro music 1875-2007 (DCML)
+5. Malian Djembe performance (Polak, London)
+6. ...
 
 
 

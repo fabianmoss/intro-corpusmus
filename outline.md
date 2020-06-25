@@ -110,4 +110,5 @@ Müller Notebooks
 12. Pugin (2015). The Challenge of Data in Digital Musicology.
 13. Schaffer (2016). What is Computational Musicology?
 14. Serra (2014). Creating Research Corpora for the Computational Study of Music: the Case of the CompMus project.
+14. Temperley & VanHandel (2013). Introduction to the Special Issue on Corpus Methods. *Music Perception: An Interdisciplinary Journal*. 31(1), 1-3. 
 15. Volk et al. (2011). Unfolding the Potential of Computational Musicology.

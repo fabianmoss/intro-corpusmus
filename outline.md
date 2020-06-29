@@ -1,6 +1,7 @@
 # Introduction to Computational Musicology
 
 - see: https://docs.google.com/document/d/1aCxlqSnDoiX2RGstbMkBI7DKqAVMeGLdX2NrYdB2CCw/edit#
+- very old notes: https://docs.google.com/document/d/1aCxlqSnDoiX2RGstbMkBI7DKqAVMeGLdX2NrYdB2CCw/edit#
 
 # Structure I (topics)
 

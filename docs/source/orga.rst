@@ -27,8 +27,9 @@ The following table outlines the schedule and summarizes the contents of this co
      - 17:40-19:00 Uhr
      - Folk Songs, Melodies, Pitches and Intervals
      - Essen Folk Song Collection
-     - absolute and relative |br|
-       frequencies, mean, variance
+     - frequencies, |br|
+       mean, |br| 
+       variance
    * - 3
      - Sa., 14.11.2020 
      - 09:00-10:20 Uhr
@@ -41,7 +42,8 @@ The following table outlines the schedule and summarizes the contents of this co
      - Beethoven's string quartets |br|
        Harmony
      - Annotated Beethoven Corpus
-     - :math:`n`-grams, Markov models
+     - :math:`n`-grams, |br|
+       Markov models
    * - 
      - 
      - 12:00-13:00 Uhr

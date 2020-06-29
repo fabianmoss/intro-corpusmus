@@ -1,6 +1,6 @@
 # Introduction to Computational Musicology
 
-
+- see: https://docs.google.com/document/d/1aCxlqSnDoiX2RGstbMkBI7DKqAVMeGLdX2NrYdB2CCw/edit#
 
 # Structure I (topics)
 
@@ -80,7 +80,11 @@ Metadata / Letters / Authors... (CROSS?)
 Müller Notebooks
 
 
+## Concert Programs and Maps
 
+- https://inconcert.datatodata.com/datasets/concert-programme-exchange-1901-1914/
+- http://research.gold.ac.uk/10342/
+- http://francescagiannetti.com/a-workshop-on-maps-and-timelines/
 
 
 # Structure II (corpora)

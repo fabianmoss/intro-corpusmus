@@ -18,26 +18,26 @@ The following table outlines the schedule and summarizes the contents of this co
      - Methods
    * - 1
      - Fr., 13.11.2020 
-     - 16:00-17:15 Uhr
+     - 16:00-17:20 Uhr
      - Introduction / Background
      - 
      - 
    * - 2
      - 
-     - 17:45-19:00 Uhr
+     - 17:40-19:00 Uhr
      - Folk Songs, Melodies, Pitches and Intervals
      - Essen Folk Song Collection
      - absolute and relative |br|
        frequencies, mean, variance
    * - 3
      - Sa., 14.11.2020 
-     - 09:00-10:15 Uhr
+     - 09:00-10:20 Uhr
      - Jazz Solos, Melodies
      - Weimar Jazz Database
      - Regular Expressions
    * - 4
      -
-     - 10:45-12:00 Uhr
+     - 10:40-12:00 Uhr
      - Beethoven's string quartets |br|
        Harmony
      - Annotated Beethoven Corpus
@@ -50,38 +50,38 @@ The following table outlines the schedule and summarizes the contents of this co
      - 
    * - 5
      - 
-     - 13:00-14:15 Uhr
+     - 13:00-14:20 Uhr
      - Pop Charts Billboard 100, harmony, 
      - McGill Billboard Dataset
      - Hidden Markov Models
    * - 6 
      - 
-     - 14:45-16:00 Uhr
+     - 14:40-16:00 Uhr
      - Free group work
      - 
      - 
    * - 7 
      - Fr., 11.12.2020 
-     - 10:00-11:15 Uhr
+     - 10:00-11:20 Uhr
      - Brazilian Choro, harmony, form, 
      - Choro Songbook Corpus
      - Context-Free Grammars
    * - 8
      - 
-     - 11:45-13:00 Uhr
+     - 11:40-13:00 Uhr
      - 19th century piano music, harmony
      - DCML Piano Corpus
      - Probabilistic CFGs
    * - 9 
      - Sa., 12.12.2020 
-     - 09:00-10:15 Uhr
+     - 09:00-10:20 Uhr
      - Malian Percussion Music, rhythm, meter
      - Interpersonal Entrainment in Music Performance: |br|
        Malian Jembe
      -  
    * - 10
      - 
-     - 10:45-12:00 Uhr
+     - 10:40-12:00 Uhr
      - Electronic Music 1950-1990
      - Curated Corpus of Historical Electronic Music
      -  
@@ -93,13 +93,13 @@ The following table outlines the schedule and summarizes the contents of this co
      -
    * - 11 
      - 
-     - 13:00-14:15 Uhr
+     - 13:00-14:20 Uhr
      - Free group work
      - 
      -
    * - 12 
      - 
-     - 14:45-16:00 Uhr
+     - 14:40-16:00 Uhr
      - Recapitulation and conclusion
      - 
      -

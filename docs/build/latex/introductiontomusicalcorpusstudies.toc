@@ -1,0 +1,14 @@
+\babel@toc {english}{}
+\contentsline {chapter}{\numberline {1}Schedule}{3}{chapter.1}%
+\contentsline {chapter}{\numberline {2}Credits}{5}{chapter.2}%
+\contentsline {chapter}{\numberline {3}Background}{7}{chapter.3}%
+\contentsline {section}{\numberline {3.1}What are Musical Corpus Studies?}{7}{section.3.1}%
+\contentsline {section}{\numberline {3.2}Epistemological goals}{7}{section.3.2}%
+\contentsline {section}{\numberline {3.3}Issues}{7}{section.3.3}%
+\contentsline {section}{\numberline {3.4}MCS and traditional musicology}{7}{section.3.4}%
+\contentsline {chapter}{\numberline {4}Solos in the Weimar Jazz Database}{9}{chapter.4}%
+\contentsline {section}{\numberline {4.1}The Project}{9}{section.4.1}%
+\contentsline {chapter}{\numberline {5}Harmony in Beethoven’s String Quartets}{11}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Access the data}{11}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Harmonic Annotations}{11}{section.5.2}%
+\contentsline {section}{\numberline {5.3}Chord Transitions}{11}{section.5.3}%

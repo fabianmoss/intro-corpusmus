@@ -72,7 +72,7 @@ Giraud papers
 ## Networks
 
 Metadata / Letters / Authors... (CROSS?)
-
+- Giannetti (2016)
 
 
 ## Audio

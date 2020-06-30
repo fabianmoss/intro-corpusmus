@@ -40,13 +40,13 @@ as well as statistics, data analysis and visualization.
 
 
 .. toctree::
-   :maxdepth: 2
-   :caption: Content:
+   :maxdepth: 1
+   :caption: Content
 
-   orga
-   background
-   jazz_solos
-   beethoven_harmony
+   orga.rst
+   background.rst
+   jazz_solos.rst
+   beethoven_harmony.rst
 
 
 .. Indices and tables

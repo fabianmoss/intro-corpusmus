@@ -1,5 +1,8 @@
+Organization
+------------
+
 Schedule
---------
+........
 
 The following table outlines the schedule and summarizes the contents of this course.
 
@@ -107,7 +110,7 @@ The following table outlines the schedule and summarizes the contents of this co
      -
 
 Credits
--------
+.......
 
 Ich gehe in der Seminarplanung von 12 Semesterwochen à 2 SWS aus, für das gesamte Blockseminar also 24 SWS. 
 Das Seminar wird mit 3 CP bewertet, was 90 Stunden aktiver Arbeit entspricht. 

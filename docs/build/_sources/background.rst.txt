@@ -1,5 +1,5 @@
-Background
-----------
+Introduction / Background
+-------------------------
 
 What are Musical Corpus Studies?
 ................................

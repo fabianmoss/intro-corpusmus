@@ -65,15 +65,15 @@
 \usepackage{hypcap}% it must be loaded after hyperref.
 % Set up styles of URL: it should be placed after hyperref.
 \urlstyle{same}
-\addto\captionsenglish{\renewcommand{\contentsname}{Content:}}
+\addto\captionsenglish{\renewcommand{\contentsname}{Content}}
 
 \usepackage{sphinxmessages}
-\setcounter{tocdepth}{1}
+\setcounter{tocdepth}{0}
 
 
 
 \title{Introduction to Musical Corpus Studies}
-\date{Jun 29, 2020}
+\date{Jun 30, 2020}
 \release{0.0.1}
 \author{Fabian C.\@{} Moss}
 \newcommand{\sphinxlogo}{\vbox{}}
@@ -133,8 +133,11 @@ In the engagement with these topics the course also introduces elementary method
 as well as statistics, data analysis and visualization.
 
 
-\chapter{Schedule}
-\label{\detokenize{orga:schedule}}\label{\detokenize{orga::doc}}
+\chapter{Organization}
+\label{\detokenize{orga:organization}}\label{\detokenize{orga::doc}}
+
+\section{Schedule}
+\label{\detokenize{orga:schedule}}
 The following table outlines the schedule and summarizes the contents of this course.
 
 
@@ -296,7 +299,7 @@ Recapitulation and conclusion
 \sphinxattableend\end{savenotes}
 
 
-\chapter{Credits}
+\section{Credits}
 \label{\detokenize{orga:credits}}
 Ich gehe in der Seminarplanung von 12 Semesterwochen à 2 SWS aus, für das gesamte Blockseminar also 24 SWS.
 Das Seminar wird mit 3 CP bewertet, was 90 Stunden aktiver Arbeit entspricht.
@@ -304,12 +307,12 @@ Davon entfallen 24 SWS an die Präsenzzeit im Seminar plus 48 SWS an Vor\sphinxh
 Die verbleibenden 18 SWS sind für die Lektüre der Fachliteratur vorgesehen.
 
 
-\chapter{Background}
-\label{\detokenize{background:background}}\label{\detokenize{background::doc}}
+\chapter{Introduction / Background}
+\label{\detokenize{background:introduction-background}}\label{\detokenize{background::doc}}
 
 \section{What are Musical Corpus Studies?}
 \label{\detokenize{background:what-are-musical-corpus-studies}}
-tbc…
+tbc… (text from diss?)
 
 
 \section{Epistemological goals}
@@ -355,9 +358,15 @@ Temperley \& VanHandel (2013). Introduction to the Special Issue on Corpus Metho
 \end{enumerate}
 
 
-\chapter{Solos in the Weimar Jazz Database}
+\chapter{Folk Songs and the Melodic Arc}
+\label{\detokenize{folk_songs:folk-songs-and-the-melodic-arc}}\label{\detokenize{folk_songs::doc}}
+Huron… / MusThe Tutorial
+
+
+\chapter{Solos in the \sphinxstyleemphasis{Weimar Jazz Database}}
 \label{\detokenize{jazz_solos:solos-in-the-weimar-jazz-database}}\label{\detokenize{jazz_solos::doc}}
-The first project we will have a look at is the \sphinxhref{https://jazzomat.hfm-weimar.de/}{Jazzomat} project
+The first project we will have a look at is the \sphinxhref{https://jazzomat.hfm-weimar.de/}{Jazzomat} project.
+Transcriptions of Jazz solos.
 
 
 \section{The Project}
@@ -376,7 +385,7 @@ Pfleiderer et al. (2017). Inside the Jazzomat: New Perspectives for Jazz Researc
 \section{Access the data}
 \label{\detokenize{beethoven_harmony:access-the-data}}
 The data lies on the GitHub repository \sphinxhref{https://github.com/DCMLab/ABC}{DCMLab/ABC}.
-Either download the .tsv file directly and open it in pandas or load it from the URL as follows:
+Either download the \sphinxcode{\sphinxupquote{.tsv}} file directly and open it in pandas or load it from the URL as follows:
 
 \begin{sphinxVerbatim}[commandchars=\\\{\}]
 \PYG{k+kn}{import} \PYG{n+nn}{pandas} \PYG{k+kn}{as} \PYG{n+nn}{pd}
@@ -384,7 +393,7 @@ Either download the .tsv file directly and open it in pandas or load it from the
 \PYG{n}{df} \PYG{o}{=} \PYG{n}{pd}\PYG{o}{.}\PYG{n}{read\PYGZus{}csv}\PYG{p}{(}\PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{https://github.com/DCMLab/ABC/corpus.tsv}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{,} \PYG{n}{sep}\PYG{o}{=}\PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+se}{\PYGZbs{}t}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{)}
 \end{sphinxVerbatim}
 
-The corpus is now stored in the variable \sphinxtitleref{df}.
+The corpus is now stored in the variable \sphinxcode{\sphinxupquote{df}}.
 
 
 \section{Harmonic Annotations}
@@ -401,6 +410,28 @@ regular expressions
 n\sphinxhyphen{}grams
 
 \end{itemize}
+
+
+\chapter{Billboard Pop Charts}
+\label{\detokenize{billboard:billboard-pop-charts}}\label{\detokenize{billboard::doc}}
+
+\chapter{Brazilian Choro}
+\label{\detokenize{choro:brazilian-choro}}\label{\detokenize{choro::doc}}
+
+\chapter{19th century piano music}
+\label{\detokenize{piano:th-century-piano-music}}\label{\detokenize{piano::doc}}
+
+\chapter{Malian Percussion Music}
+\label{\detokenize{mali_percussion:malian-percussion-music}}\label{\detokenize{mali_percussion::doc}}
+
+\chapter{Electronic Music 1950\sphinxhyphen{}1990}
+\label{\detokenize{electronic:electronic-music-1950-1990}}\label{\detokenize{electronic::doc}}
+
+\chapter{Conclusion}
+\label{\detokenize{conclusion:conclusion}}\label{\detokenize{conclusion::doc}}
+Final thoughts, critical discussion…
+
+{[}Some image{]}
 
 
 

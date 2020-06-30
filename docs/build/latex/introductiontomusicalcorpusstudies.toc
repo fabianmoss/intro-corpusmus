@@ -1,14 +1,22 @@
 \babel@toc {english}{}
-\contentsline {chapter}{\numberline {1}Schedule}{3}{chapter.1}%
-\contentsline {chapter}{\numberline {2}Credits}{5}{chapter.2}%
-\contentsline {chapter}{\numberline {3}Background}{7}{chapter.3}%
-\contentsline {section}{\numberline {3.1}What are Musical Corpus Studies?}{7}{section.3.1}%
-\contentsline {section}{\numberline {3.2}Epistemological goals}{7}{section.3.2}%
-\contentsline {section}{\numberline {3.3}Issues}{7}{section.3.3}%
-\contentsline {section}{\numberline {3.4}MCS and traditional musicology}{7}{section.3.4}%
-\contentsline {chapter}{\numberline {4}Solos in the Weimar Jazz Database}{9}{chapter.4}%
-\contentsline {section}{\numberline {4.1}The Project}{9}{section.4.1}%
-\contentsline {chapter}{\numberline {5}Harmony in Beethoven’s String Quartets}{11}{chapter.5}%
-\contentsline {section}{\numberline {5.1}Access the data}{11}{section.5.1}%
-\contentsline {section}{\numberline {5.2}Harmonic Annotations}{11}{section.5.2}%
-\contentsline {section}{\numberline {5.3}Chord Transitions}{11}{section.5.3}%
+\contentsline {chapter}{\numberline {1}Organization}{3}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Schedule}{3}{section.1.1}%
+\contentsline {section}{\numberline {1.2}Credits}{5}{section.1.2}%
+\contentsline {chapter}{\numberline {2}Introduction / Background}{7}{chapter.2}%
+\contentsline {section}{\numberline {2.1}What are Musical Corpus Studies?}{7}{section.2.1}%
+\contentsline {section}{\numberline {2.2}Epistemological goals}{7}{section.2.2}%
+\contentsline {section}{\numberline {2.3}Issues}{7}{section.2.3}%
+\contentsline {section}{\numberline {2.4}MCS and traditional musicology}{7}{section.2.4}%
+\contentsline {chapter}{\numberline {3}Folk Songs and the Melodic Arc}{9}{chapter.3}%
+\contentsline {chapter}{\numberline {4}Solos in the \sphinxstyleemphasis {Weimar Jazz Database}}{11}{chapter.4}%
+\contentsline {section}{\numberline {4.1}The Project}{11}{section.4.1}%
+\contentsline {chapter}{\numberline {5}Harmony in Beethoven’s String Quartets}{13}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Access the data}{13}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Harmonic Annotations}{13}{section.5.2}%
+\contentsline {section}{\numberline {5.3}Chord Transitions}{13}{section.5.3}%
+\contentsline {chapter}{\numberline {6}Billboard Pop Charts}{15}{chapter.6}%
+\contentsline {chapter}{\numberline {7}Brazilian Choro}{17}{chapter.7}%
+\contentsline {chapter}{\numberline {8}19th century piano music}{19}{chapter.8}%
+\contentsline {chapter}{\numberline {9}Malian Percussion Music}{21}{chapter.9}%
+\contentsline {chapter}{\numberline {10}Electronic Music 1950\sphinxhyphen {}1990}{23}{chapter.10}%
+\contentsline {chapter}{\numberline {11}Conclusion}{25}{chapter.11}%

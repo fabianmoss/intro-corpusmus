@@ -44,9 +44,18 @@ as well as statistics, data analysis and visualization.
    :caption: Content
 
    orga.rst
+   
    background.rst
+   folk_songs.rst
    jazz_solos.rst
    beethoven_harmony.rst
+   billboard.rst
+   choro.rst
+   piano.rst
+   mali_percussion.rst
+   electronic.rst
+
+   conclusion.rst
 
 
 .. Indices and tables

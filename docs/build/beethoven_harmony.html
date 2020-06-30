@@ -56,18 +56,12 @@
     <section class="site-nav">
     
     
-        <p class="caption"><span class="caption-text">Content:</span></p>
+        <p class="caption"><span class="caption-text">Content</span></p>
 <ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="orga.html">Schedule</a></li>
-<li class="toctree-l1"><a class="reference internal" href="orga.html#credits">Credits</a></li>
+<li class="toctree-l1"><a class="reference internal" href="orga.html">Organization</a></li>
 <li class="toctree-l1"><a class="reference internal" href="background.html">Background</a></li>
 <li class="toctree-l1"><a class="reference internal" href="jazz_solos.html">Solos in the Weimar Jazz Database</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Harmony in Beethoven’s String Quartets</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#access-the-data">Access the data</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#harmonic-annotations">Harmonic Annotations</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#chord-transitions">Chord Transitions</a></li>
-</ul>
-</li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Harmony in Beethoven’s String Quartets</a></li>
 </ul>
 
     
@@ -109,13 +103,13 @@
 <div class="section" id="access-the-data">
 <h2>Access the data<a class="headerlink" href="#access-the-data" title="Permalink to this headline">¶</a></h2>
 <p>The data lies on the GitHub repository <a class="reference external" href="https://github.com/DCMLab/ABC">DCMLab/ABC</a>.
-Either download the .tsv file directly and open it in pandas or load it from the URL as follows:</p>
+Either download the <code class="docutils literal notranslate"><span class="pre">.tsv</span></code> file directly and open it in pandas or load it from the URL as follows:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="kn">as</span> <span class="nn">pd</span>
 
 <span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s2">&quot;https://github.com/DCMLab/ABC/corpus.tsv&quot;</span><span class="p">,</span> <span class="n">sep</span><span class="o">=</span><span class="s2">&quot;</span><span class="se">\t</span><span class="s2">&quot;</span><span class="p">)</span>
 </pre></div>
 </div>
-<p>The corpus is now stored in the variable <cite>df</cite>.</p>
+<p>The corpus is now stored in the variable <code class="docutils literal notranslate"><span class="pre">df</span></code>.</p>
 </div>
 <div class="section" id="harmonic-annotations">
 <h2>Harmonic Annotations<a class="headerlink" href="#harmonic-annotations" title="Permalink to this headline">¶</a></h2>

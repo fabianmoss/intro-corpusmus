@@ -47,10 +47,20 @@ exclude_patterns = []
 # The theme to use for HTML and HTML Help pages.  See the documentation for
 # a list of builtin themes.
 #
+# html_theme = "alabaster"
 
 html_theme = 'sphinx_redactor_theme'
 import sphinx_redactor_theme
 html_theme_path = [sphinx_redactor_theme.get_html_theme_path()]
+
+# import stanford_theme
+# html_theme = "stanford_theme"
+# html_theme_path = [stanford_theme.get_html_theme_path()]
+
+# html_theme = 'sphinx_typo3_theme'
+
+# The name of the Pygments (syntax highlighting) style to use.
+# pygments_style = 'monokai'
 
 # Add any paths that contain custom static files (such as style sheets) here,
 # relative to this directory. They are copied after the builtin static files,

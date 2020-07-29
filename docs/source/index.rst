@@ -3,12 +3,27 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
+.. figure:: _static/abstract_bg.jpg
+  :width: 100%
+  :alt: abstract pattern
+  
+  Image by `Victoria Alexander <https://unsplash.com/@pixeldebris?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText>`_ 
+  on `Unsplash <https://unsplash.com/s/photos/pattern?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText>`_.
+
 Introduction to Musical Corpus Studies
 ======================================
 
 .. warning::
 
-   These pages are (heavily) under construction!
+   These pages present the content of the course "Introduction to Musical Corpus Studies", 
+   given at University of Cologne in Fall 2020. 
+
+   Note that this material is still (heavily) under construction and might change throughout the course!
+
+   You can help improving the course and let me know about any errors and inconsistencies that you find 
+   or suggest other ways of improving the course.
+
+.. rubric:: Welcome!
 
 In the last two decades *Musical Corpus Studies* evolved from a niche discipline into a veritable research area.
 The growing availability of digital and digitized musical data as well as the application and development of modern 

@@ -20,7 +20,7 @@ Introduction to Musical Corpus Studies
 
    Note that this material is still (heavily) under construction and might change throughout the course!
 
-   You can help improving the course and let me know about any errors and inconsistencies that you find 
+   You can help improving the course and `let me know <mailto:fabian.moss@epfl.ch>`_ about any errors and inconsistencies that you find 
    or suggest other ways of improving the course.
 
 .. rubric:: Welcome!

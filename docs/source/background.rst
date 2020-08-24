@@ -3,6 +3,7 @@ Introduction / Background
 
 .. figure:: _static/abstract_bg.jpg
   :width: 100%
+  :align: center
   :alt: abstract pattern
   
   Image by `Victoria Alexander <https://unsplash.com/@pixeldebris?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText>`_ 

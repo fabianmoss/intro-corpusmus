@@ -20,3 +20,5 @@
 \contentsline {chapter}{\numberline {9}Malian Percussion Music}{21}{chapter.9}%
 \contentsline {chapter}{\numberline {10}Electronic Music 1950\sphinxhyphen {}1990}{23}{chapter.10}%
 \contentsline {chapter}{\numberline {11}Conclusion}{25}{chapter.11}%
+\contentsline {chapter}{\numberline {12}Bibliography}{27}{chapter.12}%
+\contentsline {chapter}{Bibliography}{29}{chapter*.3}%

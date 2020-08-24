@@ -21,6 +21,8 @@ Harmonic Annotations
 
 - regular expressions 
 
+:cite:`Neuwirth2018,Moss2019` 
+
 Chord Transitions
 .................
 

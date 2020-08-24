@@ -9,7 +9,6 @@
 \contentsline {section}{\numberline {2.4}MCS and traditional musicology}{7}{section.2.4}%
 \contentsline {chapter}{\numberline {3}Folk Songs and the Melodic Arc}{9}{chapter.3}%
 \contentsline {chapter}{\numberline {4}Solos in the \sphinxstyleemphasis {Weimar Jazz Database}}{11}{chapter.4}%
-\contentsline {section}{\numberline {4.1}The Project}{11}{section.4.1}%
 \contentsline {chapter}{\numberline {5}Harmony in Beethoven’s String Quartets}{13}{chapter.5}%
 \contentsline {section}{\numberline {5.1}Access the data}{13}{section.5.1}%
 \contentsline {section}{\numberline {5.2}Harmonic Annotations}{13}{section.5.2}%
@@ -20,5 +19,4 @@
 \contentsline {chapter}{\numberline {9}Malian Percussion Music}{21}{chapter.9}%
 \contentsline {chapter}{\numberline {10}Electronic Music 1950\sphinxhyphen {}1990}{23}{chapter.10}%
 \contentsline {chapter}{\numberline {11}Conclusion}{25}{chapter.11}%
-\contentsline {chapter}{\numberline {12}Bibliography}{27}{chapter.12}%
-\contentsline {chapter}{Bibliography}{29}{chapter*.3}%
+\contentsline {chapter}{Bibliography}{27}{chapter*.3}%

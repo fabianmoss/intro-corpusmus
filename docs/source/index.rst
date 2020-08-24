@@ -72,8 +72,6 @@ as well as statistics, data analysis and visualization.
 
    conclusion.rst
 
-   bibliography.rst
-
 
 .. Indices and tables
 .. ==================

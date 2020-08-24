@@ -15,15 +15,15 @@ Introduction to Musical Corpus Studies
 
 .. warning::
 
-   These pages present the content of the course "Introduction to Musical Corpus Studies", 
-   given at University of Cologne in Fall 2020. 
-
-   Note that this material is still (heavily) under construction and might change throughout the course!
+   This material is still (heavily) under construction and might change throughout the course!
 
    You can help improving the course and `let me know <mailto:fabian.moss@epfl.ch>`_ about any errors and inconsistencies that you find 
    or suggest other ways of improving the course.
 
 .. rubric:: Welcome!
+
+These pages present the content of the course "Introduction to Musical Corpus Studies", 
+given at University of Cologne in Fall 2020. 
 
 In the last two decades *Musical Corpus Studies* evolved from a niche discipline into a veritable research area.
 The growing availability of digital and digitized musical data as well as the application and development of modern 
@@ -38,17 +38,6 @@ This course offers a fundamental and practical introduction into these topics.
 It demonstrates, explores, and critically reflects central thematic areas and methods by means of a number of case studies.
 Among the contents are:
 
-- Beethoven's string quartets
-- 19th century piano music
-- Popular music charts
-- Electronic music 1950-1990 
-- Brazilian Choro
-- Malian percussion music
-- Jazz solos
-
-In the engagement with these topics the course also introduces elementary methods from natural language and music processing, 
-as well as statistics, data analysis and visualization.
-
 .. **Voraussetzungen:**
 
 .. Das Seminar findet auf Deutsch statt, die Materialien sind allerdings größtenteils auf Englisch. Die Veranstaltung richtet sich an Studierende sowohl ohne als auch mit Programmierkenntnissen. Um die praktischen Übungen machen zu können, benötigen Sie ein Notebook (Windows/Mac/Linux). Sollten Sie keinen Zugang zu einem eigenen Gerät haben, kontaktieren Sie mich bitte frühzeitig!
@@ -57,6 +46,7 @@ as well as statistics, data analysis and visualization.
 .. toctree::
    :maxdepth: 1
    :caption: Content
+   :numbered:
 
    orga.rst
    
@@ -71,6 +61,9 @@ as well as statistics, data analysis and visualization.
    electronic.rst
 
    conclusion.rst
+
+In the engagement with these topics the course also introduces elementary methods from natural language and music processing, 
+as well as statistics, data analysis and visualization.
 
 
 .. Indices and tables

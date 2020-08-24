@@ -48,13 +48,13 @@ exclude_patterns = []
 #
 # html_theme = "alabaster"
 
-html_theme = 'sphinx_redactor_theme'
-import sphinx_redactor_theme
-html_theme_path = [sphinx_redactor_theme.get_html_theme_path()]
+# html_theme = 'sphinx_redactor_theme'
+# import sphinx_redactor_theme
+# html_theme_path = [sphinx_redactor_theme.get_html_theme_path()]
 
-# import stanford_theme
-# html_theme = "stanford_theme"
-# html_theme_path = [stanford_theme.get_html_theme_path()]
+import stanford_theme
+html_theme = "stanford_theme"
+html_theme_path = [stanford_theme.get_html_theme_path()]
 
 # html_theme = 'sphinx_typo3_theme'
 
@@ -65,3 +65,6 @@ html_theme_path = [sphinx_redactor_theme.get_html_theme_path()]
 # relative to this directory. They are copied after the builtin static files,
 # so a file named "default.css" will overwrite the builtin "default.css".
 html_static_path = ['_static']
+
+# to enable unicode usage
+# latex_engine = 'xelatex'

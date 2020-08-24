@@ -1,6 +1,13 @@
 Introduction / Background
 -------------------------
 
+.. figure:: _static/abstract_bg.jpg
+  :width: 100%
+  :alt: abstract pattern
+  
+  Image by `Victoria Alexander <https://unsplash.com/@pixeldebris?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText>`_ 
+  on `Unsplash <https://unsplash.com/s/photos/pattern?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText>`_.
+
 What are Musical Corpus Studies?
 ................................
 

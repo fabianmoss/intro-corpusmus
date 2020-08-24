@@ -87,14 +87,6 @@
 \sphinxtableofcontents
 \pagestyle{normal}
 \phantomsection\label{\detokenize{index::doc}}
-\begin{figure}[htbp]
-\centering
-\capstart
-
-\noindent\sphinxincludegraphics[width=1.000\linewidth]{{abstract_bg}.jpg}
-\caption{Image by \sphinxhref{https://unsplash.com/@pixeldebris?utm\_source=unsplash\&amp;utm\_medium=referral\&amp;utm\_content=creditCopyText}{Victoria Alexander}
-on \sphinxhref{https://unsplash.com/s/photos/pattern?utm\_source=unsplash\&amp;utm\_medium=referral\&amp;utm\_content=creditCopyText}{Unsplash}.}\label{\detokenize{index:id1}}\end{figure}
-
 
 
 \begin{sphinxadmonition}{warning}{Warning:}
@@ -308,6 +300,14 @@ Die verbleibenden 18 SWS sind für die Lektüre der Fachliteratur vorgesehen.
 
 \chapter{Introduction / Background}
 \label{\detokenize{background:introduction-background}}\label{\detokenize{background::doc}}
+\begin{figure}[htbp]
+\centering
+\capstart
+
+\noindent\sphinxincludegraphics[width=1.000\linewidth]{{abstract_bg}.jpg}
+\caption{Image by \sphinxhref{https://unsplash.com/@pixeldebris?utm\_source=unsplash\&amp;utm\_medium=referral\&amp;utm\_content=creditCopyText}{Victoria Alexander}
+on \sphinxhref{https://unsplash.com/s/photos/pattern?utm\_source=unsplash\&amp;utm\_medium=referral\&amp;utm\_content=creditCopyText}{Unsplash}.}\label{\detokenize{background:id9}}\end{figure}
+
 
 \section{What are Musical Corpus Studies?}
 \label{\detokenize{background:what-are-musical-corpus-studies}}
@@ -336,6 +336,14 @@ Huron… / MusThe Tutorial
 
 \chapter{Solos in the \sphinxstyleemphasis{Weimar Jazz Database}}
 \label{\detokenize{jazz_solos:solos-in-the-weimar-jazz-database}}\label{\detokenize{jazz_solos::doc}}
+\begin{figure}[htbp]
+\centering
+\capstart
+
+\noindent\sphinxincludegraphics[width=1.000\linewidth]{{jazz}.jpg}
+\caption{Photo by \sphinxhref{https://unsplash.com/@janinekrob?utm\_source=unsplash\&amp;utm\_medium=referral\&amp;utm\_content=creditCopyText}{Janine Robinson}
+on \sphinxhref{https://unsplash.com/s/photos/jazz?utm\_source=unsplash\&amp;utm\_medium=referral\&amp;utm\_content=creditCopyText}{Unsplash}}\label{\detokenize{jazz_solos:id2}}\end{figure}
+
 The first project we will have a look at is the \sphinxhref{https://jazzomat.hfm-weimar.de/}{Jazzomat} project.
 Transcriptions of Jazz solos. \sphinxcite{conclusion:pfleiderer2017}
 
@@ -377,22 +385,71 @@ n\sphinxhyphen{}grams
 
 \chapter{Billboard Pop Charts}
 \label{\detokenize{billboard:billboard-pop-charts}}\label{\detokenize{billboard::doc}}
-\sphinxcite{conclusion:schaffer2020}
+\begin{figure}[htbp]
+\centering
+\capstart
+
+\noindent\sphinxincludegraphics[width=1.000\linewidth]{{pop}.jpg}
+\caption{Photo by \sphinxhref{https://unsplash.com/@othentikisra?utm\_source=unsplash\&amp;utm\_medium=referral\&amp;utm\_content=creditCopyText}{israel palacio}
+on \sphinxhref{https://unsplash.com/s/photos/music?utm\_source=unsplash\&amp;utm\_medium=referral\&amp;utm\_content=creditCopyText}{Unsplash}.}\label{\detokenize{billboard:id2}}\label{\detokenize{billboard:microphone}}\end{figure}
+
+Clustering analysis in \sphinxcite{conclusion:schaffer2020}.
 
 
 \chapter{Brazilian Choro}
 \label{\detokenize{choro:brazilian-choro}}\label{\detokenize{choro::doc}}
-\sphinxcite{conclusion:moss2020}
+\begin{figure}[htbp]
+\centering
+\capstart
+
+\noindent\sphinxincludegraphics[width=1.000\linewidth]{{choro}.jpg}
+\caption{A 2019 musical tribute to renowned choro composer Jacob do Bandolim,
+on the 50th anniversary of his death in Sao Paulo, Brazil. (c) Governo do Estado de Sao Paulo / CC BY 2.0}\label{\detokenize{choro:id2}}\end{figure}
 
 
-\chapter{19th century piano music}
-\label{\detokenize{piano:th-century-piano-music}}\label{\detokenize{piano::doc}}
+\section{Data}
+\label{\detokenize{choro:data}}
+The \sphinxstyleemphasis{Choro Songbook Corpus} contains transcriptions of the chord symbols
+of 295 Choro pieces \sphinxcite{conclusion:moss2020}. It is available on \sphinxhref{https://zenodo.org/record/3881347\#.X0OqHcgzbg4}{Zenodo} or \sphinxhref{https://github.com/DCMLab/choro/tree/1.1}{Github}.
+See this link for a performance of the piece “\sphinxhref{https://youtu.be/HuukCWIImnY}{Lamentos}”
+
+As before, we can import our data from a public resource.
+
+\begin{sphinxVerbatim}[commandchars=\\\{\}]
+\PYG{n}{df} \PYG{o}{=} \PYG{n}{pd}\PYG{o}{.}\PYG{n}{read\PYGZus{}csv}\PYG{p}{(}\PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{https://raw.githubusercontent.com/DCMLab/choro/1.1/data/choro.tsv}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{,} \PYG{n}{sep}\PYG{o}{=}\PYGZbs{}\PYG{n}{t}\PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{)}
+\end{sphinxVerbatim}
+
+And display the first rows of the data frame:
+
+\begin{sphinxVerbatim}[commandchars=\\\{\}]
+\PYG{n}{df}\PYG{o}{.}\PYG{n}{head}\PYG{p}{(}\PYG{p}{)}
+\end{sphinxVerbatim}
+
+
+\chapter{History of Tonality}
+\label{\detokenize{tonality:history-of-tonality}}\label{\detokenize{tonality::doc}}
+\begin{figure}[htbp]
+\centering
+\capstart
+
+\noindent\sphinxincludegraphics[width=1.000\linewidth]{{score}.jpg}
+\caption{Photo by \sphinxhref{https://unsplash.com/@marius?utm\_source=unsplash\&amp;utm\_medium=referral\&amp;utm\_content=creditCopyText}{Marius Masalar}
+on \sphinxhref{https://unsplash.com/s/photos/scores?utm\_source=unsplash\&amp;utm\_medium=referral\&amp;utm\_content=creditCopyText}{Unsplash}.}\label{\detokenize{tonality:id1}}\end{figure}
+
 
 \chapter{Malian Percussion Music}
 \label{\detokenize{mali_percussion:malian-percussion-music}}\label{\detokenize{mali_percussion::doc}}
 
 \chapter{Electronic Music 1950\sphinxhyphen{}1990}
 \label{\detokenize{electronic:electronic-music-1950-1990}}\label{\detokenize{electronic::doc}}
+\begin{figure}[htbp]
+\centering
+\capstart
+
+\noindent\sphinxincludegraphics[width=1.000\linewidth]{{electro}.jpg}
+\caption{Photo by \sphinxhref{https://unsplash.com/@antoinejulien?utm\_source=unsplash\&amp;utm\_medium=referral\&amp;utm\_content=creditCopyText}{Antoine Julien}
+on \sphinxhref{https://unsplash.com/s/photos/electronic-music?utm\_source=unsplash\&amp;utm\_medium=referral\&amp;utm\_content=creditCopyText}{Unsplash}.}\label{\detokenize{electronic:id1}}\end{figure}
+
 
 \chapter{Conclusion}
 \label{\detokenize{conclusion:conclusion}}\label{\detokenize{conclusion::doc}}
@@ -421,11 +478,11 @@ Fabian C. Moss, Willian Souza Fernandes, and Martin Rohrmeier. Harmony and for
 \bibitem[NHMR18]{conclusion:neuwirth2018}
 Markus Neuwirth, Daniel Harasim, Fabian C. Moss, and Martin Rohrmeier. The Annotated Beethoven Corpus (ABC): A Dataset of Harmonic Analyses of All Beethoven String Quartets. \sphinxstyleemphasis{Frontiers in Digital Humanities}, 5(July):1\textendash{}5, 2018. \sphinxhref{https://doi.org/10.3389/fdigh.2018.00016}{doi:10.3389/fdigh.2018.00016}.
 \bibitem[NR16]{conclusion:neuwirth2016}
-Markus Neuwirth and Martin Rohrmeier. Wie wissenschaftlich muss Musiktheorie sein? Chancen und Herausforderungen musikalischer Korpusforschung. \sphinxstyleemphasis{Zeitschrift der Gesellschaft für Musiktheorie}, 13(2):171\textendash{}193, 2016.
+Markus Neuwirth and Martin Rohrmeier. Wie wissenschaftlich muss Musiktheorie sein? Chancen und Herausforderungen musikalischer Korpusforschung. \sphinxstyleemphasis{Zeitschrift der Gesellschaft für Musiktheorie}, 13(2):171\textendash{}193, 2016. \sphinxhref{https://doi.org/10.31751/915}{doi:10.31751/915}.
 \bibitem[Pfl17]{conclusion:pfleiderer2017}
 Martin Pfleiderer. \sphinxstyleemphasis{Inside the Jazzomat: New Perspectives for Jazz Research}. Schott, 2017.
 \bibitem[Pug15]{conclusion:pugin2005}
-Laurent Pugin. The challenge of data in digital musicology. \sphinxstyleemphasis{Frontiers in Digital Humanities}, 2(4):1\textendash{}3, 2015.
+Laurent Pugin. The challenge of data in digital musicology. \sphinxstyleemphasis{Frontiers in Digital Humanities}, 2(4):1\textendash{}3, 2015. \sphinxhref{https://doi.org/10.3389/fdigh.2015.00004}{doi:10.3389/fdigh.2015.00004}.
 \bibitem[Sch16]{conclusion:schaffer2016}
 Kris Schaffer. What is computational musicology? online, 2016. URL: \sphinxurl{https://medium.com/@krisshaffer/what-is-computational-musicology-f25ee0a65102}.
 \bibitem[SVJ+20]{conclusion:schaffer2020}

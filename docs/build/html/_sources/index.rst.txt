@@ -3,13 +3,6 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-.. figure:: _static/abstract_bg.jpg
-  :width: 100%
-  :alt: abstract pattern
-  
-  Image by `Victoria Alexander <https://unsplash.com/@pixeldebris?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText>`_ 
-  on `Unsplash <https://unsplash.com/s/photos/pattern?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText>`_.
-
 Introduction to Musical Corpus Studies
 ======================================
 
@@ -56,7 +49,7 @@ Among the contents are:
    beethoven_harmony.rst
    billboard.rst
    choro.rst
-   piano.rst
+   tonality.rst
    mali_percussion.rst
    electronic.rst
 

@@ -1,10 +1,10 @@
 # Fdb version 3
-["makeindex introductiontomusicalcorpusstudies.idx"] 1593453177 "introductiontomusicalcorpusstudies.idx" "introductiontomusicalcorpusstudies.ind" "introductiontomusicalcorpusstudies" 1598265379
+["makeindex introductiontomusicalcorpusstudies.idx"] 1593453177 "introductiontomusicalcorpusstudies.idx" "introductiontomusicalcorpusstudies.ind" "introductiontomusicalcorpusstudies" 1598269127
   "introductiontomusicalcorpusstudies.idx" 1598265379 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
   (generated)
-  "introductiontomusicalcorpusstudies.ind"
   "introductiontomusicalcorpusstudies.ilg"
-["pdflatex"] 1598265378 "introductiontomusicalcorpusstudies.tex" "introductiontomusicalcorpusstudies.pdf" "introductiontomusicalcorpusstudies" 1598265379
+  "introductiontomusicalcorpusstudies.ind"
+["pdflatex"] 1598265378 "introductiontomusicalcorpusstudies.tex" "introductiontomusicalcorpusstudies.pdf" "introductiontomusicalcorpusstudies" 1598269127
   "C:/Users/fabianmoss/AppData/Local/MiKTeX/2.9/miktex/data/le/pdftex/pdflatex.fmt" 1587969641 10521016 5f50b42fba9a22bfc328be50a34c9911 ""
   "C:/Users/fabianmoss/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map" 1593073666 291586 30f17288e6db250cf50aacb602dd98fd ""
   "C:/Users/fabianmoss/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/base/8r.enc" 1458473887 4993 1194fb36dfcb11d9ae9802f2b00b60a3 ""
@@ -159,14 +159,14 @@
   "introductiontomusicalcorpusstudies.tex" 1598265376 15118 b73d72432ba011dc12d0110308dfec97 ""
   "introductiontomusicalcorpusstudies.toc" 1598265379 1701 ee43917b1437c6783887affba1a26ec5 "pdflatex"
   "sphinx.sty" 1589737009 82020 a38700b8aa22dfd94a8a5b905e69be73 ""
-  "sphinxhighlight.sty" 1598265376 8242 5cf9b0eb20ee5aaf9511e1ea0dd43514 ""
+  "sphinxhighlight.sty" 1598269127 8242 5cf9b0eb20ee5aaf9511e1ea0dd43514 ""
   "sphinxmanual.cls" 1589737009 4236 124cd90deb92742b5d3922bfc2cd70c0 ""
-  "sphinxmessages.sty" 1598265376 765 06218e7b66d00e05ea0d90ac6e115733 ""
+  "sphinxmessages.sty" 1598269127 765 06218e7b66d00e05ea0d90ac6e115733 ""
   "sphinxmulticell.sty" 1589737009 14606 0b6edc2b1a83546ed92026d1f6a311b5 ""
   (generated)
+  "introductiontomusicalcorpusstudies.toc"
+  "introductiontomusicalcorpusstudies.idx"
   "introductiontomusicalcorpusstudies.log"
   "introductiontomusicalcorpusstudies.aux"
-  "introductiontomusicalcorpusstudies.idx"
-  "introductiontomusicalcorpusstudies.toc"
-  "introductiontomusicalcorpusstudies.out"
   "introductiontomusicalcorpusstudies.pdf"
+  "introductiontomusicalcorpusstudies.out"

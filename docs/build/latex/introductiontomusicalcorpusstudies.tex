@@ -68,12 +68,12 @@
 \addto\captionsenglish{\renewcommand{\contentsname}{Content}}
 
 \usepackage{sphinxmessages}
-\setcounter{tocdepth}{0}
+\setcounter{tocdepth}{1}
 
 
 
 \title{Introduction to Musical Corpus Studies}
-\date{Aug 24, 2020}
+\date{Aug 25, 2020}
 \release{0.0.1}
 \author{Fabian C.\@{} Moss}
 \newcommand{\sphinxlogo}{\vbox{}}
@@ -434,7 +434,67 @@ And display the first rows of the data frame:
 
 \noindent\sphinxincludegraphics[width=1.000\linewidth]{{score}.jpg}
 \caption{Photo by \sphinxhref{https://unsplash.com/@marius?utm\_source=unsplash\&amp;utm\_medium=referral\&amp;utm\_content=creditCopyText}{Marius Masalar}
-on \sphinxhref{https://unsplash.com/s/photos/scores?utm\_source=unsplash\&amp;utm\_medium=referral\&amp;utm\_content=creditCopyText}{Unsplash}.}\label{\detokenize{tonality:id1}}\end{figure}
+on \sphinxhref{https://unsplash.com/s/photos/scores?utm\_source=unsplash\&amp;utm\_medium=referral\&amp;utm\_content=creditCopyText}{Unsplash}.}\label{\detokenize{tonality:id5}}\end{figure}
+
+
+\section{Principle Component Analysis}
+\label{\detokenize{tonality:principle-component-analysis}}
+Since the dimensionality of \(\Delta^{V-1}\) is 35, it is impossible to visualize
+this space and pieces in it to see whether their arrangement contains any meaningful information.
+We address this problem by using a method for \sphinxstyleemphasis{dimensionality reduction}
+called \sphinxstyleemphasis{Principal Component Analysis} (PCA) \sphinxcite{conclusion:bishop2006}
+that projects the data into a lower\sphinxhyphen{}dimensional space while at the same time maintaining
+as many characteristic properties of the original space as possible.
+PCA thus can aid to achieve a better understanding of
+the global structure of the space. %
+\begin{footnote}[1]\sphinxAtStartFootnote
+While PCA is one of the most commonly used methods for dimensionality reduction, there are many others
+(sometimes relying on particular assumptions about the distribution of the data).
+In a qualitative comparison, \sphinxstyleemphasis{Locally Linear Embedding} \sphinxcite{conclusion:roweis2000} achieved a similar picture,
+whereas \sphinxstyleemphasis{t\sphinxhyphen{}distributed Stochastic Neighbor Embedding} (t\sphinxhyphen{}SNE) \sphinxcite{conclusion:vandermaaten2008}
+that does emphasize the local over the global structure of the data did not.
+We opted here for PCA because it preserves most
+of the global structure and the interpretation of the results is straight\sphinxhyphen{}forward.
+%
+\end{footnote}
+
+PCA considers the data to be represented as a matrix
+\begin{equation*}
+\begin{split}X = \left[\begin{array}{c}
+               x_1^\top \\
+               \vdots \\
+               x_D^\top \\
+            \end{array}
+         \right] \in [0,1]^{D \times V},\;   x_d \in \Delta^{V-1},\end{split}
+\end{equation*}
+where the rows are given by the \(D\) data points, the pieces in the corpus,
+and the columns are given by the \(V\) features, the number of distinct tonal pitch\sphinxhyphen{}classes in the vocabulary.
+All entries in \(X\) range between 0 and 1 and all rows of \(X\) sum to 1 because the pieces are represented
+as distributions.
+PCA determines the \(M\leq V\) largest directions and magnitudes of the variance in the data in \(X\) by first
+calculating the \sphinxstyleemphasis{covariance matrix}
+\begin{equation*}
+\begin{split}K_X = \mathrm{cov}[X,X] = \mathrm{E}[(X-\bar{x})(X-\bar{x})^\top] \in\mathbb R^{D\times D},\end{split}
+\end{equation*}
+where \(\mathrm{E}\) denotes the expected value and \(\bar{x}\in[0,1]^V\) is the mean of the columns of \(X\).
+The main directions of the variance in the data and their magnitude is given by the eigenvectors \(w_i\)
+and eigenvalues \(\lambda_i\) of \(K_X\) which can be calculated by solving
+\begin{equation*}
+\begin{split}K \cdot w_i = \lambda \cdot w_i.\end{split}
+\end{equation*}
+The projection into the lower\sphinxhyphen{}dimensional space is then achieved by selecting the \(M\) largest eigenvalues
+and their corresponding eigenvectors and transform the data to \(X^\prime\), the dimensionality reduction of \(X\) by
+\begin{equation*}
+\begin{split}X^\prime = X \cdot \left[ w_1,        \ldots, w_M \right]\in \mathbb R^{D\times M}\end{split}
+\end{equation*}
+The sum of all eigenvalues \(\lambda_i\) is the total amount of variance in the data and the variance explained
+by each principal component is given by \(\lambda_i / \sum_j \lambda_j\).
+
+In the present context, \(X\) was transformed to have zero mean before applying PCA
+but that the variance was not standardized to 1.
+This was done because the features all are on the same scale and because the
+differences in the variance between the respective tonal pitch\sphinxhyphen{}classes is of particular
+interest here.
 
 
 \chapter{Malian Percussion Music}
@@ -463,6 +523,8 @@ In the engagement with these topics the course also introduces elementary method
 as well as statistics, data analysis and visualization.
 
 \begin{sphinxthebibliography}{MNHM19}
+\bibitem[Bis06]{conclusion:bishop2006}
+Christopher M. Bishop. \sphinxstyleemphasis{Pattern Recognition and Machine Learning}. Springer, 2006.
 \bibitem[Coo06]{conclusion:cook2006}
 Nicholas Cook. Border Crossings: A Commentary on Henkjan Honing’s “On the Growing Role of Observation, Formalization and Experimental Method in Musicology”. \sphinxstyleemphasis{Empirical Musicology Review}, 1(1):7\textendash{}11, 2006.
 \bibitem[Hon06]{conclusion:honing2006}
@@ -483,12 +545,16 @@ Markus Neuwirth and Martin Rohrmeier. Wie wissenschaftlich muss Musiktheorie sei
 Martin Pfleiderer. \sphinxstyleemphasis{Inside the Jazzomat: New Perspectives for Jazz Research}. Schott, 2017.
 \bibitem[Pug15]{conclusion:pugin2005}
 Laurent Pugin. The challenge of data in digital musicology. \sphinxstyleemphasis{Frontiers in Digital Humanities}, 2(4):1\textendash{}3, 2015. \sphinxhref{https://doi.org/10.3389/fdigh.2015.00004}{doi:10.3389/fdigh.2015.00004}.
+\bibitem[RS00]{conclusion:roweis2000}
+S. T. Roweis and L. K. Saul. Nonlinear dimensionality reduction by locally linear embedding. \sphinxstyleemphasis{Science}, 290(5500):2323\textendash{}2326, 2000. \sphinxhref{https://doi.org/10.1126/science.290.5500.2323}{doi:10.1126/science.290.5500.2323}.
 \bibitem[Sch16]{conclusion:schaffer2016}
 Kris Schaffer. What is computational musicology? online, 2016. URL: \sphinxurl{https://medium.com/@krisshaffer/what-is-computational-musicology-f25ee0a65102}.
 \bibitem[SVJ+20]{conclusion:schaffer2020}
 Kris Schaffer, Esther Vasiete, Brandon Jacquez, Aaron Davis, Diego Escalante, Calvin Hicks, Joshua McCann, Camille Noufi, and Paul Salminen. A cluster analysis of harmony in the McGill Billboard dataset. \sphinxstyleemphasis{Empirical Musicology Review}, 14(3\textendash{}4):146\textendash{}162, 2020. \sphinxhref{https://doi.org/10.18061/emr.v14i3-4.5576}{doi:10.18061/emr.v14i3\sphinxhyphen{}4.5576}.
 \bibitem[TV13]{conclusion:temperley2013}
 David Temperley and Leigh VanHandel. Introduction to the Special Issue on Corpus Methods. \sphinxstyleemphasis{Music Perception: An Interdisciplinary Journal}, 31(1):1\textendash{}3, 2013.
+\bibitem[VDMH08]{conclusion:vandermaaten2008}
+L. Van Der Maaten and G. Hinton. Visualizing data using t\sphinxhyphen{}SNE. \sphinxstyleemphasis{Journal of Machine Learning Research}, 9(November):2579\textendash{}2605, 2008.
 \end{sphinxthebibliography}
 
 

@@ -17,6 +17,7 @@
 \contentsline {chapter}{\numberline {7}Brazilian Choro}{17}{chapter.7}%
 \contentsline {section}{\numberline {7.1}Data}{17}{section.7.1}%
 \contentsline {chapter}{\numberline {8}History of Tonality}{19}{chapter.8}%
+\contentsline {section}{\numberline {8.1}Principle Component Analysis}{19}{section.8.1}%
 \contentsline {chapter}{\numberline {9}Malian Percussion Music}{21}{chapter.9}%
 \contentsline {chapter}{\numberline {10}Electronic Music 1950\sphinxhyphen {}1990}{23}{chapter.10}%
 \contentsline {chapter}{\numberline {11}Conclusion}{25}{chapter.11}%

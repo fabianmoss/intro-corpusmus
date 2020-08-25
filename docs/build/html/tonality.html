@@ -90,7 +90,10 @@
 <li class="toctree-l1"><a class="reference internal" href="beethoven_harmony.html">5. Harmony in Beethoven’s String Quartets</a></li>
 <li class="toctree-l1"><a class="reference internal" href="billboard.html">6. Billboard Pop Charts</a></li>
 <li class="toctree-l1"><a class="reference internal" href="choro.html">7. Brazilian Choro</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">8. History of Tonality</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">8. History of Tonality</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#principle-component-analysis">8.1. Principle Component Analysis</a></li>
+</ul>
+</li>
 <li class="toctree-l1"><a class="reference internal" href="mali_percussion.html">9. Malian Percussion Music</a></li>
 <li class="toctree-l1"><a class="reference internal" href="electronic.html">10. Electronic Music 1950-1990</a></li>
 <li class="toctree-l1"><a class="reference internal" href="conclusion.html">11. Conclusion</a></li>
@@ -159,10 +162,64 @@
             
   <div class="section" id="history-of-tonality">
 <h1><span class="section-number">8. </span>History of Tonality<a class="headerlink" href="#history-of-tonality" title="Permalink to this headline">¶</a></h1>
-<div class="figure align-center" id="id1">
+<div class="figure align-center" id="id5">
 <a class="reference internal image-reference" href="_images/score.jpg"><img alt="music score." src="_images/score.jpg" style="width: 100%;" /></a>
 <p class="caption"><span class="caption-number">Fig. 8.1 </span><span class="caption-text">Photo by <a class="reference external" href="https://unsplash.com/&#64;marius?utm_source=unsplash&amp;amp;utm_medium=referral&amp;amp;utm_content=creditCopyText">Marius Masalar</a>
-on <a class="reference external" href="https://unsplash.com/s/photos/scores?utm_source=unsplash&amp;amp;utm_medium=referral&amp;amp;utm_content=creditCopyText">Unsplash</a>.</span><a class="headerlink" href="#id1" title="Permalink to this image">¶</a></p>
+on <a class="reference external" href="https://unsplash.com/s/photos/scores?utm_source=unsplash&amp;amp;utm_medium=referral&amp;amp;utm_content=creditCopyText">Unsplash</a>.</span><a class="headerlink" href="#id5" title="Permalink to this image">¶</a></p>
+</div>
+<div class="section" id="principle-component-analysis">
+<h2><span class="section-number">8.1. </span>Principle Component Analysis<a class="headerlink" href="#principle-component-analysis" title="Permalink to this headline">¶</a></h2>
+<p>Since the dimensionality of <span class="math notranslate nohighlight">\(\Delta^{V-1}\)</span> is 35, it is impossible to visualize
+this space and pieces in it to see whether their arrangement contains any meaningful information.
+We address this problem by using a method for <em>dimensionality reduction</em>
+called <em>Principal Component Analysis</em> (PCA) <a class="bibtex reference internal" href="conclusion.html#bishop2006" id="id1">[Bis06]</a>
+that projects the data into a lower-dimensional space while at the same time maintaining
+as many characteristic properties of the original space as possible.
+PCA thus can aid to achieve a better understanding of
+the global structure of the space. <a class="footnote-reference brackets" href="#f1" id="id2">1</a></p>
+<p>PCA considers the data to be represented as a matrix</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}X = \left[\begin{array}{c}
+               x_1^\top \\
+               \vdots \\
+               x_D^\top \\
+            \end{array}
+         \right] \in [0,1]^{D \times V},\;   x_d \in \Delta^{V-1},\end{split}\]</div>
+<p>where the rows are given by the <span class="math notranslate nohighlight">\(D\)</span> data points, the pieces in the corpus,
+and the columns are given by the <span class="math notranslate nohighlight">\(V\)</span> features, the number of distinct tonal pitch-classes in the vocabulary.
+All entries in <span class="math notranslate nohighlight">\(X\)</span> range between 0 and 1 and all rows of <span class="math notranslate nohighlight">\(X\)</span> sum to 1 because the pieces are represented
+as distributions.
+PCA determines the <span class="math notranslate nohighlight">\(M\leq V\)</span> largest directions and magnitudes of the variance in the data in <span class="math notranslate nohighlight">\(X\)</span> by first
+calculating the <em>covariance matrix</em></p>
+<div class="math notranslate nohighlight">
+\[K_X = \mathrm{cov}[X,X] = \mathrm{E}[(X-\bar{x})(X-\bar{x})^\top] \in\mathbb R^{D\times D},\]</div>
+<p>where <span class="math notranslate nohighlight">\(\mathrm{E}\)</span> denotes the expected value and <span class="math notranslate nohighlight">\(\bar{x}\in[0,1]^V\)</span> is the mean of the columns of <span class="math notranslate nohighlight">\(X\)</span>.
+The main directions of the variance in the data and their magnitude is given by the eigenvectors <span class="math notranslate nohighlight">\(w_i\)</span>
+and eigenvalues <span class="math notranslate nohighlight">\(\lambda_i\)</span> of <span class="math notranslate nohighlight">\(K_X\)</span> which can be calculated by solving</p>
+<div class="math notranslate nohighlight">
+\[K \cdot w_i = \lambda \cdot w_i.\]</div>
+<p>The projection into the lower-dimensional space is then achieved by selecting the <span class="math notranslate nohighlight">\(M\)</span> largest eigenvalues
+and their corresponding eigenvectors and transform the data to <span class="math notranslate nohighlight">\(X^\prime\)</span>, the dimensionality reduction of <span class="math notranslate nohighlight">\(X\)</span> by</p>
+<div class="math notranslate nohighlight">
+\[X^\prime = X \cdot \left[ w_1,        \ldots, w_M \right]\in \mathbb R^{D\times M}\]</div>
+<p>The sum of all eigenvalues <span class="math notranslate nohighlight">\(\lambda_i\)</span> is the total amount of variance in the data and the variance explained
+by each principal component is given by <span class="math notranslate nohighlight">\(\lambda_i / \sum_j \lambda_j\)</span>.</p>
+<p>In the present context, <span class="math notranslate nohighlight">\(X\)</span> was transformed to have zero mean before applying PCA
+but that the variance was not standardized to 1.
+This was done because the features all are on the same scale and because the
+differences in the variance between the respective tonal pitch-classes is of particular
+interest here.</p>
+<dl class="footnote brackets">
+<dt class="label" id="f1"><span class="brackets"><a class="fn-backref" href="#id2">1</a></span></dt>
+<dd><p>While PCA is one of the most commonly used methods for dimensionality reduction, there are many others
+(sometimes relying on particular assumptions about the distribution of the data).
+In a qualitative comparison, <em>Locally Linear Embedding</em> <a class="bibtex reference internal" href="conclusion.html#roweis2000" id="id3">[RS00]</a> achieved a similar picture,
+whereas <em>t-distributed Stochastic Neighbor Embedding</em> (t-SNE) <a class="bibtex reference internal" href="conclusion.html#vandermaaten2008" id="id4">[VDMH08]</a>
+that does emphasize the local over the global structure of the data did not.
+We opted here for PCA because it preserves most
+of the global structure and the interpretation of the results is straight-forward.</p>
+</dd>
+</dl>
 </div>
 </div>
 

@@ -37,7 +37,7 @@ Among the contents are:
 
 
 .. toctree::
-   :maxdepth: 1
+   :maxdepth: 2
    :caption: Content
    :numbered:
 

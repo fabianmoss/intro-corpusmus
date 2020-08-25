@@ -428,18 +428,137 @@ And display the first rows of the data frame:
 
 \chapter{History of Tonality}
 \label{\detokenize{tonality:history-of-tonality}}\label{\detokenize{tonality::doc}}
+\noindent{\hspace*{\fill}\sphinxincludegraphics[width=1.000\linewidth]{{score}.jpg}\hspace*{\fill}}
+
+
+\section{Musical Pieces as Tonal Pitch\sphinxhyphen{}Class Distributions}
+\label{\detokenize{tonality:musical-pieces-as-tonal-pitch-class-distributions}}
+Musical pieces are composed of notes which have a certain pitch, a certain duration, and are
+located in a specific position in a piece. Here, we disregard both the location and the duration
+of notes and consider only the pitch dimension of musical notes when counting them. It is
+moreover common to consider notes to be equivalent if their respective pitches are related by
+one or multiple octaves, and thus to speak of \sphinxstyleemphasis{pitch classes}. Pitch classes come in two varieties.
+The first, most commonly used representation in computational musicology and music
+information retrieval, distinguishes twelve different pitch classes. This representation system
+also assumes the enharmonic equivalence of certain notes, e.g. \(\text{F}\sharp\)
+and \(\text{G}\flat\), \(\text{C}\flat\) and B, etc. The
+assumption of enharmonic equivalence is usually a consequence of music encoding formats
+that assume twelve\sphinxhyphen{}tone equal temperament, e.g. MIDI, in which enharmonically equivalent
+notes are indistinguishable. The assumptions of octave and enharmonic equivalence allow to
+represent pitch classes as residuals in \(\mathbb{Z}_{12}\) and to arrange them on a circle.
+This arrangement of pitch classes is shown in \hyperref[\detokenize{tonality:circle-of-fifths}]{Fig.\@ \ref{\detokenize{tonality:circle-of-fifths}}}, called the \sphinxstyleemphasis{circle of fifths}.
+
 \begin{figure}[htbp]
 \centering
 \capstart
 
-\noindent\sphinxincludegraphics[width=1.000\linewidth]{{score}.jpg}
-\caption{Photo by \sphinxhref{https://unsplash.com/@marius?utm\_source=unsplash\&amp;utm\_medium=referral\&amp;utm\_content=creditCopyText}{Marius Masalar}
-on \sphinxhref{https://unsplash.com/s/photos/scores?utm\_source=unsplash\&amp;utm\_medium=referral\&amp;utm\_content=creditCopyText}{Unsplash}.}\label{\detokenize{tonality:id5}}\end{figure}
+\noindent\sphinxincludegraphics[width=0.500\linewidth]{{circle_of_fifths}.png}
+\caption{Schematic depiction of the twelve neutral pitch\sphinxhyphen{}classes in \(\mathbb{Z}_{12}\) on the circle of fifths. One
+representative of each neutral pitch\sphinxhyphen{}class is shown as a tonal pitch\sphinxhyphen{}class label next to the
+node. The coloring of the nodes corresponds to the colors of the keys on the piano.}\label{\detokenize{tonality:id16}}\label{\detokenize{tonality:circle-of-fifths}}\end{figure}
+
+The numbers correspond to pitch classes in the order of fifths that can be transformed to chromatic ordering, the
+chromatic circle, by the mapping \(t \mapsto 7 t \mod 12\). Pitch classes that correspond to white
+keys on the piano are shown in white and pitch classes that correspond to black keys on the
+piano are shown in black. The second variant of pitch classes does not assume enharmonic
+equivalence but only that octave\sphinxhyphen{}related notes are equivalent, and is hence more general.
+This representation allows to arrange pitch classes on the \sphinxstyleemphasis{line of fifths} \sphinxcite{conclusion:temperley2000}.
+This linear of ordering tonal pitch\sphinxhyphen{}classes has been used by a number of music theorists, e.g.
+\sphinxcite{conclusion:weber1851}\sphinxcite{conclusion:riemann1900}\sphinxcite{conclusion:handschin1948}\sphinxcite{conclusion:bardos1956}. It is shown in \hyperref[\detokenize{tonality:line-of-fifths}]{Fig.\@ \ref{\detokenize{tonality:line-of-fifths}}}.
+
+\begin{figure}[htbp]
+\centering
+\capstart
+
+\noindent\sphinxincludegraphics[width=1.000\linewidth]{{line_of_fifths}.png}
+\caption{Schematic depiction of the tonal pitch\sphinxhyphen{}classes on the line of fifths mapped to integers in \(\mathbb{Z}\).}\label{\detokenize{tonality:id17}}\label{\detokenize{tonality:line-of-fifths}}\end{figure}
+
+\begin{sphinxadmonition}{tip}{Tip:}
+Think of other possible equivalence relations for pitch classes.
+E.g. which relation do we need to distinguish only two classes, high and low with respect to middle C?
+\end{sphinxadmonition}
+
+Following \sphinxcite{conclusion:temperley2000}, we call the first representation \sphinxstyleemphasis{neutral pitch\sphinxhyphen{}classes} and the
+second one \sphinxstyleemphasis{tonal pitch\sphinxhyphen{}classes}. The linear structure of the line of fifths allows to associate each
+tonal pitch\sphinxhyphen{}class with an integer \(k \in \mathbb{Z}\) such that this integer represents the number of perfect
+fifths that lie between this pitch\sphinxhyphen{}class and C (Gárdonyi and Nordhoff, 2002). In other words,
+the integer \(k \in \mathbb{Z}\) corresponds to the number of flats (negative integers) or sharps (positive
+integers) that the major key has in which this tonal pitch\sphinxhyphen{}class is the root. For example,
+D is mapped to +2 because D major has a key signature with two sharps, \(\text{A}\flat\) is mapped
+to \(-4\) because the key signature for \(\text{A}\flat\) major has four flats, and C is mapped to 0 because
+its key signature does not have any accidentals. Yet another benefit of this representation
+can be seen in the way in which we associate each tonal pitch\sphinxhyphen{}class with a color. Positive
+integers (‘sharpened’ tonal pitch\sphinxhyphen{}classes) are associated with increasingly darker shades of
+red, negative integers are associated with increasingly darker shades of blue (‘flattened’ tonal
+pitch\sphinxhyphen{}classes), and C is associated with white as the neutral origin of the line of fifths. This
+color mapping is used throughout this part. The line of fifths does not only contain all tonal
+pitch\sphinxhyphen{}classes but also a number of central musical scales. For example, pentatonic scales are
+segments of length 4 (containing five pitch classes) on the line of fifths, e.g. from \(\text{G}\flat\) to \(\text{B}\flat\),
+diatonic scales are defined by segments of lenght 6, e.g. from F to B, the early extensions of
+the natural diatonic scale by \(\text{B}\flat\) and \(\text{F}\sharp\)
+correspond to the segment spanning the eight fifths on
+the line between these two tonal pitch\sphinxhyphen{}classes, and the two whole\sphinxhyphen{}tone scales correspond to
+the odd and even numbers, respectively. Theoretically, the line of fifths extends to infinity in
+both directions but in actual compositions only a small segment of it is used. In the corpus
+that is used here, we consider only the segment from \(\text{F}\flat\flat\) to \(\text{B}\sharp\sharp\)
+because no piece in the corpus
+contains tonal pitch\sphinxhyphen{}classes outside this range. The vocabulary size of the corpus is thus
+\(V = 35\), consisting of the seven natural pitch\sphinxhyphen{}classes F, C, G, D, A, E, B with two, one, or zero
+sharps or flats, respectively. While the transformation of tonal into neutral pitch\sphinxhyphen{}classes is
+achieved by deterministically mapping a tonal pitch\sphinxhyphen{}class \(t \in \mathbb{Z}\) to a neutral pitch\sphinxhyphen{}class
+\(t \mapsto t \mod 12 \in \mathbb{Z}_{12}\) (in fifths ordering), the reverse direction involves some kind of inference and is
+called the problem of pitch spelling (\sphinxcite{conclusion:temperley2001}\sphinxcite{conclusion:cambouropoulos2003}\sphinxcite{conclusion:stoddard2004}\sphinxcite{conclusion:chew2005}\sphinxcite{conclusion:meredith2006}).
+
+helix
+
+Due to the encoding of the corpus, we adopt the
+representation of pieces as bags of notes (see Section\textasciitilde{}ref\{sec:bagofnotes\})
+and represent each one as a distribution over the \(V=35\) tonal pitch\sphinxhyphen{}classes.
+That is, in the corpus used here with \(D=2012\) pieces, the tonal pitch\sphinxhyphen{}class distribution of a musical piece \(x_d\)
+is given by the relative frequencies of the tonal pitch class in that piece, for \(d\in \{1,\ldots,D\}\).
+Each piece is thus described by a \(V\)\sphinxhyphen{}dimensional vector, \(x_d \in \mathbb R^V, \forall d \in\{1,\ldots,D\}\),
+containing positive real numbers that sum to 1.
+In this chapter, we do not make any further assumptions about the process that generated
+this distribution and will postpone these considerations until Chapter\textasciitilde{}ref\{chap:tonal\_profiles\}.
+
+In this view, pieces simply correspond to points in the \(V - 1\)\sphinxhyphen{}simplex
+\begin{equation*}
+\begin{split}\Delta^{V-1} =       \left\{ x_d \in \mathbb{R}^V
+\,\middle\vert\, \sum_{i=1}^V x_{d,i} = 1;\; x_{d,i}\geq 0 \right\}.\end{split}
+\end{equation*}
+In this space, those pieces with very different tonal pitch\sphinxhyphen{}class distributions will be very distant,
+whereas pieces that have similar tonal pitch\sphinxhyphen{}class distributions will be closer to one another and form clusters
+in the \(V-1\)\sphinxhyphen{}simplex.
+It is important to note that the bag\sphinxhyphen{}of\sphinxhyphen{}notes representation relies on the assumption that the \(V\) dimensions are independent,
+meaning that this model does not \sphinxstyleemphasis{a priori} assume any particular order between the tonal pitch\sphinxhyphen{}classes.
+
+The average tonal pitch\sphinxhyphen{}class distribution of all pieces in the corpus is shown in Figure\textasciitilde{}ref\{fig:pca\_mean\}.
+Figure\textasciitilde{}ref\{fig:tpc\_mean\_dist\_periods\} in the appendix shows this distribution separately
+for each century from 1361 to 1943.
+Although we know that one can in principle order all tonal pitch\sphinxhyphen{}classes on the line of fifths
+(\hyperref[\detokenize{tonality:line-of-fifths}]{Fig.\@ \ref{\detokenize{tonality:line-of-fifths}}}), we do not incorporate this assumption into the model but
+will show instead that it can be inferred from the data.
 
 
-\section{Principle Component Analysis}
+\subsection{Distributions of TPCs}
+\label{\detokenize{tonality:distributions-of-tpcs}}
+What are (discrete) distributions?
+
+entropy
+
+\sphinxstylestrong{Hypothesis: similar pieces have similar distributions}
+
+operationalization: distances in vector space
+
+Assumption (for coloring): tonal center is approximated by most frequent note
+
+Taking tonal spaces into account: the line of fifths (dimensionality reduction, clustering, t\sphinxhyphen{}SNE, PCA)
+
+
+\subsection{Principle Component Analysis}
 \label{\detokenize{tonality:principle-component-analysis}}
-Since the dimensionality of \(\Delta^{V-1}\) is 35, it is impossible to visualize
+Since the dimensionality of \(\Delta^{V-1}\) is
+\(|\{\text{C}, \text{D}, \text{E}, \text{F}, \text{G}, \text{A}, \text{B}\}| \cdot |\{\flat\flat, \flat, \natural, \sharp, \sharp\sharp\}| = 35\), it is impossible to visualize
 this space and pieces in it to see whether their arrangement contains any meaningful information.
 We address this problem by using a method for \sphinxstyleemphasis{dimensionality reduction}
 called \sphinxstyleemphasis{Principal Component Analysis} (PCA) \sphinxcite{conclusion:bishop2006}
@@ -497,6 +616,14 @@ differences in the variance between the respective tonal pitch\sphinxhyphen{}cla
 interest here.
 
 
+\section{Historical Development}
+\label{\detokenize{tonality:historical-development}}
+historical expansion on line of fifths,
+
+
+\subsection{LOWESS}
+\label{\detokenize{tonality:lowess}}
+
 \chapter{Malian Percussion Music}
 \label{\detokenize{mali_percussion:malian-percussion-music}}\label{\detokenize{mali_percussion::doc}}
 
@@ -525,14 +652,24 @@ as well as statistics, data analysis and visualization.
 \begin{sphinxthebibliography}{MNHM19}
 \bibitem[Bis06]{conclusion:bishop2006}
 Christopher M. Bishop. \sphinxstyleemphasis{Pattern Recognition and Machine Learning}. Springer, 2006.
+\bibitem[Bar56]{conclusion:bardos1956}
+Layos Bárdos. Natürliche tonsysteme: methode ihrer messung. In B. Rajeczky and L. Vargyas, editors, \sphinxstyleemphasis{Studia Memoriae Belae Bartók Sacra}, pages 209\textendash{}\textendash{}248. Akadémiai Kiadó, 1956.
+\bibitem[Cam03]{conclusion:cambouropoulos2003}
+E. Cambouropoulos. Pitch spelling: a computational model. \sphinxstyleemphasis{Music Perception: An Interdisciplinary Journal}, 20(4):411\textendash{}429, 2003. \sphinxhref{https://doi.org/10.1525/mp.2003.20.4.411}{doi:10.1525/mp.2003.20.4.411}.
+\bibitem[CC05]{conclusion:chew2005}
+E. Chew and Y.\sphinxhyphen{}C. Chen. Real\sphinxhyphen{}time pitch spelling using the spiral array. \sphinxstyleemphasis{Computer Music Journal}, 2005. \sphinxhref{https://doi.org/10.1162/0148926054094378}{doi:10.1162/0148926054094378}.
 \bibitem[Coo06]{conclusion:cook2006}
 Nicholas Cook. Border Crossings: A Commentary on Henkjan Honing’s “On the Growing Role of Observation, Formalization and Experimental Method in Musicology”. \sphinxstyleemphasis{Empirical Musicology Review}, 1(1):7\textendash{}11, 2006.
+\bibitem[Han48]{conclusion:handschin1948}
+Jacques Handschin. \sphinxstyleemphasis{Der Toncharakter: Eine Einführung in die Tonpsychologie}. Atlantis Verlag, 1948.
 \bibitem[Hon06]{conclusion:honing2006}
 Henkjan Honing. On the Growing Role of Observation, Formalization and Experimental Method in Musicology. \sphinxstyleemphasis{Empirical Musicology Review}, 1(1):2\textendash{}6, 2006.
 \bibitem[Hur13]{conclusion:huron2013}
 David Huron. On the Virtuous and the Vexatious in an Age of Big Data. \sphinxstyleemphasis{Music Perception: An Interdisciplinary Journal}, 31(1):4\textendash{}9, 2013.
 \bibitem[Mar16]{conclusion:marsden2016}
 Alan Marsden. \sphinxstyleemphasis{Music Analysis by Computer: Ontology and Epistemology}. Springer, 2016.
+\bibitem[Mer06]{conclusion:meredith2006}
+David Meredith. The ps13 pitch spelling algorithm. \sphinxstyleemphasis{Journal of New Music Research}, 35(2):121\textendash{}159, 2006. \sphinxhref{https://doi.org/10.1080/09298210600834961}{doi:10.1080/09298210600834961}.
 \bibitem[MNHM19]{conclusion:moss2019}
 Fabian C. Moss, Markus Neuwirth, Daniel Harasim, and Rohrmeier Martin. Statistical characteristics of tonal harmony: a corpus study of beethoven’s string quartets. \sphinxstyleemphasis{PLoS ONE}, 14(6):e0217242, 2019. \sphinxhref{https://doi.org/10.1371/journal.pone.0217242}{doi:10.1371/journal.pone.0217242}.
 \bibitem[MSFR20]{conclusion:moss2020}
@@ -545,16 +682,26 @@ Markus Neuwirth and Martin Rohrmeier. Wie wissenschaftlich muss Musiktheorie sei
 Martin Pfleiderer. \sphinxstyleemphasis{Inside the Jazzomat: New Perspectives for Jazz Research}. Schott, 2017.
 \bibitem[Pug15]{conclusion:pugin2005}
 Laurent Pugin. The challenge of data in digital musicology. \sphinxstyleemphasis{Frontiers in Digital Humanities}, 2(4):1\textendash{}3, 2015. \sphinxhref{https://doi.org/10.3389/fdigh.2015.00004}{doi:10.3389/fdigh.2015.00004}.
+\bibitem[Rie00]{conclusion:riemann1900}
+Hugo Riemann. \sphinxstyleemphasis{Musik\sphinxhyphen{}Lexikon}. Max Hesse Verlag, 5 edition, 1900.
 \bibitem[RS00]{conclusion:roweis2000}
 S. T. Roweis and L. K. Saul. Nonlinear dimensionality reduction by locally linear embedding. \sphinxstyleemphasis{Science}, 290(5500):2323\textendash{}2326, 2000. \sphinxhref{https://doi.org/10.1126/science.290.5500.2323}{doi:10.1126/science.290.5500.2323}.
 \bibitem[Sch16]{conclusion:schaffer2016}
 Kris Schaffer. What is computational musicology? online, 2016. URL: \sphinxurl{https://medium.com/@krisshaffer/what-is-computational-musicology-f25ee0a65102}.
 \bibitem[SVJ+20]{conclusion:schaffer2020}
 Kris Schaffer, Esther Vasiete, Brandon Jacquez, Aaron Davis, Diego Escalante, Calvin Hicks, Joshua McCann, Camille Noufi, and Paul Salminen. A cluster analysis of harmony in the McGill Billboard dataset. \sphinxstyleemphasis{Empirical Musicology Review}, 14(3\textendash{}4):146\textendash{}162, 2020. \sphinxhref{https://doi.org/10.18061/emr.v14i3-4.5576}{doi:10.18061/emr.v14i3\sphinxhyphen{}4.5576}.
+\bibitem[SRU04]{conclusion:stoddard2004}
+J. Stoddard, C. Raphael, and P. E. Utgoff. Well\sphinxhyphen{}tempered spelling: a key\sphinxhyphen{}invariant pitch spelling algorithm. In \sphinxstyleemphasis{Proceedings of the 5th International Conference on Music Information Retrieval (ISMIR 2004)}. 2004. \sphinxhref{https://doi.org/10.1.1.100.9663}{doi:10.1.1.100.9663}.
+\bibitem[Tem00]{conclusion:temperley2000}
+David Temperley. The line of fifths. \sphinxstyleemphasis{Music Analysis}, 19(3):289\textendash{}319, 2000. \sphinxhref{https://doi.org/10.2307/854457}{doi:10.2307/854457}.
+\bibitem[Tem01]{conclusion:temperley2001}
+David Temperley. \sphinxstyleemphasis{The Cognition of Basic Musical Structures}. MIT Press, 2001.
 \bibitem[TV13]{conclusion:temperley2013}
 David Temperley and Leigh VanHandel. Introduction to the Special Issue on Corpus Methods. \sphinxstyleemphasis{Music Perception: An Interdisciplinary Journal}, 31(1):1\textendash{}3, 2013.
 \bibitem[VDMH08]{conclusion:vandermaaten2008}
 L. Van Der Maaten and G. Hinton. Visualizing data using t\sphinxhyphen{}SNE. \sphinxstyleemphasis{Journal of Machine Learning Research}, 9(November):2579\textendash{}2605, 2008.
+\bibitem[Web51]{conclusion:weber1851}
+Gottfried Weber. \sphinxstyleemphasis{The Theory of Musical Composition, Treated with a View to a Naturally Consecutive Arrangement of Topics}. Messrs. Robert Cocks and Co., 1851.
 \end{sphinxthebibliography}
 
 

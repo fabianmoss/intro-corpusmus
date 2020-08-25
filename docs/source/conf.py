@@ -69,4 +69,4 @@ html_static_path = ['_static']
 # to enable unicode usage
 # latex_engine = 'xelatex'
 
-numfig = True
+numfig = True 

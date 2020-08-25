@@ -11,4 +11,4 @@ Billboard Pop Charts
    Photo by `israel palacio <https://unsplash.com/@othentikisra?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText>`_ 
    on `Unsplash <https://unsplash.com/s/photos/music?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText>`_.
 
-Clustering analysis in :cite:`Schaffer2020`.
+Clustering analysis in :cite:`Schaffer2020`. 

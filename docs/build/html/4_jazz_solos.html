@@ -242,8 +242,8 @@ As all the corpora that we deal with here, it is freely available on the interne
 </table>
 <p>Here, we focus on the main table <code class="docutils literal notranslate"><span class="pre">melody</span></code>. First, we download the entire database from <a class="reference external" href="https://jazzomat.hfm-weimar.de/download/download.html">https://jazzomat.hfm-weimar.de/download/download.html</a>
 (under “Weimar Jazz Database”) and save it as the file <code class="docutils literal notranslate"><span class="pre">wjazz.db</span></code>.</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">sqlite3</span>
-<span class="kn">import</span> <span class="nn">pandas</span> <span class="kn">as</span> <span class="nn">pd</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">sqlite3</span> <span class="c1"># for working with databases</span>
+<span class="kn">import</span> <span class="nn">pandas</span> <span class="kn">as</span> <span class="nn">pd</span> <span class="c1"># for working with tabular data</span>
 
 <span class="c1"># create connection to database</span>
 <span class="n">conn</span> <span class="o">=</span> <span class="n">sqlite3</span><span class="o">.</span><span class="n">connect</span><span class="p">(</span><span class="s2">&quot;wjazzd.db&quot;</span><span class="p">)</span>
@@ -252,6 +252,10 @@ As all the corpora that we deal with here, it is freely available on the interne
 <span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_sql</span><span class="p">(</span><span class="s2">&quot;SELECT * FROM melody&quot;</span><span class="p">,</span> <span class="n">con</span><span class="o">=</span><span class="n">conn</span><span class="p">)</span>
 
 <span class="n">df</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+</pre></div>
+</div>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">df</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+<span class="go">output</span>
 </pre></div>
 </div>
 <p>The part of the code <code class="docutils literal notranslate"><span class="pre">SELECT</span> <span class="pre">*</span> <span class="pre">FROM</span> <span class="pre">melody</span></code> reads “Select all entries from the table ‘melody’”.</p>

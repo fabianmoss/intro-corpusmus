@@ -51,8 +51,8 @@ Here, we focus on the main table ``melody``. First, we download the entire datab
 
 .. code-block:: python
 
-   import sqlite3
-   import pandas as pd 
+   import sqlite3 # for working with databases
+   import pandas as pd # for working with tabular data
 
    # create connection to database
    conn = sqlite3.connect("wjazzd.db")
@@ -61,6 +61,9 @@ Here, we focus on the main table ``melody``. First, we download the entire datab
    df = pd.read_sql("SELECT * FROM melody", con=conn)
 
    df.head()
+
+>>> df.head()
+output
 
 The part of the code ``SELECT * FROM melody`` reads "Select all entries from the table 'melody'".
 

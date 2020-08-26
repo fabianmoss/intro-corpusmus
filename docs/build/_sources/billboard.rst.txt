@@ -1,4 +1,10 @@
-Billboard Pop Charts
---------------------
+Harmonic Clusters in Pop Charts
+===============================
 
-- Schaffer et al. (2020). A cluster analysis of harmony in the McGill Billboard dataset. *Empirical Musicology Review* 14(3--4), 146--162. `http://dx.doi.org/10.18061/emr.v14i3-4.5576 <http://dx.doi.org/10.18061/emr.v14i3-4.5576>`_
+.. image:: _static/pop.jpg
+   :width: 100%
+   :align: center
+   :alt: Photo by `israel palacio <https://unsplash.com/@othentikisra?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText>`_ 
+         on `Unsplash <https://unsplash.com/s/photos/music?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText>`_.
+
+Clustering analysis in :cite:`Schaffer2020`. 

@@ -1,5 +1,5 @@
-Brazilian Choro
----------------
+Harmony and Form in Brazilian Choro
+===================================
 
 .. figure:: _static/choro.jpg
    :width: 100%
@@ -10,7 +10,7 @@ Brazilian Choro
    on the 50th anniversary of his death in Sao Paulo, Brazil. (c) Governo do Estado de Sao Paulo / CC BY 2.0
 
 Data
-....
+----
 
 The *Choro Songbook Corpus* contains transcriptions of the chord symbols
 of 295 Choro pieces :cite:`Moss2020`. It is available on Zenodo_ or Github_.

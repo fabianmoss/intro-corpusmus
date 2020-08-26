@@ -1,5 +1,5 @@
-Electronic Music 1950-1990
---------------------------
+Electronic Music 1950--1990
+===========================
 
 .. figure:: _static/electro.jpg
    :width: 100%

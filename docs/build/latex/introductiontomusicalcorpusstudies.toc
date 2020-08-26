@@ -1,9 +1,7 @@
 \babel@toc {english}{}
 \contentsline {chapter}{\numberline {1}Organization}{3}{chapter.1}%
-\contentsline {section}{\numberline {1.1}Schedule}{3}{section.1.1}%
-\contentsline {section}{\numberline {1.2}Credits}{5}{section.1.2}%
-\contentsline {chapter}{\numberline {2}Introduction / Background}{7}{chapter.2}%
-\contentsline {section}{\numberline {2.1}What are Musical Corpus Studies?}{7}{section.2.1}%
+\contentsline {chapter}{\numberline {2}Introduction to Musical Corpus Studies}{7}{chapter.2}%
+\contentsline {section}{\numberline {2.1}What are Musical Corpus Studies?}{8}{section.2.1}%
 \contentsline {section}{\numberline {2.2}Epistemological goals}{8}{section.2.2}%
 \contentsline {section}{\numberline {2.3}Issues}{8}{section.2.3}%
 \contentsline {section}{\numberline {2.4}MCS and traditional musicology}{8}{section.2.4}%
@@ -13,16 +11,16 @@
 \contentsline {section}{\numberline {5.1}Access the data}{13}{section.5.1}%
 \contentsline {section}{\numberline {5.2}Harmonic Annotations}{13}{section.5.2}%
 \contentsline {section}{\numberline {5.3}Chord Transitions}{13}{section.5.3}%
-\contentsline {chapter}{\numberline {6}Billboard Pop Charts}{15}{chapter.6}%
-\contentsline {chapter}{\numberline {7}Brazilian Choro}{17}{chapter.7}%
+\contentsline {chapter}{\numberline {6}Harmonic Clusters in Pop Charts}{15}{chapter.6}%
+\contentsline {chapter}{\numberline {7}Harmony and Form in Brazilian Choro}{17}{chapter.7}%
 \contentsline {section}{\numberline {7.1}Data}{17}{section.7.1}%
-\contentsline {chapter}{\numberline {8}History of Tonality}{19}{chapter.8}%
+\contentsline {chapter}{\numberline {8}A Data\sphinxhyphen {}Driven History of Tonality}{19}{chapter.8}%
 \contentsline {section}{\numberline {8.1}Musical Pieces as Tonal Pitch\sphinxhyphen {}Class Distributions}{19}{section.8.1}%
 \contentsline {subsection}{\numberline {8.1.1}Distributions of TPCs}{21}{subsection.8.1.1}%
 \contentsline {subsection}{\numberline {8.1.2}Principle Component Analysis}{22}{subsection.8.1.2}%
 \contentsline {section}{\numberline {8.2}Historical Development}{22}{section.8.2}%
 \contentsline {subsection}{\numberline {8.2.1}LOWESS}{23}{subsection.8.2.1}%
 \contentsline {chapter}{\numberline {9}Malian Percussion Music}{25}{chapter.9}%
-\contentsline {chapter}{\numberline {10}Electronic Music 1950\sphinxhyphen {}1990}{27}{chapter.10}%
+\contentsline {chapter}{\numberline {10}Electronic Music 1950\textendash {}1990}{27}{chapter.10}%
 \contentsline {chapter}{\numberline {11}Conclusion}{29}{chapter.11}%
 \contentsline {chapter}{Bibliography}{31}{chapter*.3}%

@@ -1,5 +1,5 @@
-History of Tonality
-===================
+A Data-Driven History of Tonality
+=================================
 
 .. image:: _static/score.jpg
    :width: 100%

@@ -15,8 +15,11 @@ Introduction to Musical Corpus Studies
 
 .. rubric:: Welcome!
 
-These pages present the content of the course "Introduction to Musical Corpus Studies", 
-given at University of Cologne in Fall 2020. 
+These pages present the content of the course "Introduction to Musical Corpus Studies" at the `Institute of Musicology`_, 
+given at `University of Cologne`_ in Fall 2020. 
+
+.. _Institute of Musicology: http://musikwissenschaft.phil-fak.uni-koeln.de/
+.. _University of Cologne: https://uni-koeln.de/
 
 In the last two decades *Musical Corpus Studies* evolved from a niche discipline into a veritable research area.
 The growing availability of digital and digitized musical data as well as the application and development of modern 
@@ -29,11 +32,11 @@ respective specific viewpoints and perspectives.
 
 This course offers a fundamental and practical introduction into these topics. 
 It demonstrates, explores, and critically reflects central thematic areas and methods by means of a number of case studies.
-Among the contents are:
+In the engagement with these topics the course also introduces elementary methods from natural language and music processing, 
+as well as statistics, data analysis and visualization.
 
-.. **Voraussetzungen:**
-
-.. Das Seminar findet auf Deutsch statt, die Materialien sind allerdings größtenteils auf Englisch. Die Veranstaltung richtet sich an Studierende sowohl ohne als auch mit Programmierkenntnissen. Um die praktischen Übungen machen zu können, benötigen Sie ein Notebook (Windows/Mac/Linux). Sollten Sie keinen Zugang zu einem eigenen Gerät haben, kontaktieren Sie mich bitte frühzeitig!
+The course is aimed at students at the undergraduate level who have little or no empirical background and are curious
+about quantitative approaches to musicology.
 
 
 .. toctree::
@@ -41,11 +44,11 @@ Among the contents are:
    :caption: Content
    :numbered:
 
-   orga.rst
+   1_orga.rst
    
-   background.rst
-   folk_songs.rst
-   jazz_solos.rst
+   2_introduction.rst
+   3_folk_songs.rst
+   4_jazz_solos.rst
    beethoven_harmony.rst
    billboard.rst
    choro.rst
@@ -54,9 +57,6 @@ Among the contents are:
    electronic.rst
 
    conclusion.rst
-
-In the engagement with these topics the course also introduces elementary methods from natural language and music processing, 
-as well as statistics, data analysis and visualization.
 
 
 .. Indices and tables

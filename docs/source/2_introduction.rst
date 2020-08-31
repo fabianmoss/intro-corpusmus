@@ -1,5 +1,5 @@
-Introduction to Musical Corpus Studies
-======================================
+Introduction
+============
 
 .. image:: _static/abstract_bg.jpg
   :width: 100%
@@ -23,9 +23,13 @@ Focus of this course
 Programing introductions often boring.
 A lot of time lost in introducing basic concepts and techniques (important!)
 but quite remote from actual (!) applications. Examples are usually "toy examples" 
-and the transition to real-world applications is difficult. 
+that work well, but the transition to real-world applications is difficult. 
+Of course, the example studies discussed in this course work well, too.
+However, they are without exception taken from peer-reviewed, published, open access articles.
+They thus reflect actual, recent research questions that reflect current research. 
 
-This course takes the opposite approach. We will not introduce many specific 
+
+This course takes thus the opposite approach to "toy examples". We will not introduce many specific 
 programing concepts. The course rather showcases what is possible with musical corpus studies. 
 If this sparks your interest, it will be much easier to pick up the basics for yourself,
 knowing what they are *for* and being motivated intrinsically. 

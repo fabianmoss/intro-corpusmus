@@ -68,12 +68,12 @@
 \addto\captionsenglish{\renewcommand{\contentsname}{Content}}
 
 \usepackage{sphinxmessages}
-\setcounter{tocdepth}{1}
+\setcounter{tocdepth}{2}
 
 
 
 \title{Introduction to Musical Corpus Studies}
-\date{Aug 26, 2020}
+\date{Aug 31, 2020}
 \release{0.0.1}
 \author{Fabian C.\@{} Moss}
 \newcommand{\sphinxlogo}{\vbox{}}
@@ -121,9 +121,12 @@ about quantitative approaches to musicology.
 \chapter{Organization}
 \label{\detokenize{1_orga:organization}}\label{\detokenize{1_orga::doc}}
 
+\section{Overview}
+\label{\detokenize{1_orga:overview}}
+
 \begin{savenotes}\sphinxattablestart
 \centering
-\begin{tabular}[t]{|\X{10}{100}|\X{15}{100}|\X{15}{100}|\X{10}{100}|\X{25}{100}|\X{25}{100}|}
+\begin{tabulary}{\linewidth}[t]{|T|T|T|T|T|T|}
 \hline
 \sphinxstyletheadfamily 
 No.
@@ -269,10 +272,13 @@ Free group work
 Recapitulation and conclusion
 &\\
 \hline
-\end{tabular}
+\end{tabulary}
 \par
 \sphinxattableend\end{savenotes}
 
+
+\section{Credits}
+\label{\detokenize{1_orga:credits}}
 \begin{sphinxadmonition}{important}{Important:}
 Ich gehe in der Seminarplanung von 12 Semesterwochen à 2 SWS aus, für das gesamte Blockseminar also 24 SWS.
 Das Seminar wird mit 3 CP bewertet, was 90 Stunden aktiver Arbeit entspricht.
@@ -281,9 +287,45 @@ Die verbleibenden 18 SWS sind für die Lektüre der Fachliteratur vorgesehen.
 \end{sphinxadmonition}
 
 
-\chapter{Introduction to Musical Corpus Studies}
-\label{\detokenize{2_introduction:introduction-to-musical-corpus-studies}}\label{\detokenize{2_introduction::doc}}
+\chapter{Introduction}
+\label{\detokenize{2_introduction:introduction}}\label{\detokenize{2_introduction::doc}}
 \noindent{\hspace*{\fill}\sphinxincludegraphics[width=1.000\linewidth]{{abstract_bg}.jpg}\hspace*{\fill}}
+
+
+\section{About this course}
+\label{\detokenize{2_introduction:about-this-course}}
+
+\subsection{About me}
+\label{\detokenize{2_introduction:about-me}}\begin{itemize}
+\item {} 
+Music and Mathematics education (Uni \& HfMT Köln)
+
+\item {} 
+MA Musicolgy (HfMT Köln)
+
+\item {} 
+PhD Digital Humanities (EPFL)
+
+\end{itemize}
+
+
+\subsection{Focus of this course}
+\label{\detokenize{2_introduction:focus-of-this-course}}
+Programing introductions often boring.
+A lot of time lost in introducing basic concepts and techniques (important!)
+but quite remote from actual (!) applications. Examples are usually “toy examples”
+that work well, but the transition to real\sphinxhyphen{}world applications is difficult.
+Of course, the example studies discussed in this course work well, too.
+However, they are without exception taken from peer\sphinxhyphen{}reviewed, published, open access articles.
+They thus reflect actual, recent research questions that reflect current research.
+
+This course takes thus the opposite approach to “toy examples”. We will not introduce many specific
+programing concepts. The course rather showcases what is possible with musical corpus studies.
+If this sparks your interest, it will be much easier to pick up the basics for yourself,
+knowing what they are \sphinxstyleemphasis{for} and being motivated intrinsically.
+If you are not particularly interested in doing this kind of work yourself,
+you will still see a broad range of applications that are much more useful to you than
+learning (or not learning) Python basics.
 
 
 \section{What are Musical Corpus Studies?}
@@ -309,6 +351,48 @@ tbc
 \chapter{Folk Songs and the Melodic Arc}
 \label{\detokenize{3_folk_songs:folk-songs-and-the-melodic-arc}}\label{\detokenize{3_folk_songs::doc}}
 Huron… / MusThe Tutorial
+
+
+\begin{savenotes}\sphinxattablestart
+\centering
+\sphinxcapstartof{table}
+\sphinxthecaptionisattop
+\sphinxcaption{CSV\sphinxhyphen{}TABLE TITLE}\label{\detokenize{3_folk_songs:id1}}
+\sphinxaftertopcaption
+\begin{tabulary}{\linewidth}[t]{|T|T|T|}
+\hline
+\sphinxstyletheadfamily 
+col1
+&\sphinxstyletheadfamily 
+col2
+&\sphinxstyletheadfamily 
+col3
+\\
+\hline
+val11
+&
+val12
+&
+val13
+\\
+\hline
+val21
+&
+val22
+&
+val23
+\\
+\hline
+val31
+&
+val32
+&
+val33
+\\
+\hline
+\end{tabulary}
+\par
+\sphinxattableend\end{savenotes}
 
 
 \chapter{Solos in the \sphinxstyleemphasis{Weimar Jazz Database}}
@@ -476,6 +560,13 @@ n\sphinxhyphen{}grams
 
 Clustering analysis in \sphinxcite{conclusion:schaffer2020}.
 
+\begin{sphinxVerbatim}[commandchars=\\\{\}]
+\PYG{k}{def} \PYG{n+nf}{zipf\PYGZus{}mandelbrot}\PYG{p}{(}\PYG{n}{x}\PYG{p}{,} \PYG{n}{a}\PYG{p}{,} \PYG{n}{b}\PYG{p}{,} \PYG{n}{c}\PYG{p}{)}\PYG{p}{:}
+   \PYG{l+s+sd}{\PYGZdq{}\PYGZdq{}\PYGZdq{}Zipf\PYGZhy{}Mandelbrot function of `x` given parameters `a`, `b`, `c`.\PYGZdq{}\PYGZdq{}\PYGZdq{}}
+   \PYG{n}{z} \PYG{o}{=} \PYG{n}{a} \PYG{o}{/} \PYG{p}{(} \PYG{p}{(}\PYG{n}{b} \PYG{o}{+} \PYG{n}{x}\PYG{p}{)}\PYG{o}{*}\PYG{o}{*}\PYG{n}{c} \PYG{p}{)}
+   \PYG{k}{return} \PYG{n}{z}
+\end{sphinxVerbatim}
+
 
 \chapter{Harmony and Form in Brazilian Choro}
 \label{\detokenize{choro:harmony-and-form-in-brazilian-choro}}\label{\detokenize{choro::doc}}
@@ -497,7 +588,8 @@ See this link for a performance of the piece “\sphinxhref{https://youtu.be/Huu
 As before, we can import our data from a public resource.
 
 \begin{sphinxVerbatim}[commandchars=\\\{\}]
-\PYG{n}{df} \PYG{o}{=} \PYG{n}{pd}\PYG{o}{.}\PYG{n}{read\PYGZus{}csv}\PYG{p}{(}\PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{https://raw.githubusercontent.com/DCMLab/choro/1.1/data/choro.tsv}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{,} \PYG{n}{sep}\PYG{o}{=}\PYGZbs{}\PYG{n}{t}\PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{)}
+\PYG{n}{url} \PYG{o}{=} \PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{https://raw.githubusercontent.com/DCMLab/choro/1.1/data/choro.tsv}\PYG{l+s+s2}{\PYGZdq{}}
+\PYG{n}{df} \PYG{o}{=} \PYG{n}{pd}\PYG{o}{.}\PYG{n}{read\PYGZus{}csv}\PYG{p}{(}\PYG{n}{url}\PYG{p}{,} \PYG{n}{sep}\PYG{o}{=}\PYGZbs{}\PYG{n}{t}\PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{)}
 \end{sphinxVerbatim}
 
 And display the first rows of the data frame:
@@ -543,9 +635,9 @@ chromatic circle, by the mapping \(t \mapsto 7 t \mod 12\). Pitch classes that c
 keys on the piano are shown in white and pitch classes that correspond to black keys on the
 piano are shown in black. The second variant of pitch classes does not assume enharmonic
 equivalence but only that octave\sphinxhyphen{}related notes are equivalent, and is hence more general.
-This representation allows to arrange pitch classes on the \sphinxstyleemphasis{line of fifths} \DUrole{bibtex}{{[}Temperley2000{]}}.
+This representation allows to arrange pitch classes on the \sphinxstyleemphasis{line of fifths} \sphinxcite{conclusion:temperley2000}.
 This linear of ordering tonal pitch\sphinxhyphen{}classes has been used by a number of music theorists, e.g.
-\DUrole{bibtex}{{[}Weber1851{]}}\DUrole{bibtex}{{[}Riemann1900{]}}\DUrole{bibtex}{{[}Handschin1948{]}}\DUrole{bibtex}{{[}Bardos1956{]}}. It is shown in \hyperref[\detokenize{tonality:line-of-fifths}]{Fig.\@ \ref{\detokenize{tonality:line-of-fifths}}}.
+\sphinxcite{conclusion:weber1851}\sphinxcite{conclusion:riemann1900}\sphinxcite{conclusion:handschin1948}\sphinxcite{conclusion:bardos1956}. It is shown in \hyperref[\detokenize{tonality:line-of-fifths}]{Fig.\@ \ref{\detokenize{tonality:line-of-fifths}}}.
 
 \begin{figure}[htbp]
 \centering
@@ -559,7 +651,7 @@ Think of other possible equivalence relations for pitch classes.
 E.g. which relation do we need to distinguish only two classes, high and low with respect to middle C?
 \end{sphinxadmonition}
 
-Following \DUrole{bibtex}{{[}Temperley2000{]}}, we call the first representation \sphinxstyleemphasis{neutral pitch\sphinxhyphen{}classes} and the
+Following \sphinxcite{conclusion:temperley2000}, we call the first representation \sphinxstyleemphasis{neutral pitch\sphinxhyphen{}classes} and the
 second one \sphinxstyleemphasis{tonal pitch\sphinxhyphen{}classes}. The linear structure of the line of fifths allows to associate each
 tonal pitch\sphinxhyphen{}class with an integer \(k \in \mathbb{Z}\) such that this integer represents the number of perfect
 fifths that lie between this pitch\sphinxhyphen{}class and C (Gárdonyi and Nordhoff, 2002). In other words,
@@ -588,7 +680,7 @@ contains tonal pitch\sphinxhyphen{}classes outside this range. The vocabulary si
 sharps or flats, respectively. While the transformation of tonal into neutral pitch\sphinxhyphen{}classes is
 achieved by deterministically mapping a tonal pitch\sphinxhyphen{}class \(t \in \mathbb{Z}\) to a neutral pitch\sphinxhyphen{}class
 \(t \mapsto t \mod 12 \in \mathbb{Z}_{12}\) (in fifths ordering), the reverse direction involves some kind of inference and is
-called the problem of pitch spelling (\DUrole{bibtex}{{[}Temperley2001{]}}\DUrole{bibtex}{{[}Cambouropoulos2003{]}}\DUrole{bibtex}{{[}Stoddard2004{]}}\DUrole{bibtex}{{[}Chew2005{]}}\DUrole{bibtex}{{[}Meredith2006{]}}).
+called the problem of pitch spelling (\sphinxcite{conclusion:temperley2001}\sphinxcite{conclusion:cambouropoulos2003}\sphinxcite{conclusion:stoddard2004}\sphinxcite{conclusion:chew2005}\sphinxcite{conclusion:meredith2006}).
 
 helix
 
@@ -642,7 +734,7 @@ Since the dimensionality of \(\Delta^{V-1}\) is
 \(|\{\text{C}, \text{D}, \text{E}, \text{F}, \text{G}, \text{A}, \text{B}\}| \cdot |\{\flat\flat, \flat, \natural, \sharp, \sharp\sharp\}| = 35\), it is impossible to visualize
 this space and pieces in it to see whether their arrangement contains any meaningful information.
 We address this problem by using a method for \sphinxstyleemphasis{dimensionality reduction}
-called \sphinxstyleemphasis{Principal Component Analysis} (PCA) \DUrole{bibtex}{{[}Bishop2006{]}}
+called \sphinxstyleemphasis{Principal Component Analysis} (PCA) \sphinxcite{conclusion:bishop2006}
 that projects the data into a lower\sphinxhyphen{}dimensional space while at the same time maintaining
 as many characteristic properties of the original space as possible.
 PCA thus can aid to achieve a better understanding of
@@ -650,8 +742,8 @@ the global structure of the space. %
 \begin{footnote}[1]\sphinxAtStartFootnote
 While PCA is one of the most commonly used methods for dimensionality reduction, there are many others
 (sometimes relying on particular assumptions about the distribution of the data).
-In a qualitative comparison, \sphinxstyleemphasis{Locally Linear Embedding} \DUrole{bibtex}{{[}Roweis2000{]}} achieved a similar picture,
-whereas \sphinxstyleemphasis{t\sphinxhyphen{}distributed Stochastic Neighbor Embedding} (t\sphinxhyphen{}SNE) \DUrole{bibtex}{{[}VanDerMaaten2008{]}}
+In a qualitative comparison, \sphinxstyleemphasis{Locally Linear Embedding} \sphinxcite{conclusion:roweis2000} achieved a similar picture,
+whereas \sphinxstyleemphasis{t\sphinxhyphen{}distributed Stochastic Neighbor Embedding} (t\sphinxhyphen{}SNE) \sphinxcite{conclusion:vandermaaten2008}
 that does emphasize the local over the global structure of the data did not.
 We opted here for PCA because it preserves most
 of the global structure and the interpretation of the results is straight\sphinxhyphen{}forward.
@@ -728,14 +820,26 @@ Final thoughts, critical discussion…
 
 
 \begin{sphinxthebibliography}{PFAbesse}
+\bibitem[Bis06]{conclusion:bishop2006}
+Christopher M. Bishop. \sphinxstyleemphasis{Pattern Recognition and Machine Learning}. Springer, 2006.
+\bibitem[Bar56]{conclusion:bardos1956}
+Layos Bárdos. Natürliche tonsysteme: methode ihrer messung. In B. Rajeczky and L. Vargyas, editors, \sphinxstyleemphasis{Studia Memoriae Belae Bartók Sacra}, pages 209\textendash{}\textendash{}248. Akadémiai Kiadó, 1956.
+\bibitem[Cam03]{conclusion:cambouropoulos2003}
+E. Cambouropoulos. Pitch spelling: a computational model. \sphinxstyleemphasis{Music Perception: An Interdisciplinary Journal}, 20(4):411\textendash{}429, 2003. \sphinxhref{https://doi.org/10.1525/mp.2003.20.4.411}{doi:10.1525/mp.2003.20.4.411}.
+\bibitem[CC05]{conclusion:chew2005}
+E. Chew and Y.\sphinxhyphen{}C. Chen. Real\sphinxhyphen{}time pitch spelling using the spiral array. \sphinxstyleemphasis{Computer Music Journal}, 2005. \sphinxhref{https://doi.org/10.1162/0148926054094378}{doi:10.1162/0148926054094378}.
 \bibitem[Coo06]{conclusion:cook2006}
 Nicholas Cook. Border Crossings: A Commentary on Henkjan Honing’s “On the Growing Role of Observation, Formalization and Experimental Method in Musicology”. \sphinxstyleemphasis{Empirical Musicology Review}, 1(1):7\textendash{}11, 2006.
+\bibitem[Han48]{conclusion:handschin1948}
+Jacques Handschin. \sphinxstyleemphasis{Der Toncharakter: Eine Einführung in die Tonpsychologie}. Atlantis Verlag, 1948.
 \bibitem[Hon06]{conclusion:honing2006}
 Henkjan Honing. On the Growing Role of Observation, Formalization and Experimental Method in Musicology. \sphinxstyleemphasis{Empirical Musicology Review}, 1(1):2\textendash{}6, 2006.
 \bibitem[Hur13]{conclusion:huron2013}
-David Huron. On the Virtuous and the Vexatious in an Age of Big Data. \sphinxstyleemphasis{Music Perception: An Interdisciplinary Journal}, 31(1):4\textendash{}9, 2013.
+David Huron. On the Virtuous and the Vexatious in an Age of Big Data. \sphinxstyleemphasis{Music Perception: An Interdisciplinary Journal}, 31(1):4\textendash{}9, 2013. \sphinxhref{https://doi.org/10.1525/mp.2013.31.1.4}{doi:10.1525/mp.2013.31.1.4}.
 \bibitem[Mar16]{conclusion:marsden2016}
 Alan Marsden. \sphinxstyleemphasis{Music Analysis by Computer: Ontology and Epistemology}. Springer, 2016.
+\bibitem[Mer06]{conclusion:meredith2006}
+David Meredith. The ps13 pitch spelling algorithm. \sphinxstyleemphasis{Journal of New Music Research}, 35(2):121\textendash{}159, 2006. \sphinxhref{https://doi.org/10.1080/09298210600834961}{doi:10.1080/09298210600834961}.
 \bibitem[MNHM19]{conclusion:moss2019}
 Fabian C. Moss, Markus Neuwirth, Daniel Harasim, and Rohrmeier Martin. Statistical characteristics of tonal harmony: a corpus study of beethoven’s string quartets. \sphinxstyleemphasis{PLoS ONE}, 14(6):e0217242, 2019. \sphinxhref{https://doi.org/10.1371/journal.pone.0217242}{doi:10.1371/journal.pone.0217242}.
 \bibitem[MSFR20]{conclusion:moss2020}
@@ -748,12 +852,26 @@ Markus Neuwirth and Martin Rohrmeier. Wie wissenschaftlich muss Musiktheorie sei
 Martin Pfleiderer, Klaus Frieler, Jakob Abeßer, Wolf\sphinxhyphen{}Georg Zaddach, and Benjamin Burkhart, editors. \sphinxstyleemphasis{Inside the Jazzomat \sphinxhyphen{} New Perspectives for Jazz Research}. Schott Campus, 2017.
 \bibitem[Pug15]{conclusion:pugin2005}
 Laurent Pugin. The challenge of data in digital musicology. \sphinxstyleemphasis{Frontiers in Digital Humanities}, 2(4):1\textendash{}3, 2015. \sphinxhref{https://doi.org/10.3389/fdigh.2015.00004}{doi:10.3389/fdigh.2015.00004}.
+\bibitem[Rie00]{conclusion:riemann1900}
+Hugo Riemann. \sphinxstyleemphasis{Musik\sphinxhyphen{}Lexikon}. Max Hesse Verlag, 5 edition, 1900.
+\bibitem[RS00]{conclusion:roweis2000}
+S. T. Roweis and L. K. Saul. Nonlinear dimensionality reduction by locally linear embedding. \sphinxstyleemphasis{Science}, 290(5500):2323\textendash{}2326, 2000. \sphinxhref{https://doi.org/10.1126/science.290.5500.2323}{doi:10.1126/science.290.5500.2323}.
 \bibitem[Sch16]{conclusion:schaffer2016}
 Kris Schaffer. What is computational musicology? online, 2016. URL: \sphinxurl{https://medium.com/@krisshaffer/what-is-computational-musicology-f25ee0a65102}.
 \bibitem[SVJ+20]{conclusion:schaffer2020}
 Kris Schaffer, Esther Vasiete, Brandon Jacquez, Aaron Davis, Diego Escalante, Calvin Hicks, Joshua McCann, Camille Noufi, and Paul Salminen. A cluster analysis of harmony in the McGill Billboard dataset. \sphinxstyleemphasis{Empirical Musicology Review}, 14(3\textendash{}4):146\textendash{}162, 2020. \sphinxhref{https://doi.org/10.18061/emr.v14i3-4.5576}{doi:10.18061/emr.v14i3\sphinxhyphen{}4.5576}.
+\bibitem[SRU04]{conclusion:stoddard2004}
+J. Stoddard, C. Raphael, and P. E. Utgoff. Well\sphinxhyphen{}tempered spelling: a key\sphinxhyphen{}invariant pitch spelling algorithm. In \sphinxstyleemphasis{Proceedings of the 5th International Conference on Music Information Retrieval (ISMIR 2004)}. 2004. \sphinxhref{https://doi.org/10.1.1.100.9663}{doi:10.1.1.100.9663}.
+\bibitem[Tem00]{conclusion:temperley2000}
+David Temperley. The line of fifths. \sphinxstyleemphasis{Music Analysis}, 19(3):289\textendash{}319, 2000. \sphinxhref{https://doi.org/10.2307/854457}{doi:10.2307/854457}.
+\bibitem[Tem01]{conclusion:temperley2001}
+David Temperley. \sphinxstyleemphasis{The Cognition of Basic Musical Structures}. MIT Press, 2001.
 \bibitem[TV13]{conclusion:temperley2013}
 David Temperley and Leigh VanHandel. Introduction to the Special Issue on Corpus Methods. \sphinxstyleemphasis{Music Perception: An Interdisciplinary Journal}, 31(1):1\textendash{}3, 2013.
+\bibitem[VDMH08]{conclusion:vandermaaten2008}
+L. Van Der Maaten and G. Hinton. Visualizing data using t\sphinxhyphen{}SNE. \sphinxstyleemphasis{Journal of Machine Learning Research}, 9(November):2579\textendash{}2605, 2008.
+\bibitem[Web51]{conclusion:weber1851}
+Gottfried Weber. \sphinxstyleemphasis{The Theory of Musical Composition, Treated with a View to a Naturally Consecutive Arrangement of Topics}. Messrs. Robert Cocks and Co., 1851.
 \end{sphinxthebibliography}
 
 

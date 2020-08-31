@@ -81,7 +81,7 @@
           </li>
 
         
-          <li class="toctree-l1 "><a href="2_introduction.html" class="reference internal ">Introduction to Musical Corpus Studies</a>
+          <li class="toctree-l1 "><a href="2_introduction.html" class="reference internal ">Introduction</a>
 
             
           </li>
@@ -191,7 +191,8 @@ on the 50th anniversary of his death in Sao Paulo, Brazil. (c) Governo do Estado
 of 295 Choro pieces <a class="bibtex reference internal" href="conclusion.html#moss2020" id="id1">[MSFR20]</a>. It is available on <a class="reference external" href="https://zenodo.org/record/3881347#.X0OqHcgzbg4">Zenodo</a> or <a class="reference external" href="https://github.com/DCMLab/choro/tree/1.1">Github</a>.
 See this link for a performance of the piece “<a class="reference external" href="https://youtu.be/HuukCWIImnY">Lamentos</a>”</p>
 <p>As before, we can import our data from a public resource.</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s2">&quot;https://raw.githubusercontent.com/DCMLab/choro/1.1/data/choro.tsv&quot;</span><span class="p">,</span> <span class="n">sep</span><span class="o">=</span>\<span class="n">t</span><span class="s2">&quot;)</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">url</span> <span class="o">=</span> <span class="s2">&quot;https://raw.githubusercontent.com/DCMLab/choro/1.1/data/choro.tsv&quot;</span>
+<span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="n">url</span><span class="p">,</span> <span class="n">sep</span><span class="o">=</span>\<span class="n">t</span><span class="s2">&quot;)</span>
 </pre></div>
 </div>
 <p>And display the first rows of the data frame:</p>

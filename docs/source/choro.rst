@@ -24,7 +24,8 @@ As before, we can import our data from a public resource.
 
 .. code-block:: python
 
-   df = pd.read_csv("https://raw.githubusercontent.com/DCMLab/choro/1.1/data/choro.tsv", sep=\t")
+   url = "https://raw.githubusercontent.com/DCMLab/choro/1.1/data/choro.tsv"
+   df = pd.read_csv(url, sep=\t")
 
 And display the first rows of the data frame:
 

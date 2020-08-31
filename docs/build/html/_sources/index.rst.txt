@@ -40,7 +40,7 @@ about quantitative approaches to musicology.
 
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 3
    :caption: Content
    :numbered:
 

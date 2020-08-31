@@ -42,7 +42,6 @@ about quantitative approaches to musicology.
 .. toctree::
    :maxdepth: 3
    :caption: Content
-   :numbered:
 
    1_orga.rst
    

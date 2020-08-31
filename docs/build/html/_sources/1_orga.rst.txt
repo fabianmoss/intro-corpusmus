@@ -1,8 +1,8 @@
 Organization
-------------
+============
 
 Overview
-........
+--------
 
 .. 8 15 15 12 25 25 
 
@@ -112,7 +112,7 @@ Overview
 .. [#fn1] A: Alter Seminarraum 1.408; B: Neuer Seminarraum 1.315
 
 Credits
-.......
+-------
 
 .. important:: 
 

@@ -73,7 +73,7 @@
 
 
 \title{Introduction to Musical Corpus Studies}
-\date{Aug 31, 2020}
+\date{Sep 01, 2020}
 \release{0.0.1}
 \author{Fabian C.\@{} Moss}
 \newcommand{\sphinxlogo}{\vbox{}}
@@ -203,7 +203,7 @@ Lunch Break
 &&
 Pop Charts Billboard 100, harmony,
 &
-Hidden Markov Models
+Clustering, \(k\)\sphinxhyphen{}means, {[}Hidden Markov Models{]}
 \\
 \hline
 6
@@ -566,6 +566,67 @@ Clustering analysis in \sphinxcite{conclusion:schaffer2020}.
    \PYG{n}{z} \PYG{o}{=} \PYG{n}{a} \PYG{o}{/} \PYG{p}{(} \PYG{p}{(}\PYG{n}{b} \PYG{o}{+} \PYG{n}{x}\PYG{p}{)}\PYG{o}{*}\PYG{o}{*}\PYG{n}{c} \PYG{p}{)}
    \PYG{k}{return} \PYG{n}{z}
 \end{sphinxVerbatim}
+
+
+\section{The dataset}
+\label{\detokenize{billboard:the-dataset}}
+djfdjf
+
+
+\section{Research question}
+\label{\detokenize{billboard:research-question}}
+Hypothesis: Corpus is not stylistically uniform but consists of several sub\sphinxhyphen{}styles,
+each with respective harmonic sub\sphinxhyphen{}grammars.
+
+Discussion: what is harmonic grammar/syntax (Riemann/GTTM/Rohrmeier)
+
+
+\section{Operationalization}
+\label{\detokenize{billboard:operationalization}}
+Harmonic grammar \textendash{}\textgreater{} bigrams (we know that already)
+
+
+\section{Clustering}
+\label{\detokenize{billboard:clustering}}
+
+\subsection{General idea}
+\label{\detokenize{billboard:general-idea}}
+Variance, minimizing \sphinxstyleemphasis{within\sphinxhyphen{}cluster sum of squares}, …
+
+
+\subsection{Algorithm}
+\label{\detokenize{billboard:algorithm}}
+For data \(\mathbf{X}=\{x_1, x_2, \ldots, x_n\}\):
+\begin{enumerate}
+\sphinxsetlistlabels{\arabic}{enumi}{enumii}{}{.}%
+\item {} 
+Choose \(k \leq n\).
+
+\item {} 
+Randomly assign means \(\mu_1, \ldots, \mu_k\) to points in \(\mathbf{X}\).
+
+\item {} 
+Assign each point in \(\mathbf{X}\) to cluster \(C_i\) by determining closest mean \(\mu_i\).
+
+\item {} 
+Given a cluster \(C_i\), calculate its \sphinxtitleref{centroid} \(m_i\):
+\begin{align*}
+   m_i =\frac{1}{|C_i|}\sum_{x_j \in C_i} x_j
+\end{align*}
+\item {} 
+Repeat steps 3 and 4 until the means do not change anymore.
+
+\end{enumerate}
+
+Note that, while this is a relatively simple clustering algorithm, it is not guaranteed that it
+finds the global optimal solution. This means that different \sphinxtitleref{initializations} (step 2 of the algorithm)
+might lead to different clustering results. More sophisticated clustering methods are, e.g. kNN…
+
+The following graphical depiction of the algorithm is taken from {\hyperref[\detokenize{billboard:wikipedia}]{\sphinxcrossref{Wikipedia}}}
+
+\phantomsection\label{\detokenize{billboard:wikipedia}}Wikipedia: \sphinxurl{https://en.wikipedia.org/wiki/K-means\_clustering}
+
+\noindent\sphinxincludegraphics[width=0.250\linewidth]{{k_means_0}.svg}
 
 
 \chapter{Harmony and Form in Brazilian Choro}

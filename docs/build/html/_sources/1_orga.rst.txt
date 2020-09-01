@@ -59,7 +59,7 @@ Overview
      - 13:00-14:20 Uhr
      - 
      - Pop Charts Billboard 100, harmony, 
-     - Hidden Markov Models
+     - Clustering, :math:`k`-means, [Hidden Markov Models]
    * - 6 
      - 
      - 14:40-16:00 Uhr

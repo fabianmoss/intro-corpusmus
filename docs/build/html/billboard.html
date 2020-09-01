@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-      <title>6. Harmonic Clusters in Pop Charts</title>
+      <title>Harmonic Clusters in Pop Charts</title>
     
       <link rel="stylesheet" href="_static/pygments.css">
       <link rel="stylesheet" href="_static/theme.css">
@@ -110,7 +110,13 @@
             
               <ul>
                 
-                  <li class="toctree-l2"><a href="#harmonic-clusters-in-pop-charts" class="reference internal">Harmonic Clusters in Pop Charts</a></li>
+                  <li class="toctree-l2"><a href="#the-dataset" class="reference internal">The dataset</a></li>
+                
+                  <li class="toctree-l2"><a href="#research-question" class="reference internal">Research question</a></li>
+                
+                  <li class="toctree-l2"><a href="#operationalization" class="reference internal">Operationalization</a></li>
+                
+                  <li class="toctree-l2"><a href="#clustering" class="reference internal">Clustering</a></li>
                 
               </ul>
             
@@ -159,7 +165,7 @@
   <ul class="breadcrumbs">
     <li><a href="index.html">Docs</a> &raquo;</li>
     
-    <li><span class="section-number">6. </span>Harmonic Clusters in Pop Charts</li>
+    <li>Harmonic Clusters in Pop Charts</li>
   </ul>
   
 
@@ -179,7 +185,7 @@
           <div class="content" role="main">
             
   <div class="section" id="harmonic-clusters-in-pop-charts">
-<h1><span class="section-number">6. </span>Harmonic Clusters in Pop Charts<a class="headerlink" href="#harmonic-clusters-in-pop-charts" title="Permalink to this headline">¶</a></h1>
+<h1>Harmonic Clusters in Pop Charts<a class="headerlink" href="#harmonic-clusters-in-pop-charts" title="Permalink to this headline">¶</a></h1>
 <a class="reference internal image-reference" href="_images/pop.jpg"><img alt="Photo by `israel palacio &lt;https://unsplash.com/&#64;othentikisra?utm_source=unsplash&amp;amp;utm_medium=referral&amp;amp;utm_content=creditCopyText&gt;`_ on `Unsplash &lt;https://unsplash.com/s/photos/music?utm_source=unsplash&amp;amp;utm_medium=referral&amp;amp;utm_content=creditCopyText&gt;`_." class="align-center" src="_images/pop.jpg" style="width: 100%;" /></a>
 <p>Clustering analysis in <a class="bibtex reference internal" href="conclusion.html#schaffer2020" id="id1">[SVJ+20]</a>.</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">zipf_mandelbrot</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">,</span> <span class="n">c</span><span class="p">):</span>
@@ -187,6 +193,45 @@
    <span class="n">z</span> <span class="o">=</span> <span class="n">a</span> <span class="o">/</span> <span class="p">(</span> <span class="p">(</span><span class="n">b</span> <span class="o">+</span> <span class="n">x</span><span class="p">)</span><span class="o">**</span><span class="n">c</span> <span class="p">)</span>
    <span class="k">return</span> <span class="n">z</span>
 </pre></div>
+</div>
+<div class="section" id="the-dataset">
+<h2>The dataset<a class="headerlink" href="#the-dataset" title="Permalink to this headline">¶</a></h2>
+<p>djfdjf</p>
+</div>
+<div class="section" id="research-question">
+<h2>Research question<a class="headerlink" href="#research-question" title="Permalink to this headline">¶</a></h2>
+<p>Hypothesis: Corpus is not stylistically uniform but consists of several sub-styles,
+each with respective harmonic sub-grammars.</p>
+<p>Discussion: what is harmonic grammar/syntax (Riemann/GTTM/Rohrmeier)</p>
+</div>
+<div class="section" id="operationalization">
+<h2>Operationalization<a class="headerlink" href="#operationalization" title="Permalink to this headline">¶</a></h2>
+<p>Harmonic grammar –&gt; bigrams (we know that already)</p>
+</div>
+<div class="section" id="clustering">
+<h2>Clustering<a class="headerlink" href="#clustering" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="general-idea">
+<h3>General idea<a class="headerlink" href="#general-idea" title="Permalink to this headline">¶</a></h3>
+<p>Variance, minimizing <em>within-cluster sum of squares</em>, …</p>
+</div>
+<div class="section" id="algorithm">
+<h3>Algorithm<a class="headerlink" href="#algorithm" title="Permalink to this headline">¶</a></h3>
+<p>For data <span class="math notranslate nohighlight">\(\mathbf{X}=\{x_1, x_2, \ldots, x_n\}\)</span>:</p>
+<ol class="arabic">
+<li><p>Choose <span class="math notranslate nohighlight">\(k \leq n\)</span>.</p></li>
+<li><p>Randomly assign means <span class="math notranslate nohighlight">\(\mu_1, \ldots, \mu_k\)</span> to points in <span class="math notranslate nohighlight">\(\mathbf{X}\)</span>.</p></li>
+<li><p>Assign each point in <span class="math notranslate nohighlight">\(\mathbf{X}\)</span> to cluster <span class="math notranslate nohighlight">\(C_i\)</span> by determining closest mean <span class="math notranslate nohighlight">\(\mu_i\)</span>.</p></li>
+<li><p>Given a cluster <span class="math notranslate nohighlight">\(C_i\)</span>, calculate its <cite>centroid</cite> <span class="math notranslate nohighlight">\(m_i\)</span>:</p>
+<div class="math notranslate nohighlight">
+\begin{align*}
+   m_i =\frac{1}{|C_i|}\sum_{x_j \in C_i} x_j
+\end{align*}</div></li>
+<li><p>Repeat steps 3 and 4 until the means do not change anymore.</p></li>
+</ol>
+<p>Note that, while this is a relatively simple clustering algorithm, it is not guaranteed that it
+finds the global optimal solution. This means that different <cite>initializations</cite> (step 2 of the algorithm)
+might lead to different clustering results. More sophisticated clustering methods are, e.g. kNN…</p>
+</div>
 </div>
 </div>
 

@@ -352,47 +352,7 @@ tbc
 \label{\detokenize{3_folk_songs:folk-songs-and-the-melodic-arc}}\label{\detokenize{3_folk_songs::doc}}
 Huron… / MusThe Tutorial
 
-
-\begin{savenotes}\sphinxattablestart
-\centering
-\sphinxcapstartof{table}
-\sphinxthecaptionisattop
-\sphinxcaption{CSV\sphinxhyphen{}TABLE TITLE}\label{\detokenize{3_folk_songs:id1}}
-\sphinxaftertopcaption
-\begin{tabulary}{\linewidth}[t]{|T|T|T|}
-\hline
-\sphinxstyletheadfamily 
-col1
-&\sphinxstyletheadfamily 
-col2
-&\sphinxstyletheadfamily 
-col3
-\\
-\hline
-val11
-&
-val12
-&
-val13
-\\
-\hline
-val21
-&
-val22
-&
-val23
-\\
-\hline
-val31
-&
-val32
-&
-val33
-\\
-\hline
-\end{tabulary}
-\par
-\sphinxattableend\end{savenotes}
+maybe extend with Hansen and Pearce (2014)
 
 
 \chapter{Solos in the \sphinxstyleemphasis{Weimar Jazz Database}}
@@ -423,7 +383,7 @@ The WJD contains a number of tables:
 \sphinxthecaptionisattop
 \sphinxcaption{Tables in the \sphinxstyleemphasis{Weimar Jazz Database}}\label{\detokenize{4_jazz_solos:id4}}
 \sphinxaftertopcaption
-\begin{tabulary}{\linewidth}[t]{|T|T|}
+\begin{tabular}[t]{|\X{30}{100}|\X{70}{100}|}
 \hline
 \sphinxstyletheadfamily 
 Table name
@@ -491,7 +451,7 @@ Information specific to a track on a record (or CD)
 Transcription infos for WJD solos, referenced by \sphinxcode{\sphinxupquote{melody(melid)}}
 \\
 \hline
-\end{tabulary}
+\end{tabular}
 \par
 \sphinxattableend\end{savenotes}
 
@@ -621,12 +581,6 @@ Repeat steps 3 and 4 until the means do not change anymore.
 Note that, while this is a relatively simple clustering algorithm, it is not guaranteed that it
 finds the global optimal solution. This means that different \sphinxtitleref{initializations} (step 2 of the algorithm)
 might lead to different clustering results. More sophisticated clustering methods are, e.g. kNN…
-
-The following graphical depiction of the algorithm is taken from {\hyperref[\detokenize{billboard:wikipedia}]{\sphinxcrossref{Wikipedia}}}
-
-\phantomsection\label{\detokenize{billboard:wikipedia}}Wikipedia: \sphinxurl{https://en.wikipedia.org/wiki/K-means\_clustering}
-
-\noindent\sphinxincludegraphics[width=0.250\linewidth]{{k_means_0}.svg}
 
 
 \chapter{Harmony and Form in Brazilian Choro}
@@ -860,6 +814,17 @@ historical expansion on line of fifths,
 
 \chapter{Malian Percussion Music}
 \label{\detokenize{mali_percussion:malian-percussion-music}}\label{\detokenize{mali_percussion::doc}}
+\begin{figure}[htbp]
+\centering
+\capstart
+
+\noindent\sphinxincludegraphics[width=1.000\linewidth]{{polak_mali}.png}
+\caption{Studio session in Bamako, May 2007.
+Left to right: Madu Jakite (Dundun), Sedu Balo (first Djembe) und Drissa Kone (second Djembe).
+Photo taken from \sphinxurl{https://www.gmth.de/zeitschrift/artikel/908.aspx}.}\label{\detokenize{mali_percussion:id3}}\end{figure}
+
+Reproduce results from \sphinxcite{conclusion:london2017}.  (Essentially same study in \sphinxcite{conclusion:polak2016})
+
 
 \chapter{Electronic Music 1950\textendash{}1990}
 \label{\detokenize{electronic:electronic-music-1950-1990}}\label{\detokenize{electronic::doc}}
@@ -884,7 +849,7 @@ Final thoughts, critical discussion…
 \bibitem[Bis06]{conclusion:bishop2006}
 Christopher M. Bishop. \sphinxstyleemphasis{Pattern Recognition and Machine Learning}. Springer, 2006.
 \bibitem[Bar56]{conclusion:bardos1956}
-Layos Bárdos. Natürliche tonsysteme: methode ihrer messung. In B. Rajeczky and L. Vargyas, editors, \sphinxstyleemphasis{Studia Memoriae Belae Bartók Sacra}, pages 209\textendash{}\textendash{}248. Akadémiai Kiadó, 1956.
+Layos Bárdos. Natürliche Tonsysteme: Methode ihrer Messung. In B. Rajeczky and L. Vargyas, editors, \sphinxstyleemphasis{Studia Memoriae Belae Bartók Sacra}, pages 209\textendash{}\textendash{}248. Akadémiai Kiadó, 1956.
 \bibitem[Cam03]{conclusion:cambouropoulos2003}
 E. Cambouropoulos. Pitch spelling: a computational model. \sphinxstyleemphasis{Music Perception: An Interdisciplinary Journal}, 20(4):411\textendash{}429, 2003. \sphinxhref{https://doi.org/10.1525/mp.2003.20.4.411}{doi:10.1525/mp.2003.20.4.411}.
 \bibitem[CC05]{conclusion:chew2005}
@@ -897,6 +862,8 @@ Jacques Handschin. \sphinxstyleemphasis{Der Toncharakter: Eine Einführung in di
 Henkjan Honing. On the Growing Role of Observation, Formalization and Experimental Method in Musicology. \sphinxstyleemphasis{Empirical Musicology Review}, 1(1):2\textendash{}6, 2006.
 \bibitem[Hur13]{conclusion:huron2013}
 David Huron. On the Virtuous and the Vexatious in an Age of Big Data. \sphinxstyleemphasis{Music Perception: An Interdisciplinary Journal}, 31(1):4\textendash{}9, 2013. \sphinxhref{https://doi.org/10.1525/mp.2013.31.1.4}{doi:10.1525/mp.2013.31.1.4}.
+\bibitem[LPJ17]{conclusion:london2017}
+Justin London, Rainer Polak, and Nori Jacoby. Rhythm histograms and musical meter: a corpus study of Malian percussion music. \sphinxstyleemphasis{Psychonomic Bulletin \& Review}, 24:474\textendash{}480, 2017. \sphinxhref{https://doi.org/10.3758/s13423-016-1093-7}{doi:10.3758/s13423\sphinxhyphen{}016\sphinxhyphen{}1093\sphinxhyphen{}7}.
 \bibitem[Mar16]{conclusion:marsden2016}
 Alan Marsden. \sphinxstyleemphasis{Music Analysis by Computer: Ontology and Epistemology}. Springer, 2016.
 \bibitem[Mer06]{conclusion:meredith2006}
@@ -911,6 +878,8 @@ Markus Neuwirth, Daniel Harasim, Fabian C. Moss, and Martin Rohrmeier. The Anno
 Markus Neuwirth and Martin Rohrmeier. Wie wissenschaftlich muss Musiktheorie sein? Chancen und Herausforderungen musikalischer Korpusforschung. \sphinxstyleemphasis{Zeitschrift der Gesellschaft für Musiktheorie}, 13(2):171\textendash{}193, 2016. \sphinxhref{https://doi.org/10.31751/915}{doi:10.31751/915}.
 \bibitem[PFAbesser+17]{conclusion:pfleiderer2017}
 Martin Pfleiderer, Klaus Frieler, Jakob Abeßer, Wolf\sphinxhyphen{}Georg Zaddach, and Benjamin Burkhart, editors. \sphinxstyleemphasis{Inside the Jazzomat \sphinxhyphen{} New Perspectives for Jazz Research}. Schott Campus, 2017.
+\bibitem[PJL16]{conclusion:polak2016}
+Rainer Polak, Nori Jacoby, and Justin London. Kulturelle Diversität in der empirischen Rhythmusforschung: Drei Analysen eines Audio\sphinxhyphen{}Korpus von Percussion\sphinxhyphen{}Ensemblemusik aus Mali. \sphinxstyleemphasis{Zeitschrift der Gesellschaft für Musiktheorie {[}Journal of the German\sphinxhyphen{}speaking Society of Music Theory{]}}, 13(2):195\textendash{}235, 2016. \sphinxhref{https://doi.org/10.31751/908}{doi:10.31751/908}.
 \bibitem[Pug15]{conclusion:pugin2005}
 Laurent Pugin. The challenge of data in digital musicology. \sphinxstyleemphasis{Frontiers in Digital Humanities}, 2(4):1\textendash{}3, 2015. \sphinxhref{https://doi.org/10.3389/fdigh.2015.00004}{doi:10.3389/fdigh.2015.00004}.
 \bibitem[Rie00]{conclusion:riemann1900}

@@ -18,6 +18,7 @@ The WJD contains a number of tables:
 
 .. list-table:: Tables in the *Weimar Jazz Database*
    :header-rows: 1
+   :widths: 30 70 
 
    * - Table name
      - Description

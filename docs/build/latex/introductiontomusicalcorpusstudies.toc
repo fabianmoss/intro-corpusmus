@@ -11,27 +11,31 @@
 \contentsline {section}{\numberline {2.4}Issues}{6}{section.2.4}%
 \contentsline {section}{\numberline {2.5}MCS and traditional musicology}{6}{section.2.5}%
 \contentsline {chapter}{\numberline {3}Folk Songs and the Melodic Arc}{7}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Data}{7}{section.3.1}%
+\contentsline {section}{\numberline {3.2}Notes, Pitch Classes}{7}{section.3.2}%
+\contentsline {section}{\numberline {3.3}Intervals}{7}{section.3.3}%
 \contentsline {chapter}{\numberline {4}Solos in the \sphinxstyleemphasis {Weimar Jazz Database}}{9}{chapter.4}%
-\contentsline {chapter}{\numberline {5}Harmony in Beethoven’s String Quartets}{11}{chapter.5}%
-\contentsline {section}{\numberline {5.1}Access the data}{11}{section.5.1}%
-\contentsline {section}{\numberline {5.2}Harmonic Annotations}{11}{section.5.2}%
-\contentsline {section}{\numberline {5.3}Chord Transitions}{11}{section.5.3}%
-\contentsline {chapter}{\numberline {6}Harmonic Clusters in Pop Charts}{13}{chapter.6}%
-\contentsline {section}{\numberline {6.1}The dataset}{14}{section.6.1}%
-\contentsline {section}{\numberline {6.2}Research question}{14}{section.6.2}%
-\contentsline {section}{\numberline {6.3}Operationalization}{14}{section.6.3}%
-\contentsline {section}{\numberline {6.4}Clustering}{14}{section.6.4}%
-\contentsline {subsection}{\numberline {6.4.1}General idea}{14}{subsection.6.4.1}%
-\contentsline {subsection}{\numberline {6.4.2}Algorithm}{14}{subsection.6.4.2}%
-\contentsline {chapter}{\numberline {7}Harmony and Form in Brazilian Choro}{15}{chapter.7}%
-\contentsline {section}{\numberline {7.1}Data}{15}{section.7.1}%
-\contentsline {chapter}{\numberline {8}A Data\sphinxhyphen {}Driven History of Tonality}{17}{chapter.8}%
-\contentsline {section}{\numberline {8.1}Musical Pieces as Tonal Pitch\sphinxhyphen {}Class Distributions}{17}{section.8.1}%
-\contentsline {subsection}{\numberline {8.1.1}Distributions of TPCs}{19}{subsection.8.1.1}%
-\contentsline {subsection}{\numberline {8.1.2}Principle Component Analysis}{20}{subsection.8.1.2}%
-\contentsline {section}{\numberline {8.2}Historical Development}{20}{section.8.2}%
-\contentsline {subsection}{\numberline {8.2.1}LOWESS}{21}{subsection.8.2.1}%
-\contentsline {chapter}{\numberline {9}Malian Percussion Music}{23}{chapter.9}%
-\contentsline {chapter}{\numberline {10}Electronic Music 1950\textendash {}1990}{25}{chapter.10}%
-\contentsline {chapter}{\numberline {11}Conclusion}{27}{chapter.11}%
-\contentsline {chapter}{Bibliography}{29}{chapter*.3}%
+\contentsline {chapter}{\numberline {5}Renaissance Chansons and Masses}{11}{chapter.5}%
+\contentsline {chapter}{\numberline {6}Harmony in Beethoven’s String Quartets}{13}{chapter.6}%
+\contentsline {section}{\numberline {6.1}Access the data}{13}{section.6.1}%
+\contentsline {section}{\numberline {6.2}Harmonic Annotations}{13}{section.6.2}%
+\contentsline {section}{\numberline {6.3}Chord Transitions}{13}{section.6.3}%
+\contentsline {chapter}{\numberline {7}Harmonic Clusters in Pop Charts}{15}{chapter.7}%
+\contentsline {section}{\numberline {7.1}The dataset}{16}{section.7.1}%
+\contentsline {section}{\numberline {7.2}Research question}{16}{section.7.2}%
+\contentsline {section}{\numberline {7.3}Operationalization}{16}{section.7.3}%
+\contentsline {section}{\numberline {7.4}Clustering}{16}{section.7.4}%
+\contentsline {subsection}{\numberline {7.4.1}General idea}{16}{subsection.7.4.1}%
+\contentsline {subsection}{\numberline {7.4.2}Algorithm}{16}{subsection.7.4.2}%
+\contentsline {chapter}{\numberline {8}Harmony and Form in Brazilian Choro}{17}{chapter.8}%
+\contentsline {section}{\numberline {8.1}Data}{17}{section.8.1}%
+\contentsline {chapter}{\numberline {9}A Data\sphinxhyphen {}Driven History of Tonality}{19}{chapter.9}%
+\contentsline {section}{\numberline {9.1}Musical Pieces as Tonal Pitch\sphinxhyphen {}Class Distributions}{19}{section.9.1}%
+\contentsline {subsection}{\numberline {9.1.1}Distributions of TPCs}{21}{subsection.9.1.1}%
+\contentsline {subsection}{\numberline {9.1.2}Principle Component Analysis}{22}{subsection.9.1.2}%
+\contentsline {section}{\numberline {9.2}Historical Development}{22}{section.9.2}%
+\contentsline {subsection}{\numberline {9.2.1}LOWESS}{23}{subsection.9.2.1}%
+\contentsline {chapter}{\numberline {10}Malian Percussion Music}{25}{chapter.10}%
+\contentsline {chapter}{\numberline {11}Electronic Music 1950\textendash {}1990}{27}{chapter.11}%
+\contentsline {chapter}{\numberline {12}Conclusion}{29}{chapter.12}%
+\contentsline {chapter}{Bibliography}{31}{chapter*.3}%

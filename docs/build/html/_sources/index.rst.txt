@@ -49,6 +49,7 @@ about quantitative approaches to musicology.
    2_introduction.rst
    3_folk_songs.rst
    4_jazz_solos.rst
+   renaissance.rst
    beethoven_harmony.rst
    billboard.rst
    choro.rst

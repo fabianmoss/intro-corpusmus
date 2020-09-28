@@ -10,6 +10,7 @@
 \contentsline {section}{\numberline {2.3}Epistemological goals}{8}{section.2.3}%
 \contentsline {section}{\numberline {2.4}Issues}{8}{section.2.4}%
 \contentsline {section}{\numberline {2.5}MCS and traditional musicology}{8}{section.2.5}%
+\contentsline {section}{\numberline {2.6}Basic representations}{8}{section.2.6}%
 \contentsline {chapter}{\numberline {3}Folk Songs and the Melodic Arc}{9}{chapter.3}%
 \contentsline {section}{\numberline {3.1}Data}{9}{section.3.1}%
 \contentsline {section}{\numberline {3.2}Notes, Pitch Classes}{9}{section.3.2}%
@@ -53,4 +54,5 @@
 \contentsline {section}{\numberline {14.1}Types}{47}{section.14.1}%
 \contentsline {section}{\numberline {14.2}Lists}{47}{section.14.2}%
 \contentsline {section}{\numberline {14.3}Reading and saving files}{47}{section.14.3}%
-\contentsline {chapter}{Bibliography}{49}{chapter*.3}%
+\contentsline {chapter}{\numberline {15}Bibliography}{49}{chapter.15}%
+\contentsline {chapter}{Bibliography}{51}{chapter*.3}%

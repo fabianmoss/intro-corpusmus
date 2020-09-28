@@ -46,20 +46,21 @@ about quantitative approaches to musicology.
 
    1_orga.rst
    
-   2_introduction.rst
-   3_folk_songs.rst
-   4_jazz_solos.rst
-   renaissance.rst
-   beethoven_harmony.rst
-   billboard.rst
-   data-driven_music_history.rst
-   choro.rst
-   tonality.rst
-   mali_percussion.rst
-   electronic.rst
+   2_introduction
+   3_folk_songs
+   4_jazz_solos
+   renaissance
+   beethoven_harmony
+   billboard
+   data-driven_music_history
+   choro
+   tonality
+   mali_percussion
+   electronic
 
    conclusion.rst
    python_basics.rst
+   bibliography.rst
 
 
 .. Indices and tables

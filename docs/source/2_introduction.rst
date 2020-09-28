@@ -58,3 +58,10 @@ MCS and traditional musicology
 
  
 tbc
+
+Basic representations 
+---------------------
+
+- tones, notes 
+- (tonal/neutral) pitch classes 
+- meter (hierarchy)

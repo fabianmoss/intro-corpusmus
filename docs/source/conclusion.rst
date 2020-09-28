@@ -4,5 +4,3 @@ Conclusion
 Final thoughts, critical discussion...
 
 [Some image]
-
-.. bibliography:: references.bib

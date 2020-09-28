@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-      <title>8. Harmony and Form in Brazilian Choro</title>
+      <title>9. Harmony and Form in Brazilian Choro</title>
     
       <link rel="stylesheet" href="_static/pygments.css">
       <link rel="stylesheet" href="_static/theme.css">
@@ -16,7 +16,7 @@
         <script src="_static/underscore.js"></script>
         <script src="_static/doctools.js"></script>
         <script src="_static/language_data.js"></script>
-        <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+        <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
 
       
       <script src="_static/theme-vendors.js"></script>
@@ -24,8 +24,8 @@
     
   <link rel="index" title="Index" href="genindex.html" />
   <link rel="search" title="Search" href="search.html" />
-  <link rel="next" title="9. A Data-Driven History of Tonality" href="tonality.html" />
-  <link rel="prev" title="7. Harmonic Clusters in Pop Charts" href="billboard.html" /> 
+  <link rel="next" title="10. A Data-Driven History of Tonality" href="tonality.html" />
+  <link rel="prev" title="8. Data-Driven Music History" href="data-driven_music_history.html" /> 
   </head>
 
   <body>
@@ -117,6 +117,12 @@
           </li>
 
         
+          <li class="toctree-l1 "><a href="data-driven_music_history.html" class="reference internal ">Data-Driven Music History</a>
+
+            
+          </li>
+
+        
           <li class="toctree-l1 current"><a href="#" class="reference internal current">Harmony and Form in Brazilian Choro</a>
 
             
@@ -165,18 +171,18 @@
   <ul class="breadcrumbs">
     <li><a href="index.html">Docs</a> &raquo;</li>
     
-    <li><span class="section-number">8. </span>Harmony and Form in Brazilian Choro</li>
+    <li><span class="section-number">9. </span>Harmony and Form in Brazilian Choro</li>
   </ul>
   
 
   <ul class="page-nav">
   <li class="prev">
-    <a href="billboard.html"
-       title="previous chapter">← <span class="section-number">7. </span>Harmonic Clusters in Pop Charts</a>
+    <a href="data-driven_music_history.html"
+       title="previous chapter">← <span class="section-number">8. </span>Data-Driven Music History</a>
   </li>
   <li class="next">
     <a href="tonality.html"
-       title="next chapter"><span class="section-number">9. </span>A Data-Driven History of Tonality →</a>
+       title="next chapter"><span class="section-number">10. </span>A Data-Driven History of Tonality →</a>
   </li>
 </ul>
   
@@ -185,16 +191,16 @@
           <div class="content" role="main">
             
   <div class="section" id="harmony-and-form-in-brazilian-choro">
-<h1><span class="section-number">8. </span>Harmony and Form in Brazilian Choro<a class="headerlink" href="#harmony-and-form-in-brazilian-choro" title="Permalink to this headline">¶</a></h1>
-<div class="figure align-center" id="id2">
+<h1><span class="section-number">9. </span>Harmony and Form in Brazilian Choro<a class="headerlink" href="#harmony-and-form-in-brazilian-choro" title="Permalink to this headline">¶</a></h1>
+<div class="figure align-center" id="id3">
 <a class="reference internal image-reference" href="_images/choro.jpg"><img alt="Choro musicians" src="_images/choro.jpg" style="width: 100%;" /></a>
-<p class="caption"><span class="caption-number">Fig. 8.1 </span><span class="caption-text">A 2019 musical tribute to renowned choro composer Jacob do Bandolim,
-on the 50th anniversary of his death in Sao Paulo, Brazil. (c) Governo do Estado de Sao Paulo / CC BY 2.0</span><a class="headerlink" href="#id2" title="Permalink to this image">¶</a></p>
+<p class="caption"><span class="caption-number">Fig. 9.1 </span><span class="caption-text">A 2019 musical tribute to renowned choro composer Jacob do Bandolim,
+on the 50th anniversary of his death in Sao Paulo, Brazil. (c) Governo do Estado de Sao Paulo / CC BY 2.0</span><a class="headerlink" href="#id3" title="Permalink to this image">¶</a></p>
 </div>
 <div class="section" id="data">
-<h2><span class="section-number">8.1. </span>Data<a class="headerlink" href="#data" title="Permalink to this headline">¶</a></h2>
+<h2><span class="section-number">9.1. </span>Data<a class="headerlink" href="#data" title="Permalink to this headline">¶</a></h2>
 <p>The <em>Choro Songbook Corpus</em> contains transcriptions of the chord symbols
-of 295 Choro pieces <a class="bibtex reference internal" href="conclusion.html#moss2020" id="id1">[MSFR20]</a>. It is available on <a class="reference external" href="https://zenodo.org/record/3881347#.X0OqHcgzbg4">Zenodo</a> or <a class="reference external" href="https://github.com/DCMLab/choro/tree/1.1">Github</a>.
+of 295 Choro pieces <a class="bibtex reference internal" href="conclusion.html#moss2020" id="id1">[MSFR20]</a><a class="bibtex reference internal" href="conclusion.html#moss2020a" id="id2">[Mos20]</a>. It is available on <a class="reference external" href="https://zenodo.org/record/3881347#.X0OqHcgzbg4">Zenodo</a> or <a class="reference external" href="https://github.com/DCMLab/choro/tree/1.1">Github</a>.
 See this link for a performance of the piece “<a class="reference external" href="https://youtu.be/HuukCWIImnY">Lamentos</a>”</p>
 <p>As before, we can import our data from a public resource.</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">url</span> <span class="o">=</span> <span class="s2">&quot;https://raw.githubusercontent.com/DCMLab/choro/1.1/data/choro.tsv&quot;</span>
@@ -213,17 +219,17 @@ See this link for a performance of the piece “<a class="reference external" hr
           <div class="page-nav">
             <div class="inner"><ul class="page-nav">
   <li class="prev">
-    <a href="billboard.html"
-       title="previous chapter">← <span class="section-number">7. </span>Harmonic Clusters in Pop Charts</a>
+    <a href="data-driven_music_history.html"
+       title="previous chapter">← <span class="section-number">8. </span>Data-Driven Music History</a>
   </li>
   <li class="next">
     <a href="tonality.html"
-       title="next chapter"><span class="section-number">9. </span>A Data-Driven History of Tonality →</a>
+       title="next chapter"><span class="section-number">10. </span>A Data-Driven History of Tonality →</a>
   </li>
 </ul><div class="footer" role="contentinfo">
       &#169; Copyright 2020, Fabian C. Moss.
     <br>
-    Created using <a href="http://sphinx-doc.org/">Sphinx</a> 3.0.3 with <a href="https://github.com/schettino72/sphinx_press_theme">Press Theme</a>.
+    Created using <a href="http://sphinx-doc.org/">Sphinx</a> 3.1.2 with <a href="https://github.com/schettino72/sphinx_press_theme">Press Theme</a>.
 </div>
             </div>
           </div>

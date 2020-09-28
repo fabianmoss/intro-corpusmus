@@ -51,17 +51,10 @@ tbc...
 Issues
 ------
 
-tbc :cite:`a-Cook2006,a-Honing2006,a-Huron2013,a-Marsden2016,a-Neuwirth2016,a-Pugin2005,a-Schaffer2016,a-Temperley2013` 
+tbc :cite:`Cook2006,Honing2006,Huron2013,Marsden2016,Neuwirth2016,Pugin2005,Schaffer2016,Temperley2013` 
 
 MCS and traditional musicology 
 ------------------------------
 
  
 tbc
-
-.. rubric:: References
-
-.. bibliography:: references.bib
-   :cited:
-   :labelprefix: A-
-   :keyprefix: a-

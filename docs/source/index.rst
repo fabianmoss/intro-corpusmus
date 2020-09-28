@@ -52,12 +52,15 @@ about quantitative approaches to musicology.
    renaissance.rst
    beethoven_harmony.rst
    billboard.rst
+   data-driven_music_history.rst
    choro.rst
    tonality.rst
    mali_percussion.rst
    electronic.rst
 
    conclusion.rst
+   python_basics.rst
+   bibliography.rst
 
 
 .. Indices and tables

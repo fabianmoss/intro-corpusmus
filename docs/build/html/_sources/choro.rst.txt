@@ -13,7 +13,7 @@ Data
 ----
 
 The *Choro Songbook Corpus* contains transcriptions of the chord symbols
-of 295 Choro pieces :cite:`Moss2020`. It is available on Zenodo_ or Github_.
+of 295 Choro pieces :cite:`Moss2020,Moss2020a`. It is available on Zenodo_ or Github_.
 See this link for a performance of the piece "`Lamentos`_"
 
 .. _Zenodo: https://zenodo.org/record/3881347#.X0OqHcgzbg4

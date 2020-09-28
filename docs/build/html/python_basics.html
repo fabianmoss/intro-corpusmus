@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html >
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+      <title>14. Python Basics</title>
+    
+      <link rel="stylesheet" href="_static/pygments.css">
+      <link rel="stylesheet" href="_static/theme.css">
+      <link rel="stylesheet" href="_static/sphinx_press_theme.css">
+      
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+
+      <!-- sphinx script_files -->
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/language_data.js"></script>
+        <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+      
+      <script src="_static/theme-vendors.js"></script>
+      <script src="_static/theme.js" defer></script>
+    
+  <link rel="index" title="Index" href="genindex.html" />
+  <link rel="search" title="Search" href="search.html" />
+  <link rel="prev" title="13. Conclusion" href="conclusion.html" /> 
+  </head>
+
+  <body>
+    <div id="app" class="theme-container" :class="pageClasses"><navbar @toggle-sidebar="toggleSidebar">
+  <router-link to="index.html" class="home-link">
+    
+      <span class="site-name">Introduction to Musical Corpus Studies</span>
+    
+  </router-link>
+
+  <div class="links">
+    <navlinks class="can-hide">
+
+
+
+    </navlinks>
+  </div>
+</navbar>
+
+      
+      <div class="sidebar-mask" @click="toggleSidebar(false)">
+      </div>
+        <sidebar @toggle-sidebar="toggleSidebar">
+          
+          <navlinks>
+            
+
+
+
+            
+          </navlinks><div id="searchbox" class="searchbox" role="search">
+  <div class="caption"><span class="caption-text">Quick search</span>
+    <div class="searchformwrapper">
+      <form class="search" action="search.html" method="get">
+        <input type="text" name="q" />
+        <input type="submit" value="Search" />
+        <input type="hidden" name="check_keywords" value="yes" />
+        <input type="hidden" name="area" value="default" />
+      </form>
+    </div>
+  </div>
+</div><div class="sidebar-links" role="navigation" aria-label="main navigation">
+  
+    <div class="sidebar-group">
+      <p class="caption">
+        <span class="caption-text"><a href="index.html#introduction-to-musical-corpus-studies">Content</a></span>
+      </p>
+      <ul class="current">
+        
+          <li class="toctree-l1 "><a href="1_orga.html" class="reference internal ">Organization</a>
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 "><a href="2_introduction.html" class="reference internal ">Introduction</a>
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 "><a href="3_folk_songs.html" class="reference internal ">Folk Songs and the Melodic Arc</a>
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 "><a href="4_jazz_solos.html" class="reference internal ">Solos in the Weimar Jazz Database</a>
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 "><a href="renaissance.html" class="reference internal ">Renaissance Chansons and Masses</a>
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 "><a href="beethoven_harmony.html" class="reference internal ">Harmony in Beethoven’s String Quartets</a>
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 "><a href="billboard.html" class="reference internal ">Harmonic Clusters in Pop Charts</a>
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 "><a href="data-driven_music_history.html" class="reference internal ">Data-Driven Music History</a>
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 "><a href="choro.html" class="reference internal ">Harmony and Form in Brazilian Choro</a>
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 "><a href="tonality.html" class="reference internal ">A Data-Driven History of Tonality</a>
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 "><a href="mali_percussion.html" class="reference internal ">Malian Percussion Music</a>
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 "><a href="electronic.html" class="reference internal ">Electronic Music 1950–1990</a>
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 "><a href="conclusion.html" class="reference internal ">Conclusion</a>
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 current"><a href="#" class="reference internal current">Python Basics</a>
+
+            
+              <ul>
+                
+                  <li class="toctree-l2"><a href="#types" class="reference internal">Types</a></li>
+                
+                  <li class="toctree-l2"><a href="#lists" class="reference internal">Lists</a></li>
+                
+                  <li class="toctree-l2"><a href="#reading-and-saving-files" class="reference internal">Reading and saving files</a></li>
+                
+              </ul>
+            
+          </li>
+
+        
+      </ul>
+    </div>
+  
+</div>
+        </sidebar>
+
+      <page>
+          <div class="body-header" role="navigation" aria-label="navigation">
+  
+  <ul class="breadcrumbs">
+    <li><a href="index.html">Docs</a> &raquo;</li>
+    
+    <li><span class="section-number">14. </span>Python Basics</li>
+  </ul>
+  
+
+  <ul class="page-nav">
+  <li class="prev">
+    <a href="conclusion.html"
+       title="previous chapter">← <span class="section-number">13. </span>Conclusion</a>
+  </li>
+</ul>
+  
+</div>
+<hr>
+          <div class="content" role="main">
+            
+  <div class="section" id="python-basics">
+<h1><span class="section-number">14. </span>Python Basics<a class="headerlink" href="#python-basics" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="types">
+<h2><span class="section-number">14.1. </span>Types<a class="headerlink" href="#types" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>int</p></li>
+<li><p>float</p></li>
+<li><p>str
+- escape characters, using multiple quotes, encoding (utf-8)</p></li>
+<li><p>bool</p></li>
+</ul>
+<p>Other types, e.g. complex numbers, are not covered here.</p>
+</div>
+<div class="section" id="lists">
+<h2><span class="section-number">14.2. </span>Lists<a class="headerlink" href="#lists" title="Permalink to this headline">¶</a></h2>
+<p>incl. list comprehension</p>
+</div>
+<div class="section" id="reading-and-saving-files">
+<h2><span class="section-number">14.3. </span>Reading and saving files<a class="headerlink" href="#reading-and-saving-files" title="Permalink to this headline">¶</a></h2>
+</div>
+</div>
+
+
+          </div>
+          <div class="page-nav">
+            <div class="inner"><ul class="page-nav">
+  <li class="prev">
+    <a href="conclusion.html"
+       title="previous chapter">← <span class="section-number">13. </span>Conclusion</a>
+  </li>
+</ul><div class="footer" role="contentinfo">
+      &#169; Copyright 2020, Fabian C. Moss.
+    <br>
+    Created using <a href="http://sphinx-doc.org/">Sphinx</a> 3.1.2 with <a href="https://github.com/schettino72/sphinx_press_theme">Press Theme</a>.
+</div>
+            </div>
+          </div>
+      </page>
+    </div>
+    
+    
+  </body>
+</html>

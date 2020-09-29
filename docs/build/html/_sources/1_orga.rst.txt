@@ -58,12 +58,12 @@ Overview
      - Fr., 11.12.2020 
      - 10:00-11:20 Uhr
      - Alter Seminarraum 1.408
-     - Brazilian Choro, harmony, form, context-Free Grammars
+     - Cadences in Renaissance Polyphony |br| with guest researcher `Richard Freedman <https://www.haverford.edu/users/rfreedma>`_
    * - 8
      - 
      - 11:40-13:00 Uhr
      - 
-     - 19th century piano music, harmony, probabilistic CFGs
+     - Brazilian Choro, harmony, form, context-Free Grammars
    * - 9 
      - Sa., 12.12.2020 
      - 09:00-10:20 Uhr

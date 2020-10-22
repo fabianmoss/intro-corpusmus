@@ -93,9 +93,55 @@ Overview
 Credits
 -------
 
-.. important:: 
+.. note:: 
 
    Ich gehe in der Seminarplanung von 12 Semesterwochen à 2 SWS aus, für das gesamte Blockseminar also 24 SWS. 
    Das Seminar wird mit 3 CP bewertet, was 90 Stunden aktiver Arbeit entspricht. 
    Davon entfallen 24 SWS an die Präsenzzeit im Seminar plus 48 SWS an Vor- und Nachbereitung der Seminarsitzungen. 
    Die verbleibenden 18 SWS sind für die Lektüre der Fachliteratur vorgesehen. 
+
+  
+Course work consists of three parts: preparing the relevant literature (reading), 
+completing the relevant exercises (group work), and critically engaging with the course materials
+in the form of a report written together with your group. 
+
+Learning objectives
+-------------------
+
+#. content of the course units
+#. work load management
+#. organization
+#. reading of scientific literature 
+#. writing academic reviews 
+
+
+Deliverables
+------------
+
+.. rubric:: Reading
+
+For each session, the relevant literature is cited in the text. 
+Careful preparation is required in order to be able to follow the content of the course.
+Because the course will mainly talk about methods and general points of musical corpus research,
+the content (and musical topic) will mainly be introduced by the literature. 
+
+I am aware that the reading workload is relatively high since the course will be taught as a block seminar
+and doesn't spread out over the entire semester. I hope that the fact that the course is finished before the 
+end of the year compensates for this.
+
+.. rubric:: Group work
+
+At the beginning of the course, you will be randomly assigned to a group. 
+Together with your group, you will work on a number of exercises during the course, 
+e.g. in Zoom breakout rooms. 
+
+.. rubric:: Review
+
+After the course has ended, your group will be randomly assigned a course topic. 
+It is your task to write a review/report on this topic. 
+What did you learn? Which concepts are not clear? Which methods did you (not) understand? 
+What is missing? How can the textual descriptions be improved? Who in your group did what? 
+Write about the organization of your group, challenges and benefits. 
+
+.. important::
+   Submit your report by **31 January 2021**. 

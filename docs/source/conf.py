@@ -49,20 +49,6 @@ exclude_patterns = []
 # html_theme = "alabaster"
 html_theme = "press"
 
-# html_theme = 'sphinx_redactor_theme'
-# import sphinx_redactor_theme
-# html_theme_path = [sphinx_redactor_theme.get_html_theme_path()]
-
-# import stanford_theme
-# html_theme = "stanford_theme"
-# html_theme_path = [stanford_theme.get_html_theme_path()]
-
-# html_theme = 'nameko'
-# import sphinx_nameko_theme
-# html_theme_path = [sphinx_nameko_theme.get_html_theme_path()]
-
-# html_theme = 'sphinx_typo3_theme'
-
 # The name of the Pygments (syntax highlighting) style to use.
 # pygments_style = 'monokai'
 

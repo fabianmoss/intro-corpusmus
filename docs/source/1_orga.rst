@@ -139,8 +139,13 @@ What did you learn? Which concepts are not clear? Which methods did you (not) un
 What is missing? How can the textual descriptions be improved? Who in your group did what? 
 Write about the organization of your group, challenges and benefits. 
 
-- writing academic reviews 
 - create issues on GitHub
+- writing academic reviews
+
+Recommended structure: 
+
+#. Introduction: general description and summary of the course and your session in particular. 
+#. ...
 
 .. important::
    Submit your report by **31 January 2021** to `fabian.moss@epfl.ch <mailto:fabian.moss@epfl.ch>`_. 

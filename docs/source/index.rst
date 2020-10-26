@@ -6,6 +6,12 @@
 Introduction to Musical Corpus Studies
 ======================================
 
+.. image:: _static/abstract_bg.jpg
+  :width: 100%
+  :align: center
+  :alt: Image by `Victoria Alexander <https://unsplash.com/@pixeldebris?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText>`_ 
+        on `Unsplash <https://unsplash.com/s/photos/pattern?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText>`_.
+
 .. warning::
 
    This material is still (heavily) under construction and might change throughout the course!
@@ -37,6 +43,13 @@ as well as statistics, data analysis and visualization.
 
 The course is aimed at students at the undergraduate level who have little or no empirical background and are curious
 about quantitative approaches to musicology.
+
+
+.. only:: builder_html
+   
+   .. note:: 
+     
+      A PDF version of the course material can be downloaded here: `pdf <../latex/introductiontomusicalcorpusstudies.pdf>`_
 
 
 .. toctree::

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7380 64-bit) (preloaded format=pdflatex 2020.4.27)  22 OCT 2020 15:28
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7380 64-bit) (preloaded format=pdflatex 2020.4.27)  26 OCT 2020 11:10
 entering extended mode
 **./introductiontomusicalcorpusstudies.tex
 (introductiontomusicalcorpusstudies.tex
@@ -751,215 +751,228 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 {C:/Users/fabianmoss/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}] [2
 
 
-] (introductiontomusicalcorpusstudies.toc [1
-
-])
+] (introductiontomusicalcorpusstudies.toc)
 \tf@toc=\write6
 \openout6 = `introductiontomusicalcorpusstudies.toc'.
 
- [2] [1
+ [1
 
 ] [2
 
 ]
+<abstract_bg.jpg, id=53, 5203.44pt x 3468.96pt>
+LaTeX Font Info:    Trying to load font information for T1+pcr on input line 93
+.
+
+("C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex/latex/psnfss\t1pcr.
+fd"
+File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
+)
+File: abstract_bg.jpg Graphic file (type jpg)
+<use abstract_bg.jpg>
+Package pdftex.def Info: abstract_bg.jpg  used on input line 93.
+(pdftex.def)             Requested size: 469.75502pt x 313.1457pt.
+ [1 <./abstract_bg.jpg>] [2
+
+]
 Chapter 1.
 
-Underfull \hbox (badness 10000) in paragraph at lines 254--254
+Underfull \hbox (badness 10000) in paragraph at lines 256--256
 []\T1/ptm/m/n/10 Fr.,
  []
 
 
-Overfull \hbox (2.01608pt too wide) in paragraph at lines 254--254
+Overfull \hbox (2.01608pt too wide) in paragraph at lines 256--256
 \T1/ptm/m/n/10 13.11.2020| 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 254--254
+Underfull \hbox (badness 10000) in paragraph at lines 256--256
 []\T1/ptm/m/n/10 16:00-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 254--254
+Underfull \hbox (badness 10000) in paragraph at lines 256--256
 \T1/ptm/m/n/10 17:20
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 254--254
+Underfull \hbox (badness 10000) in paragraph at lines 256--256
 []\T1/ptm/m/n/10 Neuer Sem-i-nar-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 254--254
+Underfull \hbox (badness 10000) in paragraph at lines 256--256
 []\T1/ptm/m/n/10 17:40-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 254--254
+Underfull \hbox (badness 10000) in paragraph at lines 256--256
 \T1/ptm/m/n/10 19:00
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 254--254
+Underfull \hbox (badness 10000) in paragraph at lines 256--256
 []\T1/ptm/m/n/10 Sa.,
  []
 
 
-Overfull \hbox (2.01608pt too wide) in paragraph at lines 254--254
+Overfull \hbox (2.01608pt too wide) in paragraph at lines 256--256
 \T1/ptm/m/n/10 14.11.2020| 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 254--254
+Underfull \hbox (badness 10000) in paragraph at lines 256--256
 []\T1/ptm/m/n/10 09:00-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 254--254
+Underfull \hbox (badness 10000) in paragraph at lines 256--256
 \T1/ptm/m/n/10 10:20
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 254--254
+Underfull \hbox (badness 10000) in paragraph at lines 256--256
 []\T1/ptm/m/n/10 Neuer Sem-i-nar-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 254--254
+Underfull \hbox (badness 10000) in paragraph at lines 256--256
 []\T1/ptm/m/n/10 10:40-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 254--254
+Underfull \hbox (badness 10000) in paragraph at lines 256--256
 \T1/ptm/m/n/10 12:00
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 254--254
+Underfull \hbox (badness 10000) in paragraph at lines 256--256
 []\T1/ptm/m/n/10 12:00-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 254--254
+Underfull \hbox (badness 10000) in paragraph at lines 256--256
 \T1/ptm/m/n/10 13:00
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 254--254
+Underfull \hbox (badness 10000) in paragraph at lines 256--256
 []\T1/ptm/m/n/10 13:00-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 254--254
+Underfull \hbox (badness 10000) in paragraph at lines 256--256
 \T1/ptm/m/n/10 14:20
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 254--254
+Underfull \hbox (badness 10000) in paragraph at lines 256--256
 []\T1/ptm/m/n/10 14:40-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 254--254
+Underfull \hbox (badness 10000) in paragraph at lines 256--256
 \T1/ptm/m/n/10 16:00
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 254--254
+Underfull \hbox (badness 10000) in paragraph at lines 256--256
 []\T1/ptm/m/n/10 Fr.,
  []
 
 
-Overfull \hbox (2.01608pt too wide) in paragraph at lines 254--254
+Overfull \hbox (2.01608pt too wide) in paragraph at lines 256--256
 \T1/ptm/m/n/10 11.12.2020| 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 254--254
+Underfull \hbox (badness 10000) in paragraph at lines 256--256
 []\T1/ptm/m/n/10 10:00-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 254--254
+Underfull \hbox (badness 10000) in paragraph at lines 256--256
 \T1/ptm/m/n/10 11:20
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 254--254
+Underfull \hbox (badness 10000) in paragraph at lines 256--256
 []\T1/ptm/m/n/10 Al-ter Sem-i-nar-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 254--254
+Underfull \hbox (badness 10000) in paragraph at lines 256--256
 []\T1/ptm/m/n/10 11:40-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 254--254
+Underfull \hbox (badness 10000) in paragraph at lines 256--256
 \T1/ptm/m/n/10 13:00
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 254--254
+Underfull \hbox (badness 10000) in paragraph at lines 256--256
 []\T1/ptm/m/n/10 Sa.,
  []
 
 
-Overfull \hbox (2.01608pt too wide) in paragraph at lines 254--254
+Overfull \hbox (2.01608pt too wide) in paragraph at lines 256--256
 \T1/ptm/m/n/10 12.12.2020| 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 254--254
+Underfull \hbox (badness 10000) in paragraph at lines 256--256
 []\T1/ptm/m/n/10 09:00-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 254--254
+Underfull \hbox (badness 10000) in paragraph at lines 256--256
 \T1/ptm/m/n/10 10:20
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 254--254
+Underfull \hbox (badness 10000) in paragraph at lines 256--256
 []\T1/ptm/m/n/10 Neuer Sem-i-nar-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 254--254
+Underfull \hbox (badness 10000) in paragraph at lines 256--256
 []\T1/ptm/m/n/10 10:40-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 254--254
+Underfull \hbox (badness 10000) in paragraph at lines 256--256
 \T1/ptm/m/n/10 12:00
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 254--254
+Underfull \hbox (badness 10000) in paragraph at lines 256--256
 []\T1/ptm/m/n/10 12:00-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 254--254
+Underfull \hbox (badness 10000) in paragraph at lines 256--256
 \T1/ptm/m/n/10 13:00
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 254--254
+Underfull \hbox (badness 10000) in paragraph at lines 256--256
 []\T1/ptm/m/n/10 13:00-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 254--254
+Underfull \hbox (badness 10000) in paragraph at lines 256--256
 \T1/ptm/m/n/10 14:20
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 254--254
+Underfull \hbox (badness 10000) in paragraph at lines 256--256
 []\T1/ptm/m/n/10 14:40-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 254--254
+Underfull \hbox (badness 10000) in paragraph at lines 256--256
 \T1/ptm/m/n/10 16:00
  []
 
@@ -969,805 +982,50 @@ Overfull \vbox (65.47026pt too high) has occurred while \output is active []
 
 [4]
 LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 2
-74.
+76.
 
 ("C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex/latex/psnfss\ts1ptm
 .fd"
 File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
-) [5] [6
-
-]
+) [5] [6]
 Chapter 2.
-<abstract_bg.jpg, id=355, 5203.44pt x 3468.96pt>
-LaTeX Font Info:    Trying to load font information for T1+pcr on input line 33
-2.
-
-("C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex/latex/psnfss\t1pcr.
-fd"
-File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
-)
-File: abstract_bg.jpg Graphic file (type jpg)
-<use abstract_bg.jpg>
-Package pdftex.def Info: abstract_bg.jpg  used on input line 332.
-(pdftex.def)             Requested size: 469.75502pt x 313.1457pt.
- [7 <./abstract_bg.jpg>] [8]
-Chapter 3.
-[9
-
-] [10
+(introductiontomusicalcorpusstudies.ind)
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 351.
+ [7
 
 ]
-Chapter 4.
-LaTeX Font Info:    Font shape `T1/phv/b/it' in size <14.4> not available
-(Font)              Font shape `T1/phv/b/sl' tried instead on input line 455.
-<jazz.jpg, id=393, 6022.5pt x 4015.0pt>
-File: jazz.jpg Graphic file (type jpg)
-<use jazz.jpg>
-Package pdftex.def Info: jazz.jpg  used on input line 461.
-(pdftex.def)             Requested size: 469.75502pt x 313.11974pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 533--535
-[]|\T1/ptm/m/n/10 All sec-tions (phrase, cho-rus, form, chords, etc.), ref-er-e
-nced by
- []
-
-[11 <./jazz.jpg>]
-LaTeX Font Info:    Font shape `T1/pcr/m/it' in size <9> not available
-(Font)              Font shape `T1/pcr/m/sl' tried instead on input line 559.
-
-
-Package textcomp Warning: Symbol \textasciigrave not provided by
-(textcomp)                font family pcr in TS1 encoding.
-(textcomp)                Default family used instead on input line 565.
-
-LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 5
-65.
-
-("C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\t1cmtt.f
-d"
-File: t1cmtt.fd 2019/12/16 v2.5j Standard LaTeX font definitions
-)
-LaTeX Font Info:    Trying to load font information for TS1+cmtt on input line 
-565.
-
-("C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\ts1cmtt.
-fd"
-File: ts1cmtt.fd 2019/12/16 v2.5j Standard LaTeX font definitions
-)
-
-Package textcomp Warning: Symbol \textasciigrave not provided by
-(textcomp)                font family pcr in TS1 encoding.
-(textcomp)                Default family used instead on input line 565.
-
-[12]
-Chapter 5.
-[13
-
-] [14
-
-]
-Chapter 6.
-[15] [16
-
-]
-Chapter 7.
-<pop.jpg, id=444, 5203.44pt x 3468.96pt>
-File: pop.jpg Graphic file (type jpg)
-<use pop.jpg>
-Package pdftex.def Info: pop.jpg  used on input line 621.
-(pdftex.def)             Requested size: 469.75502pt x 313.1457pt.
-
-Package textcomp Warning: Symbol \textasciigrave not provided by
-(textcomp)                font family pcr in TS1 encoding.
-(textcomp)                Default family used instead on input line 627.
-
-
-Package textcomp Warning: Symbol \textasciigrave not provided by
-(textcomp)                font family pcr in TS1 encoding.
-(textcomp)                Default family used instead on input line 627.
-
-
-Package textcomp Warning: Symbol \textasciigrave not provided by
-(textcomp)                font family pcr in TS1 encoding.
-(textcomp)                Default family used instead on input line 627.
-
-
-Package textcomp Warning: Symbol \textasciigrave not provided by
-(textcomp)                font family pcr in TS1 encoding.
-(textcomp)                Default family used instead on input line 627.
-
-
-Package textcomp Warning: Symbol \textasciigrave not provided by
-(textcomp)                font family pcr in TS1 encoding.
-(textcomp)                Default family used instead on input line 627.
-
-
-Package textcomp Warning: Symbol \textasciigrave not provided by
-(textcomp)                font family pcr in TS1 encoding.
-(textcomp)                Default family used instead on input line 627.
-
-
-Package textcomp Warning: Symbol \textasciigrave not provided by
-(textcomp)                font family pcr in TS1 encoding.
-(textcomp)                Default family used instead on input line 627.
-
-
-Package textcomp Warning: Symbol \textasciigrave not provided by
-(textcomp)                font family pcr in TS1 encoding.
-(textcomp)                Default family used instead on input line 627.
-
-[17 <./pop.jpg>] [18]
-Chapter 8.
-LaTeX Font Info:    Trying to load font information for TS1+pcr on input line 7
-14.
-
-("C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex/latex/psnfss\ts1pcr
-.fd"
-File: ts1pcr.fd 2001/06/04 font definitions for TS1/pcr.
-) [19
-
-]
-
-LaTeX Warning: File `{output_13_0}.png' not found on input line 813.
-
-
-LaTeX Warning: File `{output_13_0}.png' not found on input line 813.
-
-
-! Package pdftex.def Error: File `output_13_0.png' not found: using draft setti
-ng.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.813 ...\sphinxincludegraphics{{output_13_0}.png}
-                                                  
-? 
-[20]
-
-LaTeX Warning: File `{output_17_0}.png' not found on input line 873.
-
-
-LaTeX Warning: File `{output_17_0}.png' not found on input line 873.
-
-
-! Package pdftex.def Error: File `output_17_0.png' not found: using draft setti
-ng.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.873 ...\sphinxincludegraphics{{output_17_0}.png}
-                                                  
-? 
-
-LaTeX Warning: File `{img/random_piece}.png' not found on input line 886.
-
-
-LaTeX Warning: File `{img/random_piece}.png' not found on input line 886.
-
-
-! Package pdftex.def Error: File `img/random_piece.png' not found: using draft 
-setting.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.886 ...nxincludegraphics{{img/random_piece}.png}
-                                                  
-? 
-[21]
-
-LaTeX Warning: File `{output_30_0}.png' not found on input line 986.
-
-
-LaTeX Warning: File `{output_30_0}.png' not found on input line 986.
-
-
-! Package pdftex.def Error: File `output_30_0.png' not found: using draft setti
-ng.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.986 ...\sphinxincludegraphics{{output_30_0}.png}
-                                                  
-? 
-
-LaTeX Warning: File `{img/explained_variance}.png' not found on input line 992.
-
-
-
-LaTeX Warning: File `{img/explained_variance}.png' not found on input line 992.
-
-
-
-! Package pdftex.def Error: File `img/explained_variance.png' not found: using 
-draft setting.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.992 ...udegraphics{{img/explained_variance}.png}
-                                                  
-? 
-[22]
-
-LaTeX Warning: File `{output_38_0}.png' not found on input line 1046.
-
-
-LaTeX Warning: File `{output_38_0}.png' not found on input line 1046.
-
-
-! Package pdftex.def Error: File `output_38_0.png' not found: using draft setti
-ng.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.1046 ...sphinxincludegraphics{{output_38_0}.png}
-                                                  
-? 
-
-LaTeX Warning: File `{img/3d_scatter}.png' not found on input line 1052.
-
-
-LaTeX Warning: File `{img/3d_scatter}.png' not found on input line 1052.
-
-
-! Package pdftex.def Error: File `img/3d_scatter.png' not found: using draft se
-tting.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.1052 ...inxincludegraphics{{img/3d_scatter}.png}
-                                                  
-? 
-[23]
-
-LaTeX Warning: File `{output_41_0}.png' not found on input line 1089.
-
-
-LaTeX Warning: File `{output_41_0}.png' not found on input line 1089.
-
-
-! Package pdftex.def Error: File `output_41_0.png' not found: using draft setti
-ng.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.1089 ...sphinxincludegraphics{{output_41_0}.png}
-                                                  
-? 
-
-LaTeX Warning: File `{img/3d_dimension_pairs}.png' not found on input line 1095
-.
-
-
-LaTeX Warning: File `{img/3d_dimension_pairs}.png' not found on input line 1095
-.
-
-
-! Package pdftex.def Error: File `img/3d_dimension_pairs.png' not found: using 
-draft setting.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.1095 ...degraphics{{img/3d_dimension_pairs}.png}
-                                                  
-? 
-[24]
-
-LaTeX Warning: File `{img/lof}.png' not found on input line 1116.
-
-
-LaTeX Warning: File `{img/lof}.png' not found on input line 1116.
-
-
-! Package pdftex.def Error: File `img/lof.png' not found: using draft setting.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.1116 ...ent\sphinxincludegraphics{{img/lof}.png}
-                                                  
-? 
-
-LaTeX Warning: File `{img/3d_dimension_pairs}.png' not found on input line 1141
-.
-
-
-LaTeX Warning: File `{img/3d_dimension_pairs}.png' not found on input line 1141
-.
-
-
-! Package pdftex.def Error: File `img/3d_dimension_pairs.png' not found: using 
-draft setting.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.1141 ...degraphics{{img/3d_dimension_pairs}.png}
-                                                  
-? 
-[25]
-
-LaTeX Warning: File `{output_49_0}.png' not found on input line 1161.
-
-
-LaTeX Warning: File `{output_49_0}.png' not found on input line 1161.
-
-
-! Package pdftex.def Error: File `output_49_0.png' not found: using draft setti
-ng.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.1161 ...sphinxincludegraphics{{output_49_0}.png}
-                                                  
-? 
-
-LaTeX Warning: File `{img/3d_dimension_pairs_colored}.png' not found on input l
-ine 1163.
-
-
-LaTeX Warning: File `{img/3d_dimension_pairs_colored}.png' not found on input l
-ine 1163.
-
-
-! Package pdftex.def Error: File `img/3d_dimension_pairs_colored.png' not found
-: using draft setting.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.1163 ...cs{{img/3d_dimension_pairs_colored}.png}
-                                                   \sphinxincludegraphics{{i...
-
-? 
-
-LaTeX Warning: File `{img/lof}.png' not found on input line 1163.
-
-
-LaTeX Warning: File `{img/lof}.png' not found on input line 1163.
-
-
-! Package pdftex.def Error: File `img/lof.png' not found: using draft setting.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.1163 ...g} \sphinxincludegraphics{{img/lof}.png}
-                                                  
-? 
-
-LaTeX Warning: File `{img/random_piece}.png' not found on input line 1180.
-
-
-LaTeX Warning: File `{img/random_piece}.png' not found on input line 1180.
-
-
-! Package pdftex.def Error: File `img/random_piece.png' not found: using draft 
-setting.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.1180 ...xincludegraphics{{img/random_piece}.png}
-                                                  
-? 
-
-LaTeX Warning: File `{img/lof}.png' not found on input line 1190.
-
-
-LaTeX Warning: File `{img/lof}.png' not found on input line 1190.
-
-
-! Package pdftex.def Error: File `img/lof.png' not found: using draft setting.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.1190 ...ent\sphinxincludegraphics{{img/lof}.png}
-                                                  
-? 
-[26]
-
-LaTeX Warning: File `{output_59_0}.png' not found on input line 1225.
-
-
-LaTeX Warning: File `{output_59_0}.png' not found on input line 1225.
-
-
-! Package pdftex.def Error: File `output_59_0.png' not found: using draft setti
-ng.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.1225 ...sphinxincludegraphics{{output_59_0}.png}
-                                                  
-? 
-
-LaTeX Warning: File `{img/hist_scatter}.png' not found on input line 1231.
-
-
-LaTeX Warning: File `{img/hist_scatter}.png' not found on input line 1231.
-
-
-! Package pdftex.def Error: File `img/hist_scatter.png' not found: using draft 
-setting.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.1231 ...xincludegraphics{{img/hist_scatter}.png}
-                                                  
-? 
-
-LaTeX Warning: File `{output_62_0}.png' not found on input line 1251.
-
-
-LaTeX Warning: File `{output_62_0}.png' not found on input line 1251.
-
-
-! Package pdftex.def Error: File `output_62_0.png' not found: using draft setti
-ng.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.1251 ...sphinxincludegraphics{{output_62_0}.png}
-                                                  
-? 
-
-LaTeX Warning: File `{img/hist_scatter_line}.png' not found on input line 1257.
-
-
-
-LaTeX Warning: File `{img/hist_scatter_line}.png' not found on input line 1257.
-
-
-
-! Package pdftex.def Error: File `img/hist_scatter_line.png' not found: using d
-raft setting.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.1257 ...udegraphics{{img/hist_scatter_line}.png}
-                                                  
-? 
-[27]
-
-LaTeX Warning: File `{output_66_0}.png' not found on input line 1283.
-
-
-LaTeX Warning: File `{output_66_0}.png' not found on input line 1283.
-
-
-! Package pdftex.def Error: File `output_66_0.png' not found: using draft setti
-ng.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.1283 ...sphinxincludegraphics{{output_66_0}.png}
-                                                  
-? 
-
-LaTeX Warning: File `{img/hist_scatter_lowess}.png' not found on input line 128
-9.
-
-
-LaTeX Warning: File `{img/hist_scatter_lowess}.png' not found on input line 128
-9.
-
-
-! Package pdftex.def Error: File `img/hist_scatter_lowess.png' not found: using
- draft setting.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.1289 ...egraphics{{img/hist_scatter_lowess}.png}
-                                                  
-? 
-[28]
-
-LaTeX Warning: File `{output_69_0}.png' not found on input line 1359.
-
-
-LaTeX Warning: File `{output_69_0}.png' not found on input line 1359.
-
-
-! Package pdftex.def Error: File `output_69_0.png' not found: using draft setti
-ng.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.1359 ...sphinxincludegraphics{{output_69_0}.png}
-                                                  
-? 
-[29]
-
-LaTeX Warning: File `{img/final}.png' not found on input line 1369.
-
-
-LaTeX Warning: File `{img/final}.png' not found on input line 1369.
-
-
-! Package pdftex.def Error: File `img/final.png' not found: using draft setting
-.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.1369 ...t\sphinxincludegraphics{{img/final}.png}
-                                                  
-? 
-[30]
-
-LaTeX Warning: File `{output_72_0}.png' not found on input line 1417.
-
-
-LaTeX Warning: File `{output_72_0}.png' not found on input line 1417.
-
-
-! Package pdftex.def Error: File `output_72_0.png' not found: using draft setti
-ng.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.1417 ...sphinxincludegraphics{{output_72_0}.png}
-                                                  
-? 
-
-LaTeX Warning: File `{img/epochs_regions}.png' not found on input line 1423.
-
-
-LaTeX Warning: File `{img/epochs_regions}.png' not found on input line 1423.
-
-
-! Package pdftex.def Error: File `img/epochs_regions.png' not found: using draf
-t setting.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.1423 ...ncludegraphics{{img/epochs_regions}.png}
-                                                  
-? 
-
-! LaTeX Error: Too deeply nested.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.1483 \begin{enumerate}
-                        
-? 
-
-! LaTeX Error: No counter 'enumv' defined.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.1485 \setcounter{enumv}{4}
-                            
-? 
-
-! LaTeX Error: Too deeply nested.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.1493 \begin{enumerate}
-                        
-? 
-
-! LaTeX Error: No counter 'enumvi' defined.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.1495 \setcounter{enumvi}{5}
-                             
-? 
-
-! LaTeX Error: Too deeply nested.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.1503 \begin{enumerate}
-                        
-? 
-
-! LaTeX Error: No counter 'enumvii' defined.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.1505 \setcounter{enumvii}{6}
-                              
-? 
-
-! LaTeX Error: Too deeply nested.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.1514 \begin{enumerate}
-                        
-? 
-
-! LaTeX Error: No counter 'enumviii' defined.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.1516 \setcounter{enumviii}{7}
-                               
-? 
-[31] [32]
-Chapter 9.
-<choro.jpg, id=558, 1112.155pt x 623.32875pt>
-File: choro.jpg Graphic file (type jpg)
-<use choro.jpg>
-Package pdftex.def Info: choro.jpg  used on input line 1592.
-(pdftex.def)             Requested size: 469.75502pt x 263.28955pt.
-[33
-
- <./choro.jpg>] [34]
-Chapter 10.
-<score.jpg, id=576, 3902.58pt x 2601.72pt>
-File: score.jpg Graphic file (type jpg)
-<use score.jpg>
-Package pdftex.def Info: score.jpg  used on input line 1619.
-(pdftex.def)             Requested size: 469.75502pt x 313.1457pt.
-<circle_of_fifths.png, id=579, 1120.185pt x 1119.18124pt>
-File: circle_of_fifths.png Graphic file (type png)
-<use circle_of_fifths.png>
-Package pdftex.def Info: circle_of_fifths.png  used on input line 1643.
-(pdftex.def)             Requested size: 234.8775pt x 234.65929pt.
-[35
-
- <./score.jpg>]
-<line_of_fifths.png, id=592, 2100.84875pt x 206.7725pt>
-File: line_of_fifths.png Graphic file (type png)
-<use line_of_fifths.png>
-Package pdftex.def Info: line_of_fifths.png  used on input line 1661.
-(pdftex.def)             Requested size: 469.75502pt x 46.23468pt.
- [36 <./circle_of_fifths.png> <./line_of_fifths.png>]
-[37] [38] [39] [40
-
-]
-Chapter 11.
-<polak_mali.png, id=646, 722.7pt x 473.77pt>
-File: polak_mali.png Graphic file (type png)
-<use polak_mali.png>
-Package pdftex.def Info: polak_mali.png  used on input line 1821.
-(pdftex.def)             Requested size: 469.75502pt x 307.95409pt.
-[41 <./polak_mali.png>] [42
-
-]
-Chapter 12.
-<electro.jpg, id=663, 4605.205pt x 3070.47125pt>
-File: electro.jpg Graphic file (type jpg)
-<use electro.jpg>
-Package pdftex.def Info: electro.jpg  used on input line 1835.
-(pdftex.def)             Requested size: 469.75502pt x 313.20267pt.
-[43 <./electro.jpg>] [44
-
-]
-Chapter 13.
-[45] [46
-
-]
-Chapter 14.
-[47] [48
-
-]
-Chapter 15.
-[49] [50
-
-] [51
-
-] (introductiontomusicalcorpusstudies.ind)
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1953.
- [52]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 1953.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 351.
 
 (introductiontomusicalcorpusstudies.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1953.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1953.
-
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 351.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 351.
 Package rerunfilecheck Info: File `introductiontomusicalcorpusstudies.out' has 
 not changed.
-(rerunfilecheck)             Checksum: ED0D8DF53AC83A5C892F9BAEF7E8D703;8975.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1953.
+(rerunfilecheck)             Checksum: 84C71D497240AE27E15FF88F27117AEE;632.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 351.
  ) 
 Here is how much of TeX's memory you used:
- 14372 strings out of 480896
- 214664 string characters out of 2895750
- 526034 words of memory out of 3000000
- 29632 multiletter control sequences out of 15000+200000
- 603992 words of font info for 115 fonts, out of 3000000 for 9000
+ 13444 strings out of 480896
+ 196569 string characters out of 2895750
+ 472720 words of memory out of 3000000
+ 28990 multiletter control sequences out of 15000+200000
+ 571372 words of font info for 70 fonts, out of 3000000 for 9000
  1142 hyphenation exceptions out of 8191
- 38i,22n,51p,2802b,535s stack positions out of 5000i,500n,10000p,200000b,50000s
- <C:\Users\fabianmoss\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dp
-i600\tcit0900.pk>{C:/Users/fabianmoss/AppData/Local/Programs/MiKTeX 2.9/fonts/e
-nc/dvips/base/8r.enc}<C:/Users/fabianmoss/AppData/Local/Programs/MiKTeX 2.9/fon
-ts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/fabianmoss/AppData/Local/Progr
-ams/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/fabianmoss/A
-ppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/
-Users/fabianmoss/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/
-cm/cmmi5.pfb><C:/Users/fabianmoss/AppData/Local/Programs/MiKTeX 2.9/fonts/type1
-/public/amsfonts/cm/cmmi7.pfb><C:/Users/fabianmoss/AppData/Local/Programs/MiKTe
-X 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/fabianmoss/AppData/Loc
-al/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/fabian
-moss/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pf
-b><C:/Users/fabianmoss/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/ams
-fonts/cm/cmsy5.pfb><C:/Users/fabianmoss/AppData/Local/Programs/MiKTeX 2.9/fonts
-/type1/public/amsfonts/cm/cmsy7.pfb><C:/Users/fabianmoss/AppData/Local/Programs
-/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/msbm10.pfb><C:/Users/fabianmoss
-/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/courier/ucrb8a.pfb><C:/Users
-/fabianmoss/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/courier/ucrr8a.pf
-b><C:/Users/fabianmoss/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/courie
-r/ucrro8a.pfb><C:/Users/fabianmoss/AppData/Local/Programs/MiKTeX 2.9/fonts/type
-1/urw/helvetic/uhvb8a.pfb><C:/Users/fabianmoss/AppData/Local/Programs/MiKTeX 2.
-9/fonts/type1/urw/helvetic/uhvbo8a.pfb><C:/Users/fabianmoss/AppData/Local/Progr
-ams/MiKTeX 2.9/fonts/type1/urw/helvetic/uhvr8a.pfb><C:/Users/fabianmoss/AppData
-/Local/Programs/MiKTeX 2.9/fonts/type1/urw/times/utmb8a.pfb><C:/Users/fabianmos
-s/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/times/utmbi8a.pfb><C:/Users
+ 38i,11n,49p,424b,403s stack positions out of 5000i,500n,10000p,200000b,50000s
+{C:/Users/fabianmoss/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/base/8
+r.enc}<C:/Users/fabianmoss/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public
+/amsfonts/cm/cmmi10.pfb><C:/Users/fabianmoss/AppData/Local/Programs/MiKTeX 2.9/
+fonts/type1/urw/helvetic/uhvb8a.pfb><C:/Users/fabianmoss/AppData/Local/Programs
+/MiKTeX 2.9/fonts/type1/urw/helvetic/uhvbo8a.pfb><C:/Users/fabianmoss/AppData/L
+ocal/Programs/MiKTeX 2.9/fonts/type1/urw/helvetic/uhvr8a.pfb><C:/Users/fabianmo
+ss/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/times/utmb8a.pfb><C:/Users
 /fabianmoss/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb>
 <C:/Users/fabianmoss/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/times/ut
 mri8a.pfb>
-Output written on introductiontomusicalcorpusstudies.pdf (56 pages, 16102222 by
-tes).
+Output written on introductiontomusicalcorpusstudies.pdf (11 pages, 4135784 byt
+es).
 PDF statistics:
- 843 PDF objects out of 1000 (max. 8388607)
- 186 named destinations out of 1000 (max. 500000)
- 530 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 127 PDF objects out of 1000 (max. 8388607)
+ 19 named destinations out of 1000 (max. 500000)
+ 66 words of extra memory for PDF output out of 10000 (max. 10000000)
 

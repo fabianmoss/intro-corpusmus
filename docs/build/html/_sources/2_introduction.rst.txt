@@ -1,6 +1,12 @@
 Introduction
 ============
 
+.. image:: _static/pattern.jpg
+  :width: 100%
+  :align: center
+  :alt: Image by `Meagan Carsience <https://unsplash.com/@mcarsience_photography?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText>`_ 
+        on `Unsplash <https://unsplash.com/s/photos/pattern?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText>`_.
+
 About this course
 -----------------
 

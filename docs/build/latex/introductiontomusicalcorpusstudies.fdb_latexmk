@@ -1,10 +1,10 @@
 # Fdb version 3
-["makeindex introductiontomusicalcorpusstudies.idx"] 1598354713 "introductiontomusicalcorpusstudies.idx" "introductiontomusicalcorpusstudies.ind" "introductiontomusicalcorpusstudies" 1603713985
-  "introductiontomusicalcorpusstudies.idx" 1603713985 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+["makeindex introductiontomusicalcorpusstudies.idx"] 1598354713 "introductiontomusicalcorpusstudies.idx" "introductiontomusicalcorpusstudies.ind" "introductiontomusicalcorpusstudies" 1603720671
+  "introductiontomusicalcorpusstudies.idx" 1603720669 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
   (generated)
   "introductiontomusicalcorpusstudies.ilg"
   "introductiontomusicalcorpusstudies.ind"
-["pdflatex"] 1603713984 "introductiontomusicalcorpusstudies.tex" "introductiontomusicalcorpusstudies.pdf" "introductiontomusicalcorpusstudies" 1603713985
+["pdflatex"] 1603720667 "introductiontomusicalcorpusstudies.tex" "introductiontomusicalcorpusstudies.pdf" "introductiontomusicalcorpusstudies" 1603720671
   "C:/Users/fabianmoss/AppData/Local/MiKTeX/2.9/miktex/data/le/pdftex/pdflatex.fmt" 1587969641 10521016 5f50b42fba9a22bfc328be50a34c9911 ""
   "C:/Users/fabianmoss/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map" 1602599175 291922 e975dbbd501b1581b9fbe0d8ea98be57 ""
   "C:/Users/fabianmoss/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/base/8r.enc" 1458473887 4993 1194fb36dfcb11d9ae9802f2b00b60a3 ""
@@ -142,20 +142,21 @@
   "C:/Users/fabianmoss/AppData/Local/Programs/MiKTeX 2.9/tex/latex/xcolor/xcolor.sty" 1463135581 57049 74963e80d77be39a0b7442967b27c75b ""
   "abstract_bg.jpg" 1603706204 4040256 a008ea29bea622d1ed8d2029319b198f ""
   "footnotehyper-sphinx.sty" 1594223451 8888 1bbd7bdeae8c8bed1d10d551bddb1cc9 ""
-  "introductiontomusicalcorpusstudies.aux" 1603713985 4742 7f5105152b23a31b1dd75b1419f4f93d "pdflatex"
+  "introductiontomusicalcorpusstudies.aux" 1603720670 4742 bb1f6ff615b255efafd2fc2415e758ca "pdflatex"
   "introductiontomusicalcorpusstudies.ind" 1603706204 0 d41d8cd98f00b204e9800998ecf8427e "makeindex introductiontomusicalcorpusstudies.idx"
-  "introductiontomusicalcorpusstudies.out" 1603713985 2111 3b798b6ba09b4b347038ce1a4d042861 "pdflatex"
-  "introductiontomusicalcorpusstudies.tex" 1603713982 15047 a021af19840356178c78d4fbe52b7fc3 ""
-  "introductiontomusicalcorpusstudies.toc" 1603713985 1168 774e55ced5445d78aafd8cca8a054254 "pdflatex"
+  "introductiontomusicalcorpusstudies.out" 1603720670 2111 3b798b6ba09b4b347038ce1a4d042861 "pdflatex"
+  "introductiontomusicalcorpusstudies.tex" 1603720660 15152 83118494fcd6c04a5b328705f35558ba ""
+  "introductiontomusicalcorpusstudies.toc" 1603720670 1168 84d77175d83253592201e8a6f1d2f1b6 "pdflatex"
+  "pattern.jpg" 1603720366 1284163 d5ad5924b48f9a260a9cbc924ae80174 ""
   "sphinx.sty" 1594223451 82020 a38700b8aa22dfd94a8a5b905e69be73 ""
-  "sphinxhighlight.sty" 1603713982 8242 5cf9b0eb20ee5aaf9511e1ea0dd43514 ""
+  "sphinxhighlight.sty" 1603720660 8242 5cf9b0eb20ee5aaf9511e1ea0dd43514 ""
   "sphinxmanual.cls" 1594223451 4236 124cd90deb92742b5d3922bfc2cd70c0 ""
-  "sphinxmessages.sty" 1603713982 765 06218e7b66d00e05ea0d90ac6e115733 ""
+  "sphinxmessages.sty" 1603720660 765 06218e7b66d00e05ea0d90ac6e115733 ""
   "sphinxmulticell.sty" 1594223451 14606 0b6edc2b1a83546ed92026d1f6a311b5 ""
   (generated)
-  "introductiontomusicalcorpusstudies.idx"
-  "introductiontomusicalcorpusstudies.out"
+  "introductiontomusicalcorpusstudies.aux"
   "introductiontomusicalcorpusstudies.pdf"
+  "introductiontomusicalcorpusstudies.out"
+  "introductiontomusicalcorpusstudies.idx"
   "introductiontomusicalcorpusstudies.log"
   "introductiontomusicalcorpusstudies.toc"
-  "introductiontomusicalcorpusstudies.aux"

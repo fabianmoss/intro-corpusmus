@@ -6,6 +6,12 @@
 Introduction to Musical Corpus Studies
 ======================================
 
+.. image:: _static/abstract_bg.jpg
+  :width: 100%
+  :align: center
+  :alt: Image by `Victoria Alexander <https://unsplash.com/@pixeldebris?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText>`_ 
+        on `Unsplash <https://unsplash.com/s/photos/pattern?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText>`_.
+
 .. warning::
 
    This material is still (heavily) under construction and might change throughout the course!
@@ -39,6 +45,13 @@ The course is aimed at students at the undergraduate level who have little or no
 about quantitative approaches to musicology.
 
 
+.. only:: builder_html
+   
+   .. note:: 
+     
+      A PDF version of the course material can be downloaded here: `pdf <../latex/introductiontomusicalcorpusstudies.pdf>`_
+
+
 .. toctree::
    :maxdepth: 3
    :caption: Content
@@ -46,20 +59,6 @@ about quantitative approaches to musicology.
 
    1_orga.rst
    
-   2_introduction
-   3_folk_songs
-   4_jazz_solos
-   renaissance
-   beethoven_harmony
-   billboard
-   data-driven_music_history
-   choro
-   tonality
-   mali_percussion
-   electronic
-
-   conclusion.rst
-   python_basics.rst
    bibliography.rst
 
 

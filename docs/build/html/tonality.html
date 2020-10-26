@@ -234,9 +234,9 @@ chromatic circle, by the mapping <span class="math notranslate nohighlight">\(t 
 keys on the piano are shown in white and pitch classes that correspond to black keys on the
 piano are shown in black. The second variant of pitch classes does not assume enharmonic
 equivalence but only that octave-related notes are equivalent, and is hence more general.
-This representation allows to arrange pitch classes on the <em>line of fifths</em> <a class="bibtex reference internal" href="bibliography.html#temperley2000" id="id1">[Tem00]</a>.
+This representation allows to arrange pitch classes on the <em>line of fifths</em> <span class="bibtex" id="id1">[Temperley2000]</span>.
 This linear of ordering tonal pitch-classes has been used by a number of music theorists, e.g.
-<a class="bibtex reference internal" href="bibliography.html#weber1851" id="id2">[Web51]</a><a class="bibtex reference internal" href="bibliography.html#riemann1900" id="id3">[Rie00]</a><a class="bibtex reference internal" href="bibliography.html#handschin1948" id="id4">[Han48]</a><a class="bibtex reference internal" href="bibliography.html#bardos1956" id="id5">[Bar56]</a>. It is shown in <a class="reference internal" href="#line-of-fifths"><span class="std std-numref">Fig. 10.2</span></a>.</p>
+<span class="bibtex" id="id2">[Weber1851]</span><span class="bibtex" id="id3">[Riemann1900]</span><span class="bibtex" id="id4">[Handschin1948]</span><span class="bibtex" id="id5">[Bardos1956]</span>. It is shown in <a class="reference internal" href="#line-of-fifths"><span class="std std-numref">Fig. 10.2</span></a>.</p>
 <div class="figure align-center" id="id17">
 <span id="line-of-fifths"></span><a class="reference internal image-reference" href="_images/line_of_fifths.png"><img alt="_images/line_of_fifths.png" src="_images/line_of_fifths.png" style="width: 100%;" /></a>
 <p class="caption"><span class="caption-number">Fig. 10.2 </span><span class="caption-text">Schematic depiction of the tonal pitch-classes on the line of fifths mapped to integers in <span class="math notranslate nohighlight">\(\mathbb{Z}\)</span>.</span><a class="headerlink" href="#id17" title="Permalink to this image">¶</a></p>
@@ -246,7 +246,7 @@ This linear of ordering tonal pitch-classes has been used by a number of music t
 <p>Think of other possible equivalence relations for pitch classes.
 E.g. which relation do we need to distinguish only two classes, high and low with respect to middle C?</p>
 </div>
-<p>Following <a class="bibtex reference internal" href="bibliography.html#temperley2000" id="id6">[Tem00]</a>, we call the first representation <em>neutral pitch-classes</em> and the
+<p>Following <span class="bibtex" id="id6">[Temperley2000]</span>, we call the first representation <em>neutral pitch-classes</em> and the
 second one <em>tonal pitch-classes</em>. The linear structure of the line of fifths allows to associate each
 tonal pitch-class with an integer <span class="math notranslate nohighlight">\(k \in \mathbb{Z}\)</span> such that this integer represents the number of perfect
 fifths that lie between this pitch-class and C (Gárdonyi and Nordhoff, 2002). In other words,
@@ -275,7 +275,7 @@ contains tonal pitch-classes outside this range. The vocabulary size of the corp
 sharps or flats, respectively. While the transformation of tonal into neutral pitch-classes is
 achieved by deterministically mapping a tonal pitch-class <span class="math notranslate nohighlight">\(t \in \mathbb{Z}\)</span> to a neutral pitch-class
 <span class="math notranslate nohighlight">\(t \mapsto t \mod 12 \in \mathbb{Z}_{12}\)</span> (in fifths ordering), the reverse direction involves some kind of inference and is
-called the problem of pitch spelling (<a class="bibtex reference internal" href="bibliography.html#temperley2001" id="id7">[Tem01]</a><a class="bibtex reference internal" href="bibliography.html#cambouropoulos2003" id="id8">[Cam03]</a><a class="bibtex reference internal" href="bibliography.html#stoddard2004" id="id9">[SRU04]</a><a class="bibtex reference internal" href="bibliography.html#chew2005" id="id10">[CC05]</a><a class="bibtex reference internal" href="bibliography.html#meredith2006" id="id11">[Mer06]</a>).</p>
+called the problem of pitch spelling (<span class="bibtex" id="id7">[Temperley2001]</span><span class="bibtex" id="id8">[Cambouropoulos2003]</span><span class="bibtex" id="id9">[Stoddard2004]</span><span class="bibtex" id="id10">[Chew2005]</span><span class="bibtex" id="id11">[Meredith2006]</span>).</p>
 <p>helix</p>
 <p>Due to the encoding of the corpus, we adopt the
 representation of pieces as bags of notes (see Section~ref{sec:bagofnotes})
@@ -316,7 +316,7 @@ will show instead that it can be inferred from the data.</p>
 <span class="math notranslate nohighlight">\(|\{\text{C}, \text{D}, \text{E}, \text{F}, \text{G}, \text{A}, \text{B}\}| \cdot |\{\flat\flat, \flat, \natural, \sharp, \sharp\sharp\}| = 35\)</span>, it is impossible to visualize
 this space and pieces in it to see whether their arrangement contains any meaningful information.
 We address this problem by using a method for <em>dimensionality reduction</em>
-called <em>Principal Component Analysis</em> (PCA) <a class="bibtex reference internal" href="bibliography.html#bishop2006" id="id12">[Bis06]</a>
+called <em>Principal Component Analysis</em> (PCA) <span class="bibtex" id="id12">[Bishop2006]</span>
 that projects the data into a lower-dimensional space while at the same time maintaining
 as many characteristic properties of the original space as possible.
 PCA thus can aid to achieve a better understanding of
@@ -364,8 +364,8 @@ interest here.</p>
 <dt class="label" id="f1"><span class="brackets"><a class="fn-backref" href="#id13">1</a></span></dt>
 <dd><p>While PCA is one of the most commonly used methods for dimensionality reduction, there are many others
 (sometimes relying on particular assumptions about the distribution of the data).
-In a qualitative comparison, <em>Locally Linear Embedding</em> <a class="bibtex reference internal" href="bibliography.html#roweis2000" id="id14">[RS00]</a> achieved a similar picture,
-whereas <em>t-distributed Stochastic Neighbor Embedding</em> (t-SNE) <a class="bibtex reference internal" href="bibliography.html#vandermaaten2008" id="id15">[VDMH08]</a>
+In a qualitative comparison, <em>Locally Linear Embedding</em> <span class="bibtex" id="id14">[Roweis2000]</span> achieved a similar picture,
+whereas <em>t-distributed Stochastic Neighbor Embedding</em> (t-SNE) <span class="bibtex" id="id15">[VanDerMaaten2008]</span>
 that does emphasize the local over the global structure of the data did not.
 We opted here for PCA because it preserves most
 of the global structure and the interpretation of the results is straight-forward.</p>

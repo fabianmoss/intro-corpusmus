@@ -1,0 +1,205 @@
+A Data-Driven History of Tonality
+=================================
+
+.. image:: _static/score.jpg
+   :width: 100%
+   :align: center
+   :alt: Photo by `Marius Masalar <https://unsplash.com/@marius?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText>`_ 
+         on `Unsplash <https://unsplash.com/s/photos/scores?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText>`_.
+
+
+Musical Pieces as Tonal Pitch-Class Distributions
+-------------------------------------------------
+
+Musical pieces are composed of notes which have a certain pitch, a certain duration, and are
+located in a specific position in a piece. Here, we disregard both the location and the duration
+of notes and consider only the pitch dimension of musical notes when counting them. It is
+moreover common to consider notes to be equivalent if their respective pitches are related by
+one or multiple octaves, and thus to speak of *pitch classes*. Pitch classes come in two varieties.
+The first, most commonly used representation in computational musicology and music
+information retrieval, distinguishes twelve different pitch classes. This representation system
+also assumes the enharmonic equivalence of certain notes, e.g. :math:`\text{F}\sharp` 
+and :math:`\text{G}\flat`, :math:`\text{C}\flat` and B, etc. The
+assumption of enharmonic equivalence is usually a consequence of music encoding formats
+that assume twelve-tone equal temperament, e.g. MIDI, in which enharmonically equivalent
+notes are indistinguishable. The assumptions of octave and enharmonic equivalence allow to
+represent pitch classes as residuals in :math:`\mathbb{Z}_{12}` and to arrange them on a circle. 
+This arrangement of pitch classes is shown in :numref:`circle-of-fifths`, called the *circle of fifths*. 
+
+.. _circle-of-fifths:
+.. figure:: _static/circle_of_fifths.png
+   :align: center 
+   :width: 50%
+
+   Schematic depiction of the twelve neutral pitch-classes in :math:`\mathbb{Z}_{12}` on the circle of fifths. One
+   representative of each neutral pitch-class is shown as a tonal pitch-class label next to the
+   node. The coloring of the nodes corresponds to the colors of the keys on the piano.
+
+The numbers correspond to pitch classes in the order of fifths that can be transformed to chromatic ordering, the
+chromatic circle, by the mapping :math:`t \mapsto 7 t \mod 12`. Pitch classes that correspond to white
+keys on the piano are shown in white and pitch classes that correspond to black keys on the
+piano are shown in black. The second variant of pitch classes does not assume enharmonic
+equivalence but only that octave-related notes are equivalent, and is hence more general.
+This representation allows to arrange pitch classes on the *line of fifths* :cite:`Temperley2000`.
+This linear of ordering tonal pitch-classes has been used by a number of music theorists, e.g.
+:cite:`Weber1851,Riemann1900,Handschin1948,Bardos1956`. It is shown in :numref:`line-of-fifths`. 
+
+.. _line-of-fifths:
+.. figure:: _static/line_of_fifths.png
+   :align: center 
+   :width: 100%
+
+   Schematic depiction of the tonal pitch-classes on the line of fifths mapped to integers in :math:`\mathbb{Z}`.
+
+.. tip:: 
+
+   Think of other possible equivalence relations for pitch classes.
+   E.g. which relation do we need to distinguish only two classes, high and low with respect to middle C?
+
+
+Following :cite:`Temperley2000`, we call the first representation *neutral pitch-classes* and the
+second one *tonal pitch-classes*. The linear structure of the line of fifths allows to associate each
+tonal pitch-class with an integer :math:`k \in \mathbb{Z}` such that this integer represents the number of perfect
+fifths that lie between this pitch-class and C (Gárdonyi and Nordhoff, 2002). In other words,
+the integer :math:`k \in \mathbb{Z}` corresponds to the number of flats (negative integers) or sharps (positive
+integers) that the major key has in which this tonal pitch-class is the root. For example,
+D is mapped to +2 because D major has a key signature with two sharps, :math:`\text{A}\flat` is mapped
+to :math:`-4` because the key signature for :math:`\text{A}\flat` major has four flats, and C is mapped to 0 because
+its key signature does not have any accidentals. Yet another benefit of this representation
+can be seen in the way in which we associate each tonal pitch-class with a color. Positive
+integers ('sharpened' tonal pitch-classes) are associated with increasingly darker shades of
+red, negative integers are associated with increasingly darker shades of blue ('flattened' tonal
+pitch-classes), and C is associated with white as the neutral origin of the line of fifths. This
+color mapping is used throughout this part. The line of fifths does not only contain all tonal
+pitch-classes but also a number of central musical scales. For example, pentatonic scales are
+segments of length 4 (containing five pitch classes) on the line of fifths, e.g. from :math:`\text{G}\flat` to :math:`\text{B}\flat`,
+diatonic scales are defined by segments of lenght 6, e.g. from F to B, the early extensions of
+the natural diatonic scale by :math:`\text{B}\flat` and :math:`\text{F}\sharp` 
+correspond to the segment spanning the eight fifths on
+the line between these two tonal pitch-classes, and the two whole-tone scales correspond to
+the odd and even numbers, respectively. Theoretically, the line of fifths extends to infinity in
+both directions but in actual compositions only a small segment of it is used. In the corpus
+that is used here, we consider only the segment from :math:`\text{F}\flat\flat` to :math:`\text{B}\sharp\sharp` 
+because no piece in the corpus
+contains tonal pitch-classes outside this range. The vocabulary size of the corpus is thus
+:math:`V = 35`, consisting of the seven natural pitch-classes F, C, G, D, A, E, B with two, one, or zero
+sharps or flats, respectively. While the transformation of tonal into neutral pitch-classes is
+achieved by deterministically mapping a tonal pitch-class :math:`t \in \mathbb{Z}` to a neutral pitch-class 
+:math:`t \mapsto t \mod 12 \in \mathbb{Z}_{12}` (in fifths ordering), the reverse direction involves some kind of inference and is
+called the problem of pitch spelling (:cite:`Temperley2001,Cambouropoulos2003,Stoddard2004,Chew2005,Meredith2006`).
+
+helix
+
+Due to the encoding of the corpus, we adopt the
+representation of pieces as bags of notes (see Section~\ref{sec:bagofnotes})
+and represent each one as a distribution over the :math:`V=35` tonal pitch-classes.
+That is, in the corpus used here with :math:`D=2012` pieces, the tonal pitch-class distribution of a musical piece :math:`x_d`
+is given by the relative frequencies of the tonal pitch class in that piece, for :math:`d\in \{1,\ldots,D\}`.
+Each piece is thus described by a :math:`V`-dimensional vector, :math:`x_d \in \mathbb R^V, \forall d \in\{1,\ldots,D\}`,
+containing positive real numbers that sum to 1.
+In this chapter, we do not make any further assumptions about the process that generated
+this distribution and will postpone these considerations until Chapter~\ref{chap:tonal_profiles}.
+
+In this view, pieces simply correspond to points in the :math:`V - 1`-simplex
+
+.. math:: 
+   \Delta^{V-1} = 	\left\{ x_d \in \mathbb{R}^V
+   \,\middle\vert\, \sum_{i=1}^V x_{d,i} = 1;\; x_{d,i}\geq 0 \right\}.
+
+In this space, those pieces with very different tonal pitch-class distributions will be very distant,
+whereas pieces that have similar tonal pitch-class distributions will be closer to one another and form clusters
+in the :math:`V-1`-simplex.
+It is important to note that the bag-of-notes representation relies on the assumption that the :math:`V` dimensions are independent,
+meaning that this model does not *a priori* assume any particular order between the tonal pitch-classes.
+
+The average tonal pitch-class distribution of all pieces in the corpus is shown in Figure~\ref{fig:pca_mean}.
+Figure~\ref{fig:tpc_mean_dist_periods} in the appendix shows this distribution separately
+for each century from 1361 to 1943.
+Although we know that one can in principle order all tonal pitch-classes on the line of fifths
+(:numref:`line-of-fifths`), we do not incorporate this assumption into the model but
+will show instead that it can be inferred from the data.
+
+Distributions of TPCs
+.....................
+
+What are (discrete) distributions?
+
+entropy
+
+**Hypothesis: similar pieces have similar distributions**
+
+operationalization: distances in vector space
+
+Assumption (for coloring): tonal center is approximated by most frequent note
+
+Taking tonal spaces into account: the line of fifths (dimensionality reduction, clustering, t-SNE, PCA)
+
+
+Principle Component Analysis
+............................
+
+Since the dimensionality of :math:`\Delta^{V-1}` is 
+:math:`|\{\text{C}, \text{D}, \text{E}, \text{F}, \text{G}, \text{A}, \text{B}\}| \cdot |\{\flat\flat, \flat, \natural, \sharp, \sharp\sharp\}| = 35`, it is impossible to visualize
+this space and pieces in it to see whether their arrangement contains any meaningful information.
+We address this problem by using a method for *dimensionality reduction*
+called *Principal Component Analysis* (PCA) :cite:`Bishop2006`
+that projects the data into a lower-dimensional space while at the same time maintaining
+as many characteristic properties of the original space as possible.
+PCA thus can aid to achieve a better understanding of
+the global structure of the space. [#f1]_
+
+PCA considers the data to be represented as a matrix
+
+.. math:: 
+   X = \left[\begin{array}{c}
+                  x_1^\top \\
+                  \vdots \\
+                  x_D^\top \\
+               \end{array}
+            \right] \in [0,1]^{D \times V},\; 	x_d \in \Delta^{V-1},
+
+where the rows are given by the :math:`D` data points, the pieces in the corpus,
+and the columns are given by the :math:`V` features, the number of distinct tonal pitch-classes in the vocabulary.
+All entries in :math:`X` range between 0 and 1 and all rows of :math:`X` sum to 1 because the pieces are represented
+as distributions.
+PCA determines the :math:`M\leq V` largest directions and magnitudes of the variance in the data in :math:`X` by first
+calculating the *covariance matrix*
+
+.. math:: K_X = \mathrm{cov}[X,X] = \mathrm{E}[(X-\bar{x})(X-\bar{x})^\top] \in\mathbb R^{D\times D},
+
+where :math:`\mathrm{E}` denotes the expected value and :math:`\bar{x}\in[0,1]^V` is the mean of the columns of :math:`X`. 
+The main directions of the variance in the data and their magnitude is given by the eigenvectors :math:`w_i` 
+and eigenvalues :math:`\lambda_i` of :math:`K_X` which can be calculated by solving
+
+.. math:: K \cdot w_i = \lambda \cdot w_i.
+
+The projection into the lower-dimensional space is then achieved by selecting the :math:`M` largest eigenvalues 
+and their corresponding eigenvectors and transform the data to :math:`X^\prime`, the dimensionality reduction of :math:`X` by
+
+.. math:: X^\prime = X \cdot \left[ w_1, 	\ldots, w_M \right]\in \mathbb R^{D\times M}
+
+The sum of all eigenvalues :math:`\lambda_i` is the total amount of variance in the data and the variance explained 
+by each principal component is given by :math:`\lambda_i / \sum_j \lambda_j`.
+
+In the present context, :math:`X` was transformed to have zero mean before applying PCA
+but that the variance was not standardized to 1.
+This was done because the features all are on the same scale and because the
+differences in the variance between the respective tonal pitch-classes is of particular
+interest here.
+
+Historical Development
+----------------------
+
+historical expansion on line of fifths, 
+
+LOWESS
+......
+
+
+.. [#f1] While PCA is one of the most commonly used methods for dimensionality reduction, there are many others 
+         (sometimes relying on particular assumptions about the distribution of the data).
+         In a qualitative comparison, *Locally Linear Embedding* :cite:`Roweis2000` achieved a similar picture,
+         whereas *t-distributed Stochastic Neighbor Embedding* (t-SNE) :cite:`VanDerMaaten2008` 
+         that does emphasize the local over the global structure of the data did not.
+         We opted here for PCA because it preserves most
+         of the global structure and the interpretation of the results is straight-forward.

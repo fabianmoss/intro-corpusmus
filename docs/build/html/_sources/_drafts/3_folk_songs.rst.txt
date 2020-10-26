@@ -1,6 +1,16 @@
 Folk Songs and the Melodic Arc
 ==============================
 
+.. image:: _static/03/lines.jpg
+  :width: 100%
+  :align: center
+  :alt: Image by `Jerin J <https://unsplash.com/@jn1434?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText>`_ 
+        on `Unsplash <https://unsplash.com/s/photos/lines?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText>`_.
+
+.. raw:: latex
+
+    \clearpage
+
 Tones are among the basic elements of music. Most musical styles combine tones in different ways 
 to create songs, chants, instrumental pieces, or other elaborate compositions. 
 In this chapter, we will analyze some basice aspects of songs by studying distributions of tones and intervals.

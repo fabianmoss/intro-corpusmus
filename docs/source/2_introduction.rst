@@ -7,6 +7,10 @@ Introduction
   :alt: Image by `Meagan Carsience <https://unsplash.com/@mcarsience_photography?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText>`_ 
         on `Unsplash <https://unsplash.com/s/photos/pattern?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText>`_.
 
+.. raw:: latex
+
+    \clearpage
+
 What are Musical Corpus Studies?
 --------------------------------
 

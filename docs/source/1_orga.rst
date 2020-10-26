@@ -119,7 +119,7 @@ These are distributed as follows: 24 SWS (90 minutes) are allocated to presence 
 Additionally, 36 SWS are dedicated to the preparation and follow-up of the material. 
 The remainder of 30 SWS goes to the reading of the relevant literature.
   
-Deliverables and Learning objectives 
+Deliverables and learning objectives 
 ------------------------------------
 
 Course work consists of three parts: preparing the relevant literature (reading), 

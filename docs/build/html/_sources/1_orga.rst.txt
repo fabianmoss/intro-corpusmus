@@ -4,16 +4,6 @@ Organization
 About this course
 -----------------
 
-About me
-........
-
-- Music and Mathematics education (Uni & HfMT Köln)
-- MA Musicolgy (HfMT Köln)
-- PhD Digital Humanities (EPFL)
-
-Focus of this course
-....................
-
 Programing introductions often boring.
 A lot of time lost in introducing basic concepts and techniques (important!)
 but quite remote from actual (!) applications. Examples are usually "toy examples" 

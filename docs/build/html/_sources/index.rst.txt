@@ -58,10 +58,6 @@ about quantitative approaches to musicology.
    :numbered:
 
    1_orga.rst
-   2_introduction.rst
-   
-   bibliography.rst
-
 
 .. Indices and tables
 .. ==================

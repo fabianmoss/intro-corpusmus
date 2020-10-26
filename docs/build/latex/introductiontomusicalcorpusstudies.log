@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7380 64-bit) (preloaded format=pdflatex 2020.4.27)  26 OCT 2020 16:10
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7380 64-bit) (preloaded format=pdflatex 2020.4.27)  26 OCT 2020 17:45
 entering extended mode
 **./introductiontomusicalcorpusstudies.tex
 (introductiontomusicalcorpusstudies.tex
@@ -760,7 +760,7 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ] [2
 
 ]
-<abstract_bg.jpg, id=83, 5203.44pt x 3468.96pt>
+<abstract_bg.jpg, id=53, 5203.44pt x 3468.96pt>
 LaTeX Font Info:    Trying to load font information for T1+pcr on input line 93
 .
 
@@ -777,158 +777,128 @@ Package pdftex.def Info: abstract_bg.jpg  used on input line 93.
 ]
 Chapter 1.
 
-Underfull \hbox (badness 10000) in paragraph at lines 265--265
+Underfull \hbox (badness 10000) in paragraph at lines 279--279
 []\T1/ptm/m/n/10 Fr.,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 265--265
+Underfull \hbox (badness 10000) in paragraph at lines 279--279
 []\T1/ptm/m/n/10 16:00-17:20
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 265--265
+Underfull \hbox (badness 10000) in paragraph at lines 279--279
 []\T1/ptm/m/n/10 17:40-19:00
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 265--265
+Underfull \hbox (badness 10000) in paragraph at lines 279--279
 []\T1/ptm/m/n/10 Sa.,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 265--265
+Underfull \hbox (badness 10000) in paragraph at lines 279--279
 []\T1/ptm/m/n/10 09:00-10:20
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 265--265
+Underfull \hbox (badness 10000) in paragraph at lines 279--279
 []\T1/ptm/m/n/10 10:40-12:00
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 265--265
+Underfull \hbox (badness 10000) in paragraph at lines 279--279
 []\T1/ptm/m/n/10 12:00-13:00
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 265--265
+Underfull \hbox (badness 10000) in paragraph at lines 279--279
 []\T1/ptm/m/n/10 13:00-14:20
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 265--265
+Underfull \hbox (badness 10000) in paragraph at lines 279--279
 []\T1/ptm/m/n/10 14:40-16:00
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 265--265
+Underfull \hbox (badness 10000) in paragraph at lines 279--279
 []\T1/ptm/m/n/10 Fr.,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 265--265
+Underfull \hbox (badness 10000) in paragraph at lines 279--279
 []\T1/ptm/m/n/10 10:00-11:20
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 265--265
+Underfull \hbox (badness 10000) in paragraph at lines 279--279
 []\T1/ptm/m/n/10 11:40-13:00
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 265--265
+Underfull \hbox (badness 10000) in paragraph at lines 279--279
 []\T1/ptm/m/n/10 Sa.,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 265--265
+Underfull \hbox (badness 10000) in paragraph at lines 279--279
 []\T1/ptm/m/n/10 09:00-10:20
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 265--265
+Underfull \hbox (badness 10000) in paragraph at lines 279--279
 []\T1/ptm/m/n/10 10:40-12:00
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 265--265
+Underfull \hbox (badness 10000) in paragraph at lines 279--279
 []\T1/ptm/m/n/10 12:00-13:00
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 265--265
+Underfull \hbox (badness 10000) in paragraph at lines 279--279
 []\T1/ptm/m/n/10 13:00-14:20
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 265--265
+Underfull \hbox (badness 10000) in paragraph at lines 279--279
 []\T1/ptm/m/n/10 14:40-16:00
  []
 
-[3]
-LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 2
-85.
-
-("C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex/latex/psnfss\ts1ptm
-.fd"
-File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
-) [4] [5] [6
-
-]
-Chapter 2.
-<pattern.jpg, id=124, 6022.5pt x 4015.0pt>
-File: pattern.jpg Graphic file (type jpg)
-<use pattern.jpg>
-Package pdftex.def Info: pattern.jpg  used on input line 357.
-(pdftex.def)             Requested size: 469.75502pt x 313.11974pt.
-[7 <./pattern.jpg>]
-<style_analysis.jpg, id=129, 943.525pt x 636.3775pt>
-File: style_analysis.jpg Graphic file (type jpg)
-<use style_analysis.jpg>
-Package pdftex.def Info: style_analysis.jpg  used on input line 370.
-(pdftex.def)             Requested size: 375.80544pt x 253.46864pt.
- [8
-
- <./style_analysis.jpg>]
-(introductiontomusicalcorpusstudies.ind)
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 417.
- [9
-
-
-]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 417.
+[3] [4] (introductiontomusicalcorpusstudies.ind)
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 359.
+ [5]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 359.
 
 (introductiontomusicalcorpusstudies.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 417.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 417.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 359.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 359.
 Package rerunfilecheck Info: File `introductiontomusicalcorpusstudies.out' has 
 not changed.
-(rerunfilecheck)             Checksum: DDC4CCA1CDDFB3393F622D1487EAAA40;1568.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 417.
+(rerunfilecheck)             Checksum: 7DB430DF884EB8712FF529FC38CF1103;674.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 359.
  ) 
 Here is how much of TeX's memory you used:
- 13497 strings out of 480896
- 197688 string characters out of 2895750
- 472569 words of memory out of 3000000
- 29021 multiletter control sequences out of 15000+200000
- 571372 words of font info for 70 fonts, out of 3000000 for 9000
+ 13415 strings out of 480896
+ 196149 string characters out of 2895750
+ 472728 words of memory out of 3000000
+ 28965 multiletter control sequences out of 15000+200000
+ 571058 words of font info for 69 fonts, out of 3000000 for 9000
  1142 hyphenation exceptions out of 8191
- 38i,11n,49p,479b,424s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 38i,11n,49p,424b,388s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Users/fabianmoss/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/base/8
-r.enc}<C:/Users/fabianmoss/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public
-/amsfonts/cm/cmmi10.pfb><C:/Users/fabianmoss/AppData/Local/Programs/MiKTeX 2.9/
-fonts/type1/urw/helvetic/uhvb8a.pfb><C:/Users/fabianmoss/AppData/Local/Programs
-/MiKTeX 2.9/fonts/type1/urw/helvetic/uhvbo8a.pfb><C:/Users/fabianmoss/AppData/L
-ocal/Programs/MiKTeX 2.9/fonts/type1/urw/helvetic/uhvr8a.pfb><C:/Users/fabianmo
-ss/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/times/utmb8a.pfb><C:/Users
-/fabianmoss/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb>
-<C:/Users/fabianmoss/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/times/ut
-mri8a.pfb>
-Output written on introductiontomusicalcorpusstudies.pdf (13 pages, 5562722 byt
-es).
+r.enc}<C:/Users/fabianmoss/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/he
+lvetic/uhvb8a.pfb><C:/Users/fabianmoss/AppData/Local/Programs/MiKTeX 2.9/fonts/
+type1/urw/helvetic/uhvbo8a.pfb><C:/Users/fabianmoss/AppData/Local/Programs/MiKT
+eX 2.9/fonts/type1/urw/helvetic/uhvr8a.pfb><C:/Users/fabianmoss/AppData/Local/P
+rograms/MiKTeX 2.9/fonts/type1/urw/times/utmb8a.pfb><C:/Users/fabianmoss/AppDat
+a/Local/Programs/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb><C:/Users/fabianmo
+ss/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/times/utmri8a.pfb>
+Output written on introductiontomusicalcorpusstudies.pdf (9 pages, 4135322 byte
+s).
 PDF statistics:
- 201 PDF objects out of 1000 (max. 8388607)
- 39 named destinations out of 1000 (max. 500000)
- 124 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 127 PDF objects out of 1000 (max. 8388607)
+ 21 named destinations out of 1000 (max. 500000)
+ 66 words of extra memory for PDF output out of 10000 (max. 10000000)
 

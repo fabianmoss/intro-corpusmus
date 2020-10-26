@@ -24,7 +24,7 @@ learning (or not learning) Python basics.
 Overview
 --------
 
-.. 8 15 12 25 25 
+.. 10 15 15 60 
 
 .. |br| raw:: html
 
@@ -37,77 +37,62 @@ Overview
    * - No.
      - Date
      - Time
-     - Room
      - Topics
    * - 1
      - Fr., 13.11.2020 
      - 16:00-17:20 Uhr
-     - Neuer Seminarraum 1.315 
      - Introduction / Background
    * - 2
      - 
      - 17:40-19:00 Uhr
-     - 
      - Folk Songs, Melodies, Pitches and Intervals |br| frequencies, mean, variance
    * - 3
      - Sa., 14.11.2020 
      - 09:00-10:20 Uhr
-     - Neuer Seminarraum 1.315
      - Jazz Solos, Melodies, Regular Expressions
    * - 4
      -
      - 10:40-12:00 Uhr
-     - 
      - Beethoven's string quartets, harmony, :math:`n`-grams, Markov models
    * - 
      - 
      - 12:00-13:00 Uhr
-     - 
      - Lunch Break
    * - 5
      - 
      - 13:00-14:20 Uhr
-     - 
      - Pop Charts Billboard 100, harmony, Clustering, :math:`k`-means, [Hidden Markov Models]
    * - 6 
      - 
      - 14:40-16:00 Uhr
-     - 
      - Group work
    * - 7 
      - Fr., 11.12.2020 
      - 10:00-11:20 Uhr
-     - Alter Seminarraum 1.408
      - Cadences in Renaissance Polyphony |br| with guest researcher `Richard Freedman <https://www.haverford.edu/users/rfreedma>`_
    * - 8
      - 
      - 11:40-13:00 Uhr
-     - 
      - Brazilian Choro, harmony, form, context-Free Grammars
    * - 9 
      - Sa., 12.12.2020 
      - 09:00-10:20 Uhr
-     - Neuer Seminarraum 1.315
      - Malian Percussion Music, rhythm, meter
    * - 10
      - 
      - 10:40-12:00 Uhr
-     - 
      - Electronic Music 1950-1990
    * - 
      - 
      - 12:00-13:00 Uhr
-     - 
      - Lunch Break
    * - 11 
      - 
      - 13:00-14:20 Uhr
-     - 
      - Group work
    * - 12 
      - 
      - 14:40-16:00 Uhr
-     - 
      - Recapitulation and conclusion
 
 Credits
@@ -162,10 +147,12 @@ Write about the organization of your group, challenges and benefits.
 - create issues on GitHub
 - writing academic reviews
 
-Recommended structure: 
+.. rubric:: Recommended structure for report
 
-#. Introduction: general description and summary of the course and your session in particular. 
+#. **Introduction:** general description and summary of the course and your session in particular. 
+#. **Author contributions:** describe briefly how each of you specifically contributed to the report.
 #. ...
 
 .. important::
-   Submit your report by **31 January 2021** to `fabian.moss@epfl.ch <mailto:fabian.moss@epfl.ch>`_. 
+   Submit your report by **31 January 2021, 23:59h** to `fabian.moss@epfl.ch <mailto:fabian.moss@epfl.ch>`_ 
+   as a single PDF file per group, named `intro_corpusmus_<group_number>.pdf`, e.g. `intro_corpusmus_1.pdf`. 

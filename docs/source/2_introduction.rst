@@ -18,7 +18,7 @@ tbc... (text from diss?)
    :alt: Style analysis hierarchy.
    :figclass: align-center 
 
-   Hierarchy of musical style analyis after :cite:`Meyer1989`, from :cite:`Jan2007`.
+   Hierarchy of musical style analyis from :cite:`Jan2007`, after :cite:`Meyer1989`.
 
 
 Epistemological goals

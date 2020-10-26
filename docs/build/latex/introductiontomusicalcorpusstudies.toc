@@ -9,5 +9,4 @@
 \contentsline {section}{\numberline {2.2}Epistemological goals}{8}{section.2.2}%
 \contentsline {section}{\numberline {2.3}Issues}{8}{section.2.3}%
 \contentsline {section}{\numberline {2.4}MCS and traditional musicology}{8}{section.2.4}%
-\contentsline {section}{\numberline {2.5}Basic representations}{8}{section.2.5}%
 \contentsline {chapter}{Bibliography}{9}{chapter*.3}%

@@ -18,7 +18,7 @@ tbc... (text from diss?)
    :alt: Style analysis hierarchy.
    :figclass: align-center 
 
-   Hierarchy of musical style analyis after :cite:`Meyer1989`, from :cite:`Jan2007`.
+   Hierarchy of musical style analyis from :cite:`Jan2007`, after :cite:`Meyer1989`.
 
 
 Epistemological goals
@@ -34,12 +34,4 @@ tbc :cite:`Cook2006,Honing2006,Huron2013,Neuwirth2016,Pugin2005,Schaffer2016,Tem
 MCS and traditional musicology 
 ------------------------------
 
- 
-tbc
-
-Basic representations 
----------------------
-
-- tones, notes 
-- (tonal/neutral) pitch classes 
-- meter (hierarchy)
+tbc...

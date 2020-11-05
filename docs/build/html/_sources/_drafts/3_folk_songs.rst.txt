@@ -37,6 +37,15 @@ means, variance
 
 also multidimensional (for later)
 
+Melodic Arc
+-----------
+
+.. figure:: ../notebooks/01/img/melodic_arc.png
+   :scale: 100%
+   :align: center
+
+   Melodic arc using *Locally Weighted Scatterplot Smoothing* (LOWESS).
+
 Intervals
 ---------
 

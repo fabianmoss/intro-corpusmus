@@ -58,6 +58,7 @@ about quantitative approaches to musicology.
    :numbered:
 
    1_orga.rst
+   3_folk_songs.rst
 
 .. Indices and tables
 .. ==================

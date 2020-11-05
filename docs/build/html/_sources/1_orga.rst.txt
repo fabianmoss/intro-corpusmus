@@ -76,11 +76,11 @@ and metric patterns in Malian drum music (see :numref:`tab_overview`).
    * - 5
      - 
      - 13:00-14:20 Uhr
-     - Harmony II: Pop charts (Billboard 100)
+     - Group work
    * - 6 
      - 
      - 14:40-16:00 Uhr
-     - Group work
+     - Harmony II: Pop charts (Billboard 100)
    * - 7 
      - Fr., 11.12.2020 
      - 10:00-11:20 Uhr

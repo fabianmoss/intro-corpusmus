@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7380 64-bit) (preloaded format=pdflatex 2020.4.27)  5 NOV 2020 18:04
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7380 64-bit) (preloaded format=pdflatex 2020.4.27)  5 NOV 2020 18:36
 entering extended mode
 **./introductiontomusicalcorpusstudies.tex
 (introductiontomusicalcorpusstudies.tex
@@ -876,43 +876,56 @@ File: lines.jpg Graphic file (type jpg)
 Package pdftex.def Info: lines.jpg  used on input line 358.
 (pdftex.def)             Requested size: 469.75502pt x 342.5362pt.
 [7 <./lines.jpg>]
-<melodic_arc.png, id=141, 462.528pt x 346.896pt>
-File: melodic_arc.png Graphic file (type png)
-<use melodic_arc.png>
-Package pdftex.def Info: melodic_arc.png  used on input line 394.
-(pdftex.def)             Requested size: 462.52686pt x 346.89514pt.
-LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 4
-08.
+LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 3
+78.
 
 ("C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex/latex/psnfss\ts1ptm
 .fd"
 File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
-) [8
+)
+<german_song-1.png, id=140, 544.1931pt x 206.6922pt>
+File: german_song-1.png Graphic file (type png)
+<use german_song-1.png>
+Package pdftex.def Info: german_song-1.png  used on input line 387.
+(pdftex.def)             Requested size: 422.77664pt x 160.57587pt.
+<chinese_song-1.png, id=142, 544.1931pt x 206.6922pt>
+File: chinese_song-1.png Graphic file (type png)
+<use chinese_song-1.png>
+Package pdftex.def Info: chinese_song-1.png  used on input line 410.
+(pdftex.def)             Requested size: 422.77664pt x 160.57587pt.
+ [8
 
-] [9 <./melodic_arc.png>] [10
+ <./german_song-1.png>]
+<melodic_arc.png, id=151, 462.528pt x 346.896pt>
+File: melodic_arc.png Graphic file (type png)
+<use melodic_arc.png>
+Package pdftex.def Info: melodic_arc.png  used on input line 431.
+(pdftex.def)             Requested size: 462.52686pt x 346.89514pt.
+ [9 <./chinese_song-1.png>] [10 <./melodic_arc.png>] (introductiontomusicalcorp
+usstudies.ind)
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 470.
+ [11
 
-] (introductiontomusicalcorpusstudies.ind)
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 431.
-[11
 
 ]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 431.
- (introductiontomusicalcorpusstudies.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 431.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 431.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 470.
+
+(introductiontomusicalcorpusstudies.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 470.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 470.
 Package rerunfilecheck Info: File `introductiontomusicalcorpusstudies.out' has 
 not changed.
 (rerunfilecheck)             Checksum: 5C5E240AD6ED1B63E7564B9406915CEE;1433.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 431.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 470.
  ) 
 Here is how much of TeX's memory you used:
- 13486 strings out of 480896
- 197212 string characters out of 2895750
- 473326 words of memory out of 3000000
- 29013 multiletter control sequences out of 15000+200000
+ 13504 strings out of 480896
+ 197567 string characters out of 2895750
+ 473578 words of memory out of 3000000
+ 29026 multiletter control sequences out of 15000+200000
  571372 words of font info for 70 fonts, out of 3000000 for 9000
  1142 hyphenation exceptions out of 8191
- 38i,11n,49p,474b,424s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 38i,11n,49p,475b,424s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Users/fabianmoss/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/base/8
 r.enc}<C:/Users/fabianmoss/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/he
 lvetic/uhvb8a.pfb><C:/Users/fabianmoss/AppData/Local/Programs/MiKTeX 2.9/fonts/
@@ -921,10 +934,10 @@ eX 2.9/fonts/type1/urw/helvetic/uhvr8a.pfb><C:/Users/fabianmoss/AppData/Local/P
 rograms/MiKTeX 2.9/fonts/type1/urw/times/utmb8a.pfb><C:/Users/fabianmoss/AppDat
 a/Local/Programs/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb><C:/Users/fabianmo
 ss/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/times/utmri8a.pfb>
-Output written on introductiontomusicalcorpusstudies.pdf (15 pages, 5254560 byt
+Output written on introductiontomusicalcorpusstudies.pdf (15 pages, 5313222 byt
 es).
 PDF statistics:
- 196 PDF objects out of 1000 (max. 8388607)
- 35 named destinations out of 1000 (max. 500000)
- 124 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 207 PDF objects out of 1000 (max. 8388607)
+ 38 named destinations out of 1000 (max. 500000)
+ 134 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -278,17 +278,31 @@ INPUT .\lines.jpg
 INPUT .\lines.jpg
 INPUT lines.jpg
 INPUT .\lines.jpg
-INPUT melodic_arc.png
-INPUT .\melodic_arc.png
-INPUT .\melodic_arc.png
-INPUT .\melodic_arc.png
-INPUT .\melodic_arc.png
-INPUT melodic_arc.png
-INPUT .\melodic_arc.png
 INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex\latex\psnfss\ts1ptm.fd
 INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex\latex\psnfss\ts1ptm.fd
 INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\adobe\times\ptmr8c.tfm
+INPUT german_song-1.png
+INPUT .\german_song-1.png
+INPUT .\german_song-1.png
+INPUT .\german_song-1.png
+INPUT .\german_song-1.png
+INPUT german_song-1.png
+INPUT .\german_song-1.png
+INPUT chinese_song-1.png
+INPUT .\chinese_song-1.png
+INPUT .\chinese_song-1.png
+INPUT .\chinese_song-1.png
+INPUT .\chinese_song-1.png
+INPUT chinese_song-1.png
+INPUT .\chinese_song-1.png
 INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\fonts\vf\adobe\times\ptmr8c.vf
+INPUT melodic_arc.png
+INPUT .\melodic_arc.png
+INPUT .\melodic_arc.png
+INPUT .\melodic_arc.png
+INPUT .\melodic_arc.png
+INPUT melodic_arc.png
+INPUT .\melodic_arc.png
 INPUT introductiontomusicalcorpusstudies.ind
 INPUT introductiontomusicalcorpusstudies.ind
 INPUT introductiontomusicalcorpusstudies.aux

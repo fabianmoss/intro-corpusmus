@@ -30,7 +30,7 @@ Essen Folksong Collection
 
 - keine Texte!
 
-.. figure:: ../../notebooks/02_Melody_I/img/german_song-1.png 
+.. figure:: notebooks/02_Melody_I/img/german_song-1.png 
    :width: 90%
    :align: center
 
@@ -43,7 +43,7 @@ Analysis:
 - A' part elaboration of A by insertion of passing notes
 - B part movement from ^3 to ^2
 
-.. figure:: ../../notebooks/02_Melody_I/img/chinese_song-1.png 
+.. figure:: notebooks/02_Melody_I/img/chinese_song-1.png 
    :width: 90%
    :align: center
 
@@ -63,7 +63,7 @@ Melodic Arc
 
 Melodic arc was studied first by :cite:`Huron2006`.
 
-.. figure:: ../../notebooks/02_Melody_I/img/melodic_arc.png
+.. figure:: notebooks/02_Melody_I/img/melodic_arc.png
    :align: center
 
    Melodic arc. The red lines in the background show the melodic profile of each song in the Essen Folksong Corpus;

@@ -74,7 +74,7 @@
 
 
 \title{Introduction to Musical Corpus Studies}
-\date{Oct 26, 2020}
+\date{Nov 05, 2020}
 \release{0.0.1}
 \author{Fabian C.\@{} Moss}
 \newcommand{\sphinxlogo}{\vbox{}}
@@ -215,14 +215,14 @@ Harmony I: Beethoven’s string quartets
 &&
 13:00\sphinxhyphen{}14:20 Uhr
 &
-Harmony II: Pop charts (Billboard 100)
+Group work
 \\
 \hline
 6
 &&
 14:40\sphinxhyphen{}16:00 Uhr
 &
-Group work
+Harmony II: Pop charts (Billboard 100)
 \\
 \hline
 7
@@ -351,6 +351,78 @@ Please also write about the organization of your group, challenges and benefits.
 Submit your report by \sphinxstylestrong{31 January 2021, 23:59h} to \sphinxhref{mailto:fabian.moss@epfl.ch}{fabian.moss@epfl.ch}
 as a single PDF file per group, named \sphinxtitleref{intro\_corpusmus\_\textless{}group\_number\textgreater{}.pdf}, e.g. \sphinxtitleref{intro\_corpusmus\_1.pdf}.
 \end{sphinxadmonition}
+
+
+\chapter{Folk Songs and the Melodic Arc}
+\label{\detokenize{3_folk_songs:folk-songs-and-the-melodic-arc}}\label{\detokenize{3_folk_songs::doc}}
+\noindent{\hspace*{\fill}\sphinxincludegraphics[width=1.000\linewidth]{{lines}.jpg}\hspace*{\fill}}
+
+\clearpage
+
+Tones are among the basic elements of music. Most musical styles combine tones in different ways
+to create songs, chants, instrumental pieces, or other elaborate compositions.
+In this chapter, we will analyze some basice aspects of songs by studying distributions of tones and intervals.
+
+Huron… / MusThe Tutorial
+
+
+\section{Data}
+\label{\detokenize{3_folk_songs:data}}
+\sphinxurl{http://kern.humdrum.org/data?f=zip\&l=/essen}
+or \sphinxurl{http://kern.humdrum.org/help/data/}
+
+Open and read \sphinxtitleref{README.txt}
+
+Essen Folksong Collection
+
+
+\section{Notes, Pitch Classes}
+\label{\detokenize{3_folk_songs:notes-pitch-classes}}
+\sphinxurl{https://github.com/DCMLab/DigitalMusicologyExercises/tree/master/tone\_profiles}
+
+means, variance
+
+also multidimensional (for later)
+
+
+\section{Melodic Arc}
+\label{\detokenize{3_folk_songs:melodic-arc}}
+\begin{figure}[htbp]
+\centering
+\capstart
+
+\noindent\sphinxincludegraphics{{melodic_arc}.png}
+\caption{Melodic arc. The red lines in the background show the melodic profile of each song in the Essen Folksong Corpus;
+the thick black line shows the melodic arc that was obtained by using \sphinxstyleemphasis{Locally Weighted Scatterplot Smoothing} (LOWESS) \sphinxcite{bibliography:cleveland1988}.}\label{\detokenize{3_folk_songs:id2}}\end{figure}
+
+
+\section{Intervals}
+\label{\detokenize{3_folk_songs:intervals}}
+\sphinxurl{https://github.com/DCMLab/DigitalMusicologyExercises/tree/master/interval\_bigrams}
+
+maybe extend with Hansen and Pearce (2014) (but data not available?)
+
+\begin{sphinxadmonition}{note}{Note:}
+In this chapter we covered the following musical terms:
+\begin{itemize}
+\item {} 
+a
+
+\item {} 
+b
+
+\item {} 
+c
+
+\end{itemize}
+\end{sphinxadmonition}
+
+
+
+\begin{sphinxthebibliography}{CD88}
+\bibitem[CD88]{bibliography:cleveland1988}
+William S Cleveland and Susan J Devlin. Locally Weighted Regression: An Approach to Regression Analysis by Local Fitting. \sphinxstyleemphasis{Journal of the American Statistical Association}, 83(403):596\textendash{}610, 1988.
+\end{sphinxthebibliography}
 
 
 

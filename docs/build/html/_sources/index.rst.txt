@@ -60,6 +60,8 @@ about quantitative approaches to musicology.
    1_orga.rst
    3_folk_songs.rst
 
+   bibliography.rst
+
 .. Indices and tables
 .. ==================
 

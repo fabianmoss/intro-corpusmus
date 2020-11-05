@@ -43,7 +43,8 @@ Melodic Arc
 .. figure:: ../../notebooks/02_Melody_I/img/melodic_arc.png
    :align: center
 
-   Melodic arc using *Locally Weighted Scatterplot Smoothing* (LOWESS) :cite:`Cleveland1988`.
+   Melodic arc. The red lines in the background show the melodic profile of each song in the Essen Folksong Corpus;
+   the thick black line shows the melodic arc that was obtained by using *Locally Weighted Scatterplot Smoothing* (LOWESS) :cite:`Cleveland1988`.
 
 Intervals
 ---------

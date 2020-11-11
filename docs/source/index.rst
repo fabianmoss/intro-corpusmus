@@ -59,6 +59,8 @@ about quantitative approaches to musicology.
 
    1_orga.rst
    3_folk_songs.rst
+   4_jazz_solos.rst
+
 
    bibliography.rst
 

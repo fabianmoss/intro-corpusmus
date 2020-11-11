@@ -68,6 +68,8 @@ Melodic arc was studied first by :cite:`Huron2006`.
 
    Melodic arc. The red lines in the background show the melodic profile of each song in the Essen Folksong Corpus;
    the thick black line shows the melodic arc that was obtained by using *Locally Weighted Scatterplot Smoothing* (LOWESS) :cite:`Cleveland1988`.
+   The dashed horizontal line marks the mean standardized pitch, and the vertical dashed lines mark the quartiles of the songs,
+   showing that most songs also have an arc-like shape at local formal levels.
 
 Intervals
 ---------

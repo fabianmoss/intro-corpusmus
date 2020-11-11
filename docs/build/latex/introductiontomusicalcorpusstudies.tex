@@ -215,7 +215,7 @@
 
 
 \title{Introduction to Musical Corpus Studies}
-\date{Nov 05, 2020}
+\date{Nov 09, 2020}
 \release{0.0.1}
 \author{Fabian C.\@{} Moss}
 \newcommand{\sphinxlogo}{\vbox{}}
@@ -569,9 +569,11 @@ Melodic arc was studied first by \sphinxcite{bibliography:huron2006}.
 \centering
 \capstart
 
-\noindent\sphinxincludegraphics[width=1920\sphinxpxdimen,height=1440\sphinxpxdimen]{{melodic_arc}.png}
+\noindent\sphinxincludegraphics[width=900\sphinxpxdimen,height=525\sphinxpxdimen]{{melodic_arc}.png}
 \caption{Melodic arc. The red lines in the background show the melodic profile of each song in the Essen Folksong Corpus;
-the thick black line shows the melodic arc that was obtained by using \sphinxstyleemphasis{Locally Weighted Scatterplot Smoothing} (LOWESS) \sphinxcite{bibliography:cleveland1988}.}\label{\detokenize{3_folk_songs:id5}}\end{figure}
+the thick black line shows the melodic arc that was obtained by using \sphinxstyleemphasis{Locally Weighted Scatterplot Smoothing} (LOWESS) \sphinxcite{bibliography:cleveland1988}.
+The dashed horizontal line marks the mean standardized pitch, and the vertical dashed lines mark the quartiles of the songs,
+showing that most songs also have an arc\sphinxhyphen{}like shape at local formal levels.}\label{\detokenize{3_folk_songs:id5}}\end{figure}
 
 
 \section{Intervals}
@@ -596,12 +598,140 @@ c
 \end{sphinxadmonition}
 
 
+\chapter{Solos in the \sphinxstyleemphasis{Weimar Jazz Database}}
+\label{\detokenize{4_jazz_solos:solos-in-the-weimar-jazz-database}}\label{\detokenize{4_jazz_solos::doc}}
+\begin{figure}[htbp]
+\centering
+\capstart
 
-\begin{sphinxthebibliography}{Hur06}
+\noindent\sphinxincludegraphics[width=1.000\linewidth]{{jazz}.jpg}
+\caption{Photo by \sphinxhref{https://unsplash.com/@janinekrob?utm\_source=unsplash\&amp;utm\_medium=referral\&amp;utm\_content=creditCopyText}{Janine Robinson}
+on \sphinxhref{https://unsplash.com/s/photos/jazz?utm\_source=unsplash\&amp;utm\_medium=referral\&amp;utm\_content=creditCopyText}{Unsplash}}\label{\detokenize{4_jazz_solos:id4}}\end{figure}
+
+The first project we will have a look at is the \sphinxhref{https://jazzomat.hfm-weimar.de/}{Jazzomat} project.
+Transcriptions of Jazz solos \sphinxcite{bibliography:pfleiderer2017}. The \sphinxstyleemphasis{Weimar Jazz Database} (WJD) consists of
+456 transcriptions of Jazz solos from diverse substyles.
+As all the corpora that we deal with here, it is freely available on the internet. %
+\begin{footnote}[1]\sphinxAtStartFootnote
+\sphinxurl{https://jazzomat.hfm-weimar.de/dbformat/dboverview.html}
+%
+\end{footnote}
+
+The project is described in \sphinxcite{bibliography:pfleiderer2017}.
+
+The WJD contains a number of tables:
+
+
+\begin{savenotes}\sphinxattablestart
+\centering
+\sphinxcapstartof{table}
+\sphinxthecaptionisattop
+\sphinxcaption{Tables in the \sphinxstyleemphasis{Weimar Jazz Database}}\label{\detokenize{4_jazz_solos:id5}}
+\sphinxaftertopcaption
+\begin{tabular}[t]{|\X{30}{100}|\X{70}{100}|}
+\hline
+\sphinxstyletheadfamily 
+Table name
+&\sphinxstyletheadfamily 
+Description
+\\
+\hline
+\sphinxcode{\sphinxupquote{beats}}
+&
+Table for beat annotation of WJD melodies, referenced by \sphinxcode{\sphinxupquote{melody(melid)}}
+\\
+\hline
+\sphinxcode{\sphinxupquote{composition\_info}}
+&
+Infos regarding the underlying composition of a WJD solo, referenced by \sphinxcode{\sphinxupquote{melody(melid)}}
+\\
+\hline
+\sphinxcode{\sphinxupquote{db\_info}}
+&
+Information regarding the distributed database file like version information, license, etc
+\\
+\hline
+\sphinxcode{\sphinxupquote{esac\_info}}
+&
+EsAC infos for EsAC melodies, referenced by \sphinxcode{\sphinxupquote{melody(melid)}}
+\\
+\hline
+\sphinxcode{\sphinxupquote{melody}}
+&
+Main table for all melody events
+\\
+\hline
+\sphinxcode{\sphinxupquote{melody\_type}}
+&
+Indicated type of melody: WJD solos or EsAC (Folk songs using Essen Associative Code), referenced by \sphinxcode{\sphinxupquote{melody(melid)}}
+\\
+\hline
+\sphinxcode{\sphinxupquote{popsong\_info}}
+&
+Pop song infos, referenced by \sphinxcode{\sphinxupquote{melody(melid)}}
+\\
+\hline
+\sphinxcode{\sphinxupquote{record\_info}}
+&
+Infos regarding the specific audio recording of a WJD solo was taken from, referenced by \sphinxcode{\sphinxupquote{melody(melid)}}
+\\
+\hline
+\sphinxcode{\sphinxupquote{sections}}
+&
+All sections (phrase, chorus, form, chords, etc.), referenced by \sphinxcode{\sphinxupquote{melody(melid)}}
+\\
+\hline
+\sphinxcode{\sphinxupquote{solo\_info}}
+&
+Solo infos for WJD solos, referenced by \sphinxcode{\sphinxupquote{melody(melid)}}
+\\
+\hline
+\sphinxcode{\sphinxupquote{track\_info}}
+&
+Information specific to a track on a record (or CD)
+\\
+\hline
+\sphinxcode{\sphinxupquote{transcription\_info}}
+&
+Transcription infos for WJD solos, referenced by \sphinxcode{\sphinxupquote{melody(melid)}}
+\\
+\hline
+\end{tabular}
+\par
+\sphinxattableend\end{savenotes}
+
+Here, we focus on the main table \sphinxcode{\sphinxupquote{melody}}. First, we download the entire database from \sphinxurl{https://jazzomat.hfm-weimar.de/download/download.html}
+(under “Weimar Jazz Database”) and save it as the file \sphinxcode{\sphinxupquote{wjazz.db}}.
+
+\begin{sphinxVerbatim}[commandchars=\\\{\}]
+\PYG{k+kn}{import} \PYG{n+nn}{sqlite3} \PYG{c+c1}{\PYGZsh{} for working with databases}
+\PYG{k+kn}{import} \PYG{n+nn}{pandas} \PYG{k}{as} \PYG{n+nn}{pd} \PYG{c+c1}{\PYGZsh{} for working with tabular data}
+
+\PYG{c+c1}{\PYGZsh{} create connection to database}
+\PYG{n}{conn} \PYG{o}{=} \PYG{n}{sqlite3}\PYG{o}{.}\PYG{n}{connect}\PYG{p}{(}\PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{wjazzd.db}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{)}
+
+\PYG{c+c1}{\PYGZsh{} read all entries of the `melody` table into a pandas DataFrame}
+\PYG{n}{df} \PYG{o}{=} \PYG{n}{pd}\PYG{o}{.}\PYG{n}{read\PYGZus{}sql}\PYG{p}{(}\PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{SELECT * FROM melody}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{,} \PYG{n}{con}\PYG{o}{=}\PYG{n}{conn}\PYG{p}{)}
+
+\PYG{n}{df}\PYG{o}{.}\PYG{n}{head}\PYG{p}{(}\PYG{p}{)}
+\end{sphinxVerbatim}
+
+\begin{sphinxVerbatim}[commandchars=\\\{\}]
+\PYG{g+gp}{\PYGZgt{}\PYGZgt{}\PYGZgt{} }\PYG{n}{df}\PYG{o}{.}\PYG{n}{head}\PYG{p}{(}\PYG{p}{)}
+\PYG{g+go}{output}
+\end{sphinxVerbatim}
+
+The part of the code \sphinxcode{\sphinxupquote{SELECT * FROM melody}} reads “Select all entries from the table ‘melody’”.
+
+
+
+\begin{sphinxthebibliography}{PFA+17}
 \bibitem[CD88]{bibliography:cleveland1988}
 William S Cleveland and Susan J Devlin. Locally Weighted Regression: An Approach to Regression Analysis by Local Fitting. \sphinxstyleemphasis{Journal of the American Statistical Association}, 83(403):596\textendash{}610, 1988.
 \bibitem[Hur06]{bibliography:huron2006}
 David Huron. \sphinxstyleemphasis{Sweet anticipation: Music and the psychology of expectation}. MIT Press, 2006.
+\bibitem[PFA+17]{bibliography:pfleiderer2017}
+M Pfleiderer, K Frieler, J Abeßer, W G Zaddach, and Burkhart B, editors. \sphinxstyleemphasis{Inside the Jazzomat: New Perspectives for Jazz Research}. Schott Campus, Mainz, Germany, 2017.
 \end{sphinxthebibliography}
 
 

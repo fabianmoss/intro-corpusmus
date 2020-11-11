@@ -14,6 +14,8 @@ Transcriptions of Jazz solos :cite:`Pfleiderer2017`. The *Weimar Jazz Database* 
 456 transcriptions of Jazz solos from diverse substyles.
 As all the corpora that we deal with here, it is freely available on the internet. [#fn1]_
 
+The project is described in :cite:`Pfleiderer2017`.
+
 The WJD contains a number of tables:
 
 .. list-table:: Tables in the *Weimar Jazz Database*

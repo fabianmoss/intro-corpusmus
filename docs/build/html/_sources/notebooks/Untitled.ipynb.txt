@@ -9,7 +9,7 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 75,
+   "execution_count": 1,
    "metadata": {},
    "outputs": [],
    "source": [
@@ -18,7 +18,7 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 197,
+   "execution_count": 2,
    "metadata": {},
    "outputs": [
     {
@@ -172,7 +172,7 @@
        "9  ['G4', 'A4', 'B4', 'B4', 'B4', 'B4', 'A4', 'A4...  "
       ]
      },
-     "execution_count": 197,
+     "execution_count": 2,
      "metadata": {},
      "output_type": "execute_result"
     }
@@ -180,6 +180,65 @@
    "source": [
     "df = pd.read_csv(\"Essen_folksong_collection.csv\", sep=\"\\t\", index_col=0)\n",
     "df.head(10)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 5,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "erk         1700\n",
+       "han         1223\n",
+       "polska       925\n",
+       "shanxi       802\n",
+       "boehme       704\n",
+       "ballad       687\n",
+       "zuccal       616\n",
+       "fink         566\n",
+       "altdeu2      316\n",
+       "altdeu1      309\n",
+       "kinder       213\n",
+       "natmin       206\n",
+       "jugoslav     115\n",
+       "allerkbd     110\n",
+       "dva          106\n",
+       "oesterrh     104\n",
+       "schweiz       93\n",
+       "elsass        91\n",
+       "nederlan      85\n",
+       "lothring      71\n",
+       "magyar        45\n",
+       "czech         43\n",
+       "rossiya       37\n",
+       "misc          37\n",
+       "romania       28\n",
+       "variant       26\n",
+       "tirol         14\n",
+       "france        14\n",
+       "ukraina       13\n",
+       "test          12\n",
+       "sverige       11\n",
+       "xinhua        10\n",
+       "danmark        9\n",
+       "italia         8\n",
+       "luxembrg       8\n",
+       "usa            7\n",
+       "mexico         4\n",
+       "england        4\n",
+       "africa         1\n",
+       "Name: region, dtype: int64"
+      ]
+     },
+     "execution_count": 5,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "df.region.value_counts()"
    ]
   },
   {

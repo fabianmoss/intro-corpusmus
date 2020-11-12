@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-      <title>3. Folk Songs</title>
+      <title>3. Melodies in Folk Songs</title>
     
       <link rel="stylesheet" href="_static/pygments.css">
       <link rel="stylesheet" href="_static/theme.css">
@@ -25,7 +25,7 @@
   <link rel="index" title="Index" href="genindex.html" />
   <link rel="search" title="Search" href="search.html" />
   <link rel="next" title="4. Bibliography" href="bibliography.html" />
-  <link rel="prev" title="2. Folk Songs and the Melodic Arc" href="3_folk_songs.html" /> 
+  <link rel="prev" title="2. Introduction to Musical Corpus Studies" href="01_Intro_Background.html" /> 
   </head>
 
   <body>
@@ -75,19 +75,19 @@
       </p>
       <ul class="current">
         
-          <li class="toctree-l1 "><a href="1_orga.html" class="reference internal ">Organization</a>
+          <li class="toctree-l1 "><a href="00_orga.html" class="reference internal ">Organization</a>
 
             
           </li>
 
         
-          <li class="toctree-l1 "><a href="3_folk_songs.html" class="reference internal ">Folk Songs and the Melodic Arc</a>
+          <li class="toctree-l1 "><a href="01_Intro_Background.html" class="reference internal ">Introduction to Musical Corpus Studies</a>
 
             
           </li>
 
         
-          <li class="toctree-l1 current"><a href="#" class="reference internal current">Folk Songs</a>
+          <li class="toctree-l1 current"><a href="#" class="reference internal current">Melodies in Folk Songs</a>
 
             
               <ul>
@@ -121,14 +121,14 @@
   <ul class="breadcrumbs">
     <li><a href="index.html">Docs</a> &raquo;</li>
     
-    <li><span class="section-number">3. </span>Folk Songs</li>
+    <li><span class="section-number">3. </span>Melodies in Folk Songs</li>
   </ul>
   
 
   <ul class="page-nav">
   <li class="prev">
-    <a href="3_folk_songs.html"
-       title="previous chapter">← <span class="section-number">2. </span>Folk Songs and the Melodic Arc</a>
+    <a href="01_Intro_Background.html"
+       title="previous chapter">← <span class="section-number">2. </span>Introduction to Musical Corpus Studies</a>
   </li>
   <li class="next">
     <a href="bibliography.html"
@@ -373,10 +373,11 @@ div.rendered_html tbody tr:hover {
   background: rgba(66, 165, 245, 0.2);
 }
 </style>
-<div class="section" id="Folk-Songs">
-<h1><span class="section-number">3. </span>Folk Songs<a class="headerlink" href="#Folk-Songs" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="Melodies-in-Folk-Songs">
+<h1><span class="section-number">3. </span>Melodies in Folk Songs<a class="headerlink" href="#Melodies-in-Folk-Songs" title="Permalink to this headline">¶</a></h1>
+<p><strong>On Jupyter Hub, change the kernel to Python 3.7!</strong></p>
 <div class="nbinput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[ ]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[1]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
@@ -387,30 +388,175 @@ div.rendered_html tbody tr:hover {
 
 <span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
 <span class="kn">import</span> <span class="nn">matplotlib</span> <span class="k">as</span> <span class="nn">mpl</span>
-<span class="n">mpl</span><span class="o">.</span><span class="n">rc_context</span><span class="p">(</span><span class="n">rc</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">fname</span><span class="o">=</span><span class="s2">&quot;../matplotlibrc&quot;</span><span class="p">);</span>
+<span class="n">mpl</span><span class="o">.</span><span class="n">rc_context</span><span class="p">(</span><span class="n">rc</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">fname</span><span class="o">=</span><span class="s2">&quot;../matplotlibrc&quot;</span><span class="p">)</span>
+
+<span class="kn">import</span> <span class="nn">seaborn</span> <span class="k">as</span> <span class="nn">sns</span>
+<span class="n">sns</span><span class="o">.</span><span class="n">set_context</span><span class="p">(</span><span class="s2">&quot;notebook&quot;</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
-<div class="section" id="Melodies">
-<h2><span class="section-number">3.1. </span>Melodies<a class="headerlink" href="#Melodies" title="Permalink to this headline">¶</a></h2>
 <div class="nbinput nblast docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[2]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="c1"># parse all</span>
+<span></span><span class="c1">## Tragen Sie hier bitte Ihren username ein:</span>
+<span class="c1"># USERNAME = &quot;fmoss&quot;</span>
+
+<span class="c1">## for jupyter hubs</span>
+<span class="c1"># %env QT_QPA_PLATFORM=offscreen</span>
+<span class="c1"># # new user, create music21 environment variables.</span>
+<span class="c1"># m21.environment.set(&#39;musicxmlPath&#39;, value=&#39;/usr/bin/mscore&#39;)</span>
+<span class="c1"># m21.environment.set(&#39;musescoreDirectPNGPath&#39;, value=&#39;/usr/bin/mscore&#39;)</span>
+<span class="c1"># m21.environment.set(&#39;graphicsPath&#39;, value=f&#39;/home/{USERNAME}&#39;) # change accordingly for your own username!</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="Melodies">
+<h2><span class="section-number">3.1. </span>Melodies<a class="headerlink" href="#Melodies" title="Permalink to this headline">¶</a></h2>
+<p>In this session, we work with a corpus of melodies, the <em>Essen Folksong Collection</em> (EFC). There are several ways to access this corpus, for example through the interface provided by the Center for Computer Assisted Research in the Humanities at Stanford University: <a class="reference external" href="http://essen.themefinder.org/">http://essen.themefinder.org/</a> or via <a class="reference external" href="http://kern.ccarh.org/browse?l=essen">http://kern.ccarh.org/browse?l=essen</a>.</p>
+<p>A more convenient way to work with the pieces is by using the Python library <code class="docutils literal notranslate"><span class="pre">music21</span></code>. This library was developed and is maintaned my Mike Cuthbert at the MIT and is the most popular library for the computational analysis of symbolic music (i.e. scores). You can find its documentation here: <a class="reference external" href="http://web.mit.edu/music21/">http://web.mit.edu/music21/</a></p>
+<p>However, using <code class="docutils literal notranslate"><span class="pre">music21</span></code> requires some training and getting used to its particular API (the way how to interact with its functions). We will not get into too many details here but rather showcase how it can be used for our purposes.</p>
+<p>The first thing we do is to load the entire EFC and store it in a variable named <code class="docutils literal notranslate"><span class="pre">corpora</span></code>.</p>
+<div class="nbinput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[3]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="c1"># load corpus</span>
 <span class="n">corpora</span> <span class="o">=</span> <span class="n">m21</span><span class="o">.</span><span class="n">corpus</span><span class="o">.</span><span class="n">getComposer</span><span class="p">(</span><span class="s1">&#39;essenFolksong&#39;</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
+<p>Calling the variable <code class="docutils literal notranslate"><span class="pre">corpora</span></code> shows that it consists of a list of file paths. Using the <code class="docutils literal notranslate"><span class="pre">len()</span></code> function, we can find out how many corpora are stored in the variable <code class="docutils literal notranslate"><span class="pre">corpora</span></code>.</p>
 <div class="nbinput docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[55]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[4]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">german_song</span> <span class="o">=</span> <span class="n">m21</span><span class="o">.</span><span class="n">converter</span><span class="o">.</span><span class="n">parse</span><span class="p">(</span><span class="n">corpora</span><span class="p">[</span><span class="mi">0</span><span class="p">])[</span><span class="mi">70</span><span class="p">]</span>
-<span class="n">german_song</span><span class="o">.</span><span class="n">show</span><span class="p">(</span><span class="n">fmt</span><span class="o">=</span><span class="s2">&quot;musicxml.png&quot;</span><span class="p">,</span> <span class="n">fp</span><span class="o">=</span><span class="s2">&quot;./img/german_song.png&quot;</span><span class="p">)</span>
-<span class="n">german_song</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+<span></span><span class="nb">len</span><span class="p">(</span><span class="n">corpora</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[4]:
+</pre></div>
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+31
+</pre></div></div>
+</div>
+<p>We can also directly call the variable <code class="docutils literal notranslate"><span class="pre">corpora</span></code> to see what it contains:</p>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[5]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="n">corpora</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[5]:
+</pre></div>
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+[WindowsPath(&#39;C:/Users/fabianmoss/anaconda3/Lib/site-packages/music21/corpus/essenFolksong/altdeu10.abc&#39;),
+ WindowsPath(&#39;C:/Users/fabianmoss/anaconda3/Lib/site-packages/music21/corpus/essenFolksong/altdeu20.abc&#39;),
+ WindowsPath(&#39;C:/Users/fabianmoss/anaconda3/Lib/site-packages/music21/corpus/essenFolksong/ballad10.abc&#39;),
+ WindowsPath(&#39;C:/Users/fabianmoss/anaconda3/Lib/site-packages/music21/corpus/essenFolksong/ballad20.abc&#39;),
+ WindowsPath(&#39;C:/Users/fabianmoss/anaconda3/Lib/site-packages/music21/corpus/essenFolksong/ballad30.abc&#39;),
+ WindowsPath(&#39;C:/Users/fabianmoss/anaconda3/Lib/site-packages/music21/corpus/essenFolksong/ballad40.abc&#39;),
+ WindowsPath(&#39;C:/Users/fabianmoss/anaconda3/Lib/site-packages/music21/corpus/essenFolksong/ballad50.abc&#39;),
+ WindowsPath(&#39;C:/Users/fabianmoss/anaconda3/Lib/site-packages/music21/corpus/essenFolksong/ballad60.abc&#39;),
+ WindowsPath(&#39;C:/Users/fabianmoss/anaconda3/Lib/site-packages/music21/corpus/essenFolksong/ballad70.abc&#39;),
+ WindowsPath(&#39;C:/Users/fabianmoss/anaconda3/Lib/site-packages/music21/corpus/essenFolksong/ballad80.abc&#39;),
+ WindowsPath(&#39;C:/Users/fabianmoss/anaconda3/Lib/site-packages/music21/corpus/essenFolksong/boehme10.abc&#39;),
+ WindowsPath(&#39;C:/Users/fabianmoss/anaconda3/Lib/site-packages/music21/corpus/essenFolksong/boehme20.abc&#39;),
+ WindowsPath(&#39;C:/Users/fabianmoss/anaconda3/Lib/site-packages/music21/corpus/essenFolksong/dva0.abc&#39;),
+ WindowsPath(&#39;C:/Users/fabianmoss/anaconda3/Lib/site-packages/music21/corpus/essenFolksong/erk10.abc&#39;),
+ WindowsPath(&#39;C:/Users/fabianmoss/anaconda3/Lib/site-packages/music21/corpus/essenFolksong/erk20.abc&#39;),
+ WindowsPath(&#39;C:/Users/fabianmoss/anaconda3/Lib/site-packages/music21/corpus/essenFolksong/erk30.abc&#39;),
+ WindowsPath(&#39;C:/Users/fabianmoss/anaconda3/Lib/site-packages/music21/corpus/essenFolksong/erk5.abc&#39;),
+ WindowsPath(&#39;C:/Users/fabianmoss/anaconda3/Lib/site-packages/music21/corpus/essenFolksong/fink0.abc&#39;),
+ WindowsPath(&#39;C:/Users/fabianmoss/anaconda3/Lib/site-packages/music21/corpus/essenFolksong/folkHaydn.abc&#39;),
+ WindowsPath(&#39;C:/Users/fabianmoss/anaconda3/Lib/site-packages/music21/corpus/essenFolksong/han1.abc&#39;),
+ WindowsPath(&#39;C:/Users/fabianmoss/anaconda3/Lib/site-packages/music21/corpus/essenFolksong/han2.abc&#39;),
+ WindowsPath(&#39;C:/Users/fabianmoss/anaconda3/Lib/site-packages/music21/corpus/essenFolksong/irl.abc&#39;),
+ WindowsPath(&#39;C:/Users/fabianmoss/anaconda3/Lib/site-packages/music21/corpus/essenFolksong/kinder0.abc&#39;),
+ WindowsPath(&#39;C:/Users/fabianmoss/anaconda3/Lib/site-packages/music21/corpus/essenFolksong/lot.abc&#39;),
+ WindowsPath(&#39;C:/Users/fabianmoss/anaconda3/Lib/site-packages/music21/corpus/essenFolksong/lux.abc&#39;),
+ WindowsPath(&#39;C:/Users/fabianmoss/anaconda3/Lib/site-packages/music21/corpus/essenFolksong/test0.abc&#39;),
+ WindowsPath(&#39;C:/Users/fabianmoss/anaconda3/Lib/site-packages/music21/corpus/essenFolksong/test1.abc&#39;),
+ WindowsPath(&#39;C:/Users/fabianmoss/anaconda3/Lib/site-packages/music21/corpus/essenFolksong/testd.abc&#39;),
+ WindowsPath(&#39;C:/Users/fabianmoss/anaconda3/Lib/site-packages/music21/corpus/essenFolksong/teste.abc&#39;),
+ WindowsPath(&#39;C:/Users/fabianmoss/anaconda3/Lib/site-packages/music21/corpus/essenFolksong/variant0.abc&#39;),
+ WindowsPath(&#39;C:/Users/fabianmoss/anaconda3/Lib/site-packages/music21/corpus/essenFolksong/zuccal0.abc&#39;)]
+</pre></div></div>
+</div>
+<p>The variable <code class="docutils literal notranslate"><span class="pre">corpora</span></code> is a list of file paths, each of which points to a corpus in this collection. Note that the location depends on the location where <code class="docutils literal notranslate"><span class="pre">music21</span></code> is installed. If you would do this on your own computer, you would see different paths. The file names at the end of the file paths indicate what they contain, e.g. <code class="docutils literal notranslate"><span class="pre">altdeu10.abc</span></code> contains old German folksongs, <code class="docutils literal notranslate"><span class="pre">boehme10.abc</span></code> contains Czech folksongs, and <code class="docutils literal notranslate"><span class="pre">han1.abc</span></code> contains Chinese folksongs.</p>
+<p>The <code class="docutils literal notranslate"><span class="pre">.abc</span></code> file ending refers to the ABC notation for encoding melodies. You find more information about the ABC encoding here: <a class="reference external" href="http://abcnotation.com/">http://abcnotation.com/</a></p>
+<p>For example, a song could be encoded like this:</p>
+<div class="nbinput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[6]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="n">example_song</span> <span class="o">=</span> <span class="s2">&quot;&quot;&quot;</span>
+<span class="s2">X:1</span>
+<span class="s2">T:Speed the Plough</span>
+<span class="s2">M:4/4</span>
+<span class="s2">C:Trad.</span>
+<span class="s2">K:G</span>
+<span class="s2">|:GABc dedB|dedB dedB|c2ec B2dB|c2A2 A2BA|</span>
+<span class="s2">  GABc dedB|dedB dedB|c2ec B2dB|A2F2 G4:|</span>
+<span class="s2">|:g2gf gdBd|g2f2 e2d2|c2ec B2dB|c2A2 A2df|</span>
+<span class="s2">  g2gf g2Bd|g2f2 e2d2|c2ec B2dB|A2F2 G4:|</span>
+<span class="s2">&quot;&quot;&quot;</span>
+</pre></div>
+</div>
+</div>
+<p>The tripple quotes (<code class="docutils literal notranslate"><span class="pre">&quot;&quot;&quot;</span></code>) surrounding the ABC notation are used by Python to store multi-line text.</p>
+<p>What can we already understand from this encoding?</p>
+<p><code class="docutils literal notranslate"><span class="pre">music21</span></code> can load this string and display a graphical output of the score. This is done by a <strong>parser</strong>. A parser is a program that reads a file and produces a structured output.</p>
+<div class="nbinput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[7]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="n">parsed_example_song</span> <span class="o">=</span> <span class="n">m21</span><span class="o">.</span><span class="n">converter</span><span class="o">.</span><span class="n">parse</span><span class="p">(</span><span class="n">example_song</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<p>We did not need to give it the entire string again because we have already saved it in the <code class="docutils literal notranslate"><span class="pre">example_song</span></code> variable. The purpose of variables is that you can refer to them later in your code without explicitly needing to state its value.</p>
+<p>Calling the variable <code class="docutils literal notranslate"><span class="pre">parsed_example_song</span></code> now, however, does not really help us here…</p>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[8]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="n">parsed_example_song</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[8]:
+</pre></div>
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+&lt;music21.stream.Score 0x1f8efe67b80&gt;
+</pre></div></div>
+</div>
+<p>It returns a somewhat cryptic statement that says that the variable countains a <code class="docutils literal notranslate"><span class="pre">music21.stream.Score</span></code> object. Understanding the internal organization of <code class="docutils literal notranslate"><span class="pre">music21</span></code> goes beyond this class. For us, it is suffient to know that these objects have certain associated functions, called <strong>methods</strong>, that we can use on them. To look at the score of this example song, we use the method <code class="docutils literal notranslate"><span class="pre">.show()</span></code>.</p>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[9]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="n">parsed_example_song</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
 </pre></div>
 </div>
 </div>
@@ -418,28 +564,16 @@ div.rendered_html tbody tr:hover {
 <div class="prompt empty docutils container">
 </div>
 <div class="output_area docutils container">
-<img alt="_images/02_Melody_I_4_0.png" class="no-scaled-link" src="_images/02_Melody_I_4_0.png" style="width: 753px; height: 286px;" />
+<img alt="_images/02_Melody_I_21_0.png" class="no-scaled-link" src="_images/02_Melody_I_21_0.png" style="width: 753px; height: 416px;" />
 </div>
 </div>
-<div class="nbinput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[56]:
-</pre></div>
-</div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">german_song</span><span class="o">.</span><span class="n">show</span><span class="p">(</span><span class="s2">&quot;mid&quot;</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
+<p>Voilà, this is much better! Now, let us compare the score output to the ABC encoding of the song:</p>
 <div class="nbinput docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[57]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[10]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="o">%%time</span>
-
-<span class="c1"># takes about 5 mins</span>
-
-<span class="n">songs</span> <span class="o">=</span> <span class="p">[</span><span class="n">s</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">corpora</span><span class="p">))</span> <span class="k">for</span> <span class="n">s</span> <span class="ow">in</span> <span class="n">m21</span><span class="o">.</span><span class="n">converter</span><span class="o">.</span><span class="n">parse</span><span class="p">(</span><span class="n">corpora</span><span class="p">[</span><span class="n">i</span><span class="p">])</span> <span class="p">]</span>
+<span></span><span class="nb">print</span><span class="p">(</span><span class="n">example_song</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -448,11 +582,160 @@ div.rendered_html tbody tr:hover {
 </div>
 <div class="output_area docutils container">
 <div class="highlight"><pre>
-Wall time: 57.5 s
+
+X:1
+T:Speed the Plough
+M:4/4
+C:Trad.
+K:G
+|:GABc dedB|dedB dedB|c2ec B2dB|c2A2 A2BA|
+  GABc dedB|dedB dedB|c2ec B2dB|A2F2 G4:|
+|:g2gf gdBd|g2f2 e2d2|c2ec B2dB|c2A2 A2df|
+  g2gf g2Bd|g2f2 e2d2|c2ec B2dB|A2F2 G4:|
+
 </pre></div></div>
 </div>
+<p>Now the ABC notation makes already more sense. <code class="docutils literal notranslate"><span class="pre">T:Speed</span> <span class="pre">the</span> <span class="pre">Ploug</span></code> stands for the title, <code class="docutils literal notranslate"><span class="pre">M:4/4</span></code> for the meter, and <code class="docutils literal notranslate"><span class="pre">K:G</span></code> for the key of the song. The <a class="reference external" href="http://abcnotation.com/blog/2010/01/31/how-to-understand-abc-the-basics/">ABC documentation</a> tells us that <code class="docutils literal notranslate"><span class="pre">X:1</span></code> encodes just a reference number, in case multiple pieces are stored in the same file (as in our case in the variable <code class="docutils literal notranslate"><span class="pre">corpora</span></code>, remember?). And the lines at the bottom encode the proper melody, where the letters represent
+note names that are organized into bars with or without repetition signs.</p>
+<p><code class="docutils literal notranslate"><span class="pre">music21</span></code> even gives us the option to listen to the song if we path the <code class="docutils literal notranslate"><span class="pre">midi</span></code> argument to the <code class="docutils literal notranslate"><span class="pre">.show()</span></code> method:</p>
 <div class="nbinput docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[58]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[11]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="n">parsed_example_song</span><span class="o">.</span><span class="n">show</span><span class="p">(</span><span class="s2">&quot;midi&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area rendered_html docutils container">
+<div id='midiPlayerDiv2080'></div>
+<link rel="stylesheet" href="//cuthbertLab.github.io/music21j/css/m21.css"
+    type="text/css" />
+<script>
+require.config({
+    paths: {'music21': '//cuthbertLab.github.io/music21j/src/music21'}
+});
+require(['music21'], function() {
+               mp = new music21.miditools.MidiPlayer();
+               mp.addPlayer('#midiPlayerDiv2080');
+               mp.base64Load('data:audio/midi;base64,TVRoZAAAAAYAAQABBABNVHJrAAADYQD/AwAA4ABAAP9ZAgEAAP9YBAQCGAiIAJBDWoQAgEMAAJBFWoQAgEUAAJBHWoQAgEcAAJBIWoQAgEgAAJBKWoQAgEoAAJBMWoQAgEwAAJBKWoQAgEoAAJBHWoQAgEcAAJBKWoQAgEoAAJBMWoQAgEwAAJBKWoQAgEoAAJBHWoQAgEcAAJBKWoQAgEoAAJBMWoQAgEwAAJBKWoQAgEoAAJBHWoQAgEcAAJBIWogAgEgAAJBMWoQAgEwAAJBIWoQAgEgAAJBHWogAgEcAAJBKWoQAgEoAAJBHWoQAgEcAAJBIWogAgEgAAJBFWogAgEUAAJBFWogAgEUAAJBHWoQAgEcAAJBFWoQAgEUAAJBDWoQAgEMAAJBFWoQAgEUAAJBHWoQAgEcAAJBIWoQAgEgAAJBKWoQAgEoAAJBMWoQAgEwAAJBKWoQAgEoAAJBHWoQAgEcAAJBKWoQAgEoAAJBMWoQAgEwAAJBKWoQAgEoAAJBHWoQAgEcAAJBKWoQAgEoAAJBMWoQAgEwAAJBKWoQAgEoAAJBHWoQAgEcAAJBIWogAgEgAAJBMWoQAgEwAAJBIWoQAgEgAAJBHWogAgEcAAJBKWoQAgEoAAJBHWoQAgEcAAJBFWogAgEUAAJBCWogAgEIAAJBDWpAAgEMAAJBPWogAgE8AAJBPWoQAgE8AAJBOWoQAgE4AAJBPWoQAgE8AAJBKWoQAgEoAAJBHWoQAgEcAAJBKWoQAgEoAAJBPWogAgE8AAJBOWogAgE4AAJBMWogAgEwAAJBKWogAgEoAAJBIWogAgEgAAJBMWoQAgEwAAJBIWoQAgEgAAJBHWogAgEcAAJBKWoQAgEoAAJBHWoQAgEcAAJBIWogAgEgAAJBFWogAgEUAAJBFWogAgEUAAJBKWoQAgEoAAJBOWoQAgE4AAJBPWogAgE8AAJBPWoQAgE8AAJBOWoQAgE4AAJBPWogAgE8AAJBHWoQAgEcAAJBKWoQAgEoAAJBPWogAgE8AAJBOWogAgE4AAJBMWogAgEwAAJBKWogAgEoAAJBIWogAgEgAAJBMWoQAgEwAAJBIWoQAgEgAAJBHWogAgEcAAJBKWoQAgEoAAJBHWoQAgEcAAJBFWogAgEUAAJBCWogAgEIAAJBDWpAAgEMAiAD/LwA=');
+        });
+</script></div>
+</div>
+<p>Now, what happens if we try to parse one of the corpora in the EFC? We can select a specific corpus by its <strong>index</strong> in the list. Python starts counting at 0, so the first file in the list corresponds to</p>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[12]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="n">corpora</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[12]:
+</pre></div>
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+WindowsPath(&#39;C:/Users/fabianmoss/anaconda3/Lib/site-packages/music21/corpus/essenFolksong/altdeu10.abc&#39;)
+</pre></div></div>
+</div>
+<p>As you can see, this is just the first file path in the variable <code class="docutils literal notranslate"><span class="pre">corpora</span></code>. Let’s try to parse it!</p>
+<div class="nbinput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[13]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="n">first_corpus</span> <span class="o">=</span> <span class="n">m21</span><span class="o">.</span><span class="n">converter</span><span class="o">.</span><span class="n">parse</span><span class="p">(</span><span class="n">corpora</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+</pre></div>
+</div>
+</div>
+<p>Looking at the new variable <code class="docutils literal notranslate"><span class="pre">first_corpus</span></code> shows a difference to the example song before; we don’t have a <code class="docutils literal notranslate"><span class="pre">music21.stream.Score</span></code> object but a <code class="docutils literal notranslate"><span class="pre">music21.stream.Opus</span></code> object.</p>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[14]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="n">first_corpus</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[14]:
+</pre></div>
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+&lt;music21.stream.Opus 0x1f8f0ff0af0&gt;
+</pre></div></div>
+</div>
+<p>If we would call the <code class="docutils literal notranslate"><span class="pre">.show()</span></code> method on <code class="docutils literal notranslate"><span class="pre">first_corpus</span></code>, we would see the scores of all pieces that are in this particular corpus. But we don’t know how many these are. It there are only three songs, it would not be a problem, but if there were thousands of songs, it could take a very long time to parse and display them all. Fortunately, all pieces in the collection have the <code class="docutils literal notranslate"><span class="pre">X:n</span></code> line that we saw above, so that we can directly reference them. With which number would we have to replace
+<code class="docutils literal notranslate"><span class="pre">n</span></code> if we wanted to look at the 7tst piece? Remember that Python starts counting at 0.</p>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[32]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="n">first_corpus</span><span class="p">[</span><span class="mi">70</span><span class="p">]</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<img alt="_images/02_Melody_I_34_0.png" class="no-scaled-link" src="_images/02_Melody_I_34_0.png" style="width: 753px; height: 286px;" />
+</div>
+</div>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[33]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="n">first_corpus</span><span class="p">[</span><span class="mi">70</span><span class="p">]</span><span class="o">.</span><span class="n">show</span><span class="p">(</span><span class="s2">&quot;midi&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area rendered_html docutils container">
+<div id='midiPlayerDiv44451'></div>
+<link rel="stylesheet" href="//cuthbertLab.github.io/music21j/css/m21.css"
+    type="text/css" />
+<script>
+require.config({
+    paths: {'music21': '//cuthbertLab.github.io/music21j/src/music21'}
+});
+require(['music21'], function() {
+               mp = new music21.miditools.MidiPlayer();
+               mp.addPlayer('#midiPlayerDiv44451');
+               mp.base64Load('data:audio/midi;base64,TVRoZAAAAAYAAQABBABNVHJrAAABogD/AwAA4ABAAP9ZAgEAAP9YBAQCGAiIAJA+WogAgD4AAJBDWpAAgEMAAJBHWpAAgEcAAJBKWpgAgEoAAJBIWogAgEgAAJBHWpAAgEcAAJBFWpAAgEUAAJBDWpAAgEMAiACQPlqIAIA+AACQQ1qQAIBDAACQR1qQAIBHAACQSlqYAIBKAACQSFqIAIBIAACQR1qQAIBHAACQRVqQAIBFAACQQ1qQAIBDAIgAkEdaiACARwAAkEdaiACARwAAkEdaiACARwAAkEdaiACARwAAkEdaiACARwAAkEdakACARwAAkEVaiACARQAAkENaiACAQwAAkEdaiACARwAAkEpaiACASgAAkEhaiACASAAAkEdaiACARwAAkEVakACARQCIAJA+WogAgD4AAJBDWogAgEMAAJBFWogAgEUAAJBHWogAgEcAAJBIWogAgEgAAJBKWowAgEoAAJBMWoQAgEwAAJBKWogAgEoAAJBIWogAgEgAAJBHWogAgEcAAJBHWogAgEcAAJBFWogAgEUAAJBFWogAgEUAAJBDWpAAgEMAiAD/LwA=');
+        });
+</script></div>
+</div>
+<p>We have seen that we can select items from lists by <strong>indexing</strong> them, <code class="docutils literal notranslate"><span class="pre">list[i]</span></code>. We can get ranges of lists by using the <code class="docutils literal notranslate"><span class="pre">:</span></code> character. For example, <code class="docutils literal notranslate"><span class="pre">list[:10]</span></code> shows the first ten elements, <code class="docutils literal notranslate"><span class="pre">list[10:]</span></code> shows everything after the ninth element, and <code class="docutils literal notranslate"><span class="pre">list[3:6]</span></code> shows elements 3, 4, and 5 (not 6!) of the list.</p>
+<div class="section" id="Comparing-songs">
+<h3><span class="section-number">3.1.1. </span>Comparing songs<a class="headerlink" href="#Comparing-songs" title="Permalink to this headline">¶</a></h3>
+<p>Looking at individual songs is interesting for music analysis but for that the computational approach is not really necessary. We could as easily do the same by just looking at a book of scores. The power of computational methods becomes clearer when we start comparing different songs, potentially in a large number.</p>
+<p>To facilitate this comparison, we will first load all songs in all corpora of the EFC into a single list, called <code class="docutils literal notranslate"><span class="pre">songs</span></code> (this might take a couple of minutes).</p>
+<div class="nbinput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[36]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="n">songs</span> <span class="o">=</span> <span class="p">[</span><span class="n">s</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">corpora</span><span class="p">))</span> <span class="k">for</span> <span class="n">s</span> <span class="ow">in</span> <span class="n">m21</span><span class="o">.</span><span class="n">converter</span><span class="o">.</span><span class="n">parse</span><span class="p">(</span><span class="n">corpora</span><span class="p">[</span><span class="n">i</span><span class="p">])</span> <span class="p">]</span>
+</pre></div>
+</div>
+</div>
+<p>This looks a bit complicated but all it does is to go through all corpora and extract all songs into a new list. The way we did it is called <strong>list comprehension</strong> in Python. It is not important if you don’t understand this now but feel free to look it up!</p>
+<p>Using the <code class="docutils literal notranslate"><span class="pre">len()</span></code> function again, we see how many songs we have in total.</p>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[42]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
@@ -461,7 +744,7 @@ Wall time: 57.5 s
 </div>
 </div>
 <div class="nboutput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[58]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[42]:
 </pre></div>
 </div>
 <div class="output_area docutils container">
@@ -469,14 +752,24 @@ Wall time: 57.5 s
 8514
 </pre></div></div>
 </div>
-<div class="nbinput docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[62]:
+<p>We can now use the list <code class="docutils literal notranslate"><span class="pre">songs</span></code> to compare two different songs. Again, we load the 71st song of the first corpus and store it now in a variable <code class="docutils literal notranslate"><span class="pre">german_song</span></code>, and we load chinese song with index 6200 into the variable <code class="docutils literal notranslate"><span class="pre">chinese_song</span></code>.</p>
+<div class="nbinput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[38]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">chinese_song</span> <span class="o">=</span> <span class="n">songs</span><span class="p">[</span><span class="mi">6200</span><span class="p">]</span>
-<span class="n">chinese_song</span><span class="o">.</span><span class="n">show</span><span class="p">(</span><span class="n">fmt</span><span class="o">=</span><span class="s2">&quot;musicxml.png&quot;</span><span class="p">,</span> <span class="n">fp</span><span class="o">=</span><span class="s2">&quot;./img/chinese_song.png&quot;</span><span class="p">)</span>
-<span class="n">chinese_song</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+<span></span><span class="n">german_song</span> <span class="o">=</span> <span class="n">songs</span><span class="p">[</span><span class="mi">70</span><span class="p">]</span>
+<span class="n">chinese_song</span> <span class="o">=</span> <span class="n">songs</span><span class="p">[</span><span class="mi">6200</span><span class="p">]</span>
+</pre></div>
+</div>
+</div>
+<p>It is easy to display these songs now:</p>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[39]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="n">german_song</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
 </pre></div>
 </div>
 </div>
@@ -484,86 +777,95 @@ Wall time: 57.5 s
 <div class="prompt empty docutils container">
 </div>
 <div class="output_area docutils container">
-<img alt="_images/02_Melody_I_8_0.png" class="no-scaled-link" src="_images/02_Melody_I_8_0.png" style="width: 753px; height: 286px;" />
+<img alt="_images/02_Melody_I_46_0.png" class="no-scaled-link" src="_images/02_Melody_I_46_0.png" style="width: 753px; height: 286px;" />
 </div>
 </div>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[40]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="n">chinese_song</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<img alt="_images/02_Melody_I_47_0.png" class="no-scaled-link" src="_images/02_Melody_I_47_0.png" style="width: 753px; height: 286px;" />
+</div>
+</div>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[41]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="n">chinese_song</span><span class="o">.</span><span class="n">show</span><span class="p">(</span><span class="s2">&quot;midi&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area rendered_html docutils container">
+<div id='midiPlayerDiv1356540'></div>
+<link rel="stylesheet" href="//cuthbertLab.github.io/music21j/css/m21.css"
+    type="text/css" />
+<script>
+require.config({
+    paths: {'music21': '//cuthbertLab.github.io/music21j/src/music21'}
+});
+require(['music21'], function() {
+               mp = new music21.miditools.MidiPlayer();
+               mp.addPlayer('#midiPlayerDiv1356540');
+               mp.base64Load('data:audio/midi;base64,TVRoZAAAAAYAAQABBABNVHJrAAACZgD/AwAA4ABAAP9ZAv8AAP9YBAICGAiIAJBIWoYAgEgAAJBIWoIAgEgAAJBKWoQAgEoAAJBNWoQAgE0AAJBIWoYAgEgAAJBKWoIAgEoAAJBIWoQAgEgAAJBFWoQAgEUAAJBDWoQAgEMAAJBFWoIAgEUAAJBIWoIAgEgAAJBBWoQAgEEAAJBAWoIAgEAAAJA+WoIAgD4AAJA8WpAAgDwAAJBFWoQAgEUAAJBFWoQAgEUAAJBIWoQAgEgAAJBKWoQAgEoAAJBNWoQAgE0AAJBKWoQAgEoAAJBIWoQAgEgAhACQSFqEAIBIAACQRVqEAIBFAACQQ1qEAIBDAACQPlqEAIA+AACQQVqQAIBBAACQRVqEAIBFAACQRVqCAIBFAACQSFqCAIBIAACQPlqEAIA+AACQQVqEAIBBAACQSFqGAIBIAACQSlqCAIBKAACQSFqEAIBIAACQRVqEAIBFAACQQ1qEAIBDAACQRVqCAIBFAACQSFqCAIBIAACQPlqEAIA+AACQQVqEAIBBAACQQ1qQAIBDAACQRVqGAIBFAACQRVqCAIBFAACQSFqEAIBIAACQSlqEAIBKAACQTVqEAIBNAACQSlqEAIBKAACQSFqEAIBIAACQRVqEAIBFAACQQ1qEAIBDAACQQ1qCAIBDAACQRVqCAIBFAACQQ1qCAIBDAACQQVqCAIBBAACQPlqEAIA+AACQSFqMAIBIAACQRVqEAIBFAACQQ1qEAIBDAACQQ1qCAIBDAACQRVqCAIBFAACQQ1qCAIBDAACQQVqCAIBBAACQPlqEAIA+AACQQVqQAIBBAIgA/y8A');
+        });
+</script></div>
+</div>
+<p>Analysis of songs…</p>
+</div>
+<div class="section" id="Computational-analysis">
+<h3><span class="section-number">3.1.2. </span>Computational analysis<a class="headerlink" href="#Computational-analysis" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="Melodic-Profiles">
+<h4><span class="section-number">3.1.2.1. </span>Melodic Profiles<a class="headerlink" href="#Melodic-Profiles" title="Permalink to this headline">¶</a></h4>
+<p>We now go on to a computational analysis of these two and all the other songs. To make things a bit simpler, we will just look at the notes.</p>
+<p>A note can be easily represented as a pair of <strong>pitch</strong> (its height) and its <strong>duration</strong>. For example, the first note of the <em>Die plappernden Junggesellen</em> could be represented as <code class="docutils literal notranslate"><span class="pre">(D4,</span> <span class="pre">1/4)</span></code>; it is a quarter note on the pitch D4 (the 4 indicates the octave in which the note is).</p>
+<p>Another way to represent the pitch of notes is using <strong>MIDI numbers</strong>. MIDI stands for <em>Musical Instrument Digital Interface</em> and was developed for the communication between different electronic instruments such as keyboards. In MIDI, each note is simply associated with a number:</p>
+<p><img alt="MIDI Pitch" src="_images/midi_pitch.png" /> Image from <a class="reference external" href="https://www.audiolabs-erlangen.de/resources/MIR/FMP/C1/C1S2_MIDI.html">https://www.audiolabs-erlangen.de/resources/MIR/FMP/C1/C1S2_MIDI.html</a>.</p>
+<p>We can see that D4 is associated with the number 62. The second note, the G4, is associated with 62+5=67 because G is five semitones above D.</p>
+<p>To make it easier to work with pieces in this way, we define a <strong>function</strong> that gives us a list of notes for each piece.</p>
 <div class="nbinput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[63]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[130]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">chinese_song</span><span class="o">.</span><span class="n">show</span><span class="p">(</span><span class="s2">&quot;mid&quot;</span><span class="p">)</span>
+<span></span><span class="k">def</span> <span class="nf">notelist</span><span class="p">(</span><span class="n">piece</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    This function takes a song as input and returns a list of (pitch, duration) pairs,</span>
+<span class="sd">    where the duration is given in quarter notes.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+
+    <span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">([</span> <span class="p">(</span><span class="n">note</span><span class="o">.</span><span class="n">pitch</span><span class="o">.</span><span class="n">midi</span><span class="p">,</span> <span class="n">note</span><span class="o">.</span><span class="n">quarterLength</span><span class="p">)</span> <span class="k">for</span> <span class="n">note</span> <span class="ow">in</span> <span class="n">piece</span><span class="o">.</span><span class="n">flat</span><span class="o">.</span><span class="n">notes</span> <span class="p">],</span> <span class="n">columns</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;MIDI Pitch&quot;</span><span class="p">,</span> <span class="s2">&quot;Duration&quot;</span><span class="p">])</span>
+    <span class="n">df</span><span class="p">[</span><span class="s2">&quot;Onset&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s2">&quot;Duration&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">cumsum</span><span class="p">()</span>
+
+    <span class="k">return</span> <span class="n">df</span>
 </pre></div>
 </div>
 </div>
+<p>Note that the duration of a note is given in quarter notes, i.e. a quarter note has a duration of 1, a half note has a duration of 2, and an eighth note has a duration of 0.5.</p>
+<p>Let’s display the first phrase (the first eight notes) of the German song:</p>
 <div class="nbinput docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[65]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[131]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="p">[(</span><span class="n">note</span><span class="o">.</span><span class="n">pitch</span><span class="o">.</span><span class="n">midi</span><span class="p">,</span> <span class="n">note</span><span class="o">.</span><span class="n">quarterLength</span><span class="o">/</span><span class="mi">4</span><span class="p">)</span> <span class="k">for</span> <span class="n">note</span> <span class="ow">in</span> <span class="n">chinese_song</span><span class="o">.</span><span class="n">flat</span><span class="o">.</span><span class="n">notes</span><span class="p">][:</span><span class="mi">10</span><span class="p">]</span>
+<span></span><span class="n">notelist</span><span class="p">(</span><span class="n">german_song</span><span class="p">)[:</span><span class="mi">8</span><span class="p">]</span>
 </pre></div>
 </div>
 </div>
 <div class="nboutput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[65]:
-</pre></div>
-</div>
-<div class="output_area docutils container">
-<div class="highlight"><pre>
-[(72, 0.1875),
- (72, 0.0625),
- (74, 0.125),
- (77, 0.125),
- (72, 0.1875),
- (74, 0.0625),
- (72, 0.125),
- (69, 0.125),
- (67, 0.125),
- (69, 0.0625)]
-</pre></div></div>
-</div>
-<div class="nbinput docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[66]:
-</pre></div>
-</div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">dfs</span> <span class="o">=</span> <span class="p">[]</span>
-
-<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">songs</span><span class="p">)):</span>
-    <span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span> <span class="p">[(</span><span class="n">i</span><span class="p">,</span> <span class="n">note</span><span class="o">.</span><span class="n">pitch</span><span class="o">.</span><span class="n">midi</span><span class="p">,</span> <span class="n">note</span><span class="o">.</span><span class="n">quarterLength</span><span class="o">/</span><span class="mi">4</span><span class="p">)</span> <span class="k">for</span> <span class="n">note</span> <span class="ow">in</span> <span class="n">songs</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">.</span><span class="n">flat</span><span class="o">.</span><span class="n">notes</span> <span class="p">],</span> <span class="n">columns</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;song_id&quot;</span><span class="p">,</span> <span class="s2">&quot;pitch&quot;</span><span class="p">,</span> <span class="s2">&quot;duration&quot;</span><span class="p">])</span>
-    <span class="n">df</span><span class="p">[</span><span class="s2">&quot;onset&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s2">&quot;duration&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">cumsum</span><span class="p">()</span>
-    <span class="n">df</span><span class="p">[</span><span class="s2">&quot;rel_onset&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s2">&quot;onset&quot;</span><span class="p">]</span> <span class="o">/</span> <span class="n">df</span><span class="p">[</span><span class="s2">&quot;onset&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">max</span><span class="p">()</span>
-    <span class="n">df</span><span class="p">[</span><span class="s2">&quot;Z_pitch&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s2">&quot;pitch&quot;</span><span class="p">]</span> <span class="o">-</span> <span class="n">df</span><span class="p">[</span><span class="s2">&quot;pitch&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">mean</span><span class="p">())</span><span class="o">/</span><span class="n">df</span><span class="p">[</span><span class="s2">&quot;pitch&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">std</span><span class="p">(</span><span class="n">ddof</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
-
-    <span class="n">dfs</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">df</span><span class="p">)</span>
-
-<span class="n">big_df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">concat</span><span class="p">(</span><span class="n">dfs</span><span class="p">)</span><span class="o">.</span><span class="n">reset_index</span><span class="p">(</span><span class="n">drop</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
-<span class="n">big_df</span><span class="o">.</span><span class="n">to_csv</span><span class="p">(</span><span class="s2">&quot;data/big_df.csv&quot;</span><span class="p">)</span>
-<span class="n">big_df</span><span class="o">.</span><span class="n">shape</span>
-</pre></div>
-</div>
-</div>
-<div class="nboutput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[66]:
-</pre></div>
-</div>
-<div class="output_area docutils container">
-<div class="highlight"><pre>
-(450596, 6)
-</pre></div></div>
-</div>
-<div class="nbinput docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[15]:
-</pre></div>
-</div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">big_df</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-<div class="nboutput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[15]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[131]:
 </pre></div>
 </div>
 <div class="output_area rendered_html docutils container">
@@ -585,111 +887,1189 @@ Wall time: 57.5 s
   <thead>
     <tr style="text-align: right;">
       <th></th>
-      <th>piece_id</th>
-      <th>pitch</th>
-      <th>duration</th>
-      <th>onset</th>
-      <th>rel_onset</th>
-      <th>Z_pitch</th>
+      <th>MIDI Pitch</th>
+      <th>Duration</th>
+      <th>Onset</th>
     </tr>
   </thead>
   <tbody>
     <tr>
       <th>0</th>
-      <td>0</td>
-      <td>67</td>
-      <td>0.5</td>
-      <td>0.5</td>
-      <td>0.013158</td>
-      <td>-1.834390</td>
+      <td>62</td>
+      <td>1.0</td>
+      <td>1.0</td>
     </tr>
     <tr>
       <th>1</th>
-      <td>0</td>
-      <td>70</td>
-      <td>0.5</td>
-      <td>1.0</td>
-      <td>0.026316</td>
-      <td>-0.748238</td>
+      <td>67</td>
+      <td>2.0</td>
+      <td>3.0</td>
     </tr>
     <tr>
       <th>2</th>
-      <td>0</td>
       <td>71</td>
-      <td>0.5</td>
-      <td>1.5</td>
-      <td>0.039474</td>
-      <td>-0.386187</td>
+      <td>2.0</td>
+      <td>5.0</td>
     </tr>
     <tr>
       <th>3</th>
-      <td>0</td>
-      <td>72</td>
-      <td>0.5</td>
-      <td>2.0</td>
-      <td>0.052632</td>
-      <td>-0.024137</td>
+      <td>74</td>
+      <td>3.0</td>
+      <td>8.0</td>
     </tr>
     <tr>
       <th>4</th>
-      <td>0</td>
       <td>72</td>
-      <td>0.5</td>
-      <td>2.5</td>
-      <td>0.065789</td>
-      <td>-0.024137</td>
+      <td>1.0</td>
+      <td>9.0</td>
     </tr>
     <tr>
       <th>5</th>
-      <td>0</td>
-      <td>74</td>
-      <td>1.0</td>
-      <td>3.5</td>
-      <td>0.092105</td>
-      <td>0.699965</td>
+      <td>71</td>
+      <td>2.0</td>
+      <td>11.0</td>
     </tr>
     <tr>
       <th>6</th>
-      <td>0</td>
-      <td>74</td>
-      <td>1.0</td>
-      <td>4.5</td>
-      <td>0.118421</td>
-      <td>0.699965</td>
+      <td>69</td>
+      <td>2.0</td>
+      <td>13.0</td>
     </tr>
     <tr>
       <th>7</th>
-      <td>0</td>
-      <td>74</td>
+      <td>67</td>
+      <td>2.0</td>
+      <td>15.0</td>
+    </tr>
+  </tbody>
+</table>
+</div></div>
+</div>
+<p>Note that we added another column, “Onset”. What does it represent?</p>
+<p>This allows us now to look at the <strong>melodic profile</strong> of a particular song.</p>
+<div class="nbinput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[247]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="k">def</span> <span class="nf">plot_melodic_profile</span><span class="p">(</span><span class="n">notelist</span><span class="p">,</span> <span class="n">ax</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">c</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">mean</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">Z</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">sections</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">standardized</span><span class="o">=</span><span class="kc">False</span><span class="p">):</span>
+
+    <span class="k">if</span> <span class="n">ax</span> <span class="o">==</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">gca</span><span class="p">()</span>
+
+    <span class="k">if</span> <span class="n">standardized</span><span class="p">:</span>
+        <span class="n">x</span> <span class="o">=</span> <span class="n">notelist</span><span class="p">[</span><span class="s2">&quot;Rel. Onset&quot;</span><span class="p">]</span>
+        <span class="n">y</span> <span class="o">=</span> <span class="n">notelist</span><span class="p">[</span><span class="s2">&quot;Rel. MIDI Pitch&quot;</span><span class="p">]</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="n">x</span> <span class="o">=</span> <span class="n">notelist</span><span class="p">[</span><span class="s2">&quot;Onset&quot;</span><span class="p">]</span>
+        <span class="n">y</span> <span class="o">=</span> <span class="n">notelist</span><span class="p">[</span><span class="s2">&quot;MIDI Pitch&quot;</span><span class="p">]</span>
+
+    <span class="n">ax</span><span class="o">.</span><span class="n">step</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="n">y</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="n">c</span><span class="p">)</span>
+
+    <span class="k">if</span> <span class="n">mean</span><span class="p">:</span>
+        <span class="n">ax</span><span class="o">.</span><span class="n">axhline</span><span class="p">(</span><span class="n">y</span><span class="o">.</span><span class="n">mean</span><span class="p">(),</span> <span class="n">color</span><span class="o">=</span><span class="s2">&quot;gray&quot;</span><span class="p">,</span> <span class="n">linestyle</span><span class="o">=</span><span class="s2">&quot;--&quot;</span><span class="p">)</span>
+
+    <span class="k">if</span> <span class="n">sections</span><span class="p">:</span>
+        <span class="k">for</span> <span class="n">l</span> <span class="ow">in</span> <span class="p">[</span> <span class="n">x</span><span class="o">.</span><span class="n">max</span><span class="p">()</span> <span class="o">*</span> <span class="n">i</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="p">[</span> <span class="mi">1</span><span class="o">/</span><span class="mi">4</span><span class="p">,</span> <span class="mi">1</span><span class="o">/</span><span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="o">/</span><span class="mi">4</span><span class="p">]</span> <span class="p">]:</span>
+            <span class="n">ax</span><span class="o">.</span><span class="n">axvline</span><span class="p">(</span><span class="n">l</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s2">&quot;gray&quot;</span><span class="p">,</span> <span class="n">linewidth</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">linestyle</span><span class="o">=</span><span class="s2">&quot;--&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[248]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="n">plot_melodic_profile</span><span class="p">(</span><span class="n">notelist</span><span class="p">(</span><span class="n">german_song</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<img alt="_images/02_Melody_I_60_0.png" class="no-scaled-link" src="_images/02_Melody_I_60_0.png" style="width: 776px; height: 476px;" />
+</div>
+</div>
+<p>Likewise, we can as easily plot the melodic contour of the Chinese song (we will use a different color).</p>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[249]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="n">fig</span><span class="p">,</span> <span class="n">axes</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span> <span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">8</span><span class="p">,</span><span class="mi">6</span><span class="p">))</span>
+
+<span class="n">plot_melodic_profile</span><span class="p">(</span><span class="n">notelist</span><span class="p">(</span><span class="n">german_song</span><span class="p">),</span> <span class="n">ax</span><span class="o">=</span><span class="n">axes</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">mean</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="n">plot_melodic_profile</span><span class="p">(</span><span class="n">notelist</span><span class="p">(</span><span class="n">chinese_song</span><span class="p">),</span> <span class="n">ax</span><span class="o">=</span><span class="n">axes</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">c</span><span class="o">=</span><span class="s2">&quot;firebrick&quot;</span><span class="p">,</span> <span class="n">mean</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">tight_layout</span><span class="p">()</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">savefig</span><span class="p">(</span><span class="s2">&quot;img/melodic_profiles.png&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<img alt="_images/02_Melody_I_62_0.png" class="no-scaled-link" src="_images/02_Melody_I_62_0.png" style="width: 1197px; height: 875px;" />
+</div>
+</div>
+<p>The dashed grey lines in both plots show the average MIDI pitch of the song.</p>
+<p>But still, it is quite difficult to compare them directly. They differ both with respect to their length (see the numbers on the “Onset” axis) and their pitches (see “MIDI Pitch” axis).</p>
+<p>We need to transform them in a way that makes them directly comparable. To that end, we define a new function <code class="docutils literal notranslate"><span class="pre">standardize()</span></code>.</p>
+<div class="nbinput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[250]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="k">def</span> <span class="nf">standardize</span><span class="p">(</span><span class="n">notelist</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Takes a notelist as input and returns a standardized version.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+
+    <span class="n">notelist</span><span class="p">[</span><span class="s2">&quot;Rel. MIDI Pitch&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="p">(</span><span class="n">notelist</span><span class="p">[</span><span class="s2">&quot;MIDI Pitch&quot;</span><span class="p">]</span> <span class="o">-</span> <span class="n">notelist</span><span class="p">[</span><span class="s2">&quot;MIDI Pitch&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">mean</span><span class="p">())</span> <span class="o">/</span> <span class="n">notelist</span><span class="p">[</span><span class="s2">&quot;MIDI Pitch&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">std</span><span class="p">()</span>
+    <span class="n">notelist</span><span class="p">[</span><span class="s2">&quot;Rel. Duration&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">notelist</span><span class="p">[</span><span class="s2">&quot;Duration&quot;</span><span class="p">]</span> <span class="o">/</span> <span class="n">notelist</span><span class="p">[</span><span class="s2">&quot;Duration&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span>
+    <span class="n">notelist</span><span class="p">[</span><span class="s2">&quot;Rel. Onset&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">notelist</span><span class="p">[</span><span class="s2">&quot;Onset&quot;</span><span class="p">]</span> <span class="o">/</span> <span class="n">notelist</span><span class="p">[</span><span class="s2">&quot;Onset&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">max</span><span class="p">()</span>
+
+    <span class="k">return</span> <span class="n">notelist</span>
+</pre></div>
+</div>
+</div>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[251]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="n">standardize</span><span class="p">(</span><span class="n">note_list</span><span class="p">(</span><span class="n">german_song</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[251]:
+</pre></div>
+</div>
+<div class="output_area rendered_html docutils container">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>MIDI Pitch</th>
+      <th>Duration</th>
+      <th>Onset</th>
+      <th>Rel. MIDI Pitch</th>
+      <th>Rel. Duration</th>
+      <th>Rel. Onset</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>62</td>
       <td>1.0</td>
-      <td>5.5</td>
-      <td>0.144737</td>
-      <td>0.699965</td>
+      <td>1.0</td>
+      <td>-2.543827</td>
+      <td>0.016667</td>
+      <td>0.016667</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>67</td>
+      <td>2.0</td>
+      <td>3.0</td>
+      <td>-0.949300</td>
+      <td>0.033333</td>
+      <td>0.050000</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>71</td>
+      <td>2.0</td>
+      <td>5.0</td>
+      <td>0.326322</td>
+      <td>0.033333</td>
+      <td>0.083333</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>74</td>
+      <td>3.0</td>
+      <td>8.0</td>
+      <td>1.283038</td>
+      <td>0.050000</td>
+      <td>0.133333</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>72</td>
+      <td>1.0</td>
+      <td>9.0</td>
+      <td>0.645227</td>
+      <td>0.016667</td>
+      <td>0.150000</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>71</td>
+      <td>2.0</td>
+      <td>11.0</td>
+      <td>0.326322</td>
+      <td>0.033333</td>
+      <td>0.183333</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>69</td>
+      <td>2.0</td>
+      <td>13.0</td>
+      <td>-0.311489</td>
+      <td>0.033333</td>
+      <td>0.216667</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>67</td>
+      <td>2.0</td>
+      <td>15.0</td>
+      <td>-0.949300</td>
+      <td>0.033333</td>
+      <td>0.250000</td>
     </tr>
     <tr>
       <th>8</th>
-      <td>0</td>
-      <td>74</td>
-      <td>0.5</td>
-      <td>6.0</td>
-      <td>0.157895</td>
-      <td>0.699965</td>
+      <td>62</td>
+      <td>1.0</td>
+      <td>16.0</td>
+      <td>-2.543827</td>
+      <td>0.016667</td>
+      <td>0.266667</td>
     </tr>
     <tr>
       <th>9</th>
-      <td>0</td>
+      <td>67</td>
+      <td>2.0</td>
+      <td>18.0</td>
+      <td>-0.949300</td>
+      <td>0.033333</td>
+      <td>0.300000</td>
+    </tr>
+    <tr>
+      <th>10</th>
+      <td>71</td>
+      <td>2.0</td>
+      <td>20.0</td>
+      <td>0.326322</td>
+      <td>0.033333</td>
+      <td>0.333333</td>
+    </tr>
+    <tr>
+      <th>11</th>
       <td>74</td>
+      <td>3.0</td>
+      <td>23.0</td>
+      <td>1.283038</td>
+      <td>0.050000</td>
+      <td>0.383333</td>
+    </tr>
+    <tr>
+      <th>12</th>
+      <td>72</td>
+      <td>1.0</td>
+      <td>24.0</td>
+      <td>0.645227</td>
+      <td>0.016667</td>
+      <td>0.400000</td>
+    </tr>
+    <tr>
+      <th>13</th>
+      <td>71</td>
+      <td>2.0</td>
+      <td>26.0</td>
+      <td>0.326322</td>
+      <td>0.033333</td>
+      <td>0.433333</td>
+    </tr>
+    <tr>
+      <th>14</th>
+      <td>69</td>
+      <td>2.0</td>
+      <td>28.0</td>
+      <td>-0.311489</td>
+      <td>0.033333</td>
+      <td>0.466667</td>
+    </tr>
+    <tr>
+      <th>15</th>
+      <td>67</td>
+      <td>2.0</td>
+      <td>30.0</td>
+      <td>-0.949300</td>
+      <td>0.033333</td>
+      <td>0.500000</td>
+    </tr>
+    <tr>
+      <th>16</th>
+      <td>71</td>
+      <td>1.0</td>
+      <td>31.0</td>
+      <td>0.326322</td>
+      <td>0.016667</td>
+      <td>0.516667</td>
+    </tr>
+    <tr>
+      <th>17</th>
+      <td>71</td>
+      <td>1.0</td>
+      <td>32.0</td>
+      <td>0.326322</td>
+      <td>0.016667</td>
+      <td>0.533333</td>
+    </tr>
+    <tr>
+      <th>18</th>
+      <td>71</td>
+      <td>1.0</td>
+      <td>33.0</td>
+      <td>0.326322</td>
+      <td>0.016667</td>
+      <td>0.550000</td>
+    </tr>
+    <tr>
+      <th>19</th>
+      <td>71</td>
+      <td>1.0</td>
+      <td>34.0</td>
+      <td>0.326322</td>
+      <td>0.016667</td>
+      <td>0.566667</td>
+    </tr>
+    <tr>
+      <th>20</th>
+      <td>71</td>
+      <td>1.0</td>
+      <td>35.0</td>
+      <td>0.326322</td>
+      <td>0.016667</td>
+      <td>0.583333</td>
+    </tr>
+    <tr>
+      <th>21</th>
+      <td>71</td>
+      <td>2.0</td>
+      <td>37.0</td>
+      <td>0.326322</td>
+      <td>0.033333</td>
+      <td>0.616667</td>
+    </tr>
+    <tr>
+      <th>22</th>
+      <td>69</td>
+      <td>1.0</td>
+      <td>38.0</td>
+      <td>-0.311489</td>
+      <td>0.016667</td>
+      <td>0.633333</td>
+    </tr>
+    <tr>
+      <th>23</th>
+      <td>67</td>
+      <td>1.0</td>
+      <td>39.0</td>
+      <td>-0.949300</td>
+      <td>0.016667</td>
+      <td>0.650000</td>
+    </tr>
+    <tr>
+      <th>24</th>
+      <td>71</td>
+      <td>1.0</td>
+      <td>40.0</td>
+      <td>0.326322</td>
+      <td>0.016667</td>
+      <td>0.666667</td>
+    </tr>
+    <tr>
+      <th>25</th>
+      <td>74</td>
+      <td>1.0</td>
+      <td>41.0</td>
+      <td>1.283038</td>
+      <td>0.016667</td>
+      <td>0.683333</td>
+    </tr>
+    <tr>
+      <th>26</th>
+      <td>72</td>
+      <td>1.0</td>
+      <td>42.0</td>
+      <td>0.645227</td>
+      <td>0.016667</td>
+      <td>0.700000</td>
+    </tr>
+    <tr>
+      <th>27</th>
+      <td>71</td>
+      <td>1.0</td>
+      <td>43.0</td>
+      <td>0.326322</td>
+      <td>0.016667</td>
+      <td>0.716667</td>
+    </tr>
+    <tr>
+      <th>28</th>
+      <td>69</td>
+      <td>2.0</td>
+      <td>45.0</td>
+      <td>-0.311489</td>
+      <td>0.033333</td>
+      <td>0.750000</td>
+    </tr>
+    <tr>
+      <th>29</th>
+      <td>62</td>
+      <td>1.0</td>
+      <td>46.0</td>
+      <td>-2.543827</td>
+      <td>0.016667</td>
+      <td>0.766667</td>
+    </tr>
+    <tr>
+      <th>30</th>
+      <td>67</td>
+      <td>1.0</td>
+      <td>47.0</td>
+      <td>-0.949300</td>
+      <td>0.016667</td>
+      <td>0.783333</td>
+    </tr>
+    <tr>
+      <th>31</th>
+      <td>69</td>
+      <td>1.0</td>
+      <td>48.0</td>
+      <td>-0.311489</td>
+      <td>0.016667</td>
+      <td>0.800000</td>
+    </tr>
+    <tr>
+      <th>32</th>
+      <td>71</td>
+      <td>1.0</td>
+      <td>49.0</td>
+      <td>0.326322</td>
+      <td>0.016667</td>
+      <td>0.816667</td>
+    </tr>
+    <tr>
+      <th>33</th>
+      <td>72</td>
+      <td>1.0</td>
+      <td>50.0</td>
+      <td>0.645227</td>
+      <td>0.016667</td>
+      <td>0.833333</td>
+    </tr>
+    <tr>
+      <th>34</th>
+      <td>74</td>
+      <td>1.5</td>
+      <td>51.5</td>
+      <td>1.283038</td>
+      <td>0.025000</td>
+      <td>0.858333</td>
+    </tr>
+    <tr>
+      <th>35</th>
+      <td>76</td>
       <td>0.5</td>
-      <td>6.5</td>
-      <td>0.171053</td>
-      <td>0.699965</td>
+      <td>52.0</td>
+      <td>1.920849</td>
+      <td>0.008333</td>
+      <td>0.866667</td>
+    </tr>
+    <tr>
+      <th>36</th>
+      <td>74</td>
+      <td>1.0</td>
+      <td>53.0</td>
+      <td>1.283038</td>
+      <td>0.016667</td>
+      <td>0.883333</td>
+    </tr>
+    <tr>
+      <th>37</th>
+      <td>72</td>
+      <td>1.0</td>
+      <td>54.0</td>
+      <td>0.645227</td>
+      <td>0.016667</td>
+      <td>0.900000</td>
+    </tr>
+    <tr>
+      <th>38</th>
+      <td>71</td>
+      <td>1.0</td>
+      <td>55.0</td>
+      <td>0.326322</td>
+      <td>0.016667</td>
+      <td>0.916667</td>
+    </tr>
+    <tr>
+      <th>39</th>
+      <td>71</td>
+      <td>1.0</td>
+      <td>56.0</td>
+      <td>0.326322</td>
+      <td>0.016667</td>
+      <td>0.933333</td>
+    </tr>
+    <tr>
+      <th>40</th>
+      <td>69</td>
+      <td>1.0</td>
+      <td>57.0</td>
+      <td>-0.311489</td>
+      <td>0.016667</td>
+      <td>0.950000</td>
+    </tr>
+    <tr>
+      <th>41</th>
+      <td>69</td>
+      <td>1.0</td>
+      <td>58.0</td>
+      <td>-0.311489</td>
+      <td>0.016667</td>
+      <td>0.966667</td>
+    </tr>
+    <tr>
+      <th>42</th>
+      <td>67</td>
+      <td>2.0</td>
+      <td>60.0</td>
+      <td>-0.949300</td>
+      <td>0.033333</td>
+      <td>1.000000</td>
     </tr>
   </tbody>
 </table>
 </div></div>
 </div>
 <div class="nbinput docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[16]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[252]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="n">plot_melodic_profile</span><span class="p">(</span><span class="n">standardize</span><span class="p">(</span><span class="n">note_list</span><span class="p">(</span><span class="n">german_song</span><span class="p">)),</span> <span class="n">mean</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">sections</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">standardized</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="n">plot_melodic_profile</span><span class="p">(</span><span class="n">standardize</span><span class="p">(</span><span class="n">note_list</span><span class="p">(</span><span class="n">chinese_song</span><span class="p">)),</span> <span class="n">c</span><span class="o">=</span><span class="s2">&quot;firebrick&quot;</span><span class="p">,</span> <span class="n">standardized</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<img alt="_images/02_Melody_I_66_0.png" class="no-scaled-link" src="_images/02_Melody_I_66_0.png" style="width: 781px; height: 476px;" />
+</div>
+</div>
+<p>Standardizing the songs makes it possible to compare them directly: They have now the same length 1 and their pitches are centered around the mean 0 with a standard deviation of 1.</p>
+<p>However, already with two pieces this plot is quite crowded.</p>
+<div class="nbinput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[253]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="n">dfs</span> <span class="o">=</span> <span class="p">[]</span>
+
+<span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="n">song</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">songs</span><span class="p">):</span>
+    <span class="n">df</span> <span class="o">=</span> <span class="n">standardize</span><span class="p">(</span><span class="n">notelist</span><span class="p">(</span><span class="n">song</span><span class="p">))</span>
+    <span class="n">df</span><span class="p">[</span><span class="s2">&quot;Song ID&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">i</span>
+    <span class="n">dfs</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">df</span><span class="p">)</span>
+
+<span class="n">big_df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">concat</span><span class="p">(</span><span class="n">dfs</span><span class="p">)</span><span class="o">.</span><span class="n">reset_index</span><span class="p">(</span><span class="n">drop</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[254]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="n">big_df</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[254]:
+</pre></div>
+</div>
+<div class="output_area rendered_html docutils container">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>MIDI Pitch</th>
+      <th>Duration</th>
+      <th>Onset</th>
+      <th>Rel. MIDI Pitch</th>
+      <th>Rel. Duration</th>
+      <th>Rel. Onset</th>
+      <th>Song ID</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>67</td>
+      <td>2.00</td>
+      <td>2.00</td>
+      <td>-1.819039</td>
+      <td>0.013158</td>
+      <td>0.013158</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>70</td>
+      <td>2.00</td>
+      <td>4.00</td>
+      <td>-0.741977</td>
+      <td>0.013158</td>
+      <td>0.026316</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>71</td>
+      <td>2.00</td>
+      <td>6.00</td>
+      <td>-0.382956</td>
+      <td>0.013158</td>
+      <td>0.039474</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>72</td>
+      <td>2.00</td>
+      <td>8.00</td>
+      <td>-0.023935</td>
+      <td>0.013158</td>
+      <td>0.052632</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>72</td>
+      <td>2.00</td>
+      <td>10.00</td>
+      <td>-0.023935</td>
+      <td>0.013158</td>
+      <td>0.065789</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>...</th>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+    </tr>
+    <tr>
+      <th>450591</th>
+      <td>71</td>
+      <td>0.25</td>
+      <td>28.50</td>
+      <td>0.691456</td>
+      <td>0.008197</td>
+      <td>0.934426</td>
+      <td>8513</td>
+    </tr>
+    <tr>
+      <th>450592</th>
+      <td>69</td>
+      <td>0.25</td>
+      <td>28.75</td>
+      <td>0.098779</td>
+      <td>0.008197</td>
+      <td>0.942623</td>
+      <td>8513</td>
+    </tr>
+    <tr>
+      <th>450593</th>
+      <td>73</td>
+      <td>0.25</td>
+      <td>29.00</td>
+      <td>1.284133</td>
+      <td>0.008197</td>
+      <td>0.950820</td>
+      <td>8513</td>
+    </tr>
+    <tr>
+      <th>450594</th>
+      <td>71</td>
+      <td>1.00</td>
+      <td>30.00</td>
+      <td>0.691456</td>
+      <td>0.032787</td>
+      <td>0.983607</td>
+      <td>8513</td>
+    </tr>
+    <tr>
+      <th>450595</th>
+      <td>69</td>
+      <td>0.50</td>
+      <td>30.50</td>
+      <td>0.098779</td>
+      <td>0.016393</td>
+      <td>1.000000</td>
+      <td>8513</td>
+    </tr>
+  </tbody>
+</table>
+<p>450596 rows × 7 columns</p>
+</div></div>
+</div>
+<div class="nbinput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[258]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="n">big_df</span><span class="o">.</span><span class="n">to_csv</span><span class="p">(</span><span class="s2">&quot;data/big_df.csv&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[255]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="n">big_df</span><span class="o">.</span><span class="n">sample</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[255]:
+</pre></div>
+</div>
+<div class="output_area rendered_html docutils container">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>MIDI Pitch</th>
+      <th>Duration</th>
+      <th>Onset</th>
+      <th>Rel. MIDI Pitch</th>
+      <th>Rel. Duration</th>
+      <th>Rel. Onset</th>
+      <th>Song ID</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>225359</th>
+      <td>72</td>
+      <td>0.50</td>
+      <td>21.50</td>
+      <td>0.494782</td>
+      <td>0.007143</td>
+      <td>0.307143</td>
+      <td>4766</td>
+    </tr>
+    <tr>
+      <th>125522</th>
+      <td>71</td>
+      <td>0.50</td>
+      <td>32.50</td>
+      <td>1.237434</td>
+      <td>0.007194</td>
+      <td>0.467626</td>
+      <td>2684</td>
+    </tr>
+    <tr>
+      <th>321773</th>
+      <td>79</td>
+      <td>0.50</td>
+      <td>37.50</td>
+      <td>0.391244</td>
+      <td>0.009434</td>
+      <td>0.707547</td>
+      <td>6068</td>
+    </tr>
+    <tr>
+      <th>272998</th>
+      <td>76</td>
+      <td>0.50</td>
+      <td>116.50</td>
+      <td>1.046169</td>
+      <td>0.003906</td>
+      <td>0.910156</td>
+      <td>5426</td>
+    </tr>
+    <tr>
+      <th>226973</th>
+      <td>72</td>
+      <td>0.25</td>
+      <td>59.75</td>
+      <td>0.304341</td>
+      <td>0.003367</td>
+      <td>0.804714</td>
+      <td>4787</td>
+    </tr>
+    <tr>
+      <th>53566</th>
+      <td>74</td>
+      <td>1.00</td>
+      <td>16.50</td>
+      <td>1.262158</td>
+      <td>0.045455</td>
+      <td>0.750000</td>
+      <td>1238</td>
+    </tr>
+    <tr>
+      <th>312831</th>
+      <td>72</td>
+      <td>0.25</td>
+      <td>2.50</td>
+      <td>0.748457</td>
+      <td>0.005319</td>
+      <td>0.053191</td>
+      <td>5926</td>
+    </tr>
+    <tr>
+      <th>345438</th>
+      <td>70</td>
+      <td>1.00</td>
+      <td>12.00</td>
+      <td>-0.092478</td>
+      <td>0.033333</td>
+      <td>0.400000</td>
+      <td>6441</td>
+    </tr>
+    <tr>
+      <th>184015</th>
+      <td>63</td>
+      <td>0.50</td>
+      <td>11.00</td>
+      <td>-1.695955</td>
+      <td>0.016667</td>
+      <td>0.366667</td>
+      <td>3952</td>
+    </tr>
+    <tr>
+      <th>348841</th>
+      <td>55</td>
+      <td>0.50</td>
+      <td>12.50</td>
+      <td>-1.277415</td>
+      <td>0.021277</td>
+      <td>0.531915</td>
+      <td>6525</td>
+    </tr>
+  </tbody>
+</table>
+</div></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="The-melodic-arc">
+<h2><span class="section-number">3.2. </span>The melodic arc<a class="headerlink" href="#The-melodic-arc" title="Permalink to this headline">¶</a></h2>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[296]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="o">%%time</span>
+
+<span class="n">fig</span><span class="p">,</span> <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span><span class="mi">5</span><span class="p">))</span>
+
+<span class="n">grouped</span> <span class="o">=</span> <span class="n">big_df</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s2">&quot;Song ID&quot;</span><span class="p">)</span>
+
+<span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="n">g</span> <span class="ow">in</span> <span class="n">grouped</span><span class="p">:</span>
+    <span class="n">x</span> <span class="o">=</span> <span class="n">g</span><span class="p">[</span><span class="s2">&quot;Rel. Onset&quot;</span><span class="p">]</span>
+    <span class="n">y</span> <span class="o">=</span> <span class="n">g</span><span class="p">[</span><span class="s2">&quot;Rel. MIDI Pitch&quot;</span><span class="p">]</span>
+    <span class="n">ax</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="n">y</span><span class="p">,</span> <span class="n">lw</span><span class="o">=.</span><span class="mi">5</span><span class="p">,</span> <span class="n">c</span><span class="o">=</span><span class="s2">&quot;tab:red&quot;</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="mi">1</span><span class="o">/</span><span class="mi">300</span><span class="p">)</span>
+
+<span class="n">ax</span><span class="o">.</span><span class="n">axvline</span><span class="p">(</span><span class="o">.</span><span class="mi">25</span><span class="p">,</span> <span class="n">lw</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">ls</span><span class="o">=</span><span class="s2">&quot;--&quot;</span><span class="p">,</span> <span class="n">c</span><span class="o">=</span><span class="s2">&quot;gray&quot;</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">axvline</span><span class="p">(</span><span class="o">.</span><span class="mi">5</span><span class="p">,</span> <span class="n">lw</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">ls</span><span class="o">=</span><span class="s2">&quot;--&quot;</span><span class="p">,</span> <span class="n">c</span><span class="o">=</span><span class="s2">&quot;gray&quot;</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">axvline</span><span class="p">(</span><span class="o">.</span><span class="mi">75</span><span class="p">,</span> <span class="n">lw</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">ls</span><span class="o">=</span><span class="s2">&quot;--&quot;</span><span class="p">,</span> <span class="n">c</span><span class="o">=</span><span class="s2">&quot;gray&quot;</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">axhline</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">lw</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">ls</span><span class="o">=</span><span class="s2">&quot;--&quot;</span><span class="p">,</span> <span class="n">c</span><span class="o">=</span><span class="s2">&quot;gray&quot;</span><span class="p">)</span>
+
+<span class="n">lowess</span> <span class="o">=</span> <span class="n">sm</span><span class="o">.</span><span class="n">nonparametric</span><span class="o">.</span><span class="n">lowess</span>
+<span class="n">big_x</span> <span class="o">=</span> <span class="n">big_df</span><span class="p">[</span><span class="s2">&quot;Rel. Onset&quot;</span><span class="p">]</span>
+<span class="n">big_y</span> <span class="o">=</span> <span class="n">big_df</span><span class="p">[</span><span class="s2">&quot;Rel. MIDI Pitch&quot;</span><span class="p">]</span>
+<span class="n">big_z</span> <span class="o">=</span> <span class="n">lowess</span><span class="p">(</span><span class="n">big_y</span><span class="p">,</span> <span class="n">big_x</span><span class="p">,</span> <span class="n">frac</span><span class="o">=</span><span class="mi">5</span><span class="o">/</span><span class="mi">100</span><span class="p">,</span> <span class="n">delta</span><span class="o">=</span><span class="mi">1</span><span class="o">/</span><span class="mi">20</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">big_z</span><span class="p">[:,</span><span class="mi">0</span><span class="p">],</span> <span class="n">big_z</span><span class="p">[:,</span><span class="mi">1</span><span class="p">],</span> <span class="n">c</span><span class="o">=</span><span class="s2">&quot;black&quot;</span><span class="p">,</span> <span class="n">lw</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s2">&quot;Melodic arc&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s2">&quot;Relative onset&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s2">&quot;Pitch deviation&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xticks</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">5</span><span class="p">))</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">yticks</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="o">-</span><span class="mi">5</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">11</span><span class="p">))</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlim</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">)</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">tight_layout</span><span class="p">()</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">savefig</span><span class="p">(</span><span class="s2">&quot;img/melodic_arc.png&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<img alt="_images/02_Melody_I_73_0.png" class="no-scaled-link" src="_images/02_Melody_I_73_0.png" style="width: 725px; height: 725px;" />
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+Wall time: 31 s
+</pre></div></div>
+</div>
+</div>
+<div class="section" id="Intervals">
+<h2><span class="section-number">3.3. </span>Intervals<a class="headerlink" href="#Intervals" title="Permalink to this headline">¶</a></h2>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[260]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="n">big_df</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[260]:
+</pre></div>
+</div>
+<div class="output_area rendered_html docutils container">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>MIDI Pitch</th>
+      <th>Duration</th>
+      <th>Onset</th>
+      <th>Rel. MIDI Pitch</th>
+      <th>Rel. Duration</th>
+      <th>Rel. Onset</th>
+      <th>Song ID</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>67</td>
+      <td>2.00</td>
+      <td>2.00</td>
+      <td>-1.819039</td>
+      <td>0.013158</td>
+      <td>0.013158</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>70</td>
+      <td>2.00</td>
+      <td>4.00</td>
+      <td>-0.741977</td>
+      <td>0.013158</td>
+      <td>0.026316</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>71</td>
+      <td>2.00</td>
+      <td>6.00</td>
+      <td>-0.382956</td>
+      <td>0.013158</td>
+      <td>0.039474</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>72</td>
+      <td>2.00</td>
+      <td>8.00</td>
+      <td>-0.023935</td>
+      <td>0.013158</td>
+      <td>0.052632</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>72</td>
+      <td>2.00</td>
+      <td>10.00</td>
+      <td>-0.023935</td>
+      <td>0.013158</td>
+      <td>0.065789</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>...</th>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+    </tr>
+    <tr>
+      <th>450591</th>
+      <td>71</td>
+      <td>0.25</td>
+      <td>28.50</td>
+      <td>0.691456</td>
+      <td>0.008197</td>
+      <td>0.934426</td>
+      <td>8513</td>
+    </tr>
+    <tr>
+      <th>450592</th>
+      <td>69</td>
+      <td>0.25</td>
+      <td>28.75</td>
+      <td>0.098779</td>
+      <td>0.008197</td>
+      <td>0.942623</td>
+      <td>8513</td>
+    </tr>
+    <tr>
+      <th>450593</th>
+      <td>73</td>
+      <td>0.25</td>
+      <td>29.00</td>
+      <td>1.284133</td>
+      <td>0.008197</td>
+      <td>0.950820</td>
+      <td>8513</td>
+    </tr>
+    <tr>
+      <th>450594</th>
+      <td>71</td>
+      <td>1.00</td>
+      <td>30.00</td>
+      <td>0.691456</td>
+      <td>0.032787</td>
+      <td>0.983607</td>
+      <td>8513</td>
+    </tr>
+    <tr>
+      <th>450595</th>
+      <td>69</td>
+      <td>0.50</td>
+      <td>30.50</td>
+      <td>0.098779</td>
+      <td>0.016393</td>
+      <td>1.000000</td>
+      <td>8513</td>
+    </tr>
+  </tbody>
+</table>
+<p>450596 rows × 7 columns</p>
+</div></div>
+</div>
+<div class="nbinput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[261]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="n">intervals</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="n">g</span> <span class="ow">in</span> <span class="n">big_df</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s2">&quot;Song ID&quot;</span><span class="p">):</span>
+    <span class="n">ints</span> <span class="o">=</span> <span class="p">[</span> <span class="n">p2</span><span class="o">-</span><span class="n">p1</span> <span class="k">for</span> <span class="n">p1</span><span class="p">,</span> <span class="n">p2</span> <span class="ow">in</span> <span class="nb">zip</span><span class="p">(</span><span class="n">g</span><span class="p">[</span><span class="s2">&quot;MIDI Pitch&quot;</span><span class="p">],</span> <span class="n">g</span><span class="p">[</span><span class="s2">&quot;MIDI Pitch&quot;</span><span class="p">][</span><span class="mi">1</span><span class="p">:])]</span>
+    <span class="n">intervals</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">ints</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="nbinput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[268]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="n">big_df</span><span class="p">[</span><span class="s2">&quot;Avg. MIDI Pitch&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="mi">0</span>
+
+<span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="n">group</span> <span class="ow">in</span> <span class="n">big_df</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s2">&quot;Song ID&quot;</span><span class="p">):</span>
+    <span class="n">grp_mean_pitch</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">group</span><span class="p">[</span><span class="s2">&quot;MIDI Pitch&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">mean</span><span class="p">())</span>
+    <span class="n">big_df</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">big_df</span><span class="p">[</span><span class="s2">&quot;Song ID&quot;</span><span class="p">]</span> <span class="o">==</span> <span class="n">i</span><span class="p">,</span> <span class="s2">&quot;Avg. MIDI Pitch&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">grp_mean_pitch</span>
+</pre></div>
+</div>
+</div>
+<div class="nbinput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[269]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="n">big_df</span><span class="p">[</span><span class="s2">&quot;shifted_pitch&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">big_df</span><span class="p">[</span><span class="s2">&quot;MIDI Pitch&quot;</span><span class="p">]</span> <span class="o">-</span> <span class="n">big_df</span><span class="p">[</span><span class="s2">&quot;Avg. MIDI Pitch&quot;</span><span class="p">]</span>
+</pre></div>
+</div>
+</div>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[270]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
@@ -698,7 +2078,7 @@ Wall time: 57.5 s
 </div>
 </div>
 <div class="nboutput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[16]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[270]:
 </pre></div>
 </div>
 <div class="output_area rendered_html docutils container">
@@ -720,75 +2100,115 @@ Wall time: 57.5 s
   <thead>
     <tr style="text-align: right;">
       <th></th>
-      <th>piece_id</th>
-      <th>pitch</th>
-      <th>duration</th>
-      <th>onset</th>
-      <th>rel_onset</th>
-      <th>Z_pitch</th>
+      <th>MIDI Pitch</th>
+      <th>Duration</th>
+      <th>Onset</th>
+      <th>Rel. MIDI Pitch</th>
+      <th>Rel. Duration</th>
+      <th>Rel. Onset</th>
+      <th>Song ID</th>
+      <th>shifted_pitch</th>
+      <th>Avg. MIDI Pitch</th>
     </tr>
   </thead>
   <tbody>
     <tr>
       <th>450591</th>
-      <td>8513</td>
       <td>71</td>
-      <td>0.0625</td>
-      <td>7.1250</td>
+      <td>0.25</td>
+      <td>28.50</td>
+      <td>0.691456</td>
+      <td>0.008197</td>
       <td>0.934426</td>
-      <td>0.696113</td>
+      <td>8513</td>
+      <td>3</td>
+      <td>68</td>
     </tr>
     <tr>
       <th>450592</th>
-      <td>8513</td>
       <td>69</td>
-      <td>0.0625</td>
-      <td>7.1875</td>
+      <td>0.25</td>
+      <td>28.75</td>
+      <td>0.098779</td>
+      <td>0.008197</td>
       <td>0.942623</td>
-      <td>0.099445</td>
+      <td>8513</td>
+      <td>1</td>
+      <td>68</td>
     </tr>
     <tr>
       <th>450593</th>
-      <td>8513</td>
       <td>73</td>
-      <td>0.0625</td>
-      <td>7.2500</td>
+      <td>0.25</td>
+      <td>29.00</td>
+      <td>1.284133</td>
+      <td>0.008197</td>
       <td>0.950820</td>
-      <td>1.292781</td>
+      <td>8513</td>
+      <td>5</td>
+      <td>68</td>
     </tr>
     <tr>
       <th>450594</th>
-      <td>8513</td>
       <td>71</td>
-      <td>0.2500</td>
-      <td>7.5000</td>
+      <td>1.00</td>
+      <td>30.00</td>
+      <td>0.691456</td>
+      <td>0.032787</td>
       <td>0.983607</td>
-      <td>0.696113</td>
+      <td>8513</td>
+      <td>3</td>
+      <td>68</td>
     </tr>
     <tr>
       <th>450595</th>
-      <td>8513</td>
       <td>69</td>
-      <td>0.1250</td>
-      <td>7.6250</td>
+      <td>0.50</td>
+      <td>30.50</td>
+      <td>0.098779</td>
+      <td>0.016393</td>
       <td>1.000000</td>
-      <td>0.099445</td>
+      <td>8513</td>
+      <td>1</td>
+      <td>68</td>
     </tr>
   </tbody>
 </table>
 </div></div>
 </div>
 <div class="nbinput docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[17]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[271]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">big_df</span><span class="o">.</span><span class="n">sample</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span>
+<span></span><span class="n">idx</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="n">big_df</span><span class="p">[</span><span class="s2">&quot;shifted_pitch&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">min</span><span class="p">(),</span> <span class="n">big_df</span><span class="p">[</span><span class="s2">&quot;shifted_pitch&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">max</span><span class="p">()</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)</span>
+<span class="n">idx</span>
 </pre></div>
 </div>
 </div>
 <div class="nboutput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[17]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[271]:
+</pre></div>
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+array([-16, -15, -14, -13, -12, -11, -10,  -9,  -8,  -7,  -6,  -5,  -4,
+        -3,  -2,  -1,   0,   1,   2,   3,   4,   5,   6,   7,   8,   9,
+        10,  11,  12,  13,  14,  15,  16,  17])
+</pre></div></div>
+</div>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[272]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="n">transitions_df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">index</span><span class="o">=</span><span class="n">idx</span><span class="p">,</span> <span class="n">columns</span><span class="o">=</span><span class="n">idx</span><span class="p">)</span>
+<span class="n">transitions_df</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[272]:
 </pre></div>
 </div>
 <div class="output_area rendered_html docutils container">
@@ -810,70 +2230,861 @@ Wall time: 57.5 s
   <thead>
     <tr style="text-align: right;">
       <th></th>
-      <th>piece_id</th>
-      <th>pitch</th>
-      <th>duration</th>
-      <th>onset</th>
-      <th>rel_onset</th>
-      <th>Z_pitch</th>
+      <th>-16</th>
+      <th>-15</th>
+      <th>-14</th>
+      <th>-13</th>
+      <th>-12</th>
+      <th>-11</th>
+      <th>-10</th>
+      <th>-9</th>
+      <th>-8</th>
+      <th>-7</th>
+      <th>...</th>
+      <th>8</th>
+      <th>9</th>
+      <th>10</th>
+      <th>11</th>
+      <th>12</th>
+      <th>13</th>
+      <th>14</th>
+      <th>15</th>
+      <th>16</th>
+      <th>17</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <th>84723</th>
-      <td>1952</td>
-      <td>62</td>
-      <td>0.250</td>
-      <td>3.000</td>
-      <td>0.206897</td>
-      <td>-2.068852</td>
+      <th>-16</th>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>...</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
     </tr>
     <tr>
-      <th>208027</th>
-      <td>4441</td>
-      <td>67</td>
-      <td>0.375</td>
-      <td>0.625</td>
-      <td>0.086207</td>
-      <td>-0.850686</td>
+      <th>-15</th>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>...</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
     </tr>
     <tr>
-      <th>114121</th>
-      <td>2463</td>
-      <td>62</td>
-      <td>0.375</td>
-      <td>10.375</td>
-      <td>0.576389</td>
-      <td>0.879004</td>
+      <th>-14</th>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>...</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
     </tr>
     <tr>
-      <th>222508</th>
-      <td>4724</td>
-      <td>72</td>
-      <td>0.250</td>
-      <td>20.500</td>
-      <td>0.881720</td>
-      <td>0.771902</td>
+      <th>-13</th>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>...</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
     </tr>
     <tr>
-      <th>352331</th>
-      <td>6615</td>
-      <td>67</td>
-      <td>0.250</td>
-      <td>4.000</td>
-      <td>0.266667</td>
-      <td>0.635128</td>
+      <th>-12</th>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>...</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>-11</th>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>...</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>-10</th>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>...</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>-9</th>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>...</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>-8</th>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>...</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>-7</th>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>...</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>-6</th>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>...</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>-5</th>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>...</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>-4</th>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>...</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>-3</th>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>...</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>-2</th>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>...</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>-1</th>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>...</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>0</th>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>...</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>...</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>...</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>...</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>...</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>...</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>...</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>...</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>...</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>...</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>10</th>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>...</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>11</th>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>...</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>12</th>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>...</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>13</th>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>...</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>14</th>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>...</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>15</th>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>...</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>16</th>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>...</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>17</th>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>...</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
     </tr>
   </tbody>
 </table>
+<p>34 rows × 34 columns</p>
 </div></div>
 </div>
 <div class="nbinput docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[18]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[273]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">big_df</span><span class="p">[</span><span class="s2">&quot;pitch&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()</span><span class="o">.</span><span class="n">sort_index</span><span class="p">()</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">kind</span><span class="o">=</span><span class="s2">&quot;bar&quot;</span><span class="p">);</span>
+<span></span><span class="o">%%time</span>
+
+<span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="n">group</span> <span class="ow">in</span> <span class="n">big_df</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s2">&quot;Song ID&quot;</span><span class="p">):</span>
+    <span class="k">for</span> <span class="n">bg</span> <span class="ow">in</span> <span class="nb">zip</span><span class="p">(</span><span class="n">group</span><span class="p">[</span><span class="s2">&quot;shifted_pitch&quot;</span><span class="p">],</span> <span class="n">group</span><span class="p">[</span><span class="s2">&quot;shifted_pitch&quot;</span><span class="p">][</span><span class="mi">1</span><span class="p">:]):</span>
+        <span class="n">transitions_df</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">bg</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span><span class="n">bg</span><span class="p">[</span><span class="mi">1</span><span class="p">]]</span> <span class="o">+=</span><span class="mi">1</span>
 </pre></div>
 </div>
 </div>
@@ -881,24 +3092,16 @@ Wall time: 57.5 s
 <div class="prompt empty docutils container">
 </div>
 <div class="output_area docutils container">
-<img alt="_images/02_Melody_I_15_0.png" class="no-scaled-link" src="_images/02_Melody_I_15_0.png" style="width: 570px; height: 416px;" />
-</div>
-</div>
-<div class="nbinput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[19]:
-</pre></div>
-</div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="c1"># FIRST concat dfs and THEN create new cols</span>
-</pre></div>
-</div>
+<div class="highlight"><pre>
+Wall time: 1min 11s
+</pre></div></div>
 </div>
 <div class="nbinput docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[20]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[274]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">big_df</span><span class="p">[</span><span class="s2">&quot;Z_pitch&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">kind</span><span class="o">=</span><span class="s2">&quot;kde&quot;</span><span class="p">);</span>
+<span></span><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;There are </span><span class="si">{</span><span class="n">transitions_df</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span><span class="si">}</span><span class="s2"> intervals in total in the corpus.&quot;</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -906,78 +3109,18 @@ Wall time: 57.5 s
 <div class="prompt empty docutils container">
 </div>
 <div class="output_area docutils container">
-<img alt="_images/02_Melody_I_17_0.png" class="no-scaled-link" src="_images/02_Melody_I_17_0.png" style="width: 576px; height: 415px;" />
-</div>
-</div>
-<div class="nbinput docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[21]:
-</pre></div>
-</div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">big_df</span><span class="p">[</span><span class="s2">&quot;duration&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">kind</span><span class="o">=</span><span class="s2">&quot;kde&quot;</span><span class="p">,</span><span class="n">xlim</span><span class="o">=</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mf">1.2</span><span class="p">));</span>
-</pre></div>
-</div>
-</div>
-<div class="nboutput nblast docutils container">
-<div class="prompt empty docutils container">
-</div>
-<div class="output_area docutils container">
-<img alt="_images/02_Melody_I_18_0.png" class="no-scaled-link" src="_images/02_Melody_I_18_0.png" style="width: 573px; height: 413px;" />
-</div>
-</div>
-<div class="nbinput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[ ]:
-</pre></div>
-</div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span>
-</pre></div>
-</div>
-</div>
-</div>
-<div class="section" id="The-melodic-arc">
-<h2><span class="section-number">3.2. </span>The melodic arc<a class="headerlink" href="#The-melodic-arc" title="Permalink to this headline">¶</a></h2>
-<div class="nbinput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[ ]:
-</pre></div>
-</div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span>
-</pre></div>
-</div>
+<div class="highlight"><pre>
+There are 442082 intervals in total in the corpus.
+</pre></div></div>
 </div>
 <div class="nbinput docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[30]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[275]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">fig</span><span class="p">,</span> <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">()</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">xlim</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">)</span>
-
-<span class="n">ax</span><span class="o">.</span><span class="n">axvline</span><span class="p">(</span><span class="o">.</span><span class="mi">25</span><span class="p">,</span> <span class="n">lw</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">ls</span><span class="o">=</span><span class="s2">&quot;--&quot;</span><span class="p">,</span> <span class="n">c</span><span class="o">=</span><span class="s2">&quot;gray&quot;</span><span class="p">)</span>
-<span class="n">ax</span><span class="o">.</span><span class="n">axvline</span><span class="p">(</span><span class="o">.</span><span class="mi">5</span><span class="p">,</span> <span class="n">lw</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">ls</span><span class="o">=</span><span class="s2">&quot;--&quot;</span><span class="p">,</span> <span class="n">c</span><span class="o">=</span><span class="s2">&quot;gray&quot;</span><span class="p">)</span>
-<span class="n">ax</span><span class="o">.</span><span class="n">axvline</span><span class="p">(</span><span class="o">.</span><span class="mi">75</span><span class="p">,</span> <span class="n">lw</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">ls</span><span class="o">=</span><span class="s2">&quot;--&quot;</span><span class="p">,</span> <span class="n">c</span><span class="o">=</span><span class="s2">&quot;gray&quot;</span><span class="p">)</span>
-<span class="n">ax</span><span class="o">.</span><span class="n">axhline</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">lw</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">ls</span><span class="o">=</span><span class="s2">&quot;--&quot;</span><span class="p">,</span> <span class="n">c</span><span class="o">=</span><span class="s2">&quot;gray&quot;</span><span class="p">)</span>
-
-<span class="n">grouped</span> <span class="o">=</span> <span class="n">big_df</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s2">&quot;piece_id&quot;</span><span class="p">)</span>
-
-<span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="n">g</span> <span class="ow">in</span> <span class="n">grouped</span><span class="p">:</span>
-        <span class="n">x</span> <span class="o">=</span> <span class="n">g</span><span class="p">[</span><span class="s2">&quot;rel_onset&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">values</span>
-        <span class="n">y</span> <span class="o">=</span> <span class="n">g</span><span class="p">[</span><span class="s2">&quot;Z_pitch&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">values</span>
-        <span class="n">ax</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="n">y</span><span class="p">,</span> <span class="n">c</span><span class="o">=</span><span class="s2">&quot;red&quot;</span><span class="p">,</span> <span class="n">lw</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">0.0025</span><span class="p">)</span>
-
-<span class="n">lowess</span> <span class="o">=</span> <span class="n">sm</span><span class="o">.</span><span class="n">nonparametric</span><span class="o">.</span><span class="n">lowess</span>
-<span class="n">big_x</span> <span class="o">=</span> <span class="n">big_df</span><span class="p">[</span><span class="s2">&quot;rel_onset&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">values</span>
-<span class="n">big_y</span> <span class="o">=</span> <span class="n">big_df</span><span class="p">[</span><span class="s2">&quot;Z_pitch&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">values</span>
-<span class="n">big_z</span> <span class="o">=</span> <span class="n">lowess</span><span class="p">(</span><span class="n">big_y</span><span class="p">,</span> <span class="n">big_x</span><span class="p">,</span> <span class="n">frac</span><span class="o">=</span><span class="mi">5</span><span class="o">/</span><span class="mi">100</span><span class="p">)</span>
-<span class="n">ax</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">big_z</span><span class="p">[:,</span><span class="mi">0</span><span class="p">],</span> <span class="n">big_z</span><span class="p">[:,</span><span class="mi">1</span><span class="p">],</span> <span class="n">c</span><span class="o">=</span><span class="s2">&quot;black&quot;</span><span class="p">,</span> <span class="n">lw</span><span class="o">=</span><span class="mi">3</span><span class="p">)</span>
-
-<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s2">&quot;Melodic arc&quot;</span><span class="p">)</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s2">&quot;Relative onset&quot;</span><span class="p">)</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s2">&quot;Pitch deviation&quot;</span><span class="p">)</span>
-
-<span class="n">plt</span><span class="o">.</span><span class="n">tight_layout</span><span class="p">()</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">savefig</span><span class="p">(</span><span class="s2">&quot;img/melodic_arc.png&quot;</span><span class="p">,</span> <span class="n">dpi</span><span class="o">=</span><span class="mi">300</span><span class="p">)</span>
+<span></span><span class="n">g</span> <span class="o">=</span> <span class="n">sns</span><span class="o">.</span><span class="n">heatmap</span><span class="p">(</span><span class="n">transitions_df</span><span class="p">,</span> <span class="n">cmap</span><span class="o">=</span><span class="s2">&quot;coolwarm&quot;</span><span class="p">,</span> <span class="n">linewidths</span><span class="o">=.</span><span class="mi">01</span><span class="p">,</span> <span class="n">square</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s2">&quot;First interval&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s2">&quot;Second interval&quot;</span><span class="p">)</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
 </pre></div>
 </div>
@@ -986,19 +3129,7 @@ Wall time: 57.5 s
 <div class="prompt empty docutils container">
 </div>
 <div class="output_area docutils container">
-<img alt="_images/02_Melody_I_22_0.png" class="no-scaled-link" src="_images/02_Melody_I_22_0.png" style="width: 629px; height: 471px;" />
-</div>
-</div>
-</div>
-<div class="section" id="Intervals">
-<h2><span class="section-number">3.3. </span>Intervals<a class="headerlink" href="#Intervals" title="Permalink to this headline">¶</a></h2>
-<div class="nbinput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[ ]:
-</pre></div>
-</div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span>
-</pre></div>
+<img alt="_images/02_Melody_I_84_0.png" class="no-scaled-link" src="_images/02_Melody_I_84_0.png" style="width: 671px; height: 530px;" />
 </div>
 </div>
 </div>
@@ -1009,8 +3140,8 @@ Wall time: 57.5 s
           <div class="page-nav">
             <div class="inner"><ul class="page-nav">
   <li class="prev">
-    <a href="3_folk_songs.html"
-       title="previous chapter">← <span class="section-number">2. </span>Folk Songs and the Melodic Arc</a>
+    <a href="01_Intro_Background.html"
+       title="previous chapter">← <span class="section-number">2. </span>Introduction to Musical Corpus Studies</a>
   </li>
   <li class="next">
     <a href="bibliography.html"

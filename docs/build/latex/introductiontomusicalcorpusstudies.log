@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7380 64-bit) (preloaded format=pdflatex 2020.4.27)  12 NOV 2020 13:04
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7380 64-bit) (preloaded format=pdflatex 2020.4.27)  12 NOV 2020 15:25
 entering extended mode
 **./introductiontomusicalcorpusstudies.tex
 (introductiontomusicalcorpusstudies.tex
@@ -764,7 +764,7 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ] [2
 
 ]
-<abstract_bg.jpg, id=88, 5203.44pt x 3468.96pt>
+<abstract_bg.jpg, id=123, 5203.44pt x 3468.96pt>
 LaTeX Font Info:    Trying to load font information for T1+pcr on input line 23
 4.
 
@@ -874,137 +874,146 @@ Underfull \hbox (badness 10000) in paragraph at lines 420--420
 
 ]
 Chapter 2.
+LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 5
+02.
+
+("C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex/latex/psnfss\ts1ptm
+.fd"
+File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
+) [7] [8
+
+]
+Chapter 3.
 LaTeX Font Info:    Font shape `T1/pcr/m/it' in size <9> not available
-(Font)              Font shape `T1/pcr/m/sl' tried instead on input line 523.
+(Font)              Font shape `T1/pcr/m/sl' tried instead on input line 567.
 LaTeX Font Info:    Trying to load font information for TS1+pcr on input line 5
-29.
+73.
 
 ("C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex/latex/psnfss\ts1pcr
 .fd"
 File: ts1pcr.fd 2001/06/04 font definitions for TS1/pcr.
 )
 LaTeX Font Info:    Font shape `TS1/pcr/m/it' in size <9> not available
-(Font)              Font shape `TS1/pcr/m/sl' tried instead on input line 529.
- [7] [8] [9]
-<notebooks_02_Melody_I_02_Melody_I_21_0.png, id=160, 544.1931pt x 301.00455pt>
-File: notebooks_02_Melody_I_02_Melody_I_21_0.png Graphic file (type png)
-<use notebooks_02_Melody_I_02_Melody_I_21_0.png>
-Package pdftex.def Info: notebooks_02_Melody_I_02_Melody_I_21_0.png  used on in
-put line 711.
+(Font)              Font shape `TS1/pcr/m/sl' tried instead on input line 573.
+ [9] [10] [11]
+<02_melody_I_21_0.png, id=203, 544.1931pt x 301.00455pt>
+File: 02_melody_I_21_0.png Graphic file (type png)
+<use 02_melody_I_21_0.png>
+Package pdftex.def Info: 02_melody_I_21_0.png  used on input line 755.
 (pdftex.def)             Requested size: 469.75732pt x 259.83255pt.
- [10 <./notebooks_02_Melody_I_02_Melody_I_21_0.png>]
-<notebooks_02_Melody_I_02_Melody_I_34_0.png, id=168, 544.1931pt x 206.6922pt>
-File: notebooks_02_Melody_I_02_Melody_I_34_0.png Graphic file (type png)
-<use notebooks_02_Melody_I_02_Melody_I_34_0.png>
-Package pdftex.def Info: notebooks_02_Melody_I_02_Melody_I_34_0.png  used on in
-put line 848.
+ [12 <./02_melody_I_21_0.png>]
+<02_melody_I_34_0.png, id=211, 544.1931pt x 206.6922pt>
+File: 02_melody_I_34_0.png Graphic file (type png)
+<use 02_melody_I_34_0.png>
+Package pdftex.def Info: 02_melody_I_34_0.png  used on input line 892.
 (pdftex.def)             Requested size: 469.75732pt x 178.42043pt.
- [11 <./notebooks_02_Melody_I_02_Melody_I_34_0.png>]
-<notebooks_02_Melody_I_02_Melody_I_46_0.png, id=174, 544.1931pt x 206.6922pt>
-File: notebooks_02_Melody_I_02_Melody_I_46_0.png Graphic file (type png)
-<use notebooks_02_Melody_I_02_Melody_I_46_0.png>
-Package pdftex.def Info: notebooks_02_Melody_I_02_Melody_I_46_0.png  used on in
-put line 943.
+ [13 <./02_melody_I_34_0.png>]
+<02_melody_I_46_0.png, id=217, 544.1931pt x 206.6922pt>
+File: 02_melody_I_46_0.png Graphic file (type png)
+<use 02_melody_I_46_0.png>
+Package pdftex.def Info: 02_melody_I_46_0.png  used on input line 987.
 (pdftex.def)             Requested size: 469.75732pt x 178.42043pt.
-<notebooks_02_Melody_I_02_Melody_I_47_0.png, id=175, 544.1931pt x 206.6922pt>
-File: notebooks_02_Melody_I_02_Melody_I_47_0.png Graphic file (type png)
-<use notebooks_02_Melody_I_02_Melody_I_47_0.png>
-Package pdftex.def Info: notebooks_02_Melody_I_02_Melody_I_47_0.png  used on in
-put line 962.
+<02_melody_I_47_0.png, id=218, 544.1931pt x 206.6922pt>
+File: 02_melody_I_47_0.png Graphic file (type png)
+<use 02_melody_I_47_0.png>
+Package pdftex.def Info: 02_melody_I_47_0.png  used on input line 1006.
 (pdftex.def)             Requested size: 469.75732pt x 178.42043pt.
 
-Underfull \vbox (badness 7963) detected at line 964
+Underfull \vbox (badness 7963) detected at line 1008
  []
 
-[12 <./notebooks_02_Melody_I_02_Melody_I_46_0.png>]
-<midi_pitch.png, id=181, 2175.12625pt x 466.74374pt>
+[14 <./02_melody_I_46_0.png>]
+<midi_pitch.png, id=224, 2175.12625pt x 466.74374pt>
 File: midi_pitch.png Graphic file (type png)
 <use midi_pitch.png>
-Package pdftex.def Info: midi_pitch.png  used on input line 1001.
+Package pdftex.def Info: midi_pitch.png  used on input line 1045.
 (pdftex.def)             Requested size: 469.734pt x 100.79663pt.
- [13 <./notebooks_02_Melody_I_02_Melody_I_47_0.png> <./midi_pitch.png>]
-<notebooks_02_Melody_I_02_Melody_I_60_0.png, id=190, 373.8768pt x 229.5777pt>
-File: notebooks_02_Melody_I_02_Melody_I_60_0.png Graphic file (type png)
-<use notebooks_02_Melody_I_02_Melody_I_60_0.png>
-Package pdftex.def Info: notebooks_02_Melody_I_02_Melody_I_60_0.png  used on in
-put line 1103.
+ [15 <./02_melody_I_47_0.png> <./midi_pitch.png>]
+<02_melody_I_60_0.png, id=234, 373.8768pt x 229.5777pt>
+File: 02_melody_I_60_0.png Graphic file (type png)
+<use 02_melody_I_60_0.png>
+Package pdftex.def Info: 02_melody_I_60_0.png  used on input line 1147.
 (pdftex.def)             Requested size: 469.75232pt x 288.4497pt.
 
-Underfull \vbox (badness 1424) detected at line 1105
+Underfull \vbox (badness 1424) detected at line 1149
  []
 
-[14]
-<notebooks_02_Melody_I_02_Melody_I_62_0.png, id=195, 576.9555pt x 421.8159pt>
-File: notebooks_02_Melody_I_02_Melody_I_62_0.png Graphic file (type png)
-<use notebooks_02_Melody_I_02_Melody_I_62_0.png>
-Package pdftex.def Info: notebooks_02_Melody_I_02_Melody_I_62_0.png  used on in
-put line 1130.
+[16]
+<02_melody_I_62_0.png, id=239, 576.9555pt x 421.8159pt>
+File: 02_melody_I_62_0.png Graphic file (type png)
+<use 02_melody_I_62_0.png>
+Package pdftex.def Info: 02_melody_I_62_0.png  used on input line 1174.
 (pdftex.def)             Requested size: 469.7612pt x 343.44545pt.
 
-Underfull \vbox (badness 10000) detected at line 1132
+Underfull \vbox (badness 10000) detected at line 1176
  []
 
-[15 <./notebooks_02_Melody_I_02_Melody_I_60_0.png>]
-Overfull \vbox (0.57124pt too high) detected at line 1218
+[17 <./02_melody_I_60_0.png>]
+Overfull \vbox (0.57124pt too high) detected at line 1262
  []
 
-[16 <./notebooks_02_Melody_I_02_Melody_I_62_0.png>]
-<notebooks_02_Melody_I_02_Melody_I_66_0.png, id=207, 376.2858pt x 229.5777pt>
-File: notebooks_02_Melody_I_02_Melody_I_66_0.png Graphic file (type png)
-<use notebooks_02_Melody_I_02_Melody_I_66_0.png>
-Package pdftex.def Info: notebooks_02_Melody_I_02_Melody_I_66_0.png  used on in
-put line 1237.
+[18 <./02_melody_I_62_0.png>]
+<02_melody_I_66_0.png, id=250, 376.2858pt x 229.5777pt>
+File: 02_melody_I_66_0.png Graphic file (type png)
+<use 02_melody_I_66_0.png>
+Package pdftex.def Info: 02_melody_I_66_0.png  used on input line 1281.
 (pdftex.def)             Requested size: 469.75894pt x 286.60709pt.
 
-Underfull \vbox (badness 10000) detected at line 1239
+Underfull \vbox (badness 10000) detected at line 1283
  []
 
-[17]
-Overfull \vbox (1.73288pt too high) detected at line 1304
+[19]
+Overfull \vbox (1.73288pt too high) detected at line 1348
  []
 
-[18 <./notebooks_02_Melody_I_02_Melody_I_66_0.png>] [19]
-<notebooks_02_Melody_I_02_Melody_I_73_0.png, id=221, 421.8159pt x 241.1409pt>
-File: notebooks_02_Melody_I_02_Melody_I_73_0.png Graphic file (type png)
-<use notebooks_02_Melody_I_02_Melody_I_73_0.png>
-Package pdftex.def Info: notebooks_02_Melody_I_02_Melody_I_73_0.png  used on in
-put line 1405.
-(pdftex.def)             Requested size: 469.75305pt x 268.54527pt.
- [20 <./notebooks_02_Melody_I_02_Melody_I_73_0.png>] [21] [22]
-<notebooks_02_Melody_I_02_Melody_I_84_0.png, id=236, 323.5287pt x 255.5949pt>
-File: notebooks_02_Melody_I_02_Melody_I_84_0.png Graphic file (type png)
-<use notebooks_02_Melody_I_02_Melody_I_84_0.png>
-Package pdftex.def Info: notebooks_02_Melody_I_02_Melody_I_84_0.png  used on in
-put line 1718.
+[20 <./02_melody_I_66_0.png>] [21]
+<02_melody_I_73_0.png, id=265, 349.5459pt x 349.5459pt>
+File: 02_melody_I_73_0.png Graphic file (type png)
+<use 02_melody_I_73_0.png>
+Package pdftex.def Info: 02_melody_I_73_0.png  used on input line 1451.
+(pdftex.def)             Requested size: 469.77048pt x 469.77048pt.
+
+Underfull \vbox (badness 10000) detected at line 1453
+ []
+
+[22] [23 <./02_melody_I_73_0.png>]
+Overfull \vbox (0.88159pt too high) detected at line 1603
+ []
+
+[24]
+Overfull \vbox (1.28166pt too high) detected at line 1697
+ []
+
+[25]
+<02_melody_I_84_0.png, id=283, 323.5287pt x 255.5949pt>
+File: 02_melody_I_84_0.png Graphic file (type png)
+<use 02_melody_I_84_0.png>
+Package pdftex.def Info: 02_melody_I_84_0.png  used on input line 1764.
 (pdftex.def)             Requested size: 469.79079pt x 371.1452pt.
 
-Underfull \vbox (badness 10000) detected at line 1720
+Underfull \vbox (badness 10000) detected at line 1766
  []
 
-[23] [24 <./notebooks_02_Melody_I_02_Melody_I_84_0.png>]
-(introductiontomusicalcorpusstudies.ind)
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1737.
- [25
-
-
-]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 1737.
+[26] (introductiontomusicalcorpusstudies.ind)
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1774.
+ [27 <./02_melody_I_84_0.png>]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 1774.
 
 (introductiontomusicalcorpusstudies.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1737.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1737.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1774.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1774.
 
 Package rerunfilecheck Info: File `introductiontomusicalcorpusstudies.out' has 
 not changed.
-(rerunfilecheck)             Checksum: BDC785222ACE13C72B445199E1425B35;1584.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1737.
+(rerunfilecheck)             Checksum: 3698A824151843E115DA23A567E26910;2764.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1774.
  ) 
 Here is how much of TeX's memory you used:
- 13624 strings out of 480896
- 201242 string characters out of 2895750
- 945415 words of memory out of 3000000
- 29110 multiletter control sequences out of 15000+200000
- 582009 words of font info for 84 fonts, out of 3000000 for 9000
+ 13667 strings out of 480896
+ 200719 string characters out of 2895750
+ 946655 words of memory out of 3000000
+ 29143 multiletter control sequences out of 15000+200000
+ 582323 words of font info for 85 fonts, out of 3000000 for 9000
  1142 hyphenation exceptions out of 8191
  38i,11n,49p,773b,568s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Users/fabianmoss/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/base/8
@@ -1021,10 +1030,10 @@ s/type1/urw/helvetic/uhvr8a.pfb><C:/Users/fabianmoss/AppData/Local/Programs/MiK
 TeX 2.9/fonts/type1/urw/times/utmb8a.pfb><C:/Users/fabianmoss/AppData/Local/Pro
 grams/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb><C:/Users/fabianmoss/AppData/
 Local/Programs/MiKTeX 2.9/fonts/type1/urw/times/utmri8a.pfb>
-Output written on introductiontomusicalcorpusstudies.pdf (29 pages, 5422246 byt
+Output written on introductiontomusicalcorpusstudies.pdf (31 pages, 5489580 byt
 es).
 PDF statistics:
- 303 PDF objects out of 1000 (max. 8388607)
- 52 named destinations out of 1000 (max. 500000)
- 172 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 345 PDF objects out of 1000 (max. 8388607)
+ 58 named destinations out of 1000 (max. 500000)
+ 228 words of extra memory for PDF output out of 10000 (max. 10000000)
 

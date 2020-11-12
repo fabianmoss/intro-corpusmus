@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html >
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+      <title>1. Organization</title>
+    
+      <link rel="stylesheet" href="_static/pygments.css">
+      <link rel="stylesheet" href="_static/theme.css">
+      <link rel="stylesheet" href="_static/sphinx_press_theme.css">
+      
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+
+      <!-- sphinx script_files -->
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/language_data.js"></script>
+        <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+
+      
+      <script src="_static/theme-vendors.js"></script>
+      <script src="_static/theme.js" defer></script>
+    
+  <link rel="index" title="Index" href="genindex.html" />
+  <link rel="search" title="Search" href="search.html" />
+  <link rel="next" title="2. Melodies in Folk Songs" href="02_Melody_I.html" />
+  <link rel="prev" title="Introduction to Musical Corpus Studies" href="index.html" /> 
+  </head>
+
+  <body>
+    <div id="app" class="theme-container" :class="pageClasses"><navbar @toggle-sidebar="toggleSidebar">
+  <router-link to="index.html" class="home-link">
+    
+      <span class="site-name">Introduction to Musical Corpus Studies</span>
+    
+  </router-link>
+
+  <div class="links">
+    <navlinks class="can-hide">
+
+
+
+    </navlinks>
+  </div>
+</navbar>
+
+      
+      <div class="sidebar-mask" @click="toggleSidebar(false)">
+      </div>
+        <sidebar @toggle-sidebar="toggleSidebar">
+          
+          <navlinks>
+            
+
+
+
+            
+          </navlinks><div id="searchbox" class="searchbox" role="search">
+  <div class="caption"><span class="caption-text">Quick search</span>
+    <div class="searchformwrapper">
+      <form class="search" action="search.html" method="get">
+        <input type="text" name="q" />
+        <input type="submit" value="Search" />
+        <input type="hidden" name="check_keywords" value="yes" />
+        <input type="hidden" name="area" value="default" />
+      </form>
+    </div>
+  </div>
+</div><div class="sidebar-links" role="navigation" aria-label="main navigation">
+  
+    <div class="sidebar-group">
+      <p class="caption">
+        <span class="caption-text"><a href="index.html#introduction-to-musical-corpus-studies">Content</a></span>
+      </p>
+      <ul class="current">
+        
+          <li class="toctree-l1 current"><a href="#" class="reference internal current">Organization</a>
+
+            
+              <ul>
+                
+                  <li class="toctree-l2"><a href="#about-this-course" class="reference internal">About this course</a></li>
+                
+                  <li class="toctree-l2"><a href="#overview" class="reference internal">Overview</a></li>
+                
+                  <li class="toctree-l2"><a href="#credits" class="reference internal">Credits</a></li>
+                
+                  <li class="toctree-l2"><a href="#deliverables-and-learning-objectives" class="reference internal">Deliverables and learning objectives</a></li>
+                
+              </ul>
+            
+          </li>
+
+        
+          <li class="toctree-l1 "><a href="02_Melody_I.html" class="reference internal ">Melodies in Folk Songs</a>
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 "><a href="bibliography.html" class="reference internal ">Bibliography</a>
+
+            
+          </li>
+
+        
+      </ul>
+    </div>
+  
+</div>
+        </sidebar>
+
+      <page>
+          <div class="body-header" role="navigation" aria-label="navigation">
+  
+  <ul class="breadcrumbs">
+    <li><a href="index.html">Docs</a> &raquo;</li>
+    
+    <li><span class="section-number">1. </span>Organization</li>
+  </ul>
+  
+
+  <ul class="page-nav">
+  <li class="prev">
+    <a href="index.html"
+       title="previous chapter">← Introduction to Musical Corpus Studies</a>
+  </li>
+  <li class="next">
+    <a href="02_Melody_I.html"
+       title="next chapter"><span class="section-number">2. </span>Melodies in Folk Songs →</a>
+  </li>
+</ul>
+  
+</div>
+<hr>
+          <div class="content" role="main">
+            
+  <div class="section" id="organization">
+<h1><span class="section-number">1. </span>Organization<a class="headerlink" href="#organization" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="about-this-course">
+<h2><span class="section-number">1.1. </span>About this course<a class="headerlink" href="#about-this-course" title="Permalink to this headline">¶</a></h2>
+<p>This course aims at providing an example-based introduction to the rapidly developing field of Musical Corpus Studies (MCS).
+Introducing a field that relies equally on musicological domain knowledge and skills in computational and statistical methods
+faces obvious challenges: while most people interested in this field come with a background in either area,
+few people are versed in both, and it can take years to bridge the musicological-computational gap.</p>
+<p>In particular, systematic introductions to programming or specific musicological topics can be at times quite arduous, even boring,
+because it takes a long time to proceed from learning basic concepts to acually interesting problems.
+The problems and “toy examples” that are presented to introduce the basic concepts are necessarily remote from
+real-world applications and challenging research problems.</p>
+<p>This course takes an alternative route.
+It does not start with an introduction to the programming language <a class="reference external" href="http://python.org/">Python</a>
+(which will be used throughout to carry out the computational analyses)
+but rather showcases a number of recent corpus studies that take on musicological research questions.
+The focus thus lies in understanding how aspects of music can be studied with computational methods
+and by analyzing musical corpora.</p>
+<p>If this sparks your interest, it will be much easier to pick up the basics for yourself,
+knowing what they are <em>for</em> and being motivated intrinsically.
+If you are not particularly interested in doing this kind of work yourself,
+you will still see a broad range of applications that are much more useful to you than
+learning (or not learning) programming basics.</p>
+</div>
+<div class="section" id="overview">
+<h2><span class="section-number">1.2. </span>Overview<a class="headerlink" href="#overview" title="Permalink to this headline">¶</a></h2>
+<p>This year’s course takes place on two weekends (13-14 November and 11-12 December 2020),
+comprising twelve sessions in total. The topics cover a broad range of musicological topics,
+from folk melodies and Jazz solos, over harmonies in Beethoven’s string
+quartets and 20th century Pop music, to Renaissance candences
+and metric patterns in Malian drum music (see <a class="reference internal" href="#tab-overview"><span class="std std-numref">Table 1.1</span></a>).</p>
+<table class="colwidths-auto docutils align-default" id="tab-overview">
+<thead>
+<tr class="row-odd"><th class="head"><p>No.</p></th>
+<th class="head"><p>Date</p></th>
+<th class="head"><p>Time</p></th>
+<th class="head"><p>Topics</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>1</p></td>
+<td><p>Fr., 13.11.2020</p></td>
+<td><p>16:00-17:20 Uhr</p></td>
+<td><p>Introduction / Background</p></td>
+</tr>
+<tr class="row-odd"><td><p>2</p></td>
+<td></td>
+<td><p>17:40-19:00 Uhr</p></td>
+<td><p>Melody I: Pitches, intervals, folk song melodies</p></td>
+</tr>
+<tr class="row-even"><td><p>3</p></td>
+<td><p>Sa., 14.11.2020</p></td>
+<td><p>09:00-10:20 Uhr</p></td>
+<td><p>Melody II: Jazz solos</p></td>
+</tr>
+<tr class="row-odd"><td><p>4</p></td>
+<td></td>
+<td><p>10:40-12:00 Uhr</p></td>
+<td><p>Harmony I: Beethoven’s string quartets</p></td>
+</tr>
+<tr class="row-even"><td></td>
+<td></td>
+<td><p>12:00-13:00 Uhr</p></td>
+<td><p><em>Lunch Break</em></p></td>
+</tr>
+<tr class="row-odd"><td><p>5</p></td>
+<td></td>
+<td><p>13:00-14:20 Uhr</p></td>
+<td><p>Group work</p></td>
+</tr>
+<tr class="row-even"><td><p>6</p></td>
+<td></td>
+<td><p>14:40-16:00 Uhr</p></td>
+<td><p>Harmony II: Pop charts (Billboard 100)</p></td>
+</tr>
+<tr class="row-odd"><td><p>7</p></td>
+<td><p>Fr., 11.12.2020</p></td>
+<td><p>10:00-11:20 Uhr</p></td>
+<td><p>Harmony III: Cadences in Renaissance polyphony (guest: <a class="reference external" href="https://www.haverford.edu/users/rfreedma">Richard Freedman</a>)</p></td>
+</tr>
+<tr class="row-even"><td><p>8</p></td>
+<td></td>
+<td><p>11:40-13:00 Uhr</p></td>
+<td><p>Harmony IV &amp; Form: Brazilian Choro</p></td>
+</tr>
+<tr class="row-odd"><td><p>9</p></td>
+<td><p>Sa., 12.12.2020</p></td>
+<td><p>09:00-10:20 Uhr</p></td>
+<td><p>Rhythm &amp; Meter: Malian percussion music</p></td>
+</tr>
+<tr class="row-even"><td><p>10</p></td>
+<td></td>
+<td><p>10:40-12:00 Uhr</p></td>
+<td><p>Timbre: Electronic Music 1950-1990</p></td>
+</tr>
+<tr class="row-odd"><td></td>
+<td></td>
+<td><p>12:00-13:00 Uhr</p></td>
+<td><p><em>Lunch Break</em></p></td>
+</tr>
+<tr class="row-even"><td><p>11</p></td>
+<td></td>
+<td><p>13:00-14:20 Uhr</p></td>
+<td><p>Group work</p></td>
+</tr>
+<tr class="row-odd"><td><p>12</p></td>
+<td></td>
+<td><p>14:40-16:00 Uhr</p></td>
+<td><p>Recapitulation and conclusion</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="credits">
+<h2><span class="section-number">1.3. </span>Credits<a class="headerlink" href="#credits" title="Permalink to this headline">¶</a></h2>
+<p>Active participation in this course is compensated with 3 credit points (CPs),
+<a class="reference external" href="https://verwaltung.uni-koeln.de/abteilung21/content/studienangebot/studiengaenge_u__abschluesse/bachelor__und_masterstudiengaenge/index_ger.html">equivalent to a work load of 90 hours</a>.
+These are distributed as follows: 24 SWS (à 45 minutes) are allocated to presence in the block seminar.
+Additionally, 24 SWS are dedicated to the preparation and follow-up of the material.
+The remainder of 42 SWS goes to the reading of the relevant literature.</p>
+</div>
+<div class="section" id="deliverables-and-learning-objectives">
+<h2><span class="section-number">1.4. </span>Deliverables and learning objectives<a class="headerlink" href="#deliverables-and-learning-objectives" title="Permalink to this headline">¶</a></h2>
+<p>Apart from attending and following the presentations by the lecturer,
+course work consists of three main parts: preparing the relevant literature (reading),
+completing the assigned exercises (group work), and critically engaging with the course materials
+in the form of a report written together with your group (report).</p>
+<p>These deliverables will broaden your knowledge and understanding of current musicological research,
+enhance your organizational and social skills, and help you to develop efficient work-load management strategies.
+Finally, compiling a report will advance your communication and writing abilities.</p>
+<p class="rubric">Reading</p>
+<p>For each session, the relevant literature is cited in the text and provided on
+<a class="reference external" href="https://www.ilias.uni-koeln.de/ilias/goto_uk_crs_3528627.html">ILIAS</a>.
+Careful preparation of the reading material is required in order to be able to follow the content of the course.
+Because the course will mainly talk about methods and general points of musical corpus research,
+the content (and musical topic) will mainly be introduced by the literature.</p>
+<p>I am aware that the reading workload is relatively high since the course will be taught as a block seminar
+and doesn’t spread out over the entire semester. I hope that the fact that the course is finished before the
+end of the year compensates for this.</p>
+<p class="rubric">Group work</p>
+<p>At the beginning of the course, you will be randomly assigned to a group.
+Together with your group (which will stay fixed for the entire semester),
+you will work on a number of exercises during the course, e.g. in Zoom breakout rooms.
+You will collaborate on specific tasks related to the topic at hand, discuss methodological questions,
+and help each other in the understanding of some of the concepts that are introduced in the course.</p>
+<p class="rubric">Report</p>
+<p>After the course has ended, your group will be randomly assigned a course topic (one of the twelve sessions in <a class="reference internal" href="#tab-overview"><span class="std std-numref">Table 1.1</span></a>).
+It is your task to write a report on this theme. Questions that you could address are:
+What did you learn? Which concepts are not clear? Which methods did you (not) understand?
+What is missing? How can the textual descriptions be improved? Who in your group did what?
+Was the presentation of the material adequate? If not, what was missing?
+Please also write about the organization of your group, challenges and benefits.</p>
+<p><strong>Recommended structure for the report</strong></p>
+<ol class="arabic simple">
+<li><p><strong>Introduction:</strong> general description and summary of the course and your assigned session in particular.</p></li>
+<li><p><strong>Discussion:</strong> summarize the main discussion, open questions, and how you would continue this line or research.</p></li>
+<li><p><strong>Issues:</strong> describe in detail what was crucial for your understanding of the topic, what was missing, etc.</p></li>
+<li><p><strong>Various:</strong> anything that you would like to write in the report</p></li>
+<li><p><strong>Author contributions:</strong> describe briefly how each of you specifically contributed to the report.</p></li>
+</ol>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p>Submit your report by <strong>31 January 2021, 23:59h</strong> to <a class="reference external" href="mailto:fabian&#46;moss&#37;&#52;&#48;epfl&#46;ch">fabian<span>&#46;</span>moss<span>&#64;</span>epfl<span>&#46;</span>ch</a>
+as a single PDF file per group, named <cite>intro_corpusmus_&lt;group_number&gt;.pdf</cite>, e.g. <cite>intro_corpusmus_1.pdf</cite>.</p>
+</div>
+</div>
+</div>
+
+
+          </div>
+          <div class="page-nav">
+            <div class="inner"><ul class="page-nav">
+  <li class="prev">
+    <a href="index.html"
+       title="previous chapter">← Introduction to Musical Corpus Studies</a>
+  </li>
+  <li class="next">
+    <a href="02_Melody_I.html"
+       title="next chapter"><span class="section-number">2. </span>Melodies in Folk Songs →</a>
+  </li>
+</ul><div class="footer" role="contentinfo">
+      &#169; Copyright 2020, Fabian C. Moss.
+    <br>
+    Created using <a href="http://sphinx-doc.org/">Sphinx</a> 3.1.2 with <a href="https://github.com/schettino72/sphinx_press_theme">Press Theme</a>.
+</div>
+            </div>
+          </div>
+      </page>
+    </div>
+    
+    
+  </body>
+</html>

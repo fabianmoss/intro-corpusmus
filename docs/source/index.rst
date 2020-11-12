@@ -3,8 +3,8 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Introduction to Musical Corpus Studies
-======================================
+Introduction and Background
+===========================
 
 .. image:: _static/abstract_bg.jpg
   :width: 100%
@@ -57,8 +57,9 @@ about quantitative approaches to musicology.
    :caption: Content
    :numbered:
 
-   1_orga.rst
-   notebooks/02_Melody_I/02_Melody_I.ipynb
+   00_organization.rst
+   01_intro_background.ipynb
+   02_melody_I.ipynb
 
    bibliography.rst
 

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7380 64-bit) (preloaded format=pdflatex 2020.4.27)  9 NOV 2020 12:17
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7380 64-bit) (preloaded format=pdflatex 2020.4.27)  12 NOV 2020 13:04
 entering extended mode
 **./introductiontomusicalcorpusstudies.tex
 (introductiontomusicalcorpusstudies.tex
@@ -764,7 +764,7 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ] [2
 
 ]
-<abstract_bg.jpg, id=89, 5203.44pt x 3468.96pt>
+<abstract_bg.jpg, id=88, 5203.44pt x 3468.96pt>
 LaTeX Font Info:    Trying to load font information for T1+pcr on input line 23
 4.
 
@@ -874,124 +874,157 @@ Underfull \hbox (badness 10000) in paragraph at lines 420--420
 
 ]
 Chapter 2.
-<lines.jpg, id=139, 4015.0pt x 2927.93875pt>
-File: lines.jpg Graphic file (type jpg)
-<use lines.jpg>
-Package pdftex.def Info: lines.jpg  used on input line 499.
-(pdftex.def)             Requested size: 469.75502pt x 342.5362pt.
-[7 <./lines.jpg>]
-LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 5
-19.
+LaTeX Font Info:    Font shape `T1/pcr/m/it' in size <9> not available
+(Font)              Font shape `T1/pcr/m/sl' tried instead on input line 523.
+LaTeX Font Info:    Trying to load font information for TS1+pcr on input line 5
+29.
 
-("C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex/latex/psnfss\ts1ptm
+("C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex/latex/psnfss\ts1pcr
 .fd"
-File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
+File: ts1pcr.fd 2001/06/04 font definitions for TS1/pcr.
 )
-<german_song-1.png, id=146, 544.1931pt x 206.6922pt>
-File: german_song-1.png Graphic file (type png)
-<use german_song-1.png>
-Package pdftex.def Info: german_song-1.png  used on input line 528.
-(pdftex.def)             Requested size: 422.77664pt x 160.57587pt.
-<chinese_song-1.png, id=148, 544.1931pt x 206.6922pt>
-File: chinese_song-1.png Graphic file (type png)
-<use chinese_song-1.png>
-Package pdftex.def Info: chinese_song-1.png  used on input line 551.
-(pdftex.def)             Requested size: 422.77664pt x 160.57587pt.
- [8
+LaTeX Font Info:    Font shape `TS1/pcr/m/it' in size <9> not available
+(Font)              Font shape `TS1/pcr/m/sl' tried instead on input line 529.
+ [7] [8] [9]
+<notebooks_02_Melody_I_02_Melody_I_21_0.png, id=160, 544.1931pt x 301.00455pt>
+File: notebooks_02_Melody_I_02_Melody_I_21_0.png Graphic file (type png)
+<use notebooks_02_Melody_I_02_Melody_I_21_0.png>
+Package pdftex.def Info: notebooks_02_Melody_I_02_Melody_I_21_0.png  used on in
+put line 711.
+(pdftex.def)             Requested size: 469.75732pt x 259.83255pt.
+ [10 <./notebooks_02_Melody_I_02_Melody_I_21_0.png>]
+<notebooks_02_Melody_I_02_Melody_I_34_0.png, id=168, 544.1931pt x 206.6922pt>
+File: notebooks_02_Melody_I_02_Melody_I_34_0.png Graphic file (type png)
+<use notebooks_02_Melody_I_02_Melody_I_34_0.png>
+Package pdftex.def Info: notebooks_02_Melody_I_02_Melody_I_34_0.png  used on in
+put line 848.
+(pdftex.def)             Requested size: 469.75732pt x 178.42043pt.
+ [11 <./notebooks_02_Melody_I_02_Melody_I_34_0.png>]
+<notebooks_02_Melody_I_02_Melody_I_46_0.png, id=174, 544.1931pt x 206.6922pt>
+File: notebooks_02_Melody_I_02_Melody_I_46_0.png Graphic file (type png)
+<use notebooks_02_Melody_I_02_Melody_I_46_0.png>
+Package pdftex.def Info: notebooks_02_Melody_I_02_Melody_I_46_0.png  used on in
+put line 943.
+(pdftex.def)             Requested size: 469.75732pt x 178.42043pt.
+<notebooks_02_Melody_I_02_Melody_I_47_0.png, id=175, 544.1931pt x 206.6922pt>
+File: notebooks_02_Melody_I_02_Melody_I_47_0.png Graphic file (type png)
+<use notebooks_02_Melody_I_02_Melody_I_47_0.png>
+Package pdftex.def Info: notebooks_02_Melody_I_02_Melody_I_47_0.png  used on in
+put line 962.
+(pdftex.def)             Requested size: 469.75732pt x 178.42043pt.
 
- <./german_song-1.png>]
-<melodic_arc.png, id=157, 433.62pt x 252.945pt>
-File: melodic_arc.png Graphic file (type png)
-<use melodic_arc.png>
-Package pdftex.def Info: melodic_arc.png  used on input line 572.
-(pdftex.def)             Requested size: 469.7781pt x 274.00249pt.
- [9 <./chinese_song-1.png>] [10 <./melodic_arc.png>]
-Chapter 3.
-LaTeX Font Info:    Font shape `T1/phv/b/it' in size <14.4> not available
-(Font)              Font shape `T1/phv/b/sl' tried instead on input line 601.
-<jazz.jpg, id=176, 6022.5pt x 4015.0pt>
-File: jazz.jpg Graphic file (type jpg)
-<use jazz.jpg>
-Package pdftex.def Info: jazz.jpg  used on input line 607.
-(pdftex.def)             Requested size: 469.75502pt x 313.11974pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 681--683
-[]|\T1/ptm/m/n/10 All sec-tions (phrase, cho-rus, form, chords, etc.), ref-er-e
-nced by
+Underfull \vbox (badness 7963) detected at line 964
  []
 
-[11
+[12 <./notebooks_02_Melody_I_02_Melody_I_46_0.png>]
+<midi_pitch.png, id=181, 2175.12625pt x 466.74374pt>
+File: midi_pitch.png Graphic file (type png)
+<use midi_pitch.png>
+Package pdftex.def Info: midi_pitch.png  used on input line 1001.
+(pdftex.def)             Requested size: 469.734pt x 100.79663pt.
+ [13 <./notebooks_02_Melody_I_02_Melody_I_47_0.png> <./midi_pitch.png>]
+<notebooks_02_Melody_I_02_Melody_I_60_0.png, id=190, 373.8768pt x 229.5777pt>
+File: notebooks_02_Melody_I_02_Melody_I_60_0.png Graphic file (type png)
+<use notebooks_02_Melody_I_02_Melody_I_60_0.png>
+Package pdftex.def Info: notebooks_02_Melody_I_02_Melody_I_60_0.png  used on in
+put line 1103.
+(pdftex.def)             Requested size: 469.75232pt x 288.4497pt.
 
- <./jazz.jpg>]
-LaTeX Font Info:    Font shape `T1/pcr/m/it' in size <9> not available
-(Font)              Font shape `T1/pcr/m/sl' tried instead on input line 707.
+Underfull \vbox (badness 1424) detected at line 1105
+ []
 
+[14]
+<notebooks_02_Melody_I_02_Melody_I_62_0.png, id=195, 576.9555pt x 421.8159pt>
+File: notebooks_02_Melody_I_02_Melody_I_62_0.png Graphic file (type png)
+<use notebooks_02_Melody_I_02_Melody_I_62_0.png>
+Package pdftex.def Info: notebooks_02_Melody_I_02_Melody_I_62_0.png  used on in
+put line 1130.
+(pdftex.def)             Requested size: 469.7612pt x 343.44545pt.
 
-Package textcomp Warning: Symbol \textasciigrave not provided by
-(textcomp)                font family pcr in TS1 encoding.
-(textcomp)                Default family used instead on input line 713.
+Underfull \vbox (badness 10000) detected at line 1132
+ []
 
-LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 7
-13.
+[15 <./notebooks_02_Melody_I_02_Melody_I_60_0.png>]
+Overfull \vbox (0.57124pt too high) detected at line 1218
+ []
 
-("C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\t1cmtt.f
-d"
-File: t1cmtt.fd 2019/12/16 v2.5j Standard LaTeX font definitions
-)
-LaTeX Font Info:    Trying to load font information for TS1+cmtt on input line 
-713.
+[16 <./notebooks_02_Melody_I_02_Melody_I_62_0.png>]
+<notebooks_02_Melody_I_02_Melody_I_66_0.png, id=207, 376.2858pt x 229.5777pt>
+File: notebooks_02_Melody_I_02_Melody_I_66_0.png Graphic file (type png)
+<use notebooks_02_Melody_I_02_Melody_I_66_0.png>
+Package pdftex.def Info: notebooks_02_Melody_I_02_Melody_I_66_0.png  used on in
+put line 1237.
+(pdftex.def)             Requested size: 469.75894pt x 286.60709pt.
 
-("C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\ts1cmtt.
-fd"
-File: ts1cmtt.fd 2019/12/16 v2.5j Standard LaTeX font definitions
-)
+Underfull \vbox (badness 10000) detected at line 1239
+ []
 
-Package textcomp Warning: Symbol \textasciigrave not provided by
-(textcomp)                font family pcr in TS1 encoding.
-(textcomp)                Default family used instead on input line 713.
+[17]
+Overfull \vbox (1.73288pt too high) detected at line 1304
+ []
 
-[12] (introductiontomusicalcorpusstudies.ind)
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 741.
- [13
+[18 <./notebooks_02_Melody_I_02_Melody_I_66_0.png>] [19]
+<notebooks_02_Melody_I_02_Melody_I_73_0.png, id=221, 421.8159pt x 241.1409pt>
+File: notebooks_02_Melody_I_02_Melody_I_73_0.png Graphic file (type png)
+<use notebooks_02_Melody_I_02_Melody_I_73_0.png>
+Package pdftex.def Info: notebooks_02_Melody_I_02_Melody_I_73_0.png  used on in
+put line 1405.
+(pdftex.def)             Requested size: 469.75305pt x 268.54527pt.
+ [20 <./notebooks_02_Melody_I_02_Melody_I_73_0.png>] [21] [22]
+<notebooks_02_Melody_I_02_Melody_I_84_0.png, id=236, 323.5287pt x 255.5949pt>
+File: notebooks_02_Melody_I_02_Melody_I_84_0.png Graphic file (type png)
+<use notebooks_02_Melody_I_02_Melody_I_84_0.png>
+Package pdftex.def Info: notebooks_02_Melody_I_02_Melody_I_84_0.png  used on in
+put line 1718.
+(pdftex.def)             Requested size: 469.79079pt x 371.1452pt.
+
+Underfull \vbox (badness 10000) detected at line 1720
+ []
+
+[23] [24 <./notebooks_02_Melody_I_02_Melody_I_84_0.png>]
+(introductiontomusicalcorpusstudies.ind)
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1737.
+ [25
 
 
 ]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 741.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 1737.
 
 (introductiontomusicalcorpusstudies.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 741.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 741.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1737.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1737.
+
 Package rerunfilecheck Info: File `introductiontomusicalcorpusstudies.out' has 
 not changed.
-(rerunfilecheck)             Checksum: 52CCA27FF0E3570833C7FC1C0102D2FE;1657.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 741.
+(rerunfilecheck)             Checksum: BDC785222ACE13C72B445199E1425B35;1584.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1737.
  ) 
 Here is how much of TeX's memory you used:
- 13662 strings out of 480896
- 200624 string characters out of 2895750
- 481663 words of memory out of 3000000
- 29129 multiletter control sequences out of 15000+200000
- 594279 words of font info for 104 fonts, out of 3000000 for 9000
+ 13624 strings out of 480896
+ 201242 string characters out of 2895750
+ 945415 words of memory out of 3000000
+ 29110 multiletter control sequences out of 15000+200000
+ 582009 words of font info for 84 fonts, out of 3000000 for 9000
  1142 hyphenation exceptions out of 8191
- 38i,11n,49p,691b,553s stack positions out of 5000i,500n,10000p,200000b,50000s
- <C:\Users\fabianmoss\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dp
-i600\tcit0900.pk>{C:/Users/fabianmoss/AppData/Local/Programs/MiKTeX 2.9/fonts/e
-nc/dvips/base/8r.enc}<C:/Users/fabianmoss/AppData/Local/Programs/MiKTeX 2.9/fon
-ts/type1/urw/courier/ucrb8a.pfb><C:/Users/fabianmoss/AppData/Local/Programs/MiK
-TeX 2.9/fonts/type1/urw/courier/ucrr8a.pfb><C:/Users/fabianmoss/AppData/Local/P
-rograms/MiKTeX 2.9/fonts/type1/urw/courier/ucrro8a.pfb><C:/Users/fabianmoss/App
-Data/Local/Programs/MiKTeX 2.9/fonts/type1/urw/helvetic/uhvb8a.pfb><C:/Users/fa
-bianmoss/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/helvetic/uhvbo8a.pfb
-><C:/Users/fabianmoss/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/helveti
-c/uhvr8a.pfb><C:/Users/fabianmoss/AppData/Local/Programs/MiKTeX 2.9/fonts/type1
-/urw/times/utmb8a.pfb><C:/Users/fabianmoss/AppData/Local/Programs/MiKTeX 2.9/fo
-nts/type1/urw/times/utmbi8a.pfb><C:/Users/fabianmoss/AppData/Local/Programs/MiK
-TeX 2.9/fonts/type1/urw/times/utmr8a.pfb><C:/Users/fabianmoss/AppData/Local/Pro
-grams/MiKTeX 2.9/fonts/type1/urw/times/utmri8a.pfb>
-Output written on introductiontomusicalcorpusstudies.pdf (17 pages, 8446318 byt
+ 38i,11n,49p,773b,568s stack positions out of 5000i,500n,10000p,200000b,50000s
+{C:/Users/fabianmoss/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/base/8
+r.enc}<C:/Users/fabianmoss/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public
+/amsfonts/cm/cmmi5.pfb><C:/Users/fabianmoss/AppData/Local/Programs/MiKTeX 2.9/f
+onts/type1/public/amsfonts/cm/cmsy5.pfb><C:/Users/fabianmoss/AppData/Local/Prog
+rams/MiKTeX 2.9/fonts/type1/urw/courier/ucrb8a.pfb><C:/Users/fabianmoss/AppData
+/Local/Programs/MiKTeX 2.9/fonts/type1/urw/courier/ucrr8a.pfb><C:/Users/fabianm
+oss/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/courier/ucrro8a.pfb><C:/U
+sers/fabianmoss/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/helvetic/uhvb
+8a.pfb><C:/Users/fabianmoss/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/h
+elvetic/uhvbo8a.pfb><C:/Users/fabianmoss/AppData/Local/Programs/MiKTeX 2.9/font
+s/type1/urw/helvetic/uhvr8a.pfb><C:/Users/fabianmoss/AppData/Local/Programs/MiK
+TeX 2.9/fonts/type1/urw/times/utmb8a.pfb><C:/Users/fabianmoss/AppData/Local/Pro
+grams/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb><C:/Users/fabianmoss/AppData/
+Local/Programs/MiKTeX 2.9/fonts/type1/urw/times/utmri8a.pfb>
+Output written on introductiontomusicalcorpusstudies.pdf (29 pages, 5422246 byt
 es).
 PDF statistics:
- 256 PDF objects out of 1000 (max. 8388607)
- 45 named destinations out of 1000 (max. 500000)
- 147 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 303 PDF objects out of 1000 (max. 8388607)
+ 52 named destinations out of 1000 (max. 500000)
+ 172 words of extra memory for PDF output out of 10000 (max. 10000000)
 

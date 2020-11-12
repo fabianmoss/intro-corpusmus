@@ -1,0 +1,112 @@
+\documentclass[aspectratio=169,
+  % for xcolor:
+  usenames,dvipsnames,table
+]{beamer}
+
+\renewcommand{\thesection}{\Roman{section}}
+\renewcommand{\thesubsection}{\thesection.\Roman{subsection}}
+
+%%% PACKAGES %%%
+
+% use the metropolis theme
+\usetheme[
+  progressbar=head,
+  subsectionpage=progressbar,
+  numbering=fraction
+  ]{metropolis}
+% see metropolis package for more options
+% dark theme must be set after the metroepfl package is loaded (see below)
+
+\usepackage{amsmath}
+\usepackage[utf8]{inputenc}
+% \usepackage[T1]{fontenc}
+% \usepackage[czech]{babel}
+% \usepackage{lmodern}
+\usepackage{xcolor}
+
+% use the epfl color theme
+% defines epfl{gray,darkgray,lightgray,red,blue}
+% this usepackage is optional, as it is also done by metroepfl
+\usepackage{epflcolors}
+% metropolis theme based on gemini and epflcolors
+\usepackage{metroepfl}
+% \metroset{background=dark}
+
+\usepackage{multimedia} % for audio/video
+
+\usepackage{tikz}
+\usetikzlibrary{arrows,
+                arrows.meta,
+                calc,
+                cd,
+                positioning,
+                backgrounds,
+                graphs,
+                shapes.geometric,
+                fit,
+                decorations,
+                decorations.markings,
+                decorations.pathreplacing,
+                overlay-beamer-styles}
+\pgfdeclarelayer{bg}    % declare background layer
+\pgfsetlayers{bg,main}  % set the order of the layers (main is the standard layer)
+
+\usepackage{ifthen}
+\usepackage{amssymb,amsmath}
+\let\emptyset\varnothing
+
+%% add to show notes
+\usepackage{pgfpages}
+% \setbeameroption{show notes on second screen}
+%% only for handout printing!
+% \pgfpagesuselayout{4 on 1}[a4paper,border shrink=5mm,landscape]
+
+\usepackage{caption}
+\usepackage{subcaption}
+
+%% References
+\usepackage[
+   backend=biber,
+   style=apa,
+   citestyle=authoryear-comp,
+   % uniquename=false,
+	 % uniquelist=false,
+	 maxcitenames=4,
+   natbib=true
+ ]{biblatex}
+\addbibresource{references.bib}
+\setbeamertemplate{bibliography item}{} % remove icon in front of refs
+
+\usepackage{appendixnumberbeamer} % slide numbers in appendix
+
+%%% FRONTMATTER %%%
+
+\title{Introduction to Musical Corpus Studies}
+% \subtitle{WS 2020/21}
+\author{Fabian C. Moss}
+\date{13 November 2020}
+\institute{Musikwissenschaftliches Seminar - Universität zu Köln}
+% \titlegraphic{\vspace{7cm}\flushright\includegraphics[width=2cm,height=2cm, keepaspectratio]{img/EPFL.pdf}}
+
+\begin{document}
+
+\maketitle
+
+%%%% MAIN MATTER %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\input{0_intro.tex}
+\input{1_computational_music_analysis.tex}
+% \input{2_understanding_uncertainty.tex}
+% \input{3_data_driven_history.tex}
+% \input{4_conclusion.tex}
+
+%%% BACKMATTER %%%
+
+\appendix
+
+\begin{frame}[allowframebreaks]
+  \renewcommand*{\bibfont}{\footnotesize}
+  \printbibliography
+\end{frame}
+
+\end{document}

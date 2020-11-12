@@ -154,7 +154,9 @@ and help each other in the understanding of some of the concepts that are introd
 .. rubric:: Report
 
 After the course has ended, your group will be randomly assigned a course topic (one of the twelve sessions in :numref:`tab_overview`). 
-It is your task to write a report on this theme. Questions that you could address are: 
+It is your task to write a report on this theme. The should be 6--8 pages long.
+
+Questions that you could address are: 
 What did you learn? Which concepts are not clear? Which methods did you (not) understand? 
 What is missing? How can the textual descriptions be improved? Who in your group did what? 
 Was the presentation of the material adequate? If not, what was missing? 

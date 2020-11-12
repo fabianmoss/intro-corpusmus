@@ -57,11 +57,9 @@ about quantitative approaches to musicology.
    :caption: Content
    :numbered:
 
-   organization.rst
-   intro_background.ipynb
-   melody_I.ipynb 
-
-   bibliography.rst
+   01_organization.rst
+   02_intro_background.ipynb
+   03_melody_I.ipynb 
 
 .. Indices and tables
 .. ==================

@@ -494,8 +494,8 @@ as a single PDF file per group, named \sphinxtitleref{intro\_corpusmus\_\textles
 \end{sphinxadmonition}
 
 
-\chapter{Introduction to Musical Corpus Studies}
-\label{\detokenize{01_intro_background:Introduction-to-Musical-Corpus-Studies}}\label{\detokenize{01_intro_background::doc}}
+\chapter{Introduction and Background}
+\label{\detokenize{01_intro_background:Introduction-and-Background}}\label{\detokenize{01_intro_background::doc}}
 
 \section{Introduction}
 \label{\detokenize{01_intro_background:Introduction}}\begin{itemize}
@@ -577,8 +577,8 @@ Test breakout (exchange contact info)
 }
 
 
-\section{Melodies}
-\label{\detokenize{02_melody_I:Melodies}}
+\section{The \sphinxstyleemphasis{Essen Folksong Collection}}
+\label{\detokenize{02_melody_I:The-Essen-Folksong-Collection}}
 In this session, we work with a corpus of melodies, the \sphinxstyleemphasis{Essen Folksong Collection} (EFC). There are several ways to access this corpus, for example through the interface provided by the Center for Computer Assisted Research in the Humanities at Stanford University: \sphinxurl{http://essen.themefinder.org/} or via \sphinxurl{http://kern.ccarh.org/browse?l=essen}.
 
 A more convenient way to work with the pieces is by using the Python library \sphinxcode{\sphinxupquote{music21}}. This library was developed and is maintaned my Mike Cuthbert at the MIT and is the most popular library for the computational analysis of symbolic music (i.e. scores). You can find its documentation here: \sphinxurl{http://web.mit.edu/music21/}
@@ -917,7 +917,7 @@ If we would call the \sphinxcode{\sphinxupquote{.show()}} method on \sphinxcode{
 We have seen that we can select items from lists by \sphinxstylestrong{indexing} them, \sphinxcode{\sphinxupquote{list{[}i{]}}}. We can get ranges of lists by using the \sphinxcode{\sphinxupquote{:}} character. For example, \sphinxcode{\sphinxupquote{list{[}:10{]}}} shows the first ten elements, \sphinxcode{\sphinxupquote{list{[}10:{]}}} shows everything after the ninth element, and \sphinxcode{\sphinxupquote{list{[}3:6{]}}} shows elements 3, 4, and 5 (not 6!) of the list.
 
 
-\subsection{Comparing songs}
+\section{Comparing songs}
 \label{\detokenize{02_melody_I:Comparing-songs}}
 Looking at individual songs is interesting for music analysis but for that the computational approach is not really necessary. We could as easily do the same by just looking at a book of scores. The power of computational methods becomes clearer when we start comparing different songs, potentially in a large number.
 
@@ -1031,12 +1031,9 @@ It is easy to display these songs now:
 Analysis of songs…
 
 
-\subsection{Computational analysis}
+\section{Computational analysis}
 \label{\detokenize{02_melody_I:Computational-analysis}}
-
-\subsubsection{Melodic Profiles}
-\label{\detokenize{02_melody_I:Melodic-Profiles}}
-We now go on to a computational analysis of these two and all the other songs. To make things a bit simpler, we will just look at the notes.
+We now go on to a computational analysis of these two and all the other songs. Specifically, we wil compare their \sphinxstylestrong{melodic profiles}. To make things a bit simpler, we will just look at the notes.
 
 A note can be easily represented as a pair of \sphinxstylestrong{pitch} (its height) and its \sphinxstylestrong{duration}. For example, the first note of the \sphinxstyleemphasis{Die plappernden Junggesellen} could be represented as \sphinxcode{\sphinxupquote{(D4, 1/4)}}; it is a quarter note on the pitch D4 (the 4 indicates the octave in which the note is).
 
@@ -1144,7 +1141,7 @@ This allows us now to look at the \sphinxstylestrong{melodic profile} of a parti
 
 \begin{nbsphinxfancyoutput}
 
-\noindent\sphinxincludegraphics[width=776\sphinxpxdimen,height=476\sphinxpxdimen]{{02_melody_I_60_0}.png}
+\noindent\sphinxincludegraphics[width=776\sphinxpxdimen,height=476\sphinxpxdimen]{{02_melody_I_59_0}.png}
 
 \end{nbsphinxfancyoutput}
 
@@ -1171,7 +1168,7 @@ Likewise, we can as easily plot the melodic contour of the Chinese song (we will
 
 \begin{nbsphinxfancyoutput}
 
-\noindent\sphinxincludegraphics[width=1197\sphinxpxdimen,height=875\sphinxpxdimen]{{02_melody_I_62_0}.png}
+\noindent\sphinxincludegraphics[width=1197\sphinxpxdimen,height=875\sphinxpxdimen]{{02_melody_I_61_0}.png}
 
 \end{nbsphinxfancyoutput}
 
@@ -1278,7 +1275,7 @@ We need to transform them in a way that makes them directly comparable. To that 
 
 \begin{nbsphinxfancyoutput}
 
-\noindent\sphinxincludegraphics[width=781\sphinxpxdimen,height=476\sphinxpxdimen]{{02_melody_I_66_0}.png}
+\noindent\sphinxincludegraphics[width=781\sphinxpxdimen,height=476\sphinxpxdimen]{{02_melody_I_65_0}.png}
 
 \end{nbsphinxfancyoutput}
 
@@ -1448,7 +1445,7 @@ However, already with two pieces this plot is quite crowded.
 
 \begin{nbsphinxfancyoutput}
 
-\noindent\sphinxincludegraphics[width=725\sphinxpxdimen,height=725\sphinxpxdimen]{{02_melody_I_73_0}.png}
+\noindent\sphinxincludegraphics[width=725\sphinxpxdimen,height=725\sphinxpxdimen]{{02_melody_I_72_0}.png}
 
 \end{nbsphinxfancyoutput}
 
@@ -1761,7 +1758,7 @@ There are 442082 intervals in total in the corpus.
 
 \begin{nbsphinxfancyoutput}
 
-\noindent\sphinxincludegraphics[width=671\sphinxpxdimen,height=530\sphinxpxdimen]{{02_melody_I_84_0}.png}
+\noindent\sphinxincludegraphics[width=671\sphinxpxdimen,height=530\sphinxpxdimen]{{02_melody_I_83_0}.png}
 
 \end{nbsphinxfancyoutput}
 

@@ -1,0 +1,56 @@
+% colors for line of fifths
+\definecolor{Gb}{HTML}{6d6dff}
+\definecolor{Db}{HTML}{8585ff}
+\definecolor{Ab}{HTML}{9d9dff}
+\definecolor{Eb}{HTML}{b5b5ff}
+\definecolor{Bb}{HTML}{cdcdff}
+\definecolor{F}{HTML}{e5e5ff}
+\definecolor{C}{HTML}{fffdfd}
+\definecolor{G}{HTML}{ffe5e5}
+\definecolor{D}{HTML}{ffcdcd}
+\definecolor{A}{HTML}{ffb5b5}
+\definecolor{E}{HTML}{ff9d9d}
+\definecolor{B}{HTML}{ff8585}
+\definecolor{Fs}{HTML}{ff6d6d}
+
+% draw picture
+\begin{tikzpicture}[scale=2]
+
+\draw[latex-latex] (-3.5,0) -- (3.5,0) ; % line
+
+% down ticks
+\foreach \x/\label in  {-6/G$\flat$,
+                         -5/D$\flat$,
+                         -4/A$\flat$,
+                         -3/E$\flat$,
+                         -2/B$\flat$,
+                         -1/F,
+                         0/C,
+                         1/G,
+                         2/D,
+                         3/A,
+                         4/E,
+                         5/B,
+                         6/F$\sharp$}
+\draw[shift={(\x/2,0)},color=black] (0pt,0pt) -- (0pt,-5pt) node[below] {\label};
+% % up ticks
+% \foreach \x in  {-6,...,6}
+% \draw[shift={(\x/2,0)},color=black] (0pt,0pt) -- (0pt,5pt) node[above] {$\x$};
+
+% draw circles
+\foreach \x/\color in {-6/Gb,
+                         -5/Db,
+                         -4/Ab,
+                         -3/Eb,
+                         -2/Bb,
+                         -1/F,
+                         0/C,
+                         1/G,
+                         2/D,
+                         3/A,
+                         4/E,
+                         5/B,
+                         6/Fs}
+  \node [circle, fill=\color,scale=1.5, draw=black] (\x) at (\x/2,0) {};
+
+\end{tikzpicture}

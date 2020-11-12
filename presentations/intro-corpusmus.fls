@@ -1,0 +1,887 @@
+PWD c:\Users\fabianmoss\GitHub\fabianmoss\intro-corpusmus\presentations
+INPUT C:\Users\fabianmoss\AppData\Local\MiKTeX\2.9\miktex\data\le\pdftex\pdflatex.fmt
+INPUT c:\Users\fabianmoss\GitHub\fabianmoss\intro-corpusmus\presentations\intro-corpusmus.tex
+OUTPUT c:\Users\fabianmoss\GitHub\fabianmoss\intro-corpusmus\presentations\intro-corpusmus.log
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex\latex\beamer\beamer.cls
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex\latex\beamer\beamer.cls
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex\latex\beamer\beamerbasemodes.sty
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex\latex\beamer\beamerbasemodes.sty
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex\latex\etoolbox\etoolbox.sty
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex\latex\etoolbox\etoolbox.sty
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex\latex\beamer\beamerbasedecode.sty
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex\latex\beamer\beamerbasedecode.sty
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex\generic\iftex\ifpdf.sty
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex\generic\iftex\ifpdf.sty
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex\generic\iftex\iftex.sty
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex\generic\iftex\iftex.sty
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex\latex\beamer\beamerbaseoptions.sty
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex\latex\beamer\beamerbaseoptions.sty
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\keyval.sty
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\keyval.sty
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex\latex\geometry\geometry.sty
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex\latex\geometry\geometry.sty
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex\generic\iftex\ifvtex.sty
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex\generic\iftex\ifvtex.sty
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex\latex\geometry\geometry.cfg
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex\latex\geometry\geometry.cfg
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\size11.clo
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\size11.clo
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\cm\cmr10.tfm
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex\latex\pgf\basiclayer\pgfcore.sty
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex\latex\pgf\basiclayer\pgfcore.sty
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\graphicx.sty
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\graphicx.sty
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\graphics.sty
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\graphics.sty
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\trig.sty
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\trig.sty
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics-cfg\graphics.cfg
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics-cfg\graphics.cfg
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics-def\pdftex.def
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics-def\pdftex.def
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex\latex\pgf\systemlayer\pgfsys.sty
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex\latex\pgf\systemlayer\pgfsys.sty
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex\latex\pgf\utilities\pgfrcs.sty
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex\latex\pgf\utilities\pgfrcs.sty
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\utilities\pgfutil-common.tex
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\utilities\pgfutil-common-lists.tex
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\utilities\pgfutil-latex.def
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex\latex\ms\everyshi.sty
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex\latex\ms\everyshi.sty
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\utilities\pgfrcs.code.tex
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\utilities\pgfrcs.code.tex
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\pgf.revision.tex
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\pgf.revision.tex
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\systemlayer\pgfsys.code.tex
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\systemlayer\pgfsys.code.tex
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\utilities\pgfkeys.code.tex
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\utilities\pgfkeysfiltered.code.tex
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\systemlayer\pgf.cfg
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\systemlayer\pgfsys-pdftex.def
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\systemlayer\pgfsys-pdftex.def
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\systemlayer\pgfsys-common-pdf.def
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\systemlayer\pgfsyssoftpath.code.tex
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\systemlayer\pgfsyssoftpath.code.tex
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\systemlayer\pgfsysprotocol.code.tex
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\systemlayer\pgfsysprotocol.code.tex
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex\latex\xcolor\xcolor.sty
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex\latex\xcolor\xcolor.sty
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics-cfg\color.cfg
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics-cfg\color.cfg
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex\latex\colortbl\colortbl.sty
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex\latex\colortbl\colortbl.sty
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex\latex\tools\array.sty
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex\latex\tools\array.sty
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\dvipsnam.def
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\dvipsnam.def
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcore.code.tex
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcore.code.tex
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\math\pgfmath.code.tex
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\math\pgfmathcalc.code.tex
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\math\pgfmathutil.code.tex
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\math\pgfmathparser.code.tex
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\math\pgfmathfunctions.code.tex
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\math\pgfmathfunctions.basic.code.tex
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\math\pgfmathfunctions.trigonometric.code.tex
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\math\pgfmathfunctions.random.code.tex
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\math\pgfmathfunctions.comparison.code.tex
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\math\pgfmathfunctions.base.code.tex
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\math\pgfmathfunctions.round.code.tex
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\math\pgfmathfunctions.misc.code.tex
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\math\pgfmathfunctions.integerarithmetics.code.tex
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\math\pgfmathfloat.code.tex
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\math\pgfint.code.tex
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcorepoints.code.tex
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcorepathconstruct.code.tex
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcorepathusage.code.tex
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcorescopes.code.tex
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcoregraphicstate.code.tex
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcoretransformations.code.tex
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcorequick.code.tex
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcoreobjects.code.tex
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcorepathprocessing.code.tex
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcorearrows.code.tex
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcoreshade.code.tex
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcoreimage.code.tex
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcoreexternal.code.tex
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcorelayers.code.tex
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcoretransparency.code.tex
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcorepatterns.code.tex
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcorerdf.code.tex
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex\latex\pgf\utilities\xxcolor.sty
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex\latex\pgf\utilities\xxcolor.sty
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex\generic\atbegshi\atbegshi.sty
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex\generic\atbegshi\atbegshi.sty
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex\generic\infwarerr\infwarerr.sty
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex\generic\infwarerr\infwarerr.sty
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex\generic\ltxcmds\ltxcmds.sty
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex\generic\ltxcmds\ltxcmds.sty
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex\latex\hyperref\hyperref.sty
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex\latex\hyperref\hyperref.sty
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex\latex\pdftexcmds\pdftexcmds.sty
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex\latex\pdftexcmds\pdftexcmds.sty
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex\generic\kvsetkeys\kvsetkeys.sty
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex\generic\kvsetkeys\kvsetkeys.sty
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex\generic\kvdefinekeys\kvdefinekeys.sty
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex\generic\kvdefinekeys\kvdefinekeys.sty
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pdfescape\pdfescape.sty
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pdfescape\pdfescape.sty
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex\latex\hycolor\hycolor.sty
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex\latex\hycolor\hycolor.sty
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex\latex\letltxmacro\letltxmacro.sty
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex\latex\letltxmacro\letltxmacro.sty
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex\latex\auxhook\auxhook.sty
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex\latex\auxhook\auxhook.sty
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex\latex\kvoptions\kvoptions.sty
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex\latex\kvoptions\kvoptions.sty
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex\latex\hyperref\pd1enc.def
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex\latex\hyperref\pd1enc.def
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex\generic\intcalc\intcalc.sty
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex\generic\intcalc\intcalc.sty
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex\generic\etexcmds\etexcmds.sty
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex\generic\etexcmds\etexcmds.sty
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex\latex\url\url.sty
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex\latex\url\url.sty
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex\generic\bitset\bitset.sty
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex\generic\bitset\bitset.sty
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex\generic\bigintcalc\bigintcalc.sty
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex\generic\bigintcalc\bigintcalc.sty
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex\latex\hyperref\hpdftex.def
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex\latex\hyperref\hpdftex.def
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex\latex\atveryend\atveryend.sty
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex\latex\atveryend\atveryend.sty
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex\latex\rerunfilecheck\rerunfilecheck.sty
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex\latex\rerunfilecheck\rerunfilecheck.sty
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex\generic\uniquecounter\uniquecounter.sty
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex\generic\uniquecounter\uniquecounter.sty
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex\latex\beamer\beamerbaserequires.sty
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex\latex\beamer\beamerbaserequires.sty
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex\latex\beamer\beamerbasecompatibility.sty
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex\latex\beamer\beamerbasecompatibility.sty
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex\latex\beamer\beamerbasefont.sty
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex\latex\beamer\beamerbasefont.sty
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsfonts\amssymb.sty
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsfonts\amssymb.sty
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsfonts\amsfonts.sty
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsfonts\amsfonts.sty
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex\latex\sansmathaccent\sansmathaccent.sty
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex\latex\sansmathaccent\sansmathaccent.sty
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex\latex\sansmathaccent\sansmathaccent.sty
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex\latex\koma-script\scrlfile.sty
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex\latex\koma-script\scrlfile.sty
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex\latex\koma-script\scrlfile.sty
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex\latex\beamer\beamerbasetranslator.sty
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex\latex\beamer\beamerbasetranslator.sty
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex\latex\translator\translator.sty
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex\latex\translator\translator.sty
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex\latex\beamer\beamerbasemisc.sty
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex\latex\beamer\beamerbasemisc.sty
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex\latex\beamer\beamerbasetwoscreens.sty
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex\latex\beamer\beamerbasetwoscreens.sty
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex\latex\beamer\beamerbaseoverlay.sty
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex\latex\beamer\beamerbaseoverlay.sty
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex\latex\beamer\beamerbasetitle.sty
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex\latex\beamer\beamerbasetitle.sty
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex\latex\beamer\beamerbasesection.sty
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex\latex\beamer\beamerbasesection.sty
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex\latex\beamer\beamerbaseframe.sty
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex\latex\beamer\beamerbaseframe.sty
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex\latex\beamer\beamerbaseverbatim.sty
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex\latex\beamer\beamerbaseverbatim.sty
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex\latex\beamer\beamerbaseframesize.sty
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex\latex\beamer\beamerbaseframesize.sty
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex\latex\beamer\beamerbaseframecomponents.sty
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex\latex\beamer\beamerbaseframecomponents.sty
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex\latex\beamer\beamerbasecolor.sty
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex\latex\beamer\beamerbasecolor.sty
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex\latex\beamer\beamerbasenotes.sty
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex\latex\beamer\beamerbasenotes.sty
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex\latex\beamer\beamerbasetoc.sty
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex\latex\beamer\beamerbasetoc.sty
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex\latex\beamer\beamerbasetemplates.sty
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex\latex\beamer\beamerbasetemplates.sty
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex\latex\beamer\beamerbaseauxtemplates.sty
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex\latex\beamer\beamerbaseauxtemplates.sty
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex\latex\beamer\beamerbaseboxes.sty
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex\latex\beamer\beamerbaseboxes.sty
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex\latex\beamer\beamerbaselocalstructure.sty
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex\latex\beamer\beamerbaselocalstructure.sty
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex\latex\tools\enumerate.sty
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex\latex\tools\enumerate.sty
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex\latex\beamer\beamerbasenavigation.sty
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex\latex\beamer\beamerbasenavigation.sty
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex\latex\beamer\beamerbasetheorems.sty
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex\latex\beamer\beamerbasetheorems.sty
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsmath\amsmath.sty
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsmath\amsmath.sty
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsmath\amstext.sty
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsmath\amstext.sty
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsmath\amsgen.sty
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsmath\amsgen.sty
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsmath\amsbsy.sty
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsmath\amsbsy.sty
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsmath\amsopn.sty
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsmath\amsopn.sty
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amscls\amsthm.sty
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amscls\amsthm.sty
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex\latex\beamer\beamerbasethemes.sty
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex\latex\beamer\beamerbasethemes.sty
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\cm\cmss10.tfm
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex\latex\beamer\beamerthemedefault.sty
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex\latex\beamer\beamerthemedefault.sty
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex\latex\beamer\beamerfontthemedefault.sty
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex\latex\beamer\beamerfontthemedefault.sty
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex\latex\beamer\beamercolorthemedefault.sty
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex\latex\beamer\beamercolorthemedefault.sty
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex\latex\beamer\beamerinnerthemedefault.sty
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex\latex\beamer\beamerinnerthemedefault.sty
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex\latex\beamer\beamericonbook.pdf
+OUTPUT c:\Users\fabianmoss\GitHub\fabianmoss\intro-corpusmus\presentations\intro-corpusmus.pdf
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex\latex\beamer\beamericonbook.pdf
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex\latex\beamer\beamericonbook.pdf
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex\latex\beamer\beamericonbook.20.pdf
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex\latex\beamer\beamericonbook.20.pdf
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex\latex\beamer\beamericonbook.20.pdf
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex\latex\beamer\beamericonarticle.pdf
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex\latex\beamer\beamericonarticle.pdf
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex\latex\beamer\beamericonarticle.pdf
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex\latex\beamer\beamericonarticle.20.pdf
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex\latex\beamer\beamericonarticle.20.pdf
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex\latex\beamer\beamericonarticle.20.pdf
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex\latex\beamer\beamericononline.pdf
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex\latex\beamer\beamericononline.pdf
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex\latex\beamer\beamericononline.pdf
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex\latex\beamer\beamericononline.20.pdf
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex\latex\beamer\beamericononline.20.pdf
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex\latex\beamer\beamericononline.20.pdf
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex\latex\beamer\beamerouterthemedefault.sty
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex\latex\beamer\beamerouterthemedefault.sty
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex\latex\beamertheme-metropolis\beamerthememetropolis.sty
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex\latex\beamertheme-metropolis\beamerthememetropolis.sty
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex\latex\pgfopts\pgfopts.sty
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex\latex\pgfopts\pgfopts.sty
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex\latex\pgf\utilities\pgfkeys.sty
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex\latex\pgf\utilities\pgfkeys.sty
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\utilities\pgfkeys.code.tex
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\utilities\pgfkeys.code.tex
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex\latex\beamertheme-metropolis\beamerinnerthememetropolis.sty
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex\latex\beamertheme-metropolis\beamerinnerthememetropolis.sty
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex\latex\tools\calc.sty
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex\latex\tools\calc.sty
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex\latex\pgf\frontendlayer\tikz.sty
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex\latex\pgf\frontendlayer\tikz.sty
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex\latex\pgf\basiclayer\pgf.sty
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex\latex\pgf\basiclayer\pgf.sty
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\modules\pgfmoduleshapes.code.tex
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\modules\pgfmoduleplot.code.tex
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex\latex\pgf\compatibility\pgfcomp-version-0-65.sty
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex\latex\pgf\compatibility\pgfcomp-version-0-65.sty
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex\latex\pgf\compatibility\pgfcomp-version-1-18.sty
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex\latex\pgf\compatibility\pgfcomp-version-1-18.sty
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex\latex\pgf\utilities\pgffor.sty
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex\latex\pgf\utilities\pgffor.sty
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex\latex\pgf\math\pgfmath.sty
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex\latex\pgf\math\pgfmath.sty
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\math\pgfmath.code.tex
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\math\pgfmath.code.tex
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\utilities\pgffor.code.tex
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\utilities\pgffor.code.tex
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\math\pgfmath.code.tex
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\frontendlayer\tikz\tikz.code.tex
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\frontendlayer\tikz\tikz.code.tex
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\libraries\pgflibraryplothandlers.code.tex
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\libraries\pgflibraryplothandlers.code.tex
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\modules\pgfmodulematrix.code.tex
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\frontendlayer\tikz\libraries\tikzlibrarytopaths.code.tex
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\frontendlayer\tikz\libraries\tikzlibrarytopaths.code.tex
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex\latex\beamertheme-metropolis\beamerouterthememetropolis.sty
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex\latex\beamertheme-metropolis\beamerouterthememetropolis.sty
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex\latex\beamertheme-metropolis\beamercolorthememetropolis.sty
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex\latex\beamertheme-metropolis\beamercolorthememetropolis.sty
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex\latex\beamertheme-metropolis\beamerfontthememetropolis.sty
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex\latex\beamertheme-metropolis\beamerfontthememetropolis.sty
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex\generic\iftex\ifxetex.sty
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex\generic\iftex\ifxetex.sty
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex\generic\iftex\ifluatex.sty
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex\generic\iftex\ifluatex.sty
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\inputenc.sty
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\inputenc.sty
+INPUT c:\Users\fabianmoss\GitHub\fabianmoss\intro-corpusmus\presentations\epflcolors.sty
+INPUT c:\Users\fabianmoss\GitHub\fabianmoss\intro-corpusmus\presentations\epflcolors.sty
+INPUT c:\Users\fabianmoss\GitHub\fabianmoss\intro-corpusmus\presentations\metroepfl.sty
+INPUT c:\Users\fabianmoss\GitHub\fabianmoss\intro-corpusmus\presentations\metroepfl.sty
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex\latex\beamer\multimedia.sty
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex\latex\beamer\multimedia.sty
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\frontendlayer\tikz\libraries\tikzlibraryarrows.code.tex
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\frontendlayer\tikz\libraries\tikzlibraryarrows.code.tex
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\libraries\pgflibraryarrows.code.tex
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\libraries\pgflibraryarrows.code.tex
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\libraries\pgflibraryarrows.meta.code.tex
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\libraries\pgflibraryarrows.meta.code.tex
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\libraries\pgflibraryarrows.meta.code.tex
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\frontendlayer\tikz\libraries\tikzlibrarycalc.code.tex
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\frontendlayer\tikz\libraries\tikzlibrarycalc.code.tex
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex\latex\tikz-cd\tikzlibrarycd.code.tex
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex\latex\tikz-cd\tikzlibrarycd.code.tex
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\frontendlayer\tikz\libraries\tikzlibrarymatrix.code.tex
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\frontendlayer\tikz\libraries\tikzlibrarymatrix.code.tex
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\frontendlayer\tikz\libraries\tikzlibraryquotes.code.tex
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\frontendlayer\tikz\libraries\tikzlibraryquotes.code.tex
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\frontendlayer\tikz\libraries\tikzlibrarypositioning.code.tex
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\frontendlayer\tikz\libraries\tikzlibrarypositioning.code.tex
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\frontendlayer\tikz\libraries\tikzlibrarybackgrounds.code.tex
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\frontendlayer\tikz\libraries\tikzlibrarybackgrounds.code.tex
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\frontendlayer\tikz\libraries\graphs\tikzlibrarygraphs.code.tex
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\frontendlayer\tikz\libraries\graphs\tikzlibrarygraphs.code.tex
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\frontendlayer\tikz\libraries\tikzlibraryshapes.geometric.code.tex
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\frontendlayer\tikz\libraries\tikzlibraryshapes.geometric.code.tex
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\libraries\shapes\pgflibraryshapes.geometric.code.tex
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\libraries\shapes\pgflibraryshapes.geometric.code.tex
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\frontendlayer\tikz\libraries\tikzlibraryfit.code.tex
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\frontendlayer\tikz\libraries\tikzlibraryfit.code.tex
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\frontendlayer\tikz\libraries\tikzlibrarydecorations.code.tex
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\frontendlayer\tikz\libraries\tikzlibrarydecorations.code.tex
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\modules\pgfmoduledecorations.code.tex
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\frontendlayer\tikz\libraries\tikzlibrarydecorations.markings.code.tex
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\frontendlayer\tikz\libraries\tikzlibrarydecorations.markings.code.tex
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\libraries\decorations\pgflibrarydecorations.markings.code.tex
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\libraries\decorations\pgflibrarydecorations.markings.code.tex
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\frontendlayer\tikz\libraries\tikzlibrarydecorations.pathreplacing.code.tex
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\frontendlayer\tikz\libraries\tikzlibrarydecorations.pathreplacing.code.tex
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\libraries\decorations\pgflibrarydecorations.pathreplacing.code.tex
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\libraries\decorations\pgflibrarydecorations.pathreplacing.code.tex
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex\latex\aobs-tikz\tikzlibraryoverlay-beamer-styles.code.tex
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex\latex\aobs-tikz\tikzlibraryoverlay-beamer-styles.code.tex
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\ifthen.sty
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\ifthen.sty
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex\latex\pgf\utilities\pgfpages.sty
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex\latex\pgf\utilities\pgfpages.sty
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex\latex\caption\caption.sty
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex\latex\caption\caption.sty
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex\latex\caption\caption3.sty
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex\latex\caption\caption3.sty
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex\latex\caption\subcaption.sty
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex\latex\caption\subcaption.sty
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex\latex\biblatex\biblatex.sty
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex\latex\biblatex\biblatex.sty
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex\latex\logreq\logreq.sty
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex\latex\logreq\logreq.sty
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex\latex\logreq\logreq.def
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex\latex\logreq\logreq.def
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex\latex\biblatex\blx-dm.def
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex\latex\biblatex\blx-dm.def
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex\latex\biblatex-apa\apa.dbx
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex\latex\biblatex-apa\apa.dbx
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex\latex\biblatex\blx-compat.def
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex\latex\biblatex\blx-compat.def
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex\latex\biblatex\biblatex.def
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex\latex\biblatex\biblatex.def
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex\latex\biblatex\blx-natbib.def
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex\latex\biblatex\blx-natbib.def
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex\latex\biblatex-apa\apa.bbx
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex\latex\biblatex-apa\apa.bbx
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex\latex\biblatex\bbx\standard.bbx
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex\latex\biblatex\bbx\standard.bbx
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex\latex\biblatex\cbx\authoryear-comp.cbx
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex\latex\biblatex\cbx\authoryear-comp.cbx
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex\latex\biblatex\biblatex.cfg
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex\latex\biblatex\biblatex.cfg
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex\latex\appendixnumberbeamer\appendixnumberbeamer.sty
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex\latex\appendixnumberbeamer\appendixnumberbeamer.sty
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex\latex\l3backend\l3backend-pdfmode.def
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex\latex\l3backend\l3backend-pdfmode.def
+INPUT c:\Users\fabianmoss\GitHub\fabianmoss\intro-corpusmus\presentations\intro-corpusmus.aux
+INPUT c:\Users\fabianmoss\GitHub\fabianmoss\intro-corpusmus\presentations\intro-corpusmus.aux
+OUTPUT c:\Users\fabianmoss\GitHub\fabianmoss\intro-corpusmus\presentations\intro-corpusmus.aux
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex\context\base\mkii\supp-pdf.mkii
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex\context\base\mkii\supp-pdf.mkii
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex\latex\epstopdf-pkg\epstopdf-base.sty
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex\latex\epstopdf-pkg\epstopdf-base.sty
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex\latex\hyperref\nameref.sty
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex\latex\hyperref\nameref.sty
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex\latex\refcount\refcount.sty
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex\latex\refcount\refcount.sty
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex\generic\gettitlestring\gettitlestring.sty
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex\generic\gettitlestring\gettitlestring.sty
+OUTPUT c:\Users\fabianmoss\GitHub\fabianmoss\intro-corpusmus\presentations\intro-corpusmus.out
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex\latex\translator\translator-basic-dictionary-English.dict
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex\latex\translator\translator-basic-dictionary-English.dict
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex\latex\translator\translator-bibliography-dictionary-English.dict
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex\latex\translator\translator-bibliography-dictionary-English.dict
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex\latex\translator\translator-environment-dictionary-English.dict
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex\latex\translator\translator-environment-dictionary-English.dict
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex\latex\translator\translator-months-dictionary-English.dict
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex\latex\translator\translator-months-dictionary-English.dict
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex\latex\translator\translator-numbers-dictionary-English.dict
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex\latex\translator\translator-numbers-dictionary-English.dict
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex\latex\translator\translator-theorem-dictionary-English.dict
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex\latex\translator\translator-theorem-dictionary-English.dict
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex\latex\biblatex-apa\english-apa.lbx
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex\latex\biblatex-apa\english-apa.lbx
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex\latex\biblatex-apa\english-apa.lbx
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex\latex\biblatex\lbx\english.lbx
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex\latex\biblatex\lbx\english.lbx
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex\latex\biblatex-apa\american-apa.lbx
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex\latex\biblatex-apa\american-apa.lbx
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex\latex\biblatex-apa\american-apa.lbx
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex\latex\biblatex\lbx\american.lbx
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex\latex\biblatex\lbx\american.lbx
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex\latex\biblatex\lbx\english.lbx
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex\latex\biblatex\lbx\english.lbx
+OUTPUT c:\Users\fabianmoss\GitHub\fabianmoss\intro-corpusmus\presentations\intro-corpusmus.bcf
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\cm\cmss8.tfm
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\cm\cmss8.tfm
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\cm\cmss12.tfm
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\cm\cmssbx10.tfm
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\cm\cmss10.tfm
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\cm\cmss9.tfm
+INPUT c:\Users\fabianmoss\GitHub\fabianmoss\intro-corpusmus\presentations\0_intro.tex
+INPUT c:\Users\fabianmoss\GitHub\fabianmoss\intro-corpusmus\presentations\0_intro.tex
+INPUT c:\Users\fabianmoss\GitHub\fabianmoss\intro-corpusmus\presentations\img\schubert_score_1-4.pdf
+INPUT c:\Users\fabianmoss\GitHub\fabianmoss\intro-corpusmus\presentations\img\schubert_score_1-4.pdf
+INPUT c:\Users\fabianmoss\GitHub\fabianmoss\intro-corpusmus\presentations\img\schubert_score_1-4.pdf
+INPUT c:\Users\fabianmoss\GitHub\fabianmoss\intro-corpusmus\presentations\img\schubert_score_1-4.pdf
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\cm\cmmi10.tfm
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\cm\cmmi8.tfm
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\cm\cmmi6.tfm
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\cm\cmsy10.tfm
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\cm\cmsy8.tfm
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\cm\cmsy6.tfm
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\cm\cmex10.tfm
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\amsfonts\cmextra\cmex8.tfm
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\amsfonts\cmextra\cmex7.tfm
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\amsfonts\symbols\msam10.tfm
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\amsfonts\symbols\msam10.tfm
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\amsfonts\symbols\msam7.tfm
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\amsfonts\symbols\msbm10.tfm
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\amsfonts\symbols\msbm10.tfm
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\amsfonts\symbols\msbm7.tfm
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex\latex\sansmathaccent\ot1mathkerncmss.fd
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex\latex\sansmathaccent\ot1mathkerncmss.fd
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\sansmathaccent\mathkerncmssi10.tfm
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\sansmathaccent\mathkerncmssi8.tfm
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\sansmathaccent\mathkerncmssi8.tfm
+INPUT c:\Users\fabianmoss\GitHub\fabianmoss\intro-corpusmus\presentations\img\schubert_score_B.pdf
+INPUT c:\Users\fabianmoss\GitHub\fabianmoss\intro-corpusmus\presentations\img\schubert_score_B.pdf
+INPUT c:\Users\fabianmoss\GitHub\fabianmoss\intro-corpusmus\presentations\img\schubert_score_B.pdf
+INPUT c:\Users\fabianmoss\GitHub\fabianmoss\intro-corpusmus\presentations\img\schubert_score_B.pdf
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\cm\cmssbx10.tfm
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\cm\cmssi10.tfm
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\cm\cmss8.tfm
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\cm\cmss8.tfm
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\amsfonts\cmextra\cmex7.tfm
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\amsfonts\cmextra\cmex7.tfm
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\amsfonts\symbols\msam10.tfm
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\amsfonts\symbols\msam7.tfm
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\amsfonts\symbols\msam5.tfm
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\amsfonts\symbols\msbm10.tfm
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\amsfonts\symbols\msbm7.tfm
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\amsfonts\symbols\msbm5.tfm
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\sansmathaccent\mathkerncmssi10.tfm
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\sansmathaccent\mathkerncmssi8.tfm
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\sansmathaccent\mathkerncmssi8.tfm
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\cm\cmss12.tfm
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\cm\cmss8.tfm
+INPUT C:\Users\fabianmoss\AppData\Local\MiKTeX\2.9\pdftex\config\pdftex.map
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\ts1cmss.fd
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\ts1cmss.fd
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\jknappen\ec\tcss1000.tfm
+INPUT c:\Users\fabianmoss\GitHub\fabianmoss\intro-corpusmus\presentations\1_computational_music_analysis.tex
+INPUT c:\Users\fabianmoss\GitHub\fabianmoss\intro-corpusmus\presentations\1_computational_music_analysis.tex
+INPUT c:\Users\fabianmoss\GitHub\fabianmoss\intro-corpusmus\presentations\img\composer_counts.pdf
+INPUT c:\Users\fabianmoss\GitHub\fabianmoss\intro-corpusmus\presentations\img\composer_counts.pdf
+INPUT c:\Users\fabianmoss\GitHub\fabianmoss\intro-corpusmus\presentations\img\composer_counts.pdf
+INPUT c:\Users\fabianmoss\GitHub\fabianmoss\intro-corpusmus\presentations\img\composer_counts.pdf
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\cm\cmssbx10.tfm
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\cm\cmssi10.tfm
+INPUT c:\Users\fabianmoss\GitHub\fabianmoss\intro-corpusmus\presentations\2_understanding_uncertainty.tex
+INPUT c:\Users\fabianmoss\GitHub\fabianmoss\intro-corpusmus\presentations\2_understanding_uncertainty.tex
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\jknappen\ec\tcss1095.tfm
+INPUT c:\Users\fabianmoss\GitHub\fabianmoss\intro-corpusmus\presentations\img\musescore_screenshot.png
+INPUT c:\Users\fabianmoss\GitHub\fabianmoss\intro-corpusmus\presentations\img\musescore_screenshot.png
+INPUT c:\Users\fabianmoss\GitHub\fabianmoss\intro-corpusmus\presentations\img\musescore_screenshot.png
+INPUT c:\Users\fabianmoss\GitHub\fabianmoss\intro-corpusmus\presentations\img\musescore_screenshot.png
+INPUT c:\Users\fabianmoss\GitHub\fabianmoss\intro-corpusmus\presentations\img\musescore_screenshot.png
+INPUT c:\Users\fabianmoss\GitHub\fabianmoss\intro-corpusmus\presentations\img\musescore_screenshot.png
+INPUT c:\Users\fabianmoss\GitHub\fabianmoss\intro-corpusmus\presentations\img\musescore_screenshot.png
+INPUT c:\Users\fabianmoss\GitHub\fabianmoss\intro-corpusmus\presentations\img\score.png
+INPUT c:\Users\fabianmoss\GitHub\fabianmoss\intro-corpusmus\presentations\img\score.png
+INPUT c:\Users\fabianmoss\GitHub\fabianmoss\intro-corpusmus\presentations\img\score.png
+INPUT c:\Users\fabianmoss\GitHub\fabianmoss\intro-corpusmus\presentations\img\score.png
+INPUT c:\Users\fabianmoss\GitHub\fabianmoss\intro-corpusmus\presentations\img\score.png
+INPUT c:\Users\fabianmoss\GitHub\fabianmoss\intro-corpusmus\presentations\img\xml.png
+INPUT c:\Users\fabianmoss\GitHub\fabianmoss\intro-corpusmus\presentations\img\xml.png
+INPUT c:\Users\fabianmoss\GitHub\fabianmoss\intro-corpusmus\presentations\img\xml.png
+INPUT c:\Users\fabianmoss\GitHub\fabianmoss\intro-corpusmus\presentations\img\xml.png
+INPUT c:\Users\fabianmoss\GitHub\fabianmoss\intro-corpusmus\presentations\img\xml.png
+INPUT c:\Users\fabianmoss\GitHub\fabianmoss\intro-corpusmus\presentations\img\expert.png
+INPUT c:\Users\fabianmoss\GitHub\fabianmoss\intro-corpusmus\presentations\img\expert.png
+INPUT c:\Users\fabianmoss\GitHub\fabianmoss\intro-corpusmus\presentations\img\expert.png
+INPUT c:\Users\fabianmoss\GitHub\fabianmoss\intro-corpusmus\presentations\img\expert.png
+INPUT c:\Users\fabianmoss\GitHub\fabianmoss\intro-corpusmus\presentations\img\expert.png
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\cm\cmmi9.tfm
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\cm\cmsy9.tfm
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\amsfonts\cmextra\cmex9.tfm
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\amsfonts\symbols\msam10.tfm
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\amsfonts\symbols\msbm10.tfm
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\sansmathaccent\mathkerncmssi9.tfm
+INPUT c:\Users\fabianmoss\GitHub\fabianmoss\intro-corpusmus\presentations\img\chord_stats.pdf
+INPUT c:\Users\fabianmoss\GitHub\fabianmoss\intro-corpusmus\presentations\img\chord_stats.pdf
+INPUT c:\Users\fabianmoss\GitHub\fabianmoss\intro-corpusmus\presentations\img\chord_stats.pdf
+INPUT c:\Users\fabianmoss\GitHub\fabianmoss\intro-corpusmus\presentations\img\chord_stats.pdf
+INPUT c:\Users\fabianmoss\GitHub\fabianmoss\intro-corpusmus\presentations\img\tpc_dists_sorted.pdf
+INPUT c:\Users\fabianmoss\GitHub\fabianmoss\intro-corpusmus\presentations\img\tpc_dists_sorted.pdf
+INPUT c:\Users\fabianmoss\GitHub\fabianmoss\intro-corpusmus\presentations\img\tpc_dists_sorted.pdf
+INPUT c:\Users\fabianmoss\GitHub\fabianmoss\intro-corpusmus\presentations\img\tpc_dists_sorted.pdf
+INPUT c:\Users\fabianmoss\GitHub\fabianmoss\intro-corpusmus\presentations\img\score.png
+INPUT c:\Users\fabianmoss\GitHub\fabianmoss\intro-corpusmus\presentations\img\score.png
+INPUT c:\Users\fabianmoss\GitHub\fabianmoss\intro-corpusmus\presentations\img\xml.png
+INPUT c:\Users\fabianmoss\GitHub\fabianmoss\intro-corpusmus\presentations\img\xml.png
+INPUT c:\Users\fabianmoss\GitHub\fabianmoss\intro-corpusmus\presentations\img\expert.png
+INPUT c:\Users\fabianmoss\GitHub\fabianmoss\intro-corpusmus\presentations\img\expert.png
+INPUT c:\Users\fabianmoss\GitHub\fabianmoss\intro-corpusmus\presentations\img\chord_stats.pdf
+INPUT c:\Users\fabianmoss\GitHub\fabianmoss\intro-corpusmus\presentations\img\chord_stats.pdf
+INPUT c:\Users\fabianmoss\GitHub\fabianmoss\intro-corpusmus\presentations\img\tpc_dists_sorted.pdf
+INPUT c:\Users\fabianmoss\GitHub\fabianmoss\intro-corpusmus\presentations\img\tpc_dists_sorted.pdf
+INPUT c:\Users\fabianmoss\GitHub\fabianmoss\intro-corpusmus\presentations\img\score.png
+INPUT c:\Users\fabianmoss\GitHub\fabianmoss\intro-corpusmus\presentations\img\score.png
+INPUT c:\Users\fabianmoss\GitHub\fabianmoss\intro-corpusmus\presentations\img\xml.png
+INPUT c:\Users\fabianmoss\GitHub\fabianmoss\intro-corpusmus\presentations\img\xml.png
+INPUT c:\Users\fabianmoss\GitHub\fabianmoss\intro-corpusmus\presentations\img\expert.png
+INPUT c:\Users\fabianmoss\GitHub\fabianmoss\intro-corpusmus\presentations\img\expert.png
+INPUT c:\Users\fabianmoss\GitHub\fabianmoss\intro-corpusmus\presentations\img\chord_stats.pdf
+INPUT c:\Users\fabianmoss\GitHub\fabianmoss\intro-corpusmus\presentations\img\chord_stats.pdf
+INPUT c:\Users\fabianmoss\GitHub\fabianmoss\intro-corpusmus\presentations\img\tpc_dists_sorted.pdf
+INPUT c:\Users\fabianmoss\GitHub\fabianmoss\intro-corpusmus\presentations\img\tpc_dists_sorted.pdf
+INPUT c:\Users\fabianmoss\GitHub\fabianmoss\intro-corpusmus\presentations\img\score.png
+INPUT c:\Users\fabianmoss\GitHub\fabianmoss\intro-corpusmus\presentations\img\score.png
+INPUT c:\Users\fabianmoss\GitHub\fabianmoss\intro-corpusmus\presentations\img\xml.png
+INPUT c:\Users\fabianmoss\GitHub\fabianmoss\intro-corpusmus\presentations\img\xml.png
+INPUT c:\Users\fabianmoss\GitHub\fabianmoss\intro-corpusmus\presentations\img\expert.png
+INPUT c:\Users\fabianmoss\GitHub\fabianmoss\intro-corpusmus\presentations\img\expert.png
+INPUT c:\Users\fabianmoss\GitHub\fabianmoss\intro-corpusmus\presentations\img\chord_stats.pdf
+INPUT c:\Users\fabianmoss\GitHub\fabianmoss\intro-corpusmus\presentations\img\chord_stats.pdf
+INPUT c:\Users\fabianmoss\GitHub\fabianmoss\intro-corpusmus\presentations\img\tpc_dists_sorted.pdf
+INPUT c:\Users\fabianmoss\GitHub\fabianmoss\intro-corpusmus\presentations\img\tpc_dists_sorted.pdf
+INPUT c:\Users\fabianmoss\GitHub\fabianmoss\intro-corpusmus\presentations\img\score.png
+INPUT c:\Users\fabianmoss\GitHub\fabianmoss\intro-corpusmus\presentations\img\score.png
+INPUT c:\Users\fabianmoss\GitHub\fabianmoss\intro-corpusmus\presentations\img\xml.png
+INPUT c:\Users\fabianmoss\GitHub\fabianmoss\intro-corpusmus\presentations\img\xml.png
+INPUT c:\Users\fabianmoss\GitHub\fabianmoss\intro-corpusmus\presentations\img\expert.png
+INPUT c:\Users\fabianmoss\GitHub\fabianmoss\intro-corpusmus\presentations\img\expert.png
+INPUT c:\Users\fabianmoss\GitHub\fabianmoss\intro-corpusmus\presentations\img\chord_stats.pdf
+INPUT c:\Users\fabianmoss\GitHub\fabianmoss\intro-corpusmus\presentations\img\chord_stats.pdf
+INPUT c:\Users\fabianmoss\GitHub\fabianmoss\intro-corpusmus\presentations\img\tpc_dists_sorted.pdf
+INPUT c:\Users\fabianmoss\GitHub\fabianmoss\intro-corpusmus\presentations\img\tpc_dists_sorted.pdf
+INPUT c:\Users\fabianmoss\GitHub\fabianmoss\intro-corpusmus\presentations\img\score.png
+INPUT c:\Users\fabianmoss\GitHub\fabianmoss\intro-corpusmus\presentations\img\score.png
+INPUT c:\Users\fabianmoss\GitHub\fabianmoss\intro-corpusmus\presentations\img\xml.png
+INPUT c:\Users\fabianmoss\GitHub\fabianmoss\intro-corpusmus\presentations\img\xml.png
+INPUT c:\Users\fabianmoss\GitHub\fabianmoss\intro-corpusmus\presentations\img\expert.png
+INPUT c:\Users\fabianmoss\GitHub\fabianmoss\intro-corpusmus\presentations\img\expert.png
+INPUT c:\Users\fabianmoss\GitHub\fabianmoss\intro-corpusmus\presentations\img\chord_stats.pdf
+INPUT c:\Users\fabianmoss\GitHub\fabianmoss\intro-corpusmus\presentations\img\chord_stats.pdf
+INPUT c:\Users\fabianmoss\GitHub\fabianmoss\intro-corpusmus\presentations\img\tpc_dists_sorted.pdf
+INPUT c:\Users\fabianmoss\GitHub\fabianmoss\intro-corpusmus\presentations\img\tpc_dists_sorted.pdf
+INPUT c:\Users\fabianmoss\GitHub\fabianmoss\intro-corpusmus\presentations\img\score.png
+INPUT c:\Users\fabianmoss\GitHub\fabianmoss\intro-corpusmus\presentations\img\score.png
+INPUT c:\Users\fabianmoss\GitHub\fabianmoss\intro-corpusmus\presentations\img\xml.png
+INPUT c:\Users\fabianmoss\GitHub\fabianmoss\intro-corpusmus\presentations\img\xml.png
+INPUT c:\Users\fabianmoss\GitHub\fabianmoss\intro-corpusmus\presentations\img\expert.png
+INPUT c:\Users\fabianmoss\GitHub\fabianmoss\intro-corpusmus\presentations\img\expert.png
+INPUT c:\Users\fabianmoss\GitHub\fabianmoss\intro-corpusmus\presentations\img\chord_stats.pdf
+INPUT c:\Users\fabianmoss\GitHub\fabianmoss\intro-corpusmus\presentations\img\chord_stats.pdf
+INPUT c:\Users\fabianmoss\GitHub\fabianmoss\intro-corpusmus\presentations\img\tpc_dists_sorted.pdf
+INPUT c:\Users\fabianmoss\GitHub\fabianmoss\intro-corpusmus\presentations\img\tpc_dists_sorted.pdf
+INPUT c:\Users\fabianmoss\GitHub\fabianmoss\intro-corpusmus\presentations\img\zipf_model.png
+INPUT c:\Users\fabianmoss\GitHub\fabianmoss\intro-corpusmus\presentations\img\zipf_model.png
+INPUT c:\Users\fabianmoss\GitHub\fabianmoss\intro-corpusmus\presentations\img\zipf_model.png
+INPUT c:\Users\fabianmoss\GitHub\fabianmoss\intro-corpusmus\presentations\img\zipf_model.png
+INPUT c:\Users\fabianmoss\GitHub\fabianmoss\intro-corpusmus\presentations\img\zipf_model.png
+INPUT c:\Users\fabianmoss\GitHub\fabianmoss\intro-corpusmus\presentations\img\zipf_model.png
+INPUT c:\Users\fabianmoss\GitHub\fabianmoss\intro-corpusmus\presentations\img\zipf_model.png
+INPUT c:\Users\fabianmoss\GitHub\fabianmoss\intro-corpusmus\presentations\img\ABC_zipf_mandelbrot.pdf
+INPUT c:\Users\fabianmoss\GitHub\fabianmoss\intro-corpusmus\presentations\img\ABC_zipf_mandelbrot.pdf
+INPUT c:\Users\fabianmoss\GitHub\fabianmoss\intro-corpusmus\presentations\img\ABC_zipf_mandelbrot.pdf
+INPUT c:\Users\fabianmoss\GitHub\fabianmoss\intro-corpusmus\presentations\img\ABC_zipf_mandelbrot.pdf
+INPUT c:\Users\fabianmoss\GitHub\fabianmoss\intro-corpusmus\presentations\img\freqrank_disterror.pdf
+INPUT c:\Users\fabianmoss\GitHub\fabianmoss\intro-corpusmus\presentations\img\freqrank_disterror.pdf
+INPUT c:\Users\fabianmoss\GitHub\fabianmoss\intro-corpusmus\presentations\img\freqrank_disterror.pdf
+INPUT c:\Users\fabianmoss\GitHub\fabianmoss\intro-corpusmus\presentations\img\freqrank_disterror.pdf
+INPUT c:\Users\fabianmoss\GitHub\fabianmoss\intro-corpusmus\presentations\3_data_driven_history.tex
+INPUT c:\Users\fabianmoss\GitHub\fabianmoss\intro-corpusmus\presentations\3_data_driven_history.tex
+INPUT c:\Users\fabianmoss\GitHub\fabianmoss\intro-corpusmus\presentations\img\score.png
+INPUT c:\Users\fabianmoss\GitHub\fabianmoss\intro-corpusmus\presentations\img\score.png
+INPUT c:\Users\fabianmoss\GitHub\fabianmoss\intro-corpusmus\presentations\img\xml.png
+INPUT c:\Users\fabianmoss\GitHub\fabianmoss\intro-corpusmus\presentations\img\xml.png
+INPUT c:\Users\fabianmoss\GitHub\fabianmoss\intro-corpusmus\presentations\img\expert.png
+INPUT c:\Users\fabianmoss\GitHub\fabianmoss\intro-corpusmus\presentations\img\expert.png
+INPUT c:\Users\fabianmoss\GitHub\fabianmoss\intro-corpusmus\presentations\img\chord_stats.pdf
+INPUT c:\Users\fabianmoss\GitHub\fabianmoss\intro-corpusmus\presentations\img\chord_stats.pdf
+INPUT c:\Users\fabianmoss\GitHub\fabianmoss\intro-corpusmus\presentations\img\tpc_dists_sorted.pdf
+INPUT c:\Users\fabianmoss\GitHub\fabianmoss\intro-corpusmus\presentations\img\tpc_dists_sorted.pdf
+INPUT c:\Users\fabianmoss\GitHub\fabianmoss\intro-corpusmus\presentations\img\score.png
+INPUT c:\Users\fabianmoss\GitHub\fabianmoss\intro-corpusmus\presentations\img\score.png
+INPUT c:\Users\fabianmoss\GitHub\fabianmoss\intro-corpusmus\presentations\img\xml.png
+INPUT c:\Users\fabianmoss\GitHub\fabianmoss\intro-corpusmus\presentations\img\xml.png
+INPUT c:\Users\fabianmoss\GitHub\fabianmoss\intro-corpusmus\presentations\img\expert.png
+INPUT c:\Users\fabianmoss\GitHub\fabianmoss\intro-corpusmus\presentations\img\expert.png
+INPUT c:\Users\fabianmoss\GitHub\fabianmoss\intro-corpusmus\presentations\img\chord_stats.pdf
+INPUT c:\Users\fabianmoss\GitHub\fabianmoss\intro-corpusmus\presentations\img\chord_stats.pdf
+INPUT c:\Users\fabianmoss\GitHub\fabianmoss\intro-corpusmus\presentations\img\tpc_dists_sorted.pdf
+INPUT c:\Users\fabianmoss\GitHub\fabianmoss\intro-corpusmus\presentations\img\tpc_dists_sorted.pdf
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\cm\cmssbx10.tfm
+INPUT c:\Users\fabianmoss\GitHub\fabianmoss\intro-corpusmus\presentations\img\line_of_fifths.tikz
+INPUT c:\Users\fabianmoss\GitHub\fabianmoss\intro-corpusmus\presentations\img\line_of_fifths.tikz
+INPUT c:\Users\fabianmoss\GitHub\fabianmoss\intro-corpusmus\presentations\img\tpc_dists_sorted.pdf
+INPUT c:\Users\fabianmoss\GitHub\fabianmoss\intro-corpusmus\presentations\img\tpc_dists_sorted.pdf
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\cm\cmssbx10.tfm
+INPUT c:\Users\fabianmoss\GitHub\fabianmoss\intro-corpusmus\presentations\img\tpc_dists.pdf
+INPUT c:\Users\fabianmoss\GitHub\fabianmoss\intro-corpusmus\presentations\img\tpc_dists.pdf
+INPUT c:\Users\fabianmoss\GitHub\fabianmoss\intro-corpusmus\presentations\img\tpc_dists.pdf
+INPUT c:\Users\fabianmoss\GitHub\fabianmoss\intro-corpusmus\presentations\img\tpc_dists.pdf
+INPUT c:\Users\fabianmoss\GitHub\fabianmoss\intro-corpusmus\presentations\img\line_of_fifths.tikz
+INPUT c:\Users\fabianmoss\GitHub\fabianmoss\intro-corpusmus\presentations\img\line_of_fifths.tikz
+INPUT c:\Users\fabianmoss\GitHub\fabianmoss\intro-corpusmus\presentations\img\tpc_dists_sorted.pdf
+INPUT c:\Users\fabianmoss\GitHub\fabianmoss\intro-corpusmus\presentations\img\tpc_dists_sorted.pdf
+INPUT c:\Users\fabianmoss\GitHub\fabianmoss\intro-corpusmus\presentations\img\tpc_dists.pdf
+INPUT c:\Users\fabianmoss\GitHub\fabianmoss\intro-corpusmus\presentations\img\tpc_dists.pdf
+INPUT c:\Users\fabianmoss\GitHub\fabianmoss\intro-corpusmus\presentations\img\line_of_fifths.tikz
+INPUT c:\Users\fabianmoss\GitHub\fabianmoss\intro-corpusmus\presentations\img\line_of_fifths.tikz
+INPUT c:\Users\fabianmoss\GitHub\fabianmoss\intro-corpusmus\presentations\img\tpc_dists_sorted.pdf
+INPUT c:\Users\fabianmoss\GitHub\fabianmoss\intro-corpusmus\presentations\img\tpc_dists_sorted.pdf
+INPUT c:\Users\fabianmoss\GitHub\fabianmoss\intro-corpusmus\presentations\img\tpc_dists.pdf
+INPUT c:\Users\fabianmoss\GitHub\fabianmoss\intro-corpusmus\presentations\img\tpc_dists.pdf
+INPUT c:\Users\fabianmoss\GitHub\fabianmoss\intro-corpusmus\presentations\img\line_of_fifths.tikz
+INPUT c:\Users\fabianmoss\GitHub\fabianmoss\intro-corpusmus\presentations\img\line_of_fifths.tikz
+INPUT c:\Users\fabianmoss\GitHub\fabianmoss\intro-corpusmus\presentations\img\tpc_dists_sorted.pdf
+INPUT c:\Users\fabianmoss\GitHub\fabianmoss\intro-corpusmus\presentations\img\tpc_dists_sorted.pdf
+INPUT c:\Users\fabianmoss\GitHub\fabianmoss\intro-corpusmus\presentations\img\tpc_dists.pdf
+INPUT c:\Users\fabianmoss\GitHub\fabianmoss\intro-corpusmus\presentations\img\tpc_dists.pdf
+INPUT c:\Users\fabianmoss\GitHub\fabianmoss\intro-corpusmus\presentations\img\piece_dist.pdf
+INPUT c:\Users\fabianmoss\GitHub\fabianmoss\intro-corpusmus\presentations\img\piece_dist.pdf
+INPUT c:\Users\fabianmoss\GitHub\fabianmoss\intro-corpusmus\presentations\img\piece_dist.pdf
+INPUT c:\Users\fabianmoss\GitHub\fabianmoss\intro-corpusmus\presentations\img\piece_dist.pdf
+INPUT c:\Users\fabianmoss\GitHub\fabianmoss\intro-corpusmus\presentations\img\dim_reduct_Isomap.pdf
+INPUT c:\Users\fabianmoss\GitHub\fabianmoss\intro-corpusmus\presentations\img\dim_reduct_Isomap.pdf
+INPUT c:\Users\fabianmoss\GitHub\fabianmoss\intro-corpusmus\presentations\img\dim_reduct_Isomap.pdf
+INPUT c:\Users\fabianmoss\GitHub\fabianmoss\intro-corpusmus\presentations\img\dim_reduct_Isomap.pdf
+INPUT c:\Users\fabianmoss\GitHub\fabianmoss\intro-corpusmus\presentations\img\dim_reduct_PCA.pdf
+INPUT c:\Users\fabianmoss\GitHub\fabianmoss\intro-corpusmus\presentations\img\dim_reduct_PCA.pdf
+INPUT c:\Users\fabianmoss\GitHub\fabianmoss\intro-corpusmus\presentations\img\dim_reduct_PCA.pdf
+INPUT c:\Users\fabianmoss\GitHub\fabianmoss\intro-corpusmus\presentations\img\dim_reduct_PCA.pdf
+INPUT c:\Users\fabianmoss\GitHub\fabianmoss\intro-corpusmus\presentations\img\dim_reduct_MDS.pdf
+INPUT c:\Users\fabianmoss\GitHub\fabianmoss\intro-corpusmus\presentations\img\dim_reduct_MDS.pdf
+INPUT c:\Users\fabianmoss\GitHub\fabianmoss\intro-corpusmus\presentations\img\dim_reduct_MDS.pdf
+INPUT c:\Users\fabianmoss\GitHub\fabianmoss\intro-corpusmus\presentations\img\dim_reduct_MDS.pdf
+INPUT c:\Users\fabianmoss\GitHub\fabianmoss\intro-corpusmus\presentations\img\line_of_fifths.tikz
+INPUT c:\Users\fabianmoss\GitHub\fabianmoss\intro-corpusmus\presentations\img\line_of_fifths.tikz
+INPUT c:\Users\fabianmoss\GitHub\fabianmoss\intro-corpusmus\presentations\img\dim_reduct_Isomap.pdf
+INPUT c:\Users\fabianmoss\GitHub\fabianmoss\intro-corpusmus\presentations\img\dim_reduct_Isomap.pdf
+INPUT c:\Users\fabianmoss\GitHub\fabianmoss\intro-corpusmus\presentations\img\dim_reduct_PCA.pdf
+INPUT c:\Users\fabianmoss\GitHub\fabianmoss\intro-corpusmus\presentations\img\dim_reduct_PCA.pdf
+INPUT c:\Users\fabianmoss\GitHub\fabianmoss\intro-corpusmus\presentations\img\dim_reduct_MDS.pdf
+INPUT c:\Users\fabianmoss\GitHub\fabianmoss\intro-corpusmus\presentations\img\dim_reduct_MDS.pdf
+INPUT c:\Users\fabianmoss\GitHub\fabianmoss\intro-corpusmus\presentations\img\line_of_fifths.tikz
+INPUT c:\Users\fabianmoss\GitHub\fabianmoss\intro-corpusmus\presentations\img\line_of_fifths.tikz
+INPUT c:\Users\fabianmoss\GitHub\fabianmoss\intro-corpusmus\presentations\img\fifth_width.pdf
+INPUT c:\Users\fabianmoss\GitHub\fabianmoss\intro-corpusmus\presentations\img\fifth_width.pdf
+INPUT c:\Users\fabianmoss\GitHub\fabianmoss\intro-corpusmus\presentations\img\fifth_width.pdf
+INPUT c:\Users\fabianmoss\GitHub\fabianmoss\intro-corpusmus\presentations\img\fifth_width.pdf
+INPUT c:\Users\fabianmoss\GitHub\fabianmoss\intro-corpusmus\presentations\img\hostinsky_tonnetz.png
+INPUT c:\Users\fabianmoss\GitHub\fabianmoss\intro-corpusmus\presentations\img\hostinsky_tonnetz.png
+INPUT c:\Users\fabianmoss\GitHub\fabianmoss\intro-corpusmus\presentations\img\hostinsky_tonnetz.png
+INPUT c:\Users\fabianmoss\GitHub\fabianmoss\intro-corpusmus\presentations\img\hostinsky_tonnetz.png
+INPUT c:\Users\fabianmoss\GitHub\fabianmoss\intro-corpusmus\presentations\img\hostinsky_tonnetz.png
+INPUT c:\Users\fabianmoss\GitHub\fabianmoss\intro-corpusmus\presentations\img\hostinsky_tonnetz.png
+INPUT c:\Users\fabianmoss\GitHub\fabianmoss\intro-corpusmus\presentations\img\hostinsky_tonnetz.png
+INPUT c:\Users\fabianmoss\GitHub\fabianmoss\intro-corpusmus\presentations\img\hostinsky_tonnetz.png
+INPUT c:\Users\fabianmoss\GitHub\fabianmoss\intro-corpusmus\presentations\img\hostinsky_tonnetz.png
+INPUT c:\Users\fabianmoss\GitHub\fabianmoss\intro-corpusmus\presentations\scores\parallel.pdf
+INPUT c:\Users\fabianmoss\GitHub\fabianmoss\intro-corpusmus\presentations\scores\parallel.pdf
+INPUT c:\Users\fabianmoss\GitHub\fabianmoss\intro-corpusmus\presentations\scores\parallel.pdf
+INPUT c:\Users\fabianmoss\GitHub\fabianmoss\intro-corpusmus\presentations\scores\parallel.pdf
+INPUT c:\Users\fabianmoss\GitHub\fabianmoss\intro-corpusmus\presentations\scores\relative.pdf
+INPUT c:\Users\fabianmoss\GitHub\fabianmoss\intro-corpusmus\presentations\scores\relative.pdf
+INPUT c:\Users\fabianmoss\GitHub\fabianmoss\intro-corpusmus\presentations\scores\relative.pdf
+INPUT c:\Users\fabianmoss\GitHub\fabianmoss\intro-corpusmus\presentations\scores\relative.pdf
+INPUT c:\Users\fabianmoss\GitHub\fabianmoss\intro-corpusmus\presentations\scores\leading_tone.pdf
+INPUT c:\Users\fabianmoss\GitHub\fabianmoss\intro-corpusmus\presentations\scores\leading_tone.pdf
+INPUT c:\Users\fabianmoss\GitHub\fabianmoss\intro-corpusmus\presentations\scores\leading_tone.pdf
+INPUT c:\Users\fabianmoss\GitHub\fabianmoss\intro-corpusmus\presentations\scores\leading_tone.pdf
+INPUT c:\Users\fabianmoss\GitHub\fabianmoss\intro-corpusmus\presentations\tonnetz.tex
+INPUT c:\Users\fabianmoss\GitHub\fabianmoss\intro-corpusmus\presentations\tonnetz.tex
+INPUT c:\Users\fabianmoss\GitHub\fabianmoss\intro-corpusmus\presentations\scores\parallel.pdf
+INPUT c:\Users\fabianmoss\GitHub\fabianmoss\intro-corpusmus\presentations\scores\parallel.pdf
+INPUT c:\Users\fabianmoss\GitHub\fabianmoss\intro-corpusmus\presentations\scores\relative.pdf
+INPUT c:\Users\fabianmoss\GitHub\fabianmoss\intro-corpusmus\presentations\scores\relative.pdf
+INPUT c:\Users\fabianmoss\GitHub\fabianmoss\intro-corpusmus\presentations\scores\leading_tone.pdf
+INPUT c:\Users\fabianmoss\GitHub\fabianmoss\intro-corpusmus\presentations\scores\leading_tone.pdf
+INPUT c:\Users\fabianmoss\GitHub\fabianmoss\intro-corpusmus\presentations\tonnetz.tex
+INPUT c:\Users\fabianmoss\GitHub\fabianmoss\intro-corpusmus\presentations\tonnetz.tex
+INPUT c:\Users\fabianmoss\GitHub\fabianmoss\intro-corpusmus\presentations\scores\parallel.pdf
+INPUT c:\Users\fabianmoss\GitHub\fabianmoss\intro-corpusmus\presentations\scores\parallel.pdf
+INPUT c:\Users\fabianmoss\GitHub\fabianmoss\intro-corpusmus\presentations\scores\relative.pdf
+INPUT c:\Users\fabianmoss\GitHub\fabianmoss\intro-corpusmus\presentations\scores\relative.pdf
+INPUT c:\Users\fabianmoss\GitHub\fabianmoss\intro-corpusmus\presentations\scores\leading_tone.pdf
+INPUT c:\Users\fabianmoss\GitHub\fabianmoss\intro-corpusmus\presentations\scores\leading_tone.pdf
+INPUT c:\Users\fabianmoss\GitHub\fabianmoss\intro-corpusmus\presentations\tonnetz.tex
+INPUT c:\Users\fabianmoss\GitHub\fabianmoss\intro-corpusmus\presentations\tonnetz.tex
+INPUT c:\Users\fabianmoss\GitHub\fabianmoss\intro-corpusmus\presentations\scores\parallel.pdf
+INPUT c:\Users\fabianmoss\GitHub\fabianmoss\intro-corpusmus\presentations\scores\parallel.pdf
+INPUT c:\Users\fabianmoss\GitHub\fabianmoss\intro-corpusmus\presentations\scores\relative.pdf
+INPUT c:\Users\fabianmoss\GitHub\fabianmoss\intro-corpusmus\presentations\scores\relative.pdf
+INPUT c:\Users\fabianmoss\GitHub\fabianmoss\intro-corpusmus\presentations\scores\leading_tone.pdf
+INPUT c:\Users\fabianmoss\GitHub\fabianmoss\intro-corpusmus\presentations\scores\leading_tone.pdf
+INPUT c:\Users\fabianmoss\GitHub\fabianmoss\intro-corpusmus\presentations\tonnetz.tex
+INPUT c:\Users\fabianmoss\GitHub\fabianmoss\intro-corpusmus\presentations\tonnetz.tex
+INPUT c:\Users\fabianmoss\GitHub\fabianmoss\intro-corpusmus\presentations\scores\parallel.pdf
+INPUT c:\Users\fabianmoss\GitHub\fabianmoss\intro-corpusmus\presentations\scores\parallel.pdf
+INPUT c:\Users\fabianmoss\GitHub\fabianmoss\intro-corpusmus\presentations\scores\relative.pdf
+INPUT c:\Users\fabianmoss\GitHub\fabianmoss\intro-corpusmus\presentations\scores\relative.pdf
+INPUT c:\Users\fabianmoss\GitHub\fabianmoss\intro-corpusmus\presentations\scores\leading_tone.pdf
+INPUT c:\Users\fabianmoss\GitHub\fabianmoss\intro-corpusmus\presentations\scores\leading_tone.pdf
+INPUT c:\Users\fabianmoss\GitHub\fabianmoss\intro-corpusmus\presentations\tonnetz.tex
+INPUT c:\Users\fabianmoss\GitHub\fabianmoss\intro-corpusmus\presentations\tonnetz.tex
+OUTPUT c:\Users\fabianmoss\GitHub\fabianmoss\intro-corpusmus\presentations\intro-corpusmus.vrb
+INPUT c:\Users\fabianmoss\GitHub\fabianmoss\intro-corpusmus\presentations\intro-corpusmus.vrb
+INPUT c:\Users\fabianmoss\GitHub\fabianmoss\intro-corpusmus\presentations\intro-corpusmus.vrb
+INPUT c:\Users\fabianmoss\GitHub\fabianmoss\intro-corpusmus\presentations\scores\diatonic.pdf
+INPUT c:\Users\fabianmoss\GitHub\fabianmoss\intro-corpusmus\presentations\scores\diatonic.pdf
+INPUT c:\Users\fabianmoss\GitHub\fabianmoss\intro-corpusmus\presentations\scores\diatonic.pdf
+INPUT c:\Users\fabianmoss\GitHub\fabianmoss\intro-corpusmus\presentations\scores\diatonic.pdf
+INPUT c:\Users\fabianmoss\GitHub\fabianmoss\intro-corpusmus\presentations\scores\octatonic.pdf
+INPUT c:\Users\fabianmoss\GitHub\fabianmoss\intro-corpusmus\presentations\scores\octatonic.pdf
+INPUT c:\Users\fabianmoss\GitHub\fabianmoss\intro-corpusmus\presentations\scores\octatonic.pdf
+INPUT c:\Users\fabianmoss\GitHub\fabianmoss\intro-corpusmus\presentations\scores\octatonic.pdf
+INPUT c:\Users\fabianmoss\GitHub\fabianmoss\intro-corpusmus\presentations\scores\hexatonic.pdf
+INPUT c:\Users\fabianmoss\GitHub\fabianmoss\intro-corpusmus\presentations\scores\hexatonic.pdf
+INPUT c:\Users\fabianmoss\GitHub\fabianmoss\intro-corpusmus\presentations\scores\hexatonic.pdf
+INPUT c:\Users\fabianmoss\GitHub\fabianmoss\intro-corpusmus\presentations\scores\hexatonic.pdf
+INPUT c:\Users\fabianmoss\GitHub\fabianmoss\intro-corpusmus\presentations\intro-corpusmus.vrb
+INPUT c:\Users\fabianmoss\GitHub\fabianmoss\intro-corpusmus\presentations\intro-corpusmus.vrb
+INPUT c:\Users\fabianmoss\GitHub\fabianmoss\intro-corpusmus\presentations\scores\diatonic.pdf
+INPUT c:\Users\fabianmoss\GitHub\fabianmoss\intro-corpusmus\presentations\scores\diatonic.pdf
+INPUT c:\Users\fabianmoss\GitHub\fabianmoss\intro-corpusmus\presentations\scores\octatonic.pdf
+INPUT c:\Users\fabianmoss\GitHub\fabianmoss\intro-corpusmus\presentations\scores\octatonic.pdf
+INPUT c:\Users\fabianmoss\GitHub\fabianmoss\intro-corpusmus\presentations\scores\hexatonic.pdf
+INPUT c:\Users\fabianmoss\GitHub\fabianmoss\intro-corpusmus\presentations\scores\hexatonic.pdf
+INPUT c:\Users\fabianmoss\GitHub\fabianmoss\intro-corpusmus\presentations\intro-corpusmus.vrb
+INPUT c:\Users\fabianmoss\GitHub\fabianmoss\intro-corpusmus\presentations\intro-corpusmus.vrb
+INPUT c:\Users\fabianmoss\GitHub\fabianmoss\intro-corpusmus\presentations\scores\diatonic.pdf
+INPUT c:\Users\fabianmoss\GitHub\fabianmoss\intro-corpusmus\presentations\scores\diatonic.pdf
+INPUT c:\Users\fabianmoss\GitHub\fabianmoss\intro-corpusmus\presentations\scores\octatonic.pdf
+INPUT c:\Users\fabianmoss\GitHub\fabianmoss\intro-corpusmus\presentations\scores\octatonic.pdf
+INPUT c:\Users\fabianmoss\GitHub\fabianmoss\intro-corpusmus\presentations\scores\hexatonic.pdf
+INPUT c:\Users\fabianmoss\GitHub\fabianmoss\intro-corpusmus\presentations\scores\hexatonic.pdf
+INPUT c:\Users\fabianmoss\GitHub\fabianmoss\intro-corpusmus\presentations\intro-corpusmus.vrb
+INPUT c:\Users\fabianmoss\GitHub\fabianmoss\intro-corpusmus\presentations\intro-corpusmus.vrb
+INPUT c:\Users\fabianmoss\GitHub\fabianmoss\intro-corpusmus\presentations\scores\diatonic.pdf
+INPUT c:\Users\fabianmoss\GitHub\fabianmoss\intro-corpusmus\presentations\scores\diatonic.pdf
+INPUT c:\Users\fabianmoss\GitHub\fabianmoss\intro-corpusmus\presentations\scores\octatonic.pdf
+INPUT c:\Users\fabianmoss\GitHub\fabianmoss\intro-corpusmus\presentations\scores\octatonic.pdf
+INPUT c:\Users\fabianmoss\GitHub\fabianmoss\intro-corpusmus\presentations\scores\hexatonic.pdf
+INPUT c:\Users\fabianmoss\GitHub\fabianmoss\intro-corpusmus\presentations\scores\hexatonic.pdf
+INPUT c:\Users\fabianmoss\GitHub\fabianmoss\intro-corpusmus\presentations\img\bach.pdf
+INPUT c:\Users\fabianmoss\GitHub\fabianmoss\intro-corpusmus\presentations\img\bach.pdf
+INPUT c:\Users\fabianmoss\GitHub\fabianmoss\intro-corpusmus\presentations\img\bach.pdf
+INPUT c:\Users\fabianmoss\GitHub\fabianmoss\intro-corpusmus\presentations\img\bach.pdf
+INPUT c:\Users\fabianmoss\GitHub\fabianmoss\intro-corpusmus\presentations\img\liszt.pdf
+INPUT c:\Users\fabianmoss\GitHub\fabianmoss\intro-corpusmus\presentations\img\liszt.pdf
+INPUT c:\Users\fabianmoss\GitHub\fabianmoss\intro-corpusmus\presentations\img\liszt.pdf
+INPUT c:\Users\fabianmoss\GitHub\fabianmoss\intro-corpusmus\presentations\img\liszt.pdf
+INPUT c:\Users\fabianmoss\GitHub\fabianmoss\intro-corpusmus\presentations\img\scriabin.pdf
+INPUT c:\Users\fabianmoss\GitHub\fabianmoss\intro-corpusmus\presentations\img\scriabin.pdf
+INPUT c:\Users\fabianmoss\GitHub\fabianmoss\intro-corpusmus\presentations\img\scriabin.pdf
+INPUT c:\Users\fabianmoss\GitHub\fabianmoss\intro-corpusmus\presentations\img\scriabin.pdf
+INPUT c:\Users\fabianmoss\GitHub\fabianmoss\intro-corpusmus\presentations\img\bach.pdf
+INPUT c:\Users\fabianmoss\GitHub\fabianmoss\intro-corpusmus\presentations\img\bach.pdf
+INPUT c:\Users\fabianmoss\GitHub\fabianmoss\intro-corpusmus\presentations\img\liszt.pdf
+INPUT c:\Users\fabianmoss\GitHub\fabianmoss\intro-corpusmus\presentations\img\liszt.pdf
+INPUT c:\Users\fabianmoss\GitHub\fabianmoss\intro-corpusmus\presentations\img\scriabin.pdf
+INPUT c:\Users\fabianmoss\GitHub\fabianmoss\intro-corpusmus\presentations\img\scriabin.pdf
+INPUT c:\Users\fabianmoss\GitHub\fabianmoss\intro-corpusmus\presentations\img\bach.pdf
+INPUT c:\Users\fabianmoss\GitHub\fabianmoss\intro-corpusmus\presentations\img\bach.pdf
+INPUT c:\Users\fabianmoss\GitHub\fabianmoss\intro-corpusmus\presentations\img\liszt.pdf
+INPUT c:\Users\fabianmoss\GitHub\fabianmoss\intro-corpusmus\presentations\img\liszt.pdf
+INPUT c:\Users\fabianmoss\GitHub\fabianmoss\intro-corpusmus\presentations\img\scriabin.pdf
+INPUT c:\Users\fabianmoss\GitHub\fabianmoss\intro-corpusmus\presentations\img\scriabin.pdf
+INPUT c:\Users\fabianmoss\GitHub\fabianmoss\intro-corpusmus\presentations\img\tpc_dists.pdf
+INPUT c:\Users\fabianmoss\GitHub\fabianmoss\intro-corpusmus\presentations\img\tpc_dists.pdf
+INPUT c:\Users\fabianmoss\GitHub\fabianmoss\intro-corpusmus\presentations\img\Schubert_90_2.pdf
+INPUT c:\Users\fabianmoss\GitHub\fabianmoss\intro-corpusmus\presentations\img\Schubert_90_2.pdf
+INPUT c:\Users\fabianmoss\GitHub\fabianmoss\intro-corpusmus\presentations\img\Schubert_90_2.pdf
+INPUT c:\Users\fabianmoss\GitHub\fabianmoss\intro-corpusmus\presentations\img\Schubert_90_2.pdf
+INPUT c:\Users\fabianmoss\GitHub\fabianmoss\intro-corpusmus\presentations\img\tikz_Schubert_90_2.pdf
+INPUT c:\Users\fabianmoss\GitHub\fabianmoss\intro-corpusmus\presentations\img\tikz_Schubert_90_2.pdf
+INPUT c:\Users\fabianmoss\GitHub\fabianmoss\intro-corpusmus\presentations\img\tikz_Schubert_90_2.pdf
+INPUT c:\Users\fabianmoss\GitHub\fabianmoss\intro-corpusmus\presentations\img\tikz_Schubert_90_2.pdf
+INPUT c:\Users\fabianmoss\GitHub\fabianmoss\intro-corpusmus\presentations\img\tpc_dists.pdf
+INPUT c:\Users\fabianmoss\GitHub\fabianmoss\intro-corpusmus\presentations\img\tpc_dists.pdf
+INPUT c:\Users\fabianmoss\GitHub\fabianmoss\intro-corpusmus\presentations\img\Schubert_90_2.pdf
+INPUT c:\Users\fabianmoss\GitHub\fabianmoss\intro-corpusmus\presentations\img\Schubert_90_2.pdf
+INPUT c:\Users\fabianmoss\GitHub\fabianmoss\intro-corpusmus\presentations\img\tikz_Schubert_90_2.pdf
+INPUT c:\Users\fabianmoss\GitHub\fabianmoss\intro-corpusmus\presentations\img\tikz_Schubert_90_2.pdf
+INPUT c:\Users\fabianmoss\GitHub\fabianmoss\intro-corpusmus\presentations\img\tpc_dists.pdf
+INPUT c:\Users\fabianmoss\GitHub\fabianmoss\intro-corpusmus\presentations\img\tpc_dists.pdf
+INPUT c:\Users\fabianmoss\GitHub\fabianmoss\intro-corpusmus\presentations\img\Schubert_90_2.pdf
+INPUT c:\Users\fabianmoss\GitHub\fabianmoss\intro-corpusmus\presentations\img\Schubert_90_2.pdf
+INPUT c:\Users\fabianmoss\GitHub\fabianmoss\intro-corpusmus\presentations\img\tikz_Schubert_90_2.pdf
+INPUT c:\Users\fabianmoss\GitHub\fabianmoss\intro-corpusmus\presentations\img\tikz_Schubert_90_2.pdf
+INPUT c:\Users\fabianmoss\GitHub\fabianmoss\intro-corpusmus\presentations\img\tpc_dists.pdf
+INPUT c:\Users\fabianmoss\GitHub\fabianmoss\intro-corpusmus\presentations\img\tpc_dists.pdf
+INPUT c:\Users\fabianmoss\GitHub\fabianmoss\intro-corpusmus\presentations\img\Schubert_90_2.pdf
+INPUT c:\Users\fabianmoss\GitHub\fabianmoss\intro-corpusmus\presentations\img\Schubert_90_2.pdf
+INPUT c:\Users\fabianmoss\GitHub\fabianmoss\intro-corpusmus\presentations\img\tikz_Schubert_90_2.pdf
+INPUT c:\Users\fabianmoss\GitHub\fabianmoss\intro-corpusmus\presentations\img\tikz_Schubert_90_2.pdf
+INPUT c:\Users\fabianmoss\GitHub\fabianmoss\intro-corpusmus\presentations\img\bootstrapped_weights.pdf
+INPUT c:\Users\fabianmoss\GitHub\fabianmoss\intro-corpusmus\presentations\img\bootstrapped_weights.pdf
+INPUT c:\Users\fabianmoss\GitHub\fabianmoss\intro-corpusmus\presentations\img\bootstrapped_weights.pdf
+INPUT c:\Users\fabianmoss\GitHub\fabianmoss\intro-corpusmus\presentations\img\bootstrapped_weights.pdf
+INPUT c:\Users\fabianmoss\GitHub\fabianmoss\intro-corpusmus\presentations\4_conclusion.tex
+INPUT c:\Users\fabianmoss\GitHub\fabianmoss\intro-corpusmus\presentations\4_conclusion.tex
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\cm\cmssbx10.tfm
+OUTPUT c:\Users\fabianmoss\GitHub\fabianmoss\intro-corpusmus\presentations\intro-corpusmus.nav
+OUTPUT c:\Users\fabianmoss\GitHub\fabianmoss\intro-corpusmus\presentations\intro-corpusmus.toc
+OUTPUT c:\Users\fabianmoss\GitHub\fabianmoss\intro-corpusmus\presentations\intro-corpusmus.snm
+INPUT c:\Users\fabianmoss\GitHub\fabianmoss\intro-corpusmus\presentations\intro-corpusmus.aux
+INPUT c:\Users\fabianmoss\GitHub\fabianmoss\intro-corpusmus\presentations\intro-corpusmus.out
+INPUT c:\Users\fabianmoss\GitHub\fabianmoss\intro-corpusmus\presentations\intro-corpusmus.out
+INPUT c:\Users\fabianmoss\GitHub\fabianmoss\intro-corpusmus\presentations\intro-corpusmus.run.xml
+OUTPUT c:\Users\fabianmoss\GitHub\fabianmoss\intro-corpusmus\presentations\intro-corpusmus.run.xml
+INPUT C:\Users\fabianmoss\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\tcss1095.pk
+INPUT C:\Users\fabianmoss\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\tcss1095.pk
+INPUT C:\Users\fabianmoss\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\tcss1000.pk
+INPUT C:\Users\fabianmoss\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\tcss1000.pk
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\cmextra\cmex9.pfb
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\cmextra\cmex9.pfb
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmmi10.pfb
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmmi10.pfb
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmmi8.pfb
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmmi8.pfb
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmmi9.pfb
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmmi9.pfb
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmss10.pfb
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmss10.pfb
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmss12.pfb
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmss12.pfb
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmss8.pfb
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmss8.pfb
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmss9.pfb
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmss9.pfb
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmssbx10.pfb
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmssbx10.pfb
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmssi10.pfb
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmssi10.pfb
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmssi9.pfb
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmssi9.pfb
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmsy10.pfb
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmsy10.pfb
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmsy8.pfb
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmsy8.pfb
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\symbols\msbm10.pfb
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\symbols\msbm10.pfb

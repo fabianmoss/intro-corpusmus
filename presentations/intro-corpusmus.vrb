@@ -1,0 +1,53 @@
+\frametitle{\insertsectionhead }
+
+  \begin{columns}
+    \begin{column}{.5\linewidth}
+      % The \emph{dual Tonnetz}
+
+      \begin{itemize}
+        \item<2-> \alert{diatonic} $\pm$ P5\\
+        \vspace{1em}
+          \includegraphics[width=\linewidth]{scores/diatonic.pdf}
+        \item<3-> \alert{octatonic} $\pm$ m3, $\pm$ P5\\
+        \vspace{1em}
+          \includegraphics[width=.55\linewidth]{scores/octatonic.pdf}
+        \item<4-> \alert{hexatonic} $\pm$ M3, $\pm$ P5\\
+        \vspace{1em}
+          \includegraphics[width=.45\linewidth]{scores/hexatonic.pdf}
+      \end{itemize}
+    \end{column}
+    %
+    \begin{column}{.5\linewidth}
+
+    \begin{figure}[tbp]
+    \centering
+    \newcommand*{\hex}[1]{
+      \def\r{0.55}
+      \draw[black!6,fill=black!4] ($(#1)+(30:\r)$) -- ($(#1)+(90:\r)$) -- ($(#1)+(150:\r)$)  -- ($(#1)+(210:\r)$) -- ($(#1)+(270:\r)$) -- ($(#1)+(330:\r)$) -- cycle;
+    }
+    \begin{tikzpicture}[scale=1.7]
+      % hexagon
+      \hex{0,0}
+      % notes
+      \foreach \a/\l/\i/\p in {
+        0/G/{$+$P5}/below,
+        -60/{E$\flat$}/{$+$m3}/below,
+        -120/{A$\flat$}/{$-$M3}/above,
+        -180/F/{$-$P5}/above,
+        -240/A/{$-$m3}/above,
+        -300/E/{$+$M3}/below,
+        1000/// % hack to avoid weird tikz label problem
+      } {
+        \ifthenelse{\a=1000}{}{
+          \hex{\a:1}
+          \draw (\a:0.15) edge[->,>=stealth,line width=1,shorten >=.5em] node[\p ,sloped,fill=white,fill opacity=0,text opacity=1] {\scalebox{0.8}{\i}} (\a:0.85);
+          \node [circle,draw,black, fill=white, minimum size=2em] at (\a:1) {\l};
+        }
+      }
+      % center
+      \node [circle,draw,black, fill=white, minimum size=2em] at (0,0) {C};
+    \end{tikzpicture}
+    % \caption{Primary intervals with respect to C.}\label{fig:primary_intervals}
+  \end{figure}
+\end{column}
+\end{columns}

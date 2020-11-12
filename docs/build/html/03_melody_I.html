@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-      <title>3. Melodies in Folk Songs</title>
+      <title>2. Melodies in Folk Songs</title>
     
       <link rel="stylesheet" href="_static/pygments.css">
       <link rel="stylesheet" href="_static/theme.css">
@@ -24,7 +24,7 @@
     
   <link rel="index" title="Index" href="genindex.html" />
   <link rel="search" title="Search" href="search.html" />
-  <link rel="prev" title="2. Introduction and Background" href="02_intro_background.html" /> 
+  <link rel="prev" title="1. Organization" href="01_organization.html" /> 
   </head>
 
   <body>
@@ -80,12 +80,6 @@
           </li>
 
         
-          <li class="toctree-l1 "><a href="02_intro_background.html" class="reference internal ">Introduction and Background</a>
-
-            
-          </li>
-
-        
           <li class="toctree-l1 current"><a href="#" class="reference internal current">Melodies in Folk Songs</a>
 
             
@@ -118,14 +112,14 @@
   <ul class="breadcrumbs">
     <li><a href="index.html">Docs</a> &raquo;</li>
     
-    <li><span class="section-number">3. </span>Melodies in Folk Songs</li>
+    <li><span class="section-number">2. </span>Melodies in Folk Songs</li>
   </ul>
   
 
   <ul class="page-nav">
   <li class="prev">
-    <a href="02_intro_background.html"
-       title="previous chapter">← <span class="section-number">2. </span>Introduction and Background</a>
+    <a href="01_organization.html"
+       title="previous chapter">← <span class="section-number">1. </span>Organization</a>
   </li>
 </ul>
   
@@ -367,7 +361,7 @@ div.rendered_html tbody tr:hover {
 }
 </style>
 <div class="section" id="Melodies-in-Folk-Songs">
-<h1><span class="section-number">3. </span>Melodies in Folk Songs<a class="headerlink" href="#Melodies-in-Folk-Songs" title="Permalink to this headline">¶</a></h1>
+<h1><span class="section-number">2. </span>Melodies in Folk Songs<a class="headerlink" href="#Melodies-in-Folk-Songs" title="Permalink to this headline">¶</a></h1>
 <p><strong>On Jupyter Hub, change the kernel to Python 3.7!</strong></p>
 <div class="nbinput nblast docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[10]:
@@ -405,7 +399,7 @@ div.rendered_html tbody tr:hover {
 </div>
 </div>
 <div class="section" id="The-Essen-Folksong-Collection">
-<h2><span class="section-number">3.1. </span>The <em>Essen Folksong Collection</em><a class="headerlink" href="#The-Essen-Folksong-Collection" title="Permalink to this headline">¶</a></h2>
+<h2><span class="section-number">2.1. </span>The <em>Essen Folksong Collection</em><a class="headerlink" href="#The-Essen-Folksong-Collection" title="Permalink to this headline">¶</a></h2>
 <p>In this session, we work with a corpus of melodies, the <em>Essen Folksong Collection</em> (EFC). There are several ways to access this corpus, for example through the interface provided by the Center for Computer Assisted Research in the Humanities (CCARH) at Stanford University: <a class="reference external" href="http://essen.themefinder.org/">http://essen.themefinder.org/</a> or via <a class="reference external" href="http://kern.ccarh.org/browse?l=essen">http://kern.ccarh.org/browse?l=essen</a>.</p>
 <p>A more convenient way to work with the pieces is by using the Python library <code class="docutils literal notranslate"><span class="pre">music21</span></code>. This library was developed and is maintaned my Mike Cuthbert at the MIT and is the most popular library for the computational analysis of symbolic music (i.e. scores). You can find its documentation here: <a class="reference external" href="http://web.mit.edu/music21/">http://web.mit.edu/music21/</a></p>
 <p>However, using <code class="docutils literal notranslate"><span class="pre">music21</span></code> requires some training and getting used to its particular API (the way how to interact with its functions). We will not get into too many details here but rather showcase how it can be used for our purposes.</p>
@@ -713,7 +707,7 @@ require(['music21'], function() {
 <p>We have seen that we can select items from lists by <strong>indexing</strong> them, <code class="docutils literal notranslate"><span class="pre">list[i]</span></code>. We can get ranges of lists by using the <code class="docutils literal notranslate"><span class="pre">:</span></code> character. For example, <code class="docutils literal notranslate"><span class="pre">list[:10]</span></code> shows the first ten elements, <code class="docutils literal notranslate"><span class="pre">list[10:]</span></code> shows everything after the ninth element, and <code class="docutils literal notranslate"><span class="pre">list[3:6]</span></code> shows elements 3, 4, and 5 (not 6!) of the list.</p>
 </div>
 <div class="section" id="Comparing-songs">
-<h2><span class="section-number">3.2. </span>Comparing songs<a class="headerlink" href="#Comparing-songs" title="Permalink to this headline">¶</a></h2>
+<h2><span class="section-number">2.2. </span>Comparing songs<a class="headerlink" href="#Comparing-songs" title="Permalink to this headline">¶</a></h2>
 <p>Looking at individual songs is interesting for music analysis but for that the computational approach is not really necessary. We could as easily do the same by just looking at a book of scores. The power of computational methods becomes clearer when we start comparing different songs, potentially in a large number.</p>
 <p>To facilitate this comparison, we will first load all songs in all corpora of the EFC into a single list, called <code class="docutils literal notranslate"><span class="pre">songs</span></code> (this might take a couple of minutes).</p>
 <div class="nbinput nblast docutils container">
@@ -819,7 +813,7 @@ require(['music21'], function() {
 <p>Analysis of songs…</p>
 </div>
 <div class="section" id="Computational-analysis">
-<h2><span class="section-number">3.3. </span>Computational analysis<a class="headerlink" href="#Computational-analysis" title="Permalink to this headline">¶</a></h2>
+<h2><span class="section-number">2.3. </span>Computational analysis<a class="headerlink" href="#Computational-analysis" title="Permalink to this headline">¶</a></h2>
 <p>We now go on to a computational analysis of these two and all the other songs. Specifically, we wil compare their <strong>melodic profiles</strong>. To make things a bit simpler, we will just look at the notes.</p>
 <p>A note can be easily represented as a pair of <strong>pitch</strong> (its height) and its <strong>duration</strong>. For example, the first note of the <em>Die plappernden Junggesellen</em> could be represented as <code class="docutils literal notranslate"><span class="pre">(D4,</span> <span class="pre">1/4)</span></code>; it is a quarter note on the pitch D4 (the 4 indicates the octave in which the note is).</p>
 <p>Another way to represent the pitch of notes is using <strong>MIDI numbers</strong>. MIDI stands for <em>Musical Instrument Digital Interface</em> and was developed for the communication between different electronic instruments such as keyboards. In MIDI, each note is simply associated with a number:</p>
@@ -1807,7 +1801,7 @@ require(['music21'], function() {
 </div>
 </div>
 <div class="section" id="The-melodic-arc">
-<h2><span class="section-number">3.4. </span>The melodic arc<a class="headerlink" href="#The-melodic-arc" title="Permalink to this headline">¶</a></h2>
+<h2><span class="section-number">2.4. </span>The melodic arc<a class="headerlink" href="#The-melodic-arc" title="Permalink to this headline">¶</a></h2>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[296]:
 </pre></div>
@@ -1865,7 +1859,7 @@ Wall time: 31 s
 </div>
 </div>
 <div class="section" id="Intervals">
-<h2><span class="section-number">3.5. </span>Intervals<a class="headerlink" href="#Intervals" title="Permalink to this headline">¶</a></h2>
+<h2><span class="section-number">2.5. </span>Intervals<a class="headerlink" href="#Intervals" title="Permalink to this headline">¶</a></h2>
 <p>We have seen that the melodic arc emerges as a stable shape over the entire EFC, and that sub-phrases of the songs likewise have an arc-like shape. In the remainder of this section, we look at <strong>intervals</strong>, the distance between two notes.</p>
 <p>Let’s come back to the song <em>Die plappernden Junggesellen</em></p>
 <div class="nbinput docutils container">
@@ -4462,8 +4456,8 @@ There are 442082 intervals in total in the corpus.
           <div class="page-nav">
             <div class="inner"><ul class="page-nav">
   <li class="prev">
-    <a href="02_intro_background.html"
-       title="previous chapter">← <span class="section-number">2. </span>Introduction and Background</a>
+    <a href="01_organization.html"
+       title="previous chapter">← <span class="section-number">1. </span>Organization</a>
   </li>
 </ul><div class="footer" role="contentinfo">
       &#169; Copyright 2020, Fabian C. Moss.

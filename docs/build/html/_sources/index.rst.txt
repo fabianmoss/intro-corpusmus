@@ -58,7 +58,6 @@ about quantitative approaches to musicology.
    :numbered:
 
    01_organization.rst
-   02_intro_background.ipynb
    03_melody_I.ipynb 
 
 .. Indices and tables

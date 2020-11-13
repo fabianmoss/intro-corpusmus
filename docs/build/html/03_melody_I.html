@@ -370,7 +370,7 @@ div.rendered_html tbody tr:hover {
 <h1><span class="section-number">3. </span>Melodies in Folk Songs<a class="headerlink" href="#Melodies-in-Folk-Songs" title="Permalink to this headline">¶</a></h1>
 <p><strong>On Jupyter Hub, change the kernel to Python 3.7!</strong></p>
 <div class="nbinput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[10]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[1]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
@@ -388,7 +388,7 @@ div.rendered_html tbody tr:hover {
 </div>
 </div>
 <div class="nbinput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[11]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[ ]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
@@ -411,7 +411,7 @@ div.rendered_html tbody tr:hover {
 <p>However, using <code class="docutils literal notranslate"><span class="pre">music21</span></code> requires some training and getting used to its particular API (the way how to interact with its functions). We will not get into too many details here but rather showcase how it can be used for our purposes.</p>
 <p>The first thing we do is to load the entire EFC and store it in a variable named <code class="docutils literal notranslate"><span class="pre">corpora</span></code>.</p>
 <div class="nbinput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[12]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[2]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
@@ -422,7 +422,7 @@ div.rendered_html tbody tr:hover {
 </div>
 <p>Calling the variable <code class="docutils literal notranslate"><span class="pre">corpora</span></code> shows that it consists of a list of file paths. Using the <code class="docutils literal notranslate"><span class="pre">len()</span></code> function, we can find out how many corpora are stored in the variable <code class="docutils literal notranslate"><span class="pre">corpora</span></code>.</p>
 <div class="nbinput docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[13]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[3]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
@@ -431,7 +431,7 @@ div.rendered_html tbody tr:hover {
 </div>
 </div>
 <div class="nboutput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[13]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[3]:
 </pre></div>
 </div>
 <div class="output_area docutils container">
@@ -441,7 +441,7 @@ div.rendered_html tbody tr:hover {
 </div>
 <p>We can also directly call the variable <code class="docutils literal notranslate"><span class="pre">corpora</span></code> to see what it contains:</p>
 <div class="nbinput docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[14]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[4]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
@@ -450,7 +450,7 @@ div.rendered_html tbody tr:hover {
 </div>
 </div>
 <div class="nboutput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[14]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[4]:
 </pre></div>
 </div>
 <div class="output_area docutils container">
@@ -492,7 +492,7 @@ div.rendered_html tbody tr:hover {
 <p>The <code class="docutils literal notranslate"><span class="pre">.abc</span></code> file ending refers to the ABC notation for encoding melodies. You find more information about the ABC encoding here: <a class="reference external" href="http://abcnotation.com/">http://abcnotation.com/</a></p>
 <p>For example, a song could be encoded like this:</p>
 <div class="nbinput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[15]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[6]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
@@ -514,7 +514,7 @@ div.rendered_html tbody tr:hover {
 <p>What can we already understand from this encoding?</p>
 <p><code class="docutils literal notranslate"><span class="pre">music21</span></code> can load this string and display a graphical output of the score. This is done by a <strong>parser</strong>. A parser is a program that reads a file and produces a structured output.</p>
 <div class="nbinput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[16]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[7]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
@@ -525,7 +525,7 @@ div.rendered_html tbody tr:hover {
 <p>We did not need to give it the entire string again because we have already saved it in the <code class="docutils literal notranslate"><span class="pre">example_song</span></code> variable. The purpose of variables is that you can refer to them later in your code without explicitly needing to state its value.</p>
 <p>Calling the variable <code class="docutils literal notranslate"><span class="pre">parsed_example_song</span></code> now, however, does not really help us here…</p>
 <div class="nbinput docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[17]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[8]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
@@ -534,17 +534,17 @@ div.rendered_html tbody tr:hover {
 </div>
 </div>
 <div class="nboutput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[17]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[8]:
 </pre></div>
 </div>
 <div class="output_area docutils container">
 <div class="highlight"><pre>
-&lt;music21.stream.Score 0x1e4e4ea5a00&gt;
+&lt;music21.stream.Score 0x235ff1e0730&gt;
 </pre></div></div>
 </div>
 <p>It returns a somewhat cryptic statement that says that the variable countains a <code class="docutils literal notranslate"><span class="pre">music21.stream.Score</span></code> object. Understanding the internal organization of <code class="docutils literal notranslate"><span class="pre">music21</span></code> goes beyond this class. For us, it is suffient to know that these objects have certain associated functions, called <strong>methods</strong>, that we can use on them. To look at the score of this example song, we use the method <code class="docutils literal notranslate"><span class="pre">.show()</span></code>.</p>
 <div class="nbinput docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[18]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[9]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
@@ -561,7 +561,7 @@ div.rendered_html tbody tr:hover {
 </div>
 <p>Voilà, this is much better! Now, let us compare the score output to the ABC encoding of the song:</p>
 <div class="nbinput docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[19]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[10]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
@@ -591,7 +591,7 @@ K:G
 note names that are organized into bars with or without repetition signs.</p>
 <p><code class="docutils literal notranslate"><span class="pre">music21</span></code> even gives us the option to listen to the song if we path the <code class="docutils literal notranslate"><span class="pre">midi</span></code> argument to the <code class="docutils literal notranslate"><span class="pre">.show()</span></code> method:</p>
 <div class="nbinput docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[20]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[11]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
@@ -603,7 +603,7 @@ note names that are organized into bars with or without repetition signs.</p>
 <div class="prompt empty docutils container">
 </div>
 <div class="output_area rendered_html docutils container">
-<div id='midiPlayerDiv4161'></div>
+<div id='midiPlayerDiv2080'></div>
 <link rel="stylesheet" href="//cuthbertLab.github.io/music21j/css/m21.css"
     type="text/css" />
 <script>
@@ -612,14 +612,14 @@ require.config({
 });
 require(['music21'], function() {
                mp = new music21.miditools.MidiPlayer();
-               mp.addPlayer('#midiPlayerDiv4161');
+               mp.addPlayer('#midiPlayerDiv2080');
                mp.base64Load('data:audio/midi;base64,TVRoZAAAAAYAAQABBABNVHJrAAADYQD/AwAA4ABAAP9ZAgEAAP9YBAQCGAiIAJBDWoQAgEMAAJBFWoQAgEUAAJBHWoQAgEcAAJBIWoQAgEgAAJBKWoQAgEoAAJBMWoQAgEwAAJBKWoQAgEoAAJBHWoQAgEcAAJBKWoQAgEoAAJBMWoQAgEwAAJBKWoQAgEoAAJBHWoQAgEcAAJBKWoQAgEoAAJBMWoQAgEwAAJBKWoQAgEoAAJBHWoQAgEcAAJBIWogAgEgAAJBMWoQAgEwAAJBIWoQAgEgAAJBHWogAgEcAAJBKWoQAgEoAAJBHWoQAgEcAAJBIWogAgEgAAJBFWogAgEUAAJBFWogAgEUAAJBHWoQAgEcAAJBFWoQAgEUAAJBDWoQAgEMAAJBFWoQAgEUAAJBHWoQAgEcAAJBIWoQAgEgAAJBKWoQAgEoAAJBMWoQAgEwAAJBKWoQAgEoAAJBHWoQAgEcAAJBKWoQAgEoAAJBMWoQAgEwAAJBKWoQAgEoAAJBHWoQAgEcAAJBKWoQAgEoAAJBMWoQAgEwAAJBKWoQAgEoAAJBHWoQAgEcAAJBIWogAgEgAAJBMWoQAgEwAAJBIWoQAgEgAAJBHWogAgEcAAJBKWoQAgEoAAJBHWoQAgEcAAJBFWogAgEUAAJBCWogAgEIAAJBDWpAAgEMAAJBPWogAgE8AAJBPWoQAgE8AAJBOWoQAgE4AAJBPWoQAgE8AAJBKWoQAgEoAAJBHWoQAgEcAAJBKWoQAgEoAAJBPWogAgE8AAJBOWogAgE4AAJBMWogAgEwAAJBKWogAgEoAAJBIWogAgEgAAJBMWoQAgEwAAJBIWoQAgEgAAJBHWogAgEcAAJBKWoQAgEoAAJBHWoQAgEcAAJBIWogAgEgAAJBFWogAgEUAAJBFWogAgEUAAJBKWoQAgEoAAJBOWoQAgE4AAJBPWogAgE8AAJBPWoQAgE8AAJBOWoQAgE4AAJBPWogAgE8AAJBHWoQAgEcAAJBKWoQAgEoAAJBPWogAgE8AAJBOWogAgE4AAJBMWogAgEwAAJBKWogAgEoAAJBIWogAgEgAAJBMWoQAgEwAAJBIWoQAgEgAAJBHWogAgEcAAJBKWoQAgEoAAJBHWoQAgEcAAJBFWogAgEUAAJBCWogAgEIAAJBDWpAAgEMAiAD/LwA=');
         });
 </script></div>
 </div>
 <p>Now, what happens if we try to parse one of the corpora in the EFC? We can select a specific corpus by its <strong>index</strong> in the list. Python starts counting at 0, so the first file in the list corresponds to</p>
 <div class="nbinput docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[21]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[14]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
@@ -628,7 +628,7 @@ require(['music21'], function() {
 </div>
 </div>
 <div class="nboutput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[21]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[14]:
 </pre></div>
 </div>
 <div class="output_area docutils container">
@@ -638,7 +638,7 @@ WindowsPath(&#39;C:/Users/fabianmoss/anaconda3/Lib/site-packages/music21/corpus/
 </div>
 <p>As you can see, this is just the first file path in the variable <code class="docutils literal notranslate"><span class="pre">corpora</span></code>. Let’s try to parse it!</p>
 <div class="nbinput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[22]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[15]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
@@ -648,7 +648,7 @@ WindowsPath(&#39;C:/Users/fabianmoss/anaconda3/Lib/site-packages/music21/corpus/
 </div>
 <p>Looking at the new variable <code class="docutils literal notranslate"><span class="pre">first_corpus</span></code> shows a difference to the example song before; we don’t have a <code class="docutils literal notranslate"><span class="pre">music21.stream.Score</span></code> object but a <code class="docutils literal notranslate"><span class="pre">music21.stream.Opus</span></code> object.</p>
 <div class="nbinput docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[23]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[16]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
@@ -657,18 +657,18 @@ WindowsPath(&#39;C:/Users/fabianmoss/anaconda3/Lib/site-packages/music21/corpus/
 </div>
 </div>
 <div class="nboutput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[23]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[16]:
 </pre></div>
 </div>
 <div class="output_area docutils container">
 <div class="highlight"><pre>
-&lt;music21.stream.Opus 0x1e4e52bfdf0&gt;
+&lt;music21.stream.Opus 0x235ff39ad60&gt;
 </pre></div></div>
 </div>
 <p>If we would call the <code class="docutils literal notranslate"><span class="pre">.show()</span></code> method on <code class="docutils literal notranslate"><span class="pre">first_corpus</span></code>, we would see the scores of all pieces that are in this particular corpus. But we don’t know how many these are. It there are only three songs, it would not be a problem, but if there were thousands of songs, it could take a very long time to parse and display them all. Fortunately, all pieces in the collection have the <code class="docutils literal notranslate"><span class="pre">X:n</span></code> line that we saw above, so that we can directly reference them. With which number would we have to replace
 <code class="docutils literal notranslate"><span class="pre">n</span></code> if we wanted to look at the 7tst piece? Remember that Python starts counting at 0.</p>
 <div class="nbinput docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[24]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[17]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
@@ -683,8 +683,9 @@ WindowsPath(&#39;C:/Users/fabianmoss/anaconda3/Lib/site-packages/music21/corpus/
 <img alt="_images/03_melody_I_34_0.png" class="no-scaled-link" src="_images/03_melody_I_34_0.png" style="width: 753px; height: 286px;" />
 </div>
 </div>
+<p>A A B A’</p>
 <div class="nbinput docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[25]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[18]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
@@ -696,7 +697,7 @@ WindowsPath(&#39;C:/Users/fabianmoss/anaconda3/Lib/site-packages/music21/corpus/
 <div class="prompt empty docutils container">
 </div>
 <div class="output_area rendered_html docutils container">
-<div id='midiPlayerDiv29885'></div>
+<div id='midiPlayerDiv27804'></div>
 <link rel="stylesheet" href="//cuthbertLab.github.io/music21j/css/m21.css"
     type="text/css" />
 <script>
@@ -705,7 +706,7 @@ require.config({
 });
 require(['music21'], function() {
                mp = new music21.miditools.MidiPlayer();
-               mp.addPlayer('#midiPlayerDiv29885');
+               mp.addPlayer('#midiPlayerDiv27804');
                mp.base64Load('data:audio/midi;base64,TVRoZAAAAAYAAQABBABNVHJrAAABogD/AwAA4ABAAP9ZAgEAAP9YBAQCGAiIAJA+WogAgD4AAJBDWpAAgEMAAJBHWpAAgEcAAJBKWpgAgEoAAJBIWogAgEgAAJBHWpAAgEcAAJBFWpAAgEUAAJBDWpAAgEMAiACQPlqIAIA+AACQQ1qQAIBDAACQR1qQAIBHAACQSlqYAIBKAACQSFqIAIBIAACQR1qQAIBHAACQRVqQAIBFAACQQ1qQAIBDAIgAkEdaiACARwAAkEdaiACARwAAkEdaiACARwAAkEdaiACARwAAkEdaiACARwAAkEdakACARwAAkEVaiACARQAAkENaiACAQwAAkEdaiACARwAAkEpaiACASgAAkEhaiACASAAAkEdaiACARwAAkEVakACARQCIAJA+WogAgD4AAJBDWogAgEMAAJBFWogAgEUAAJBHWogAgEcAAJBIWogAgEgAAJBKWowAgEoAAJBMWoQAgEwAAJBKWogAgEoAAJBIWogAgEgAAJBHWogAgEcAAJBHWogAgEcAAJBFWogAgEUAAJBFWogAgEUAAJBDWpAAgEMAiAD/LwA=');
         });
 </script></div>
@@ -717,7 +718,7 @@ require(['music21'], function() {
 <p>Looking at individual songs is interesting for music analysis but for that the computational approach is not really necessary. We could as easily do the same by just looking at a book of scores. The power of computational methods becomes clearer when we start comparing different songs, potentially in a large number.</p>
 <p>To facilitate this comparison, we will first load all songs in all corpora of the EFC into a single list, called <code class="docutils literal notranslate"><span class="pre">songs</span></code> (this might take a couple of minutes).</p>
 <div class="nbinput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[26]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[19]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
@@ -728,7 +729,7 @@ require(['music21'], function() {
 <p>This looks a bit complicated but all it does is to go through all corpora and extract all songs into a new list. The way we did it is called <strong>list comprehension</strong> in Python. It is not important if you don’t understand this now but feel free to look it up!</p>
 <p>Using the <code class="docutils literal notranslate"><span class="pre">len()</span></code> function again, we see how many songs we have in total.</p>
 <div class="nbinput docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[27]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[20]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
@@ -737,7 +738,7 @@ require(['music21'], function() {
 </div>
 </div>
 <div class="nboutput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[27]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[20]:
 </pre></div>
 </div>
 <div class="output_area docutils container">
@@ -747,7 +748,7 @@ require(['music21'], function() {
 </div>
 <p>We can now use the list <code class="docutils literal notranslate"><span class="pre">songs</span></code> to compare two different songs. Again, we load the 71st song of the first corpus and store it now in a variable <code class="docutils literal notranslate"><span class="pre">german_song</span></code>, and we load chinese song with index 6200 into the variable <code class="docutils literal notranslate"><span class="pre">chinese_song</span></code>.</p>
 <div class="nbinput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[28]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[21]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
@@ -758,7 +759,7 @@ require(['music21'], function() {
 </div>
 <p>It is easy to display these songs now:</p>
 <div class="nbinput docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[31]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[22]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
@@ -770,11 +771,11 @@ require(['music21'], function() {
 <div class="prompt empty docutils container">
 </div>
 <div class="output_area docutils container">
-<img alt="_images/03_melody_I_46_0.png" class="no-scaled-link" src="_images/03_melody_I_46_0.png" style="width: 753px; height: 286px;" />
+<img alt="_images/03_melody_I_47_0.png" class="no-scaled-link" src="_images/03_melody_I_47_0.png" style="width: 753px; height: 286px;" />
 </div>
 </div>
 <div class="nbinput docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[32]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[23]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
@@ -786,11 +787,11 @@ require(['music21'], function() {
 <div class="prompt empty docutils container">
 </div>
 <div class="output_area docutils container">
-<img alt="_images/03_melody_I_47_0.png" class="no-scaled-link" src="_images/03_melody_I_47_0.png" style="width: 753px; height: 286px;" />
+<img alt="_images/03_melody_I_48_0.png" class="no-scaled-link" src="_images/03_melody_I_48_0.png" style="width: 753px; height: 286px;" />
 </div>
 </div>
 <div class="nbinput docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[33]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[24]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
@@ -802,7 +803,7 @@ require(['music21'], function() {
 <div class="prompt empty docutils container">
 </div>
 <div class="output_area rendered_html docutils container">
-<div id='midiPlayerDiv687522'></div>
+<div id='midiPlayerDiv684563'></div>
 <link rel="stylesheet" href="//cuthbertLab.github.io/music21j/css/m21.css"
     type="text/css" />
 <script>
@@ -811,7 +812,7 @@ require.config({
 });
 require(['music21'], function() {
                mp = new music21.miditools.MidiPlayer();
-               mp.addPlayer('#midiPlayerDiv687522');
+               mp.addPlayer('#midiPlayerDiv684563');
                mp.base64Load('data:audio/midi;base64,TVRoZAAAAAYAAQABBABNVHJrAAACZgD/AwAA4ABAAP9ZAv8AAP9YBAICGAiIAJBIWoYAgEgAAJBIWoIAgEgAAJBKWoQAgEoAAJBNWoQAgE0AAJBIWoYAgEgAAJBKWoIAgEoAAJBIWoQAgEgAAJBFWoQAgEUAAJBDWoQAgEMAAJBFWoIAgEUAAJBIWoIAgEgAAJBBWoQAgEEAAJBAWoIAgEAAAJA+WoIAgD4AAJA8WpAAgDwAAJBFWoQAgEUAAJBFWoQAgEUAAJBIWoQAgEgAAJBKWoQAgEoAAJBNWoQAgE0AAJBKWoQAgEoAAJBIWoQAgEgAhACQSFqEAIBIAACQRVqEAIBFAACQQ1qEAIBDAACQPlqEAIA+AACQQVqQAIBBAACQRVqEAIBFAACQRVqCAIBFAACQSFqCAIBIAACQPlqEAIA+AACQQVqEAIBBAACQSFqGAIBIAACQSlqCAIBKAACQSFqEAIBIAACQRVqEAIBFAACQQ1qEAIBDAACQRVqCAIBFAACQSFqCAIBIAACQPlqEAIA+AACQQVqEAIBBAACQQ1qQAIBDAACQRVqGAIBFAACQRVqCAIBFAACQSFqEAIBIAACQSlqEAIBKAACQTVqEAIBNAACQSlqEAIBKAACQSFqEAIBIAACQRVqEAIBFAACQQ1qEAIBDAACQQ1qCAIBDAACQRVqCAIBFAACQQ1qCAIBDAACQQVqCAIBBAACQPlqEAIA+AACQSFqMAIBIAACQRVqEAIBFAACQQ1qEAIBDAACQQ1qCAIBDAACQRVqCAIBFAACQQ1qCAIBDAACQQVqCAIBBAACQPlqEAIA+AACQQVqQAIBBAIgA/y8A');
         });
 </script></div>
@@ -827,7 +828,7 @@ require(['music21'], function() {
 <p>We can see that D4 is associated with the number 62. The second note, the G4, is associated with 62+5=67 because G is five semitones above D.</p>
 <p>To make it easier to work with pieces in this way, we define a <strong>function</strong> that gives us a list of notes for each piece.</p>
 <div class="nbinput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[34]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[25]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
@@ -847,7 +848,7 @@ require(['music21'], function() {
 <p>Note that the duration of a note is given in quarter notes, i.e. a quarter note has a duration of 1, a half note has a duration of 2, and an eighth note has a duration of 0.5.</p>
 <p>Let’s display the first phrase (the first eight notes) of the German song:</p>
 <div class="nbinput docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[35]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[27]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
@@ -856,7 +857,7 @@ require(['music21'], function() {
 </div>
 </div>
 <div class="nboutput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[35]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[27]:
 </pre></div>
 </div>
 <div class="output_area rendered_html docutils container">
@@ -939,7 +940,7 @@ require(['music21'], function() {
 <p>Note that we added another column, “Onset”. What does it represent?</p>
 <p>This allows us now to look at the <strong>melodic profile</strong> of a particular song.</p>
 <div class="nbinput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[36]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[28]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
@@ -967,7 +968,7 @@ require(['music21'], function() {
 </div>
 </div>
 <div class="nbinput docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[37]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[29]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
@@ -979,12 +980,12 @@ require(['music21'], function() {
 <div class="prompt empty docutils container">
 </div>
 <div class="output_area docutils container">
-<img alt="_images/03_melody_I_59_0.png" class="no-scaled-link" src="_images/03_melody_I_59_0.png" style="width: 372px; height: 251px;" />
+<img alt="_images/03_melody_I_60_0.png" class="no-scaled-link" src="_images/03_melody_I_60_0.png" style="width: 372px; height: 251px;" />
 </div>
 </div>
 <p>Likewise, we can as easily plot the melodic contour of the Chinese song (we will use a different color).</p>
 <div class="nbinput docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[38]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[30]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
@@ -1002,14 +1003,14 @@ require(['music21'], function() {
 <div class="prompt empty docutils container">
 </div>
 <div class="output_area docutils container">
-<img alt="_images/03_melody_I_61_0.png" class="no-scaled-link" src="_images/03_melody_I_61_0.png" style="width: 574px; height: 420px;" />
+<img alt="_images/03_melody_I_62_0.png" class="no-scaled-link" src="_images/03_melody_I_62_0.png" style="width: 574px; height: 420px;" />
 </div>
 </div>
 <p>The dashed grey lines in both plots show the average MIDI pitch of the song.</p>
 <p>But still, it is quite difficult to compare them directly. They differ both with respect to their length (see the numbers on the “Onset” axis) and their pitches (see “MIDI Pitch” axis).</p>
 <p>We need to transform them in a way that makes them directly comparable. To that end, we define a new function <code class="docutils literal notranslate"><span class="pre">standardize()</span></code>.</p>
 <div class="nbinput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[39]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[31]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
@@ -1027,16 +1028,16 @@ require(['music21'], function() {
 </div>
 </div>
 <div class="nbinput docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[46]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[33]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">standardize</span><span class="p">(</span><span class="n">notelist</span><span class="p">(</span><span class="n">german_song</span><span class="p">))</span>
+<span></span><span class="n">standardize</span><span class="p">(</span><span class="n">notelist</span><span class="p">(</span><span class="n">german_song</span><span class="p">))[:</span><span class="mi">8</span><span class="p">]</span>
 </pre></div>
 </div>
 </div>
 <div class="nboutput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[46]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[33]:
 </pre></div>
 </div>
 <div class="output_area rendered_html docutils container">
@@ -1139,327 +1140,12 @@ require(['music21'], function() {
       <td>0.033333</td>
       <td>0.250000</td>
     </tr>
-    <tr>
-      <th>8</th>
-      <td>62</td>
-      <td>1.0</td>
-      <td>16.0</td>
-      <td>-2.543827</td>
-      <td>0.016667</td>
-      <td>0.266667</td>
-    </tr>
-    <tr>
-      <th>9</th>
-      <td>67</td>
-      <td>2.0</td>
-      <td>18.0</td>
-      <td>-0.949300</td>
-      <td>0.033333</td>
-      <td>0.300000</td>
-    </tr>
-    <tr>
-      <th>10</th>
-      <td>71</td>
-      <td>2.0</td>
-      <td>20.0</td>
-      <td>0.326322</td>
-      <td>0.033333</td>
-      <td>0.333333</td>
-    </tr>
-    <tr>
-      <th>11</th>
-      <td>74</td>
-      <td>3.0</td>
-      <td>23.0</td>
-      <td>1.283038</td>
-      <td>0.050000</td>
-      <td>0.383333</td>
-    </tr>
-    <tr>
-      <th>12</th>
-      <td>72</td>
-      <td>1.0</td>
-      <td>24.0</td>
-      <td>0.645227</td>
-      <td>0.016667</td>
-      <td>0.400000</td>
-    </tr>
-    <tr>
-      <th>13</th>
-      <td>71</td>
-      <td>2.0</td>
-      <td>26.0</td>
-      <td>0.326322</td>
-      <td>0.033333</td>
-      <td>0.433333</td>
-    </tr>
-    <tr>
-      <th>14</th>
-      <td>69</td>
-      <td>2.0</td>
-      <td>28.0</td>
-      <td>-0.311489</td>
-      <td>0.033333</td>
-      <td>0.466667</td>
-    </tr>
-    <tr>
-      <th>15</th>
-      <td>67</td>
-      <td>2.0</td>
-      <td>30.0</td>
-      <td>-0.949300</td>
-      <td>0.033333</td>
-      <td>0.500000</td>
-    </tr>
-    <tr>
-      <th>16</th>
-      <td>71</td>
-      <td>1.0</td>
-      <td>31.0</td>
-      <td>0.326322</td>
-      <td>0.016667</td>
-      <td>0.516667</td>
-    </tr>
-    <tr>
-      <th>17</th>
-      <td>71</td>
-      <td>1.0</td>
-      <td>32.0</td>
-      <td>0.326322</td>
-      <td>0.016667</td>
-      <td>0.533333</td>
-    </tr>
-    <tr>
-      <th>18</th>
-      <td>71</td>
-      <td>1.0</td>
-      <td>33.0</td>
-      <td>0.326322</td>
-      <td>0.016667</td>
-      <td>0.550000</td>
-    </tr>
-    <tr>
-      <th>19</th>
-      <td>71</td>
-      <td>1.0</td>
-      <td>34.0</td>
-      <td>0.326322</td>
-      <td>0.016667</td>
-      <td>0.566667</td>
-    </tr>
-    <tr>
-      <th>20</th>
-      <td>71</td>
-      <td>1.0</td>
-      <td>35.0</td>
-      <td>0.326322</td>
-      <td>0.016667</td>
-      <td>0.583333</td>
-    </tr>
-    <tr>
-      <th>21</th>
-      <td>71</td>
-      <td>2.0</td>
-      <td>37.0</td>
-      <td>0.326322</td>
-      <td>0.033333</td>
-      <td>0.616667</td>
-    </tr>
-    <tr>
-      <th>22</th>
-      <td>69</td>
-      <td>1.0</td>
-      <td>38.0</td>
-      <td>-0.311489</td>
-      <td>0.016667</td>
-      <td>0.633333</td>
-    </tr>
-    <tr>
-      <th>23</th>
-      <td>67</td>
-      <td>1.0</td>
-      <td>39.0</td>
-      <td>-0.949300</td>
-      <td>0.016667</td>
-      <td>0.650000</td>
-    </tr>
-    <tr>
-      <th>24</th>
-      <td>71</td>
-      <td>1.0</td>
-      <td>40.0</td>
-      <td>0.326322</td>
-      <td>0.016667</td>
-      <td>0.666667</td>
-    </tr>
-    <tr>
-      <th>25</th>
-      <td>74</td>
-      <td>1.0</td>
-      <td>41.0</td>
-      <td>1.283038</td>
-      <td>0.016667</td>
-      <td>0.683333</td>
-    </tr>
-    <tr>
-      <th>26</th>
-      <td>72</td>
-      <td>1.0</td>
-      <td>42.0</td>
-      <td>0.645227</td>
-      <td>0.016667</td>
-      <td>0.700000</td>
-    </tr>
-    <tr>
-      <th>27</th>
-      <td>71</td>
-      <td>1.0</td>
-      <td>43.0</td>
-      <td>0.326322</td>
-      <td>0.016667</td>
-      <td>0.716667</td>
-    </tr>
-    <tr>
-      <th>28</th>
-      <td>69</td>
-      <td>2.0</td>
-      <td>45.0</td>
-      <td>-0.311489</td>
-      <td>0.033333</td>
-      <td>0.750000</td>
-    </tr>
-    <tr>
-      <th>29</th>
-      <td>62</td>
-      <td>1.0</td>
-      <td>46.0</td>
-      <td>-2.543827</td>
-      <td>0.016667</td>
-      <td>0.766667</td>
-    </tr>
-    <tr>
-      <th>30</th>
-      <td>67</td>
-      <td>1.0</td>
-      <td>47.0</td>
-      <td>-0.949300</td>
-      <td>0.016667</td>
-      <td>0.783333</td>
-    </tr>
-    <tr>
-      <th>31</th>
-      <td>69</td>
-      <td>1.0</td>
-      <td>48.0</td>
-      <td>-0.311489</td>
-      <td>0.016667</td>
-      <td>0.800000</td>
-    </tr>
-    <tr>
-      <th>32</th>
-      <td>71</td>
-      <td>1.0</td>
-      <td>49.0</td>
-      <td>0.326322</td>
-      <td>0.016667</td>
-      <td>0.816667</td>
-    </tr>
-    <tr>
-      <th>33</th>
-      <td>72</td>
-      <td>1.0</td>
-      <td>50.0</td>
-      <td>0.645227</td>
-      <td>0.016667</td>
-      <td>0.833333</td>
-    </tr>
-    <tr>
-      <th>34</th>
-      <td>74</td>
-      <td>1.5</td>
-      <td>51.5</td>
-      <td>1.283038</td>
-      <td>0.025000</td>
-      <td>0.858333</td>
-    </tr>
-    <tr>
-      <th>35</th>
-      <td>76</td>
-      <td>0.5</td>
-      <td>52.0</td>
-      <td>1.920849</td>
-      <td>0.008333</td>
-      <td>0.866667</td>
-    </tr>
-    <tr>
-      <th>36</th>
-      <td>74</td>
-      <td>1.0</td>
-      <td>53.0</td>
-      <td>1.283038</td>
-      <td>0.016667</td>
-      <td>0.883333</td>
-    </tr>
-    <tr>
-      <th>37</th>
-      <td>72</td>
-      <td>1.0</td>
-      <td>54.0</td>
-      <td>0.645227</td>
-      <td>0.016667</td>
-      <td>0.900000</td>
-    </tr>
-    <tr>
-      <th>38</th>
-      <td>71</td>
-      <td>1.0</td>
-      <td>55.0</td>
-      <td>0.326322</td>
-      <td>0.016667</td>
-      <td>0.916667</td>
-    </tr>
-    <tr>
-      <th>39</th>
-      <td>71</td>
-      <td>1.0</td>
-      <td>56.0</td>
-      <td>0.326322</td>
-      <td>0.016667</td>
-      <td>0.933333</td>
-    </tr>
-    <tr>
-      <th>40</th>
-      <td>69</td>
-      <td>1.0</td>
-      <td>57.0</td>
-      <td>-0.311489</td>
-      <td>0.016667</td>
-      <td>0.950000</td>
-    </tr>
-    <tr>
-      <th>41</th>
-      <td>69</td>
-      <td>1.0</td>
-      <td>58.0</td>
-      <td>-0.311489</td>
-      <td>0.016667</td>
-      <td>0.966667</td>
-    </tr>
-    <tr>
-      <th>42</th>
-      <td>67</td>
-      <td>2.0</td>
-      <td>60.0</td>
-      <td>-0.949300</td>
-      <td>0.033333</td>
-      <td>1.000000</td>
-    </tr>
   </tbody>
 </table>
 </div></div>
 </div>
 <div class="nbinput docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[47]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[34]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
@@ -1472,13 +1158,13 @@ require(['music21'], function() {
 <div class="prompt empty docutils container">
 </div>
 <div class="output_area docutils container">
-<img alt="_images/03_melody_I_65_0.png" class="no-scaled-link" src="_images/03_melody_I_65_0.png" style="width: 374px; height: 251px;" />
+<img alt="_images/03_melody_I_66_0.png" class="no-scaled-link" src="_images/03_melody_I_66_0.png" style="width: 374px; height: 251px;" />
 </div>
 </div>
 <p>Standardizing the songs makes it possible to compare them directly: They have now the same length 1 and their pitches are centered around the mean 0 with a standard deviation of 1.</p>
 <p>However, already with two pieces this plot is quite crowded.</p>
 <div class="nbinput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[48]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[ ]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
@@ -1493,8 +1179,8 @@ require(['music21'], function() {
 </pre></div>
 </div>
 </div>
-<div class="nbinput docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[49]:
+<div class="nbinput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[ ]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
@@ -1502,156 +1188,8 @@ require(['music21'], function() {
 </pre></div>
 </div>
 </div>
-<div class="nboutput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[49]:
-</pre></div>
-</div>
-<div class="output_area rendered_html docutils container">
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>MIDI Pitch</th>
-      <th>Duration</th>
-      <th>Onset</th>
-      <th>Rel. MIDI Pitch</th>
-      <th>Rel. Duration</th>
-      <th>Rel. Onset</th>
-      <th>Song ID</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>0</th>
-      <td>67</td>
-      <td>2.00</td>
-      <td>2.00</td>
-      <td>-1.819039</td>
-      <td>0.013158</td>
-      <td>0.013158</td>
-      <td>0</td>
-    </tr>
-    <tr>
-      <th>1</th>
-      <td>70</td>
-      <td>2.00</td>
-      <td>4.00</td>
-      <td>-0.741977</td>
-      <td>0.013158</td>
-      <td>0.026316</td>
-      <td>0</td>
-    </tr>
-    <tr>
-      <th>2</th>
-      <td>71</td>
-      <td>2.00</td>
-      <td>6.00</td>
-      <td>-0.382956</td>
-      <td>0.013158</td>
-      <td>0.039474</td>
-      <td>0</td>
-    </tr>
-    <tr>
-      <th>3</th>
-      <td>72</td>
-      <td>2.00</td>
-      <td>8.00</td>
-      <td>-0.023935</td>
-      <td>0.013158</td>
-      <td>0.052632</td>
-      <td>0</td>
-    </tr>
-    <tr>
-      <th>4</th>
-      <td>72</td>
-      <td>2.00</td>
-      <td>10.00</td>
-      <td>-0.023935</td>
-      <td>0.013158</td>
-      <td>0.065789</td>
-      <td>0</td>
-    </tr>
-    <tr>
-      <th>...</th>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-    </tr>
-    <tr>
-      <th>450591</th>
-      <td>71</td>
-      <td>0.25</td>
-      <td>28.50</td>
-      <td>0.691456</td>
-      <td>0.008197</td>
-      <td>0.934426</td>
-      <td>8513</td>
-    </tr>
-    <tr>
-      <th>450592</th>
-      <td>69</td>
-      <td>0.25</td>
-      <td>28.75</td>
-      <td>0.098779</td>
-      <td>0.008197</td>
-      <td>0.942623</td>
-      <td>8513</td>
-    </tr>
-    <tr>
-      <th>450593</th>
-      <td>73</td>
-      <td>0.25</td>
-      <td>29.00</td>
-      <td>1.284133</td>
-      <td>0.008197</td>
-      <td>0.950820</td>
-      <td>8513</td>
-    </tr>
-    <tr>
-      <th>450594</th>
-      <td>71</td>
-      <td>1.00</td>
-      <td>30.00</td>
-      <td>0.691456</td>
-      <td>0.032787</td>
-      <td>0.983607</td>
-      <td>8513</td>
-    </tr>
-    <tr>
-      <th>450595</th>
-      <td>69</td>
-      <td>0.50</td>
-      <td>30.50</td>
-      <td>0.098779</td>
-      <td>0.016393</td>
-      <td>1.000000</td>
-      <td>8513</td>
-    </tr>
-  </tbody>
-</table>
-<p>450596 rows × 7 columns</p>
-</div></div>
-</div>
 <div class="nbinput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[50]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[ ]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
@@ -1659,8 +1197,8 @@ require(['music21'], function() {
 </pre></div>
 </div>
 </div>
-<div class="nbinput docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[51]:
+<div class="nbinput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[ ]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
@@ -1668,148 +1206,11 @@ require(['music21'], function() {
 </pre></div>
 </div>
 </div>
-<div class="nboutput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[51]:
-</pre></div>
-</div>
-<div class="output_area rendered_html docutils container">
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>MIDI Pitch</th>
-      <th>Duration</th>
-      <th>Onset</th>
-      <th>Rel. MIDI Pitch</th>
-      <th>Rel. Duration</th>
-      <th>Rel. Onset</th>
-      <th>Song ID</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>109749</th>
-      <td>69</td>
-      <td>1.00</td>
-      <td>16.00</td>
-      <td>-0.109682</td>
-      <td>0.021739</td>
-      <td>0.347826</td>
-      <td>2395</td>
-    </tr>
-    <tr>
-      <th>434396</th>
-      <td>64</td>
-      <td>0.50</td>
-      <td>18.50</td>
-      <td>-0.632118</td>
-      <td>0.016949</td>
-      <td>0.627119</td>
-      <td>8218</td>
-    </tr>
-    <tr>
-      <th>117809</th>
-      <td>71</td>
-      <td>0.50</td>
-      <td>19.50</td>
-      <td>0.902822</td>
-      <td>0.020833</td>
-      <td>0.812500</td>
-      <td>2535</td>
-    </tr>
-    <tr>
-      <th>218843</th>
-      <td>72</td>
-      <td>0.50</td>
-      <td>29.00</td>
-      <td>0.216612</td>
-      <td>0.012195</td>
-      <td>0.707317</td>
-      <td>4656</td>
-    </tr>
-    <tr>
-      <th>298799</th>
-      <td>74</td>
-      <td>0.50</td>
-      <td>174.00</td>
-      <td>0.787618</td>
-      <td>0.002725</td>
-      <td>0.948229</td>
-      <td>5745</td>
-    </tr>
-    <tr>
-      <th>440611</th>
-      <td>76</td>
-      <td>0.25</td>
-      <td>29.00</td>
-      <td>1.004299</td>
-      <td>0.003906</td>
-      <td>0.453125</td>
-      <td>8337</td>
-    </tr>
-    <tr>
-      <th>360749</th>
-      <td>70</td>
-      <td>0.50</td>
-      <td>5.00</td>
-      <td>0.326851</td>
-      <td>0.016129</td>
-      <td>0.161290</td>
-      <td>6788</td>
-    </tr>
-    <tr>
-      <th>71559</th>
-      <td>62</td>
-      <td>0.50</td>
-      <td>10.00</td>
-      <td>-1.786648</td>
-      <td>0.007812</td>
-      <td>0.156250</td>
-      <td>1703</td>
-    </tr>
-    <tr>
-      <th>204570</th>
-      <td>74</td>
-      <td>0.50</td>
-      <td>28.50</td>
-      <td>1.214628</td>
-      <td>0.011111</td>
-      <td>0.633333</td>
-      <td>4357</td>
-    </tr>
-    <tr>
-      <th>446299</th>
-      <td>79</td>
-      <td>0.25</td>
-      <td>46.75</td>
-      <td>1.409059</td>
-      <td>0.004762</td>
-      <td>0.890476</td>
-      <td>8439</td>
-    </tr>
-  </tbody>
-</table>
-</div></div>
-</div>
 </div>
 <div class="section" id="The-melodic-arc">
 <h2><span class="section-number">3.4. </span>The melodic arc<a class="headerlink" href="#The-melodic-arc" title="Permalink to this headline">¶</a></h2>
-<div class="nbinput docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[296]:
+<div class="nbinput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[ ]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
@@ -1848,28 +1249,13 @@ require(['music21'], function() {
 </pre></div>
 </div>
 </div>
-<div class="nboutput docutils container">
-<div class="prompt empty docutils container">
-</div>
-<div class="output_area docutils container">
-<img alt="_images/03_melody_I_72_0.png" class="no-scaled-link" src="_images/03_melody_I_72_0.png" style="width: 725px; height: 725px;" />
-</div>
-</div>
-<div class="nboutput nblast docutils container">
-<div class="prompt empty docutils container">
-</div>
-<div class="output_area docutils container">
-<div class="highlight"><pre>
-Wall time: 31 s
-</pre></div></div>
-</div>
 </div>
 <div class="section" id="Intervals">
 <h2><span class="section-number">3.5. </span>Intervals<a class="headerlink" href="#Intervals" title="Permalink to this headline">¶</a></h2>
 <p>We have seen that the melodic arc emerges as a stable shape over the entire EFC, and that sub-phrases of the songs likewise have an arc-like shape. In the remainder of this section, we look at <strong>intervals</strong>, the distance between two notes.</p>
 <p>Let’s come back to the song <em>Die plappernden Junggesellen</em></p>
-<div class="nbinput docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[29]:
+<div class="nbinput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[ ]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
@@ -1877,139 +1263,15 @@ Wall time: 31 s
 </pre></div>
 </div>
 </div>
-<div class="nboutput nblast docutils container">
-<div class="prompt empty docutils container">
-</div>
-<div class="output_area docutils container">
-<img alt="_images/03_melody_I_75_0.png" class="no-scaled-link" src="_images/03_melody_I_75_0.png" style="width: 753px; height: 286px;" />
-</div>
-</div>
 <p>We have already extracted its notes and stored them in a DataFrame:</p>
-<div class="nbinput docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[55]:
+<div class="nbinput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[ ]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
 <span></span><span class="n">big_df</span><span class="p">[</span><span class="n">big_df</span><span class="p">[</span><span class="s2">&quot;Song ID&quot;</span><span class="p">]</span> <span class="o">==</span> <span class="mi">70</span><span class="p">]</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">8</span><span class="p">)</span>
 </pre></div>
 </div>
-</div>
-<div class="nboutput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[55]:
-</pre></div>
-</div>
-<div class="output_area rendered_html docutils container">
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>MIDI Pitch</th>
-      <th>Duration</th>
-      <th>Onset</th>
-      <th>Rel. MIDI Pitch</th>
-      <th>Rel. Duration</th>
-      <th>Rel. Onset</th>
-      <th>Song ID</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>2969</th>
-      <td>62</td>
-      <td>1.0</td>
-      <td>1.0</td>
-      <td>-2.543827</td>
-      <td>0.016667</td>
-      <td>0.016667</td>
-      <td>70</td>
-    </tr>
-    <tr>
-      <th>2970</th>
-      <td>67</td>
-      <td>2.0</td>
-      <td>3.0</td>
-      <td>-0.949300</td>
-      <td>0.033333</td>
-      <td>0.050000</td>
-      <td>70</td>
-    </tr>
-    <tr>
-      <th>2971</th>
-      <td>71</td>
-      <td>2.0</td>
-      <td>5.0</td>
-      <td>0.326322</td>
-      <td>0.033333</td>
-      <td>0.083333</td>
-      <td>70</td>
-    </tr>
-    <tr>
-      <th>2972</th>
-      <td>74</td>
-      <td>3.0</td>
-      <td>8.0</td>
-      <td>1.283038</td>
-      <td>0.050000</td>
-      <td>0.133333</td>
-      <td>70</td>
-    </tr>
-    <tr>
-      <th>2973</th>
-      <td>72</td>
-      <td>1.0</td>
-      <td>9.0</td>
-      <td>0.645227</td>
-      <td>0.016667</td>
-      <td>0.150000</td>
-      <td>70</td>
-    </tr>
-    <tr>
-      <th>2974</th>
-      <td>71</td>
-      <td>2.0</td>
-      <td>11.0</td>
-      <td>0.326322</td>
-      <td>0.033333</td>
-      <td>0.183333</td>
-      <td>70</td>
-    </tr>
-    <tr>
-      <th>2975</th>
-      <td>69</td>
-      <td>2.0</td>
-      <td>13.0</td>
-      <td>-0.311489</td>
-      <td>0.033333</td>
-      <td>0.216667</td>
-      <td>70</td>
-    </tr>
-    <tr>
-      <th>2976</th>
-      <td>67</td>
-      <td>2.0</td>
-      <td>15.0</td>
-      <td>-0.949300</td>
-      <td>0.033333</td>
-      <td>0.250000</td>
-      <td>70</td>
-    </tr>
-  </tbody>
-</table>
-</div></div>
 </div>
 <p>The code above reads as “Select all rows in <code class="docutils literal notranslate"><span class="pre">big_df</span></code> for which the column <code class="docutils literal notranslate"><span class="pre">Song</span> <span class="pre">ID</span></code> is equal to 70”. The <code class="docutils literal notranslate"><span class="pre">.head()</span></code> method displays the first 5 rows by default but you can specify the number of rows you want to be displayed (here 8).</p>
 <p>Focusing on the “MIDI Pitch” column, the notes in the first phrase have MIDI pitch 62, 67, 71, 74, 72. Since intervals correspond to the difference between notes, the intervals for the beginning of this song are:</p>
@@ -2024,7 +1286,7 @@ Wall time: 31 s
 </ul>
 <p>The sequence of intervals in this phrase is thus <code class="docutils literal notranslate"><span class="pre">[+5,</span> <span class="pre">+4,</span> <span class="pre">+3,</span> <span class="pre">-2,</span> <span class="pre">-1,</span> <span class="pre">-2,</span> <span class="pre">-2]</span></code>. The signs (+ or -) also reflect the arc-like shape of this first phrase, but the sizes of the intervals are not perfecly balanced. Note that <code class="docutils literal notranslate"><span class="pre">-2</span></code> (two descending semitones, or one descending whole tone) is the most frequent interval.</p>
 <div class="nbinput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[110]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[ ]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
@@ -2034,23 +1296,14 @@ Wall time: 31 s
 </pre></div>
 </div>
 </div>
-<div class="nbinput docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[111]:
+<div class="nbinput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[ ]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
 <span></span><span class="n">min_int</span><span class="p">,</span> <span class="n">max_int</span>
 </pre></div>
 </div>
-</div>
-<div class="nboutput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[111]:
-</pre></div>
-</div>
-<div class="output_area docutils container">
-<div class="highlight"><pre>
-(-25, 25)
-</pre></div></div>
 </div>
 <div class="nbinput nblast docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[ ]:
@@ -2062,7 +1315,7 @@ Wall time: 31 s
 </div>
 </div>
 <div class="nbinput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[125]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[ ]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
@@ -2076,8 +1329,8 @@ Wall time: 31 s
 </pre></div>
 </div>
 </div>
-<div class="nbinput docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[126]:
+<div class="nbinput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[ ]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
@@ -2085,1260 +1338,8 @@ Wall time: 31 s
 </pre></div>
 </div>
 </div>
-<div class="nboutput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[126]:
-</pre></div>
-</div>
-<div class="output_area rendered_html docutils container">
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>-25</th>
-      <th>-24</th>
-      <th>-23</th>
-      <th>-22</th>
-      <th>-21</th>
-      <th>-20</th>
-      <th>-19</th>
-      <th>-18</th>
-      <th>-17</th>
-      <th>-16</th>
-      <th>...</th>
-      <th>16</th>
-      <th>17</th>
-      <th>18</th>
-      <th>19</th>
-      <th>20</th>
-      <th>21</th>
-      <th>22</th>
-      <th>23</th>
-      <th>24</th>
-      <th>25</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>-25</th>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>...</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-    </tr>
-    <tr>
-      <th>-24</th>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>...</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-    </tr>
-    <tr>
-      <th>-23</th>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>...</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-    </tr>
-    <tr>
-      <th>-22</th>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>...</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-    </tr>
-    <tr>
-      <th>-21</th>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>...</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>4</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-    </tr>
-    <tr>
-      <th>-20</th>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>...</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-    </tr>
-    <tr>
-      <th>-19</th>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>...</td>
-      <td>3</td>
-      <td>0</td>
-      <td>0</td>
-      <td>10</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-    </tr>
-    <tr>
-      <th>-18</th>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>...</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-    </tr>
-    <tr>
-      <th>-17</th>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>...</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-    </tr>
-    <tr>
-      <th>-16</th>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>...</td>
-      <td>4</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-    </tr>
-    <tr>
-      <th>-15</th>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>...</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-    </tr>
-    <tr>
-      <th>-14</th>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>...</td>
-      <td>0</td>
-      <td>1</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-    </tr>
-    <tr>
-      <th>-13</th>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>...</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-    </tr>
-    <tr>
-      <th>-12</th>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>...</td>
-      <td>13</td>
-      <td>2</td>
-      <td>0</td>
-      <td>1</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-    </tr>
-    <tr>
-      <th>-11</th>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>...</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-    </tr>
-    <tr>
-      <th>-10</th>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>...</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>2</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-    </tr>
-    <tr>
-      <th>-9</th>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>...</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-    </tr>
-    <tr>
-      <th>-8</th>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>...</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-    </tr>
-    <tr>
-      <th>-7</th>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>...</td>
-      <td>5</td>
-      <td>0</td>
-      <td>0</td>
-      <td>5</td>
-      <td>4</td>
-      <td>1</td>
-      <td>1</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-    </tr>
-    <tr>
-      <th>-6</th>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>...</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-    </tr>
-    <tr>
-      <th>-5</th>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>...</td>
-      <td>0</td>
-      <td>4</td>
-      <td>0</td>
-      <td>5</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-    </tr>
-    <tr>
-      <th>-4</th>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>...</td>
-      <td>7</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-    </tr>
-    <tr>
-      <th>-3</th>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>...</td>
-      <td>1</td>
-      <td>4</td>
-      <td>0</td>
-      <td>1</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <th>-2</th>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>1</td>
-      <td>0</td>
-      <td>...</td>
-      <td>11</td>
-      <td>13</td>
-      <td>0</td>
-      <td>1</td>
-      <td>0</td>
-      <td>1</td>
-      <td>1</td>
-      <td>0</td>
-      <td>1</td>
-      <td>0</td>
-    </tr>
-    <tr>
-      <th>-1</th>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>...</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-    </tr>
-    <tr>
-      <th>0</th>
-      <td>1</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>13</td>
-      <td>0</td>
-      <td>4</td>
-      <td>0</td>
-      <td>...</td>
-      <td>4</td>
-      <td>4</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>1</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-    </tr>
-    <tr>
-      <th>1</th>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>4</td>
-      <td>0</td>
-      <td>...</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-    </tr>
-    <tr>
-      <th>2</th>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>4</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>6</td>
-      <td>...</td>
-      <td>0</td>
-      <td>2</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-    </tr>
-    <tr>
-      <th>3</th>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>4</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>...</td>
-      <td>0</td>
-      <td>2</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-    </tr>
-    <tr>
-      <th>4</th>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>1</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>2</td>
-      <td>...</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-    </tr>
-    <tr>
-      <th>5</th>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>1</td>
-      <td>...</td>
-      <td>0</td>
-      <td>1</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-    </tr>
-    <tr>
-      <th>6</th>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>...</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-    </tr>
-    <tr>
-      <th>7</th>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>1</td>
-      <td>...</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-    </tr>
-    <tr>
-      <th>8</th>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>...</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-    </tr>
-    <tr>
-      <th>9</th>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>...</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-    </tr>
-    <tr>
-      <th>10</th>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>...</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-    </tr>
-    <tr>
-      <th>11</th>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>1</td>
-      <td>...</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-    </tr>
-    <tr>
-      <th>12</th>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>...</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-    </tr>
-    <tr>
-      <th>13</th>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>...</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-    </tr>
-    <tr>
-      <th>14</th>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>...</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-    </tr>
-    <tr>
-      <th>15</th>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>1</td>
-      <td>0</td>
-      <td>...</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-    </tr>
-    <tr>
-      <th>16</th>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>...</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-    </tr>
-    <tr>
-      <th>17</th>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>...</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-    </tr>
-    <tr>
-      <th>18</th>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>...</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-    </tr>
-    <tr>
-      <th>19</th>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>...</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-    </tr>
-    <tr>
-      <th>20</th>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>...</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-    </tr>
-    <tr>
-      <th>21</th>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>...</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-    </tr>
-    <tr>
-      <th>22</th>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>...</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-    </tr>
-    <tr>
-      <th>23</th>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>...</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-    </tr>
-    <tr>
-      <th>24</th>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>...</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-    </tr>
-  </tbody>
-</table>
-<p>50 rows × 51 columns</p>
-</div></div>
-</div>
-<div class="nbinput docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[131]:
+<div class="nbinput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[ ]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
@@ -3348,17 +1349,10 @@ Wall time: 31 s
 </pre></div>
 </div>
 </div>
-<div class="nboutput nblast docutils container">
-<div class="prompt empty docutils container">
-</div>
-<div class="output_area docutils container">
-<img alt="_images/03_melody_I_85_0.png" class="no-scaled-link" src="_images/03_melody_I_85_0.png" style="width: 620px; height: 568px;" />
-</div>
-</div>
 <p>The two most common interval pairs are <code class="docutils literal notranslate"><span class="pre">(0,0)</span></code> and <code class="docutils literal notranslate"><span class="pre">(-2,-2)</span></code>. A much less frequent pair of intervals is <code class="docutils literal notranslate"><span class="pre">(5,0)</span></code>, but this is still much more frequent than, for example, <code class="docutils literal notranslate"><span class="pre">(9,9)</span></code>.</p>
 <p>To which melodic fragments do these correspond?</p>
 <div class="nbinput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[57]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[ ]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
@@ -3371,7 +1365,7 @@ Wall time: 31 s
 </div>
 </div>
 <div class="nbinput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[58]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[ ]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
@@ -3379,8 +1373,8 @@ Wall time: 31 s
 </pre></div>
 </div>
 </div>
-<div class="nbinput docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[59]:
+<div class="nbinput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[ ]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
@@ -3388,107 +1382,8 @@ Wall time: 31 s
 </pre></div>
 </div>
 </div>
-<div class="nboutput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[59]:
-</pre></div>
-</div>
-<div class="output_area rendered_html docutils container">
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>MIDI Pitch</th>
-      <th>Duration</th>
-      <th>Onset</th>
-      <th>Rel. MIDI Pitch</th>
-      <th>Rel. Duration</th>
-      <th>Rel. Onset</th>
-      <th>Song ID</th>
-      <th>Avg. MIDI Pitch</th>
-      <th>shifted_pitch</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>450591</th>
-      <td>71</td>
-      <td>0.25</td>
-      <td>28.50</td>
-      <td>0.691456</td>
-      <td>0.008197</td>
-      <td>0.934426</td>
-      <td>8513</td>
-      <td>68</td>
-      <td>3</td>
-    </tr>
-    <tr>
-      <th>450592</th>
-      <td>69</td>
-      <td>0.25</td>
-      <td>28.75</td>
-      <td>0.098779</td>
-      <td>0.008197</td>
-      <td>0.942623</td>
-      <td>8513</td>
-      <td>68</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <th>450593</th>
-      <td>73</td>
-      <td>0.25</td>
-      <td>29.00</td>
-      <td>1.284133</td>
-      <td>0.008197</td>
-      <td>0.950820</td>
-      <td>8513</td>
-      <td>68</td>
-      <td>5</td>
-    </tr>
-    <tr>
-      <th>450594</th>
-      <td>71</td>
-      <td>1.00</td>
-      <td>30.00</td>
-      <td>0.691456</td>
-      <td>0.032787</td>
-      <td>0.983607</td>
-      <td>8513</td>
-      <td>68</td>
-      <td>3</td>
-    </tr>
-    <tr>
-      <th>450595</th>
-      <td>69</td>
-      <td>0.50</td>
-      <td>30.50</td>
-      <td>0.098779</td>
-      <td>0.016393</td>
-      <td>1.000000</td>
-      <td>8513</td>
-      <td>68</td>
-      <td>1</td>
-    </tr>
-  </tbody>
-</table>
-</div></div>
-</div>
-<div class="nbinput docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[60]:
+<div class="nbinput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[ ]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
@@ -3497,19 +1392,8 @@ Wall time: 31 s
 </pre></div>
 </div>
 </div>
-<div class="nboutput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[60]:
-</pre></div>
-</div>
-<div class="output_area docutils container">
-<div class="highlight"><pre>
-array([-16, -15, -14, -13, -12, -11, -10,  -9,  -8,  -7,  -6,  -5,  -4,
-        -3,  -2,  -1,   0,   1,   2,   3,   4,   5,   6,   7,   8,   9,
-        10,  11,  12,  13,  14,  15,  16,  17])
-</pre></div></div>
-</div>
-<div class="nbinput docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[61]:
+<div class="nbinput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[ ]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
@@ -3518,876 +1402,8 @@ array([-16, -15, -14, -13, -12, -11, -10,  -9,  -8,  -7,  -6,  -5,  -4,
 </pre></div>
 </div>
 </div>
-<div class="nboutput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[61]:
-</pre></div>
-</div>
-<div class="output_area rendered_html docutils container">
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>-16</th>
-      <th>-15</th>
-      <th>-14</th>
-      <th>-13</th>
-      <th>-12</th>
-      <th>-11</th>
-      <th>-10</th>
-      <th>-9</th>
-      <th>-8</th>
-      <th>-7</th>
-      <th>...</th>
-      <th>8</th>
-      <th>9</th>
-      <th>10</th>
-      <th>11</th>
-      <th>12</th>
-      <th>13</th>
-      <th>14</th>
-      <th>15</th>
-      <th>16</th>
-      <th>17</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>-16</th>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>...</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-    </tr>
-    <tr>
-      <th>-15</th>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>...</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-    </tr>
-    <tr>
-      <th>-14</th>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>...</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-    </tr>
-    <tr>
-      <th>-13</th>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>...</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-    </tr>
-    <tr>
-      <th>-12</th>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>...</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-    </tr>
-    <tr>
-      <th>-11</th>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>...</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-    </tr>
-    <tr>
-      <th>-10</th>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>...</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-    </tr>
-    <tr>
-      <th>-9</th>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>...</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-    </tr>
-    <tr>
-      <th>-8</th>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>...</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-    </tr>
-    <tr>
-      <th>-7</th>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>...</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-    </tr>
-    <tr>
-      <th>-6</th>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>...</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-    </tr>
-    <tr>
-      <th>-5</th>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>...</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-    </tr>
-    <tr>
-      <th>-4</th>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>...</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-    </tr>
-    <tr>
-      <th>-3</th>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>...</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-    </tr>
-    <tr>
-      <th>-2</th>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>...</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-    </tr>
-    <tr>
-      <th>-1</th>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>...</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-    </tr>
-    <tr>
-      <th>0</th>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>...</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-    </tr>
-    <tr>
-      <th>1</th>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>...</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-    </tr>
-    <tr>
-      <th>2</th>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>...</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-    </tr>
-    <tr>
-      <th>3</th>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>...</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-    </tr>
-    <tr>
-      <th>4</th>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>...</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-    </tr>
-    <tr>
-      <th>5</th>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>...</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-    </tr>
-    <tr>
-      <th>6</th>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>...</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-    </tr>
-    <tr>
-      <th>7</th>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>...</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-    </tr>
-    <tr>
-      <th>8</th>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>...</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-    </tr>
-    <tr>
-      <th>9</th>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>...</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-    </tr>
-    <tr>
-      <th>10</th>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>...</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-    </tr>
-    <tr>
-      <th>11</th>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>...</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-    </tr>
-    <tr>
-      <th>12</th>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>...</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-    </tr>
-    <tr>
-      <th>13</th>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>...</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-    </tr>
-    <tr>
-      <th>14</th>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>...</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-    </tr>
-    <tr>
-      <th>15</th>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>...</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-    </tr>
-    <tr>
-      <th>16</th>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>...</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-    </tr>
-    <tr>
-      <th>17</th>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>...</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-    </tr>
-  </tbody>
-</table>
-<p>34 rows × 34 columns</p>
-</div></div>
-</div>
-<div class="nbinput docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[62]:
+<div class="nbinput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[ ]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
@@ -4399,16 +1415,8 @@ array([-16, -15, -14, -13, -12, -11, -10,  -9,  -8,  -7,  -6,  -5,  -4,
 </pre></div>
 </div>
 </div>
-<div class="nboutput nblast docutils container">
-<div class="prompt empty docutils container">
-</div>
-<div class="output_area docutils container">
-<div class="highlight"><pre>
-Wall time: 1min 7s
-</pre></div></div>
-</div>
-<div class="nbinput docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[63]:
+<div class="nbinput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[ ]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
@@ -4416,16 +1424,8 @@ Wall time: 1min 7s
 </pre></div>
 </div>
 </div>
-<div class="nboutput nblast docutils container">
-<div class="prompt empty docutils container">
-</div>
-<div class="output_area docutils container">
-<div class="highlight"><pre>
-There are 442082 intervals in total in the corpus.
-</pre></div></div>
-</div>
-<div class="nbinput docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[106]:
+<div class="nbinput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[ ]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
@@ -4436,13 +1436,6 @@ There are 442082 intervals in total in the corpus.
 <span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s2">&quot;Second interval&quot;</span><span class="p">)</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
 </pre></div>
-</div>
-</div>
-<div class="nboutput nblast docutils container">
-<div class="prompt empty docutils container">
-</div>
-<div class="output_area docutils container">
-<img alt="_images/03_melody_I_94_0.png" class="no-scaled-link" src="_images/03_melody_I_94_0.png" style="width: 641px; height: 573px;" />
 </div>
 </div>
 <div class="nbinput nblast docutils container">

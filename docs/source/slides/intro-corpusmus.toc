@@ -1,5 +1,9 @@
 \boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
 \defcounter {refsection}{0}\relax 
-\beamer@sectionintoc {1}{I.\nobreakspace {}Computational Music Analysis}{7}{0}{1}
+\beamer@sectionintoc {1}{I.\nobreakspace {}What are Musical Corpus Studies}{3}{0}{1}
 \defcounter {refsection}{0}\relax 
-\beamer@sectionintoc {2}{II.\nobreakspace {}Examples}{15}{0}{2}
+\beamer@sectionintoc {2}{II.\nobreakspace {}Issues}{4}{0}{2}
+\defcounter {refsection}{0}\relax 
+\beamer@sectionintoc {3}{III.\nobreakspace {}Examples}{5}{0}{3}
+\defcounter {refsection}{0}\relax 
+\beamer@sectionintoc {4}{IV.\nobreakspace {}Course organization}{17}{0}{4}

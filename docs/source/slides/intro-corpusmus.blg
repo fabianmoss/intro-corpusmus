@@ -1,19 +1,19 @@
 [0] Config.pm:304> INFO - This is Biber 2.14
 [0] Config.pm:307> INFO - Logfile is 'intro-corpusmus.blg'
-[111] biber-MSWIN64:322> INFO - === 
-[135] Biber.pm:415> INFO - Reading 'intro-corpusmus.bcf'
-[359] Biber.pm:943> INFO - Found 1 citekeys in bib section 0
-[391] Biber.pm:4256> INFO - Processing section 0
-[391] Utils.pm:75> INFO - Globbing data source 'references.bib'
-[405] Utils.pm:91> INFO - Globbed data source 'references.bib' to references.bib
-[425] Biber.pm:4455> INFO - Looking for bibtex format file 'references.bib' for section 0
-[434] bibtex.pm:1653> INFO - LaTeX decoding ...
-[518] bibtex.pm:1471> INFO - Found BibTeX data source 'references.bib'
-[578] Utils.pm:304> WARN - year field 'in press' in entry 'Harasim2020' is not an integer - this will probably not sort properly.
-[613] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[613] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
-[614] Biber.pm:4084> INFO - Sorting list 'apa/global//global/global' of type 'entry' with template 'apa' and locale 'en-US'
-[614] Biber.pm:4090> INFO - No sort tailoring available for locale 'en-US'
-[619] bbl.pm:652> INFO - Writing 'intro-corpusmus.bbl' with encoding 'UTF-8'
-[622] bbl.pm:755> INFO - Output to intro-corpusmus.bbl
-[625] Biber.pm:128> INFO - WARNINGS: 1
+[66] biber-MSWIN64:322> INFO - === 
+[84] Biber.pm:415> INFO - Reading 'intro-corpusmus.bcf'
+[203] Biber.pm:943> INFO - Found 10 citekeys in bib section 0
+[221] Biber.pm:4256> INFO - Processing section 0
+[222] Utils.pm:75> INFO - Globbing data source 'references.bib'
+[230] Utils.pm:91> INFO - Globbed data source 'references.bib' to references.bib
+[245] Biber.pm:4455> INFO - Looking for bibtex format file 'references.bib' for section 0
+[252] bibtex.pm:1653> INFO - LaTeX decoding ...
+[312] bibtex.pm:1471> INFO - Found BibTeX data source 'references.bib'
+[369] Utils.pm:304> WARN - year field 'in press' in entry 'Harasim2020' is not an integer - this will probably not sort properly.
+[397] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[397] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[397] Biber.pm:4084> INFO - Sorting list 'apa/global//global/global' of type 'entry' with template 'apa' and locale 'en-US'
+[398] Biber.pm:4090> INFO - No sort tailoring available for locale 'en-US'
+[413] bbl.pm:652> INFO - Writing 'intro-corpusmus.bbl' with encoding 'UTF-8'
+[419] bbl.pm:755> INFO - Output to intro-corpusmus.bbl
+[424] Biber.pm:128> INFO - WARNINGS: 1

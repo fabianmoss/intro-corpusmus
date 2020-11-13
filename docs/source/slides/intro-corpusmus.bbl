@@ -19,6 +19,61 @@
 
 \refsection{0}
   \datalist[entry]{apa/global//global/global}
+    \entry{Cuthbert2010}{inproceedings}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=8694e9cd55544531ad2e042451c230b2}{%
+           family={Cuthbert},
+           familyi={C\bibinitperiod},
+           given={Michael\bibnamedelima Scott},
+           giveni={M\bibinitperiod\bibinitdelim S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=b129f3bd4533dc80dfc3b9ae365761fc}{%
+           family={Ariza},
+           familyi={A\bibinitperiod},
+           given={Christopher},
+           giveni={C\bibinitperiod},
+           givenun=0}}%
+      }
+      \name{editor}{2}{}{%
+        {{hash=16c5a700cdfeba50b859bf4e2138ea1d}{%
+           family={Downie},
+           familyi={D\bibinitperiod},
+           given={J.\bibnamedelimi Stephen},
+           giveni={J\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+        {{hash=72f7d7dede6b7a0ab3488aadcee5c9d9}{%
+           family={Veltkamp},
+           familyi={V\bibinitperiod},
+           given={Remco\bibnamedelima C.},
+           giveni={R\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Utrecht}%
+      }
+      \list{publisher}{1}{%
+        {Inernational Society for Music Information Retrieval}%
+      }
+      \strng{namehash}{1b3720d2ee7b96b84a1edbf2d7b04ad5}
+      \strng{fullhash}{1b3720d2ee7b96b84a1edbf2d7b04ad5}
+      \strng{bibnamehash}{1b3720d2ee7b96b84a1edbf2d7b04ad5}
+      \strng{authorbibnamehash}{1b3720d2ee7b96b84a1edbf2d7b04ad5}
+      \strng{authornamehash}{1b3720d2ee7b96b84a1edbf2d7b04ad5}
+      \strng{authorfullhash}{1b3720d2ee7b96b84a1edbf2d7b04ad5}
+      \strng{editorbibnamehash}{339a47ea2b7f5b051769ea02043259cc}
+      \strng{editornamehash}{339a47ea2b7f5b051769ea02043259cc}
+      \strng{editorfullhash}{339a47ea2b7f5b051769ea02043259cc}
+      \field{sortinit}{C}
+      \field{sortinithash}{4c244ceae61406cdc0cc2ce1cb1ff703}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{11th {International} {Society} for {Music} {Information} {Retrieval} {Conference} ({ISMIR} 2010)2}
+      \field{title}{music21: {A} {Toolkit} for {Computer}-{Aided} {Musicology} and {Symbolic} {Music} {Data}}
+      \field{year}{2010}
+      \field{pages}{637\bibrangedash 642}
+      \range{pages}{6}
+    \endentry
     \entry{Harasim2020}{article}{}
       \name{author}{4}{}{%
         {{un=0,uniquepart=base,hash=6da55031daa5da1803b5ef5b128b85a4}{%
@@ -62,6 +117,294 @@
       \field{journaltitle}{Humanities \& Social Sciences Communications}
       \field{title}{Exploring the foundations of tonality: {Statistical} cognitive modeling of modes in the history of {Western} classical music}
       \field{year}{in press}
+    \endentry
+    \entry{Huron2001}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=322a7461ef0a1de376e227a3d8afe98e}{%
+           family={Huron},
+           familyi={H\bibinitperiod},
+           given={David},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{322a7461ef0a1de376e227a3d8afe98e}
+      \strng{fullhash}{322a7461ef0a1de376e227a3d8afe98e}
+      \strng{bibnamehash}{322a7461ef0a1de376e227a3d8afe98e}
+      \strng{authorbibnamehash}{322a7461ef0a1de376e227a3d8afe98e}
+      \strng{authornamehash}{322a7461ef0a1de376e227a3d8afe98e}
+      \strng{authorfullhash}{322a7461ef0a1de376e227a3d8afe98e}
+      \field{extraname}{1}
+      \field{sortinit}{H}
+      \field{sortinithash}{6db6145dae8dc9e1271a8d556090b50a}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Music Perception: An Interdisciplinary Journal}
+      \field{number}{1}
+      \field{title}{Tone and {Voice}: {A} {Derivation} of the {Rules} of {Voice}-{Leading} from {Perceptual} {Principles}}
+      \field{volume}{19}
+      \field{year}{2001}
+      \field{pages}{1\bibrangedash 64}
+      \range{pages}{64}
+      \verb{doi}
+      \verb 10.1525/mp.2001.19.1.1
+      \endverb
+    \endentry
+    \entry{Huron2006}{book}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=322a7461ef0a1de376e227a3d8afe98e}{%
+           family={Huron},
+           familyi={H\bibinitperiod},
+           given={David},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {MIT Press}%
+      }
+      \strng{namehash}{322a7461ef0a1de376e227a3d8afe98e}
+      \strng{fullhash}{322a7461ef0a1de376e227a3d8afe98e}
+      \strng{bibnamehash}{322a7461ef0a1de376e227a3d8afe98e}
+      \strng{authorbibnamehash}{322a7461ef0a1de376e227a3d8afe98e}
+      \strng{authornamehash}{322a7461ef0a1de376e227a3d8afe98e}
+      \strng{authorfullhash}{322a7461ef0a1de376e227a3d8afe98e}
+      \field{extraname}{2}
+      \field{sortinit}{H}
+      \field{sortinithash}{6db6145dae8dc9e1271a8d556090b50a}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Sweet anticipation: {Music} and the psychology of expectation}
+      \field{year}{2006}
+    \endentry
+    \entry{Huron2016}{book}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=322a7461ef0a1de376e227a3d8afe98e}{%
+           family={Huron},
+           familyi={H\bibinitperiod},
+           given={David},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{location}{1}{%
+        {Boston, MA}%
+      }
+      \list{publisher}{1}{%
+        {MIT Press}%
+      }
+      \strng{namehash}{322a7461ef0a1de376e227a3d8afe98e}
+      \strng{fullhash}{322a7461ef0a1de376e227a3d8afe98e}
+      \strng{bibnamehash}{322a7461ef0a1de376e227a3d8afe98e}
+      \strng{authorbibnamehash}{322a7461ef0a1de376e227a3d8afe98e}
+      \strng{authornamehash}{322a7461ef0a1de376e227a3d8afe98e}
+      \strng{authorfullhash}{322a7461ef0a1de376e227a3d8afe98e}
+      \field{extraname}{3}
+      \field{sortinit}{H}
+      \field{sortinithash}{6db6145dae8dc9e1271a8d556090b50a}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Voice-{Leading}: {The} {Science} {Behind} a {Musical} {Art}}
+      \field{year}{2016}
+    \endentry
+    \entry{London2013}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=93f894f09f4da2f908af9cfc008ee60f}{%
+           family={London},
+           familyi={L\bibinitperiod},
+           given={Justin},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{93f894f09f4da2f908af9cfc008ee60f}
+      \strng{fullhash}{93f894f09f4da2f908af9cfc008ee60f}
+      \strng{bibnamehash}{93f894f09f4da2f908af9cfc008ee60f}
+      \strng{authorbibnamehash}{93f894f09f4da2f908af9cfc008ee60f}
+      \strng{authornamehash}{93f894f09f4da2f908af9cfc008ee60f}
+      \strng{authorfullhash}{93f894f09f4da2f908af9cfc008ee60f}
+      \field{sortinit}{L}
+      \field{sortinithash}{dad3efd0836470093a7b4a7bb756eb8c}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Music Perception: An Interdisciplinary Journal}
+      \field{note}{Publisher: University of California Press Journals}
+      \field{number}{1}
+      \field{title}{Building a {Representative} {Corpus} of {Classical} {Music}}
+      \field{urlday}{5}
+      \field{urlmonth}{3}
+      \field{urlyear}{2018}
+      \field{volume}{31}
+      \field{year}{2013}
+      \field{urldateera}{ce}
+      \field{pages}{68\bibrangedash 90}
+      \range{pages}{23}
+      \verb{doi}
+      \verb 10.1525/mp.2013.31.1.68
+      \endverb
+    \endentry
+    \entry{Neuwirth2018}{article}{}
+      \name{author}{4}{}{%
+        {{un=0,uniquepart=base,hash=ae0464b93a1404dccfd671e036398cc5}{%
+           family={Neuwirth},
+           familyi={N\bibinitperiod},
+           given={Markus},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=6da55031daa5da1803b5ef5b128b85a4}{%
+           family={Harasim},
+           familyi={H\bibinitperiod},
+           given={Daniel},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=ceeb25ba116874e69a0d91df2df39044}{%
+           family={Moss},
+           familyi={M\bibinitperiod},
+           given={Fabian\bibnamedelima C.},
+           giveni={F\bibinitperiod\bibinitdelim C\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=7c7184e67456bd174f134b9beeda1a47}{%
+           family={Rohrmeier},
+           familyi={R\bibinitperiod},
+           given={Martin},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{9b7de28ed748a92ee55a28cc19abf5de}
+      \strng{fullhash}{9b7de28ed748a92ee55a28cc19abf5de}
+      \strng{bibnamehash}{9b7de28ed748a92ee55a28cc19abf5de}
+      \strng{authorbibnamehash}{9b7de28ed748a92ee55a28cc19abf5de}
+      \strng{authornamehash}{9b7de28ed748a92ee55a28cc19abf5de}
+      \strng{authorfullhash}{9b7de28ed748a92ee55a28cc19abf5de}
+      \field{sortinit}{N}
+      \field{sortinithash}{98cf339a479c0454fe09153a08675a15}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Frontiers in Digital Humanities}
+      \field{number}{July}
+      \field{title}{The {Annotated} {Beethoven} {Corpus} ({ABC}): {A} {Dataset} of {Harmonic} {Analyses} of {All} {Beethoven} {String} {Quartets}}
+      \field{volume}{5}
+      \field{year}{2018}
+      \field{pages}{1\bibrangedash 5}
+      \range{pages}{5}
+      \verb{doi}
+      \verb 10.3389/fdigh.2018.00016
+      \endverb
+    \endentry
+    \entry{Pugin2015}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=a7a369936b5ad6f5101cd8ae447667e2}{%
+           family={Pugin},
+           familyi={P\bibinitperiod},
+           given={Laurent},
+           giveni={L\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{a7a369936b5ad6f5101cd8ae447667e2}
+      \strng{fullhash}{a7a369936b5ad6f5101cd8ae447667e2}
+      \strng{bibnamehash}{a7a369936b5ad6f5101cd8ae447667e2}
+      \strng{authorbibnamehash}{a7a369936b5ad6f5101cd8ae447667e2}
+      \strng{authornamehash}{a7a369936b5ad6f5101cd8ae447667e2}
+      \strng{authorfullhash}{a7a369936b5ad6f5101cd8ae447667e2}
+      \field{sortinit}{P}
+      \field{sortinithash}{bb5b15f2db90f7aef79bb9e83defefcb}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Frontiers in Digital Humanities}
+      \field{title}{The {Challenge} of {Data} in {Digital} {Musicology}}
+      \field{urlday}{27}
+      \field{urlmonth}{11}
+      \field{urlyear}{2018}
+      \field{volume}{2}
+      \field{year}{2015}
+      \field{urldateera}{ce}
+      \field{pages}{4}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.3389/fdigh.2015.00004
+      \endverb
+    \endentry
+    \entry{Schaffer2016}{misc}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=84fa3a01e61e5de145af401ab832af54}{%
+           family={Schaffer},
+           familyi={S\bibinitperiod},
+           given={Kris},
+           giveni={K\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{84fa3a01e61e5de145af401ab832af54}
+      \strng{fullhash}{84fa3a01e61e5de145af401ab832af54}
+      \strng{bibnamehash}{84fa3a01e61e5de145af401ab832af54}
+      \strng{authorbibnamehash}{84fa3a01e61e5de145af401ab832af54}
+      \strng{authornamehash}{84fa3a01e61e5de145af401ab832af54}
+      \strng{authorfullhash}{84fa3a01e61e5de145af401ab832af54}
+      \field{sortinit}{S}
+      \field{sortinithash}{c319cff79d99c853d775f88277d4e45f}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{What is computational musicology?}
+      \field{year}{2016}
+      \verb{urlraw}
+      \verb https://medium.com/@krisshaffer/what-is-computational-musicology-f25ee0a65102
+      \endverb
+      \verb{url}
+      \verb https://medium.com/@krisshaffer/what-is-computational-musicology-f25ee0a65102
+      \endverb
+    \endentry
+    \entry{Temperley2013a}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=43ccd7c553091c1fb8c4a95d25ed2aec}{%
+           family={Temperley},
+           familyi={T\bibinitperiod},
+           given={David},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=f13d18762eb415482f2109fec4c248d7}{%
+           family={VanHandel},
+           familyi={V\bibinitperiod},
+           given={Leigh},
+           giveni={L\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{b35380841fb2e435deb3843431e28734}
+      \strng{fullhash}{b35380841fb2e435deb3843431e28734}
+      \strng{bibnamehash}{b35380841fb2e435deb3843431e28734}
+      \strng{authorbibnamehash}{b35380841fb2e435deb3843431e28734}
+      \strng{authornamehash}{b35380841fb2e435deb3843431e28734}
+      \strng{authorfullhash}{b35380841fb2e435deb3843431e28734}
+      \field{sortinit}{T}
+      \field{sortinithash}{51f9faf24c60c62ca764a77f78cf5666}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Music Perception: An Interdisciplinary Journal}
+      \field{number}{1}
+      \field{title}{Introduction to the special issues on corpus methods}
+      \field{volume}{31}
+      \field{year}{2013}
+      \field{pages}{1\bibrangedash 3}
+      \range{pages}{3}
+      \verb{doi}
+      \verb 10.1525/MP.2013.31.1.1
+      \endverb
+      \keyw{Corpus Analysis}
     \endentry
   \enddatalist
 \endrefsection

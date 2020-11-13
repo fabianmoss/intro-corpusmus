@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.12.0 (MiKTeX 2.9.7380 64-bit)  (format=lualatex 2020.4.17)  13 NOV 2020 13:38
+This is LuaHBTeX, Version 1.12.0 (MiKTeX 2.9.7380 64-bit)  (format=lualatex 2020.4.17)  13 NOV 2020 14:17
  system commands enabled.
 **intro-corpusmus
 (./intro-corpusmus.tex
@@ -1780,7 +1780,7 @@ Package biblatex Info: ... file 'intro-corpusmus.bbl' found.
 Package biblatex Info: Reference section=0 on input line 107.
 Package biblatex Info: Reference segment=0 on input line 107.
  (./intro-corpusmus.nav)
-<img/uzk_logo.jpg, id=37, 584.1825pt x 297.11pt>
+<img/uzk_logo.jpg, id=33, 584.1825pt x 297.11pt>
 File: img/uzk_logo.jpg Graphic file (type jpg)
 <use img/uzk_logo.jpg>
 Package luatex.def Info: img/uzk_logo.jpg  used on input line 109.
@@ -1798,7 +1798,23 @@ Overfull \vbox (15.63992pt too high) detected at line 109
 {C:/Users/fabianmoss/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}<./img/uz
 k_logo.jpg>] (./0_intro.tex [2
 
-]) (./1_what_are_MCS.tex
+]
+<../../../src/basic_stats.png, id=50, 722.7pt x 289.08pt>
+File: ../../../src/basic_stats.png Graphic file (type png)
+<use ../../../src/basic_stats.png>
+Package luatex.def Info: ../../../src/basic_stats.png  used on input line 29.
+(luatex.def)             Requested size: 278.83578pt x 111.53212pt.
+ [3
+
+<../../../src/basic_stats.png>]
+File: ../../../src/basic_stats.png Graphic file (type png)
+<use ../../../src/basic_stats.png>
+Package luatex.def Info: ../../../src/basic_stats.png  used on input line 29.
+(luatex.def)             Requested size: 278.83578pt x 111.53212pt.
+ [4
+
+])
+(./1_what_are_MCS.tex
 LaTeX Font Info:    Trying to load font information for U+msa on input line 1.
 
 ("C:/Users/fabianmoss/AppData/Local/Programs/MiKTeX 2.9/tex/latex/amsfonts/umsa
@@ -1810,11 +1826,7 @@ LaTeX Font Info:    Trying to load font information for U+msb on input line 1.
 ("C:/Users/fabianmoss/AppData/Local/Programs/MiKTeX 2.9/tex/latex/amsfonts/umsb
 .fd"
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-) [3
-
-]) (./2_issues.tex [4
-
-]) (./3_examples.tex [5
+) [5
 
 ] [6
 
@@ -1824,8 +1836,18 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 
 ] [9
 
+]) (./3_examples.tex [10
+
+] [11
+
+] [12
+
+] [13
+
+] [14
+
 ]
-<img/Figure1.pdf, id=106, 1156.32pt x 578.16pt>
+<img/Figure1.pdf, id=156, 1156.32pt x 578.16pt>
 File: img/Figure1.pdf Graphic file (type pdf)
 <use img/Figure1.pdf>
 Package luatex.def Info: img/Figure1.pdf  used on input line 44.
@@ -1834,13 +1856,13 @@ Package luatex.def Info: img/Figure1.pdf  used on input line 44.
 Overfull \vbox (25.03879pt too high) detected at line 44
  []
 
-[10
+[15
 
-<./img/Figure1.pdf>] [11
+<./img/Figure1.pdf>] [16
 
-] [12
+] [17
 
-] [13
+] [18
 
 ]
 Package epstopdf Info: Source file: <img/piano_pitch_class.eps>
@@ -1854,7 +1876,7 @@ Package epstopdf Info: Source file: <img/piano_pitch_class.eps>
 nverted-to.pdf img/piano_pitch_class.eps>
 (epstopdf)             \includegraphics on input line 68.
 Package epstopdf Info: Output file is already uptodate.
-<img/piano_pitch_class-eps-converted-to.pdf, id=159, 433.62pt x 289.08pt>
+<img/piano_pitch_class-eps-converted-to.pdf, id=208, 433.62pt x 289.08pt>
 File: img/piano_pitch_class-eps-converted-to.pdf Graphic file (type pdf)
 <use img/piano_pitch_class-eps-converted-to.pdf>
 Package luatex.def Info: img/piano_pitch_class-eps-converted-to.pdf  used on inp
@@ -1864,12 +1886,12 @@ ut line 68.
 Overfull \vbox (6.76402pt too high) detected at line 68
  []
 
-[14
+[19
 
-<./img/piano_pitch_class-eps-converted-to.pdf>] [15
+<./img/piano_pitch_class-eps-converted-to.pdf>] [20
 
 ]
-<img/Figure4.pdf, id=197, 2168.1pt x 1300.86pt>
+<img/Figure4.pdf, id=246, 2168.1pt x 1300.86pt>
 File: img/Figure4.pdf Graphic file (type pdf)
 <use img/Figure4.pdf>
 Package luatex.def Info: img/Figure4.pdf  used on input line 81.
@@ -1878,10 +1900,10 @@ Package luatex.def Info: img/Figure4.pdf  used on input line 81.
 Overfull \vbox (25.0388pt too high) detected at line 81
  []
 
-[16
+[21
 
 <./img/Figure4.pdf>]
-<img/Figure5.pdf, id=267, 666.6186pt x 440.86269pt>
+<img/Figure5.pdf, id=317, 666.6186pt x 440.86269pt>
 File: img/Figure5.pdf Graphic file (type pdf)
 <use img/Figure5.pdf>
 Package luatex.def Info: img/Figure5.pdf  used on input line 90.
@@ -1890,10 +1912,10 @@ Package luatex.def Info: img/Figure5.pdf  used on input line 90.
 Overfull \vbox (2.83968pt too high) detected at line 90
  []
 
-[17
+[22
 
 <./img/Figure5.pdf>]
-<img/Figure8.pdf, id=316, 989.72572pt x 514.65587pt>
+<img/Figure8.pdf, id=366, 989.72572pt x 514.65587pt>
 File: img/Figure8.pdf Graphic file (type pdf)
 <use img/Figure8.pdf>
 Package luatex.def Info: img/Figure8.pdf  used on input line 102.
@@ -1902,10 +1924,10 @@ Package luatex.def Info: img/Figure8.pdf  used on input line 102.
 Overfull \vbox (25.88643pt too high) detected at line 102
  []
 
-[18
+[23
 
 <./img/Figure8.pdf>]
-<img/Figure6.pdf, id=362, 495.33557pt x 339.32773pt>
+<img/Figure6.pdf, id=412, 495.33557pt x 339.32773pt>
 File: img/Figure6.pdf Graphic file (type pdf)
 <use img/Figure6.pdf>
 Package luatex.def Info: img/Figure6.pdf  used on input line 111.
@@ -1914,18 +1936,18 @@ Package luatex.def Info: img/Figure6.pdf  used on input line 111.
 Overfull \vbox (2.84502pt too high) detected at line 111
  []
 
-[19
+[24
 
 <./img/Figure6.pdf>]
-<img/renaissance_modes.png, id=377, 592.2125pt x 334.24875pt>
+<img/renaissance_modes.png, id=427, 592.2125pt x 334.24875pt>
 File: img/renaissance_modes.png Graphic file (type png)
 <use img/renaissance_modes.png>
 Package luatex.def Info: img/renaissance_modes.png  used on input line 119.
 (luatex.def)             Requested size: 239.00558pt x 134.89568pt.
- [20
+ [25
 
 <./img/renaissance_modes.png>]
-<img/Figure7.pdf, id=384, 805.29294pt x 938.63548pt>
+<img/Figure7.pdf, id=434, 805.29294pt x 938.63548pt>
 File: img/Figure7.pdf Graphic file (type pdf)
 <use img/Figure7.pdf>
 Package luatex.def Info: img/Figure7.pdf  used on input line 143.
@@ -1934,29 +1956,32 @@ Package luatex.def Info: img/Figure7.pdf  used on input line 143.
 Overfull \vbox (21.56264pt too high) detected at line 143
  []
 
-[21
-
-<./img/Figure7.pdf>] [22
-
-]) (./4_course_organization.tex [23
-
-] [24
-
-] [25
-
-]
 [26
 
-] [27
+<./img/Figure7.pdf>] [27
 
-] [28
+]) (./4_course_organization.tex [28
+
+] [29
+
+] [30
+
+]
+[31
+
+] [32
+
+] [33
 
 ])
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\translate ' on input line 124.
+(hyperref)                removing `\translate ' on input line 123.
 
-[29
+[34
+
+] [35
+
 
 ]
 \tf@nav=\write7
@@ -1968,43 +1993,46 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 \tf@snm=\write9
 
 \openout9 = intro-corpusmus.snm
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 131.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 131.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 130.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 130.
  (./intro-corpusmus.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 131.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 131.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 130.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 130.
 Package rerunfilecheck Info: File `intro-corpusmus.out' has not changed.
-(rerunfilecheck)             Checksum: 665A373C60B98EFDD79F032E94F05871;787.
+(rerunfilecheck)             Checksum: 5E984D42ADCC92138FD84EE5835730CE;703.
 Package logreq Info: Writing requests to 'intro-corpusmus.run.xml'.
 
 \openout1 = intro-corpusmus.run.xml
 )
 
 Here is how much of LuaTeX's memory you used:
- 40826 strings out of 480991
+ 40942 strings out of 480991
  125171,1977958 words of node,token memory allocated
- 4890 words of node memory still in use:
-   34 hlist, 8 vlist, 3 rule, 29 disc, 5 local_par, 2 math, 96 glue, 25 kern, 24
- penalty, 242 glyph, 172 attribute, 82 glue_spec, 172 attribute_list, 10 write, 
-60 pdf_literal, 1 pdf_start_link, 1 pdf_end_link, 2 pdf_dest, 1 pdf_action, 38 p
-df_colorstack nodes
-   avail lists: 1:10,2:346,3:108,4:144,5:131,6:34,7:1415,8:43,9:164,10:16,11:64
- 56652 multiletter control sequences out of 65536+200000
- 82 fonts using 12408307 bytes
+ 12520 words of node memory still in use:
+   42 hlist, 7 vlist, 3 rule, 78 disc, 6 local_par, 10 math, 269 glue, 67 kern, 
+92 penalty, 931 glyph, 271 attribute, 82 glue_spec, 271 attribute_list, 10 write
+, 30 pdf_literal, 5 pdf_start_link, 5 pdf_end_link, 5 pdf_dest, 5 pdf_action, 68
+ pdf_colorstack nodes
+   avail lists: 1:12,2:708,3:230,4:169,5:254,6:30,7:2272,8:84,9:157,10:24,11:160
+
+ 56743 multiletter control sequences out of 65536+200000
+ 98 fonts using 14299907 bytes
  71i,15n,100p,1803b,4718s stack positions out of 5000i,500n,10000p,200000b,50000s
 <c:/users/fabianmoss/appdata/local/programs/miktex 2.9/fonts/opentype/public/lm/
-lmroman10-regular.otf><c:/users/fabianmoss/appdata/local/programs/miktex 2.9/fon
-ts/truetype/typoland/lato/lato-lightitalic.ttf><c:/users/fabianmoss/appdata/loca
-l/programs/miktex 2.9/fonts/truetype/typoland/lato/lato-regular.ttf><c:/windows/
-fonts/lato-light.ttf><C:/Users/fabianmoss/AppData/Local/Programs/MiKTeX 2.9/font
-s/opentype/impallari/raleway/Raleway-Regular.otf><C:/Users/fabianmoss/AppData/Lo
-cal/Programs/MiKTeX 2.9/fonts/opentype/impallari/raleway/Raleway-Bold.otf><C:/Us
-ers/fabianmoss/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/
-cmss10.pfb><C:/Users/fabianmoss/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/pu
-blic/amsfonts/cm/cmsy10.pfb>
-Output written on intro-corpusmus.pdf (29 pages, 1050305 bytes).
+lmroman9-regular.otf><c:/users/fabianmoss/appdata/local/programs/miktex 2.9/font
+s/opentype/public/lm/lmroman10-regular.otf><c:/users/fabianmoss/appdata/local/pr
+ograms/miktex 2.9/fonts/truetype/typoland/lato/lato-italic.ttf><c:/users/fabianm
+oss/appdata/local/programs/miktex 2.9/fonts/truetype/typoland/lato/lato-lightita
+lic.ttf><c:/users/fabianmoss/appdata/local/programs/miktex 2.9/fonts/truetype/ty
+poland/lato/lato-regular.ttf><c:/windows/fonts/lato-light.ttf><C:/Users/fabianmo
+ss/AppData/Local/Programs/MiKTeX 2.9/fonts/opentype/impallari/raleway/Raleway-Re
+gular.otf><C:/Users/fabianmoss/AppData/Local/Programs/MiKTeX 2.9/fonts/opentype/
+impallari/raleway/Raleway-Bold.otf><C:/Users/fabianmoss/AppData/Local/Programs/M
+iKTeX 2.9/fonts/type1/public/amsfonts/cm/cmss10.pfb><C:/Users/fabianmoss/AppData
+/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
+Output written on intro-corpusmus.pdf (35 pages, 1130710 bytes).
 
-PDF statistics: 525 PDF objects out of 1000 (max. 8388607)
- 67 named destinations out of 1000 (max. 131072)
- 69 words of extra memory for PDF output out of 10000 (max. 100000000)
+PDF statistics: 600 PDF objects out of 1000 (max. 8388607)
+ 87 named destinations out of 1000 (max. 131072)
+ 61 words of extra memory for PDF output out of 10000 (max. 100000000)
 

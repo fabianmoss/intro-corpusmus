@@ -2790,29 +2790,30 @@
   </bcf:bibdata>
   <bcf:section number="0">
     <bcf:citekey order="1">Schaffer2016</bcf:citekey>
-    <bcf:citekey order="2">Temperley2013a</bcf:citekey>
-    <bcf:citekey order="3">Huron2001</bcf:citekey>
-    <bcf:citekey order="3">Huron2006</bcf:citekey>
-    <bcf:citekey order="3">Huron2016</bcf:citekey>
+    <bcf:citekey order="2">Schaffer2016</bcf:citekey>
+    <bcf:citekey order="3">Temperley2013a</bcf:citekey>
     <bcf:citekey order="4">Huron2001</bcf:citekey>
     <bcf:citekey order="4">Huron2006</bcf:citekey>
     <bcf:citekey order="4">Huron2016</bcf:citekey>
-    <bcf:citekey order="5">Cuthbert2010</bcf:citekey>
-    <bcf:citekey order="6">Temperley2013a</bcf:citekey>
-    <bcf:citekey order="7">Huron2001</bcf:citekey>
-    <bcf:citekey order="7">Huron2006</bcf:citekey>
-    <bcf:citekey order="7">Huron2016</bcf:citekey>
+    <bcf:citekey order="5">Huron2001</bcf:citekey>
+    <bcf:citekey order="5">Huron2006</bcf:citekey>
+    <bcf:citekey order="5">Huron2016</bcf:citekey>
+    <bcf:citekey order="6">Cuthbert2010</bcf:citekey>
+    <bcf:citekey order="7">Temperley2013a</bcf:citekey>
     <bcf:citekey order="8">Huron2001</bcf:citekey>
     <bcf:citekey order="8">Huron2006</bcf:citekey>
     <bcf:citekey order="8">Huron2016</bcf:citekey>
-    <bcf:citekey order="9">Cuthbert2010</bcf:citekey>
-    <bcf:citekey order="10">London2013</bcf:citekey>
+    <bcf:citekey order="9">Huron2001</bcf:citekey>
+    <bcf:citekey order="9">Huron2006</bcf:citekey>
+    <bcf:citekey order="9">Huron2016</bcf:citekey>
+    <bcf:citekey order="10">Cuthbert2010</bcf:citekey>
     <bcf:citekey order="11">London2013</bcf:citekey>
-    <bcf:citekey order="12">Pugin2015</bcf:citekey>
+    <bcf:citekey order="12">London2013</bcf:citekey>
     <bcf:citekey order="13">Pugin2015</bcf:citekey>
-    <bcf:citekey order="14">Neuwirth2018</bcf:citekey>
+    <bcf:citekey order="14">Pugin2015</bcf:citekey>
     <bcf:citekey order="15">Neuwirth2018</bcf:citekey>
-    <bcf:citekey order="16">Harasim2020</bcf:citekey>
+    <bcf:citekey order="16">Neuwirth2018</bcf:citekey>
+    <bcf:citekey order="17">Harasim2020</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="apa">

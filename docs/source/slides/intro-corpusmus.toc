@@ -2,6 +2,6 @@
 \defcounter {refsection}{0}\relax 
 \beamer@sectionintoc {1}{I.\nobreakspace {}What are Musical Corpus Studies}{5}{0}{1}
 \defcounter {refsection}{0}\relax 
-\beamer@sectionintoc {2}{II.\nobreakspace {}Case study}{10}{0}{2}
+\beamer@sectionintoc {2}{II.\nobreakspace {}Case study}{11}{0}{2}
 \defcounter {refsection}{0}\relax 
-\beamer@sectionintoc {3}{III.\nobreakspace {}Course organization}{28}{0}{3}
+\beamer@sectionintoc {3}{III.\nobreakspace {}Course organization}{31}{0}{3}

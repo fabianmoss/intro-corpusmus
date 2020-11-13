@@ -11,7 +11,7 @@
     \begin{enumerate}
         \item How can we find modes \alert{automatically}? 
         \item How can the concept of a \alert{mode} be operationalized? 
-        \item Can we do it without knowing (\alert{unsupervised}) how many modes there are and what they look like?
+        \item Can we do it without knowing how many modes there are and what they look like (\alert{unsupervised learning})?
         \item How do modes change \alert{historically}?
     \end{enumerate}
 \end{frame}
@@ -68,7 +68,31 @@
 \end{frame}
 
 \begin{frame}{The model}
+
+    Abstand zwischen zwei Stücken $p$ und $q$ im \emph{key space} $\mathbb K$:
+    \begin{equation}
+        d_{\mathbb K} (p,q) = \left\| \frac{p}{\sum_i p_i} - \frac{q}{\sum_i q_i} \right\|_2,
+    \end{equation}
+
+    \pause
+
+    Abstand zwischen zwei Stücken $p$ und $q$ im \emph{mode space} $\mathbb M$:
+    \begin{equation}
+        d_\mathbb M (p,q) =
+        \min_{i\in\mathbb Z_{12}} d_{\mathbb K}(\sigma_i(p), q) = \min_{i\in\mathbb Z_{12}} d_{\mathbb K}(p, \sigma_{i}(q)),
+    \end{equation}
+\end{frame}
+
+\begin{frame}{The model}
+
+    The optimal mode:
+
+    \begin{equation}\label{map_key}
+        (R^*,M^*)= \operatorname*{argmax}_{(R,M)\,\in\,\mathbb Z_{12}\times\{1, \ldots, m\}} p(R,M\mid T,P,D).
+    \end{equation}
     
+    In words: Given a piece $P$ in a time period $T$ in the corpus $D$, the best (mode, root) pair $(M^*, R^*)$ is the one
+    that maximizes the probabilty $p$.
 \end{frame}
 
 \begin{frame}{Automatically finding modes}
@@ -142,8 +166,9 @@
     \end{columns}
 \end{frame}
 
-\begin{frame}{Summary}
-    \begin{enumerate}
-        \item \ldots
-    \end{enumerate}
+\begin{frame}{This course}
+    \begin{itemize}
+        \item The examples in this course are much simpler!
+        \item Quality > Quantity
+    \end{itemize}
 \end{frame}

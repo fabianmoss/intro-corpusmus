@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.12.0 (MiKTeX 2.9.7380 64-bit)  (format=lualatex 2020.4.17)  13 NOV 2020 13:35
+This is LuaHBTeX, Version 1.12.0 (MiKTeX 2.9.7380 64-bit)  (format=lualatex 2020.4.17)  13 NOV 2020 13:38
  system commands enabled.
 **intro-corpusmus
 (./intro-corpusmus.tex
@@ -1828,10 +1828,10 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 <img/Figure1.pdf, id=106, 1156.32pt x 578.16pt>
 File: img/Figure1.pdf Graphic file (type pdf)
 <use img/Figure1.pdf>
-Package luatex.def Info: img/Figure1.pdf  used on input line 41.
+Package luatex.def Info: img/Figure1.pdf  used on input line 44.
 (luatex.def)             Requested size: 355.22664pt x 177.61331pt.
 
-Overfull \vbox (25.03879pt too high) detected at line 41
+Overfull \vbox (25.03879pt too high) detected at line 44
  []
 
 [10
@@ -1852,16 +1852,16 @@ Package epstopdf Info: Source file: <img/piano_pitch_class.eps>
 (epstopdf)                    size: 11477 bytes
 (epstopdf)             Command: <epstopdf --outfile=img/piano_pitch_class-eps-co
 nverted-to.pdf img/piano_pitch_class.eps>
-(epstopdf)             \includegraphics on input line 65.
+(epstopdf)             \includegraphics on input line 68.
 Package epstopdf Info: Output file is already uptodate.
 <img/piano_pitch_class-eps-converted-to.pdf, id=159, 433.62pt x 289.08pt>
 File: img/piano_pitch_class-eps-converted-to.pdf Graphic file (type pdf)
 <use img/piano_pitch_class-eps-converted-to.pdf>
 Package luatex.def Info: img/piano_pitch_class-eps-converted-to.pdf  used on inp
-ut line 65.
+ut line 68.
 (luatex.def)             Requested size: 239.00558pt x 159.33855pt.
 
-Overfull \vbox (6.76402pt too high) detected at line 65
+Overfull \vbox (6.76402pt too high) detected at line 68
  []
 
 [14
@@ -1872,10 +1872,10 @@ Overfull \vbox (6.76402pt too high) detected at line 65
 <img/Figure4.pdf, id=197, 2168.1pt x 1300.86pt>
 File: img/Figure4.pdf Graphic file (type pdf)
 <use img/Figure4.pdf>
-Package luatex.def Info: img/Figure4.pdf  used on input line 78.
+Package luatex.def Info: img/Figure4.pdf  used on input line 81.
 (luatex.def)             Requested size: 296.0222pt x 177.61333pt.
 
-Overfull \vbox (25.0388pt too high) detected at line 78
+Overfull \vbox (25.0388pt too high) detected at line 81
  []
 
 [16
@@ -1884,10 +1884,10 @@ Overfull \vbox (25.0388pt too high) detected at line 78
 <img/Figure5.pdf, id=267, 666.6186pt x 440.86269pt>
 File: img/Figure5.pdf Graphic file (type pdf)
 <use img/Figure5.pdf>
-Package luatex.def Info: img/Figure5.pdf  used on input line 87.
+Package luatex.def Info: img/Figure5.pdf  used on input line 90.
 (luatex.def)             Requested size: 234.99834pt x 155.4142pt.
 
-Overfull \vbox (2.83968pt too high) detected at line 87
+Overfull \vbox (2.83968pt too high) detected at line 90
  []
 
 [17
@@ -1896,10 +1896,10 @@ Overfull \vbox (2.83968pt too high) detected at line 87
 <img/Figure8.pdf, id=316, 989.72572pt x 514.65587pt>
 File: img/Figure8.pdf Graphic file (type pdf)
 <use img/Figure8.pdf>
-Package luatex.def Info: img/Figure8.pdf  used on input line 99.
+Package luatex.def Info: img/Figure8.pdf  used on input line 102.
 (luatex.def)             Requested size: 298.88327pt x 155.41884pt.
 
-Overfull \vbox (25.88643pt too high) detected at line 99
+Overfull \vbox (25.88643pt too high) detected at line 102
  []
 
 [18
@@ -1908,10 +1908,10 @@ Overfull \vbox (25.88643pt too high) detected at line 99
 <img/Figure6.pdf, id=362, 495.33557pt x 339.32773pt>
 File: img/Figure6.pdf Graphic file (type pdf)
 <use img/Figure6.pdf>
-Package luatex.def Info: img/Figure6.pdf  used on input line 108.
+Package luatex.def Info: img/Figure6.pdf  used on input line 111.
 (luatex.def)             Requested size: 226.87456pt x 155.41954pt.
 
-Overfull \vbox (2.84502pt too high) detected at line 108
+Overfull \vbox (2.84502pt too high) detected at line 111
  []
 
 [19
@@ -1920,7 +1920,7 @@ Overfull \vbox (2.84502pt too high) detected at line 108
 <img/renaissance_modes.png, id=377, 592.2125pt x 334.24875pt>
 File: img/renaissance_modes.png Graphic file (type png)
 <use img/renaissance_modes.png>
-Package luatex.def Info: img/renaissance_modes.png  used on input line 116.
+Package luatex.def Info: img/renaissance_modes.png  used on input line 119.
 (luatex.def)             Requested size: 239.00558pt x 134.89568pt.
  [20
 
@@ -1928,10 +1928,10 @@ Package luatex.def Info: img/renaissance_modes.png  used on input line 116.
 <img/Figure7.pdf, id=384, 805.29294pt x 938.63548pt>
 File: img/Figure7.pdf Graphic file (type pdf)
 <use img/Figure7.pdf>
-Package luatex.def Info: img/Figure7.pdf  used on input line 140.
+Package luatex.def Info: img/Figure7.pdf  used on input line 143.
 (luatex.def)             Requested size: 152.38057pt x 177.61215pt.
 
-Overfull \vbox (21.56264pt too high) detected at line 140
+Overfull \vbox (21.56264pt too high) detected at line 143
  []
 
 [21
@@ -2002,7 +2002,7 @@ cal/Programs/MiKTeX 2.9/fonts/opentype/impallari/raleway/Raleway-Bold.otf><C:/Us
 ers/fabianmoss/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/
 cmss10.pfb><C:/Users/fabianmoss/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/pu
 blic/amsfonts/cm/cmsy10.pfb>
-Output written on intro-corpusmus.pdf (29 pages, 1050097 bytes).
+Output written on intro-corpusmus.pdf (29 pages, 1050305 bytes).
 
 PDF statistics: 525 PDF objects out of 1000 (max. 8388607)
  67 named destinations out of 1000 (max. 131072)

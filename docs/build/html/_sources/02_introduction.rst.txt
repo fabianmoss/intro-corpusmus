@@ -13,4 +13,4 @@ Introduction and Background
 
 .. note:: 
 
-   The slides for the introduction can be found here: `<pdf _static/intro-corpusmus.pdf>`_
+   The slides for the introduction can be found here: `pdf <_static/intro-corpusmus.pdf>`_

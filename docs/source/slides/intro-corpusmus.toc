@@ -6,4 +6,4 @@
 \defcounter {refsection}{0}\relax 
 \beamer@sectionintoc {3}{III.\nobreakspace {}Examples}{5}{0}{3}
 \defcounter {refsection}{0}\relax 
-\beamer@sectionintoc {4}{IV.\nobreakspace {}Course organization}{22}{0}{4}
+\beamer@sectionintoc {4}{IV.\nobreakspace {}Course organization}{23}{0}{4}

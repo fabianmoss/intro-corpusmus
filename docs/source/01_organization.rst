@@ -60,15 +60,15 @@ and metric patterns in Malian drum music (see :numref:`tab_overview`).
    * - 2
      - 
      - 17:40-19:00 Uhr
-     - Melody I: Pitches, intervals, folk song melodies
+     - Melody I: Folk song melodies, notes, form
    * - 3
      - Sa., 14.11.2020 
      - 09:00-10:20 Uhr
-     - Melody II: Jazz solos
+     - Melody II: The melodic arc, intervals
    * - 4
      -
      - 10:40-12:00 Uhr
-     - Harmony I: Beethoven's string quartets
+     - Melody III: Jazz solos
    * - 
      - 
      - 12:00-13:00 Uhr
@@ -80,15 +80,15 @@ and metric patterns in Malian drum music (see :numref:`tab_overview`).
    * - 6 
      - 
      - 14:40-16:00 Uhr
-     - Harmony II: Pop charts (Billboard 100)
+     - Harmony I: Beethoven's string quartets
    * - 7 
      - Fr., 11.12.2020 
      - 10:00-11:20 Uhr
-     - Harmony III: Cadences in Renaissance polyphony (guest: `Richard Freedman <https://www.haverford.edu/users/rfreedma>`_)
+     - Harmony II: Cadences in Renaissance polyphony (guest: `Richard Freedman <https://www.haverford.edu/users/rfreedma>`_)
    * - 8
      - 
      - 11:40-13:00 Uhr
-     - Harmony IV & Form: Brazilian Choro
+     - Harmony III & Form: Brazilian Choro / Pop charts (Billboard 100)
    * - 9 
      - Sa., 12.12.2020 
      - 09:00-10:20 Uhr

@@ -259,18 +259,25 @@ INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\fonts\vf\adobe\times
 INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\adobe\times\ptmri8r.tfm
 INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\fonts\vf\adobe\helvetic\phvb8t.vf
 INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\adobe\helvetic\phvb8r.tfm
-INPUT abstract_bg.jpg
-INPUT .\abstract_bg.jpg
-INPUT .\abstract_bg.jpg
-INPUT .\abstract_bg.jpg
-INPUT .\abstract_bg.jpg
+INPUT pattern.jpg
+INPUT .\pattern.jpg
+INPUT .\pattern.jpg
+INPUT .\pattern.jpg
+INPUT .\pattern.jpg
 INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex\latex\psnfss\t1pcr.fd
 INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex\latex\psnfss\t1pcr.fd
 INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\adobe\courier\pcrr8t.tfm
-INPUT abstract_bg.jpg
-INPUT .\abstract_bg.jpg
+INPUT pattern.jpg
+INPUT .\pattern.jpg
 INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\fonts\vf\adobe\helvetic\phvr8t.vf
 INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\adobe\helvetic\phvr8r.tfm
+INPUT abstract_bg.jpg
+INPUT .\abstract_bg.jpg
+INPUT .\abstract_bg.jpg
+INPUT .\abstract_bg.jpg
+INPUT .\abstract_bg.jpg
+INPUT abstract_bg.jpg
+INPUT .\abstract_bg.jpg
 INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\adobe\times\ptmr8t.tfm
 INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\adobe\courier\pcrr8t.tfm
 INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\adobe\courier\pcrr8t.tfm

@@ -6,10 +6,10 @@
 Introduction to Musical Corpus Studies
 ======================================
 
-.. image:: _static/abstract_bg.jpg
+.. image:: _static/02/pattern.jpg
   :width: 100%
   :align: center
-  :alt: Image by `Victoria Alexander <https://unsplash.com/@pixeldebris?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText>`_ 
+  :alt: Image by `Meagan Carsience <https://unsplash.com/@mcarsience_photography?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText>`_ 
         on `Unsplash <https://unsplash.com/s/photos/pattern?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText>`_.
 
 .. warning::
@@ -58,6 +58,7 @@ about quantitative approaches to musicology.
    :numbered:
 
    01_organization.rst
+   02_introduction.rst
    03_melody_I.ipynb 
 
 .. Indices and tables

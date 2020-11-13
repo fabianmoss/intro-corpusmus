@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.12.0 (MiKTeX 2.9.7380 64-bit)  (format=lualatex 2020.4.17)  13 NOV 2020 09:51
+This is LuaHBTeX, Version 1.12.0 (MiKTeX 2.9.7380 64-bit)  (format=lualatex 2020.4.17)  13 NOV 2020 09:59
  system commands enabled.
 **intro-corpusmus
 (./intro-corpusmus.tex
@@ -1933,14 +1933,6 @@ Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 127.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 127.
 Package rerunfilecheck Info: File `intro-corpusmus.out' has not changed.
 (rerunfilecheck)             Checksum: 665A373C60B98EFDD79F032E94F05871;787.
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
-
-Package biblatex Warning: Please rerun LaTeX.
-(biblatex)                Page breaks have changed.
-
 Package logreq Info: Writing requests to 'intro-corpusmus.run.xml'.
 
 \openout1 = intro-corpusmus.run.xml
@@ -1968,7 +1960,7 @@ cal/Programs/MiKTeX 2.9/fonts/opentype/impallari/raleway/Raleway-Bold.otf><C:/Us
 ers/fabianmoss/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/
 cmss10.pfb><C:/Users/fabianmoss/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/pu
 blic/amsfonts/cm/cmsy10.pfb>
-Output written on intro-corpusmus.pdf (22 pages, 1017191 bytes).
+Output written on intro-corpusmus.pdf (22 pages, 1017024 bytes).
 
 PDF statistics: 451 PDF objects out of 1000 (max. 8388607)
  53 named destinations out of 1000 (max. 131072)

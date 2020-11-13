@@ -19,58 +19,39 @@
 
 \refsection{0}
   \datalist[entry]{apa/global//global/global}
-    \entry{Cohn1998}{article}{}
-      \name{author}{1}{}{%
-        {{un=0,uniquepart=base,hash=18d8e09c06b0700ef9fc76e2678507e6}{%
-           family={Cohn},
-           familyi={C\bibinitperiod},
-           given={Richard},
-           giveni={R\bibinitperiod},
-           givenun=0}}%
-      }
-      \strng{namehash}{18d8e09c06b0700ef9fc76e2678507e6}
-      \strng{fullhash}{18d8e09c06b0700ef9fc76e2678507e6}
-      \strng{bibnamehash}{18d8e09c06b0700ef9fc76e2678507e6}
-      \strng{authorbibnamehash}{18d8e09c06b0700ef9fc76e2678507e6}
-      \strng{authornamehash}{18d8e09c06b0700ef9fc76e2678507e6}
-      \strng{authorfullhash}{18d8e09c06b0700ef9fc76e2678507e6}
-      \field{sortinit}{C}
-      \field{sortinithash}{4c244ceae61406cdc0cc2ce1cb1ff703}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{year}
-      \true{uniqueprimaryauthor}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{Journal of Music Theory}
-      \field{number}{2}
-      \field{title}{Introduction to {Neo}-{Riemannian} {Theory}: {A} {Survey} and a {Historical} {Perspective}}
-      \field{volume}{42}
-      \field{year}{1998}
-      \field{pages}{167\bibrangedash 180}
-      \range{pages}{14}
-      \keyw{Theory,Transformational,NRT,Transformational Theory}
-    \endentry
-    \entry{Hostinsky1879}{book}{}
-      \name{author}{1}{}{%
-        {{un=0,uniquepart=base,hash=2ed66b79533418b3e56026bf99c136df}{%
-           family={Hostinský},
+    \entry{Harasim2020}{article}{}
+      \name{author}{4}{}{%
+        {{un=0,uniquepart=base,hash=6da55031daa5da1803b5ef5b128b85a4}{%
+           family={Harasim},
            familyi={H\bibinitperiod},
-           given={Otakar},
-           giveni={O\bibinitperiod},
+           given={Daniel},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=ceeb25ba116874e69a0d91df2df39044}{%
+           family={Moss},
+           familyi={M\bibinitperiod},
+           given={Fabian\bibnamedelima C.},
+           giveni={F\bibinitperiod\bibinitdelim C\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=14f835d8834ca987977eb01e33c182a7}{%
+           family={Ramirez},
+           familyi={R\bibinitperiod},
+           given={Matthias},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=7c7184e67456bd174f134b9beeda1a47}{%
+           family={Rohrmeier},
+           familyi={R\bibinitperiod},
+           given={Martin},
+           giveni={M\bibinitperiod},
            givenun=0}}%
       }
-      \list{location}{1}{%
-        {Prague}%
-      }
-      \list{publisher}{1}{%
-        {H. Dominicus}%
-      }
-      \strng{namehash}{2ed66b79533418b3e56026bf99c136df}
-      \strng{fullhash}{2ed66b79533418b3e56026bf99c136df}
-      \strng{bibnamehash}{2ed66b79533418b3e56026bf99c136df}
-      \strng{authorbibnamehash}{2ed66b79533418b3e56026bf99c136df}
-      \strng{authornamehash}{2ed66b79533418b3e56026bf99c136df}
-      \strng{authorfullhash}{2ed66b79533418b3e56026bf99c136df}
+      \strng{namehash}{f2a74c5adb41b1309fccd279fd1984a2}
+      \strng{fullhash}{f2a74c5adb41b1309fccd279fd1984a2}
+      \strng{bibnamehash}{f2a74c5adb41b1309fccd279fd1984a2}
+      \strng{authorbibnamehash}{f2a74c5adb41b1309fccd279fd1984a2}
+      \strng{authornamehash}{f2a74c5adb41b1309fccd279fd1984a2}
+      \strng{authorfullhash}{f2a74c5adb41b1309fccd279fd1984a2}
       \field{sortinit}{H}
       \field{sortinithash}{6db6145dae8dc9e1271a8d556090b50a}
       \field{extradatescope}{labelyear}
@@ -78,8 +59,9 @@
       \true{uniqueprimaryauthor}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{title}{Die {Lehre} von den musikalischen {Klängen}: ein {Beitrag} zur aesthetischen {Begründung} der {Harmonielehre}}
-      \field{year}{1879}
+      \field{journaltitle}{Humanities \& Social Sciences Communications}
+      \field{title}{Exploring the foundations of tonality: {Statistical} cognitive modeling of modes in the history of {Western} classical music}
+      \field{year}{in press}
     \endentry
     \entry{Hyer2001}{inbook}{}
       \name{author}{1}{}{%
@@ -132,43 +114,6 @@
       \range{pages}{12}
       \keyw{Tonality}
     \endentry
-    \entry{Lieck2020}{article}{}
-      \name{author}{3}{}{%
-        {{un=0,uniquepart=base,hash=3543c37a99b858ac0072a58264686db9}{%
-           family={Lieck},
-           familyi={L\bibinitperiod},
-           given={Robert},
-           giveni={R\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=ceeb25ba116874e69a0d91df2df39044}{%
-           family={Moss},
-           familyi={M\bibinitperiod},
-           given={Fabian\bibnamedelima C.},
-           giveni={F\bibinitperiod\bibinitdelim C\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=7c7184e67456bd174f134b9beeda1a47}{%
-           family={Rohrmeier},
-           familyi={R\bibinitperiod},
-           given={Martin},
-           giveni={M\bibinitperiod},
-           givenun=0}}%
-      }
-      \strng{namehash}{2a0fa7cfe9cd08d9d89a1a900ec948f7}
-      \strng{fullhash}{2a0fa7cfe9cd08d9d89a1a900ec948f7}
-      \strng{bibnamehash}{2a0fa7cfe9cd08d9d89a1a900ec948f7}
-      \strng{authorbibnamehash}{2a0fa7cfe9cd08d9d89a1a900ec948f7}
-      \strng{authornamehash}{2a0fa7cfe9cd08d9d89a1a900ec948f7}
-      \strng{authorfullhash}{2a0fa7cfe9cd08d9d89a1a900ec948f7}
-      \field{sortinit}{L}
-      \field{sortinithash}{dad3efd0836470093a7b4a7bb756eb8c}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{pubstate}
-      \true{uniqueprimaryauthor}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{pubstate}{in review}
-      \field{title}{The {Tonal} {Diffusion} {Model}}
-    \endentry
     \entry{Moss2019a}{thesis}{}
       \name{author}{1}{}{%
         {{un=0,uniquepart=base,hash=ceeb25ba116874e69a0d91df2df39044}{%
@@ -194,6 +139,7 @@
       \field{sortinithash}{2e5c2f51f7fa2d957f3206819bf86dc3}
       \field{extradatescope}{labelyear}
       \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{Transitions of {Tonality}: {A} {Model}-{Based} {Corpus} {Study}}
@@ -202,217 +148,6 @@
       \verb{doi}
       \verb 10.5075/epfl-thesis-9808
       \endverb
-    \endentry
-    \entry{Moss2020b}{article}{}
-      \name{author}{3}{}{%
-        {{un=0,uniquepart=base,hash=ceeb25ba116874e69a0d91df2df39044}{%
-           family={Moss},
-           familyi={M\bibinitperiod},
-           given={Fabian\bibnamedelima C.},
-           giveni={F\bibinitperiod\bibinitdelim C\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=3543c37a99b858ac0072a58264686db9}{%
-           family={Lieck},
-           familyi={L\bibinitperiod},
-           given={Robert},
-           giveni={R\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=7c7184e67456bd174f134b9beeda1a47}{%
-           family={Rohrmeier},
-           familyi={R\bibinitperiod},
-           given={Martin},
-           giveni={M\bibinitperiod},
-           givenun=0}}%
-      }
-      \strng{namehash}{31934c58552d8c28a9609a26923b9ef8}
-      \strng{fullhash}{31934c58552d8c28a9609a26923b9ef8}
-      \strng{bibnamehash}{31934c58552d8c28a9609a26923b9ef8}
-      \strng{authorbibnamehash}{31934c58552d8c28a9609a26923b9ef8}
-      \strng{authornamehash}{31934c58552d8c28a9609a26923b9ef8}
-      \strng{authorfullhash}{31934c58552d8c28a9609a26923b9ef8}
-      \field{sortinit}{M}
-      \field{sortinithash}{2e5c2f51f7fa2d957f3206819bf86dc3}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{pubstate}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{pubstate}{in prep.}
-      \field{title}{Modeling historical changes in pitch-class distributions}
-    \endentry
-    \entry{Moss2019b}{article}{}
-      \name{author}{4}{}{%
-        {{un=0,uniquepart=base,hash=ceeb25ba116874e69a0d91df2df39044}{%
-           family={Moss},
-           familyi={M\bibinitperiod},
-           given={Fabian\bibnamedelima C.},
-           giveni={F\bibinitperiod\bibinitdelim C\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=ae0464b93a1404dccfd671e036398cc5}{%
-           family={Neuwirth},
-           familyi={N\bibinitperiod},
-           given={Markus},
-           giveni={M\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=6da55031daa5da1803b5ef5b128b85a4}{%
-           family={Harasim},
-           familyi={H\bibinitperiod},
-           given={Daniel},
-           giveni={D\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=7c7184e67456bd174f134b9beeda1a47}{%
-           family={Rohrmeier},
-           familyi={R\bibinitperiod},
-           given={Martin},
-           giveni={M\bibinitperiod},
-           givenun=0}}%
-      }
-      \strng{namehash}{d3af601a616d300332aa54c5bbc86905}
-      \strng{fullhash}{d3af601a616d300332aa54c5bbc86905}
-      \strng{bibnamehash}{d3af601a616d300332aa54c5bbc86905}
-      \strng{authorbibnamehash}{d3af601a616d300332aa54c5bbc86905}
-      \strng{authornamehash}{d3af601a616d300332aa54c5bbc86905}
-      \strng{authorfullhash}{d3af601a616d300332aa54c5bbc86905}
-      \field{sortinit}{M}
-      \field{sortinithash}{2e5c2f51f7fa2d957f3206819bf86dc3}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{year}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{PLoS ONE}
-      \field{number}{6}
-      \field{title}{Statistical characteristics of tonal harmony: a corpus study of {Beethoven}'s string quartets}
-      \field{volume}{14}
-      \field{year}{2019}
-      \field{pages}{e0217242}
-      \range{pages}{-1}
-      \verb{doi}
-      \verb 10.1371/journal.pone.0217242
-      \endverb
-      \verb{file}
-      \verb Full Text:C\:\\Users\\fabianmoss\\Zotero\\storage\\IAVASKU3\\Moss et al. - 2019 - Statistical characteristics of tonal harmony a co.pdf:application/pdf;Moss et al. - 2019 - Statistical characteristics of tonal harmony A corpus study of Beethoven’s string quartets:C\:\\Users\\fabianmoss\\Zotero\\storage\\Y6K34UX5\\Moss et al. - 2019 - Statistical characteristics of tonal harmony A corpus study of Beethoven’s string quartets.pdf:application/pdf
-      \endverb
-    \endentry
-    \entry{Neuwirth2018}{article}{}
-      \name{author}{4}{}{%
-        {{un=0,uniquepart=base,hash=ae0464b93a1404dccfd671e036398cc5}{%
-           family={Neuwirth},
-           familyi={N\bibinitperiod},
-           given={Markus},
-           giveni={M\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=6da55031daa5da1803b5ef5b128b85a4}{%
-           family={Harasim},
-           familyi={H\bibinitperiod},
-           given={Daniel},
-           giveni={D\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=ceeb25ba116874e69a0d91df2df39044}{%
-           family={Moss},
-           familyi={M\bibinitperiod},
-           given={Fabian\bibnamedelima C.},
-           giveni={F\bibinitperiod\bibinitdelim C\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=7c7184e67456bd174f134b9beeda1a47}{%
-           family={Rohrmeier},
-           familyi={R\bibinitperiod},
-           given={Martin},
-           giveni={M\bibinitperiod},
-           givenun=0}}%
-      }
-      \strng{namehash}{9b7de28ed748a92ee55a28cc19abf5de}
-      \strng{fullhash}{9b7de28ed748a92ee55a28cc19abf5de}
-      \strng{bibnamehash}{9b7de28ed748a92ee55a28cc19abf5de}
-      \strng{authorbibnamehash}{9b7de28ed748a92ee55a28cc19abf5de}
-      \strng{authornamehash}{9b7de28ed748a92ee55a28cc19abf5de}
-      \strng{authorfullhash}{9b7de28ed748a92ee55a28cc19abf5de}
-      \field{sortinit}{N}
-      \field{sortinithash}{98cf339a479c0454fe09153a08675a15}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{year}
-      \true{uniqueprimaryauthor}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{Frontiers in Digital Humanities}
-      \field{number}{July}
-      \field{title}{The {Annotated} {Beethoven} {Corpus} ({ABC}): {A} {Dataset} of {Harmonic} {Analyses} of {All} {Beethoven} {String} {Quartets}}
-      \field{volume}{5}
-      \field{year}{2018}
-      \field{pages}{1\bibrangedash 5}
-      \range{pages}{5}
-      \verb{doi}
-      \verb 10.3389/fdigh.2018.00016
-      \endverb
-    \endentry
-    \entry{Piantadosi2014}{article}{}
-      \name{author}{1}{}{%
-        {{un=0,uniquepart=base,hash=3f46a4a9c148a249e1f487bf63fb6c1c}{%
-           family={Piantadosi},
-           familyi={P\bibinitperiod},
-           given={Steven\bibnamedelima T},
-           giveni={S\bibinitperiod\bibinitdelim T\bibinitperiod},
-           givenun=0}}%
-      }
-      \strng{namehash}{3f46a4a9c148a249e1f487bf63fb6c1c}
-      \strng{fullhash}{3f46a4a9c148a249e1f487bf63fb6c1c}
-      \strng{bibnamehash}{3f46a4a9c148a249e1f487bf63fb6c1c}
-      \strng{authorbibnamehash}{3f46a4a9c148a249e1f487bf63fb6c1c}
-      \strng{authornamehash}{3f46a4a9c148a249e1f487bf63fb6c1c}
-      \strng{authorfullhash}{3f46a4a9c148a249e1f487bf63fb6c1c}
-      \field{sortinit}{P}
-      \field{sortinithash}{bb5b15f2db90f7aef79bb9e83defefcb}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{year}
-      \true{uniqueprimaryauthor}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{issn}{1531-5320}
-      \field{journaltitle}{Psychonomic {B}ulletin \& {R}eview}
-      \field{number}{5}
-      \field{title}{Zipf's word frequency law in natural language: a critical review and future directions.}
-      \field{volume}{21}
-      \field{year}{2014}
-      \field{pages}{1112\bibrangedash 30}
-      \range{pages}{21}
-      \verb{doi}
-      \verb 10.3758/s13423-014-0585-6
-      \endverb
-      \verb{urlraw}
-      \verb http://www.ncbi.nlm.nih.gov/pubmed/24664880
-      \endverb
-      \verb{url}
-      \verb http://www.ncbi.nlm.nih.gov/pubmed/24664880
-      \endverb
-    \endentry
-    \entry{Zipf1949}{book}{}
-      \name{author}{1}{}{%
-        {{un=0,uniquepart=base,hash=41c489255f6e9ed6cfd9bae1f597a49c}{%
-           family={Zipf},
-           familyi={Z\bibinitperiod},
-           given={George\bibnamedelima Kingsley},
-           giveni={G\bibinitperiod\bibinitdelim K\bibinitperiod},
-           givenun=0}}%
-      }
-      \list{location}{1}{%
-        {Oxford, England}%
-      }
-      \list{publisher}{1}{%
-        {Addison-Wesley Press}%
-      }
-      \strng{namehash}{41c489255f6e9ed6cfd9bae1f597a49c}
-      \strng{fullhash}{41c489255f6e9ed6cfd9bae1f597a49c}
-      \strng{bibnamehash}{41c489255f6e9ed6cfd9bae1f597a49c}
-      \strng{authorbibnamehash}{41c489255f6e9ed6cfd9bae1f597a49c}
-      \strng{authornamehash}{41c489255f6e9ed6cfd9bae1f597a49c}
-      \strng{authorfullhash}{41c489255f6e9ed6cfd9bae1f597a49c}
-      \field{sortinit}{Z}
-      \field{sortinithash}{8f7b480688e809b50b6f6577b16f3db5}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{year}
-      \true{uniqueprimaryauthor}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{title}{Human behavior and the principle of least effort}
-      \field{year}{1949}
     \endentry
   \enddatalist
 \endrefsection

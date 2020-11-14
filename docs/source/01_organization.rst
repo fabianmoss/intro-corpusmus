@@ -84,11 +84,11 @@ and metric patterns in Malian drum music (see :numref:`tab_overview`).
    * - 7 
      - Fr., 11.12.2020 
      - 10:00-11:20 Uhr
-     - Harmony II: Cadences in Renaissance polyphony (guest: `Richard Freedman <https://www.haverford.edu/users/rfreedma>`_)
+     - Harmony II: Brazilian Choro / Pop charts (Billboard 100)
    * - 8
      - 
      - 11:40-13:00 Uhr
-     - Harmony III & Form: Brazilian Choro / Pop charts (Billboard 100)
+     - Harmony III: Cadences in Renaissance polyphony (guest: `Richard Freedman <https://www.haverford.edu/users/rfreedma>`_)
    * - 9 
      - Sa., 12.12.2020 
      - 09:00-10:20 Uhr

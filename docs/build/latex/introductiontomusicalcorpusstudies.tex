@@ -1073,12 +1073,13 @@ This allows us now to look at the \sphinxstylestrong{melodic profile} of a parti
 \sphinxsetup{VerbatimColor={named}{nbsphinx-code-bg}}
 \sphinxsetup{VerbatimBorderColor={named}{nbsphinx-code-border}}
 \begin{sphinxVerbatim}[commandchars=\\\{\}]
-\llap{\color{nbsphinxin}[28]:\,\hspace{\fboxrule}\hspace{\fboxsep}}\PYG{k}{def} \PYG{n+nf}{plot\PYGZus{}melodic\PYGZus{}profile}\PYG{p}{(}\PYG{n}{notelist}\PYG{p}{,} \PYG{n}{ax}\PYG{o}{=}\PYG{k+kc}{None}\PYG{p}{,} \PYG{n}{c}\PYG{o}{=}\PYG{k+kc}{None}\PYG{p}{,} \PYG{n}{mean}\PYG{o}{=}\PYG{k+kc}{False}\PYG{p}{,} \PYG{n}{Z}\PYG{o}{=}\PYG{k+kc}{False}\PYG{p}{,} \PYG{n}{sections}\PYG{o}{=}\PYG{k+kc}{False}\PYG{p}{,} \PYG{n}{standardized}\PYG{o}{=}\PYG{k+kc}{False}\PYG{p}{)}\PYG{p}{:}
+\llap{\color{nbsphinxin}[1]:\,\hspace{\fboxrule}\hspace{\fboxsep}}\PYG{k}{def} \PYG{n+nf}{plot\PYGZus{}melodic\PYGZus{}profile}\PYG{p}{(}\PYG{n}{notelist}\PYG{p}{,} \PYG{n}{ax}\PYG{o}{=}\PYG{k+kc}{None}\PYG{p}{,} \PYG{n}{c}\PYG{o}{=}\PYG{k+kc}{None}\PYG{p}{,} \PYG{n}{mean}\PYG{o}{=}\PYG{k+kc}{False}\PYG{p}{,} \PYG{n}{Z}\PYG{o}{=}\PYG{k+kc}{False}\PYG{p}{,} \PYG{n}{sections}\PYG{o}{=}\PYG{k+kc}{False}\PYG{p}{,} \PYG{n}{standardized}\PYG{o}{=}\PYG{k+kc}{False}\PYG{p}{)}\PYG{p}{:}
 
     \PYG{k}{if} \PYG{n}{ax} \PYG{o}{==} \PYG{k+kc}{None}\PYG{p}{:}
         \PYG{n}{ax} \PYG{o}{=} \PYG{n}{plt}\PYG{o}{.}\PYG{n}{gca}\PYG{p}{(}\PYG{p}{)}
 
     \PYG{k}{if} \PYG{n}{standardized}\PYG{p}{:}
+        \PYG{n}{notelist} \PYG{o}{=} \PYG{n}{standardized}\PYG{p}{(}\PYG{n}{notelist}\PYG{p}{)}
         \PYG{n}{x} \PYG{o}{=} \PYG{n}{notelist}\PYG{p}{[}\PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{Rel. Onset}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{]}
         \PYG{n}{y} \PYG{o}{=} \PYG{n}{notelist}\PYG{p}{[}\PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{Rel. MIDI Pitch}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{]}
     \PYG{k}{else}\PYG{p}{:}
@@ -1507,15 +1508,22 @@ To which melodic fragments do these correspond?
 \label{\detokenize{04_jazz_solos:Solos-in-the-Weimar-Jazz-Database}}\label{\detokenize{04_jazz_solos::doc}}
 \sphinxstylestrong{Disclaimer: I am not the expert here!}
 
-The first project we will have a look at is the \sphinxhref{https://jazzomat.hfm-weimar.de/}{Jazzomat Research Project} that contains the \sphinxstyleemphasis{Weimar Jazz Database} (WJazzD). Let us first browse the site.
+In this session, we will have a look at is the \sphinxhref{https://jazzomat.hfm-weimar.de/}{Jazzomat Research Project} that contains the \sphinxstyleemphasis{Weimar Jazz Database} (WJazzD). Let us first browse the site.
 
-Transcriptions of Jazz solos :cite:\sphinxcode{\sphinxupquote{Pfleiderer2017}}. The \sphinxstyleemphasis{Weimar Jazz Database} (WJD) consists of 456 transcriptions of Jazz solos from diverse substyles. As all the corpora that we deal with here, it is freely available on the internet.
+One of the outcomes of this research project is the freely\sphinxhyphen{}available book:
+\begin{itemize}
+\item {} 
+Pfleiderer, M., Frieler, K., Abeßer, J., Zaddach, W.\sphinxhyphen{}G., \& Burkhard, B. (Eds.) (2017). Inside the Jazzomat. New Perspectives for Jazz Research. Mainz: Schott Campus (\sphinxhref{https://schott-campus.com/jazzomat/}{Open Access}).
+
+\end{itemize}
 
 {
 \sphinxsetup{VerbatimColor={named}{nbsphinx-code-bg}}
 \sphinxsetup{VerbatimBorderColor={named}{nbsphinx-code-border}}
 \begin{sphinxVerbatim}[commandchars=\\\{\}]
-\llap{\color{nbsphinxin}[22]:\,\hspace{\fboxrule}\hspace{\fboxsep}}\PYG{k+kn}{import} \PYG{n+nn}{pandas} \PYG{k}{as} \PYG{n+nn}{pd}
+\llap{\color{nbsphinxin}[85]:\,\hspace{\fboxrule}\hspace{\fboxsep}}\PYG{k+kn}{import} \PYG{n+nn}{pandas} \PYG{k}{as} \PYG{n+nn}{pd}
+\PYG{k+kn}{import} \PYG{n+nn}{numpy} \PYG{k}{as} \PYG{n+nn}{np}
+\PYG{k+kn}{import} \PYG{n+nn}{statsmodels}\PYG{n+nn}{.}\PYG{n+nn}{api} \PYG{k}{as} \PYG{n+nn}{sm}
 \PYG{k+kn}{import} \PYG{n+nn}{sqlite3}
 
 \PYG{k+kn}{import} \PYG{n+nn}{matplotlib}\PYG{n+nn}{.}\PYG{n+nn}{pyplot} \PYG{k}{as} \PYG{n+nn}{plt}
@@ -1525,11 +1533,7 @@ Transcriptions of Jazz solos :cite:\sphinxcode{\sphinxupquote{Pfleiderer2017}}. 
 \end{sphinxVerbatim}
 }
 
-The WJazzD was already downloaded; we connect to the database with the help of \sphinxcode{\sphinxupquote{sqlite3}}.
-
-The database contains a number of tables:
-
-…
+The WJazzD can be downloaded at \sphinxurl{https://jazzomat.hfm-weimar.de/download/download.html} A local copy of the database is stored at \sphinxcode{\sphinxupquote{data/wjazz.db}}. We use the \sphinxcode{\sphinxupquote{sqlite3}} library to connect to this database.
 
 {
 \sphinxsetup{VerbatimColor={named}{nbsphinx-code-bg}}
@@ -1556,7 +1560,7 @@ The database contains a number of tables:
 \sphinxsetup{VerbatimColor={named}{white}}
 \sphinxsetup{VerbatimBorderColor={named}{nbsphinx-code-border}}
 \begin{sphinxVerbatim}[commandchars=\\\{\}]
-\llap{\color{nbsphinxout}[3]:\,\hspace{\fboxrule}\hspace{\fboxsep}}<sqlite3.Connection at 0x171358b85d0>
+\llap{\color{nbsphinxout}[3]:\,\hspace{\fboxrule}\hspace{\fboxsep}}<sqlite3.Connection at 0x17f98cc85d0>
 \end{sphinxVerbatim}
 }
 
@@ -1570,21 +1574,25 @@ We can now use \sphinxcode{\sphinxupquote{pandas}} to read the data out of the d
 \end{sphinxVerbatim}
 }
 
-The \sphinxcode{\sphinxupquote{"SELECT * FROM melody"}} means “Select everything from the table ‘melody’ in the database”. Let’s look at the first ten entries. Likewise, we can select the \sphinxcode{\sphinxupquote{composition\_info}} table:
+The \sphinxcode{\sphinxupquote{"SELECT * FROM melody"}} means “Select everything from the table ‘melody’ in the database”. Let’s look at the first ten entries.
+
+Likewise, we can select the \sphinxcode{\sphinxupquote{composition\_info}} table that contains a lot of metadata for the solos:
 
 {
 \sphinxsetup{VerbatimColor={named}{nbsphinx-code-bg}}
 \sphinxsetup{VerbatimBorderColor={named}{nbsphinx-code-border}}
 \begin{sphinxVerbatim}[commandchars=\\\{\}]
-\llap{\color{nbsphinxin}[5]:\,\hspace{\fboxrule}\hspace{\fboxsep}}\PYG{n}{solos\PYGZus{}meta} \PYG{o}{=} \PYG{n}{pd}\PYG{o}{.}\PYG{n}{read\PYGZus{}sql}\PYG{p}{(}\PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{SELECT * from solo\PYGZus{}info}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{,} \PYG{n}{con}\PYG{o}{=}\PYG{n}{conn}\PYG{p}{)}
+\llap{\color{nbsphinxin}[6]:\,\hspace{\fboxrule}\hspace{\fboxsep}}\PYG{n}{solos\PYGZus{}meta} \PYG{o}{=} \PYG{n}{pd}\PYG{o}{.}\PYG{n}{read\PYGZus{}sql}\PYG{p}{(}\PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{SELECT * from solo\PYGZus{}info}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{,} \PYG{n}{con}\PYG{o}{=}\PYG{n}{conn}\PYG{p}{)}
 \end{sphinxVerbatim}
 }
 
+The \sphinxcode{\sphinxupquote{.shape}} attribute shows us how many solos are in the database.
+
 {
 \sphinxsetup{VerbatimColor={named}{nbsphinx-code-bg}}
 \sphinxsetup{VerbatimBorderColor={named}{nbsphinx-code-border}}
 \begin{sphinxVerbatim}[commandchars=\\\{\}]
-\llap{\color{nbsphinxin}[6]:\,\hspace{\fboxrule}\hspace{\fboxsep}}\PYG{n}{solos\PYGZus{}meta}\PYG{o}{.}\PYG{n}{sample}\PYG{p}{(}\PYG{l+m+mi}{10}\PYG{p}{)}
+\llap{\color{nbsphinxin}[18]:\,\hspace{\fboxrule}\hspace{\fboxsep}}\PYG{n}{solos\PYGZus{}meta}\PYG{o}{.}\PYG{n}{shape}
 \end{sphinxVerbatim}
 }
 
@@ -1597,61 +1605,86 @@ The \sphinxcode{\sphinxupquote{"SELECT * FROM melody"}} means “Select everythi
 \sphinxsetup{VerbatimColor={named}{white}}
 \sphinxsetup{VerbatimBorderColor={named}{nbsphinx-code-border}}
 \begin{sphinxVerbatim}[commandchars=\\\{\}]
-\llap{\color{nbsphinxout}[6]:\,\hspace{\fboxrule}\hspace{\fboxsep}}     melid  trackid  compid  recordid          performer  \textbackslash{}
-405    406      224     202       116      Steve Coleman
-57      58       53      53        24     Charlie Parker
-430    431      329     289       177      Wayne Shorter
-269    270      233     210       119         Lee Konitz
-151    152      136     123        67          Don Ellis
-394    395      310     275        86        Sonny Stitt
-203    204      181     164        90      Joe Henderson
-300    301      249     225       130    Michael Brecker
-42      43       38      38        15  Branford Marsalis
-351    352      285     255       151       Paul Desmond
+\llap{\color{nbsphinxout}[18]:\,\hspace{\fboxrule}\hspace{\fboxsep}}(456, 17)
+\end{sphinxVerbatim}
+}
 
-                          title titleaddon  solopart instrument    style  \textbackslash{}
-405                  Pass It On                    1         as   FUSION
-57                   K.C. Blues                    1         as    BEBOP
-430                  Footprints                    1         ts  POSTBOP
-269                 Marshmallow                    1         as     COOL
-151  You Stepped Out of a Dream                    2         tp  POSTBOP
-394                   Good Kick                    1         as    BEBOP
-203                  Totem Pole                    1         ts  POSTBOP
-300            Delta City Blues                    1         ts  POSTBOP
-42                     U.M.M.G.                    1         ts  POSTBOP
-351               Samba Cantina                    2         as     COOL
+The \sphinxcode{\sphinxupquote{.sample()}} method draws a number of rows at random from a DataFrame.
 
-     avgtempo   tempoclass rhythmfeel     key signature  \textbackslash{}
-405     104.9  MEDIUM SLOW       FUNK               4/4
-57      118.3       MEDIUM      SWING   C-maj       4/4
-430     136.1       MEDIUM      SWING   C-min       6/4
-269     298.6           UP      SWING  Bb-maj       4/4
-151     168.9    MEDIUM UP      SWING   D-maj       4/4
-394     173.4    MEDIUM UP      SWING   F-maj       4/4
-203     137.6       MEDIUM      SWING  Eb-min       4/4
-300     281.7           UP      SWING  Bb-maj       4/4
-42      211.6           UP      SWING  Db-maj       4/4
-351     152.7    MEDIUM UP      LATIN   F-min       4/4
+{
+\sphinxsetup{VerbatimColor={named}{nbsphinx-code-bg}}
+\sphinxsetup{VerbatimBorderColor={named}{nbsphinx-code-border}}
+\begin{sphinxVerbatim}[commandchars=\\\{\}]
+\llap{\color{nbsphinxin}[8]:\,\hspace{\fboxrule}\hspace{\fboxsep}}\PYG{n}{solos\PYGZus{}meta}\PYG{o}{.}\PYG{n}{sample}\PYG{p}{(}\PYG{l+m+mi}{10}\PYG{p}{)}
+\end{sphinxVerbatim}
+}
+
+{
+
+\kern-\sphinxverbatimsmallskipamount\kern-\baselineskip
+\kern+\FrameHeightAdjust\kern-\fboxrule
+\vspace{\nbsphinxcodecellspacing}
+
+\sphinxsetup{VerbatimColor={named}{white}}
+\sphinxsetup{VerbatimBorderColor={named}{nbsphinx-code-border}}
+\begin{sphinxVerbatim}[commandchars=\\\{\}]
+\llap{\color{nbsphinxout}[8]:\,\hspace{\fboxrule}\hspace{\fboxsep}}     melid  trackid  compid  recordid       performer                   title  \textbackslash{}
+170    171      150     135        74  George Coleman           Maiden Voyage
+393    394      171     155        86     Sonny Stitt                   Elora
+125    126      117     108        59   Dexter Gordon      The Rainbow People
+264    265      228     206       108         Kid Ory                Who's it
+314    315      259     235       140     Miles Davis                  E.S.P.
+440    441      335     295       180      Woody Shaw                Rosewood
+231    232      205     183       106   John Coltrane               Soultrane
+198    199      176     160        88   Joe Henderson               In 'n Out
+333    334      270     244        18    Nat Adderley      Bohemia After Dark
+181    182       18      18         8    Harry Edison  Did You Call Her Today
+
+    titleaddon  solopart instrument        style  avgtempo   tempoclass  \textbackslash{}
+170                    1         ts      POSTBOP     125.4       MEDIUM
+393                    1         ts        BEBOP     192.7           UP
+125                    1         ts      HARDBOP     120.0       MEDIUM
+264                    1         tb  TRADITIONAL     211.6           UP
+314                    1         tp      POSTBOP     291.4           UP
+440                    1         tp      POSTBOP     171.7    MEDIUM UP
+231                    1         ts      HARDBOP      82.1  MEDIUM SLOW
+198                    2         ts      POSTBOP     299.5           UP
+333                    1         tp      HARDBOP     295.4           UP
+181                    1         tp        SWING     118.5       MEDIUM
+
+     rhythmfeel     key signature  \textbackslash{}
+170       SWING               4/4
+393       SWING  Bb-maj       4/4
+125       SWING  Eb-maj       4/4
+264     TWOBEAT   C-maj       4/4
+314       SWING   F-maj       4/4
+440  LATIN/FUNK               4/4
+231       SWING  Eb-maj       4/4
+198       SWING  Eb-maj       4/4
+333       SWING   G-min       4/4
+181       SWING  Ab-maj       4/4
 
                                          chord\_changes  chorus\_count
-405  A1: ||C-7   |Eb   |C-7   |Eb   ||\textbackslash{}nA2: ||C-7  {\ldots}             2
-57   A1: ||C7   |F7   |C7   |C7   |F7   |F7   |C7  {\ldots}             2
-430  A1: ||C-7     |C-7     |C-7     |C-7     |F-7 {\ldots}             4
-269  A1: ||Bbj7   |Bbj7   |F-7   |Bb7   |Ebj7   |Eb{\ldots}             1
-151  A1: ||Dj7   |Dj7   |Ebj7   |Ebj7   |F7   |F7  {\ldots}             1
-394  A1: ||F7   |F7   |F7 D-7 |G-7 C7 |F7   |F7   |{\ldots}             3
-203  A1: ||Eb-79   |Eb-79   |F7   |F7   |E7   |E7  {\ldots}             2
-300  A1: ||Bb7   |Bb7   |Bb7   |Bb7   |Bb7   |Bb7  {\ldots}             4
-42   A1: ||Fm7b5   |Bb79b   |Eb-7   |Ab7   |Dbo7 Db{\ldots}             6
-351  A1: ||Gm7b5   |C79b   |F-7   |F-7   |Bb-7   |E{\ldots}             1
+170  A1: ||Dsus7   |Dsus7   |Dsus7   |Dsus7   |Fsus{\ldots}             1
+393  A1: ||C-7   |F7   |Bbj7 Ebj7 |D-7 Db-7 |C-7   {\ldots}             1
+125  A1: ||Eb F-7 |G-7 F-7 |G-7 F-7 |F\#-7 B7 |F-7  {\ldots}             3
+264  A1: ||C   |A7   |D7   |D7   |G7   |G7   |C   |{\ldots}             1
+314  A1: ||E7alt   |E7alt   |Fj7   |Fj7   |E7alt   {\ldots}             6
+440  A1: ||G-79 F-79 |G-79 F-79 |C-79 Bb-79 |Gb79  {\ldots}             1
+231  A1: ||Ebj7   |Gm7b5 C7 |F-7   |Db7   |Ab-7 Db7{\ldots}             1
+198  A1: ||Fsus7913   |Fsus7913   |Fsus7913   |Gbsu{\ldots}             8
+333  A1: ||D79b   |D79b   ||\textbackslash{}nA2: ||G-7   |Am7b5 D7{\ldots}             3
+181  A1: ||Bb7   |Eb7   |Ab6   |Ab6   |Eb-7   |Ab7 {\ldots}             2
 \end{sphinxVerbatim}
 }
+
+The first rows of a DataFrame can be accessed with the \sphinxcode{\sphinxupquote{.head()}} method…
 
 {
 \sphinxsetup{VerbatimColor={named}{nbsphinx-code-bg}}
 \sphinxsetup{VerbatimBorderColor={named}{nbsphinx-code-border}}
 \begin{sphinxVerbatim}[commandchars=\\\{\}]
-\llap{\color{nbsphinxin}[8]:\,\hspace{\fboxrule}\hspace{\fboxsep}}\PYG{n}{solos}\PYG{o}{.}\PYG{n}{head}\PYG{p}{(}\PYG{l+m+mi}{10}\PYG{p}{)}
+\llap{\color{nbsphinxin}[9]:\,\hspace{\fboxrule}\hspace{\fboxsep}}\PYG{n}{solos}\PYG{o}{.}\PYG{n}{head}\PYG{p}{(}\PYG{l+m+mi}{10}\PYG{p}{)}
 \end{sphinxVerbatim}
 }
 
@@ -1664,7 +1697,7 @@ The \sphinxcode{\sphinxupquote{"SELECT * FROM melody"}} means “Select everythi
 \sphinxsetup{VerbatimColor={named}{white}}
 \sphinxsetup{VerbatimBorderColor={named}{nbsphinx-code-border}}
 \begin{sphinxVerbatim}[commandchars=\\\{\}]
-\llap{\color{nbsphinxout}[8]:\,\hspace{\fboxrule}\hspace{\fboxsep}}   eventid  melid      onset  pitch  duration  period  division  bar  beat  \textbackslash{}
+\llap{\color{nbsphinxout}[9]:\,\hspace{\fboxrule}\hspace{\fboxsep}}   eventid  melid      onset  pitch  duration  period  division  bar  beat  \textbackslash{}
 0        1      1  10.343492   65.0  0.138776       4         1    0     1
 1        2      1  10.637642   63.0  0.171247       4         4    0     2
 2        3      1  10.843719   58.0  0.081270       4         4    0     2
@@ -1704,11 +1737,13 @@ The \sphinxcode{\sphinxupquote{"SELECT * FROM melody"}} means “Select everythi
 \end{sphinxVerbatim}
 }
 
+… and the last rows with the \sphinxcode{\sphinxupquote{.tail()}}´ method.
+
 {
 \sphinxsetup{VerbatimColor={named}{nbsphinx-code-bg}}
 \sphinxsetup{VerbatimBorderColor={named}{nbsphinx-code-border}}
 \begin{sphinxVerbatim}[commandchars=\\\{\}]
-\llap{\color{nbsphinxin}[9]:\,\hspace{\fboxrule}\hspace{\fboxsep}}\PYG{n}{solos}\PYG{o}{.}\PYG{n}{tail}\PYG{p}{(}\PYG{p}{)}
+\llap{\color{nbsphinxin}[10]:\,\hspace{\fboxrule}\hspace{\fboxsep}}\PYG{n}{solos}\PYG{o}{.}\PYG{n}{tail}\PYG{p}{(}\PYG{p}{)}
 \end{sphinxVerbatim}
 }
 
@@ -1721,7 +1756,7 @@ The \sphinxcode{\sphinxupquote{"SELECT * FROM melody"}} means “Select everythi
 \sphinxsetup{VerbatimColor={named}{white}}
 \sphinxsetup{VerbatimBorderColor={named}{nbsphinx-code-border}}
 \begin{sphinxVerbatim}[commandchars=\\\{\}]
-\llap{\color{nbsphinxout}[9]:\,\hspace{\fboxrule}\hspace{\fboxsep}}        eventid  melid      onset  pitch  duration  period  division  bar  \textbackslash{}
+\llap{\color{nbsphinxout}[10]:\,\hspace{\fboxrule}\hspace{\fboxsep}}        eventid  melid      onset  pitch  duration  period  division  bar  \textbackslash{}
 200804   200805    456  63.135057   57.0  0.168345       4         2   53
 200805   200806    456  63.303401   55.0  0.087075       4         3   54
 200806   200807    456  63.390476   57.0  0.191565       4         3   54
@@ -1746,13 +1781,13 @@ The \sphinxcode{\sphinxupquote{"SELECT * FROM melody"}} means “Select everythi
 \end{sphinxVerbatim}
 }
 
-The \sphinxcode{\sphinxupquote{solos}} table contains 26 columns that cannot be displayed at once. We can have a look at all columns by using the \sphinxcode{\sphinxupquote{.columns}} attribute.
+As we already know, the \sphinxcode{\sphinxupquote{.shape}} attribute shows the overall size of the table.
 
 {
 \sphinxsetup{VerbatimColor={named}{nbsphinx-code-bg}}
 \sphinxsetup{VerbatimBorderColor={named}{nbsphinx-code-border}}
 \begin{sphinxVerbatim}[commandchars=\\\{\}]
-\llap{\color{nbsphinxin}[10]:\,\hspace{\fboxrule}\hspace{\fboxsep}}\PYG{n}{solos}\PYG{o}{.}\PYG{n}{columns}
+\llap{\color{nbsphinxin}[11]:\,\hspace{\fboxrule}\hspace{\fboxsep}}\PYG{n}{solos}\PYG{o}{.}\PYG{n}{shape}
 \end{sphinxVerbatim}
 }
 
@@ -1765,7 +1800,30 @@ The \sphinxcode{\sphinxupquote{solos}} table contains 26 columns that cannot be 
 \sphinxsetup{VerbatimColor={named}{white}}
 \sphinxsetup{VerbatimBorderColor={named}{nbsphinx-code-border}}
 \begin{sphinxVerbatim}[commandchars=\\\{\}]
-\llap{\color{nbsphinxout}[10]:\,\hspace{\fboxrule}\hspace{\fboxsep}}Index(['eventid', 'melid', 'onset', 'pitch', 'duration', 'period', 'division',
+\llap{\color{nbsphinxout}[11]:\,\hspace{\fboxrule}\hspace{\fboxsep}}(200809, 26)
+\end{sphinxVerbatim}
+}
+
+The \sphinxcode{\sphinxupquote{solos}} table contains 26 columns that cannot be displayed at once. We can have a look at the column names by using the \sphinxcode{\sphinxupquote{.columns}} attribute.
+
+{
+\sphinxsetup{VerbatimColor={named}{nbsphinx-code-bg}}
+\sphinxsetup{VerbatimBorderColor={named}{nbsphinx-code-border}}
+\begin{sphinxVerbatim}[commandchars=\\\{\}]
+\llap{\color{nbsphinxin}[13]:\,\hspace{\fboxrule}\hspace{\fboxsep}}\PYG{n}{solos}\PYG{o}{.}\PYG{n}{columns}
+\end{sphinxVerbatim}
+}
+
+{
+
+\kern-\sphinxverbatimsmallskipamount\kern-\baselineskip
+\kern+\FrameHeightAdjust\kern-\fboxrule
+\vspace{\nbsphinxcodecellspacing}
+
+\sphinxsetup{VerbatimColor={named}{white}}
+\sphinxsetup{VerbatimBorderColor={named}{nbsphinx-code-border}}
+\begin{sphinxVerbatim}[commandchars=\\\{\}]
+\llap{\color{nbsphinxout}[13]:\,\hspace{\fboxrule}\hspace{\fboxsep}}Index(['eventid', 'melid', 'onset', 'pitch', 'duration', 'period', 'division',
        'bar', 'beat', 'tatum', 'subtatum', 'num', 'denom', 'beatprops',
        'beatdur', 'tatumprops', 'f0\_mod', 'loud\_max', 'loud\_med', 'loud\_sd',
        'loud\_relpos', 'loud\_cent', 'loud\_s2b', 'f0\_range', 'f0\_freq\_hz',
@@ -1774,12 +1832,34 @@ The \sphinxcode{\sphinxupquote{solos}} table contains 26 columns that cannot be 
 \end{sphinxVerbatim}
 }
 
+A description of what these columns contain is stated on the website: \sphinxurl{https://jazzomat.hfm-weimar.de/dbformat/dbformat.html}
+
+For our analyses it will be usefull to have also the name of the performer in the \sphinxcode{\sphinxupquote{solos}} DataFrame. We create a \sphinxstylestrong{dictionary} that maps the \sphinxcode{\sphinxupquote{melid}} (unique identification number for each solo) to the name of the performer.
+
 {
 \sphinxsetup{VerbatimColor={named}{nbsphinx-code-bg}}
 \sphinxsetup{VerbatimBorderColor={named}{nbsphinx-code-border}}
 \begin{sphinxVerbatim}[commandchars=\\\{\}]
-\llap{\color{nbsphinxin}[11]:\,\hspace{\fboxrule}\hspace{\fboxsep}}\PYG{n}{mapper} \PYG{o}{=} \PYG{n+nb}{dict}\PYG{p}{(}\PYG{n}{solos\PYGZus{}meta}\PYG{p}{[}\PYG{p}{[}\PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{melid}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{,} \PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{performer}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{]}\PYG{p}{]}\PYG{o}{.}\PYG{n}{values}\PYG{p}{)}
-\PYG{n}{mapper}
+\llap{\color{nbsphinxin}[14]:\,\hspace{\fboxrule}\hspace{\fboxsep}}\PYG{n}{mapper} \PYG{o}{=} \PYG{n+nb}{dict}\PYG{p}{(}\PYG{n}{solos\PYGZus{}meta}\PYG{p}{[}\PYG{p}{[}\PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{melid}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{,} \PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{performer}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{]}\PYG{p}{]}\PYG{o}{.}\PYG{n}{values}\PYG{p}{)}
+\PYG{c+c1}{\PYGZsh{} mapper}
+\end{sphinxVerbatim}
+}
+
+We can now use this dictionary to create a new column \sphinxcode{\sphinxupquote{performer}} in the \sphinxcode{\sphinxupquote{solos}} DataFrame.
+
+{
+\sphinxsetup{VerbatimColor={named}{nbsphinx-code-bg}}
+\sphinxsetup{VerbatimBorderColor={named}{nbsphinx-code-border}}
+\begin{sphinxVerbatim}[commandchars=\\\{\}]
+\llap{\color{nbsphinxin}[15]:\,\hspace{\fboxrule}\hspace{\fboxsep}}\PYG{n}{solos}\PYG{p}{[}\PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{performer}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{]} \PYG{o}{=} \PYG{n}{solos}\PYG{p}{[}\PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{melid}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{]}\PYG{o}{.}\PYG{n}{map}\PYG{p}{(}\PYG{n}{mapper}\PYG{p}{)}
+\end{sphinxVerbatim}
+}
+
+{
+\sphinxsetup{VerbatimColor={named}{nbsphinx-code-bg}}
+\sphinxsetup{VerbatimBorderColor={named}{nbsphinx-code-border}}
+\begin{sphinxVerbatim}[commandchars=\\\{\}]
+\llap{\color{nbsphinxin}[16]:\,\hspace{\fboxrule}\hspace{\fboxsep}}\PYG{n}{solos}\PYG{o}{.}\PYG{n}{head}\PYG{p}{(}\PYG{p}{)}
 \end{sphinxVerbatim}
 }
 
@@ -1792,491 +1872,7 @@ The \sphinxcode{\sphinxupquote{solos}} table contains 26 columns that cannot be 
 \sphinxsetup{VerbatimColor={named}{white}}
 \sphinxsetup{VerbatimBorderColor={named}{nbsphinx-code-border}}
 \begin{sphinxVerbatim}[commandchars=\\\{\}]
-\llap{\color{nbsphinxout}[11]:\,\hspace{\fboxrule}\hspace{\fboxsep}}\{1: 'Art Pepper',
- 2: 'Art Pepper',
- 3: 'Art Pepper',
- 4: 'Art Pepper',
- 5: 'Art Pepper',
- 6: 'Art Pepper',
- 7: 'Benny Carter',
- 8: 'Benny Carter',
- 9: 'Benny Carter',
- 10: 'Benny Carter',
- 11: 'Benny Carter',
- 12: 'Benny Carter',
- 13: 'Benny Carter',
- 14: 'Benny Goodman',
- 15: 'Benny Goodman',
- 16: 'Benny Goodman',
- 17: 'Benny Goodman',
- 18: 'Benny Goodman',
- 19: 'Benny Goodman',
- 20: 'Benny Goodman',
- 21: 'Ben Webster',
- 22: 'Ben Webster',
- 23: 'Ben Webster',
- 24: 'Ben Webster',
- 25: 'Ben Webster',
- 26: 'Bix Beiderbecke',
- 27: 'Bix Beiderbecke',
- 28: 'Bix Beiderbecke',
- 29: 'Bix Beiderbecke',
- 30: 'Bix Beiderbecke',
- 31: 'Bob Berg',
- 32: 'Bob Berg',
- 33: 'Bob Berg',
- 34: 'Bob Berg',
- 35: 'Bob Berg',
- 36: 'Bob Berg',
- 37: 'Bob Berg',
- 38: 'Branford Marsalis',
- 39: 'Branford Marsalis',
- 40: 'Branford Marsalis',
- 41: 'Branford Marsalis',
- 42: 'Branford Marsalis',
- 43: 'Branford Marsalis',
- 44: 'Buck Clayton',
- 45: 'Buck Clayton',
- 46: 'Buck Clayton',
- 47: 'Cannonball Adderley',
- 48: 'Cannonball Adderley',
- 49: 'Cannonball Adderley',
- 50: 'Cannonball Adderley',
- 51: 'Cannonball Adderley',
- 52: 'Charlie Parker',
- 53: 'Charlie Parker',
- 54: 'Charlie Parker',
- 55: 'Charlie Parker',
- 56: 'Charlie Parker',
- 57: 'Charlie Parker',
- 58: 'Charlie Parker',
- 59: 'Charlie Parker',
- 60: 'Charlie Parker',
- 61: 'Charlie Parker',
- 62: 'Charlie Parker',
- 63: 'Charlie Parker',
- 64: 'Charlie Parker',
- 65: 'Charlie Parker',
- 66: 'Charlie Parker',
- 67: 'Charlie Parker',
- 68: 'Charlie Parker',
- 69: 'Charlie Shavers',
- 70: 'Chet Baker',
- 71: 'Chet Baker',
- 72: 'Chet Baker',
- 73: 'Chet Baker',
- 74: 'Chet Baker',
- 75: 'Chet Baker',
- 76: 'Chet Baker',
- 77: 'Chet Baker',
- 78: 'Chris Potter',
- 79: 'Chris Potter',
- 80: 'Chris Potter',
- 81: 'Chris Potter',
- 82: 'Chris Potter',
- 83: 'Chris Potter',
- 84: 'Chris Potter',
- 85: 'Chu Berry',
- 86: 'Chu Berry',
- 87: 'Clifford Brown',
- 88: 'Clifford Brown',
- 89: 'Clifford Brown',
- 90: 'Clifford Brown',
- 91: 'Clifford Brown',
- 92: 'Clifford Brown',
- 93: 'Clifford Brown',
- 94: 'Clifford Brown',
- 95: 'Clifford Brown',
- 96: 'Coleman Hawkins',
- 97: 'Coleman Hawkins',
- 98: 'Coleman Hawkins',
- 99: 'Coleman Hawkins',
- 100: 'Coleman Hawkins',
- 101: 'Coleman Hawkins',
- 102: 'Curtis Fuller',
- 103: 'Curtis Fuller',
- 104: 'David Liebman',
- 105: 'David Liebman',
- 106: 'David Liebman',
- 107: 'David Liebman',
- 108: 'David Liebman',
- 109: 'David Liebman',
- 110: 'David Liebman',
- 111: 'David Liebman',
- 112: 'David Liebman',
- 113: 'David Liebman',
- 114: 'David Liebman',
- 115: 'David Murray',
- 116: 'David Murray',
- 117: 'David Murray',
- 118: 'David Murray',
- 119: 'David Murray',
- 120: 'David Murray',
- 121: 'Dexter Gordon',
- 122: 'Dexter Gordon',
- 123: 'Dexter Gordon',
- 124: 'Dexter Gordon',
- 125: 'Dexter Gordon',
- 126: 'Dexter Gordon',
- 127: 'Dickie Wells',
- 128: 'Dickie Wells',
- 129: 'Dickie Wells',
- 130: 'Dickie Wells',
- 131: 'Dickie Wells',
- 132: 'Dickie Wells',
- 133: 'Dizzy Gillespie',
- 134: 'Dizzy Gillespie',
- 135: 'Dizzy Gillespie',
- 136: 'Dizzy Gillespie',
- 137: 'Dizzy Gillespie',
- 138: 'Dizzy Gillespie',
- 139: 'Don Byas',
- 140: 'Don Byas',
- 141: 'Don Byas',
- 142: 'Don Byas',
- 143: 'Don Byas',
- 144: 'Don Byas',
- 145: 'Don Byas',
- 146: 'Don Byas',
- 147: 'Don Ellis',
- 148: 'Don Ellis',
- 149: 'Don Ellis',
- 150: 'Don Ellis',
- 151: 'Don Ellis',
- 152: 'Don Ellis',
- 153: 'Eric Dolphy',
- 154: 'Eric Dolphy',
- 155: 'Eric Dolphy',
- 156: 'Eric Dolphy',
- 157: 'Eric Dolphy',
- 158: 'Eric Dolphy',
- 159: 'Fats Navarro',
- 160: 'Fats Navarro',
- 161: 'Fats Navarro',
- 162: 'Fats Navarro',
- 163: 'Fats Navarro',
- 164: 'Fats Navarro',
- 165: 'Freddie Hubbard',
- 166: 'Freddie Hubbard',
- 167: 'Freddie Hubbard',
- 168: 'Freddie Hubbard',
- 169: 'Freddie Hubbard',
- 170: 'Freddie Hubbard',
- 171: 'George Coleman',
- 172: 'Gerry Mulligan',
- 173: 'Gerry Mulligan',
- 174: 'Gerry Mulligan',
- 175: 'Gerry Mulligan',
- 176: 'Gerry Mulligan',
- 177: 'Gerry Mulligan',
- 178: 'Hank Mobley',
- 179: 'Hank Mobley',
- 180: 'Hank Mobley',
- 181: 'Hank Mobley',
- 182: 'Harry Edison',
- 183: 'Henry Allen',
- 184: 'Herbie Hancock',
- 185: 'Herbie Hancock',
- 186: 'Herbie Hancock',
- 187: 'Herbie Hancock',
- 188: 'Herbie Hancock',
- 189: 'J.C. Higginbotham',
- 190: 'J.J. Johnson',
- 191: 'J.J. Johnson',
- 192: 'J.J. Johnson',
- 193: 'J.J. Johnson',
- 194: 'J.J. Johnson',
- 195: 'J.J. Johnson',
- 196: 'J.J. Johnson',
- 197: 'J.J. Johnson',
- 198: 'Joe Henderson',
- 199: 'Joe Henderson',
- 200: 'Joe Henderson',
- 201: 'Joe Henderson',
- 202: 'Joe Henderson',
- 203: 'Joe Henderson',
- 204: 'Joe Henderson',
- 205: 'Joe Henderson',
- 206: 'Joe Lovano',
- 207: 'Joe Lovano',
- 208: 'Joe Lovano',
- 209: 'Joe Lovano',
- 210: 'Joe Lovano',
- 211: 'Joe Lovano',
- 212: 'Joe Lovano',
- 213: 'Joe Lovano',
- 214: 'John Abercrombie',
- 215: 'John Coltrane',
- 216: 'John Coltrane',
- 217: 'John Coltrane',
- 218: 'John Coltrane',
- 219: 'John Coltrane',
- 220: 'John Coltrane',
- 221: 'John Coltrane',
- 222: 'John Coltrane',
- 223: 'John Coltrane',
- 224: 'John Coltrane',
- 225: 'John Coltrane',
- 226: 'John Coltrane',
- 227: 'John Coltrane',
- 228: 'John Coltrane',
- 229: 'John Coltrane',
- 230: 'John Coltrane',
- 231: 'John Coltrane',
- 232: 'John Coltrane',
- 233: 'John Coltrane',
- 234: 'John Coltrane',
- 235: 'Johnny Dodds',
- 236: 'Johnny Dodds',
- 237: 'Johnny Dodds',
- 238: 'Johnny Dodds',
- 239: 'Johnny Dodds',
- 240: 'Johnny Dodds',
- 241: 'Johnny Hodges',
- 242: 'Johnny Hodges',
- 243: 'Joshua Redman',
- 244: 'Joshua Redman',
- 245: 'Joshua Redman',
- 246: 'Joshua Redman',
- 247: 'Joshua Redman',
- 248: 'Kai Winding',
- 249: 'Kenny Dorham',
- 250: 'Kenny Dorham',
- 251: 'Kenny Dorham',
- 252: 'Kenny Dorham',
- 253: 'Kenny Dorham',
- 254: 'Kenny Dorham',
- 255: 'Kenny Dorham',
- 256: 'Kenny Garrett',
- 257: 'Kenny Garrett',
- 258: 'Kenny Wheeler',
- 259: 'Kenny Wheeler',
- 260: 'Kenny Wheeler',
- 261: 'Kid Ory',
- 262: 'Kid Ory',
- 263: 'Kid Ory',
- 264: 'Kid Ory',
- 265: 'Kid Ory',
- 266: 'Lee Konitz',
- 267: 'Lee Konitz',
- 268: 'Lee Konitz',
- 269: 'Lee Konitz',
- 270: 'Lee Konitz',
- 271: 'Lee Konitz',
- 272: 'Lee Konitz',
- 273: 'Lee Konitz',
- 274: 'Lee Morgan',
- 275: 'Lee Morgan',
- 276: 'Lee Morgan',
- 277: 'Lee Morgan',
- 278: 'Lester Young',
- 279: 'Lester Young',
- 280: 'Lester Young',
- 281: 'Lester Young',
- 282: 'Lester Young',
- 283: 'Lester Young',
- 284: 'Lester Young',
- 285: 'Lionel Hampton',
- 286: 'Lionel Hampton',
- 287: 'Lionel Hampton',
- 288: 'Lionel Hampton',
- 289: 'Lionel Hampton',
- 290: 'Lionel Hampton',
- 291: 'Louis Armstrong',
- 292: 'Louis Armstrong',
- 293: 'Louis Armstrong',
- 294: 'Louis Armstrong',
- 295: 'Louis Armstrong',
- 296: 'Louis Armstrong',
- 297: 'Louis Armstrong',
- 298: 'Louis Armstrong',
- 299: 'Michael Brecker',
- 300: 'Michael Brecker',
- 301: 'Michael Brecker',
- 302: 'Michael Brecker',
- 303: 'Michael Brecker',
- 304: 'Michael Brecker',
- 305: 'Michael Brecker',
- 306: 'Michael Brecker',
- 307: 'Michael Brecker',
- 308: 'Michael Brecker',
- 309: 'Miles Davis',
- 310: 'Miles Davis',
- 311: 'Miles Davis',
- 312: 'Miles Davis',
- 313: 'Miles Davis',
- 314: 'Miles Davis',
- 315: 'Miles Davis',
- 316: 'Miles Davis',
- 317: 'Miles Davis',
- 318: 'Miles Davis',
- 319: 'Miles Davis',
- 320: 'Miles Davis',
- 321: 'Miles Davis',
- 322: 'Miles Davis',
- 323: 'Miles Davis',
- 324: 'Miles Davis',
- 325: 'Miles Davis',
- 326: 'Miles Davis',
- 327: 'Miles Davis',
- 328: 'Milt Jackson',
- 329: 'Milt Jackson',
- 330: 'Milt Jackson',
- 331: 'Milt Jackson',
- 332: 'Milt Jackson',
- 333: 'Milt Jackson',
- 334: 'Nat Adderley',
- 335: 'Nat Adderley',
- 336: 'Ornette Coleman',
- 337: 'Ornette Coleman',
- 338: 'Ornette Coleman',
- 339: 'Ornette Coleman',
- 340: 'Ornette Coleman',
- 341: 'Pat Martino',
- 342: 'Pat Metheny',
- 343: 'Pat Metheny',
- 344: 'Pat Metheny',
- 345: 'Pat Metheny',
- 346: 'Paul Desmond',
- 347: 'Paul Desmond',
- 348: 'Paul Desmond',
- 349: 'Paul Desmond',
- 350: 'Paul Desmond',
- 351: 'Paul Desmond',
- 352: 'Paul Desmond',
- 353: 'Paul Desmond',
- 354: 'Pepper Adams',
- 355: 'Pepper Adams',
- 356: 'Pepper Adams',
- 357: 'Pepper Adams',
- 358: 'Pepper Adams',
- 359: 'Phil Woods',
- 360: 'Phil Woods',
- 361: 'Phil Woods',
- 362: 'Phil Woods',
- 363: 'Phil Woods',
- 364: 'Phil Woods',
- 365: 'Red Garland',
- 366: 'Rex Stewart',
- 367: 'Roy Eldridge',
- 368: 'Roy Eldridge',
- 369: 'Roy Eldridge',
- 370: 'Roy Eldridge',
- 371: 'Roy Eldridge',
- 372: 'Roy Eldridge',
- 373: 'Sidney Bechet',
- 374: 'Sidney Bechet',
- 375: 'Sidney Bechet',
- 376: 'Sidney Bechet',
- 377: 'Sidney Bechet',
- 378: 'Sonny Rollins',
- 379: 'Sonny Rollins',
- 380: 'Sonny Rollins',
- 381: 'Sonny Rollins',
- 382: 'Sonny Rollins',
- 383: 'Sonny Rollins',
- 384: 'Sonny Rollins',
- 385: 'Sonny Rollins',
- 386: 'Sonny Rollins',
- 387: 'Sonny Rollins',
- 388: 'Sonny Rollins',
- 389: 'Sonny Rollins',
- 390: 'Sonny Rollins',
- 391: 'Sonny Stitt',
- 392: 'Sonny Stitt',
- 393: 'Sonny Stitt',
- 394: 'Sonny Stitt',
- 395: 'Sonny Stitt',
- 396: 'Sonny Stitt',
- 397: 'Stan Getz',
- 398: 'Stan Getz',
- 399: 'Stan Getz',
- 400: 'Stan Getz',
- 401: 'Stan Getz',
- 402: 'Stan Getz',
- 403: 'Steve Coleman',
- 404: 'Steve Coleman',
- 405: 'Steve Coleman',
- 406: 'Steve Coleman',
- 407: 'Steve Coleman',
- 408: 'Steve Coleman',
- 409: 'Steve Coleman',
- 410: 'Steve Coleman',
- 411: 'Steve Coleman',
- 412: 'Steve Coleman',
- 413: 'Steve Lacy',
- 414: 'Steve Lacy',
- 415: 'Steve Lacy',
- 416: 'Steve Lacy',
- 417: 'Steve Lacy',
- 418: 'Steve Lacy',
- 419: 'Steve Turre',
- 420: 'Steve Turre',
- 421: 'Steve Turre',
- 422: 'Von Freeman',
- 423: 'Warne Marsh',
- 424: 'Warne Marsh',
- 425: 'Warne Marsh',
- 426: 'Wayne Shorter',
- 427: 'Wayne Shorter',
- 428: 'Wayne Shorter',
- 429: 'Wayne Shorter',
- 430: 'Wayne Shorter',
- 431: 'Wayne Shorter',
- 432: 'Wayne Shorter',
- 433: 'Wayne Shorter',
- 434: 'Wayne Shorter',
- 435: 'Wayne Shorter',
- 436: 'Woody Shaw',
- 437: 'Woody Shaw',
- 438: 'Woody Shaw',
- 439: 'Woody Shaw',
- 440: 'Woody Shaw',
- 441: 'Woody Shaw',
- 442: 'Woody Shaw',
- 443: 'Woody Shaw',
- 444: 'Wynton Marsalis',
- 445: 'Wynton Marsalis',
- 446: 'Wynton Marsalis',
- 447: 'Wynton Marsalis',
- 448: 'Wynton Marsalis',
- 449: 'Wynton Marsalis',
- 450: 'Wynton Marsalis',
- 451: 'Zoot Sims',
- 452: 'Zoot Sims',
- 453: 'Zoot Sims',
- 454: 'Zoot Sims',
- 455: 'Zoot Sims',
- 456: 'Zoot Sims'\}
-\end{sphinxVerbatim}
-}
-
-{
-\sphinxsetup{VerbatimColor={named}{nbsphinx-code-bg}}
-\sphinxsetup{VerbatimBorderColor={named}{nbsphinx-code-border}}
-\begin{sphinxVerbatim}[commandchars=\\\{\}]
-\llap{\color{nbsphinxin}[12]:\,\hspace{\fboxrule}\hspace{\fboxsep}}\PYG{n}{solos}\PYG{p}{[}\PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{performer}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{]} \PYG{o}{=} \PYG{n}{solos}\PYG{p}{[}\PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{melid}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{]}\PYG{o}{.}\PYG{n}{map}\PYG{p}{(}\PYG{n}{mapper}\PYG{p}{)}
-\end{sphinxVerbatim}
-}
-
-{
-\sphinxsetup{VerbatimColor={named}{nbsphinx-code-bg}}
-\sphinxsetup{VerbatimBorderColor={named}{nbsphinx-code-border}}
-\begin{sphinxVerbatim}[commandchars=\\\{\}]
-\llap{\color{nbsphinxin}[13]:\,\hspace{\fboxrule}\hspace{\fboxsep}}\PYG{n}{solos}\PYG{o}{.}\PYG{n}{head}\PYG{p}{(}\PYG{p}{)}
-\end{sphinxVerbatim}
-}
-
-{
-
-\kern-\sphinxverbatimsmallskipamount\kern-\baselineskip
-\kern+\FrameHeightAdjust\kern-\fboxrule
-\vspace{\nbsphinxcodecellspacing}
-
-\sphinxsetup{VerbatimColor={named}{white}}
-\sphinxsetup{VerbatimBorderColor={named}{nbsphinx-code-border}}
-\begin{sphinxVerbatim}[commandchars=\\\{\}]
-\llap{\color{nbsphinxout}[13]:\,\hspace{\fboxrule}\hspace{\fboxsep}}   eventid  melid      onset  pitch  duration  period  division  bar  beat  \textbackslash{}
+\llap{\color{nbsphinxout}[16]:\,\hspace{\fboxrule}\hspace{\fboxsep}}   eventid  melid      onset  pitch  duration  period  division  bar  beat  \textbackslash{}
 0        1      1  10.343492   65.0  0.138776       4         1    0     1
 1        2      1  10.637642   63.0  0.171247       4         4    0     2
 2        3      1  10.843719   58.0  0.081270       4         4    0     2
@@ -2305,7 +1901,7 @@ The \sphinxcode{\sphinxupquote{solos}} table contains 26 columns that cannot be 
 \sphinxsetup{VerbatimColor={named}{nbsphinx-code-bg}}
 \sphinxsetup{VerbatimBorderColor={named}{nbsphinx-code-border}}
 \begin{sphinxVerbatim}[commandchars=\\\{\}]
-\llap{\color{nbsphinxin}[14]:\,\hspace{\fboxrule}\hspace{\fboxsep}}\PYG{n}{solos}\PYG{o}{.}\PYG{n}{tail}\PYG{p}{(}\PYG{p}{)}
+\llap{\color{nbsphinxin}[17]:\,\hspace{\fboxrule}\hspace{\fboxsep}}\PYG{n}{solos}\PYG{o}{.}\PYG{n}{tail}\PYG{p}{(}\PYG{p}{)}
 \end{sphinxVerbatim}
 }
 
@@ -2318,7 +1914,7 @@ The \sphinxcode{\sphinxupquote{solos}} table contains 26 columns that cannot be 
 \sphinxsetup{VerbatimColor={named}{white}}
 \sphinxsetup{VerbatimBorderColor={named}{nbsphinx-code-border}}
 \begin{sphinxVerbatim}[commandchars=\\\{\}]
-\llap{\color{nbsphinxout}[14]:\,\hspace{\fboxrule}\hspace{\fboxsep}}        eventid  melid      onset  pitch  duration  period  division  bar  \textbackslash{}
+\llap{\color{nbsphinxout}[17]:\,\hspace{\fboxrule}\hspace{\fboxsep}}        eventid  melid      onset  pitch  duration  period  division  bar  \textbackslash{}
 200804   200805    456  63.135057   57.0  0.168345       4         2   53
 200805   200806    456  63.303401   55.0  0.087075       4         3   54
 200806   200807    456  63.390476   57.0  0.191565       4         3   54
@@ -2343,18 +1939,393 @@ The \sphinxcode{\sphinxupquote{solos}} table contains 26 columns that cannot be 
 \end{sphinxVerbatim}
 }
 
+
+\section{Melodic arc?}
+\label{\detokenize{04_jazz_solos:Melodic-arc?}}
+Does the melodic arc also appear in the Jazz solos?
+
 {
 \sphinxsetup{VerbatimColor={named}{nbsphinx-code-bg}}
 \sphinxsetup{VerbatimBorderColor={named}{nbsphinx-code-border}}
 \begin{sphinxVerbatim}[commandchars=\\\{\}]
-\llap{\color{nbsphinxin}[15]:\,\hspace{\fboxrule}\hspace{\fboxsep}}\PYG{n}{data} \PYG{o}{=} \PYG{n}{solos}\PYG{p}{[}\PYG{n}{solos}\PYG{o}{.}\PYG{n}{pitch}\PYG{o}{.}\PYG{n}{notnull}\PYG{p}{(}\PYG{p}{)} \PYG{o}{\PYGZam{}} \PYG{n}{solos}\PYG{o}{.}\PYG{n}{loud\PYGZus{}med}\PYG{o}{.}\PYG{n}{notnull}\PYG{p}{(}\PYG{p}{)}\PYG{p}{]}
+\llap{\color{nbsphinxin}[20]:\,\hspace{\fboxrule}\hspace{\fboxsep}}\PYG{k}{def} \PYG{n+nf}{notelist}\PYG{p}{(}\PYG{n}{melid}\PYG{p}{)}\PYG{p}{:}
+
+    \PYG{n}{solo} \PYG{o}{=} \PYG{n}{solos}\PYG{p}{[}\PYG{n}{solos}\PYG{p}{[}\PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{melid}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{]} \PYG{o}{==} \PYG{n}{melid}\PYG{p}{]}
+
+    \PYG{n}{solo} \PYG{o}{=} \PYG{n}{solo}\PYG{p}{[}\PYG{p}{[}\PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{pitch}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{,} \PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{duration}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{]}\PYG{p}{]}
+    \PYG{n}{solo}\PYG{p}{[}\PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{onset}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{]} \PYG{o}{=} \PYG{n}{solo}\PYG{p}{[}\PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{duration}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{]}\PYG{o}{.}\PYG{n}{cumsum}\PYG{p}{(}\PYG{p}{)}
+    \PYG{k}{return} \PYG{n}{solo}
 \end{sphinxVerbatim}
 }
 
-A description of what these columns contain is stated on the website: \sphinxurl{https://jazzomat.hfm-weimar.de/dbformat/dbformat.html}
+{
+\sphinxsetup{VerbatimColor={named}{nbsphinx-code-bg}}
+\sphinxsetup{VerbatimBorderColor={named}{nbsphinx-code-border}}
+\begin{sphinxVerbatim}[commandchars=\\\{\}]
+\llap{\color{nbsphinxin}[21]:\,\hspace{\fboxrule}\hspace{\fboxsep}}\PYG{n}{notelist}\PYG{p}{(}\PYG{l+m+mi}{1}\PYG{p}{)}
+\end{sphinxVerbatim}
+}
 
-We can now check how many solos the database contains.
+{
 
+\kern-\sphinxverbatimsmallskipamount\kern-\baselineskip
+\kern+\FrameHeightAdjust\kern-\fboxrule
+\vspace{\nbsphinxcodecellspacing}
+
+\sphinxsetup{VerbatimColor={named}{white}}
+\sphinxsetup{VerbatimBorderColor={named}{nbsphinx-code-border}}
+\begin{sphinxVerbatim}[commandchars=\\\{\}]
+\llap{\color{nbsphinxout}[21]:\,\hspace{\fboxrule}\hspace{\fboxsep}}     pitch  duration      onset
+0     65.0  0.138776   0.138776
+1     63.0  0.171247   0.310023
+2     58.0  0.081270   0.391293
+3     61.0  0.235102   0.626395
+4     63.0  0.130612   0.757007
+..     {\ldots}       {\ldots}        {\ldots}
+525   66.0  0.137143  80.645238
+526   65.0  0.101587  80.746825
+527   63.0  0.104490  80.851315
+528   62.0  0.110295  80.961610
+529   70.0  0.187211  81.148821
+
+[530 rows x 3 columns]
+\end{sphinxVerbatim}
+}
+
+{
+\sphinxsetup{VerbatimColor={named}{nbsphinx-code-bg}}
+\sphinxsetup{VerbatimBorderColor={named}{nbsphinx-code-border}}
+\begin{sphinxVerbatim}[commandchars=\\\{\}]
+\llap{\color{nbsphinxin}[45]:\,\hspace{\fboxrule}\hspace{\fboxsep}}\PYG{k}{def} \PYG{n+nf}{plot\PYGZus{}melodic\PYGZus{}profile}\PYG{p}{(}\PYG{n}{notelist}\PYG{p}{,} \PYG{n}{ax}\PYG{o}{=}\PYG{k+kc}{None}\PYG{p}{,} \PYG{n}{c}\PYG{o}{=}\PYG{k+kc}{None}\PYG{p}{,} \PYG{n}{mean}\PYG{o}{=}\PYG{k+kc}{False}\PYG{p}{,} \PYG{n}{Z}\PYG{o}{=}\PYG{k+kc}{False}\PYG{p}{,} \PYG{n}{sections}\PYG{o}{=}\PYG{k+kc}{False}\PYG{p}{,} \PYG{n}{standardized}\PYG{o}{=}\PYG{k+kc}{False}\PYG{p}{)}\PYG{p}{:}
+
+    \PYG{k}{if} \PYG{n}{ax} \PYG{o}{==} \PYG{k+kc}{None}\PYG{p}{:}
+        \PYG{n}{ax} \PYG{o}{=} \PYG{n}{plt}\PYG{o}{.}\PYG{n}{gca}\PYG{p}{(}\PYG{p}{)}
+
+    \PYG{k}{if} \PYG{n}{standardized}\PYG{p}{:}
+        \PYG{n}{x} \PYG{o}{=} \PYG{n}{notelist}\PYG{p}{[}\PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{Rel. Onset}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{]}
+        \PYG{n}{y} \PYG{o}{=} \PYG{n}{notelist}\PYG{p}{[}\PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{Rel. MIDI Pitch}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{]}
+    \PYG{k}{else}\PYG{p}{:}
+        \PYG{n}{x} \PYG{o}{=} \PYG{n}{notelist}\PYG{p}{[}\PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{onset}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{]}
+        \PYG{n}{y} \PYG{o}{=} \PYG{n}{notelist}\PYG{p}{[}\PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{pitch}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{]}
+
+    \PYG{n}{ax}\PYG{o}{.}\PYG{n}{step}\PYG{p}{(}\PYG{n}{x}\PYG{p}{,}\PYG{n}{y}\PYG{p}{,} \PYG{n}{color}\PYG{o}{=}\PYG{n}{c}\PYG{p}{)}
+
+    \PYG{k}{if} \PYG{n}{mean}\PYG{p}{:}
+        \PYG{n}{ax}\PYG{o}{.}\PYG{n}{axhline}\PYG{p}{(}\PYG{n}{y}\PYG{o}{.}\PYG{n}{mean}\PYG{p}{(}\PYG{p}{)}\PYG{p}{,} \PYG{n}{color}\PYG{o}{=}\PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{gray}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{,} \PYG{n}{linestyle}\PYG{o}{=}\PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{\PYGZhy{}\PYGZhy{}}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{)}
+
+    \PYG{k}{if} \PYG{n}{sections}\PYG{p}{:}
+        \PYG{k}{for} \PYG{n}{l} \PYG{o+ow}{in} \PYG{p}{[} \PYG{n}{x}\PYG{o}{.}\PYG{n}{max}\PYG{p}{(}\PYG{p}{)} \PYG{o}{*} \PYG{n}{i} \PYG{k}{for} \PYG{n}{i} \PYG{o+ow}{in} \PYG{p}{[} \PYG{l+m+mi}{1}\PYG{o}{/}\PYG{l+m+mi}{4}\PYG{p}{,} \PYG{l+m+mi}{1}\PYG{o}{/}\PYG{l+m+mi}{2}\PYG{p}{,} \PYG{l+m+mi}{3}\PYG{o}{/}\PYG{l+m+mi}{4}\PYG{p}{]} \PYG{p}{]}\PYG{p}{:}
+            \PYG{n}{ax}\PYG{o}{.}\PYG{n}{axvline}\PYG{p}{(}\PYG{n}{l}\PYG{p}{,} \PYG{n}{color}\PYG{o}{=}\PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{gray}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{,} \PYG{n}{linewidth}\PYG{o}{=}\PYG{l+m+mi}{1}\PYG{p}{,} \PYG{n}{linestyle}\PYG{o}{=}\PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{\PYGZhy{}\PYGZhy{}}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{)}
+\end{sphinxVerbatim}
+}
+
+{
+\sphinxsetup{VerbatimColor={named}{nbsphinx-code-bg}}
+\sphinxsetup{VerbatimBorderColor={named}{nbsphinx-code-border}}
+\begin{sphinxVerbatim}[commandchars=\\\{\}]
+\llap{\color{nbsphinxin}[46]:\,\hspace{\fboxrule}\hspace{\fboxsep}}\PYG{n}{fig}\PYG{p}{,} \PYG{n}{axes} \PYG{o}{=} \PYG{n}{plt}\PYG{o}{.}\PYG{n}{subplots}\PYG{p}{(}\PYG{l+m+mi}{2}\PYG{p}{,}\PYG{l+m+mi}{2}\PYG{p}{,} \PYG{n}{figsize}\PYG{o}{=}\PYG{p}{(}\PYG{l+m+mi}{16}\PYG{p}{,}\PYG{l+m+mi}{9}\PYG{p}{)}\PYG{p}{)}
+\PYG{n}{axes} \PYG{o}{=} \PYG{n}{axes}\PYG{o}{.}\PYG{n}{flatten}\PYG{p}{(}\PYG{p}{)}
+
+\PYG{n}{plot\PYGZus{}melodic\PYGZus{}profile}\PYG{p}{(}\PYG{n}{notelist}\PYG{p}{(}\PYG{l+m+mi}{1}\PYG{p}{)}\PYG{p}{,} \PYG{n}{ax}\PYG{o}{=}\PYG{n}{axes}\PYG{p}{[}\PYG{l+m+mi}{0}\PYG{p}{]}\PYG{p}{,} \PYG{n}{mean}\PYG{o}{=}\PYG{k+kc}{True}\PYG{p}{)}
+\PYG{n}{plot\PYGZus{}melodic\PYGZus{}profile}\PYG{p}{(}\PYG{n}{notelist}\PYG{p}{(}\PYG{l+m+mi}{10}\PYG{p}{)}\PYG{p}{,} \PYG{n}{ax}\PYG{o}{=}\PYG{n}{axes}\PYG{p}{[}\PYG{l+m+mi}{1}\PYG{p}{]}\PYG{p}{,} \PYG{n}{mean}\PYG{o}{=}\PYG{k+kc}{True}\PYG{p}{)}
+\PYG{n}{plot\PYGZus{}melodic\PYGZus{}profile}\PYG{p}{(}\PYG{n}{notelist}\PYG{p}{(}\PYG{l+m+mi}{50}\PYG{p}{)}\PYG{p}{,} \PYG{n}{ax}\PYG{o}{=}\PYG{n}{axes}\PYG{p}{[}\PYG{l+m+mi}{2}\PYG{p}{]}\PYG{p}{,} \PYG{n}{mean}\PYG{o}{=}\PYG{k+kc}{True}\PYG{p}{)}
+\PYG{n}{plot\PYGZus{}melodic\PYGZus{}profile}\PYG{p}{(}\PYG{n}{notelist}\PYG{p}{(}\PYG{l+m+mi}{100}\PYG{p}{)}\PYG{p}{,} \PYG{n}{ax}\PYG{o}{=}\PYG{n}{axes}\PYG{p}{[}\PYG{l+m+mi}{3}\PYG{p}{]}\PYG{p}{,} \PYG{n}{mean}\PYG{o}{=}\PYG{k+kc}{True}\PYG{p}{)}
+\end{sphinxVerbatim}
+}
+
+\hrule height -\fboxrule\relax
+\vspace{\nbsphinxcodecellspacing}
+
+\makeatletter\setbox\nbsphinxpromptbox\box\voidb@x\makeatother
+
+\begin{nbsphinxfancyoutput}
+
+\noindent\sphinxincludegraphics[width=939\sphinxpxdimen,height=531\sphinxpxdimen]{{04_jazz_solos_34_0}.png}
+
+\end{nbsphinxfancyoutput}
+
+{
+\sphinxsetup{VerbatimColor={named}{nbsphinx-code-bg}}
+\sphinxsetup{VerbatimBorderColor={named}{nbsphinx-code-border}}
+\begin{sphinxVerbatim}[commandchars=\\\{\}]
+\llap{\color{nbsphinxin}[47]:\,\hspace{\fboxrule}\hspace{\fboxsep}}\PYG{k}{def} \PYG{n+nf}{standardize}\PYG{p}{(}\PYG{n}{notelist}\PYG{p}{)}\PYG{p}{:}
+    \PYG{l+s+sd}{\PYGZdq{}\PYGZdq{}\PYGZdq{}}
+\PYG{l+s+sd}{    Takes a notelist as input and returns a standardized version.}
+\PYG{l+s+sd}{    \PYGZdq{}\PYGZdq{}\PYGZdq{}}
+
+    \PYG{n}{notelist}\PYG{p}{[}\PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{Rel. MIDI Pitch}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{]} \PYG{o}{=} \PYG{p}{(}\PYG{n}{notelist}\PYG{p}{[}\PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{pitch}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{]} \PYG{o}{\PYGZhy{}} \PYG{n}{notelist}\PYG{p}{[}\PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{pitch}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{]}\PYG{o}{.}\PYG{n}{mean}\PYG{p}{(}\PYG{p}{)}\PYG{p}{)} \PYG{o}{/} \PYG{n}{notelist}\PYG{p}{[}\PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{pitch}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{]}\PYG{o}{.}\PYG{n}{std}\PYG{p}{(}\PYG{p}{)}
+    \PYG{n}{notelist}\PYG{p}{[}\PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{Rel. Duration}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{]} \PYG{o}{=} \PYG{n}{notelist}\PYG{p}{[}\PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{duration}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{]} \PYG{o}{/} \PYG{n}{notelist}\PYG{p}{[}\PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{duration}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{]}\PYG{o}{.}\PYG{n}{sum}\PYG{p}{(}\PYG{p}{)}
+    \PYG{n}{notelist}\PYG{p}{[}\PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{Rel. Onset}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{]} \PYG{o}{=} \PYG{n}{notelist}\PYG{p}{[}\PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{onset}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{]} \PYG{o}{/} \PYG{n}{notelist}\PYG{p}{[}\PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{onset}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{]}\PYG{o}{.}\PYG{n}{max}\PYG{p}{(}\PYG{p}{)}
+
+    \PYG{k}{return} \PYG{n}{notelist}
+\end{sphinxVerbatim}
+}
+
+{
+\sphinxsetup{VerbatimColor={named}{nbsphinx-code-bg}}
+\sphinxsetup{VerbatimBorderColor={named}{nbsphinx-code-border}}
+\begin{sphinxVerbatim}[commandchars=\\\{\}]
+\llap{\color{nbsphinxin}[48]:\,\hspace{\fboxrule}\hspace{\fboxsep}}\PYG{n}{standardize}\PYG{p}{(}\PYG{n}{notelist}\PYG{p}{(}\PYG{l+m+mi}{5}\PYG{p}{)}\PYG{p}{)}
+\end{sphinxVerbatim}
+}
+
+{
+
+\kern-\sphinxverbatimsmallskipamount\kern-\baselineskip
+\kern+\FrameHeightAdjust\kern-\fboxrule
+\vspace{\nbsphinxcodecellspacing}
+
+\sphinxsetup{VerbatimColor={named}{white}}
+\sphinxsetup{VerbatimBorderColor={named}{nbsphinx-code-border}}
+\begin{sphinxVerbatim}[commandchars=\\\{\}]
+\llap{\color{nbsphinxout}[48]:\,\hspace{\fboxrule}\hspace{\fboxsep}}      pitch  duration       onset  Rel. MIDI Pitch  Rel. Duration  Rel. Onset
+2134   62.0  0.187755    0.187755        -0.485734       0.001194    0.001194
+2135   63.0  0.261224    0.448980        -0.323822       0.001662    0.002856
+2136   64.0  0.232200    0.681179        -0.161911       0.001477    0.004333
+2137   60.0  0.092880    0.774059        -0.809556       0.000591    0.004923
+2138   65.0  1.120363    1.894422         0.000000       0.007126    0.012050
+{\ldots}     {\ldots}       {\ldots}         {\ldots}              {\ldots}            {\ldots}         {\ldots}
+2720   70.0  0.150000  156.117506         0.809556       0.000954    0.993003
+2721   72.0  0.162245  156.279751         1.133378       0.001032    0.994035
+2722   68.0  0.196939  156.476689         0.485734       0.001253    0.995288
+2723   63.0  0.177551  156.654240        -0.323822       0.001129    0.996417
+2724   63.0  0.563265  157.217506        -0.323822       0.003583    1.000000
+
+[591 rows x 6 columns]
+\end{sphinxVerbatim}
+}
+
+{
+\sphinxsetup{VerbatimColor={named}{nbsphinx-code-bg}}
+\sphinxsetup{VerbatimBorderColor={named}{nbsphinx-code-border}}
+\begin{sphinxVerbatim}[commandchars=\\\{\}]
+\llap{\color{nbsphinxin}[53]:\,\hspace{\fboxrule}\hspace{\fboxsep}}\PYG{n}{fig}\PYG{p}{,} \PYG{n}{ax} \PYG{o}{=} \PYG{n}{plt}\PYG{o}{.}\PYG{n}{subplots}\PYG{p}{(}\PYG{n}{figsize}\PYG{o}{=}\PYG{p}{(}\PYG{l+m+mi}{15}\PYG{p}{,}\PYG{l+m+mi}{5}\PYG{p}{)}\PYG{p}{)}
+
+\PYG{k}{for} \PYG{n}{i} \PYG{o+ow}{in} \PYG{n+nb}{range}\PYG{p}{(}\PYG{l+m+mi}{4}\PYG{p}{)}\PYG{p}{:}
+    \PYG{n}{plot\PYGZus{}melodic\PYGZus{}profile}\PYG{p}{(}\PYG{n}{standardize}\PYG{p}{(}\PYG{n}{notelist}\PYG{p}{(}\PYG{n}{i}\PYG{p}{)}\PYG{p}{)}\PYG{p}{,}
+                         \PYG{n}{mean}\PYG{o}{=}\PYG{k+kc}{True}\PYG{p}{,}
+                         \PYG{n}{standardized}\PYG{o}{=}\PYG{k+kc}{True}\PYG{p}{)}
+\PYG{n}{plt}\PYG{o}{.}\PYG{n}{xlim}\PYG{p}{(}\PYG{l+m+mi}{0}\PYG{p}{,}\PYG{l+m+mi}{1}\PYG{p}{)}
+\PYG{n}{plt}\PYG{o}{.}\PYG{n}{show}\PYG{p}{(}\PYG{p}{)}
+\end{sphinxVerbatim}
+}
+
+\hrule height -\fboxrule\relax
+\vspace{\nbsphinxcodecellspacing}
+
+\makeatletter\setbox\nbsphinxpromptbox\box\voidb@x\makeatother
+
+\begin{nbsphinxfancyoutput}
+
+\noindent\sphinxincludegraphics[width=894\sphinxpxdimen,height=313\sphinxpxdimen]{{04_jazz_solos_37_0}.png}
+
+\end{nbsphinxfancyoutput}
+
+{
+\sphinxsetup{VerbatimColor={named}{nbsphinx-code-bg}}
+\sphinxsetup{VerbatimBorderColor={named}{nbsphinx-code-border}}
+\begin{sphinxVerbatim}[commandchars=\\\{\}]
+\llap{\color{nbsphinxin}[80]:\,\hspace{\fboxrule}\hspace{\fboxsep}}\PYG{n}{big\PYGZus{}df} \PYG{o}{=} \PYG{n}{pd}\PYG{o}{.}\PYG{n}{concat}\PYG{p}{(}\PYG{p}{[}\PYG{n}{standardize}\PYG{p}{(}\PYG{n}{notelist}\PYG{p}{(}\PYG{n}{i}\PYG{p}{)}\PYG{p}{)} \PYG{k}{for} \PYG{n}{i} \PYG{o+ow}{in} \PYG{n+nb}{range}\PYG{p}{(}\PYG{n}{solos\PYGZus{}meta}\PYG{o}{.}\PYG{n}{shape}\PYG{p}{[}\PYG{l+m+mi}{0}\PYG{p}{]}\PYG{p}{)}\PYG{p}{]}\PYG{p}{)}
+\end{sphinxVerbatim}
+}
+
+{
+\sphinxsetup{VerbatimColor={named}{nbsphinx-code-bg}}
+\sphinxsetup{VerbatimBorderColor={named}{nbsphinx-code-border}}
+\begin{sphinxVerbatim}[commandchars=\\\{\}]
+\llap{\color{nbsphinxin}[81]:\,\hspace{\fboxrule}\hspace{\fboxsep}}\PYG{n}{big\PYGZus{}df}\PYG{o}{.}\PYG{n}{head}\PYG{p}{(}\PYG{p}{)}
+\end{sphinxVerbatim}
+}
+
+{
+
+\kern-\sphinxverbatimsmallskipamount\kern-\baselineskip
+\kern+\FrameHeightAdjust\kern-\fboxrule
+\vspace{\nbsphinxcodecellspacing}
+
+\sphinxsetup{VerbatimColor={named}{white}}
+\sphinxsetup{VerbatimBorderColor={named}{nbsphinx-code-border}}
+\begin{sphinxVerbatim}[commandchars=\\\{\}]
+\llap{\color{nbsphinxout}[81]:\,\hspace{\fboxrule}\hspace{\fboxsep}}   pitch  duration     onset  Rel. MIDI Pitch  Rel. Duration  Rel. Onset
+0   65.0  0.138776  0.138776        -0.460594       0.001710    0.001710
+1   63.0  0.171247  0.310023        -0.697714       0.002110    0.003820
+2   58.0  0.081270  0.391293        -1.290513       0.001001    0.004822
+3   61.0  0.235102  0.626395        -0.934833       0.002897    0.007719
+4   63.0  0.130612  0.757007        -0.697714       0.001610    0.009329
+\end{sphinxVerbatim}
+}
+
+{
+\sphinxsetup{VerbatimColor={named}{nbsphinx-code-bg}}
+\sphinxsetup{VerbatimBorderColor={named}{nbsphinx-code-border}}
+\begin{sphinxVerbatim}[commandchars=\\\{\}]
+\llap{\color{nbsphinxin}[93]:\,\hspace{\fboxrule}\hspace{\fboxsep}}\PYG{o}{\PYGZpc{}\PYGZpc{}time}
+
+\PYG{n}{fig}\PYG{p}{,} \PYG{n}{ax} \PYG{o}{=} \PYG{n}{plt}\PYG{o}{.}\PYG{n}{subplots}\PYG{p}{(}\PYG{n}{figsize}\PYG{o}{=}\PYG{p}{(}\PYG{l+m+mi}{12}\PYG{p}{,}\PYG{l+m+mi}{8}\PYG{p}{)}\PYG{p}{)}
+
+\PYG{k}{for} \PYG{n}{ID} \PYG{o+ow}{in} \PYG{n+nb}{range}\PYG{p}{(}\PYG{n}{solos\PYGZus{}meta}\PYG{o}{.}\PYG{n}{shape}\PYG{p}{[}\PYG{l+m+mi}{0}\PYG{p}{]}\PYG{p}{)}\PYG{p}{:}
+    \PYG{n}{solo} \PYG{o}{=} \PYG{n}{standardize}\PYG{p}{(}\PYG{n}{notelist}\PYG{p}{(}\PYG{n}{ID}\PYG{p}{)}\PYG{p}{)}
+    \PYG{n}{x} \PYG{o}{=} \PYG{n}{solo}\PYG{p}{[}\PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{Rel. Onset}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{]}
+    \PYG{n}{y} \PYG{o}{=} \PYG{n}{solo}\PYG{p}{[}\PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{Rel. MIDI Pitch}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{]}
+    \PYG{n}{ax}\PYG{o}{.} \PYG{n}{plot}\PYG{p}{(}\PYG{n}{x}\PYG{p}{,}\PYG{n}{y}\PYG{p}{,} \PYG{n}{lw}\PYG{o}{=}\PYG{o}{.}\PYG{l+m+mi}{5}\PYG{p}{,} \PYG{n}{c}\PYG{o}{=}\PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{tab:red}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{,} \PYG{n}{alpha}\PYG{o}{=}\PYG{o}{.}\PYG{l+m+mi}{05}\PYG{p}{)}
+
+\PYG{n}{ax}\PYG{o}{.}\PYG{n}{axvline}\PYG{p}{(}\PYG{o}{.}\PYG{l+m+mi}{25}\PYG{p}{,} \PYG{n}{lw}\PYG{o}{=}\PYG{l+m+mi}{2}\PYG{p}{,} \PYG{n}{ls}\PYG{o}{=}\PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{\PYGZhy{}\PYGZhy{}}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{,} \PYG{n}{c}\PYG{o}{=}\PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{gray}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{)}
+\PYG{n}{ax}\PYG{o}{.}\PYG{n}{axvline}\PYG{p}{(}\PYG{o}{.}\PYG{l+m+mi}{5}\PYG{p}{,} \PYG{n}{lw}\PYG{o}{=}\PYG{l+m+mi}{2}\PYG{p}{,} \PYG{n}{ls}\PYG{o}{=}\PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{\PYGZhy{}\PYGZhy{}}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{,} \PYG{n}{c}\PYG{o}{=}\PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{gray}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{)}
+\PYG{n}{ax}\PYG{o}{.}\PYG{n}{axvline}\PYG{p}{(}\PYG{o}{.}\PYG{l+m+mi}{75}\PYG{p}{,} \PYG{n}{lw}\PYG{o}{=}\PYG{l+m+mi}{2}\PYG{p}{,} \PYG{n}{ls}\PYG{o}{=}\PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{\PYGZhy{}\PYGZhy{}}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{,} \PYG{n}{c}\PYG{o}{=}\PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{gray}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{)}
+\PYG{n}{ax}\PYG{o}{.}\PYG{n}{axhline}\PYG{p}{(}\PYG{l+m+mi}{0}\PYG{p}{,} \PYG{n}{lw}\PYG{o}{=}\PYG{l+m+mi}{2}\PYG{p}{,} \PYG{n}{ls}\PYG{o}{=}\PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{\PYGZhy{}\PYGZhy{}}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{,} \PYG{n}{c}\PYG{o}{=}\PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{gray}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{)}
+
+\PYG{n}{lowess} \PYG{o}{=} \PYG{n}{sm}\PYG{o}{.}\PYG{n}{nonparametric}\PYG{o}{.}\PYG{n}{lowess}
+\PYG{n}{big\PYGZus{}x} \PYG{o}{=} \PYG{n}{big\PYGZus{}df}\PYG{p}{[}\PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{Rel. Onset}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{]}
+\PYG{n}{big\PYGZus{}y} \PYG{o}{=} \PYG{n}{big\PYGZus{}df}\PYG{p}{[}\PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{Rel. MIDI Pitch}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{]}
+\PYG{n}{big\PYGZus{}z} \PYG{o}{=} \PYG{n}{lowess}\PYG{p}{(}\PYG{n}{big\PYGZus{}y}\PYG{p}{,} \PYG{n}{big\PYGZus{}x}\PYG{p}{,} \PYG{n}{frac}\PYG{o}{=}\PYG{l+m+mi}{1}\PYG{o}{/}\PYG{l+m+mi}{10}\PYG{p}{,} \PYG{n}{delta}\PYG{o}{=}\PYG{l+m+mi}{1}\PYG{o}{/}\PYG{l+m+mi}{20}\PYG{p}{)}
+\PYG{n}{ax}\PYG{o}{.}\PYG{n}{plot}\PYG{p}{(}\PYG{n}{big\PYGZus{}z}\PYG{p}{[}\PYG{p}{:}\PYG{p}{,}\PYG{l+m+mi}{0}\PYG{p}{]}\PYG{p}{,} \PYG{n}{big\PYGZus{}z}\PYG{p}{[}\PYG{p}{:}\PYG{p}{,}\PYG{l+m+mi}{1}\PYG{p}{]}\PYG{p}{,} \PYG{n}{c}\PYG{o}{=}\PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{black}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{,} \PYG{n}{lw}\PYG{o}{=}\PYG{l+m+mi}{3}\PYG{p}{)}
+
+\PYG{n}{plt}\PYG{o}{.}\PYG{n}{title}\PYG{p}{(}\PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{Solo wave}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{)}
+\PYG{n}{plt}\PYG{o}{.}\PYG{n}{xlabel}\PYG{p}{(}\PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{Relative onset}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{)}
+\PYG{n}{plt}\PYG{o}{.}\PYG{n}{ylabel}\PYG{p}{(}\PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{Pitch deviation}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{)}
+\PYG{n}{plt}\PYG{o}{.}\PYG{n}{xticks}\PYG{p}{(}\PYG{n}{np}\PYG{o}{.}\PYG{n}{linspace}\PYG{p}{(}\PYG{l+m+mi}{0}\PYG{p}{,}\PYG{l+m+mi}{1}\PYG{p}{,}\PYG{l+m+mi}{5}\PYG{p}{)}\PYG{p}{)}
+\PYG{n}{plt}\PYG{o}{.}\PYG{n}{yticks}\PYG{p}{(}\PYG{n}{np}\PYG{o}{.}\PYG{n}{linspace}\PYG{p}{(}\PYG{o}{\PYGZhy{}}\PYG{l+m+mi}{5}\PYG{p}{,}\PYG{l+m+mi}{5}\PYG{p}{,}\PYG{l+m+mi}{11}\PYG{p}{)}\PYG{p}{)}
+\PYG{n}{plt}\PYG{o}{.}\PYG{n}{xlim}\PYG{p}{(}\PYG{l+m+mi}{0}\PYG{p}{,}\PYG{l+m+mi}{1}\PYG{p}{)}
+
+\PYG{n}{plt}\PYG{o}{.}\PYG{n}{tight\PYGZus{}layout}\PYG{p}{(}\PYG{p}{)}
+\PYG{n}{plt}\PYG{o}{.}\PYG{n}{savefig}\PYG{p}{(}\PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{img/jazz\PYGZus{}melodic\PYGZus{}arc.png}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{)}
+\PYG{n}{plt}\PYG{o}{.}\PYG{n}{show}\PYG{p}{(}\PYG{p}{)}
+\end{sphinxVerbatim}
+}
+
+\hrule height -\fboxrule\relax
+\vspace{\nbsphinxcodecellspacing}
+
+\makeatletter\setbox\nbsphinxpromptbox\box\voidb@x\makeatother
+
+\begin{nbsphinxfancyoutput}
+
+\noindent\sphinxincludegraphics[width=839\sphinxpxdimen,height=551\sphinxpxdimen]{{04_jazz_solos_40_0}.png}
+
+\end{nbsphinxfancyoutput}
+
+{
+
+\kern-\sphinxverbatimsmallskipamount\kern-\baselineskip
+\kern+\FrameHeightAdjust\kern-\fboxrule
+\vspace{\nbsphinxcodecellspacing}
+
+\sphinxsetup{VerbatimColor={named}{white}}
+\sphinxsetup{VerbatimBorderColor={named}{nbsphinx-code-border}}
+\begin{sphinxVerbatim}[commandchars=\\\{\}]
+Wall time: 4.28 s
+\end{sphinxVerbatim}
+}
+
+
+\section{Pitch vs loudness}
+\label{\detokenize{04_jazz_solos:Pitch-vs-loudness}}
+To facilitate the analyses later, we only keep the rows of the DataFrame where both the \sphinxcode{\sphinxupquote{pitch}} and the \sphinxcode{\sphinxupquote{loud\_med}} columns have an entry (they are “not null”).
+
+{
+\sphinxsetup{VerbatimColor={named}{nbsphinx-code-bg}}
+\sphinxsetup{VerbatimBorderColor={named}{nbsphinx-code-border}}
+\begin{sphinxVerbatim}[commandchars=\\\{\}]
+\llap{\color{nbsphinxin}[15]:\,\hspace{\fboxrule}\hspace{\fboxsep}}\PYG{n}{solos} \PYG{o}{=} \PYG{n}{solos}\PYG{p}{[}\PYG{n}{solos}\PYG{o}{.}\PYG{n}{pitch}\PYG{o}{.}\PYG{n}{notnull}\PYG{p}{(}\PYG{p}{)} \PYG{o}{\PYGZam{}} \PYG{n}{solos}\PYG{o}{.}\PYG{n}{loud\PYGZus{}med}\PYG{o}{.}\PYG{n}{notnull}\PYG{p}{(}\PYG{p}{)}\PYG{p}{]}
+\end{sphinxVerbatim}
+}
+
+
+\section{The “rain cloud” of Jazz solos}
+\label{\detokenize{04_jazz_solos:The-_u201crain-cloud_u201d-of-Jazz-solos}}
+{
+\sphinxsetup{VerbatimColor={named}{nbsphinx-code-bg}}
+\sphinxsetup{VerbatimBorderColor={named}{nbsphinx-code-border}}
+\begin{sphinxVerbatim}[commandchars=\\\{\}]
+\llap{\color{nbsphinxin}[34]:\,\hspace{\fboxrule}\hspace{\fboxsep}}\PYG{n}{X} \PYG{o}{=} \PYG{n}{data}\PYG{p}{[}\PYG{p}{[}\PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{pitch}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{,} \PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{loud\PYGZus{}med}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{]}\PYG{p}{]}\PYG{o}{.}\PYG{n}{values}
+\PYG{n}{x} \PYG{o}{=} \PYG{n}{X}\PYG{p}{[}\PYG{p}{:}\PYG{p}{,}\PYG{l+m+mi}{0}\PYG{p}{]}
+\PYG{n}{y} \PYG{o}{=} \PYG{n}{X}\PYG{p}{[}\PYG{p}{:}\PYG{p}{,}\PYG{l+m+mi}{1}\PYG{p}{]}
+
+\PYG{n}{fig}\PYG{p}{,} \PYG{n}{ax} \PYG{o}{=} \PYG{n}{plt}\PYG{o}{.}\PYG{n}{subplots}\PYG{p}{(}\PYG{n}{figsize}\PYG{o}{=}\PYG{p}{(}\PYG{l+m+mi}{6}\PYG{p}{,}\PYG{l+m+mi}{4}\PYG{p}{)}\PYG{p}{)}
+\PYG{n}{ax}\PYG{o}{.}\PYG{n}{scatter}\PYG{p}{(}\PYG{n}{x}\PYG{p}{,}\PYG{n}{y}\PYG{p}{,} \PYG{n}{alpha}\PYG{o}{=}\PYG{l+m+mf}{0.01}\PYG{p}{)}
+
+\PYG{n}{plt}\PYG{o}{.}\PYG{n}{xlabel}\PYG{p}{(}\PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{Pitch}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{)}
+\PYG{n}{plt}\PYG{o}{.}\PYG{n}{ylabel}\PYG{p}{(}\PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{Median loudness [dB]}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{)}
+\PYG{n}{plt}\PYG{o}{.}\PYG{n}{show}\PYG{p}{(}\PYG{p}{)}
+\end{sphinxVerbatim}
+}
+
+\hrule height -\fboxrule\relax
+\vspace{\nbsphinxcodecellspacing}
+
+\makeatletter\setbox\nbsphinxpromptbox\box\voidb@x\makeatother
+
+\begin{nbsphinxfancyoutput}
+
+\noindent\sphinxincludegraphics[width=425\sphinxpxdimen,height=281\sphinxpxdimen]{{04_jazz_solos_45_0}.png}
+
+\end{nbsphinxfancyoutput}
+
+{
+\sphinxsetup{VerbatimColor={named}{nbsphinx-code-bg}}
+\sphinxsetup{VerbatimBorderColor={named}{nbsphinx-code-border}}
+\begin{sphinxVerbatim}[commandchars=\\\{\}]
+\llap{\color{nbsphinxin}[74]:\,\hspace{\fboxrule}\hspace{\fboxsep}}\PYG{n}{solos}\PYG{p}{[}\PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{melid}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{]}\PYG{o}{.}\PYG{n}{max}\PYG{p}{(}\PYG{p}{)}
+\end{sphinxVerbatim}
+}
+
+{
+
+\kern-\sphinxverbatimsmallskipamount\kern-\baselineskip
+\kern+\FrameHeightAdjust\kern-\fboxrule
+\vspace{\nbsphinxcodecellspacing}
+
+\sphinxsetup{VerbatimColor={named}{white}}
+\sphinxsetup{VerbatimBorderColor={named}{nbsphinx-code-border}}
+\begin{sphinxVerbatim}[commandchars=\\\{\}]
+\llap{\color{nbsphinxout}[74]:\,\hspace{\fboxrule}\hspace{\fboxsep}}456
+\end{sphinxVerbatim}
+}
+
+{
+\sphinxsetup{VerbatimColor={named}{nbsphinx-code-bg}}
+\sphinxsetup{VerbatimBorderColor={named}{nbsphinx-code-border}}
+\begin{sphinxVerbatim}[commandchars=\\\{\}]
+\llap{\color{nbsphinxin}[75]:\,\hspace{\fboxrule}\hspace{\fboxsep}}\PYG{n}{solos}\PYG{p}{[} \PYG{n}{solos}\PYG{p}{[}\PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{melid}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{]} \PYG{o}{==} \PYG{l+m+mi}{2} \PYG{p}{]}\PYG{p}{[}\PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{loud\PYGZus{}med}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{]}\PYG{o}{.}\PYG{n}{plot}\PYG{p}{(}\PYG{n}{figsize}\PYG{o}{=}\PYG{p}{(}\PYG{l+m+mi}{20}\PYG{p}{,}\PYG{l+m+mi}{3}\PYG{p}{)}\PYG{p}{)}\PYG{p}{;}
+\end{sphinxVerbatim}
+}
+
+\hrule height -\fboxrule\relax
+\vspace{\nbsphinxcodecellspacing}
+
+\makeatletter\setbox\nbsphinxpromptbox\box\voidb@x\makeatother
+
+\begin{nbsphinxfancyoutput}
+
+\noindent\sphinxincludegraphics[width=1158\sphinxpxdimen,height=194\sphinxpxdimen]{{04_jazz_solos_47_0}.png}
+
+\end{nbsphinxfancyoutput}
+
+{
+\sphinxsetup{VerbatimColor={named}{nbsphinx-code-bg}}
+\sphinxsetup{VerbatimBorderColor={named}{nbsphinx-code-border}}
+\begin{sphinxVerbatim}[commandchars=\\\{\}]
+\llap{\color{nbsphinxin}[135]:\,\hspace{\fboxrule}\hspace{\fboxsep}}\PYG{c+c1}{\PYGZsh{} fig, axes = plt.subplots(5,1, figsize=(15,20))}
+
+\PYG{c+c1}{\PYGZsh{} for idx, rand in enumerate(np.random.randint(1,solos[\PYGZdq{}melid\PYGZdq{}].unique().max(), 5)):}
+\PYG{n}{sns}\PYG{o}{.}\PYG{n}{lmplot}\PYG{p}{(}\PYG{n}{data}\PYG{o}{=}\PYG{n}{solos}\PYG{p}{[} \PYG{n}{solos}\PYG{p}{[}\PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{melid}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{]} \PYG{o}{==} \PYG{l+m+mi}{130} \PYG{p}{]}\PYG{p}{,} \PYG{n}{x}\PYG{o}{=}\PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{pitch}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{,} \PYG{n}{y}\PYG{o}{=}\PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{loud\PYGZus{}med}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{)}\PYG{p}{;}
+\end{sphinxVerbatim}
+}
+
+\hrule height -\fboxrule\relax
+\vspace{\nbsphinxcodecellspacing}
+
+\makeatletter\setbox\nbsphinxpromptbox\box\voidb@x\makeatother
+
+\begin{nbsphinxfancyoutput}
+
+\noindent\sphinxincludegraphics[width=352\sphinxpxdimen,height=352\sphinxpxdimen]{{04_jazz_solos_48_0}.png}
+
+\end{nbsphinxfancyoutput}
+
+
+\section{Comparing performers}
+\label{\detokenize{04_jazz_solos:Comparing-performers}}
 {
 \sphinxsetup{VerbatimColor={named}{nbsphinx-code-bg}}
 \sphinxsetup{VerbatimBorderColor={named}{nbsphinx-code-border}}
@@ -2400,7 +2371,7 @@ We can now check how many solos the database contains.
 
 \begin{nbsphinxfancyoutput}
 
-\noindent\sphinxincludegraphics[width=625\sphinxpxdimen,height=607\sphinxpxdimen]{{04_jazz_solos_25_0}.png}
+\noindent\sphinxincludegraphics[width=625\sphinxpxdimen,height=607\sphinxpxdimen]{{04_jazz_solos_51_0}.png}
 
 \end{nbsphinxfancyoutput}
 
@@ -2425,109 +2396,6 @@ Red Garland (p) plays generally lower than Herbie Hancock (p) but does show a po
 \end{enumerate}
 
 Does this tell us something about performer styles or about instruments?
-
-
-\section{The “rain cloud” of Jazz solos}
-\label{\detokenize{04_jazz_solos:The-_u201crain-cloud_u201d-of-Jazz-solos}}
-{
-\sphinxsetup{VerbatimColor={named}{nbsphinx-code-bg}}
-\sphinxsetup{VerbatimBorderColor={named}{nbsphinx-code-border}}
-\begin{sphinxVerbatim}[commandchars=\\\{\}]
-\llap{\color{nbsphinxin}[34]:\,\hspace{\fboxrule}\hspace{\fboxsep}}\PYG{n}{X} \PYG{o}{=} \PYG{n}{data}\PYG{p}{[}\PYG{p}{[}\PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{pitch}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{,} \PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{loud\PYGZus{}med}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{]}\PYG{p}{]}\PYG{o}{.}\PYG{n}{values}
-\PYG{n}{x} \PYG{o}{=} \PYG{n}{X}\PYG{p}{[}\PYG{p}{:}\PYG{p}{,}\PYG{l+m+mi}{0}\PYG{p}{]}
-\PYG{n}{y} \PYG{o}{=} \PYG{n}{X}\PYG{p}{[}\PYG{p}{:}\PYG{p}{,}\PYG{l+m+mi}{1}\PYG{p}{]}
-
-\PYG{n}{fig}\PYG{p}{,} \PYG{n}{ax} \PYG{o}{=} \PYG{n}{plt}\PYG{o}{.}\PYG{n}{subplots}\PYG{p}{(}\PYG{n}{figsize}\PYG{o}{=}\PYG{p}{(}\PYG{l+m+mi}{6}\PYG{p}{,}\PYG{l+m+mi}{4}\PYG{p}{)}\PYG{p}{)}
-\PYG{n}{ax}\PYG{o}{.}\PYG{n}{scatter}\PYG{p}{(}\PYG{n}{x}\PYG{p}{,}\PYG{n}{y}\PYG{p}{,} \PYG{n}{alpha}\PYG{o}{=}\PYG{l+m+mf}{0.01}\PYG{p}{)}
-
-\PYG{n}{plt}\PYG{o}{.}\PYG{n}{xlabel}\PYG{p}{(}\PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{Pitch}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{)}
-\PYG{n}{plt}\PYG{o}{.}\PYG{n}{ylabel}\PYG{p}{(}\PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{Median loudness [dB]}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{)}
-\PYG{n}{plt}\PYG{o}{.}\PYG{n}{show}\PYG{p}{(}\PYG{p}{)}
-\end{sphinxVerbatim}
-}
-
-\hrule height -\fboxrule\relax
-\vspace{\nbsphinxcodecellspacing}
-
-\makeatletter\setbox\nbsphinxpromptbox\box\voidb@x\makeatother
-
-\begin{nbsphinxfancyoutput}
-
-\noindent\sphinxincludegraphics[width=425\sphinxpxdimen,height=281\sphinxpxdimen]{{04_jazz_solos_28_0}.png}
-
-\end{nbsphinxfancyoutput}
-
-{
-\sphinxsetup{VerbatimColor={named}{nbsphinx-code-bg}}
-\sphinxsetup{VerbatimBorderColor={named}{nbsphinx-code-border}}
-\begin{sphinxVerbatim}[commandchars=\\\{\}]
-\llap{\color{nbsphinxin}[74]:\,\hspace{\fboxrule}\hspace{\fboxsep}}\PYG{n}{solos}\PYG{p}{[}\PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{melid}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{]}\PYG{o}{.}\PYG{n}{max}\PYG{p}{(}\PYG{p}{)}
-\end{sphinxVerbatim}
-}
-
-{
-
-\kern-\sphinxverbatimsmallskipamount\kern-\baselineskip
-\kern+\FrameHeightAdjust\kern-\fboxrule
-\vspace{\nbsphinxcodecellspacing}
-
-\sphinxsetup{VerbatimColor={named}{white}}
-\sphinxsetup{VerbatimBorderColor={named}{nbsphinx-code-border}}
-\begin{sphinxVerbatim}[commandchars=\\\{\}]
-\llap{\color{nbsphinxout}[74]:\,\hspace{\fboxrule}\hspace{\fboxsep}}456
-\end{sphinxVerbatim}
-}
-
-{
-\sphinxsetup{VerbatimColor={named}{nbsphinx-code-bg}}
-\sphinxsetup{VerbatimBorderColor={named}{nbsphinx-code-border}}
-\begin{sphinxVerbatim}[commandchars=\\\{\}]
-\llap{\color{nbsphinxin}[75]:\,\hspace{\fboxrule}\hspace{\fboxsep}}\PYG{n}{solos}\PYG{p}{[} \PYG{n}{solos}\PYG{p}{[}\PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{melid}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{]} \PYG{o}{==} \PYG{l+m+mi}{2} \PYG{p}{]}\PYG{p}{[}\PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{loud\PYGZus{}med}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{]}\PYG{o}{.}\PYG{n}{plot}\PYG{p}{(}\PYG{n}{figsize}\PYG{o}{=}\PYG{p}{(}\PYG{l+m+mi}{20}\PYG{p}{,}\PYG{l+m+mi}{3}\PYG{p}{)}\PYG{p}{)}\PYG{p}{;}
-\end{sphinxVerbatim}
-}
-
-\hrule height -\fboxrule\relax
-\vspace{\nbsphinxcodecellspacing}
-
-\makeatletter\setbox\nbsphinxpromptbox\box\voidb@x\makeatother
-
-\begin{nbsphinxfancyoutput}
-
-\noindent\sphinxincludegraphics[width=1158\sphinxpxdimen,height=194\sphinxpxdimen]{{04_jazz_solos_30_0}.png}
-
-\end{nbsphinxfancyoutput}
-
-{
-\sphinxsetup{VerbatimColor={named}{nbsphinx-code-bg}}
-\sphinxsetup{VerbatimBorderColor={named}{nbsphinx-code-border}}
-\begin{sphinxVerbatim}[commandchars=\\\{\}]
-\llap{\color{nbsphinxin}[114]:\,\hspace{\fboxrule}\hspace{\fboxsep}}\PYG{k+kn}{import} \PYG{n+nn}{seaborn} \PYG{k}{as} \PYG{n+nn}{sns}
-\PYG{k+kn}{import} \PYG{n+nn}{matplotlib}\PYG{n+nn}{.}\PYG{n+nn}{pyplot} \PYG{k}{as} \PYG{n+nn}{plt}
-\PYG{k+kn}{import} \PYG{n+nn}{numpy} \PYG{k}{as} \PYG{n+nn}{np}
-\end{sphinxVerbatim}
-}
-
-{
-\sphinxsetup{VerbatimColor={named}{nbsphinx-code-bg}}
-\sphinxsetup{VerbatimBorderColor={named}{nbsphinx-code-border}}
-\begin{sphinxVerbatim}[commandchars=\\\{\}]
-\llap{\color{nbsphinxin}[135]:\,\hspace{\fboxrule}\hspace{\fboxsep}}\PYG{c+c1}{\PYGZsh{} fig, axes = plt.subplots(5,1, figsize=(15,20))}
-
-\PYG{c+c1}{\PYGZsh{} for idx, rand in enumerate(np.random.randint(1,solos[\PYGZdq{}melid\PYGZdq{}].unique().max(), 5)):}
-\PYG{n}{sns}\PYG{o}{.}\PYG{n}{lmplot}\PYG{p}{(}\PYG{n}{data}\PYG{o}{=}\PYG{n}{solos}\PYG{p}{[} \PYG{n}{solos}\PYG{p}{[}\PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{melid}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{]} \PYG{o}{==} \PYG{l+m+mi}{130} \PYG{p}{]}\PYG{p}{,} \PYG{n}{x}\PYG{o}{=}\PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{pitch}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{,} \PYG{n}{y}\PYG{o}{=}\PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{loud\PYGZus{}med}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{)}\PYG{p}{;}
-\end{sphinxVerbatim}
-}
-
-\hrule height -\fboxrule\relax
-\vspace{\nbsphinxcodecellspacing}
-
-\makeatletter\setbox\nbsphinxpromptbox\box\voidb@x\makeatother
-
-\begin{nbsphinxfancyoutput}
-
-\noindent\sphinxincludegraphics[width=352\sphinxpxdimen,height=352\sphinxpxdimen]{{04_jazz_solos_32_0}.png}
-
-\end{nbsphinxfancyoutput}
 
 
 

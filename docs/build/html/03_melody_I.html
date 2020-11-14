@@ -24,6 +24,7 @@
     
   <link rel="index" title="Index" href="genindex.html" />
   <link rel="search" title="Search" href="search.html" />
+  <link rel="next" title="4. Solos in the Weimar Jazz Database" href="04_jazz_solos.html" />
   <link rel="prev" title="2. Introduction and Background" href="02_introduction.html" /> 
   </head>
 
@@ -106,6 +107,12 @@
           </li>
 
         
+          <li class="toctree-l1 "><a href="04_jazz_solos.html" class="reference internal ">Solos in the Weimar Jazz Database</a>
+
+            
+          </li>
+
+        
       </ul>
     </div>
   
@@ -126,6 +133,10 @@
   <li class="prev">
     <a href="02_introduction.html"
        title="previous chapter">← <span class="section-number">2. </span>Introduction and Background</a>
+  </li>
+  <li class="next">
+    <a href="04_jazz_solos.html"
+       title="next chapter"><span class="section-number">4. </span>Solos in the <em>Weimar Jazz Database</em> →</a>
   </li>
 </ul>
   
@@ -940,7 +951,7 @@ require(['music21'], function() {
 <p>Note that we added another column, “Onset”. What does it represent?</p>
 <p>This allows us now to look at the <strong>melodic profile</strong> of a particular song.</p>
 <div class="nbinput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[28]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[1]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
@@ -950,6 +961,7 @@ require(['music21'], function() {
         <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">gca</span><span class="p">()</span>
 
     <span class="k">if</span> <span class="n">standardized</span><span class="p">:</span>
+        <span class="n">notelist</span> <span class="o">=</span> <span class="n">standardized</span><span class="p">(</span><span class="n">notelist</span><span class="p">)</span>
         <span class="n">x</span> <span class="o">=</span> <span class="n">notelist</span><span class="p">[</span><span class="s2">&quot;Rel. Onset&quot;</span><span class="p">]</span>
         <span class="n">y</span> <span class="o">=</span> <span class="n">notelist</span><span class="p">[</span><span class="s2">&quot;Rel. MIDI Pitch&quot;</span><span class="p">]</span>
     <span class="k">else</span><span class="p">:</span>
@@ -1457,6 +1469,10 @@ require(['music21'], function() {
   <li class="prev">
     <a href="02_introduction.html"
        title="previous chapter">← <span class="section-number">2. </span>Introduction and Background</a>
+  </li>
+  <li class="next">
+    <a href="04_jazz_solos.html"
+       title="next chapter"><span class="section-number">4. </span>Solos in the <em>Weimar Jazz Database</em> →</a>
   </li>
 </ul><div class="footer" role="contentinfo">
       &#169; Copyright 2020, Fabian C. Moss.

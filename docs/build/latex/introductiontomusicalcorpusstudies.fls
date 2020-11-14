@@ -248,6 +248,7 @@ INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\ams
 INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\amsfonts\symbols\msbm7.tfm
 INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\amsfonts\symbols\msbm5.tfm
 INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\adobe\times\ptmri8t.tfm
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\adobe\times\ptmbi8t.tfm
 OUTPUT introductiontomusicalcorpusstudies.toc
 INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\fonts\vf\adobe\helvetic\phvb8t.vf
 INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\adobe\helvetic\phvb8r.tfm
@@ -257,6 +258,8 @@ INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\fonts\vf\adobe\times
 INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\adobe\times\ptmr8r.tfm
 INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\fonts\vf\adobe\times\ptmri8t.vf
 INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\adobe\times\ptmri8r.tfm
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\fonts\vf\adobe\times\ptmbi8t.vf
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\adobe\times\ptmbi8r.tfm
 INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\fonts\vf\adobe\helvetic\phvb8t.vf
 INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\adobe\helvetic\phvb8r.tfm
 INPUT pattern.jpg
@@ -365,6 +368,34 @@ INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex\latex\psnfss\ts1
 INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex\latex\psnfss\ts1ptm.fd
 INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\adobe\times\ptmr8c.tfm
 INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\fonts\vf\adobe\times\ptmr8c.vf
+INPUT 04_jazz_solos_25_0.png
+INPUT .\04_jazz_solos_25_0.png
+INPUT .\04_jazz_solos_25_0.png
+INPUT .\04_jazz_solos_25_0.png
+INPUT .\04_jazz_solos_25_0.png
+INPUT 04_jazz_solos_25_0.png
+INPUT .\04_jazz_solos_25_0.png
+INPUT 04_jazz_solos_28_0.png
+INPUT .\04_jazz_solos_28_0.png
+INPUT .\04_jazz_solos_28_0.png
+INPUT .\04_jazz_solos_28_0.png
+INPUT .\04_jazz_solos_28_0.png
+INPUT 04_jazz_solos_28_0.png
+INPUT .\04_jazz_solos_28_0.png
+INPUT 04_jazz_solos_30_0.png
+INPUT .\04_jazz_solos_30_0.png
+INPUT .\04_jazz_solos_30_0.png
+INPUT .\04_jazz_solos_30_0.png
+INPUT .\04_jazz_solos_30_0.png
+INPUT 04_jazz_solos_30_0.png
+INPUT .\04_jazz_solos_30_0.png
+INPUT 04_jazz_solos_32_0.png
+INPUT .\04_jazz_solos_32_0.png
+INPUT .\04_jazz_solos_32_0.png
+INPUT .\04_jazz_solos_32_0.png
+INPUT .\04_jazz_solos_32_0.png
+INPUT 04_jazz_solos_32_0.png
+INPUT .\04_jazz_solos_32_0.png
 INPUT introductiontomusicalcorpusstudies.ind
 INPUT introductiontomusicalcorpusstudies.ind
 INPUT introductiontomusicalcorpusstudies.aux
@@ -389,6 +420,8 @@ INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\urw\helv
 INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\urw\helvetic\uhvr8a.pfb
 INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\urw\times\utmb8a.pfb
 INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\urw\times\utmb8a.pfb
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\urw\times\utmbi8a.pfb
+INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\urw\times\utmbi8a.pfb
 INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\urw\times\utmr8a.pfb
 INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\urw\times\utmr8a.pfb
 INPUT C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\urw\times\utmri8a.pfb

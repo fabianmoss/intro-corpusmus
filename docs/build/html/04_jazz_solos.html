@@ -1,0 +1,2225 @@
+<!DOCTYPE html>
+<html >
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+      <title>4. Solos in the Weimar Jazz Database</title>
+    
+      <link rel="stylesheet" href="_static/pygments.css">
+      <link rel="stylesheet" href="_static/theme.css">
+      <link rel="stylesheet" href="_static/sphinx_press_theme.css">
+      
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+
+      <!-- sphinx script_files -->
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/language_data.js"></script>
+        <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+
+      
+      <script src="_static/theme-vendors.js"></script>
+      <script src="_static/theme.js" defer></script>
+    
+  <link rel="index" title="Index" href="genindex.html" />
+  <link rel="search" title="Search" href="search.html" />
+  <link rel="prev" title="3. Melodies in Folk Songs" href="03_melody_I.html" /> 
+  </head>
+
+  <body>
+    <div id="app" class="theme-container" :class="pageClasses"><navbar @toggle-sidebar="toggleSidebar">
+  <router-link to="index.html" class="home-link">
+    
+      <span class="site-name">Introduction to Musical Corpus Studies</span>
+    
+  </router-link>
+
+  <div class="links">
+    <navlinks class="can-hide">
+
+
+
+    </navlinks>
+  </div>
+</navbar>
+
+      
+      <div class="sidebar-mask" @click="toggleSidebar(false)">
+      </div>
+        <sidebar @toggle-sidebar="toggleSidebar">
+          
+          <navlinks>
+            
+
+
+
+            
+          </navlinks><div id="searchbox" class="searchbox" role="search">
+  <div class="caption"><span class="caption-text">Quick search</span>
+    <div class="searchformwrapper">
+      <form class="search" action="search.html" method="get">
+        <input type="text" name="q" />
+        <input type="submit" value="Search" />
+        <input type="hidden" name="check_keywords" value="yes" />
+        <input type="hidden" name="area" value="default" />
+      </form>
+    </div>
+  </div>
+</div><div class="sidebar-links" role="navigation" aria-label="main navigation">
+  
+    <div class="sidebar-group">
+      <p class="caption">
+        <span class="caption-text"><a href="index.html#introduction-to-musical-corpus-studies">Content</a></span>
+      </p>
+      <ul class="current">
+        
+          <li class="toctree-l1 "><a href="01_organization.html" class="reference internal ">Organization</a>
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 "><a href="02_introduction.html" class="reference internal ">Introduction and Background</a>
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 "><a href="03_melody_I.html" class="reference internal ">Melodies in Folk Songs</a>
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 current"><a href="#" class="reference internal current">Solos in the Weimar Jazz Database</a>
+
+            
+              <ul>
+                
+                  <li class="toctree-l2"><a href="#The-“rain-cloud”-of-Jazz-solos" class="reference internal">The “rain cloud” of Jazz solos</a></li>
+                
+              </ul>
+            
+          </li>
+
+        
+      </ul>
+    </div>
+  
+</div>
+        </sidebar>
+
+      <page>
+          <div class="body-header" role="navigation" aria-label="navigation">
+  
+  <ul class="breadcrumbs">
+    <li><a href="index.html">Docs</a> &raquo;</li>
+    
+    <li><span class="section-number">4. </span>Solos in the <em>Weimar Jazz Database</em></li>
+  </ul>
+  
+
+  <ul class="page-nav">
+  <li class="prev">
+    <a href="03_melody_I.html"
+       title="previous chapter">← <span class="section-number">3. </span>Melodies in Folk Songs</a>
+  </li>
+</ul>
+  
+</div>
+<hr>
+          <div class="content" role="main">
+            
+  
+<style>
+/* CSS for nbsphinx extension */
+
+/* remove conflicting styling from Sphinx themes */
+div.nbinput.container,
+div.nbinput.container div.prompt,
+div.nbinput.container div.input_area,
+div.nbinput.container div[class*=highlight],
+div.nbinput.container div[class*=highlight] pre,
+div.nboutput.container,
+div.nboutput.container div.prompt,
+div.nboutput.container div.output_area,
+div.nboutput.container div[class*=highlight],
+div.nboutput.container div[class*=highlight] pre {
+    background: none;
+    border: none;
+    padding: 0 0;
+    margin: 0;
+    box-shadow: none;
+}
+
+/* avoid gaps between output lines */
+div.nboutput.container div[class*=highlight] pre {
+    line-height: normal;
+}
+
+/* input/output containers */
+div.nbinput.container,
+div.nboutput.container {
+    display: -webkit-flex;
+    display: flex;
+    align-items: flex-start;
+    margin: 0;
+    width: 100%;
+}
+@media (max-width: 540px) {
+    div.nbinput.container,
+    div.nboutput.container {
+        flex-direction: column;
+    }
+}
+
+/* input container */
+div.nbinput.container {
+    padding-top: 5px;
+}
+
+/* last container */
+div.nblast.container {
+    padding-bottom: 5px;
+}
+
+/* input prompt */
+div.nbinput.container div.prompt pre {
+    color: #307FC1;
+}
+
+/* output prompt */
+div.nboutput.container div.prompt pre {
+    color: #BF5B3D;
+}
+
+/* all prompts */
+div.nbinput.container div.prompt,
+div.nboutput.container div.prompt {
+    width: 4.5ex;
+    padding-top: 5px;
+    position: relative;
+    user-select: none;
+}
+
+div.nbinput.container div.prompt > div,
+div.nboutput.container div.prompt > div {
+    position: absolute;
+    right: 0;
+    margin-right: 0.3ex;
+}
+
+@media (max-width: 540px) {
+    div.nbinput.container div.prompt,
+    div.nboutput.container div.prompt {
+        width: unset;
+        text-align: left;
+        padding: 0.4em;
+    }
+    div.nboutput.container div.prompt.empty {
+        padding: 0;
+    }
+
+    div.nbinput.container div.prompt > div,
+    div.nboutput.container div.prompt > div {
+        position: unset;
+    }
+}
+
+/* disable scrollbars on prompts */
+div.nbinput.container div.prompt pre,
+div.nboutput.container div.prompt pre {
+    overflow: hidden;
+}
+
+/* input/output area */
+div.nbinput.container div.input_area,
+div.nboutput.container div.output_area {
+    -webkit-flex: 1;
+    flex: 1;
+    overflow: auto;
+}
+@media (max-width: 540px) {
+    div.nbinput.container div.input_area,
+    div.nboutput.container div.output_area {
+        width: 100%;
+    }
+}
+
+/* input area */
+div.nbinput.container div.input_area {
+    border: 1px solid #e0e0e0;
+    border-radius: 2px;
+    background: #f5f5f5;
+}
+
+/* override MathJax center alignment in output cells */
+div.nboutput.container div[class*=MathJax] {
+    text-align: left !important;
+}
+
+/* override sphinx.ext.imgmath center alignment in output cells */
+div.nboutput.container div.math p {
+    text-align: left;
+}
+
+/* standard error */
+div.nboutput.container div.output_area.stderr {
+    background: #fdd;
+}
+
+/* ANSI colors */
+.ansi-black-fg { color: #3E424D; }
+.ansi-black-bg { background-color: #3E424D; }
+.ansi-black-intense-fg { color: #282C36; }
+.ansi-black-intense-bg { background-color: #282C36; }
+.ansi-red-fg { color: #E75C58; }
+.ansi-red-bg { background-color: #E75C58; }
+.ansi-red-intense-fg { color: #B22B31; }
+.ansi-red-intense-bg { background-color: #B22B31; }
+.ansi-green-fg { color: #00A250; }
+.ansi-green-bg { background-color: #00A250; }
+.ansi-green-intense-fg { color: #007427; }
+.ansi-green-intense-bg { background-color: #007427; }
+.ansi-yellow-fg { color: #DDB62B; }
+.ansi-yellow-bg { background-color: #DDB62B; }
+.ansi-yellow-intense-fg { color: #B27D12; }
+.ansi-yellow-intense-bg { background-color: #B27D12; }
+.ansi-blue-fg { color: #208FFB; }
+.ansi-blue-bg { background-color: #208FFB; }
+.ansi-blue-intense-fg { color: #0065CA; }
+.ansi-blue-intense-bg { background-color: #0065CA; }
+.ansi-magenta-fg { color: #D160C4; }
+.ansi-magenta-bg { background-color: #D160C4; }
+.ansi-magenta-intense-fg { color: #A03196; }
+.ansi-magenta-intense-bg { background-color: #A03196; }
+.ansi-cyan-fg { color: #60C6C8; }
+.ansi-cyan-bg { background-color: #60C6C8; }
+.ansi-cyan-intense-fg { color: #258F8F; }
+.ansi-cyan-intense-bg { background-color: #258F8F; }
+.ansi-white-fg { color: #C5C1B4; }
+.ansi-white-bg { background-color: #C5C1B4; }
+.ansi-white-intense-fg { color: #A1A6B2; }
+.ansi-white-intense-bg { background-color: #A1A6B2; }
+
+.ansi-default-inverse-fg { color: #FFFFFF; }
+.ansi-default-inverse-bg { background-color: #000000; }
+
+.ansi-bold { font-weight: bold; }
+.ansi-underline { text-decoration: underline; }
+
+
+div.nbinput.container div.input_area div[class*=highlight] > pre,
+div.nboutput.container div.output_area div[class*=highlight] > pre,
+div.nboutput.container div.output_area div[class*=highlight].math,
+div.nboutput.container div.output_area.rendered_html,
+div.nboutput.container div.output_area > div.output_javascript,
+div.nboutput.container div.output_area:not(.rendered_html) > img{
+    padding: 5px;
+}
+
+/* fix copybtn overflow problem in chromium (needed for 'sphinx_copybutton') */
+div.nbinput.container div.input_area > div[class^='highlight'],
+div.nboutput.container div.output_area > div[class^='highlight']{
+    overflow-y: hidden;
+}
+
+/* hide copybtn icon on prompts (needed for 'sphinx_copybutton') */
+.prompt a.copybtn {
+    display: none;
+}
+
+/* Some additional styling taken form the Jupyter notebook CSS */
+div.rendered_html table {
+  border: none;
+  border-collapse: collapse;
+  border-spacing: 0;
+  color: black;
+  font-size: 12px;
+  table-layout: fixed;
+}
+div.rendered_html thead {
+  border-bottom: 1px solid black;
+  vertical-align: bottom;
+}
+div.rendered_html tr,
+div.rendered_html th,
+div.rendered_html td {
+  text-align: right;
+  vertical-align: middle;
+  padding: 0.5em 0.5em;
+  line-height: normal;
+  white-space: normal;
+  max-width: none;
+  border: none;
+}
+div.rendered_html th {
+  font-weight: bold;
+}
+div.rendered_html tbody tr:nth-child(odd) {
+  background: #f5f5f5;
+}
+div.rendered_html tbody tr:hover {
+  background: rgba(66, 165, 245, 0.2);
+}
+</style>
+<div class="section" id="Solos-in-the-Weimar-Jazz-Database">
+<h1><span class="section-number">4. </span>Solos in the <em>Weimar Jazz Database</em><a class="headerlink" href="#Solos-in-the-Weimar-Jazz-Database" title="Permalink to this headline">¶</a></h1>
+<p><strong>Disclaimer: I am not the expert here!</strong></p>
+<p>The first project we will have a look at is the <a class="reference external" href="https://jazzomat.hfm-weimar.de/">Jazzomat Research Project</a> that contains the <em>Weimar Jazz Database</em> (WJazzD). Let us first browse the site.</p>
+<p>Transcriptions of Jazz solos :cite:<code class="docutils literal notranslate"><span class="pre">Pfleiderer2017</span></code>. The <em>Weimar Jazz Database</em> (WJD) consists of 456 transcriptions of Jazz solos from diverse substyles. As all the corpora that we deal with here, it is freely available on the internet.</p>
+<div class="nbinput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[22]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<span class="kn">import</span> <span class="nn">sqlite3</span>
+
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+<span class="kn">import</span> <span class="nn">seaborn</span> <span class="k">as</span> <span class="nn">sns</span>
+<span class="n">sns</span><span class="o">.</span><span class="n">set_style</span><span class="p">(</span><span class="s2">&quot;white&quot;</span><span class="p">)</span>
+<span class="n">sns</span><span class="o">.</span><span class="n">set_context</span><span class="p">(</span><span class="s2">&quot;talk&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<p>The WJazzD was already downloaded; we connect to the database with the help of <code class="docutils literal notranslate"><span class="pre">sqlite3</span></code>.</p>
+<p>The database contains a number of tables:</p>
+<p>…</p>
+<div class="nbinput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[2]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="n">conn</span> <span class="o">=</span> <span class="n">sqlite3</span><span class="o">.</span><span class="n">connect</span><span class="p">(</span><span class="s2">&quot;data/wjazzd.db&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[3]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="n">conn</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[3]:
+</pre></div>
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+&lt;sqlite3.Connection at 0x171358b85d0&gt;
+</pre></div></div>
+</div>
+<p>We can now use <code class="docutils literal notranslate"><span class="pre">pandas</span></code> to read the data out of the database.</p>
+<div class="nbinput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[4]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="n">solos</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_sql</span><span class="p">(</span><span class="s2">&quot;SELECT * FROM melody&quot;</span><span class="p">,</span> <span class="n">con</span><span class="o">=</span><span class="n">conn</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<p>The <code class="docutils literal notranslate"><span class="pre">&quot;SELECT</span> <span class="pre">*</span> <span class="pre">FROM</span> <span class="pre">melody&quot;</span></code> means “Select everything from the table ‘melody’ in the database”. Let’s look at the first ten entries. Likewise, we can select the <code class="docutils literal notranslate"><span class="pre">composition_info</span></code> table:</p>
+<div class="nbinput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[5]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="n">solos_meta</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_sql</span><span class="p">(</span><span class="s2">&quot;SELECT * from solo_info&quot;</span><span class="p">,</span> <span class="n">con</span><span class="o">=</span><span class="n">conn</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[6]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="n">solos_meta</span><span class="o">.</span><span class="n">sample</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[6]:
+</pre></div>
+</div>
+<div class="output_area rendered_html docutils container">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>melid</th>
+      <th>trackid</th>
+      <th>compid</th>
+      <th>recordid</th>
+      <th>performer</th>
+      <th>title</th>
+      <th>titleaddon</th>
+      <th>solopart</th>
+      <th>instrument</th>
+      <th>style</th>
+      <th>avgtempo</th>
+      <th>tempoclass</th>
+      <th>rhythmfeel</th>
+      <th>key</th>
+      <th>signature</th>
+      <th>chord_changes</th>
+      <th>chorus_count</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>405</th>
+      <td>406</td>
+      <td>224</td>
+      <td>202</td>
+      <td>116</td>
+      <td>Steve Coleman</td>
+      <td>Pass It On</td>
+      <td></td>
+      <td>1</td>
+      <td>as</td>
+      <td>FUSION</td>
+      <td>104.9</td>
+      <td>MEDIUM SLOW</td>
+      <td>FUNK</td>
+      <td></td>
+      <td>4/4</td>
+      <td>A1: ||C-7   |Eb   |C-7   |Eb   ||\nA2: ||C-7  ...</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <th>57</th>
+      <td>58</td>
+      <td>53</td>
+      <td>53</td>
+      <td>24</td>
+      <td>Charlie Parker</td>
+      <td>K.C. Blues</td>
+      <td></td>
+      <td>1</td>
+      <td>as</td>
+      <td>BEBOP</td>
+      <td>118.3</td>
+      <td>MEDIUM</td>
+      <td>SWING</td>
+      <td>C-maj</td>
+      <td>4/4</td>
+      <td>A1: ||C7   |F7   |C7   |C7   |F7   |F7   |C7  ...</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <th>430</th>
+      <td>431</td>
+      <td>329</td>
+      <td>289</td>
+      <td>177</td>
+      <td>Wayne Shorter</td>
+      <td>Footprints</td>
+      <td></td>
+      <td>1</td>
+      <td>ts</td>
+      <td>POSTBOP</td>
+      <td>136.1</td>
+      <td>MEDIUM</td>
+      <td>SWING</td>
+      <td>C-min</td>
+      <td>6/4</td>
+      <td>A1: ||C-7     |C-7     |C-7     |C-7     |F-7 ...</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <th>269</th>
+      <td>270</td>
+      <td>233</td>
+      <td>210</td>
+      <td>119</td>
+      <td>Lee Konitz</td>
+      <td>Marshmallow</td>
+      <td></td>
+      <td>1</td>
+      <td>as</td>
+      <td>COOL</td>
+      <td>298.6</td>
+      <td>UP</td>
+      <td>SWING</td>
+      <td>Bb-maj</td>
+      <td>4/4</td>
+      <td>A1: ||Bbj7   |Bbj7   |F-7   |Bb7   |Ebj7   |Eb...</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>151</th>
+      <td>152</td>
+      <td>136</td>
+      <td>123</td>
+      <td>67</td>
+      <td>Don Ellis</td>
+      <td>You Stepped Out of a Dream</td>
+      <td></td>
+      <td>2</td>
+      <td>tp</td>
+      <td>POSTBOP</td>
+      <td>168.9</td>
+      <td>MEDIUM UP</td>
+      <td>SWING</td>
+      <td>D-maj</td>
+      <td>4/4</td>
+      <td>A1: ||Dj7   |Dj7   |Ebj7   |Ebj7   |F7   |F7  ...</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>394</th>
+      <td>395</td>
+      <td>310</td>
+      <td>275</td>
+      <td>86</td>
+      <td>Sonny Stitt</td>
+      <td>Good Kick</td>
+      <td></td>
+      <td>1</td>
+      <td>as</td>
+      <td>BEBOP</td>
+      <td>173.4</td>
+      <td>MEDIUM UP</td>
+      <td>SWING</td>
+      <td>F-maj</td>
+      <td>4/4</td>
+      <td>A1: ||F7   |F7   |F7 D-7 |G-7 C7 |F7   |F7   |...</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <th>203</th>
+      <td>204</td>
+      <td>181</td>
+      <td>164</td>
+      <td>90</td>
+      <td>Joe Henderson</td>
+      <td>Totem Pole</td>
+      <td></td>
+      <td>1</td>
+      <td>ts</td>
+      <td>POSTBOP</td>
+      <td>137.6</td>
+      <td>MEDIUM</td>
+      <td>SWING</td>
+      <td>Eb-min</td>
+      <td>4/4</td>
+      <td>A1: ||Eb-79   |Eb-79   |F7   |F7   |E7   |E7  ...</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <th>300</th>
+      <td>301</td>
+      <td>249</td>
+      <td>225</td>
+      <td>130</td>
+      <td>Michael Brecker</td>
+      <td>Delta City Blues</td>
+      <td></td>
+      <td>1</td>
+      <td>ts</td>
+      <td>POSTBOP</td>
+      <td>281.7</td>
+      <td>UP</td>
+      <td>SWING</td>
+      <td>Bb-maj</td>
+      <td>4/4</td>
+      <td>A1: ||Bb7   |Bb7   |Bb7   |Bb7   |Bb7   |Bb7  ...</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <th>42</th>
+      <td>43</td>
+      <td>38</td>
+      <td>38</td>
+      <td>15</td>
+      <td>Branford Marsalis</td>
+      <td>U.M.M.G.</td>
+      <td></td>
+      <td>1</td>
+      <td>ts</td>
+      <td>POSTBOP</td>
+      <td>211.6</td>
+      <td>UP</td>
+      <td>SWING</td>
+      <td>Db-maj</td>
+      <td>4/4</td>
+      <td>A1: ||Fm7b5   |Bb79b   |Eb-7   |Ab7   |Dbo7 Db...</td>
+      <td>6</td>
+    </tr>
+    <tr>
+      <th>351</th>
+      <td>352</td>
+      <td>285</td>
+      <td>255</td>
+      <td>151</td>
+      <td>Paul Desmond</td>
+      <td>Samba Cantina</td>
+      <td></td>
+      <td>2</td>
+      <td>as</td>
+      <td>COOL</td>
+      <td>152.7</td>
+      <td>MEDIUM UP</td>
+      <td>LATIN</td>
+      <td>F-min</td>
+      <td>4/4</td>
+      <td>A1: ||Gm7b5   |C79b   |F-7   |F-7   |Bb-7   |E...</td>
+      <td>1</td>
+    </tr>
+  </tbody>
+</table>
+</div></div>
+</div>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[8]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="n">solos</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[8]:
+</pre></div>
+</div>
+<div class="output_area rendered_html docutils container">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>eventid</th>
+      <th>melid</th>
+      <th>onset</th>
+      <th>pitch</th>
+      <th>duration</th>
+      <th>period</th>
+      <th>division</th>
+      <th>bar</th>
+      <th>beat</th>
+      <th>tatum</th>
+      <th>...</th>
+      <th>f0_mod</th>
+      <th>loud_max</th>
+      <th>loud_med</th>
+      <th>loud_sd</th>
+      <th>loud_relpos</th>
+      <th>loud_cent</th>
+      <th>loud_s2b</th>
+      <th>f0_range</th>
+      <th>f0_freq_hz</th>
+      <th>f0_med_dev</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>1</td>
+      <td>1</td>
+      <td>10.343492</td>
+      <td>65.0</td>
+      <td>0.138776</td>
+      <td>4</td>
+      <td>1</td>
+      <td>0</td>
+      <td>1</td>
+      <td>1</td>
+      <td>...</td>
+      <td></td>
+      <td>0.126209</td>
+      <td>66.526087</td>
+      <td>5.541147</td>
+      <td>0.307692</td>
+      <td>0.389466</td>
+      <td>1.056169</td>
+      <td>37.794261</td>
+      <td>12.932532</td>
+      <td>-0.328442</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>2</td>
+      <td>1</td>
+      <td>10.637642</td>
+      <td>63.0</td>
+      <td>0.171247</td>
+      <td>4</td>
+      <td>4</td>
+      <td>0</td>
+      <td>2</td>
+      <td>1</td>
+      <td>...</td>
+      <td></td>
+      <td>0.349751</td>
+      <td>69.133321</td>
+      <td>2.912412</td>
+      <td>0.250000</td>
+      <td>0.468687</td>
+      <td>1.120317</td>
+      <td>6.365930</td>
+      <td>6.956935</td>
+      <td>11.135423</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>3</td>
+      <td>1</td>
+      <td>10.843719</td>
+      <td>58.0</td>
+      <td>0.081270</td>
+      <td>4</td>
+      <td>4</td>
+      <td>0</td>
+      <td>2</td>
+      <td>4</td>
+      <td>...</td>
+      <td></td>
+      <td>0.094051</td>
+      <td>66.352130</td>
+      <td>3.564563</td>
+      <td>0.428571</td>
+      <td>0.531354</td>
+      <td>1.310389</td>
+      <td>68.010392</td>
+      <td>NaN</td>
+      <td>32.366787</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>4</td>
+      <td>1</td>
+      <td>10.948209</td>
+      <td>61.0</td>
+      <td>0.235102</td>
+      <td>4</td>
+      <td>1</td>
+      <td>0</td>
+      <td>3</td>
+      <td>1</td>
+      <td>...</td>
+      <td></td>
+      <td>0.521187</td>
+      <td>66.484173</td>
+      <td>2.414298</td>
+      <td>0.818182</td>
+      <td>0.559333</td>
+      <td>0.984047</td>
+      <td>15.443906</td>
+      <td>5.867151</td>
+      <td>-3.374696</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>5</td>
+      <td>1</td>
+      <td>11.232653</td>
+      <td>63.0</td>
+      <td>0.130612</td>
+      <td>4</td>
+      <td>1</td>
+      <td>0</td>
+      <td>4</td>
+      <td>1</td>
+      <td>...</td>
+      <td></td>
+      <td>0.560737</td>
+      <td>71.699054</td>
+      <td>2.185794</td>
+      <td>0.166667</td>
+      <td>0.438973</td>
+      <td>1.061262</td>
+      <td>11.444363</td>
+      <td>8.329975</td>
+      <td>6.377737</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>6</td>
+      <td>1</td>
+      <td>11.551927</td>
+      <td>58.0</td>
+      <td>0.188662</td>
+      <td>4</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>...</td>
+      <td></td>
+      <td>0.534657</td>
+      <td>67.636708</td>
+      <td>7.635221</td>
+      <td>0.411765</td>
+      <td>0.359536</td>
+      <td>1.049956</td>
+      <td>39.368720</td>
+      <td>6.589582</td>
+      <td>16.146429</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>7</td>
+      <td>1</td>
+      <td>11.859592</td>
+      <td>58.0</td>
+      <td>0.481814</td>
+      <td>4</td>
+      <td>1</td>
+      <td>1</td>
+      <td>2</td>
+      <td>1</td>
+      <td>...</td>
+      <td>vibrato</td>
+      <td>0.584914</td>
+      <td>63.659343</td>
+      <td>5.518070</td>
+      <td>0.068182</td>
+      <td>0.403372</td>
+      <td>0.983151</td>
+      <td>39.429103</td>
+      <td>5.406750</td>
+      <td>11.239471</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>8</td>
+      <td>1</td>
+      <td>14.535692</td>
+      <td>50.0</td>
+      <td>0.159637</td>
+      <td>4</td>
+      <td>1</td>
+      <td>3</td>
+      <td>3</td>
+      <td>1</td>
+      <td>...</td>
+      <td></td>
+      <td>-0.129185</td>
+      <td>58.507975</td>
+      <td>5.020340</td>
+      <td>0.133333</td>
+      <td>0.368384</td>
+      <td>0.927912</td>
+      <td>174.398513</td>
+      <td>NaN</td>
+      <td>25.203232</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>9</td>
+      <td>1</td>
+      <td>14.799819</td>
+      <td>57.0</td>
+      <td>0.145125</td>
+      <td>4</td>
+      <td>2</td>
+      <td>3</td>
+      <td>4</td>
+      <td>1</td>
+      <td>...</td>
+      <td></td>
+      <td>0.599931</td>
+      <td>71.173670</td>
+      <td>2.938194</td>
+      <td>0.285714</td>
+      <td>0.551884</td>
+      <td>1.064195</td>
+      <td>27.066543</td>
+      <td>7.758283</td>
+      <td>25.736430</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>10</td>
+      <td>1</td>
+      <td>14.973968</td>
+      <td>60.0</td>
+      <td>0.110295</td>
+      <td>4</td>
+      <td>2</td>
+      <td>3</td>
+      <td>4</td>
+      <td>2</td>
+      <td>...</td>
+      <td></td>
+      <td>0.484532</td>
+      <td>69.632891</td>
+      <td>2.325457</td>
+      <td>0.600000</td>
+      <td>0.508617</td>
+      <td>1.038483</td>
+      <td>17.141304</td>
+      <td>11.184763</td>
+      <td>15.693739</td>
+    </tr>
+  </tbody>
+</table>
+<p>10 rows × 26 columns</p>
+</div></div>
+</div>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[9]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="n">solos</span><span class="o">.</span><span class="n">tail</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[9]:
+</pre></div>
+</div>
+<div class="output_area rendered_html docutils container">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>eventid</th>
+      <th>melid</th>
+      <th>onset</th>
+      <th>pitch</th>
+      <th>duration</th>
+      <th>period</th>
+      <th>division</th>
+      <th>bar</th>
+      <th>beat</th>
+      <th>tatum</th>
+      <th>...</th>
+      <th>f0_mod</th>
+      <th>loud_max</th>
+      <th>loud_med</th>
+      <th>loud_sd</th>
+      <th>loud_relpos</th>
+      <th>loud_cent</th>
+      <th>loud_s2b</th>
+      <th>f0_range</th>
+      <th>f0_freq_hz</th>
+      <th>f0_med_dev</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>200804</th>
+      <td>200805</td>
+      <td>456</td>
+      <td>63.135057</td>
+      <td>57.0</td>
+      <td>0.168345</td>
+      <td>4</td>
+      <td>2</td>
+      <td>53</td>
+      <td>4</td>
+      <td>2</td>
+      <td>...</td>
+      <td></td>
+      <td>1.113380</td>
+      <td>72.169552</td>
+      <td>6.896394</td>
+      <td>0.687500</td>
+      <td>0.581956</td>
+      <td>1.271747</td>
+      <td>191.074095</td>
+      <td>10.966972</td>
+      <td>-11.891698</td>
+    </tr>
+    <tr>
+      <th>200805</th>
+      <td>200806</td>
+      <td>456</td>
+      <td>63.303401</td>
+      <td>55.0</td>
+      <td>0.087075</td>
+      <td>4</td>
+      <td>3</td>
+      <td>54</td>
+      <td>1</td>
+      <td>1</td>
+      <td>...</td>
+      <td></td>
+      <td>0.491496</td>
+      <td>69.732265</td>
+      <td>1.814723</td>
+      <td>0.500000</td>
+      <td>0.595212</td>
+      <td>1.339060</td>
+      <td>40.375449</td>
+      <td>NaN</td>
+      <td>-99.173779</td>
+    </tr>
+    <tr>
+      <th>200806</th>
+      <td>200807</td>
+      <td>456</td>
+      <td>63.390476</td>
+      <td>57.0</td>
+      <td>0.191565</td>
+      <td>4</td>
+      <td>3</td>
+      <td>54</td>
+      <td>1</td>
+      <td>2</td>
+      <td>...</td>
+      <td>slide</td>
+      <td>1.187058</td>
+      <td>76.628621</td>
+      <td>2.628726</td>
+      <td>0.411765</td>
+      <td>0.590950</td>
+      <td>1.432802</td>
+      <td>104.823845</td>
+      <td>11.148561</td>
+      <td>-2.911604</td>
+    </tr>
+    <tr>
+      <th>200807</th>
+      <td>200808</td>
+      <td>456</td>
+      <td>63.640091</td>
+      <td>59.0</td>
+      <td>0.406349</td>
+      <td>4</td>
+      <td>1</td>
+      <td>54</td>
+      <td>2</td>
+      <td>1</td>
+      <td>...</td>
+      <td></td>
+      <td>0.972676</td>
+      <td>66.042058</td>
+      <td>3.690577</td>
+      <td>0.000000</td>
+      <td>0.334937</td>
+      <td>1.082549</td>
+      <td>165.810976</td>
+      <td>2.659723</td>
+      <td>14.311001</td>
+    </tr>
+    <tr>
+      <th>200808</th>
+      <td>200809</td>
+      <td>456</td>
+      <td>64.058050</td>
+      <td>52.0</td>
+      <td>1.433832</td>
+      <td>4</td>
+      <td>2</td>
+      <td>54</td>
+      <td>3</td>
+      <td>2</td>
+      <td>...</td>
+      <td>vibrato</td>
+      <td>0.368321</td>
+      <td>58.174931</td>
+      <td>9.418678</td>
+      <td>0.053030</td>
+      <td>0.400571</td>
+      <td>1.278890</td>
+      <td>66.932198</td>
+      <td>2.153916</td>
+      <td>-9.381310</td>
+    </tr>
+  </tbody>
+</table>
+<p>5 rows × 26 columns</p>
+</div></div>
+</div>
+<p>The <code class="docutils literal notranslate"><span class="pre">solos</span></code> table contains 26 columns that cannot be displayed at once. We can have a look at all columns by using the <code class="docutils literal notranslate"><span class="pre">.columns</span></code> attribute.</p>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[10]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="n">solos</span><span class="o">.</span><span class="n">columns</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[10]:
+</pre></div>
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+Index([&#39;eventid&#39;, &#39;melid&#39;, &#39;onset&#39;, &#39;pitch&#39;, &#39;duration&#39;, &#39;period&#39;, &#39;division&#39;,
+       &#39;bar&#39;, &#39;beat&#39;, &#39;tatum&#39;, &#39;subtatum&#39;, &#39;num&#39;, &#39;denom&#39;, &#39;beatprops&#39;,
+       &#39;beatdur&#39;, &#39;tatumprops&#39;, &#39;f0_mod&#39;, &#39;loud_max&#39;, &#39;loud_med&#39;, &#39;loud_sd&#39;,
+       &#39;loud_relpos&#39;, &#39;loud_cent&#39;, &#39;loud_s2b&#39;, &#39;f0_range&#39;, &#39;f0_freq_hz&#39;,
+       &#39;f0_med_dev&#39;],
+      dtype=&#39;object&#39;)
+</pre></div></div>
+</div>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[11]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="n">mapper</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">(</span><span class="n">solos_meta</span><span class="p">[[</span><span class="s2">&quot;melid&quot;</span><span class="p">,</span> <span class="s2">&quot;performer&quot;</span><span class="p">]]</span><span class="o">.</span><span class="n">values</span><span class="p">)</span>
+<span class="n">mapper</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[11]:
+</pre></div>
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+{1: &#39;Art Pepper&#39;,
+ 2: &#39;Art Pepper&#39;,
+ 3: &#39;Art Pepper&#39;,
+ 4: &#39;Art Pepper&#39;,
+ 5: &#39;Art Pepper&#39;,
+ 6: &#39;Art Pepper&#39;,
+ 7: &#39;Benny Carter&#39;,
+ 8: &#39;Benny Carter&#39;,
+ 9: &#39;Benny Carter&#39;,
+ 10: &#39;Benny Carter&#39;,
+ 11: &#39;Benny Carter&#39;,
+ 12: &#39;Benny Carter&#39;,
+ 13: &#39;Benny Carter&#39;,
+ 14: &#39;Benny Goodman&#39;,
+ 15: &#39;Benny Goodman&#39;,
+ 16: &#39;Benny Goodman&#39;,
+ 17: &#39;Benny Goodman&#39;,
+ 18: &#39;Benny Goodman&#39;,
+ 19: &#39;Benny Goodman&#39;,
+ 20: &#39;Benny Goodman&#39;,
+ 21: &#39;Ben Webster&#39;,
+ 22: &#39;Ben Webster&#39;,
+ 23: &#39;Ben Webster&#39;,
+ 24: &#39;Ben Webster&#39;,
+ 25: &#39;Ben Webster&#39;,
+ 26: &#39;Bix Beiderbecke&#39;,
+ 27: &#39;Bix Beiderbecke&#39;,
+ 28: &#39;Bix Beiderbecke&#39;,
+ 29: &#39;Bix Beiderbecke&#39;,
+ 30: &#39;Bix Beiderbecke&#39;,
+ 31: &#39;Bob Berg&#39;,
+ 32: &#39;Bob Berg&#39;,
+ 33: &#39;Bob Berg&#39;,
+ 34: &#39;Bob Berg&#39;,
+ 35: &#39;Bob Berg&#39;,
+ 36: &#39;Bob Berg&#39;,
+ 37: &#39;Bob Berg&#39;,
+ 38: &#39;Branford Marsalis&#39;,
+ 39: &#39;Branford Marsalis&#39;,
+ 40: &#39;Branford Marsalis&#39;,
+ 41: &#39;Branford Marsalis&#39;,
+ 42: &#39;Branford Marsalis&#39;,
+ 43: &#39;Branford Marsalis&#39;,
+ 44: &#39;Buck Clayton&#39;,
+ 45: &#39;Buck Clayton&#39;,
+ 46: &#39;Buck Clayton&#39;,
+ 47: &#39;Cannonball Adderley&#39;,
+ 48: &#39;Cannonball Adderley&#39;,
+ 49: &#39;Cannonball Adderley&#39;,
+ 50: &#39;Cannonball Adderley&#39;,
+ 51: &#39;Cannonball Adderley&#39;,
+ 52: &#39;Charlie Parker&#39;,
+ 53: &#39;Charlie Parker&#39;,
+ 54: &#39;Charlie Parker&#39;,
+ 55: &#39;Charlie Parker&#39;,
+ 56: &#39;Charlie Parker&#39;,
+ 57: &#39;Charlie Parker&#39;,
+ 58: &#39;Charlie Parker&#39;,
+ 59: &#39;Charlie Parker&#39;,
+ 60: &#39;Charlie Parker&#39;,
+ 61: &#39;Charlie Parker&#39;,
+ 62: &#39;Charlie Parker&#39;,
+ 63: &#39;Charlie Parker&#39;,
+ 64: &#39;Charlie Parker&#39;,
+ 65: &#39;Charlie Parker&#39;,
+ 66: &#39;Charlie Parker&#39;,
+ 67: &#39;Charlie Parker&#39;,
+ 68: &#39;Charlie Parker&#39;,
+ 69: &#39;Charlie Shavers&#39;,
+ 70: &#39;Chet Baker&#39;,
+ 71: &#39;Chet Baker&#39;,
+ 72: &#39;Chet Baker&#39;,
+ 73: &#39;Chet Baker&#39;,
+ 74: &#39;Chet Baker&#39;,
+ 75: &#39;Chet Baker&#39;,
+ 76: &#39;Chet Baker&#39;,
+ 77: &#39;Chet Baker&#39;,
+ 78: &#39;Chris Potter&#39;,
+ 79: &#39;Chris Potter&#39;,
+ 80: &#39;Chris Potter&#39;,
+ 81: &#39;Chris Potter&#39;,
+ 82: &#39;Chris Potter&#39;,
+ 83: &#39;Chris Potter&#39;,
+ 84: &#39;Chris Potter&#39;,
+ 85: &#39;Chu Berry&#39;,
+ 86: &#39;Chu Berry&#39;,
+ 87: &#39;Clifford Brown&#39;,
+ 88: &#39;Clifford Brown&#39;,
+ 89: &#39;Clifford Brown&#39;,
+ 90: &#39;Clifford Brown&#39;,
+ 91: &#39;Clifford Brown&#39;,
+ 92: &#39;Clifford Brown&#39;,
+ 93: &#39;Clifford Brown&#39;,
+ 94: &#39;Clifford Brown&#39;,
+ 95: &#39;Clifford Brown&#39;,
+ 96: &#39;Coleman Hawkins&#39;,
+ 97: &#39;Coleman Hawkins&#39;,
+ 98: &#39;Coleman Hawkins&#39;,
+ 99: &#39;Coleman Hawkins&#39;,
+ 100: &#39;Coleman Hawkins&#39;,
+ 101: &#39;Coleman Hawkins&#39;,
+ 102: &#39;Curtis Fuller&#39;,
+ 103: &#39;Curtis Fuller&#39;,
+ 104: &#39;David Liebman&#39;,
+ 105: &#39;David Liebman&#39;,
+ 106: &#39;David Liebman&#39;,
+ 107: &#39;David Liebman&#39;,
+ 108: &#39;David Liebman&#39;,
+ 109: &#39;David Liebman&#39;,
+ 110: &#39;David Liebman&#39;,
+ 111: &#39;David Liebman&#39;,
+ 112: &#39;David Liebman&#39;,
+ 113: &#39;David Liebman&#39;,
+ 114: &#39;David Liebman&#39;,
+ 115: &#39;David Murray&#39;,
+ 116: &#39;David Murray&#39;,
+ 117: &#39;David Murray&#39;,
+ 118: &#39;David Murray&#39;,
+ 119: &#39;David Murray&#39;,
+ 120: &#39;David Murray&#39;,
+ 121: &#39;Dexter Gordon&#39;,
+ 122: &#39;Dexter Gordon&#39;,
+ 123: &#39;Dexter Gordon&#39;,
+ 124: &#39;Dexter Gordon&#39;,
+ 125: &#39;Dexter Gordon&#39;,
+ 126: &#39;Dexter Gordon&#39;,
+ 127: &#39;Dickie Wells&#39;,
+ 128: &#39;Dickie Wells&#39;,
+ 129: &#39;Dickie Wells&#39;,
+ 130: &#39;Dickie Wells&#39;,
+ 131: &#39;Dickie Wells&#39;,
+ 132: &#39;Dickie Wells&#39;,
+ 133: &#39;Dizzy Gillespie&#39;,
+ 134: &#39;Dizzy Gillespie&#39;,
+ 135: &#39;Dizzy Gillespie&#39;,
+ 136: &#39;Dizzy Gillespie&#39;,
+ 137: &#39;Dizzy Gillespie&#39;,
+ 138: &#39;Dizzy Gillespie&#39;,
+ 139: &#39;Don Byas&#39;,
+ 140: &#39;Don Byas&#39;,
+ 141: &#39;Don Byas&#39;,
+ 142: &#39;Don Byas&#39;,
+ 143: &#39;Don Byas&#39;,
+ 144: &#39;Don Byas&#39;,
+ 145: &#39;Don Byas&#39;,
+ 146: &#39;Don Byas&#39;,
+ 147: &#39;Don Ellis&#39;,
+ 148: &#39;Don Ellis&#39;,
+ 149: &#39;Don Ellis&#39;,
+ 150: &#39;Don Ellis&#39;,
+ 151: &#39;Don Ellis&#39;,
+ 152: &#39;Don Ellis&#39;,
+ 153: &#39;Eric Dolphy&#39;,
+ 154: &#39;Eric Dolphy&#39;,
+ 155: &#39;Eric Dolphy&#39;,
+ 156: &#39;Eric Dolphy&#39;,
+ 157: &#39;Eric Dolphy&#39;,
+ 158: &#39;Eric Dolphy&#39;,
+ 159: &#39;Fats Navarro&#39;,
+ 160: &#39;Fats Navarro&#39;,
+ 161: &#39;Fats Navarro&#39;,
+ 162: &#39;Fats Navarro&#39;,
+ 163: &#39;Fats Navarro&#39;,
+ 164: &#39;Fats Navarro&#39;,
+ 165: &#39;Freddie Hubbard&#39;,
+ 166: &#39;Freddie Hubbard&#39;,
+ 167: &#39;Freddie Hubbard&#39;,
+ 168: &#39;Freddie Hubbard&#39;,
+ 169: &#39;Freddie Hubbard&#39;,
+ 170: &#39;Freddie Hubbard&#39;,
+ 171: &#39;George Coleman&#39;,
+ 172: &#39;Gerry Mulligan&#39;,
+ 173: &#39;Gerry Mulligan&#39;,
+ 174: &#39;Gerry Mulligan&#39;,
+ 175: &#39;Gerry Mulligan&#39;,
+ 176: &#39;Gerry Mulligan&#39;,
+ 177: &#39;Gerry Mulligan&#39;,
+ 178: &#39;Hank Mobley&#39;,
+ 179: &#39;Hank Mobley&#39;,
+ 180: &#39;Hank Mobley&#39;,
+ 181: &#39;Hank Mobley&#39;,
+ 182: &#39;Harry Edison&#39;,
+ 183: &#39;Henry Allen&#39;,
+ 184: &#39;Herbie Hancock&#39;,
+ 185: &#39;Herbie Hancock&#39;,
+ 186: &#39;Herbie Hancock&#39;,
+ 187: &#39;Herbie Hancock&#39;,
+ 188: &#39;Herbie Hancock&#39;,
+ 189: &#39;J.C. Higginbotham&#39;,
+ 190: &#39;J.J. Johnson&#39;,
+ 191: &#39;J.J. Johnson&#39;,
+ 192: &#39;J.J. Johnson&#39;,
+ 193: &#39;J.J. Johnson&#39;,
+ 194: &#39;J.J. Johnson&#39;,
+ 195: &#39;J.J. Johnson&#39;,
+ 196: &#39;J.J. Johnson&#39;,
+ 197: &#39;J.J. Johnson&#39;,
+ 198: &#39;Joe Henderson&#39;,
+ 199: &#39;Joe Henderson&#39;,
+ 200: &#39;Joe Henderson&#39;,
+ 201: &#39;Joe Henderson&#39;,
+ 202: &#39;Joe Henderson&#39;,
+ 203: &#39;Joe Henderson&#39;,
+ 204: &#39;Joe Henderson&#39;,
+ 205: &#39;Joe Henderson&#39;,
+ 206: &#39;Joe Lovano&#39;,
+ 207: &#39;Joe Lovano&#39;,
+ 208: &#39;Joe Lovano&#39;,
+ 209: &#39;Joe Lovano&#39;,
+ 210: &#39;Joe Lovano&#39;,
+ 211: &#39;Joe Lovano&#39;,
+ 212: &#39;Joe Lovano&#39;,
+ 213: &#39;Joe Lovano&#39;,
+ 214: &#39;John Abercrombie&#39;,
+ 215: &#39;John Coltrane&#39;,
+ 216: &#39;John Coltrane&#39;,
+ 217: &#39;John Coltrane&#39;,
+ 218: &#39;John Coltrane&#39;,
+ 219: &#39;John Coltrane&#39;,
+ 220: &#39;John Coltrane&#39;,
+ 221: &#39;John Coltrane&#39;,
+ 222: &#39;John Coltrane&#39;,
+ 223: &#39;John Coltrane&#39;,
+ 224: &#39;John Coltrane&#39;,
+ 225: &#39;John Coltrane&#39;,
+ 226: &#39;John Coltrane&#39;,
+ 227: &#39;John Coltrane&#39;,
+ 228: &#39;John Coltrane&#39;,
+ 229: &#39;John Coltrane&#39;,
+ 230: &#39;John Coltrane&#39;,
+ 231: &#39;John Coltrane&#39;,
+ 232: &#39;John Coltrane&#39;,
+ 233: &#39;John Coltrane&#39;,
+ 234: &#39;John Coltrane&#39;,
+ 235: &#39;Johnny Dodds&#39;,
+ 236: &#39;Johnny Dodds&#39;,
+ 237: &#39;Johnny Dodds&#39;,
+ 238: &#39;Johnny Dodds&#39;,
+ 239: &#39;Johnny Dodds&#39;,
+ 240: &#39;Johnny Dodds&#39;,
+ 241: &#39;Johnny Hodges&#39;,
+ 242: &#39;Johnny Hodges&#39;,
+ 243: &#39;Joshua Redman&#39;,
+ 244: &#39;Joshua Redman&#39;,
+ 245: &#39;Joshua Redman&#39;,
+ 246: &#39;Joshua Redman&#39;,
+ 247: &#39;Joshua Redman&#39;,
+ 248: &#39;Kai Winding&#39;,
+ 249: &#39;Kenny Dorham&#39;,
+ 250: &#39;Kenny Dorham&#39;,
+ 251: &#39;Kenny Dorham&#39;,
+ 252: &#39;Kenny Dorham&#39;,
+ 253: &#39;Kenny Dorham&#39;,
+ 254: &#39;Kenny Dorham&#39;,
+ 255: &#39;Kenny Dorham&#39;,
+ 256: &#39;Kenny Garrett&#39;,
+ 257: &#39;Kenny Garrett&#39;,
+ 258: &#39;Kenny Wheeler&#39;,
+ 259: &#39;Kenny Wheeler&#39;,
+ 260: &#39;Kenny Wheeler&#39;,
+ 261: &#39;Kid Ory&#39;,
+ 262: &#39;Kid Ory&#39;,
+ 263: &#39;Kid Ory&#39;,
+ 264: &#39;Kid Ory&#39;,
+ 265: &#39;Kid Ory&#39;,
+ 266: &#39;Lee Konitz&#39;,
+ 267: &#39;Lee Konitz&#39;,
+ 268: &#39;Lee Konitz&#39;,
+ 269: &#39;Lee Konitz&#39;,
+ 270: &#39;Lee Konitz&#39;,
+ 271: &#39;Lee Konitz&#39;,
+ 272: &#39;Lee Konitz&#39;,
+ 273: &#39;Lee Konitz&#39;,
+ 274: &#39;Lee Morgan&#39;,
+ 275: &#39;Lee Morgan&#39;,
+ 276: &#39;Lee Morgan&#39;,
+ 277: &#39;Lee Morgan&#39;,
+ 278: &#39;Lester Young&#39;,
+ 279: &#39;Lester Young&#39;,
+ 280: &#39;Lester Young&#39;,
+ 281: &#39;Lester Young&#39;,
+ 282: &#39;Lester Young&#39;,
+ 283: &#39;Lester Young&#39;,
+ 284: &#39;Lester Young&#39;,
+ 285: &#39;Lionel Hampton&#39;,
+ 286: &#39;Lionel Hampton&#39;,
+ 287: &#39;Lionel Hampton&#39;,
+ 288: &#39;Lionel Hampton&#39;,
+ 289: &#39;Lionel Hampton&#39;,
+ 290: &#39;Lionel Hampton&#39;,
+ 291: &#39;Louis Armstrong&#39;,
+ 292: &#39;Louis Armstrong&#39;,
+ 293: &#39;Louis Armstrong&#39;,
+ 294: &#39;Louis Armstrong&#39;,
+ 295: &#39;Louis Armstrong&#39;,
+ 296: &#39;Louis Armstrong&#39;,
+ 297: &#39;Louis Armstrong&#39;,
+ 298: &#39;Louis Armstrong&#39;,
+ 299: &#39;Michael Brecker&#39;,
+ 300: &#39;Michael Brecker&#39;,
+ 301: &#39;Michael Brecker&#39;,
+ 302: &#39;Michael Brecker&#39;,
+ 303: &#39;Michael Brecker&#39;,
+ 304: &#39;Michael Brecker&#39;,
+ 305: &#39;Michael Brecker&#39;,
+ 306: &#39;Michael Brecker&#39;,
+ 307: &#39;Michael Brecker&#39;,
+ 308: &#39;Michael Brecker&#39;,
+ 309: &#39;Miles Davis&#39;,
+ 310: &#39;Miles Davis&#39;,
+ 311: &#39;Miles Davis&#39;,
+ 312: &#39;Miles Davis&#39;,
+ 313: &#39;Miles Davis&#39;,
+ 314: &#39;Miles Davis&#39;,
+ 315: &#39;Miles Davis&#39;,
+ 316: &#39;Miles Davis&#39;,
+ 317: &#39;Miles Davis&#39;,
+ 318: &#39;Miles Davis&#39;,
+ 319: &#39;Miles Davis&#39;,
+ 320: &#39;Miles Davis&#39;,
+ 321: &#39;Miles Davis&#39;,
+ 322: &#39;Miles Davis&#39;,
+ 323: &#39;Miles Davis&#39;,
+ 324: &#39;Miles Davis&#39;,
+ 325: &#39;Miles Davis&#39;,
+ 326: &#39;Miles Davis&#39;,
+ 327: &#39;Miles Davis&#39;,
+ 328: &#39;Milt Jackson&#39;,
+ 329: &#39;Milt Jackson&#39;,
+ 330: &#39;Milt Jackson&#39;,
+ 331: &#39;Milt Jackson&#39;,
+ 332: &#39;Milt Jackson&#39;,
+ 333: &#39;Milt Jackson&#39;,
+ 334: &#39;Nat Adderley&#39;,
+ 335: &#39;Nat Adderley&#39;,
+ 336: &#39;Ornette Coleman&#39;,
+ 337: &#39;Ornette Coleman&#39;,
+ 338: &#39;Ornette Coleman&#39;,
+ 339: &#39;Ornette Coleman&#39;,
+ 340: &#39;Ornette Coleman&#39;,
+ 341: &#39;Pat Martino&#39;,
+ 342: &#39;Pat Metheny&#39;,
+ 343: &#39;Pat Metheny&#39;,
+ 344: &#39;Pat Metheny&#39;,
+ 345: &#39;Pat Metheny&#39;,
+ 346: &#39;Paul Desmond&#39;,
+ 347: &#39;Paul Desmond&#39;,
+ 348: &#39;Paul Desmond&#39;,
+ 349: &#39;Paul Desmond&#39;,
+ 350: &#39;Paul Desmond&#39;,
+ 351: &#39;Paul Desmond&#39;,
+ 352: &#39;Paul Desmond&#39;,
+ 353: &#39;Paul Desmond&#39;,
+ 354: &#39;Pepper Adams&#39;,
+ 355: &#39;Pepper Adams&#39;,
+ 356: &#39;Pepper Adams&#39;,
+ 357: &#39;Pepper Adams&#39;,
+ 358: &#39;Pepper Adams&#39;,
+ 359: &#39;Phil Woods&#39;,
+ 360: &#39;Phil Woods&#39;,
+ 361: &#39;Phil Woods&#39;,
+ 362: &#39;Phil Woods&#39;,
+ 363: &#39;Phil Woods&#39;,
+ 364: &#39;Phil Woods&#39;,
+ 365: &#39;Red Garland&#39;,
+ 366: &#39;Rex Stewart&#39;,
+ 367: &#39;Roy Eldridge&#39;,
+ 368: &#39;Roy Eldridge&#39;,
+ 369: &#39;Roy Eldridge&#39;,
+ 370: &#39;Roy Eldridge&#39;,
+ 371: &#39;Roy Eldridge&#39;,
+ 372: &#39;Roy Eldridge&#39;,
+ 373: &#39;Sidney Bechet&#39;,
+ 374: &#39;Sidney Bechet&#39;,
+ 375: &#39;Sidney Bechet&#39;,
+ 376: &#39;Sidney Bechet&#39;,
+ 377: &#39;Sidney Bechet&#39;,
+ 378: &#39;Sonny Rollins&#39;,
+ 379: &#39;Sonny Rollins&#39;,
+ 380: &#39;Sonny Rollins&#39;,
+ 381: &#39;Sonny Rollins&#39;,
+ 382: &#39;Sonny Rollins&#39;,
+ 383: &#39;Sonny Rollins&#39;,
+ 384: &#39;Sonny Rollins&#39;,
+ 385: &#39;Sonny Rollins&#39;,
+ 386: &#39;Sonny Rollins&#39;,
+ 387: &#39;Sonny Rollins&#39;,
+ 388: &#39;Sonny Rollins&#39;,
+ 389: &#39;Sonny Rollins&#39;,
+ 390: &#39;Sonny Rollins&#39;,
+ 391: &#39;Sonny Stitt&#39;,
+ 392: &#39;Sonny Stitt&#39;,
+ 393: &#39;Sonny Stitt&#39;,
+ 394: &#39;Sonny Stitt&#39;,
+ 395: &#39;Sonny Stitt&#39;,
+ 396: &#39;Sonny Stitt&#39;,
+ 397: &#39;Stan Getz&#39;,
+ 398: &#39;Stan Getz&#39;,
+ 399: &#39;Stan Getz&#39;,
+ 400: &#39;Stan Getz&#39;,
+ 401: &#39;Stan Getz&#39;,
+ 402: &#39;Stan Getz&#39;,
+ 403: &#39;Steve Coleman&#39;,
+ 404: &#39;Steve Coleman&#39;,
+ 405: &#39;Steve Coleman&#39;,
+ 406: &#39;Steve Coleman&#39;,
+ 407: &#39;Steve Coleman&#39;,
+ 408: &#39;Steve Coleman&#39;,
+ 409: &#39;Steve Coleman&#39;,
+ 410: &#39;Steve Coleman&#39;,
+ 411: &#39;Steve Coleman&#39;,
+ 412: &#39;Steve Coleman&#39;,
+ 413: &#39;Steve Lacy&#39;,
+ 414: &#39;Steve Lacy&#39;,
+ 415: &#39;Steve Lacy&#39;,
+ 416: &#39;Steve Lacy&#39;,
+ 417: &#39;Steve Lacy&#39;,
+ 418: &#39;Steve Lacy&#39;,
+ 419: &#39;Steve Turre&#39;,
+ 420: &#39;Steve Turre&#39;,
+ 421: &#39;Steve Turre&#39;,
+ 422: &#39;Von Freeman&#39;,
+ 423: &#39;Warne Marsh&#39;,
+ 424: &#39;Warne Marsh&#39;,
+ 425: &#39;Warne Marsh&#39;,
+ 426: &#39;Wayne Shorter&#39;,
+ 427: &#39;Wayne Shorter&#39;,
+ 428: &#39;Wayne Shorter&#39;,
+ 429: &#39;Wayne Shorter&#39;,
+ 430: &#39;Wayne Shorter&#39;,
+ 431: &#39;Wayne Shorter&#39;,
+ 432: &#39;Wayne Shorter&#39;,
+ 433: &#39;Wayne Shorter&#39;,
+ 434: &#39;Wayne Shorter&#39;,
+ 435: &#39;Wayne Shorter&#39;,
+ 436: &#39;Woody Shaw&#39;,
+ 437: &#39;Woody Shaw&#39;,
+ 438: &#39;Woody Shaw&#39;,
+ 439: &#39;Woody Shaw&#39;,
+ 440: &#39;Woody Shaw&#39;,
+ 441: &#39;Woody Shaw&#39;,
+ 442: &#39;Woody Shaw&#39;,
+ 443: &#39;Woody Shaw&#39;,
+ 444: &#39;Wynton Marsalis&#39;,
+ 445: &#39;Wynton Marsalis&#39;,
+ 446: &#39;Wynton Marsalis&#39;,
+ 447: &#39;Wynton Marsalis&#39;,
+ 448: &#39;Wynton Marsalis&#39;,
+ 449: &#39;Wynton Marsalis&#39;,
+ 450: &#39;Wynton Marsalis&#39;,
+ 451: &#39;Zoot Sims&#39;,
+ 452: &#39;Zoot Sims&#39;,
+ 453: &#39;Zoot Sims&#39;,
+ 454: &#39;Zoot Sims&#39;,
+ 455: &#39;Zoot Sims&#39;,
+ 456: &#39;Zoot Sims&#39;}
+</pre></div></div>
+</div>
+<div class="nbinput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[12]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="n">solos</span><span class="p">[</span><span class="s2">&quot;performer&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">solos</span><span class="p">[</span><span class="s2">&quot;melid&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">map</span><span class="p">(</span><span class="n">mapper</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[13]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="n">solos</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[13]:
+</pre></div>
+</div>
+<div class="output_area rendered_html docutils container">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>eventid</th>
+      <th>melid</th>
+      <th>onset</th>
+      <th>pitch</th>
+      <th>duration</th>
+      <th>period</th>
+      <th>division</th>
+      <th>bar</th>
+      <th>beat</th>
+      <th>tatum</th>
+      <th>...</th>
+      <th>loud_max</th>
+      <th>loud_med</th>
+      <th>loud_sd</th>
+      <th>loud_relpos</th>
+      <th>loud_cent</th>
+      <th>loud_s2b</th>
+      <th>f0_range</th>
+      <th>f0_freq_hz</th>
+      <th>f0_med_dev</th>
+      <th>performer</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>1</td>
+      <td>1</td>
+      <td>10.343492</td>
+      <td>65.0</td>
+      <td>0.138776</td>
+      <td>4</td>
+      <td>1</td>
+      <td>0</td>
+      <td>1</td>
+      <td>1</td>
+      <td>...</td>
+      <td>0.126209</td>
+      <td>66.526087</td>
+      <td>5.541147</td>
+      <td>0.307692</td>
+      <td>0.389466</td>
+      <td>1.056169</td>
+      <td>37.794261</td>
+      <td>12.932532</td>
+      <td>-0.328442</td>
+      <td>Art Pepper</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>2</td>
+      <td>1</td>
+      <td>10.637642</td>
+      <td>63.0</td>
+      <td>0.171247</td>
+      <td>4</td>
+      <td>4</td>
+      <td>0</td>
+      <td>2</td>
+      <td>1</td>
+      <td>...</td>
+      <td>0.349751</td>
+      <td>69.133321</td>
+      <td>2.912412</td>
+      <td>0.250000</td>
+      <td>0.468687</td>
+      <td>1.120317</td>
+      <td>6.365930</td>
+      <td>6.956935</td>
+      <td>11.135423</td>
+      <td>Art Pepper</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>3</td>
+      <td>1</td>
+      <td>10.843719</td>
+      <td>58.0</td>
+      <td>0.081270</td>
+      <td>4</td>
+      <td>4</td>
+      <td>0</td>
+      <td>2</td>
+      <td>4</td>
+      <td>...</td>
+      <td>0.094051</td>
+      <td>66.352130</td>
+      <td>3.564563</td>
+      <td>0.428571</td>
+      <td>0.531354</td>
+      <td>1.310389</td>
+      <td>68.010392</td>
+      <td>NaN</td>
+      <td>32.366787</td>
+      <td>Art Pepper</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>4</td>
+      <td>1</td>
+      <td>10.948209</td>
+      <td>61.0</td>
+      <td>0.235102</td>
+      <td>4</td>
+      <td>1</td>
+      <td>0</td>
+      <td>3</td>
+      <td>1</td>
+      <td>...</td>
+      <td>0.521187</td>
+      <td>66.484173</td>
+      <td>2.414298</td>
+      <td>0.818182</td>
+      <td>0.559333</td>
+      <td>0.984047</td>
+      <td>15.443906</td>
+      <td>5.867151</td>
+      <td>-3.374696</td>
+      <td>Art Pepper</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>5</td>
+      <td>1</td>
+      <td>11.232653</td>
+      <td>63.0</td>
+      <td>0.130612</td>
+      <td>4</td>
+      <td>1</td>
+      <td>0</td>
+      <td>4</td>
+      <td>1</td>
+      <td>...</td>
+      <td>0.560737</td>
+      <td>71.699054</td>
+      <td>2.185794</td>
+      <td>0.166667</td>
+      <td>0.438973</td>
+      <td>1.061262</td>
+      <td>11.444363</td>
+      <td>8.329975</td>
+      <td>6.377737</td>
+      <td>Art Pepper</td>
+    </tr>
+  </tbody>
+</table>
+<p>5 rows × 27 columns</p>
+</div></div>
+</div>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[14]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="n">solos</span><span class="o">.</span><span class="n">tail</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[14]:
+</pre></div>
+</div>
+<div class="output_area rendered_html docutils container">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>eventid</th>
+      <th>melid</th>
+      <th>onset</th>
+      <th>pitch</th>
+      <th>duration</th>
+      <th>period</th>
+      <th>division</th>
+      <th>bar</th>
+      <th>beat</th>
+      <th>tatum</th>
+      <th>...</th>
+      <th>loud_max</th>
+      <th>loud_med</th>
+      <th>loud_sd</th>
+      <th>loud_relpos</th>
+      <th>loud_cent</th>
+      <th>loud_s2b</th>
+      <th>f0_range</th>
+      <th>f0_freq_hz</th>
+      <th>f0_med_dev</th>
+      <th>performer</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>200804</th>
+      <td>200805</td>
+      <td>456</td>
+      <td>63.135057</td>
+      <td>57.0</td>
+      <td>0.168345</td>
+      <td>4</td>
+      <td>2</td>
+      <td>53</td>
+      <td>4</td>
+      <td>2</td>
+      <td>...</td>
+      <td>1.113380</td>
+      <td>72.169552</td>
+      <td>6.896394</td>
+      <td>0.687500</td>
+      <td>0.581956</td>
+      <td>1.271747</td>
+      <td>191.074095</td>
+      <td>10.966972</td>
+      <td>-11.891698</td>
+      <td>Zoot Sims</td>
+    </tr>
+    <tr>
+      <th>200805</th>
+      <td>200806</td>
+      <td>456</td>
+      <td>63.303401</td>
+      <td>55.0</td>
+      <td>0.087075</td>
+      <td>4</td>
+      <td>3</td>
+      <td>54</td>
+      <td>1</td>
+      <td>1</td>
+      <td>...</td>
+      <td>0.491496</td>
+      <td>69.732265</td>
+      <td>1.814723</td>
+      <td>0.500000</td>
+      <td>0.595212</td>
+      <td>1.339060</td>
+      <td>40.375449</td>
+      <td>NaN</td>
+      <td>-99.173779</td>
+      <td>Zoot Sims</td>
+    </tr>
+    <tr>
+      <th>200806</th>
+      <td>200807</td>
+      <td>456</td>
+      <td>63.390476</td>
+      <td>57.0</td>
+      <td>0.191565</td>
+      <td>4</td>
+      <td>3</td>
+      <td>54</td>
+      <td>1</td>
+      <td>2</td>
+      <td>...</td>
+      <td>1.187058</td>
+      <td>76.628621</td>
+      <td>2.628726</td>
+      <td>0.411765</td>
+      <td>0.590950</td>
+      <td>1.432802</td>
+      <td>104.823845</td>
+      <td>11.148561</td>
+      <td>-2.911604</td>
+      <td>Zoot Sims</td>
+    </tr>
+    <tr>
+      <th>200807</th>
+      <td>200808</td>
+      <td>456</td>
+      <td>63.640091</td>
+      <td>59.0</td>
+      <td>0.406349</td>
+      <td>4</td>
+      <td>1</td>
+      <td>54</td>
+      <td>2</td>
+      <td>1</td>
+      <td>...</td>
+      <td>0.972676</td>
+      <td>66.042058</td>
+      <td>3.690577</td>
+      <td>0.000000</td>
+      <td>0.334937</td>
+      <td>1.082549</td>
+      <td>165.810976</td>
+      <td>2.659723</td>
+      <td>14.311001</td>
+      <td>Zoot Sims</td>
+    </tr>
+    <tr>
+      <th>200808</th>
+      <td>200809</td>
+      <td>456</td>
+      <td>64.058050</td>
+      <td>52.0</td>
+      <td>1.433832</td>
+      <td>4</td>
+      <td>2</td>
+      <td>54</td>
+      <td>3</td>
+      <td>2</td>
+      <td>...</td>
+      <td>0.368321</td>
+      <td>58.174931</td>
+      <td>9.418678</td>
+      <td>0.053030</td>
+      <td>0.400571</td>
+      <td>1.278890</td>
+      <td>66.932198</td>
+      <td>2.153916</td>
+      <td>-9.381310</td>
+      <td>Zoot Sims</td>
+    </tr>
+  </tbody>
+</table>
+<p>5 rows × 27 columns</p>
+</div></div>
+</div>
+<div class="nbinput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[15]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="n">data</span> <span class="o">=</span> <span class="n">solos</span><span class="p">[</span><span class="n">solos</span><span class="o">.</span><span class="n">pitch</span><span class="o">.</span><span class="n">notnull</span><span class="p">()</span> <span class="o">&amp;</span> <span class="n">solos</span><span class="o">.</span><span class="n">loud_med</span><span class="o">.</span><span class="n">notnull</span><span class="p">()]</span>
+</pre></div>
+</div>
+</div>
+<p>A description of what these columns contain is stated on the website: <a class="reference external" href="https://jazzomat.hfm-weimar.de/dbformat/dbformat.html">https://jazzomat.hfm-weimar.de/dbformat/dbformat.html</a></p>
+<p>We can now check how many solos the database contains.</p>
+<div class="nbinput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[16]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="n">grouped_df</span> <span class="o">=</span> <span class="n">solos</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s2">&quot;performer&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[41]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="n">selected</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;Charlie Parker&quot;</span><span class="p">,</span> <span class="s2">&quot;Miles Davis&quot;</span><span class="p">,</span> <span class="s2">&quot;Louis Armstrong&quot;</span><span class="p">,</span> <span class="s2">&quot;Herbie Hancock&quot;</span><span class="p">,</span> <span class="s2">&quot;Von Freeman&quot;</span><span class="p">,</span> <span class="s2">&quot;Red Garland&quot;</span><span class="p">]</span>
+
+<span class="n">fig</span><span class="p">,</span> <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span><span class="mi">10</span><span class="p">))</span>
+
+<span class="k">for</span> <span class="n">performer</span><span class="p">,</span> <span class="n">df</span> <span class="ow">in</span> <span class="n">grouped_df</span><span class="p">:</span>
+    <span class="k">if</span> <span class="n">performer</span> <span class="ow">in</span> <span class="n">selected</span><span class="p">:</span>
+        <span class="n">sns</span><span class="o">.</span><span class="n">regplot</span><span class="p">(</span>
+            <span class="n">data</span><span class="o">=</span><span class="n">df</span><span class="p">,</span>
+            <span class="n">x</span><span class="o">=</span><span class="s2">&quot;pitch&quot;</span><span class="p">,</span>
+            <span class="n">y</span><span class="o">=</span><span class="s2">&quot;loud_med&quot;</span><span class="p">,</span>
+            <span class="n">x_jitter</span><span class="o">=.</span><span class="mi">1</span><span class="p">,</span>
+            <span class="n">y_jitter</span><span class="o">=.</span><span class="mi">1</span><span class="p">,</span>
+            <span class="n">scatter_kws</span><span class="o">=</span><span class="p">{</span><span class="s2">&quot;alpha&quot;</span><span class="p">:</span><span class="o">.</span><span class="mi">01</span><span class="p">,</span> <span class="s2">&quot;color&quot;</span><span class="p">:</span><span class="s2">&quot;grey&quot;</span><span class="p">},</span>
+            <span class="n">line_kws</span><span class="o">=</span><span class="p">{</span><span class="s2">&quot;lw&quot;</span><span class="p">:</span><span class="mi">2</span><span class="p">},</span>
+            <span class="n">label</span><span class="o">=</span><span class="n">performer</span><span class="p">,</span>
+            <span class="n">scatter</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span>
+            <span class="n">ax</span><span class="o">=</span><span class="n">ax</span>
+        <span class="p">)</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s2">&quot;MIDI Pitch&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s2">&quot;Median loudness [dB]&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">legend</span><span class="p">()</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<img alt="_images/04_jazz_solos_25_0.png" src="_images/04_jazz_solos_25_0.png" />
+</div>
+</div>
+<p><strong>Observations:</strong></p>
+<ol class="arabic simple">
+<li><p>Most performers increase loudness with increasing pitch.</p></li>
+<li><p>Charlie Parker (sax) and Louis Armstrong (t) show very similar patterns but Armstrong is generally higher.</p></li>
+<li><p>Miles Davis (t) is similar to the two but plays generally softer than both.</p></li>
+<li><p>Von Freeman (sax) strongly and Herbie Hancock (p) weakly decrease loudness with increasing pitch (almost all other performers show positive correlations).</p></li>
+<li><p>Red Garland (p) plays generally lower than Herbie Hancock (p) but does show a positive correlation between pitch and loudness (NB: there is only one solo in the database).</p></li>
+</ol>
+<p>Does this tell us something about performer styles or about instruments?</p>
+<div class="section" id="The-“rain-cloud”-of-Jazz-solos">
+<h2><span class="section-number">4.1. </span>The “rain cloud” of Jazz solos<a class="headerlink" href="#The-“rain-cloud”-of-Jazz-solos" title="Permalink to this headline">¶</a></h2>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[34]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="n">X</span> <span class="o">=</span> <span class="n">data</span><span class="p">[[</span><span class="s2">&quot;pitch&quot;</span><span class="p">,</span> <span class="s2">&quot;loud_med&quot;</span><span class="p">]]</span><span class="o">.</span><span class="n">values</span>
+<span class="n">x</span> <span class="o">=</span> <span class="n">X</span><span class="p">[:,</span><span class="mi">0</span><span class="p">]</span>
+<span class="n">y</span> <span class="o">=</span> <span class="n">X</span><span class="p">[:,</span><span class="mi">1</span><span class="p">]</span>
+
+<span class="n">fig</span><span class="p">,</span> <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">6</span><span class="p">,</span><span class="mi">4</span><span class="p">))</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="n">y</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">0.01</span><span class="p">)</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s2">&quot;Pitch&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s2">&quot;Median loudness [dB]&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<img alt="_images/04_jazz_solos_28_0.png" src="_images/04_jazz_solos_28_0.png" />
+</div>
+</div>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[74]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="n">solos</span><span class="p">[</span><span class="s2">&quot;melid&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">max</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[74]:
+</pre></div>
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+456
+</pre></div></div>
+</div>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[75]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="n">solos</span><span class="p">[</span> <span class="n">solos</span><span class="p">[</span><span class="s2">&quot;melid&quot;</span><span class="p">]</span> <span class="o">==</span> <span class="mi">2</span> <span class="p">][</span><span class="s2">&quot;loud_med&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">20</span><span class="p">,</span><span class="mi">3</span><span class="p">));</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<img alt="_images/04_jazz_solos_30_0.png" src="_images/04_jazz_solos_30_0.png" />
+</div>
+</div>
+<div class="nbinput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[114]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="kn">import</span> <span class="nn">seaborn</span> <span class="k">as</span> <span class="nn">sns</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+</pre></div>
+</div>
+</div>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[135]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="c1"># fig, axes = plt.subplots(5,1, figsize=(15,20))</span>
+
+<span class="c1"># for idx, rand in enumerate(np.random.randint(1,solos[&quot;melid&quot;].unique().max(), 5)):</span>
+<span class="n">sns</span><span class="o">.</span><span class="n">lmplot</span><span class="p">(</span><span class="n">data</span><span class="o">=</span><span class="n">solos</span><span class="p">[</span> <span class="n">solos</span><span class="p">[</span><span class="s2">&quot;melid&quot;</span><span class="p">]</span> <span class="o">==</span> <span class="mi">130</span> <span class="p">],</span> <span class="n">x</span><span class="o">=</span><span class="s2">&quot;pitch&quot;</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="s2">&quot;loud_med&quot;</span><span class="p">);</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<img alt="_images/04_jazz_solos_32_0.png" src="_images/04_jazz_solos_32_0.png" />
+</div>
+</div>
+</div>
+</div>
+
+
+          </div>
+          <div class="page-nav">
+            <div class="inner"><ul class="page-nav">
+  <li class="prev">
+    <a href="03_melody_I.html"
+       title="previous chapter">← <span class="section-number">3. </span>Melodies in Folk Songs</a>
+  </li>
+</ul><div class="footer" role="contentinfo">
+      &#169; Copyright 2020, Fabian C. Moss.
+    <br>
+    Created using <a href="http://sphinx-doc.org/">Sphinx</a> 3.1.2 with <a href="https://github.com/schettino72/sphinx_press_theme">Press Theme</a>.
+</div>
+            </div>
+          </div>
+      </page>
+    </div>
+    
+    
+  </body>
+</html>

@@ -215,7 +215,7 @@
 
 
 \title{Introduction to Musical Corpus Studies}
-\date{Nov 13, 2020}
+\date{Nov 14, 2020}
 \release{0.0.1}
 \author{Fabian C.\@{} Moss}
 \newcommand{\sphinxlogo}{\vbox{}}
@@ -328,7 +328,7 @@ Introduction / Background
 &&
 17:40\sphinxhyphen{}19:00 Uhr
 &
-Melody I: Pitches, intervals, folk song melodies
+Melody I: Folk song melodies, notes, form
 \\
 \hline
 3
@@ -337,14 +337,14 @@ Sa., 14.11.2020
 &
 09:00\sphinxhyphen{}10:20 Uhr
 &
-Melody II: Jazz solos
+Melody II: The melodic arc, intervals
 \\
 \hline
 4
 &&
 10:40\sphinxhyphen{}12:00 Uhr
 &
-Harmony I: Beethoven’s string quartets
+Melody III: Jazz solos
 \\
 \hline&&
 12:00\sphinxhyphen{}13:00 Uhr
@@ -363,7 +363,7 @@ Group work
 &&
 14:40\sphinxhyphen{}16:00 Uhr
 &
-Harmony II: Pop charts (Billboard 100)
+Harmony I: Beethoven’s string quartets
 \\
 \hline
 7
@@ -372,14 +372,14 @@ Fr., 11.12.2020
 &
 10:00\sphinxhyphen{}11:20 Uhr
 &
-Harmony III: Cadences in Renaissance polyphony (guest: \sphinxhref{https://www.haverford.edu/users/rfreedma}{Richard Freedman})
+Harmony II: Cadences in Renaissance polyphony (guest: \sphinxhref{https://www.haverford.edu/users/rfreedma}{Richard Freedman})
 \\
 \hline
 8
 &&
 11:40\sphinxhyphen{}13:00 Uhr
 &
-Harmony IV \& Form: Brazilian Choro
+Harmony III \& Form: Brazilian Choro / Pop charts (Billboard 100)
 \\
 \hline
 9
@@ -1501,6 +1501,1033 @@ To which melodic fragments do these correspond?
 \llap{\color{nbsphinxin}[ ]:\,\hspace{\fboxrule}\hspace{\fboxsep}}
 \end{sphinxVerbatim}
 }
+
+
+\chapter{Solos in the \sphinxstyleemphasis{Weimar Jazz Database}}
+\label{\detokenize{04_jazz_solos:Solos-in-the-Weimar-Jazz-Database}}\label{\detokenize{04_jazz_solos::doc}}
+\sphinxstylestrong{Disclaimer: I am not the expert here!}
+
+The first project we will have a look at is the \sphinxhref{https://jazzomat.hfm-weimar.de/}{Jazzomat Research Project} that contains the \sphinxstyleemphasis{Weimar Jazz Database} (WJazzD). Let us first browse the site.
+
+Transcriptions of Jazz solos :cite:\sphinxcode{\sphinxupquote{Pfleiderer2017}}. The \sphinxstyleemphasis{Weimar Jazz Database} (WJD) consists of 456 transcriptions of Jazz solos from diverse substyles. As all the corpora that we deal with here, it is freely available on the internet.
+
+{
+\sphinxsetup{VerbatimColor={named}{nbsphinx-code-bg}}
+\sphinxsetup{VerbatimBorderColor={named}{nbsphinx-code-border}}
+\begin{sphinxVerbatim}[commandchars=\\\{\}]
+\llap{\color{nbsphinxin}[22]:\,\hspace{\fboxrule}\hspace{\fboxsep}}\PYG{k+kn}{import} \PYG{n+nn}{pandas} \PYG{k}{as} \PYG{n+nn}{pd}
+\PYG{k+kn}{import} \PYG{n+nn}{sqlite3}
+
+\PYG{k+kn}{import} \PYG{n+nn}{matplotlib}\PYG{n+nn}{.}\PYG{n+nn}{pyplot} \PYG{k}{as} \PYG{n+nn}{plt}
+\PYG{k+kn}{import} \PYG{n+nn}{seaborn} \PYG{k}{as} \PYG{n+nn}{sns}
+\PYG{n}{sns}\PYG{o}{.}\PYG{n}{set\PYGZus{}style}\PYG{p}{(}\PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{white}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{)}
+\PYG{n}{sns}\PYG{o}{.}\PYG{n}{set\PYGZus{}context}\PYG{p}{(}\PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{talk}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{)}
+\end{sphinxVerbatim}
+}
+
+The WJazzD was already downloaded; we connect to the database with the help of \sphinxcode{\sphinxupquote{sqlite3}}.
+
+The database contains a number of tables:
+
+…
+
+{
+\sphinxsetup{VerbatimColor={named}{nbsphinx-code-bg}}
+\sphinxsetup{VerbatimBorderColor={named}{nbsphinx-code-border}}
+\begin{sphinxVerbatim}[commandchars=\\\{\}]
+\llap{\color{nbsphinxin}[2]:\,\hspace{\fboxrule}\hspace{\fboxsep}}\PYG{n}{conn} \PYG{o}{=} \PYG{n}{sqlite3}\PYG{o}{.}\PYG{n}{connect}\PYG{p}{(}\PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{data/wjazzd.db}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{)}
+\end{sphinxVerbatim}
+}
+
+{
+\sphinxsetup{VerbatimColor={named}{nbsphinx-code-bg}}
+\sphinxsetup{VerbatimBorderColor={named}{nbsphinx-code-border}}
+\begin{sphinxVerbatim}[commandchars=\\\{\}]
+\llap{\color{nbsphinxin}[3]:\,\hspace{\fboxrule}\hspace{\fboxsep}}\PYG{n}{conn}
+\end{sphinxVerbatim}
+}
+
+{
+
+\kern-\sphinxverbatimsmallskipamount\kern-\baselineskip
+\kern+\FrameHeightAdjust\kern-\fboxrule
+\vspace{\nbsphinxcodecellspacing}
+
+\sphinxsetup{VerbatimColor={named}{white}}
+\sphinxsetup{VerbatimBorderColor={named}{nbsphinx-code-border}}
+\begin{sphinxVerbatim}[commandchars=\\\{\}]
+\llap{\color{nbsphinxout}[3]:\,\hspace{\fboxrule}\hspace{\fboxsep}}<sqlite3.Connection at 0x171358b85d0>
+\end{sphinxVerbatim}
+}
+
+We can now use \sphinxcode{\sphinxupquote{pandas}} to read the data out of the database.
+
+{
+\sphinxsetup{VerbatimColor={named}{nbsphinx-code-bg}}
+\sphinxsetup{VerbatimBorderColor={named}{nbsphinx-code-border}}
+\begin{sphinxVerbatim}[commandchars=\\\{\}]
+\llap{\color{nbsphinxin}[4]:\,\hspace{\fboxrule}\hspace{\fboxsep}}\PYG{n}{solos} \PYG{o}{=} \PYG{n}{pd}\PYG{o}{.}\PYG{n}{read\PYGZus{}sql}\PYG{p}{(}\PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{SELECT * FROM melody}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{,} \PYG{n}{con}\PYG{o}{=}\PYG{n}{conn}\PYG{p}{)}
+\end{sphinxVerbatim}
+}
+
+The \sphinxcode{\sphinxupquote{"SELECT * FROM melody"}} means “Select everything from the table ‘melody’ in the database”. Let’s look at the first ten entries. Likewise, we can select the \sphinxcode{\sphinxupquote{composition\_info}} table:
+
+{
+\sphinxsetup{VerbatimColor={named}{nbsphinx-code-bg}}
+\sphinxsetup{VerbatimBorderColor={named}{nbsphinx-code-border}}
+\begin{sphinxVerbatim}[commandchars=\\\{\}]
+\llap{\color{nbsphinxin}[5]:\,\hspace{\fboxrule}\hspace{\fboxsep}}\PYG{n}{solos\PYGZus{}meta} \PYG{o}{=} \PYG{n}{pd}\PYG{o}{.}\PYG{n}{read\PYGZus{}sql}\PYG{p}{(}\PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{SELECT * from solo\PYGZus{}info}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{,} \PYG{n}{con}\PYG{o}{=}\PYG{n}{conn}\PYG{p}{)}
+\end{sphinxVerbatim}
+}
+
+{
+\sphinxsetup{VerbatimColor={named}{nbsphinx-code-bg}}
+\sphinxsetup{VerbatimBorderColor={named}{nbsphinx-code-border}}
+\begin{sphinxVerbatim}[commandchars=\\\{\}]
+\llap{\color{nbsphinxin}[6]:\,\hspace{\fboxrule}\hspace{\fboxsep}}\PYG{n}{solos\PYGZus{}meta}\PYG{o}{.}\PYG{n}{sample}\PYG{p}{(}\PYG{l+m+mi}{10}\PYG{p}{)}
+\end{sphinxVerbatim}
+}
+
+{
+
+\kern-\sphinxverbatimsmallskipamount\kern-\baselineskip
+\kern+\FrameHeightAdjust\kern-\fboxrule
+\vspace{\nbsphinxcodecellspacing}
+
+\sphinxsetup{VerbatimColor={named}{white}}
+\sphinxsetup{VerbatimBorderColor={named}{nbsphinx-code-border}}
+\begin{sphinxVerbatim}[commandchars=\\\{\}]
+\llap{\color{nbsphinxout}[6]:\,\hspace{\fboxrule}\hspace{\fboxsep}}     melid  trackid  compid  recordid          performer  \textbackslash{}
+405    406      224     202       116      Steve Coleman
+57      58       53      53        24     Charlie Parker
+430    431      329     289       177      Wayne Shorter
+269    270      233     210       119         Lee Konitz
+151    152      136     123        67          Don Ellis
+394    395      310     275        86        Sonny Stitt
+203    204      181     164        90      Joe Henderson
+300    301      249     225       130    Michael Brecker
+42      43       38      38        15  Branford Marsalis
+351    352      285     255       151       Paul Desmond
+
+                          title titleaddon  solopart instrument    style  \textbackslash{}
+405                  Pass It On                    1         as   FUSION
+57                   K.C. Blues                    1         as    BEBOP
+430                  Footprints                    1         ts  POSTBOP
+269                 Marshmallow                    1         as     COOL
+151  You Stepped Out of a Dream                    2         tp  POSTBOP
+394                   Good Kick                    1         as    BEBOP
+203                  Totem Pole                    1         ts  POSTBOP
+300            Delta City Blues                    1         ts  POSTBOP
+42                     U.M.M.G.                    1         ts  POSTBOP
+351               Samba Cantina                    2         as     COOL
+
+     avgtempo   tempoclass rhythmfeel     key signature  \textbackslash{}
+405     104.9  MEDIUM SLOW       FUNK               4/4
+57      118.3       MEDIUM      SWING   C-maj       4/4
+430     136.1       MEDIUM      SWING   C-min       6/4
+269     298.6           UP      SWING  Bb-maj       4/4
+151     168.9    MEDIUM UP      SWING   D-maj       4/4
+394     173.4    MEDIUM UP      SWING   F-maj       4/4
+203     137.6       MEDIUM      SWING  Eb-min       4/4
+300     281.7           UP      SWING  Bb-maj       4/4
+42      211.6           UP      SWING  Db-maj       4/4
+351     152.7    MEDIUM UP      LATIN   F-min       4/4
+
+                                         chord\_changes  chorus\_count
+405  A1: ||C-7   |Eb   |C-7   |Eb   ||\textbackslash{}nA2: ||C-7  {\ldots}             2
+57   A1: ||C7   |F7   |C7   |C7   |F7   |F7   |C7  {\ldots}             2
+430  A1: ||C-7     |C-7     |C-7     |C-7     |F-7 {\ldots}             4
+269  A1: ||Bbj7   |Bbj7   |F-7   |Bb7   |Ebj7   |Eb{\ldots}             1
+151  A1: ||Dj7   |Dj7   |Ebj7   |Ebj7   |F7   |F7  {\ldots}             1
+394  A1: ||F7   |F7   |F7 D-7 |G-7 C7 |F7   |F7   |{\ldots}             3
+203  A1: ||Eb-79   |Eb-79   |F7   |F7   |E7   |E7  {\ldots}             2
+300  A1: ||Bb7   |Bb7   |Bb7   |Bb7   |Bb7   |Bb7  {\ldots}             4
+42   A1: ||Fm7b5   |Bb79b   |Eb-7   |Ab7   |Dbo7 Db{\ldots}             6
+351  A1: ||Gm7b5   |C79b   |F-7   |F-7   |Bb-7   |E{\ldots}             1
+\end{sphinxVerbatim}
+}
+
+{
+\sphinxsetup{VerbatimColor={named}{nbsphinx-code-bg}}
+\sphinxsetup{VerbatimBorderColor={named}{nbsphinx-code-border}}
+\begin{sphinxVerbatim}[commandchars=\\\{\}]
+\llap{\color{nbsphinxin}[8]:\,\hspace{\fboxrule}\hspace{\fboxsep}}\PYG{n}{solos}\PYG{o}{.}\PYG{n}{head}\PYG{p}{(}\PYG{l+m+mi}{10}\PYG{p}{)}
+\end{sphinxVerbatim}
+}
+
+{
+
+\kern-\sphinxverbatimsmallskipamount\kern-\baselineskip
+\kern+\FrameHeightAdjust\kern-\fboxrule
+\vspace{\nbsphinxcodecellspacing}
+
+\sphinxsetup{VerbatimColor={named}{white}}
+\sphinxsetup{VerbatimBorderColor={named}{nbsphinx-code-border}}
+\begin{sphinxVerbatim}[commandchars=\\\{\}]
+\llap{\color{nbsphinxout}[8]:\,\hspace{\fboxrule}\hspace{\fboxsep}}   eventid  melid      onset  pitch  duration  period  division  bar  beat  \textbackslash{}
+0        1      1  10.343492   65.0  0.138776       4         1    0     1
+1        2      1  10.637642   63.0  0.171247       4         4    0     2
+2        3      1  10.843719   58.0  0.081270       4         4    0     2
+3        4      1  10.948209   61.0  0.235102       4         1    0     3
+4        5      1  11.232653   63.0  0.130612       4         1    0     4
+5        6      1  11.551927   58.0  0.188662       4         1    1     1
+6        7      1  11.859592   58.0  0.481814       4         1    1     2
+7        8      1  14.535692   50.0  0.159637       4         1    3     3
+8        9      1  14.799819   57.0  0.145125       4         2    3     4
+9       10      1  14.973968   60.0  0.110295       4         2    3     4
+
+   tatum  {\ldots}   f0\_mod  loud\_max   loud\_med   loud\_sd  loud\_relpos loud\_cent  \textbackslash{}
+0      1  {\ldots}           0.126209  66.526087  5.541147     0.307692  0.389466
+1      1  {\ldots}           0.349751  69.133321  2.912412     0.250000  0.468687
+2      4  {\ldots}           0.094051  66.352130  3.564563     0.428571  0.531354
+3      1  {\ldots}           0.521187  66.484173  2.414298     0.818182  0.559333
+4      1  {\ldots}           0.560737  71.699054  2.185794     0.166667  0.438973
+5      1  {\ldots}           0.534657  67.636708  7.635221     0.411765  0.359536
+6      1  {\ldots}  vibrato  0.584914  63.659343  5.518070     0.068182  0.403372
+7      1  {\ldots}          -0.129185  58.507975  5.020340     0.133333  0.368384
+8      1  {\ldots}           0.599931  71.173670  2.938194     0.285714  0.551884
+9      2  {\ldots}           0.484532  69.632891  2.325457     0.600000  0.508617
+
+   loud\_s2b    f0\_range  f0\_freq\_hz  f0\_med\_dev
+0  1.056169   37.794261   12.932532   -0.328442
+1  1.120317    6.365930    6.956935   11.135423
+2  1.310389   68.010392         NaN   32.366787
+3  0.984047   15.443906    5.867151   -3.374696
+4  1.061262   11.444363    8.329975    6.377737
+5  1.049956   39.368720    6.589582   16.146429
+6  0.983151   39.429103    5.406750   11.239471
+7  0.927912  174.398513         NaN   25.203232
+8  1.064195   27.066543    7.758283   25.736430
+9  1.038483   17.141304   11.184763   15.693739
+
+[10 rows x 26 columns]
+\end{sphinxVerbatim}
+}
+
+{
+\sphinxsetup{VerbatimColor={named}{nbsphinx-code-bg}}
+\sphinxsetup{VerbatimBorderColor={named}{nbsphinx-code-border}}
+\begin{sphinxVerbatim}[commandchars=\\\{\}]
+\llap{\color{nbsphinxin}[9]:\,\hspace{\fboxrule}\hspace{\fboxsep}}\PYG{n}{solos}\PYG{o}{.}\PYG{n}{tail}\PYG{p}{(}\PYG{p}{)}
+\end{sphinxVerbatim}
+}
+
+{
+
+\kern-\sphinxverbatimsmallskipamount\kern-\baselineskip
+\kern+\FrameHeightAdjust\kern-\fboxrule
+\vspace{\nbsphinxcodecellspacing}
+
+\sphinxsetup{VerbatimColor={named}{white}}
+\sphinxsetup{VerbatimBorderColor={named}{nbsphinx-code-border}}
+\begin{sphinxVerbatim}[commandchars=\\\{\}]
+\llap{\color{nbsphinxout}[9]:\,\hspace{\fboxrule}\hspace{\fboxsep}}        eventid  melid      onset  pitch  duration  period  division  bar  \textbackslash{}
+200804   200805    456  63.135057   57.0  0.168345       4         2   53
+200805   200806    456  63.303401   55.0  0.087075       4         3   54
+200806   200807    456  63.390476   57.0  0.191565       4         3   54
+200807   200808    456  63.640091   59.0  0.406349       4         1   54
+200808   200809    456  64.058050   52.0  1.433832       4         2   54
+
+        beat  tatum  {\ldots}   f0\_mod  loud\_max   loud\_med   loud\_sd  loud\_relpos  \textbackslash{}
+200804     4      2  {\ldots}           1.113380  72.169552  6.896394     0.687500
+200805     1      1  {\ldots}           0.491496  69.732265  1.814723     0.500000
+200806     1      2  {\ldots}    slide  1.187058  76.628621  2.628726     0.411765
+200807     2      1  {\ldots}           0.972676  66.042058  3.690577     0.000000
+200808     3      2  {\ldots}  vibrato  0.368321  58.174931  9.418678     0.053030
+
+       loud\_cent  loud\_s2b    f0\_range  f0\_freq\_hz  f0\_med\_dev
+200804  0.581956  1.271747  191.074095   10.966972  -11.891698
+200805  0.595212  1.339060   40.375449         NaN  -99.173779
+200806  0.590950  1.432802  104.823845   11.148561   -2.911604
+200807  0.334937  1.082549  165.810976    2.659723   14.311001
+200808  0.400571  1.278890   66.932198    2.153916   -9.381310
+
+[5 rows x 26 columns]
+\end{sphinxVerbatim}
+}
+
+The \sphinxcode{\sphinxupquote{solos}} table contains 26 columns that cannot be displayed at once. We can have a look at all columns by using the \sphinxcode{\sphinxupquote{.columns}} attribute.
+
+{
+\sphinxsetup{VerbatimColor={named}{nbsphinx-code-bg}}
+\sphinxsetup{VerbatimBorderColor={named}{nbsphinx-code-border}}
+\begin{sphinxVerbatim}[commandchars=\\\{\}]
+\llap{\color{nbsphinxin}[10]:\,\hspace{\fboxrule}\hspace{\fboxsep}}\PYG{n}{solos}\PYG{o}{.}\PYG{n}{columns}
+\end{sphinxVerbatim}
+}
+
+{
+
+\kern-\sphinxverbatimsmallskipamount\kern-\baselineskip
+\kern+\FrameHeightAdjust\kern-\fboxrule
+\vspace{\nbsphinxcodecellspacing}
+
+\sphinxsetup{VerbatimColor={named}{white}}
+\sphinxsetup{VerbatimBorderColor={named}{nbsphinx-code-border}}
+\begin{sphinxVerbatim}[commandchars=\\\{\}]
+\llap{\color{nbsphinxout}[10]:\,\hspace{\fboxrule}\hspace{\fboxsep}}Index(['eventid', 'melid', 'onset', 'pitch', 'duration', 'period', 'division',
+       'bar', 'beat', 'tatum', 'subtatum', 'num', 'denom', 'beatprops',
+       'beatdur', 'tatumprops', 'f0\_mod', 'loud\_max', 'loud\_med', 'loud\_sd',
+       'loud\_relpos', 'loud\_cent', 'loud\_s2b', 'f0\_range', 'f0\_freq\_hz',
+       'f0\_med\_dev'],
+      dtype='object')
+\end{sphinxVerbatim}
+}
+
+{
+\sphinxsetup{VerbatimColor={named}{nbsphinx-code-bg}}
+\sphinxsetup{VerbatimBorderColor={named}{nbsphinx-code-border}}
+\begin{sphinxVerbatim}[commandchars=\\\{\}]
+\llap{\color{nbsphinxin}[11]:\,\hspace{\fboxrule}\hspace{\fboxsep}}\PYG{n}{mapper} \PYG{o}{=} \PYG{n+nb}{dict}\PYG{p}{(}\PYG{n}{solos\PYGZus{}meta}\PYG{p}{[}\PYG{p}{[}\PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{melid}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{,} \PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{performer}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{]}\PYG{p}{]}\PYG{o}{.}\PYG{n}{values}\PYG{p}{)}
+\PYG{n}{mapper}
+\end{sphinxVerbatim}
+}
+
+{
+
+\kern-\sphinxverbatimsmallskipamount\kern-\baselineskip
+\kern+\FrameHeightAdjust\kern-\fboxrule
+\vspace{\nbsphinxcodecellspacing}
+
+\sphinxsetup{VerbatimColor={named}{white}}
+\sphinxsetup{VerbatimBorderColor={named}{nbsphinx-code-border}}
+\begin{sphinxVerbatim}[commandchars=\\\{\}]
+\llap{\color{nbsphinxout}[11]:\,\hspace{\fboxrule}\hspace{\fboxsep}}\{1: 'Art Pepper',
+ 2: 'Art Pepper',
+ 3: 'Art Pepper',
+ 4: 'Art Pepper',
+ 5: 'Art Pepper',
+ 6: 'Art Pepper',
+ 7: 'Benny Carter',
+ 8: 'Benny Carter',
+ 9: 'Benny Carter',
+ 10: 'Benny Carter',
+ 11: 'Benny Carter',
+ 12: 'Benny Carter',
+ 13: 'Benny Carter',
+ 14: 'Benny Goodman',
+ 15: 'Benny Goodman',
+ 16: 'Benny Goodman',
+ 17: 'Benny Goodman',
+ 18: 'Benny Goodman',
+ 19: 'Benny Goodman',
+ 20: 'Benny Goodman',
+ 21: 'Ben Webster',
+ 22: 'Ben Webster',
+ 23: 'Ben Webster',
+ 24: 'Ben Webster',
+ 25: 'Ben Webster',
+ 26: 'Bix Beiderbecke',
+ 27: 'Bix Beiderbecke',
+ 28: 'Bix Beiderbecke',
+ 29: 'Bix Beiderbecke',
+ 30: 'Bix Beiderbecke',
+ 31: 'Bob Berg',
+ 32: 'Bob Berg',
+ 33: 'Bob Berg',
+ 34: 'Bob Berg',
+ 35: 'Bob Berg',
+ 36: 'Bob Berg',
+ 37: 'Bob Berg',
+ 38: 'Branford Marsalis',
+ 39: 'Branford Marsalis',
+ 40: 'Branford Marsalis',
+ 41: 'Branford Marsalis',
+ 42: 'Branford Marsalis',
+ 43: 'Branford Marsalis',
+ 44: 'Buck Clayton',
+ 45: 'Buck Clayton',
+ 46: 'Buck Clayton',
+ 47: 'Cannonball Adderley',
+ 48: 'Cannonball Adderley',
+ 49: 'Cannonball Adderley',
+ 50: 'Cannonball Adderley',
+ 51: 'Cannonball Adderley',
+ 52: 'Charlie Parker',
+ 53: 'Charlie Parker',
+ 54: 'Charlie Parker',
+ 55: 'Charlie Parker',
+ 56: 'Charlie Parker',
+ 57: 'Charlie Parker',
+ 58: 'Charlie Parker',
+ 59: 'Charlie Parker',
+ 60: 'Charlie Parker',
+ 61: 'Charlie Parker',
+ 62: 'Charlie Parker',
+ 63: 'Charlie Parker',
+ 64: 'Charlie Parker',
+ 65: 'Charlie Parker',
+ 66: 'Charlie Parker',
+ 67: 'Charlie Parker',
+ 68: 'Charlie Parker',
+ 69: 'Charlie Shavers',
+ 70: 'Chet Baker',
+ 71: 'Chet Baker',
+ 72: 'Chet Baker',
+ 73: 'Chet Baker',
+ 74: 'Chet Baker',
+ 75: 'Chet Baker',
+ 76: 'Chet Baker',
+ 77: 'Chet Baker',
+ 78: 'Chris Potter',
+ 79: 'Chris Potter',
+ 80: 'Chris Potter',
+ 81: 'Chris Potter',
+ 82: 'Chris Potter',
+ 83: 'Chris Potter',
+ 84: 'Chris Potter',
+ 85: 'Chu Berry',
+ 86: 'Chu Berry',
+ 87: 'Clifford Brown',
+ 88: 'Clifford Brown',
+ 89: 'Clifford Brown',
+ 90: 'Clifford Brown',
+ 91: 'Clifford Brown',
+ 92: 'Clifford Brown',
+ 93: 'Clifford Brown',
+ 94: 'Clifford Brown',
+ 95: 'Clifford Brown',
+ 96: 'Coleman Hawkins',
+ 97: 'Coleman Hawkins',
+ 98: 'Coleman Hawkins',
+ 99: 'Coleman Hawkins',
+ 100: 'Coleman Hawkins',
+ 101: 'Coleman Hawkins',
+ 102: 'Curtis Fuller',
+ 103: 'Curtis Fuller',
+ 104: 'David Liebman',
+ 105: 'David Liebman',
+ 106: 'David Liebman',
+ 107: 'David Liebman',
+ 108: 'David Liebman',
+ 109: 'David Liebman',
+ 110: 'David Liebman',
+ 111: 'David Liebman',
+ 112: 'David Liebman',
+ 113: 'David Liebman',
+ 114: 'David Liebman',
+ 115: 'David Murray',
+ 116: 'David Murray',
+ 117: 'David Murray',
+ 118: 'David Murray',
+ 119: 'David Murray',
+ 120: 'David Murray',
+ 121: 'Dexter Gordon',
+ 122: 'Dexter Gordon',
+ 123: 'Dexter Gordon',
+ 124: 'Dexter Gordon',
+ 125: 'Dexter Gordon',
+ 126: 'Dexter Gordon',
+ 127: 'Dickie Wells',
+ 128: 'Dickie Wells',
+ 129: 'Dickie Wells',
+ 130: 'Dickie Wells',
+ 131: 'Dickie Wells',
+ 132: 'Dickie Wells',
+ 133: 'Dizzy Gillespie',
+ 134: 'Dizzy Gillespie',
+ 135: 'Dizzy Gillespie',
+ 136: 'Dizzy Gillespie',
+ 137: 'Dizzy Gillespie',
+ 138: 'Dizzy Gillespie',
+ 139: 'Don Byas',
+ 140: 'Don Byas',
+ 141: 'Don Byas',
+ 142: 'Don Byas',
+ 143: 'Don Byas',
+ 144: 'Don Byas',
+ 145: 'Don Byas',
+ 146: 'Don Byas',
+ 147: 'Don Ellis',
+ 148: 'Don Ellis',
+ 149: 'Don Ellis',
+ 150: 'Don Ellis',
+ 151: 'Don Ellis',
+ 152: 'Don Ellis',
+ 153: 'Eric Dolphy',
+ 154: 'Eric Dolphy',
+ 155: 'Eric Dolphy',
+ 156: 'Eric Dolphy',
+ 157: 'Eric Dolphy',
+ 158: 'Eric Dolphy',
+ 159: 'Fats Navarro',
+ 160: 'Fats Navarro',
+ 161: 'Fats Navarro',
+ 162: 'Fats Navarro',
+ 163: 'Fats Navarro',
+ 164: 'Fats Navarro',
+ 165: 'Freddie Hubbard',
+ 166: 'Freddie Hubbard',
+ 167: 'Freddie Hubbard',
+ 168: 'Freddie Hubbard',
+ 169: 'Freddie Hubbard',
+ 170: 'Freddie Hubbard',
+ 171: 'George Coleman',
+ 172: 'Gerry Mulligan',
+ 173: 'Gerry Mulligan',
+ 174: 'Gerry Mulligan',
+ 175: 'Gerry Mulligan',
+ 176: 'Gerry Mulligan',
+ 177: 'Gerry Mulligan',
+ 178: 'Hank Mobley',
+ 179: 'Hank Mobley',
+ 180: 'Hank Mobley',
+ 181: 'Hank Mobley',
+ 182: 'Harry Edison',
+ 183: 'Henry Allen',
+ 184: 'Herbie Hancock',
+ 185: 'Herbie Hancock',
+ 186: 'Herbie Hancock',
+ 187: 'Herbie Hancock',
+ 188: 'Herbie Hancock',
+ 189: 'J.C. Higginbotham',
+ 190: 'J.J. Johnson',
+ 191: 'J.J. Johnson',
+ 192: 'J.J. Johnson',
+ 193: 'J.J. Johnson',
+ 194: 'J.J. Johnson',
+ 195: 'J.J. Johnson',
+ 196: 'J.J. Johnson',
+ 197: 'J.J. Johnson',
+ 198: 'Joe Henderson',
+ 199: 'Joe Henderson',
+ 200: 'Joe Henderson',
+ 201: 'Joe Henderson',
+ 202: 'Joe Henderson',
+ 203: 'Joe Henderson',
+ 204: 'Joe Henderson',
+ 205: 'Joe Henderson',
+ 206: 'Joe Lovano',
+ 207: 'Joe Lovano',
+ 208: 'Joe Lovano',
+ 209: 'Joe Lovano',
+ 210: 'Joe Lovano',
+ 211: 'Joe Lovano',
+ 212: 'Joe Lovano',
+ 213: 'Joe Lovano',
+ 214: 'John Abercrombie',
+ 215: 'John Coltrane',
+ 216: 'John Coltrane',
+ 217: 'John Coltrane',
+ 218: 'John Coltrane',
+ 219: 'John Coltrane',
+ 220: 'John Coltrane',
+ 221: 'John Coltrane',
+ 222: 'John Coltrane',
+ 223: 'John Coltrane',
+ 224: 'John Coltrane',
+ 225: 'John Coltrane',
+ 226: 'John Coltrane',
+ 227: 'John Coltrane',
+ 228: 'John Coltrane',
+ 229: 'John Coltrane',
+ 230: 'John Coltrane',
+ 231: 'John Coltrane',
+ 232: 'John Coltrane',
+ 233: 'John Coltrane',
+ 234: 'John Coltrane',
+ 235: 'Johnny Dodds',
+ 236: 'Johnny Dodds',
+ 237: 'Johnny Dodds',
+ 238: 'Johnny Dodds',
+ 239: 'Johnny Dodds',
+ 240: 'Johnny Dodds',
+ 241: 'Johnny Hodges',
+ 242: 'Johnny Hodges',
+ 243: 'Joshua Redman',
+ 244: 'Joshua Redman',
+ 245: 'Joshua Redman',
+ 246: 'Joshua Redman',
+ 247: 'Joshua Redman',
+ 248: 'Kai Winding',
+ 249: 'Kenny Dorham',
+ 250: 'Kenny Dorham',
+ 251: 'Kenny Dorham',
+ 252: 'Kenny Dorham',
+ 253: 'Kenny Dorham',
+ 254: 'Kenny Dorham',
+ 255: 'Kenny Dorham',
+ 256: 'Kenny Garrett',
+ 257: 'Kenny Garrett',
+ 258: 'Kenny Wheeler',
+ 259: 'Kenny Wheeler',
+ 260: 'Kenny Wheeler',
+ 261: 'Kid Ory',
+ 262: 'Kid Ory',
+ 263: 'Kid Ory',
+ 264: 'Kid Ory',
+ 265: 'Kid Ory',
+ 266: 'Lee Konitz',
+ 267: 'Lee Konitz',
+ 268: 'Lee Konitz',
+ 269: 'Lee Konitz',
+ 270: 'Lee Konitz',
+ 271: 'Lee Konitz',
+ 272: 'Lee Konitz',
+ 273: 'Lee Konitz',
+ 274: 'Lee Morgan',
+ 275: 'Lee Morgan',
+ 276: 'Lee Morgan',
+ 277: 'Lee Morgan',
+ 278: 'Lester Young',
+ 279: 'Lester Young',
+ 280: 'Lester Young',
+ 281: 'Lester Young',
+ 282: 'Lester Young',
+ 283: 'Lester Young',
+ 284: 'Lester Young',
+ 285: 'Lionel Hampton',
+ 286: 'Lionel Hampton',
+ 287: 'Lionel Hampton',
+ 288: 'Lionel Hampton',
+ 289: 'Lionel Hampton',
+ 290: 'Lionel Hampton',
+ 291: 'Louis Armstrong',
+ 292: 'Louis Armstrong',
+ 293: 'Louis Armstrong',
+ 294: 'Louis Armstrong',
+ 295: 'Louis Armstrong',
+ 296: 'Louis Armstrong',
+ 297: 'Louis Armstrong',
+ 298: 'Louis Armstrong',
+ 299: 'Michael Brecker',
+ 300: 'Michael Brecker',
+ 301: 'Michael Brecker',
+ 302: 'Michael Brecker',
+ 303: 'Michael Brecker',
+ 304: 'Michael Brecker',
+ 305: 'Michael Brecker',
+ 306: 'Michael Brecker',
+ 307: 'Michael Brecker',
+ 308: 'Michael Brecker',
+ 309: 'Miles Davis',
+ 310: 'Miles Davis',
+ 311: 'Miles Davis',
+ 312: 'Miles Davis',
+ 313: 'Miles Davis',
+ 314: 'Miles Davis',
+ 315: 'Miles Davis',
+ 316: 'Miles Davis',
+ 317: 'Miles Davis',
+ 318: 'Miles Davis',
+ 319: 'Miles Davis',
+ 320: 'Miles Davis',
+ 321: 'Miles Davis',
+ 322: 'Miles Davis',
+ 323: 'Miles Davis',
+ 324: 'Miles Davis',
+ 325: 'Miles Davis',
+ 326: 'Miles Davis',
+ 327: 'Miles Davis',
+ 328: 'Milt Jackson',
+ 329: 'Milt Jackson',
+ 330: 'Milt Jackson',
+ 331: 'Milt Jackson',
+ 332: 'Milt Jackson',
+ 333: 'Milt Jackson',
+ 334: 'Nat Adderley',
+ 335: 'Nat Adderley',
+ 336: 'Ornette Coleman',
+ 337: 'Ornette Coleman',
+ 338: 'Ornette Coleman',
+ 339: 'Ornette Coleman',
+ 340: 'Ornette Coleman',
+ 341: 'Pat Martino',
+ 342: 'Pat Metheny',
+ 343: 'Pat Metheny',
+ 344: 'Pat Metheny',
+ 345: 'Pat Metheny',
+ 346: 'Paul Desmond',
+ 347: 'Paul Desmond',
+ 348: 'Paul Desmond',
+ 349: 'Paul Desmond',
+ 350: 'Paul Desmond',
+ 351: 'Paul Desmond',
+ 352: 'Paul Desmond',
+ 353: 'Paul Desmond',
+ 354: 'Pepper Adams',
+ 355: 'Pepper Adams',
+ 356: 'Pepper Adams',
+ 357: 'Pepper Adams',
+ 358: 'Pepper Adams',
+ 359: 'Phil Woods',
+ 360: 'Phil Woods',
+ 361: 'Phil Woods',
+ 362: 'Phil Woods',
+ 363: 'Phil Woods',
+ 364: 'Phil Woods',
+ 365: 'Red Garland',
+ 366: 'Rex Stewart',
+ 367: 'Roy Eldridge',
+ 368: 'Roy Eldridge',
+ 369: 'Roy Eldridge',
+ 370: 'Roy Eldridge',
+ 371: 'Roy Eldridge',
+ 372: 'Roy Eldridge',
+ 373: 'Sidney Bechet',
+ 374: 'Sidney Bechet',
+ 375: 'Sidney Bechet',
+ 376: 'Sidney Bechet',
+ 377: 'Sidney Bechet',
+ 378: 'Sonny Rollins',
+ 379: 'Sonny Rollins',
+ 380: 'Sonny Rollins',
+ 381: 'Sonny Rollins',
+ 382: 'Sonny Rollins',
+ 383: 'Sonny Rollins',
+ 384: 'Sonny Rollins',
+ 385: 'Sonny Rollins',
+ 386: 'Sonny Rollins',
+ 387: 'Sonny Rollins',
+ 388: 'Sonny Rollins',
+ 389: 'Sonny Rollins',
+ 390: 'Sonny Rollins',
+ 391: 'Sonny Stitt',
+ 392: 'Sonny Stitt',
+ 393: 'Sonny Stitt',
+ 394: 'Sonny Stitt',
+ 395: 'Sonny Stitt',
+ 396: 'Sonny Stitt',
+ 397: 'Stan Getz',
+ 398: 'Stan Getz',
+ 399: 'Stan Getz',
+ 400: 'Stan Getz',
+ 401: 'Stan Getz',
+ 402: 'Stan Getz',
+ 403: 'Steve Coleman',
+ 404: 'Steve Coleman',
+ 405: 'Steve Coleman',
+ 406: 'Steve Coleman',
+ 407: 'Steve Coleman',
+ 408: 'Steve Coleman',
+ 409: 'Steve Coleman',
+ 410: 'Steve Coleman',
+ 411: 'Steve Coleman',
+ 412: 'Steve Coleman',
+ 413: 'Steve Lacy',
+ 414: 'Steve Lacy',
+ 415: 'Steve Lacy',
+ 416: 'Steve Lacy',
+ 417: 'Steve Lacy',
+ 418: 'Steve Lacy',
+ 419: 'Steve Turre',
+ 420: 'Steve Turre',
+ 421: 'Steve Turre',
+ 422: 'Von Freeman',
+ 423: 'Warne Marsh',
+ 424: 'Warne Marsh',
+ 425: 'Warne Marsh',
+ 426: 'Wayne Shorter',
+ 427: 'Wayne Shorter',
+ 428: 'Wayne Shorter',
+ 429: 'Wayne Shorter',
+ 430: 'Wayne Shorter',
+ 431: 'Wayne Shorter',
+ 432: 'Wayne Shorter',
+ 433: 'Wayne Shorter',
+ 434: 'Wayne Shorter',
+ 435: 'Wayne Shorter',
+ 436: 'Woody Shaw',
+ 437: 'Woody Shaw',
+ 438: 'Woody Shaw',
+ 439: 'Woody Shaw',
+ 440: 'Woody Shaw',
+ 441: 'Woody Shaw',
+ 442: 'Woody Shaw',
+ 443: 'Woody Shaw',
+ 444: 'Wynton Marsalis',
+ 445: 'Wynton Marsalis',
+ 446: 'Wynton Marsalis',
+ 447: 'Wynton Marsalis',
+ 448: 'Wynton Marsalis',
+ 449: 'Wynton Marsalis',
+ 450: 'Wynton Marsalis',
+ 451: 'Zoot Sims',
+ 452: 'Zoot Sims',
+ 453: 'Zoot Sims',
+ 454: 'Zoot Sims',
+ 455: 'Zoot Sims',
+ 456: 'Zoot Sims'\}
+\end{sphinxVerbatim}
+}
+
+{
+\sphinxsetup{VerbatimColor={named}{nbsphinx-code-bg}}
+\sphinxsetup{VerbatimBorderColor={named}{nbsphinx-code-border}}
+\begin{sphinxVerbatim}[commandchars=\\\{\}]
+\llap{\color{nbsphinxin}[12]:\,\hspace{\fboxrule}\hspace{\fboxsep}}\PYG{n}{solos}\PYG{p}{[}\PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{performer}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{]} \PYG{o}{=} \PYG{n}{solos}\PYG{p}{[}\PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{melid}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{]}\PYG{o}{.}\PYG{n}{map}\PYG{p}{(}\PYG{n}{mapper}\PYG{p}{)}
+\end{sphinxVerbatim}
+}
+
+{
+\sphinxsetup{VerbatimColor={named}{nbsphinx-code-bg}}
+\sphinxsetup{VerbatimBorderColor={named}{nbsphinx-code-border}}
+\begin{sphinxVerbatim}[commandchars=\\\{\}]
+\llap{\color{nbsphinxin}[13]:\,\hspace{\fboxrule}\hspace{\fboxsep}}\PYG{n}{solos}\PYG{o}{.}\PYG{n}{head}\PYG{p}{(}\PYG{p}{)}
+\end{sphinxVerbatim}
+}
+
+{
+
+\kern-\sphinxverbatimsmallskipamount\kern-\baselineskip
+\kern+\FrameHeightAdjust\kern-\fboxrule
+\vspace{\nbsphinxcodecellspacing}
+
+\sphinxsetup{VerbatimColor={named}{white}}
+\sphinxsetup{VerbatimBorderColor={named}{nbsphinx-code-border}}
+\begin{sphinxVerbatim}[commandchars=\\\{\}]
+\llap{\color{nbsphinxout}[13]:\,\hspace{\fboxrule}\hspace{\fboxsep}}   eventid  melid      onset  pitch  duration  period  division  bar  beat  \textbackslash{}
+0        1      1  10.343492   65.0  0.138776       4         1    0     1
+1        2      1  10.637642   63.0  0.171247       4         4    0     2
+2        3      1  10.843719   58.0  0.081270       4         4    0     2
+3        4      1  10.948209   61.0  0.235102       4         1    0     3
+4        5      1  11.232653   63.0  0.130612       4         1    0     4
+
+   tatum  {\ldots}  loud\_max   loud\_med   loud\_sd loud\_relpos  loud\_cent  loud\_s2b  \textbackslash{}
+0      1  {\ldots}  0.126209  66.526087  5.541147    0.307692   0.389466  1.056169
+1      1  {\ldots}  0.349751  69.133321  2.912412    0.250000   0.468687  1.120317
+2      4  {\ldots}  0.094051  66.352130  3.564563    0.428571   0.531354  1.310389
+3      1  {\ldots}  0.521187  66.484173  2.414298    0.818182   0.559333  0.984047
+4      1  {\ldots}  0.560737  71.699054  2.185794    0.166667   0.438973  1.061262
+
+    f0\_range  f0\_freq\_hz  f0\_med\_dev   performer
+0  37.794261   12.932532   -0.328442  Art Pepper
+1   6.365930    6.956935   11.135423  Art Pepper
+2  68.010392         NaN   32.366787  Art Pepper
+3  15.443906    5.867151   -3.374696  Art Pepper
+4  11.444363    8.329975    6.377737  Art Pepper
+
+[5 rows x 27 columns]
+\end{sphinxVerbatim}
+}
+
+{
+\sphinxsetup{VerbatimColor={named}{nbsphinx-code-bg}}
+\sphinxsetup{VerbatimBorderColor={named}{nbsphinx-code-border}}
+\begin{sphinxVerbatim}[commandchars=\\\{\}]
+\llap{\color{nbsphinxin}[14]:\,\hspace{\fboxrule}\hspace{\fboxsep}}\PYG{n}{solos}\PYG{o}{.}\PYG{n}{tail}\PYG{p}{(}\PYG{p}{)}
+\end{sphinxVerbatim}
+}
+
+{
+
+\kern-\sphinxverbatimsmallskipamount\kern-\baselineskip
+\kern+\FrameHeightAdjust\kern-\fboxrule
+\vspace{\nbsphinxcodecellspacing}
+
+\sphinxsetup{VerbatimColor={named}{white}}
+\sphinxsetup{VerbatimBorderColor={named}{nbsphinx-code-border}}
+\begin{sphinxVerbatim}[commandchars=\\\{\}]
+\llap{\color{nbsphinxout}[14]:\,\hspace{\fboxrule}\hspace{\fboxsep}}        eventid  melid      onset  pitch  duration  period  division  bar  \textbackslash{}
+200804   200805    456  63.135057   57.0  0.168345       4         2   53
+200805   200806    456  63.303401   55.0  0.087075       4         3   54
+200806   200807    456  63.390476   57.0  0.191565       4         3   54
+200807   200808    456  63.640091   59.0  0.406349       4         1   54
+200808   200809    456  64.058050   52.0  1.433832       4         2   54
+
+        beat  tatum  {\ldots}  loud\_max   loud\_med   loud\_sd loud\_relpos  \textbackslash{}
+200804     4      2  {\ldots}  1.113380  72.169552  6.896394    0.687500
+200805     1      1  {\ldots}  0.491496  69.732265  1.814723    0.500000
+200806     1      2  {\ldots}  1.187058  76.628621  2.628726    0.411765
+200807     2      1  {\ldots}  0.972676  66.042058  3.690577    0.000000
+200808     3      2  {\ldots}  0.368321  58.174931  9.418678    0.053030
+
+        loud\_cent  loud\_s2b    f0\_range  f0\_freq\_hz  f0\_med\_dev  performer
+200804   0.581956  1.271747  191.074095   10.966972  -11.891698  Zoot Sims
+200805   0.595212  1.339060   40.375449         NaN  -99.173779  Zoot Sims
+200806   0.590950  1.432802  104.823845   11.148561   -2.911604  Zoot Sims
+200807   0.334937  1.082549  165.810976    2.659723   14.311001  Zoot Sims
+200808   0.400571  1.278890   66.932198    2.153916   -9.381310  Zoot Sims
+
+[5 rows x 27 columns]
+\end{sphinxVerbatim}
+}
+
+{
+\sphinxsetup{VerbatimColor={named}{nbsphinx-code-bg}}
+\sphinxsetup{VerbatimBorderColor={named}{nbsphinx-code-border}}
+\begin{sphinxVerbatim}[commandchars=\\\{\}]
+\llap{\color{nbsphinxin}[15]:\,\hspace{\fboxrule}\hspace{\fboxsep}}\PYG{n}{data} \PYG{o}{=} \PYG{n}{solos}\PYG{p}{[}\PYG{n}{solos}\PYG{o}{.}\PYG{n}{pitch}\PYG{o}{.}\PYG{n}{notnull}\PYG{p}{(}\PYG{p}{)} \PYG{o}{\PYGZam{}} \PYG{n}{solos}\PYG{o}{.}\PYG{n}{loud\PYGZus{}med}\PYG{o}{.}\PYG{n}{notnull}\PYG{p}{(}\PYG{p}{)}\PYG{p}{]}
+\end{sphinxVerbatim}
+}
+
+A description of what these columns contain is stated on the website: \sphinxurl{https://jazzomat.hfm-weimar.de/dbformat/dbformat.html}
+
+We can now check how many solos the database contains.
+
+{
+\sphinxsetup{VerbatimColor={named}{nbsphinx-code-bg}}
+\sphinxsetup{VerbatimBorderColor={named}{nbsphinx-code-border}}
+\begin{sphinxVerbatim}[commandchars=\\\{\}]
+\llap{\color{nbsphinxin}[16]:\,\hspace{\fboxrule}\hspace{\fboxsep}}\PYG{n}{grouped\PYGZus{}df} \PYG{o}{=} \PYG{n}{solos}\PYG{o}{.}\PYG{n}{groupby}\PYG{p}{(}\PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{performer}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{)}
+\end{sphinxVerbatim}
+}
+
+{
+\sphinxsetup{VerbatimColor={named}{nbsphinx-code-bg}}
+\sphinxsetup{VerbatimBorderColor={named}{nbsphinx-code-border}}
+\begin{sphinxVerbatim}[commandchars=\\\{\}]
+\llap{\color{nbsphinxin}[41]:\,\hspace{\fboxrule}\hspace{\fboxsep}}\PYG{n}{selected} \PYG{o}{=} \PYG{p}{[}\PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{Charlie Parker}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{,} \PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{Miles Davis}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{,} \PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{Louis Armstrong}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{,} \PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{Herbie Hancock}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{,} \PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{Von Freeman}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{,} \PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{Red Garland}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{]}
+
+\PYG{n}{fig}\PYG{p}{,} \PYG{n}{ax} \PYG{o}{=} \PYG{n}{plt}\PYG{o}{.}\PYG{n}{subplots}\PYG{p}{(}\PYG{n}{figsize}\PYG{o}{=}\PYG{p}{(}\PYG{l+m+mi}{10}\PYG{p}{,}\PYG{l+m+mi}{10}\PYG{p}{)}\PYG{p}{)}
+
+\PYG{k}{for} \PYG{n}{performer}\PYG{p}{,} \PYG{n}{df} \PYG{o+ow}{in} \PYG{n}{grouped\PYGZus{}df}\PYG{p}{:}
+    \PYG{k}{if} \PYG{n}{performer} \PYG{o+ow}{in} \PYG{n}{selected}\PYG{p}{:}
+        \PYG{n}{sns}\PYG{o}{.}\PYG{n}{regplot}\PYG{p}{(}
+            \PYG{n}{data}\PYG{o}{=}\PYG{n}{df}\PYG{p}{,}
+            \PYG{n}{x}\PYG{o}{=}\PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{pitch}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{,}
+            \PYG{n}{y}\PYG{o}{=}\PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{loud\PYGZus{}med}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{,}
+            \PYG{n}{x\PYGZus{}jitter}\PYG{o}{=}\PYG{o}{.}\PYG{l+m+mi}{1}\PYG{p}{,}
+            \PYG{n}{y\PYGZus{}jitter}\PYG{o}{=}\PYG{o}{.}\PYG{l+m+mi}{1}\PYG{p}{,}
+            \PYG{n}{scatter\PYGZus{}kws}\PYG{o}{=}\PYG{p}{\PYGZob{}}\PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{alpha}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{:}\PYG{o}{.}\PYG{l+m+mi}{01}\PYG{p}{,} \PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{color}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{:}\PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{grey}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{\PYGZcb{}}\PYG{p}{,}
+            \PYG{n}{line\PYGZus{}kws}\PYG{o}{=}\PYG{p}{\PYGZob{}}\PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{lw}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{:}\PYG{l+m+mi}{2}\PYG{p}{\PYGZcb{}}\PYG{p}{,}
+            \PYG{n}{label}\PYG{o}{=}\PYG{n}{performer}\PYG{p}{,}
+            \PYG{n}{scatter}\PYG{o}{=}\PYG{k+kc}{False}\PYG{p}{,}
+            \PYG{n}{ax}\PYG{o}{=}\PYG{n}{ax}
+        \PYG{p}{)}
+
+\PYG{n}{plt}\PYG{o}{.}\PYG{n}{xlabel}\PYG{p}{(}\PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{MIDI Pitch}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{)}
+\PYG{n}{plt}\PYG{o}{.}\PYG{n}{ylabel}\PYG{p}{(}\PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{Median loudness [dB]}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{)}
+\PYG{n}{plt}\PYG{o}{.}\PYG{n}{legend}\PYG{p}{(}\PYG{p}{)}
+\PYG{n}{plt}\PYG{o}{.}\PYG{n}{show}\PYG{p}{(}\PYG{p}{)}
+\end{sphinxVerbatim}
+}
+
+\hrule height -\fboxrule\relax
+\vspace{\nbsphinxcodecellspacing}
+
+\makeatletter\setbox\nbsphinxpromptbox\box\voidb@x\makeatother
+
+\begin{nbsphinxfancyoutput}
+
+\noindent\sphinxincludegraphics[width=625\sphinxpxdimen,height=607\sphinxpxdimen]{{04_jazz_solos_25_0}.png}
+
+\end{nbsphinxfancyoutput}
+
+\sphinxstylestrong{Observations:}
+\begin{enumerate}
+\sphinxsetlistlabels{\arabic}{enumi}{enumii}{}{.}%
+\item {} 
+Most performers increase loudness with increasing pitch.
+
+\item {} 
+Charlie Parker (sax) and Louis Armstrong (t) show very similar patterns but Armstrong is generally higher.
+
+\item {} 
+Miles Davis (t) is similar to the two but plays generally softer than both.
+
+\item {} 
+Von Freeman (sax) strongly and Herbie Hancock (p) weakly decrease loudness with increasing pitch (almost all other performers show positive correlations).
+
+\item {} 
+Red Garland (p) plays generally lower than Herbie Hancock (p) but does show a positive correlation between pitch and loudness (NB: there is only one solo in the database).
+
+\end{enumerate}
+
+Does this tell us something about performer styles or about instruments?
+
+
+\section{The “rain cloud” of Jazz solos}
+\label{\detokenize{04_jazz_solos:The-_u201crain-cloud_u201d-of-Jazz-solos}}
+{
+\sphinxsetup{VerbatimColor={named}{nbsphinx-code-bg}}
+\sphinxsetup{VerbatimBorderColor={named}{nbsphinx-code-border}}
+\begin{sphinxVerbatim}[commandchars=\\\{\}]
+\llap{\color{nbsphinxin}[34]:\,\hspace{\fboxrule}\hspace{\fboxsep}}\PYG{n}{X} \PYG{o}{=} \PYG{n}{data}\PYG{p}{[}\PYG{p}{[}\PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{pitch}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{,} \PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{loud\PYGZus{}med}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{]}\PYG{p}{]}\PYG{o}{.}\PYG{n}{values}
+\PYG{n}{x} \PYG{o}{=} \PYG{n}{X}\PYG{p}{[}\PYG{p}{:}\PYG{p}{,}\PYG{l+m+mi}{0}\PYG{p}{]}
+\PYG{n}{y} \PYG{o}{=} \PYG{n}{X}\PYG{p}{[}\PYG{p}{:}\PYG{p}{,}\PYG{l+m+mi}{1}\PYG{p}{]}
+
+\PYG{n}{fig}\PYG{p}{,} \PYG{n}{ax} \PYG{o}{=} \PYG{n}{plt}\PYG{o}{.}\PYG{n}{subplots}\PYG{p}{(}\PYG{n}{figsize}\PYG{o}{=}\PYG{p}{(}\PYG{l+m+mi}{6}\PYG{p}{,}\PYG{l+m+mi}{4}\PYG{p}{)}\PYG{p}{)}
+\PYG{n}{ax}\PYG{o}{.}\PYG{n}{scatter}\PYG{p}{(}\PYG{n}{x}\PYG{p}{,}\PYG{n}{y}\PYG{p}{,} \PYG{n}{alpha}\PYG{o}{=}\PYG{l+m+mf}{0.01}\PYG{p}{)}
+
+\PYG{n}{plt}\PYG{o}{.}\PYG{n}{xlabel}\PYG{p}{(}\PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{Pitch}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{)}
+\PYG{n}{plt}\PYG{o}{.}\PYG{n}{ylabel}\PYG{p}{(}\PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{Median loudness [dB]}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{)}
+\PYG{n}{plt}\PYG{o}{.}\PYG{n}{show}\PYG{p}{(}\PYG{p}{)}
+\end{sphinxVerbatim}
+}
+
+\hrule height -\fboxrule\relax
+\vspace{\nbsphinxcodecellspacing}
+
+\makeatletter\setbox\nbsphinxpromptbox\box\voidb@x\makeatother
+
+\begin{nbsphinxfancyoutput}
+
+\noindent\sphinxincludegraphics[width=425\sphinxpxdimen,height=281\sphinxpxdimen]{{04_jazz_solos_28_0}.png}
+
+\end{nbsphinxfancyoutput}
+
+{
+\sphinxsetup{VerbatimColor={named}{nbsphinx-code-bg}}
+\sphinxsetup{VerbatimBorderColor={named}{nbsphinx-code-border}}
+\begin{sphinxVerbatim}[commandchars=\\\{\}]
+\llap{\color{nbsphinxin}[74]:\,\hspace{\fboxrule}\hspace{\fboxsep}}\PYG{n}{solos}\PYG{p}{[}\PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{melid}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{]}\PYG{o}{.}\PYG{n}{max}\PYG{p}{(}\PYG{p}{)}
+\end{sphinxVerbatim}
+}
+
+{
+
+\kern-\sphinxverbatimsmallskipamount\kern-\baselineskip
+\kern+\FrameHeightAdjust\kern-\fboxrule
+\vspace{\nbsphinxcodecellspacing}
+
+\sphinxsetup{VerbatimColor={named}{white}}
+\sphinxsetup{VerbatimBorderColor={named}{nbsphinx-code-border}}
+\begin{sphinxVerbatim}[commandchars=\\\{\}]
+\llap{\color{nbsphinxout}[74]:\,\hspace{\fboxrule}\hspace{\fboxsep}}456
+\end{sphinxVerbatim}
+}
+
+{
+\sphinxsetup{VerbatimColor={named}{nbsphinx-code-bg}}
+\sphinxsetup{VerbatimBorderColor={named}{nbsphinx-code-border}}
+\begin{sphinxVerbatim}[commandchars=\\\{\}]
+\llap{\color{nbsphinxin}[75]:\,\hspace{\fboxrule}\hspace{\fboxsep}}\PYG{n}{solos}\PYG{p}{[} \PYG{n}{solos}\PYG{p}{[}\PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{melid}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{]} \PYG{o}{==} \PYG{l+m+mi}{2} \PYG{p}{]}\PYG{p}{[}\PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{loud\PYGZus{}med}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{]}\PYG{o}{.}\PYG{n}{plot}\PYG{p}{(}\PYG{n}{figsize}\PYG{o}{=}\PYG{p}{(}\PYG{l+m+mi}{20}\PYG{p}{,}\PYG{l+m+mi}{3}\PYG{p}{)}\PYG{p}{)}\PYG{p}{;}
+\end{sphinxVerbatim}
+}
+
+\hrule height -\fboxrule\relax
+\vspace{\nbsphinxcodecellspacing}
+
+\makeatletter\setbox\nbsphinxpromptbox\box\voidb@x\makeatother
+
+\begin{nbsphinxfancyoutput}
+
+\noindent\sphinxincludegraphics[width=1158\sphinxpxdimen,height=194\sphinxpxdimen]{{04_jazz_solos_30_0}.png}
+
+\end{nbsphinxfancyoutput}
+
+{
+\sphinxsetup{VerbatimColor={named}{nbsphinx-code-bg}}
+\sphinxsetup{VerbatimBorderColor={named}{nbsphinx-code-border}}
+\begin{sphinxVerbatim}[commandchars=\\\{\}]
+\llap{\color{nbsphinxin}[114]:\,\hspace{\fboxrule}\hspace{\fboxsep}}\PYG{k+kn}{import} \PYG{n+nn}{seaborn} \PYG{k}{as} \PYG{n+nn}{sns}
+\PYG{k+kn}{import} \PYG{n+nn}{matplotlib}\PYG{n+nn}{.}\PYG{n+nn}{pyplot} \PYG{k}{as} \PYG{n+nn}{plt}
+\PYG{k+kn}{import} \PYG{n+nn}{numpy} \PYG{k}{as} \PYG{n+nn}{np}
+\end{sphinxVerbatim}
+}
+
+{
+\sphinxsetup{VerbatimColor={named}{nbsphinx-code-bg}}
+\sphinxsetup{VerbatimBorderColor={named}{nbsphinx-code-border}}
+\begin{sphinxVerbatim}[commandchars=\\\{\}]
+\llap{\color{nbsphinxin}[135]:\,\hspace{\fboxrule}\hspace{\fboxsep}}\PYG{c+c1}{\PYGZsh{} fig, axes = plt.subplots(5,1, figsize=(15,20))}
+
+\PYG{c+c1}{\PYGZsh{} for idx, rand in enumerate(np.random.randint(1,solos[\PYGZdq{}melid\PYGZdq{}].unique().max(), 5)):}
+\PYG{n}{sns}\PYG{o}{.}\PYG{n}{lmplot}\PYG{p}{(}\PYG{n}{data}\PYG{o}{=}\PYG{n}{solos}\PYG{p}{[} \PYG{n}{solos}\PYG{p}{[}\PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{melid}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{]} \PYG{o}{==} \PYG{l+m+mi}{130} \PYG{p}{]}\PYG{p}{,} \PYG{n}{x}\PYG{o}{=}\PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{pitch}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{,} \PYG{n}{y}\PYG{o}{=}\PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{loud\PYGZus{}med}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{)}\PYG{p}{;}
+\end{sphinxVerbatim}
+}
+
+\hrule height -\fboxrule\relax
+\vspace{\nbsphinxcodecellspacing}
+
+\makeatletter\setbox\nbsphinxpromptbox\box\voidb@x\makeatother
+
+\begin{nbsphinxfancyoutput}
+
+\noindent\sphinxincludegraphics[width=352\sphinxpxdimen,height=352\sphinxpxdimen]{{04_jazz_solos_32_0}.png}
+
+\end{nbsphinxfancyoutput}
 
 
 

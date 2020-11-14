@@ -60,6 +60,7 @@ about quantitative approaches to musicology.
    01_organization.rst
    02_introduction.rst
    03_melody_I.ipynb 
+   04_jazz_solos.ipynb
 
 .. Indices and tables
 .. ==================

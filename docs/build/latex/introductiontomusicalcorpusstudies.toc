@@ -9,5 +9,10 @@
 \contentsline {section}{\numberline {3.1}The \sphinxstyleemphasis {Essen Folksong Collection}}{9}{section.3.1}%
 \contentsline {section}{\numberline {3.2}Comparing songs}{14}{section.3.2}%
 \contentsline {section}{\numberline {3.3}Computational analysis}{15}{section.3.3}%
-\contentsline {section}{\numberline {3.4}The melodic arc}{19}{section.3.4}%
-\contentsline {section}{\numberline {3.5}Intervals}{20}{section.3.5}%
+\contentsline {section}{\numberline {3.4}The melodic arc}{20}{section.3.4}%
+\contentsline {section}{\numberline {3.5}Intervals}{21}{section.3.5}%
+\contentsline {chapter}{\numberline {4}Solos in the \sphinxstyleemphasis {Weimar Jazz Database}}{29}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Melodic arc?}{33}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Pitch vs loudness}{37}{section.4.2}%
+\contentsline {section}{\numberline {4.3}The “rain cloud” of Jazz solos}{39}{section.4.3}%
+\contentsline {section}{\numberline {4.4}Comparing performers}{40}{section.4.4}%

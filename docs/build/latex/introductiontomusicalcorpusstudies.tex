@@ -215,7 +215,7 @@
 
 
 \title{Introduction to Musical Corpus Studies}
-\date{Nov 14, 2020}
+\date{Nov 25, 2020}
 \release{0.0.1}
 \author{Fabian C.\@{} Moss}
 \newcommand{\sphinxlogo}{\vbox{}}
@@ -363,24 +363,22 @@ Group work
 &&
 14:40\sphinxhyphen{}16:00 Uhr
 &
-Harmony I: Beethoven’s string quartets
+Beethoven’s string quartets
 \\
 \hline
 7
 &
 Fr., 11.12.2020
 &
-10:00\sphinxhyphen{}11:20 Uhr
+16:00\sphinxhyphen{}17:20 Uhr
 &
-Harmony II: Brazilian Choro / Pop charts (Billboard 100)
+Cadences in Renaissance polyphony (guest: \sphinxhref{https://www.haverford.edu/users/rfreedma}{Richard Freedman})
 \\
 \hline
 8
 &&
-11:40\sphinxhyphen{}13:00 Uhr
-&
-Harmony III: Cadences in Renaissance polyphony (guest: \sphinxhref{https://www.haverford.edu/users/rfreedma}{Richard Freedman})
-\\
+17:40\sphinxhyphen{}19:00 Uhr
+&\\
 \hline
 9
 &
@@ -699,7 +697,7 @@ Calling the variable \sphinxcode{\sphinxupquote{parsed\_example\_song}} now, how
 \sphinxsetup{VerbatimColor={named}{white}}
 \sphinxsetup{VerbatimBorderColor={named}{nbsphinx-code-border}}
 \begin{sphinxVerbatim}[commandchars=\\\{\}]
-\llap{\color{nbsphinxout}[8]:\,\hspace{\fboxrule}\hspace{\fboxsep}}<music21.stream.Score 0x1f2c8035a30>
+\llap{\color{nbsphinxout}[8]:\,\hspace{\fboxrule}\hspace{\fboxsep}}<music21.stream.Score 0x1898a474340>
 \end{sphinxVerbatim}
 }
 
@@ -835,7 +833,7 @@ Looking at the new variable \sphinxcode{\sphinxupquote{first\_corpus}} shows a d
 \sphinxsetup{VerbatimColor={named}{white}}
 \sphinxsetup{VerbatimBorderColor={named}{nbsphinx-code-border}}
 \begin{sphinxVerbatim}[commandchars=\\\{\}]
-\llap{\color{nbsphinxout}[14]:\,\hspace{\fboxrule}\hspace{\fboxsep}}<music21.stream.Opus 0x1f2c91ba130>
+\llap{\color{nbsphinxout}[14]:\,\hspace{\fboxrule}\hspace{\fboxsep}}<music21.stream.Opus 0x1898b5ff4c0>
 \end{sphinxVerbatim}
 }
 
@@ -1073,7 +1071,7 @@ This allows us now to look at the \sphinxstylestrong{melodic profile} of a parti
 \sphinxsetup{VerbatimColor={named}{nbsphinx-code-bg}}
 \sphinxsetup{VerbatimBorderColor={named}{nbsphinx-code-border}}
 \begin{sphinxVerbatim}[commandchars=\\\{\}]
-\llap{\color{nbsphinxin}[31]:\,\hspace{\fboxrule}\hspace{\fboxsep}}\PYG{k}{def} \PYG{n+nf}{plot\PYGZus{}melodic\PYGZus{}profile}\PYG{p}{(}\PYG{n}{notelist}\PYG{p}{,} \PYG{n}{ax}\PYG{o}{=}\PYG{k+kc}{None}\PYG{p}{,} \PYG{n}{c}\PYG{o}{=}\PYG{k+kc}{None}\PYG{p}{,} \PYG{n}{mean}\PYG{o}{=}\PYG{k+kc}{False}\PYG{p}{,} \PYG{n}{Z}\PYG{o}{=}\PYG{k+kc}{False}\PYG{p}{,} \PYG{n}{sections}\PYG{o}{=}\PYG{k+kc}{False}\PYG{p}{,} \PYG{n}{standardized}\PYG{o}{=}\PYG{k+kc}{False}\PYG{p}{)}\PYG{p}{:}
+\llap{\color{nbsphinxin}[25]:\,\hspace{\fboxrule}\hspace{\fboxsep}}\PYG{k}{def} \PYG{n+nf}{plot\PYGZus{}melodic\PYGZus{}profile}\PYG{p}{(}\PYG{n}{notelist}\PYG{p}{,} \PYG{n}{ax}\PYG{o}{=}\PYG{k+kc}{None}\PYG{p}{,} \PYG{n}{c}\PYG{o}{=}\PYG{k+kc}{None}\PYG{p}{,} \PYG{n}{mean}\PYG{o}{=}\PYG{k+kc}{False}\PYG{p}{,} \PYG{n}{Z}\PYG{o}{=}\PYG{k+kc}{False}\PYG{p}{,} \PYG{n}{sections}\PYG{o}{=}\PYG{k+kc}{False}\PYG{p}{,} \PYG{n}{standardized}\PYG{o}{=}\PYG{k+kc}{False}\PYG{p}{)}\PYG{p}{:}
 
     \PYG{k}{if} \PYG{n}{ax} \PYG{o}{==} \PYG{k+kc}{None}\PYG{p}{:}
         \PYG{n}{ax} \PYG{o}{=} \PYG{n}{plt}\PYG{o}{.}\PYG{n}{gca}\PYG{p}{(}\PYG{p}{)}
@@ -1100,7 +1098,7 @@ This allows us now to look at the \sphinxstylestrong{melodic profile} of a parti
 \sphinxsetup{VerbatimColor={named}{nbsphinx-code-bg}}
 \sphinxsetup{VerbatimBorderColor={named}{nbsphinx-code-border}}
 \begin{sphinxVerbatim}[commandchars=\\\{\}]
-\llap{\color{nbsphinxin}[32]:\,\hspace{\fboxrule}\hspace{\fboxsep}}\PYG{n}{plot\PYGZus{}melodic\PYGZus{}profile}\PYG{p}{(}\PYG{n}{notelist}\PYG{p}{(}\PYG{n}{german\PYGZus{}song}\PYG{p}{)}\PYG{p}{)}
+\llap{\color{nbsphinxin}[26]:\,\hspace{\fboxrule}\hspace{\fboxsep}}\PYG{n}{plot\PYGZus{}melodic\PYGZus{}profile}\PYG{p}{(}\PYG{n}{notelist}\PYG{p}{(}\PYG{n}{german\PYGZus{}song}\PYG{p}{)}\PYG{p}{)}
 \end{sphinxVerbatim}
 }
 
@@ -1121,7 +1119,7 @@ Likewise, we can as easily plot the melodic contour of the Chinese song (we will
 \sphinxsetup{VerbatimColor={named}{nbsphinx-code-bg}}
 \sphinxsetup{VerbatimBorderColor={named}{nbsphinx-code-border}}
 \begin{sphinxVerbatim}[commandchars=\\\{\}]
-\llap{\color{nbsphinxin}[33]:\,\hspace{\fboxrule}\hspace{\fboxsep}}\PYG{n}{fig}\PYG{p}{,} \PYG{n}{axes} \PYG{o}{=} \PYG{n}{plt}\PYG{o}{.}\PYG{n}{subplots}\PYG{p}{(}\PYG{l+m+mi}{2}\PYG{p}{,}\PYG{l+m+mi}{1}\PYG{p}{,} \PYG{n}{figsize}\PYG{o}{=}\PYG{p}{(}\PYG{l+m+mi}{8}\PYG{p}{,}\PYG{l+m+mi}{6}\PYG{p}{)}\PYG{p}{)}
+\llap{\color{nbsphinxin}[27]:\,\hspace{\fboxrule}\hspace{\fboxsep}}\PYG{n}{fig}\PYG{p}{,} \PYG{n}{axes} \PYG{o}{=} \PYG{n}{plt}\PYG{o}{.}\PYG{n}{subplots}\PYG{p}{(}\PYG{l+m+mi}{2}\PYG{p}{,}\PYG{l+m+mi}{1}\PYG{p}{,} \PYG{n}{figsize}\PYG{o}{=}\PYG{p}{(}\PYG{l+m+mi}{8}\PYG{p}{,}\PYG{l+m+mi}{6}\PYG{p}{)}\PYG{p}{)}
 
 \PYG{n}{plot\PYGZus{}melodic\PYGZus{}profile}\PYG{p}{(}\PYG{n}{notelist}\PYG{p}{(}\PYG{n}{german\PYGZus{}song}\PYG{p}{)}\PYG{p}{,} \PYG{n}{ax}\PYG{o}{=}\PYG{n}{axes}\PYG{p}{[}\PYG{l+m+mi}{0}\PYG{p}{]}\PYG{p}{,} \PYG{n}{mean}\PYG{o}{=}\PYG{k+kc}{True}\PYG{p}{)}
 \PYG{n}{plot\PYGZus{}melodic\PYGZus{}profile}\PYG{p}{(}\PYG{n}{notelist}\PYG{p}{(}\PYG{n}{chinese\PYGZus{}song}\PYG{p}{)}\PYG{p}{,} \PYG{n}{ax}\PYG{o}{=}\PYG{n}{axes}\PYG{p}{[}\PYG{l+m+mi}{1}\PYG{p}{]}\PYG{p}{,} \PYG{n}{c}\PYG{o}{=}\PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{firebrick}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{,} \PYG{n}{mean}\PYG{o}{=}\PYG{k+kc}{True}\PYG{p}{)}
@@ -1152,7 +1150,7 @@ We need to transform them in a way that makes them directly comparable. To that 
 \sphinxsetup{VerbatimColor={named}{nbsphinx-code-bg}}
 \sphinxsetup{VerbatimBorderColor={named}{nbsphinx-code-border}}
 \begin{sphinxVerbatim}[commandchars=\\\{\}]
-\llap{\color{nbsphinxin}[34]:\,\hspace{\fboxrule}\hspace{\fboxsep}}\PYG{k}{def} \PYG{n+nf}{standardize}\PYG{p}{(}\PYG{n}{notelist}\PYG{p}{)}\PYG{p}{:}
+\llap{\color{nbsphinxin}[28]:\,\hspace{\fboxrule}\hspace{\fboxsep}}\PYG{k}{def} \PYG{n+nf}{standardize}\PYG{p}{(}\PYG{n}{notelist}\PYG{p}{)}\PYG{p}{:}
     \PYG{l+s+sd}{\PYGZdq{}\PYGZdq{}\PYGZdq{}}
 \PYG{l+s+sd}{    Takes a notelist as input and returns a standardized version.}
 \PYG{l+s+sd}{    \PYGZdq{}\PYGZdq{}\PYGZdq{}}
@@ -1169,7 +1167,7 @@ We need to transform them in a way that makes them directly comparable. To that 
 \sphinxsetup{VerbatimColor={named}{nbsphinx-code-bg}}
 \sphinxsetup{VerbatimBorderColor={named}{nbsphinx-code-border}}
 \begin{sphinxVerbatim}[commandchars=\\\{\}]
-\llap{\color{nbsphinxin}[35]:\,\hspace{\fboxrule}\hspace{\fboxsep}}\PYG{n}{standardize}\PYG{p}{(}\PYG{n}{notelist}\PYG{p}{(}\PYG{n}{german\PYGZus{}song}\PYG{p}{)}\PYG{p}{)}\PYG{p}{[}\PYG{p}{:}\PYG{l+m+mi}{8}\PYG{p}{]}
+\llap{\color{nbsphinxin}[29]:\,\hspace{\fboxrule}\hspace{\fboxsep}}\PYG{n}{standardize}\PYG{p}{(}\PYG{n}{notelist}\PYG{p}{(}\PYG{n}{german\PYGZus{}song}\PYG{p}{)}\PYG{p}{)}\PYG{p}{[}\PYG{p}{:}\PYG{l+m+mi}{8}\PYG{p}{]}
 \end{sphinxVerbatim}
 }
 
@@ -1182,7 +1180,7 @@ We need to transform them in a way that makes them directly comparable. To that 
 \sphinxsetup{VerbatimColor={named}{white}}
 \sphinxsetup{VerbatimBorderColor={named}{nbsphinx-code-border}}
 \begin{sphinxVerbatim}[commandchars=\\\{\}]
-\llap{\color{nbsphinxout}[35]:\,\hspace{\fboxrule}\hspace{\fboxsep}}   MIDI Pitch  Duration  Onset  Rel. MIDI Pitch  Rel. Duration  Rel. Onset
+\llap{\color{nbsphinxout}[29]:\,\hspace{\fboxrule}\hspace{\fboxsep}}   MIDI Pitch  Duration  Onset  Rel. MIDI Pitch  Rel. Duration  Rel. Onset
 0          62       1.0    1.0        -2.543827       0.016667    0.016667
 1          67       2.0    3.0        -0.949300       0.033333    0.050000
 2          71       2.0    5.0         0.326322       0.033333    0.083333
@@ -1198,7 +1196,7 @@ We need to transform them in a way that makes them directly comparable. To that 
 \sphinxsetup{VerbatimColor={named}{nbsphinx-code-bg}}
 \sphinxsetup{VerbatimBorderColor={named}{nbsphinx-code-border}}
 \begin{sphinxVerbatim}[commandchars=\\\{\}]
-\llap{\color{nbsphinxin}[36]:\,\hspace{\fboxrule}\hspace{\fboxsep}}\PYG{n}{plot\PYGZus{}melodic\PYGZus{}profile}\PYG{p}{(}\PYG{n}{standardize}\PYG{p}{(}\PYG{n}{notelist}\PYG{p}{(}\PYG{n}{german\PYGZus{}song}\PYG{p}{)}\PYG{p}{)}\PYG{p}{,} \PYG{n}{mean}\PYG{o}{=}\PYG{k+kc}{True}\PYG{p}{,} \PYG{n}{sections}\PYG{o}{=}\PYG{k+kc}{True}\PYG{p}{,} \PYG{n}{standardized}\PYG{o}{=}\PYG{k+kc}{True}\PYG{p}{)}
+\llap{\color{nbsphinxin}[30]:\,\hspace{\fboxrule}\hspace{\fboxsep}}\PYG{n}{plot\PYGZus{}melodic\PYGZus{}profile}\PYG{p}{(}\PYG{n}{standardize}\PYG{p}{(}\PYG{n}{notelist}\PYG{p}{(}\PYG{n}{german\PYGZus{}song}\PYG{p}{)}\PYG{p}{)}\PYG{p}{,} \PYG{n}{mean}\PYG{o}{=}\PYG{k+kc}{True}\PYG{p}{,} \PYG{n}{sections}\PYG{o}{=}\PYG{k+kc}{True}\PYG{p}{,} \PYG{n}{standardized}\PYG{o}{=}\PYG{k+kc}{True}\PYG{p}{)}
 \PYG{n}{plot\PYGZus{}melodic\PYGZus{}profile}\PYG{p}{(}\PYG{n}{standardize}\PYG{p}{(}\PYG{n}{notelist}\PYG{p}{(}\PYG{n}{chinese\PYGZus{}song}\PYG{p}{)}\PYG{p}{)}\PYG{p}{,} \PYG{n}{c}\PYG{o}{=}\PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{firebrick}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{,} \PYG{n}{standardized}\PYG{o}{=}\PYG{k+kc}{True}\PYG{p}{)}
 \end{sphinxVerbatim}
 }
@@ -1222,7 +1220,7 @@ However, already with two pieces this plot is quite crowded.
 \sphinxsetup{VerbatimColor={named}{nbsphinx-code-bg}}
 \sphinxsetup{VerbatimBorderColor={named}{nbsphinx-code-border}}
 \begin{sphinxVerbatim}[commandchars=\\\{\}]
-\llap{\color{nbsphinxin}[37]:\,\hspace{\fboxrule}\hspace{\fboxsep}}\PYG{n}{dfs} \PYG{o}{=} \PYG{p}{[}\PYG{p}{]}
+\llap{\color{nbsphinxin}[31]:\,\hspace{\fboxrule}\hspace{\fboxsep}}\PYG{n}{dfs} \PYG{o}{=} \PYG{p}{[} \PYG{p}{]}
 
 \PYG{k}{for} \PYG{n}{i}\PYG{p}{,} \PYG{n}{song} \PYG{o+ow}{in} \PYG{n+nb}{enumerate}\PYG{p}{(}\PYG{n}{songs}\PYG{p}{)}\PYG{p}{:}
     \PYG{n}{df} \PYG{o}{=} \PYG{n}{standardize}\PYG{p}{(}\PYG{n}{notelist}\PYG{p}{(}\PYG{n}{song}\PYG{p}{)}\PYG{p}{)}
@@ -1237,7 +1235,7 @@ However, already with two pieces this plot is quite crowded.
 \sphinxsetup{VerbatimColor={named}{nbsphinx-code-bg}}
 \sphinxsetup{VerbatimBorderColor={named}{nbsphinx-code-border}}
 \begin{sphinxVerbatim}[commandchars=\\\{\}]
-\llap{\color{nbsphinxin}[38]:\,\hspace{\fboxrule}\hspace{\fboxsep}}\PYG{n}{big\PYGZus{}df}
+\llap{\color{nbsphinxin}[53]:\,\hspace{\fboxrule}\hspace{\fboxsep}}\PYG{n}{big\PYGZus{}df}
 \end{sphinxVerbatim}
 }
 
@@ -1250,7 +1248,7 @@ However, already with two pieces this plot is quite crowded.
 \sphinxsetup{VerbatimColor={named}{white}}
 \sphinxsetup{VerbatimBorderColor={named}{nbsphinx-code-border}}
 \begin{sphinxVerbatim}[commandchars=\\\{\}]
-\llap{\color{nbsphinxout}[38]:\,\hspace{\fboxrule}\hspace{\fboxsep}}        MIDI Pitch  Duration  Onset  Rel. MIDI Pitch  Rel. Duration  \textbackslash{}
+\llap{\color{nbsphinxout}[53]:\,\hspace{\fboxrule}\hspace{\fboxsep}}        MIDI Pitch  Duration  Onset  Rel. MIDI Pitch  Rel. Duration  \textbackslash{}
 0               67      2.00   2.00        -1.819039       0.013158
 1               70      2.00   4.00        -0.741977       0.013158
 2               71      2.00   6.00        -0.382956       0.013158
@@ -1263,20 +1261,20 @@ However, already with two pieces this plot is quite crowded.
 450594          71      1.00  30.00         0.691456       0.032787
 450595          69      0.50  30.50         0.098779       0.016393
 
-        Rel. Onset  Song ID
-0         0.013158        0
-1         0.026316        0
-2         0.039474        0
-3         0.052632        0
-4         0.065789        0
-{\ldots}            {\ldots}      {\ldots}
-450591    0.934426     8513
-450592    0.942623     8513
-450593    0.950820     8513
-450594    0.983607     8513
-450595    1.000000     8513
+        Rel. Onset  Song ID  Avg. MIDI Pitch  shifted\_pitch
+0         0.013158        0               72             -5
+1         0.026316        0               72             -2
+2         0.039474        0               72             -1
+3         0.052632        0               72              0
+4         0.065789        0               72              0
+{\ldots}            {\ldots}      {\ldots}              {\ldots}            {\ldots}
+450591    0.934426     8513               68              3
+450592    0.942623     8513               68              1
+450593    0.950820     8513               68              5
+450594    0.983607     8513               68              3
+450595    1.000000     8513               68              1
 
-[450596 rows x 7 columns]
+[450596 rows x 9 columns]
 \end{sphinxVerbatim}
 }
 
@@ -1284,7 +1282,7 @@ However, already with two pieces this plot is quite crowded.
 \sphinxsetup{VerbatimColor={named}{nbsphinx-code-bg}}
 \sphinxsetup{VerbatimBorderColor={named}{nbsphinx-code-border}}
 \begin{sphinxVerbatim}[commandchars=\\\{\}]
-\llap{\color{nbsphinxin}[39]:\,\hspace{\fboxrule}\hspace{\fboxsep}}\PYG{n}{big\PYGZus{}df}\PYG{o}{.}\PYG{n}{to\PYGZus{}csv}\PYG{p}{(}\PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{data/big\PYGZus{}df.csv}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{)}
+\llap{\color{nbsphinxin}[63]:\,\hspace{\fboxrule}\hspace{\fboxsep}}\PYG{n}{big\PYGZus{}df}\PYG{o}{.}\PYG{n}{to\PYGZus{}csv}\PYG{p}{(}\PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{data/big\PYGZus{}df.csv}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{)} \PYG{c+c1}{\PYGZsh{} comma\PYGZhy{}separated values}
 \end{sphinxVerbatim}
 }
 
@@ -1292,42 +1290,7 @@ However, already with two pieces this plot is quite crowded.
 \sphinxsetup{VerbatimColor={named}{nbsphinx-code-bg}}
 \sphinxsetup{VerbatimBorderColor={named}{nbsphinx-code-border}}
 \begin{sphinxVerbatim}[commandchars=\\\{\}]
-\llap{\color{nbsphinxin}[40]:\,\hspace{\fboxrule}\hspace{\fboxsep}}\PYG{n}{big\PYGZus{}df}\PYG{o}{.}\PYG{n}{sample}\PYG{p}{(}\PYG{l+m+mi}{10}\PYG{p}{)}
-\end{sphinxVerbatim}
-}
-
-{
-
-\kern-\sphinxverbatimsmallskipamount\kern-\baselineskip
-\kern+\FrameHeightAdjust\kern-\fboxrule
-\vspace{\nbsphinxcodecellspacing}
-
-\sphinxsetup{VerbatimColor={named}{white}}
-\sphinxsetup{VerbatimBorderColor={named}{nbsphinx-code-border}}
-\begin{sphinxVerbatim}[commandchars=\\\{\}]
-\llap{\color{nbsphinxout}[40]:\,\hspace{\fboxrule}\hspace{\fboxsep}}        MIDI Pitch  Duration  Onset  Rel. MIDI Pitch  Rel. Duration  \textbackslash{}
-359288          67      1.00  28.00        -0.583532       0.020833
-182773          67      0.50   1.00        -0.485583       0.012987
-271324          69      0.25  19.00        -0.058631       0.010417
-99448           62      0.75   1.25        -1.352735       0.018750
-423838          74      1.00  25.00         2.104515       0.012821
-265098          73      0.50  61.50         0.120664       0.003115
-449173          71      0.50  66.50         0.731803       0.006757
-230007          67      0.50  14.50        -1.089903       0.013514
-198109          70      0.50  14.00         0.097330       0.031250
-194711          66      0.50   5.50        -0.659489       0.008475
-
-        Rel. Onset  Song ID
-359288    0.583333     6758
-182773    0.025974     3932
-271324    0.791667     5414
-99448     0.031250     2215
-423838    0.320513     8015
-265098    0.383178     5340
-449173    0.898649     8484
-230007    0.391892     4829
-198109    0.875000     4213
-194711    0.093220     4146
+\llap{\color{nbsphinxin}[66]:\,\hspace{\fboxrule}\hspace{\fboxsep}}\PYG{n}{big\PYGZus{}df} \PYG{o}{=} \PYG{n}{pd}\PYG{o}{.}\PYG{n}{read\PYGZus{}csv}\PYG{p}{(}\PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{data/big\PYGZus{}df.csv}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{)}
 \end{sphinxVerbatim}
 }
 
@@ -1338,7 +1301,7 @@ However, already with two pieces this plot is quite crowded.
 \sphinxsetup{VerbatimColor={named}{nbsphinx-code-bg}}
 \sphinxsetup{VerbatimBorderColor={named}{nbsphinx-code-border}}
 \begin{sphinxVerbatim}[commandchars=\\\{\}]
-\llap{\color{nbsphinxin}[61]:\,\hspace{\fboxrule}\hspace{\fboxsep}}\PYG{o}{\PYGZpc{}\PYGZpc{}time}
+\llap{\color{nbsphinxin}[35]:\,\hspace{\fboxrule}\hspace{\fboxsep}}\PYG{o}{\PYGZpc{}\PYGZpc{}time}
 
 \PYG{n}{fig}\PYG{p}{,} \PYG{n}{ax} \PYG{o}{=} \PYG{n}{plt}\PYG{o}{.}\PYG{n}{subplots}\PYG{p}{(}\PYG{n}{figsize}\PYG{o}{=}\PYG{p}{(}\PYG{l+m+mi}{12}\PYG{p}{,}\PYG{l+m+mi}{8}\PYG{p}{)}\PYG{p}{)}
 
@@ -1357,7 +1320,7 @@ However, already with two pieces this plot is quite crowded.
 \PYG{n}{lowess} \PYG{o}{=} \PYG{n}{sm}\PYG{o}{.}\PYG{n}{nonparametric}\PYG{o}{.}\PYG{n}{lowess}
 \PYG{n}{big\PYGZus{}x} \PYG{o}{=} \PYG{n}{big\PYGZus{}df}\PYG{p}{[}\PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{Rel. Onset}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{]}
 \PYG{n}{big\PYGZus{}y} \PYG{o}{=} \PYG{n}{big\PYGZus{}df}\PYG{p}{[}\PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{Rel. MIDI Pitch}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{]}
-\PYG{n}{big\PYGZus{}z} \PYG{o}{=} \PYG{n}{lowess}\PYG{p}{(}\PYG{n}{big\PYGZus{}y}\PYG{p}{,} \PYG{n}{big\PYGZus{}x}\PYG{p}{,} \PYG{n}{frac}\PYG{o}{=}\PYG{l+m+mi}{5}\PYG{o}{/}\PYG{l+m+mi}{100}\PYG{p}{,} \PYG{n}{delta}\PYG{o}{=}\PYG{l+m+mi}{1}\PYG{o}{/}\PYG{l+m+mi}{20}\PYG{p}{)}
+\PYG{n}{big\PYGZus{}z} \PYG{o}{=} \PYG{n}{lowess}\PYG{p}{(}\PYG{n}{big\PYGZus{}y}\PYG{p}{,} \PYG{n}{big\PYGZus{}x}\PYG{p}{,} \PYG{n}{frac}\PYG{o}{=}\PYG{l+m+mi}{5}\PYG{o}{/}\PYG{l+m+mi}{100}\PYG{p}{,} \PYG{n}{delta}\PYG{o}{=}\PYG{l+m+mi}{1}\PYG{o}{/}\PYG{l+m+mi}{20}\PYG{p}{)} \PYG{c+c1}{\PYGZsh{} Locally\PYGZhy{}Weighted Scatterplot Smoothing}
 \PYG{n}{ax}\PYG{o}{.}\PYG{n}{plot}\PYG{p}{(}\PYG{n}{big\PYGZus{}z}\PYG{p}{[}\PYG{p}{:}\PYG{p}{,}\PYG{l+m+mi}{0}\PYG{p}{]}\PYG{p}{,} \PYG{n}{big\PYGZus{}z}\PYG{p}{[}\PYG{p}{:}\PYG{p}{,}\PYG{l+m+mi}{1}\PYG{p}{]}\PYG{p}{,} \PYG{n}{c}\PYG{o}{=}\PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{black}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{,} \PYG{n}{lw}\PYG{o}{=}\PYG{l+m+mi}{3}\PYG{p}{)}
 
 \PYG{n}{plt}\PYG{o}{.}\PYG{n}{title}\PYG{p}{(}\PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{Melodic arc}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{)}
@@ -1393,7 +1356,7 @@ However, already with two pieces this plot is quite crowded.
 \sphinxsetup{VerbatimColor={named}{white}}
 \sphinxsetup{VerbatimBorderColor={named}{nbsphinx-code-border}}
 \begin{sphinxVerbatim}[commandchars=\\\{\}]
-Wall time: 21.2 s
+Wall time: 24.1 s
 \end{sphinxVerbatim}
 }
 
@@ -1408,7 +1371,7 @@ Let’s come back to the song \sphinxstyleemphasis{Die plappernden Junggesellen}
 \sphinxsetup{VerbatimColor={named}{nbsphinx-code-bg}}
 \sphinxsetup{VerbatimBorderColor={named}{nbsphinx-code-border}}
 \begin{sphinxVerbatim}[commandchars=\\\{\}]
-\llap{\color{nbsphinxin}[42]:\,\hspace{\fboxrule}\hspace{\fboxsep}}\PYG{n}{german\PYGZus{}song}\PYG{o}{.}\PYG{n}{show}\PYG{p}{(}\PYG{p}{)}
+\llap{\color{nbsphinxin}[36]:\,\hspace{\fboxrule}\hspace{\fboxsep}}\PYG{n}{german\PYGZus{}song}\PYG{o}{.}\PYG{n}{show}\PYG{p}{(}\PYG{p}{)}
 \end{sphinxVerbatim}
 }
 
@@ -1429,7 +1392,7 @@ We have already extracted its notes and stored them in a DataFrame:
 \sphinxsetup{VerbatimColor={named}{nbsphinx-code-bg}}
 \sphinxsetup{VerbatimBorderColor={named}{nbsphinx-code-border}}
 \begin{sphinxVerbatim}[commandchars=\\\{\}]
-\llap{\color{nbsphinxin}[43]:\,\hspace{\fboxrule}\hspace{\fboxsep}}\PYG{n}{big\PYGZus{}df}\PYG{p}{[}\PYG{n}{big\PYGZus{}df}\PYG{p}{[}\PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{Song ID}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{]} \PYG{o}{==} \PYG{l+m+mi}{70}\PYG{p}{]}\PYG{o}{.}\PYG{n}{head}\PYG{p}{(}\PYG{l+m+mi}{8}\PYG{p}{)}
+\llap{\color{nbsphinxin}[69]:\,\hspace{\fboxrule}\hspace{\fboxsep}}\PYG{n}{big\PYGZus{}df}\PYG{p}{[} \PYG{n}{big\PYGZus{}df}\PYG{p}{[}\PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{Song ID}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{]} \PYG{o}{==} \PYG{l+m+mi}{70}\PYG{p}{]}\PYG{o}{.}\PYG{n}{head}\PYG{p}{(}\PYG{l+m+mi}{8}\PYG{p}{)}
 \end{sphinxVerbatim}
 }
 
@@ -1442,25 +1405,25 @@ We have already extracted its notes and stored them in a DataFrame:
 \sphinxsetup{VerbatimColor={named}{white}}
 \sphinxsetup{VerbatimBorderColor={named}{nbsphinx-code-border}}
 \begin{sphinxVerbatim}[commandchars=\\\{\}]
-\llap{\color{nbsphinxout}[43]:\,\hspace{\fboxrule}\hspace{\fboxsep}}      MIDI Pitch  Duration  Onset  Rel. MIDI Pitch  Rel. Duration  Rel. Onset  \textbackslash{}
-2969          62       1.0    1.0        -2.543827       0.016667    0.016667
-2970          67       2.0    3.0        -0.949300       0.033333    0.050000
-2971          71       2.0    5.0         0.326322       0.033333    0.083333
-2972          74       3.0    8.0         1.283038       0.050000    0.133333
-2973          72       1.0    9.0         0.645227       0.016667    0.150000
-2974          71       2.0   11.0         0.326322       0.033333    0.183333
-2975          69       2.0   13.0        -0.311489       0.033333    0.216667
-2976          67       2.0   15.0        -0.949300       0.033333    0.250000
+\llap{\color{nbsphinxout}[69]:\,\hspace{\fboxrule}\hspace{\fboxsep}}      Unnamed: 0  Unnamed: 0.1  MIDI Pitch  Duration  Onset  Rel. MIDI Pitch  \textbackslash{}
+2969        2969          2969          62       1.0    1.0        -2.543827
+2970        2970          2970          67       2.0    3.0        -0.949300
+2971        2971          2971          71       2.0    5.0         0.326322
+2972        2972          2972          74       3.0    8.0         1.283038
+2973        2973          2973          72       1.0    9.0         0.645227
+2974        2974          2974          71       2.0   11.0         0.326322
+2975        2975          2975          69       2.0   13.0        -0.311489
+2976        2976          2976          67       2.0   15.0        -0.949300
 
-      Song ID
-2969       70
-2970       70
-2971       70
-2972       70
-2973       70
-2974       70
-2975       70
-2976       70
+      Rel. Duration  Rel. Onset  Song ID
+2969       0.016667    0.016667       70
+2970       0.033333    0.050000       70
+2971       0.033333    0.083333       70
+2972       0.050000    0.133333       70
+2973       0.016667    0.150000       70
+2974       0.033333    0.183333       70
+2975       0.033333    0.216667       70
+2976       0.033333    0.250000       70
 \end{sphinxVerbatim}
 }
 
@@ -1497,7 +1460,7 @@ The sequence of intervals in this phrase is thus \sphinxcode{\sphinxupquote{{[}+
 \sphinxsetup{VerbatimColor={named}{nbsphinx-code-bg}}
 \sphinxsetup{VerbatimBorderColor={named}{nbsphinx-code-border}}
 \begin{sphinxVerbatim}[commandchars=\\\{\}]
-\llap{\color{nbsphinxin}[44]:\,\hspace{\fboxrule}\hspace{\fboxsep}}\PYG{n}{all\PYGZus{}ints} \PYG{o}{=} \PYG{p}{[} \PYG{n}{p2} \PYG{o}{\PYGZhy{}} \PYG{n}{p1} \PYG{k}{for} \PYG{n}{i}\PYG{p}{,} \PYG{n}{g} \PYG{o+ow}{in} \PYG{n}{big\PYGZus{}df}\PYG{o}{.}\PYG{n}{groupby}\PYG{p}{(}\PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{Song ID}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{)} \PYG{k}{for} \PYG{n}{p1}\PYG{p}{,} \PYG{n}{p2} \PYG{o+ow}{in} \PYG{n+nb}{zip}\PYG{p}{(}\PYG{n}{g}\PYG{p}{[}\PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{MIDI Pitch}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{]}\PYG{p}{,} \PYG{n}{g}\PYG{p}{[}\PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{MIDI Pitch}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{]}\PYG{p}{[}\PYG{l+m+mi}{1}\PYG{p}{:}\PYG{p}{]}\PYG{p}{)} \PYG{p}{]}
+\llap{\color{nbsphinxin}[38]:\,\hspace{\fboxrule}\hspace{\fboxsep}}\PYG{n}{all\PYGZus{}ints} \PYG{o}{=} \PYG{p}{[} \PYG{n}{p2} \PYG{o}{\PYGZhy{}} \PYG{n}{p1} \PYG{k}{for} \PYG{n}{i}\PYG{p}{,} \PYG{n}{g} \PYG{o+ow}{in} \PYG{n}{big\PYGZus{}df}\PYG{o}{.}\PYG{n}{groupby}\PYG{p}{(}\PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{Song ID}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{)} \PYG{k}{for} \PYG{n}{p1}\PYG{p}{,} \PYG{n}{p2} \PYG{o+ow}{in} \PYG{n+nb}{zip}\PYG{p}{(}\PYG{n}{g}\PYG{p}{[}\PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{MIDI Pitch}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{]}\PYG{p}{,} \PYG{n}{g}\PYG{p}{[}\PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{MIDI Pitch}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{]}\PYG{p}{[}\PYG{l+m+mi}{1}\PYG{p}{:}\PYG{p}{]}\PYG{p}{)} \PYG{p}{]}
 \PYG{n}{min\PYGZus{}int} \PYG{o}{=} \PYG{n+nb}{min}\PYG{p}{(}\PYG{n}{all\PYGZus{}ints}\PYG{p}{)}
 \PYG{n}{max\PYGZus{}int} \PYG{o}{=} \PYG{n+nb}{max}\PYG{p}{(}\PYG{n}{all\PYGZus{}ints}\PYG{p}{)}
 \end{sphinxVerbatim}
@@ -1507,7 +1470,7 @@ The sequence of intervals in this phrase is thus \sphinxcode{\sphinxupquote{{[}+
 \sphinxsetup{VerbatimColor={named}{nbsphinx-code-bg}}
 \sphinxsetup{VerbatimBorderColor={named}{nbsphinx-code-border}}
 \begin{sphinxVerbatim}[commandchars=\\\{\}]
-\llap{\color{nbsphinxin}[45]:\,\hspace{\fboxrule}\hspace{\fboxsep}}\PYG{n}{min\PYGZus{}int}\PYG{p}{,} \PYG{n}{max\PYGZus{}int}
+\llap{\color{nbsphinxin}[39]:\,\hspace{\fboxrule}\hspace{\fboxsep}}\PYG{n}{min\PYGZus{}int}\PYG{p}{,} \PYG{n}{max\PYGZus{}int}
 \end{sphinxVerbatim}
 }
 
@@ -1520,7 +1483,7 @@ The sequence of intervals in this phrase is thus \sphinxcode{\sphinxupquote{{[}+
 \sphinxsetup{VerbatimColor={named}{white}}
 \sphinxsetup{VerbatimBorderColor={named}{nbsphinx-code-border}}
 \begin{sphinxVerbatim}[commandchars=\\\{\}]
-\llap{\color{nbsphinxout}[45]:\,\hspace{\fboxrule}\hspace{\fboxsep}}(-25, 25)
+\llap{\color{nbsphinxout}[39]:\,\hspace{\fboxrule}\hspace{\fboxsep}}(-25, 25)
 \end{sphinxVerbatim}
 }
 
@@ -1528,7 +1491,7 @@ The sequence of intervals in this phrase is thus \sphinxcode{\sphinxupquote{{[}+
 \sphinxsetup{VerbatimColor={named}{nbsphinx-code-bg}}
 \sphinxsetup{VerbatimBorderColor={named}{nbsphinx-code-border}}
 \begin{sphinxVerbatim}[commandchars=\\\{\}]
-\llap{\color{nbsphinxin}[46]:\,\hspace{\fboxrule}\hspace{\fboxsep}}\PYG{n+nb}{len}\PYG{p}{(}\PYG{n}{all\PYGZus{}ints}\PYG{p}{)}
+\llap{\color{nbsphinxin}[40]:\,\hspace{\fboxrule}\hspace{\fboxsep}}\PYG{n+nb}{len}\PYG{p}{(}\PYG{n}{all\PYGZus{}ints}\PYG{p}{)}
 \end{sphinxVerbatim}
 }
 
@@ -1541,7 +1504,7 @@ The sequence of intervals in this phrase is thus \sphinxcode{\sphinxupquote{{[}+
 \sphinxsetup{VerbatimColor={named}{white}}
 \sphinxsetup{VerbatimBorderColor={named}{nbsphinx-code-border}}
 \begin{sphinxVerbatim}[commandchars=\\\{\}]
-\llap{\color{nbsphinxout}[46]:\,\hspace{\fboxrule}\hspace{\fboxsep}}442082
+\llap{\color{nbsphinxout}[40]:\,\hspace{\fboxrule}\hspace{\fboxsep}}442082
 \end{sphinxVerbatim}
 }
 
@@ -1549,7 +1512,7 @@ The sequence of intervals in this phrase is thus \sphinxcode{\sphinxupquote{{[}+
 \sphinxsetup{VerbatimColor={named}{nbsphinx-code-bg}}
 \sphinxsetup{VerbatimBorderColor={named}{nbsphinx-code-border}}
 \begin{sphinxVerbatim}[commandchars=\\\{\}]
-\llap{\color{nbsphinxin}[47]:\,\hspace{\fboxrule}\hspace{\fboxsep}}\PYG{n}{ints\PYGZus{}df} \PYG{o}{=} \PYG{n}{pd}\PYG{o}{.}\PYG{n}{DataFrame}\PYG{p}{(}\PYG{l+m+mi}{0}\PYG{p}{,} \PYG{n}{index}\PYG{o}{=}\PYG{n}{np}\PYG{o}{.}\PYG{n}{arange}\PYG{p}{(}\PYG{n}{min\PYGZus{}int}\PYG{p}{,}\PYG{n}{max\PYGZus{}int}\PYG{p}{)}\PYG{p}{,} \PYG{n}{columns}\PYG{o}{=}\PYG{n}{np}\PYG{o}{.}\PYG{n}{arange}\PYG{p}{(}\PYG{n}{min\PYGZus{}int}\PYG{p}{,}\PYG{n}{max\PYGZus{}int}\PYG{o}{+}\PYG{l+m+mi}{1}\PYG{p}{)}\PYG{p}{)}
+\llap{\color{nbsphinxin}[41]:\,\hspace{\fboxrule}\hspace{\fboxsep}}\PYG{n}{ints\PYGZus{}df} \PYG{o}{=} \PYG{n}{pd}\PYG{o}{.}\PYG{n}{DataFrame}\PYG{p}{(}\PYG{l+m+mi}{0}\PYG{p}{,} \PYG{n}{index}\PYG{o}{=}\PYG{n}{np}\PYG{o}{.}\PYG{n}{arange}\PYG{p}{(}\PYG{n}{min\PYGZus{}int}\PYG{p}{,}\PYG{n}{max\PYGZus{}int}\PYG{p}{)}\PYG{p}{,} \PYG{n}{columns}\PYG{o}{=}\PYG{n}{np}\PYG{o}{.}\PYG{n}{arange}\PYG{p}{(}\PYG{n}{min\PYGZus{}int}\PYG{p}{,}\PYG{n}{max\PYGZus{}int}\PYG{o}{+}\PYG{l+m+mi}{1}\PYG{p}{)}\PYG{p}{)}
 
 \PYG{k}{for} \PYG{n}{i}\PYG{p}{,} \PYG{n}{g} \PYG{o+ow}{in} \PYG{n}{big\PYGZus{}df}\PYG{o}{.}\PYG{n}{groupby}\PYG{p}{(}\PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{Song ID}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{)}\PYG{p}{:}
     \PYG{n}{intervals} \PYG{o}{=} \PYG{p}{[} \PYG{n}{p2} \PYG{o}{\PYGZhy{}} \PYG{n}{p1} \PYG{k}{for} \PYG{n}{p1}\PYG{p}{,} \PYG{n}{p2} \PYG{o+ow}{in} \PYG{n+nb}{zip}\PYG{p}{(}\PYG{n}{g}\PYG{p}{[}\PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{MIDI Pitch}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{]}\PYG{p}{,} \PYG{n}{g}\PYG{p}{[}\PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{MIDI Pitch}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{]}\PYG{p}{[}\PYG{l+m+mi}{1}\PYG{p}{:}\PYG{p}{]}\PYG{p}{)}\PYG{p}{]}
@@ -1563,7 +1526,7 @@ The sequence of intervals in this phrase is thus \sphinxcode{\sphinxupquote{{[}+
 \sphinxsetup{VerbatimColor={named}{nbsphinx-code-bg}}
 \sphinxsetup{VerbatimBorderColor={named}{nbsphinx-code-border}}
 \begin{sphinxVerbatim}[commandchars=\\\{\}]
-\llap{\color{nbsphinxin}[48]:\,\hspace{\fboxrule}\hspace{\fboxsep}}\PYG{n}{ints\PYGZus{}df}
+\llap{\color{nbsphinxin}[73]:\,\hspace{\fboxrule}\hspace{\fboxsep}}\PYG{n}{ints\PYGZus{}df}\PYG{o}{.}\PYG{n}{loc}\PYG{p}{[}\PYG{o}{\PYGZhy{}}\PYG{l+m+mi}{10}\PYG{p}{:}\PYG{l+m+mi}{10}\PYG{p}{,} \PYG{o}{\PYGZhy{}}\PYG{l+m+mi}{10}\PYG{p}{:}\PYG{l+m+mi}{10}\PYG{p}{]}
 \end{sphinxVerbatim}
 }
 
@@ -1576,111 +1539,53 @@ The sequence of intervals in this phrase is thus \sphinxcode{\sphinxupquote{{[}+
 \sphinxsetup{VerbatimColor={named}{white}}
 \sphinxsetup{VerbatimBorderColor={named}{nbsphinx-code-border}}
 \begin{sphinxVerbatim}[commandchars=\\\{\}]
-\llap{\color{nbsphinxout}[48]:\,\hspace{\fboxrule}\hspace{\fboxsep}}     -25  -24  -23  -22  -21  -20  -19  -18  -17  -16  {\ldots}   16   17   18  \textbackslash{}
--25    0    0    0    0    0    0    0    0    0    0  {\ldots}    0    0    0
--24    0    0    0    0    0    0    0    0    0    0  {\ldots}    0    0    0
--23    0    0    0    0    0    0    0    0    0    0  {\ldots}    0    0    0
--22    0    0    0    0    0    0    0    0    0    0  {\ldots}    0    0    0
--21    0    0    0    0    0    0    0    0    0    0  {\ldots}    0    0    0
--20    0    0    0    0    0    0    0    0    0    0  {\ldots}    0    0    0
--19    0    0    0    0    0    0    0    0    0    0  {\ldots}    3    0    0
--18    0    0    0    0    0    0    0    0    0    0  {\ldots}    0    0    0
--17    0    0    0    0    0    0    0    0    0    0  {\ldots}    0    0    0
--16    0    0    0    0    0    0    0    0    0    0  {\ldots}    4    0    0
--15    0    0    0    0    0    0    0    0    0    0  {\ldots}    0    0    0
--14    0    0    0    0    0    0    0    0    0    0  {\ldots}    0    1    0
--13    0    0    0    0    0    0    0    0    0    0  {\ldots}    0    0    0
--12    0    0    0    0    0    0    0    0    0    0  {\ldots}   13    2    0
--11    0    0    0    0    0    0    0    0    0    0  {\ldots}    0    0    0
--10    0    0    0    0    0    0    0    0    0    0  {\ldots}    0    0    0
--9     0    0    0    0    0    0    0    0    0    0  {\ldots}    0    0    0
--8     0    0    0    0    0    0    0    0    0    0  {\ldots}    0    0    0
--7     0    0    0    0    0    0    0    0    0    0  {\ldots}    5    0    0
--6     0    0    0    0    0    0    0    0    0    0  {\ldots}    0    0    0
--5     0    0    0    0    0    0    0    0    0    0  {\ldots}    0    4    0
--4     0    0    0    0    0    0    0    0    0    0  {\ldots}    7    0    0
--3     0    0    0    0    0    0    0    0    0    0  {\ldots}    1    4    0
--2     0    0    0    0    0    0    0    0    1    0  {\ldots}   11   13    0
--1     0    0    0    0    0    0    0    0    0    0  {\ldots}    0    0    0
- 0     1    0    0    0    0    0   13    0    4    0  {\ldots}    4    4    0
- 1     0    0    0    0    0    0    0    0    4    0  {\ldots}    0    0    0
- 2     0    0    0    0    4    0    0    0    0    6  {\ldots}    0    2    0
- 3     0    0    0    0    0    0    4    0    0    0  {\ldots}    0    2    0
- 4     0    0    0    0    1    0    0    0    0    2  {\ldots}    0    0    0
- 5     0    0    0    0    0    0    0    0    0    1  {\ldots}    0    1    0
- 6     0    0    0    0    0    0    0    0    0    0  {\ldots}    0    0    0
- 7     0    0    0    0    0    0    0    0    0    1  {\ldots}    0    0    0
- 8     0    0    0    0    0    0    0    0    0    0  {\ldots}    0    0    0
- 9     0    0    0    0    0    0    0    0    0    0  {\ldots}    0    0    0
- 10    0    0    0    0    0    0    0    0    0    0  {\ldots}    0    0    0
- 11    0    0    0    0    0    0    0    0    0    1  {\ldots}    0    0    0
- 12    0    0    0    0    0    0    0    0    0    0  {\ldots}    0    0    0
- 13    0    0    0    0    0    0    0    0    0    0  {\ldots}    0    0    0
- 14    0    0    0    0    0    0    0    0    0    0  {\ldots}    0    0    0
- 15    0    0    0    0    0    0    0    0    1    0  {\ldots}    0    0    0
- 16    0    0    0    0    0    0    0    0    0    0  {\ldots}    0    0    0
- 17    0    0    0    0    0    0    0    0    0    0  {\ldots}    0    0    0
- 18    0    0    0    0    0    0    0    0    0    0  {\ldots}    0    0    0
- 19    0    0    0    0    0    0    0    0    0    0  {\ldots}    0    0    0
- 20    0    0    0    0    0    0    0    0    0    0  {\ldots}    0    0    0
- 21    0    0    0    0    0    0    0    0    0    0  {\ldots}    0    0    0
- 22    0    0    0    0    0    0    0    0    0    0  {\ldots}    0    0    0
- 23    0    0    0    0    0    0    0    0    0    0  {\ldots}    0    0    0
- 24    0    0    0    0    0    0    0    0    0    0  {\ldots}    0    0    0
+\llap{\color{nbsphinxout}[73]:\,\hspace{\fboxrule}\hspace{\fboxsep}}     -10  -9   -8    -7   -6    -5    -4    -3     -2     -1   {\ldots}    1   \textbackslash{}
+-10    0    0    0     0    0     2     3     2     34      0  {\ldots}    16
+-9     0    0    0     6    0     3     0    39     10     31  {\ldots}     5
+-8     0    1    0     1    0     0    19     0    319      5  {\ldots}   302
+-7     0    0    2    14    0    37     2    91     96    103  {\ldots}    17
+-6     0    0    0     0    0     0    12    11      8     21  {\ldots}   274
+-5     1    0    1    49    0    75    32   866   1361     25  {\ldots}   230
+-4     3    0   27    11    5   461    18   692    167   1099  {\ldots}   129
+-3     1   91    0   192    2   215  2490   416   9478    134  {\ldots}  2547
+-2    67   14  260   858  132  1964   113  8871  21285  13896  {\ldots}   454
+-1     5  174    4    68   47    32  1679    91  13445    205  {\ldots}  5410
+ 0   186  130  310  1022   80  2270  1440  5506  16887   4603  {\ldots}  2578
+ 1    55    6  174    43  110   944   165  2564    501   3765  {\ldots}   747
+ 2   138  294   29  1288   15  1361  3754  2562  15795    254  {\ldots}  8404
+ 3   272   23  373   655  122  1755    24  5509   3397   2400  {\ldots}   295
+ 4     5  164    3   130   11    51  1026    64   4217     60  {\ldots}  1133
+ 5   116   23  505   330   13  1996    82  2375   2834   1868  {\ldots}   102
+ 6     2    4    1     4   23     1    14    18     44     34  {\ldots}    42
+ 7    31   18   11   273    3   167   128   665   1338     59  {\ldots}   119
+ 8    47    1   88     7   19   149     4   370     33    384  {\ldots}    23
+ 9     1   61    1    20    3    20   442    18   1024      4  {\ldots}   122
+ 10  267    0   56    23   28    58     0   517    163    295  {\ldots}     3
 
-      19   20   21   22   23   24   25
--25    0    0    0    0    0    0    0
--24    0    0    0    0    0    0    0
--23    0    0    0    0    0    0    0
--22    0    0    0    0    0    0    0
--21    0    0    4    0    0    0    0
--20    0    0    0    0    0    0    0
--19   10    0    0    0    0    0    0
--18    0    0    0    0    0    0    0
--17    0    0    0    0    0    0    0
--16    0    0    0    0    0    0    0
--15    0    0    0    0    0    0    0
--14    0    0    0    0    0    0    0
--13    0    0    0    0    0    0    0
--12    1    0    0    0    0    0    0
--11    0    0    0    0    0    0    0
--10    0    0    0    2    0    0    0
--9     0    0    0    0    0    0    0
--8     0    0    0    0    0    0    0
--7     5    4    1    1    0    0    0
--6     0    0    0    0    0    0    0
--5     5    0    0    0    0    0    0
--4     0    0    0    0    0    0    0
--3     1    0    0    0    0    0    1
--2     1    0    1    1    0    1    0
--1     0    0    0    0    0    0    0
- 0     0    0    1    0    0    0    0
- 1     0    0    0    0    0    0    0
- 2     0    0    0    0    0    0    0
- 3     0    0    0    0    0    0    0
- 4     0    0    0    0    0    0    0
- 5     0    0    0    0    0    0    0
- 6     0    0    0    0    0    0    0
- 7     0    0    0    0    0    0    0
- 8     0    0    0    0    0    0    0
- 9     0    0    0    0    0    0    0
- 10    0    0    0    0    0    0    0
- 11    0    0    0    0    0    0    0
- 12    0    0    0    0    0    0    0
- 13    0    0    0    0    0    0    0
- 14    0    0    0    0    0    0    0
- 15    0    0    0    0    0    0    0
- 16    0    0    0    0    0    0    0
- 17    0    0    0    0    0    0    0
- 18    0    0    0    0    0    0    0
- 19    0    0    0    0    0    0    0
- 20    0    0    0    0    0    0    0
- 21    0    0    0    0    0    0    0
- 22    0    0    0    0    0    0    0
- 23    0    0    0    0    0    0    0
- 24    0    0    0    0    0    0    0
+        2     3     4     5    6     7    8    9    10
+-10    174   219    60    91    0    78   67   29  243
+-9     159    39    40   313    2    30    0  111   27
+-8      66   605     3   159    2     4   73    0   32
+-7     859   300   527   651    1   399   18  219  141
+-6       7   132    25    10   19     6    3    3    4
+-5    1906  1272   148  2131   22   252   87  368  160
+-4    2738    40  1610   616   13   884    8  269   31
+-3    1467  6274   109  1684   13   403  508   59  261
+-2   14883  1115  2616  3216   63  1681   88  537  407
+-1     396  2878    58   477   44    23  241    3   52
+ 0   12142  4947  3340  5203   30  1353  292  824  478
+ 1    7649   193  1470   132   26   172    9   59    2
+ 2   11261  5249    86  1695    2   187  171   57   61
+ 3    4128   231   519  1523   35   180    0  122   11
+ 4      67  3153    20   102    7     1   14    0    2
+ 5    2557   270  1355   160    1    94    0   16    5
+ 6       8    20     0     0    0     0    0    0    0
+ 7     566   249    12   166    0     8    2    6    0
+ 8     159     0    23     6    0     1    0    0    0
+ 9      13   129     1     8    0     0    5    0    0
+ 10     78     0     4     5    0     0    0    0    0
 
-[50 rows x 51 columns]
+[21 rows x 21 columns]
 \end{sphinxVerbatim}
 }
 
@@ -1688,8 +1593,10 @@ The sequence of intervals in this phrase is thus \sphinxcode{\sphinxupquote{{[}+
 \sphinxsetup{VerbatimColor={named}{nbsphinx-code-bg}}
 \sphinxsetup{VerbatimBorderColor={named}{nbsphinx-code-border}}
 \begin{sphinxVerbatim}[commandchars=\\\{\}]
-\llap{\color{nbsphinxin}[49]:\,\hspace{\fboxrule}\hspace{\fboxsep}}\PYG{n}{fig}\PYG{p}{,} \PYG{n}{ax} \PYG{o}{=} \PYG{n}{plt}\PYG{o}{.}\PYG{n}{subplots}\PYG{p}{(}\PYG{n}{figsize}\PYG{o}{=}\PYG{p}{(}\PYG{l+m+mi}{10}\PYG{p}{,}\PYG{l+m+mi}{10}\PYG{p}{)}\PYG{p}{)}
+\llap{\color{nbsphinxin}[74]:\,\hspace{\fboxrule}\hspace{\fboxsep}}\PYG{n}{fig}\PYG{p}{,} \PYG{n}{ax} \PYG{o}{=} \PYG{n}{plt}\PYG{o}{.}\PYG{n}{subplots}\PYG{p}{(}\PYG{n}{figsize}\PYG{o}{=}\PYG{p}{(}\PYG{l+m+mi}{10}\PYG{p}{,}\PYG{l+m+mi}{10}\PYG{p}{)}\PYG{p}{)}
 \PYG{n}{sns}\PYG{o}{.}\PYG{n}{heatmap}\PYG{p}{(}\PYG{n}{ints\PYGZus{}df}\PYG{o}{.}\PYG{n}{loc}\PYG{p}{[}\PYG{o}{\PYGZhy{}}\PYG{l+m+mi}{12}\PYG{p}{:}\PYG{l+m+mi}{13}\PYG{p}{,}\PYG{o}{\PYGZhy{}}\PYG{l+m+mi}{12}\PYG{p}{:}\PYG{l+m+mi}{13}\PYG{p}{]}\PYG{p}{,} \PYG{n}{cmap}\PYG{o}{=}\PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{coolwarm}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{,} \PYG{n}{square}\PYG{o}{=}\PYG{k+kc}{True}\PYG{p}{,} \PYG{n}{linewidths}\PYG{o}{=}\PYG{l+m+mf}{0.01}\PYG{p}{,}\PYG{n}{ax}\PYG{o}{=}\PYG{n}{ax}\PYG{p}{)}
+\PYG{n}{plt}\PYG{o}{.}\PYG{n}{ylabel}\PYG{p}{(}\PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{First interval}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{)}
+\PYG{n}{plt}\PYG{o}{.}\PYG{n}{xlabel}\PYG{p}{(}\PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{Second interval}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{)}
 \PYG{n}{plt}\PYG{o}{.}\PYG{n}{show}\PYG{p}{(}\PYG{p}{)}
 \end{sphinxVerbatim}
 }
@@ -1701,7 +1608,7 @@ The sequence of intervals in this phrase is thus \sphinxcode{\sphinxupquote{{[}+
 
 \begin{nbsphinxfancyoutput}
 
-\noindent\sphinxincludegraphics[width=587\sphinxpxdimen,height=563\sphinxpxdimen]{{03_melody_I_86_0}.png}
+\noindent\sphinxincludegraphics[width=604\sphinxpxdimen,height=563\sphinxpxdimen]{{03_melody_I_86_0}.png}
 
 \end{nbsphinxfancyoutput}
 
@@ -1713,7 +1620,7 @@ To which melodic fragments do these correspond?
 \sphinxsetup{VerbatimColor={named}{nbsphinx-code-bg}}
 \sphinxsetup{VerbatimBorderColor={named}{nbsphinx-code-border}}
 \begin{sphinxVerbatim}[commandchars=\\\{\}]
-\llap{\color{nbsphinxin}[50]:\,\hspace{\fboxrule}\hspace{\fboxsep}}\PYG{n}{big\PYGZus{}df}\PYG{p}{[}\PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{Avg. MIDI Pitch}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{]} \PYG{o}{=} \PYG{l+m+mi}{0}
+\llap{\color{nbsphinxin}[44]:\,\hspace{\fboxrule}\hspace{\fboxsep}}\PYG{n}{big\PYGZus{}df}\PYG{p}{[}\PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{Avg. MIDI Pitch}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{]} \PYG{o}{=} \PYG{l+m+mi}{0}
 
 \PYG{k}{for} \PYG{n}{i}\PYG{p}{,} \PYG{n}{group} \PYG{o+ow}{in} \PYG{n}{big\PYGZus{}df}\PYG{o}{.}\PYG{n}{groupby}\PYG{p}{(}\PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{Song ID}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{)}\PYG{p}{:}
     \PYG{n}{grp\PYGZus{}mean\PYGZus{}pitch} \PYG{o}{=} \PYG{n+nb}{int}\PYG{p}{(}\PYG{n}{group}\PYG{p}{[}\PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{MIDI Pitch}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{]}\PYG{o}{.}\PYG{n}{mean}\PYG{p}{(}\PYG{p}{)}\PYG{p}{)}
@@ -1725,7 +1632,7 @@ To which melodic fragments do these correspond?
 \sphinxsetup{VerbatimColor={named}{nbsphinx-code-bg}}
 \sphinxsetup{VerbatimBorderColor={named}{nbsphinx-code-border}}
 \begin{sphinxVerbatim}[commandchars=\\\{\}]
-\llap{\color{nbsphinxin}[51]:\,\hspace{\fboxrule}\hspace{\fboxsep}}\PYG{n}{big\PYGZus{}df}\PYG{p}{[}\PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{shifted\PYGZus{}pitch}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{]} \PYG{o}{=} \PYG{n}{big\PYGZus{}df}\PYG{p}{[}\PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{MIDI Pitch}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{]} \PYG{o}{\PYGZhy{}} \PYG{n}{big\PYGZus{}df}\PYG{p}{[}\PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{Avg. MIDI Pitch}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{]}
+\llap{\color{nbsphinxin}[45]:\,\hspace{\fboxrule}\hspace{\fboxsep}}\PYG{n}{big\PYGZus{}df}\PYG{p}{[}\PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{shifted\PYGZus{}pitch}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{]} \PYG{o}{=} \PYG{n}{big\PYGZus{}df}\PYG{p}{[}\PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{MIDI Pitch}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{]} \PYG{o}{\PYGZhy{}} \PYG{n}{big\PYGZus{}df}\PYG{p}{[}\PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{Avg. MIDI Pitch}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{]}
 \end{sphinxVerbatim}
 }
 
@@ -1733,7 +1640,7 @@ To which melodic fragments do these correspond?
 \sphinxsetup{VerbatimColor={named}{nbsphinx-code-bg}}
 \sphinxsetup{VerbatimBorderColor={named}{nbsphinx-code-border}}
 \begin{sphinxVerbatim}[commandchars=\\\{\}]
-\llap{\color{nbsphinxin}[52]:\,\hspace{\fboxrule}\hspace{\fboxsep}}\PYG{n}{big\PYGZus{}df}\PYG{o}{.}\PYG{n}{tail}\PYG{p}{(}\PYG{p}{)}
+\llap{\color{nbsphinxin}[46]:\,\hspace{\fboxrule}\hspace{\fboxsep}}\PYG{n}{big\PYGZus{}df}\PYG{o}{.}\PYG{n}{tail}\PYG{p}{(}\PYG{p}{)}
 \end{sphinxVerbatim}
 }
 
@@ -1746,7 +1653,7 @@ To which melodic fragments do these correspond?
 \sphinxsetup{VerbatimColor={named}{white}}
 \sphinxsetup{VerbatimBorderColor={named}{nbsphinx-code-border}}
 \begin{sphinxVerbatim}[commandchars=\\\{\}]
-\llap{\color{nbsphinxout}[52]:\,\hspace{\fboxrule}\hspace{\fboxsep}}        MIDI Pitch  Duration  Onset  Rel. MIDI Pitch  Rel. Duration  \textbackslash{}
+\llap{\color{nbsphinxout}[46]:\,\hspace{\fboxrule}\hspace{\fboxsep}}        MIDI Pitch  Duration  Onset  Rel. MIDI Pitch  Rel. Duration  \textbackslash{}
 450591          71      0.25  28.50         0.691456       0.008197
 450592          69      0.25  28.75         0.098779       0.008197
 450593          73      0.25  29.00         1.284133       0.008197
@@ -1766,7 +1673,7 @@ To which melodic fragments do these correspond?
 \sphinxsetup{VerbatimColor={named}{nbsphinx-code-bg}}
 \sphinxsetup{VerbatimBorderColor={named}{nbsphinx-code-border}}
 \begin{sphinxVerbatim}[commandchars=\\\{\}]
-\llap{\color{nbsphinxin}[53]:\,\hspace{\fboxrule}\hspace{\fboxsep}}\PYG{n}{idx} \PYG{o}{=} \PYG{n}{np}\PYG{o}{.}\PYG{n}{arange}\PYG{p}{(}\PYG{n}{big\PYGZus{}df}\PYG{p}{[}\PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{shifted\PYGZus{}pitch}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{]}\PYG{o}{.}\PYG{n}{min}\PYG{p}{(}\PYG{p}{)}\PYG{p}{,} \PYG{n}{big\PYGZus{}df}\PYG{p}{[}\PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{shifted\PYGZus{}pitch}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{]}\PYG{o}{.}\PYG{n}{max}\PYG{p}{(}\PYG{p}{)} \PYG{o}{+} \PYG{l+m+mi}{1}\PYG{p}{)}
+\llap{\color{nbsphinxin}[47]:\,\hspace{\fboxrule}\hspace{\fboxsep}}\PYG{n}{idx} \PYG{o}{=} \PYG{n}{np}\PYG{o}{.}\PYG{n}{arange}\PYG{p}{(}\PYG{n}{big\PYGZus{}df}\PYG{p}{[}\PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{shifted\PYGZus{}pitch}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{]}\PYG{o}{.}\PYG{n}{min}\PYG{p}{(}\PYG{p}{)}\PYG{p}{,} \PYG{n}{big\PYGZus{}df}\PYG{p}{[}\PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{shifted\PYGZus{}pitch}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{]}\PYG{o}{.}\PYG{n}{max}\PYG{p}{(}\PYG{p}{)} \PYG{o}{+} \PYG{l+m+mi}{1}\PYG{p}{)}
 \PYG{n}{idx}
 \end{sphinxVerbatim}
 }
@@ -1780,7 +1687,7 @@ To which melodic fragments do these correspond?
 \sphinxsetup{VerbatimColor={named}{white}}
 \sphinxsetup{VerbatimBorderColor={named}{nbsphinx-code-border}}
 \begin{sphinxVerbatim}[commandchars=\\\{\}]
-\llap{\color{nbsphinxout}[53]:\,\hspace{\fboxrule}\hspace{\fboxsep}}array([-16, -15, -14, -13, -12, -11, -10,  -9,  -8,  -7,  -6,  -5,  -4,
+\llap{\color{nbsphinxout}[47]:\,\hspace{\fboxrule}\hspace{\fboxsep}}array([-16, -15, -14, -13, -12, -11, -10,  -9,  -8,  -7,  -6,  -5,  -4,
         -3,  -2,  -1,   0,   1,   2,   3,   4,   5,   6,   7,   8,   9,
         10,  11,  12,  13,  14,  15,  16,  17])
 \end{sphinxVerbatim}
@@ -1790,7 +1697,7 @@ To which melodic fragments do these correspond?
 \sphinxsetup{VerbatimColor={named}{nbsphinx-code-bg}}
 \sphinxsetup{VerbatimBorderColor={named}{nbsphinx-code-border}}
 \begin{sphinxVerbatim}[commandchars=\\\{\}]
-\llap{\color{nbsphinxin}[54]:\,\hspace{\fboxrule}\hspace{\fboxsep}}\PYG{n}{transitions\PYGZus{}df} \PYG{o}{=} \PYG{n}{pd}\PYG{o}{.}\PYG{n}{DataFrame}\PYG{p}{(}\PYG{l+m+mi}{0}\PYG{p}{,} \PYG{n}{index}\PYG{o}{=}\PYG{n}{idx}\PYG{p}{,} \PYG{n}{columns}\PYG{o}{=}\PYG{n}{idx}\PYG{p}{)}
+\llap{\color{nbsphinxin}[48]:\,\hspace{\fboxrule}\hspace{\fboxsep}}\PYG{n}{transitions\PYGZus{}df} \PYG{o}{=} \PYG{n}{pd}\PYG{o}{.}\PYG{n}{DataFrame}\PYG{p}{(}\PYG{l+m+mi}{0}\PYG{p}{,} \PYG{n}{index}\PYG{o}{=}\PYG{n}{idx}\PYG{p}{,} \PYG{n}{columns}\PYG{o}{=}\PYG{n}{idx}\PYG{p}{)}
 \PYG{n}{transitions\PYGZus{}df}
 \end{sphinxVerbatim}
 }
@@ -1804,7 +1711,7 @@ To which melodic fragments do these correspond?
 \sphinxsetup{VerbatimColor={named}{white}}
 \sphinxsetup{VerbatimBorderColor={named}{nbsphinx-code-border}}
 \begin{sphinxVerbatim}[commandchars=\\\{\}]
-\llap{\color{nbsphinxout}[54]:\,\hspace{\fboxrule}\hspace{\fboxsep}}     -16  -15  -14  -13  -12  -11  -10  -9   -8   -7   {\ldots}   8    9    10  \textbackslash{}
+\llap{\color{nbsphinxout}[48]:\,\hspace{\fboxrule}\hspace{\fboxsep}}     -16  -15  -14  -13  -12  -11  -10  -9   -8   -7   {\ldots}   8    9    10  \textbackslash{}
 -16    0    0    0    0    0    0    0    0    0    0  {\ldots}    0    0    0
 -15    0    0    0    0    0    0    0    0    0    0  {\ldots}    0    0    0
 -14    0    0    0    0    0    0    0    0    0    0  {\ldots}    0    0    0
@@ -1884,7 +1791,7 @@ To which melodic fragments do these correspond?
 \sphinxsetup{VerbatimColor={named}{nbsphinx-code-bg}}
 \sphinxsetup{VerbatimBorderColor={named}{nbsphinx-code-border}}
 \begin{sphinxVerbatim}[commandchars=\\\{\}]
-\llap{\color{nbsphinxin}[55]:\,\hspace{\fboxrule}\hspace{\fboxsep}}\PYG{o}{\PYGZpc{}\PYGZpc{}time}
+\llap{\color{nbsphinxin}[49]:\,\hspace{\fboxrule}\hspace{\fboxsep}}\PYG{o}{\PYGZpc{}\PYGZpc{}time}
 
 \PYG{k}{for} \PYG{n}{i}\PYG{p}{,} \PYG{n}{group} \PYG{o+ow}{in} \PYG{n}{big\PYGZus{}df}\PYG{o}{.}\PYG{n}{groupby}\PYG{p}{(}\PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{Song ID}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{)}\PYG{p}{:}
     \PYG{k}{for} \PYG{n}{bg} \PYG{o+ow}{in} \PYG{n+nb}{zip}\PYG{p}{(}\PYG{n}{group}\PYG{p}{[}\PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{shifted\PYGZus{}pitch}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{]}\PYG{p}{,} \PYG{n}{group}\PYG{p}{[}\PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{shifted\PYGZus{}pitch}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{]}\PYG{p}{[}\PYG{l+m+mi}{1}\PYG{p}{:}\PYG{p}{]}\PYG{p}{)}\PYG{p}{:}
@@ -1901,7 +1808,7 @@ To which melodic fragments do these correspond?
 \sphinxsetup{VerbatimColor={named}{white}}
 \sphinxsetup{VerbatimBorderColor={named}{nbsphinx-code-border}}
 \begin{sphinxVerbatim}[commandchars=\\\{\}]
-Wall time: 1min 17s
+Wall time: 1min 29s
 \end{sphinxVerbatim}
 }
 
@@ -1909,7 +1816,7 @@ Wall time: 1min 17s
 \sphinxsetup{VerbatimColor={named}{nbsphinx-code-bg}}
 \sphinxsetup{VerbatimBorderColor={named}{nbsphinx-code-border}}
 \begin{sphinxVerbatim}[commandchars=\\\{\}]
-\llap{\color{nbsphinxin}[56]:\,\hspace{\fboxrule}\hspace{\fboxsep}}\PYG{n+nb}{print}\PYG{p}{(}\PYG{l+s+sa}{f}\PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{There are }\PYG{l+s+si}{\PYGZob{}}\PYG{n}{transitions\PYGZus{}df}\PYG{o}{.}\PYG{n}{sum}\PYG{p}{(}\PYG{p}{)}\PYG{o}{.}\PYG{n}{sum}\PYG{p}{(}\PYG{p}{)}\PYG{l+s+si}{\PYGZcb{}}\PYG{l+s+s2}{ intervals in total in the corpus.}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{)}
+\llap{\color{nbsphinxin}[50]:\,\hspace{\fboxrule}\hspace{\fboxsep}}\PYG{n+nb}{print}\PYG{p}{(}\PYG{l+s+sa}{f}\PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{There are }\PYG{l+s+si}{\PYGZob{}}\PYG{n}{transitions\PYGZus{}df}\PYG{o}{.}\PYG{n}{sum}\PYG{p}{(}\PYG{p}{)}\PYG{o}{.}\PYG{n}{sum}\PYG{p}{(}\PYG{p}{)}\PYG{l+s+si}{\PYGZcb{}}\PYG{l+s+s2}{ intervals in total in the corpus.}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{)}
 \end{sphinxVerbatim}
 }
 
@@ -1930,7 +1837,7 @@ There are 442082 intervals in total in the corpus.
 \sphinxsetup{VerbatimColor={named}{nbsphinx-code-bg}}
 \sphinxsetup{VerbatimBorderColor={named}{nbsphinx-code-border}}
 \begin{sphinxVerbatim}[commandchars=\\\{\}]
-\llap{\color{nbsphinxin}[57]:\,\hspace{\fboxrule}\hspace{\fboxsep}}\PYG{n}{fig}\PYG{p}{,} \PYG{n}{ax} \PYG{o}{=} \PYG{n}{plt}\PYG{o}{.}\PYG{n}{subplots}\PYG{p}{(}\PYG{n}{figsize}\PYG{o}{=}\PYG{p}{(}\PYG{l+m+mi}{10}\PYG{p}{,}\PYG{l+m+mi}{10}\PYG{p}{)}\PYG{p}{)}
+\llap{\color{nbsphinxin}[51]:\,\hspace{\fboxrule}\hspace{\fboxsep}}\PYG{n}{fig}\PYG{p}{,} \PYG{n}{ax} \PYG{o}{=} \PYG{n}{plt}\PYG{o}{.}\PYG{n}{subplots}\PYG{p}{(}\PYG{n}{figsize}\PYG{o}{=}\PYG{p}{(}\PYG{l+m+mi}{10}\PYG{p}{,}\PYG{l+m+mi}{10}\PYG{p}{)}\PYG{p}{)}
 
 \PYG{n}{g} \PYG{o}{=} \PYG{n}{sns}\PYG{o}{.}\PYG{n}{heatmap}\PYG{p}{(}\PYG{n}{transitions\PYGZus{}df}\PYG{p}{,} \PYG{n}{cmap}\PYG{o}{=}\PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{coolwarm}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{,} \PYG{n}{linewidths}\PYG{o}{=}\PYG{o}{.}\PYG{l+m+mi}{01}\PYG{p}{,} \PYG{n}{square}\PYG{o}{=}\PYG{k+kc}{True}\PYG{p}{)}
 \PYG{n}{plt}\PYG{o}{.}\PYG{n}{ylabel}\PYG{p}{(}\PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{First interval}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{)}
@@ -2015,7 +1922,7 @@ The WJazzD can be downloaded at \sphinxurl{https://jazzomat.hfm-weimar.de/downlo
 \sphinxsetup{VerbatimColor={named}{white}}
 \sphinxsetup{VerbatimBorderColor={named}{nbsphinx-code-border}}
 \begin{sphinxVerbatim}[commandchars=\\\{\}]
-\llap{\color{nbsphinxout}[3]:\,\hspace{\fboxrule}\hspace{\fboxsep}}<sqlite3.Connection at 0x18c98158990>
+\llap{\color{nbsphinxout}[3]:\,\hspace{\fboxrule}\hspace{\fboxsep}}<sqlite3.Connection at 0x201747b7990>
 \end{sphinxVerbatim}
 }
 
@@ -2025,7 +1932,7 @@ We can now use \sphinxcode{\sphinxupquote{pandas}} to read the data out of the d
 \sphinxsetup{VerbatimColor={named}{nbsphinx-code-bg}}
 \sphinxsetup{VerbatimBorderColor={named}{nbsphinx-code-border}}
 \begin{sphinxVerbatim}[commandchars=\\\{\}]
-\llap{\color{nbsphinxin}[29]:\,\hspace{\fboxrule}\hspace{\fboxsep}}\PYG{n}{solos} \PYG{o}{=} \PYG{n}{pd}\PYG{o}{.}\PYG{n}{read\PYGZus{}sql}\PYG{p}{(}\PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{SELECT * FROM melody}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{,} \PYG{n}{con}\PYG{o}{=}\PYG{n}{conn}\PYG{p}{)}
+\llap{\color{nbsphinxin}[4]:\,\hspace{\fboxrule}\hspace{\fboxsep}}\PYG{n}{solos} \PYG{o}{=} \PYG{n}{pd}\PYG{o}{.}\PYG{n}{read\PYGZus{}sql}\PYG{p}{(}\PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{SELECT * FROM melody}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{,} \PYG{n}{con}\PYG{o}{=}\PYG{n}{conn}\PYG{p}{)}
 \end{sphinxVerbatim}
 }
 
@@ -2070,7 +1977,7 @@ The \sphinxcode{\sphinxupquote{.sample()}} method draws a number of rows at rand
 \sphinxsetup{VerbatimColor={named}{nbsphinx-code-bg}}
 \sphinxsetup{VerbatimBorderColor={named}{nbsphinx-code-border}}
 \begin{sphinxVerbatim}[commandchars=\\\{\}]
-\llap{\color{nbsphinxin}[84]:\,\hspace{\fboxrule}\hspace{\fboxsep}}\PYG{n}{solos\PYGZus{}meta}\PYG{o}{.}\PYG{n}{sample}\PYG{p}{(}\PYG{l+m+mi}{10}\PYG{p}{)}
+\llap{\color{nbsphinxin}[13]:\,\hspace{\fboxrule}\hspace{\fboxsep}}\PYG{n}{solos\PYGZus{}meta}\PYG{o}{.}\PYG{n}{sample}\PYG{p}{(}\PYG{l+m+mi}{5}\PYG{p}{)}
 \end{sphinxVerbatim}
 }
 
@@ -2083,53 +1990,26 @@ The \sphinxcode{\sphinxupquote{.sample()}} method draws a number of rows at rand
 \sphinxsetup{VerbatimColor={named}{white}}
 \sphinxsetup{VerbatimBorderColor={named}{nbsphinx-code-border}}
 \begin{sphinxVerbatim}[commandchars=\\\{\}]
-\llap{\color{nbsphinxout}[84]:\,\hspace{\fboxrule}\hspace{\fboxsep}}     melid  trackid  compid  recordid            performer  \textbackslash{}
-232    233       43      43        19        John Coltrane
-243    244      215     193       111        Joshua Redman
-318    319      261     237       141          Miles Davis
-172    173      153     138        76       Gerry Mulligan
-395    396      173     157        84          Sonny Stitt
-180    181      161     145        80          Hank Mobley
-50      51       46      46        22  Cannonball Adderley
-426    427      164     148       139        Wayne Shorter
-26      27       23      23        10      Bix Beiderbecke
-131    132      120     111        16         Dickie Wells
+\llap{\color{nbsphinxout}[13]:\,\hspace{\fboxrule}\hspace{\fboxsep}}     melid  trackid  compid  recordid      performer        title titleaddon  \textbackslash{}
+429    430      260     236       140  Wayne Shorter   Eighty-One
+440    441      335     295       180     Woody Shaw     Rosewood
+240    241      152     137        76  Johnny Hodges        Bunny
+326    327      174     158        87    Miles Davis      Walkin'
+224    225      199     177       103  John Coltrane  Impressions       1963
 
-                          title titleaddon  solopart instrument        style  \textbackslash{}
-232                     So What                    1         ts      POSTBOP
-243                  Home Fries                    1         ts      POSTBOP
-318  Miles Runs the Voodoo Down                    2         tp       FUSION
-172              Line for Lyons                    1         bs         COOL
-395                      Teapot                    1         ts        BEBOP
-180                Soul Station                    1         ts      HARDBOP
-50                    Work Song                    1         as      HARDBOP
-426                     Dolores                    1         ts      POSTBOP
-26                       Margie                    1        cor  TRADITIONAL
-131       Six Cats and a Prince                    1         tb        SWING
+     solopart instrument    style  avgtempo tempoclass  rhythmfeel    key  \textbackslash{}
+429         1         ts  POSTBOP     138.4     MEDIUM       SWING  F-maj
+440         1         tp  POSTBOP     171.7  MEDIUM UP  LATIN/FUNK
+240         1         as    SWING     114.4     MEDIUM       SWING  C-maj
+326         1         tp  HARDBOP     127.7     MEDIUM       SWING  F-maj
+224         1         ts  POSTBOP     278.7         UP       SWING  D-min
 
-     avgtempo   tempoclass rhythmfeel       key signature  \textbackslash{}
-232     141.6    MEDIUM UP      SWING     D-maj       4/4
-243     181.4           UP      SWING    Eb-maj       4/4
-318     117.9       MEDIUM       FUNK     F-maj       4/4
-172     173.1    MEDIUM UP      SWING    Bb-maj       4/4
-395     167.9    MEDIUM UP      SWING     F-maj       4/4
-180     101.6  MEDIUM SLOW      SWING    Eb-maj       4/4
-50      156.3    MEDIUM UP      SWING     F-min       4/4
-426     277.4           UP      SWING  Db-chrom       4/4
-26      180.0           UP    TWOBEAT    Eb-maj       4/4
-131     217.6           UP      SWING    Bb-maj       4/4
-
-                                         chord\_changes  chorus\_count
-232  A1: ||D-7   |D-7   |D-7   |D-7   |D-7   |D-7  {\ldots}             2
-243  A1: ||Eb7   |Eb7   |Eb7   |Eb7   |Ab7   |Gb791{\ldots}             6
-318                                    A1: ||F79\#   ||             1
-172  A1: ||Bb69 Bb7 |Eb-7 Ab7 |D-7 G7 |C-7 F7 |Bbj7{\ldots}             1
-395  A1: ||F7 C7 |F7   |Bb7   |Bb7   |Bb-7 Eb7 |Bb-{\ldots}             2
-180  A1: ||Eb7   |Eb7   |Eb7   |Eb7   |Ab7   |Ab7  {\ldots}             5
-50   A1: ||F-7   |F-7   |F-7   |F-7   |F-7   |F-7  {\ldots}             4
-426  A1: ||D-7   |F-7 Bb7 |Ebj7   |A-7 D7 |F-7911  {\ldots}             3
-26   A1: ||Eb   |Eb   |Eb   |Eb7   |Ab   |Ab   |G7 {\ldots}             1
-131  A1: ||Bbj7   |Bbj7   |Bo   |Bo   |C-7   |F7   {\ldots}             1
+    signature                                      chord\_changes  chorus\_count
+429       4/4  A1: ||Fsus7   |Bbsus7   |Fsus7   |Fsus7   |Bbs{\ldots}             5
+440       4/4  A1: ||G-79 F-79 |G-79 F-79 |C-79 Bb-79 |Gb79  {\ldots}             1
+240       4/4  A1: ||A-7 D7 |G E7 |A-7 D7 |D-7 G7 |C F7 |Bb B{\ldots}             1
+326       4/4  A1: ||F7   |Bb7   |F7   |F7   |Bb7   |Bb7   |F{\ldots}             7
+224       4/4  A1: ||D-7   |D-7   |D-7   |D-7   |D-7   |D-7  {\ldots}            13
 \end{sphinxVerbatim}
 }
 
@@ -2139,7 +2019,7 @@ The first rows of a DataFrame can be accessed with the \sphinxcode{\sphinxupquot
 \sphinxsetup{VerbatimColor={named}{nbsphinx-code-bg}}
 \sphinxsetup{VerbatimBorderColor={named}{nbsphinx-code-border}}
 \begin{sphinxVerbatim}[commandchars=\\\{\}]
-\llap{\color{nbsphinxin}[8]:\,\hspace{\fboxrule}\hspace{\fboxsep}}\PYG{n}{solos}\PYG{o}{.}\PYG{n}{head}\PYG{p}{(}\PYG{l+m+mi}{10}\PYG{p}{)}
+\llap{\color{nbsphinxin}[19]:\,\hspace{\fboxrule}\hspace{\fboxsep}}\PYG{n}{solos}\PYG{o}{.}\PYG{n}{head}\PYG{p}{(}\PYG{p}{)}
 \end{sphinxVerbatim}
 }
 
@@ -2152,53 +2032,38 @@ The first rows of a DataFrame can be accessed with the \sphinxcode{\sphinxupquot
 \sphinxsetup{VerbatimColor={named}{white}}
 \sphinxsetup{VerbatimBorderColor={named}{nbsphinx-code-border}}
 \begin{sphinxVerbatim}[commandchars=\\\{\}]
-\llap{\color{nbsphinxout}[8]:\,\hspace{\fboxrule}\hspace{\fboxsep}}   eventid  melid      onset  pitch  duration  period  division  bar  beat  \textbackslash{}
+\llap{\color{nbsphinxout}[19]:\,\hspace{\fboxrule}\hspace{\fboxsep}}   eventid  melid      onset  pitch  duration  period  division  bar  beat  \textbackslash{}
 0        1      1  10.343492   65.0  0.138776       4         1    0     1
 1        2      1  10.637642   63.0  0.171247       4         4    0     2
 2        3      1  10.843719   58.0  0.081270       4         4    0     2
 3        4      1  10.948209   61.0  0.235102       4         1    0     3
 4        5      1  11.232653   63.0  0.130612       4         1    0     4
-5        6      1  11.551927   58.0  0.188662       4         1    1     1
-6        7      1  11.859592   58.0  0.481814       4         1    1     2
-7        8      1  14.535692   50.0  0.159637       4         1    3     3
-8        9      1  14.799819   57.0  0.145125       4         2    3     4
-9       10      1  14.973968   60.0  0.110295       4         2    3     4
 
-   tatum  {\ldots}   f0\_mod  loud\_max   loud\_med   loud\_sd  loud\_relpos loud\_cent  \textbackslash{}
-0      1  {\ldots}           0.126209  66.526087  5.541147     0.307692  0.389466
-1      1  {\ldots}           0.349751  69.133321  2.912412     0.250000  0.468687
-2      4  {\ldots}           0.094051  66.352130  3.564563     0.428571  0.531354
-3      1  {\ldots}           0.521187  66.484173  2.414298     0.818182  0.559333
-4      1  {\ldots}           0.560737  71.699054  2.185794     0.166667  0.438973
-5      1  {\ldots}           0.534657  67.636708  7.635221     0.411765  0.359536
-6      1  {\ldots}  vibrato  0.584914  63.659343  5.518070     0.068182  0.403372
-7      1  {\ldots}          -0.129185  58.507975  5.020340     0.133333  0.368384
-8      1  {\ldots}           0.599931  71.173670  2.938194     0.285714  0.551884
-9      2  {\ldots}           0.484532  69.632891  2.325457     0.600000  0.508617
+   tatum  {\ldots}  f0\_mod  loud\_max   loud\_med   loud\_sd  loud\_relpos loud\_cent  \textbackslash{}
+0      1  {\ldots}          0.126209  66.526087  5.541147     0.307692  0.389466
+1      1  {\ldots}          0.349751  69.133321  2.912412     0.250000  0.468687
+2      4  {\ldots}          0.094051  66.352130  3.564563     0.428571  0.531354
+3      1  {\ldots}          0.521187  66.484173  2.414298     0.818182  0.559333
+4      1  {\ldots}          0.560737  71.699054  2.185794     0.166667  0.438973
 
-   loud\_s2b    f0\_range  f0\_freq\_hz  f0\_med\_dev
-0  1.056169   37.794261   12.932532   -0.328442
-1  1.120317    6.365930    6.956935   11.135423
-2  1.310389   68.010392         NaN   32.366787
-3  0.984047   15.443906    5.867151   -3.374696
-4  1.061262   11.444363    8.329975    6.377737
-5  1.049956   39.368720    6.589582   16.146429
-6  0.983151   39.429103    5.406750   11.239471
-7  0.927912  174.398513         NaN   25.203232
-8  1.064195   27.066543    7.758283   25.736430
-9  1.038483   17.141304   11.184763   15.693739
+   loud\_s2b   f0\_range  f0\_freq\_hz  f0\_med\_dev
+0  1.056169  37.794261   12.932532   -0.328442
+1  1.120317   6.365930    6.956935   11.135423
+2  1.310389  68.010392         NaN   32.366787
+3  0.984047  15.443906    5.867151   -3.374696
+4  1.061262  11.444363    8.329975    6.377737
 
-[10 rows x 26 columns]
+[5 rows x 26 columns]
 \end{sphinxVerbatim}
 }
 
-… and the last rows with the \sphinxcode{\sphinxupquote{.tail()}}´ method.
+… and the last rows with the \sphinxcode{\sphinxupquote{.tail()}} method.
 
 {
 \sphinxsetup{VerbatimColor={named}{nbsphinx-code-bg}}
 \sphinxsetup{VerbatimBorderColor={named}{nbsphinx-code-border}}
 \begin{sphinxVerbatim}[commandchars=\\\{\}]
-\llap{\color{nbsphinxin}[9]:\,\hspace{\fboxrule}\hspace{\fboxsep}}\PYG{n}{solos}\PYG{o}{.}\PYG{n}{tail}\PYG{p}{(}\PYG{p}{)}
+\llap{\color{nbsphinxin}[16]:\,\hspace{\fboxrule}\hspace{\fboxsep}}\PYG{n}{solos}\PYG{o}{.}\PYG{n}{tail}\PYG{p}{(}\PYG{p}{)}
 \end{sphinxVerbatim}
 }
 
@@ -2211,7 +2076,7 @@ The first rows of a DataFrame can be accessed with the \sphinxcode{\sphinxupquot
 \sphinxsetup{VerbatimColor={named}{white}}
 \sphinxsetup{VerbatimBorderColor={named}{nbsphinx-code-border}}
 \begin{sphinxVerbatim}[commandchars=\\\{\}]
-\llap{\color{nbsphinxout}[9]:\,\hspace{\fboxrule}\hspace{\fboxsep}}        eventid  melid      onset  pitch  duration  period  division  bar  \textbackslash{}
+\llap{\color{nbsphinxout}[16]:\,\hspace{\fboxrule}\hspace{\fboxsep}}        eventid  melid      onset  pitch  duration  period  division  bar  \textbackslash{}
 200804   200805    456  63.135057   57.0  0.168345       4         2   53
 200805   200806    456  63.303401   55.0  0.087075       4         3   54
 200806   200807    456  63.390476   57.0  0.191565       4         3   54
@@ -2242,7 +2107,7 @@ As we already know, the \sphinxcode{\sphinxupquote{.shape}} attribute shows the 
 \sphinxsetup{VerbatimColor={named}{nbsphinx-code-bg}}
 \sphinxsetup{VerbatimBorderColor={named}{nbsphinx-code-border}}
 \begin{sphinxVerbatim}[commandchars=\\\{\}]
-\llap{\color{nbsphinxin}[10]:\,\hspace{\fboxrule}\hspace{\fboxsep}}\PYG{n}{solos}\PYG{o}{.}\PYG{n}{shape}
+\llap{\color{nbsphinxin}[20]:\,\hspace{\fboxrule}\hspace{\fboxsep}}\PYG{n}{solos}\PYG{o}{.}\PYG{n}{shape}
 \end{sphinxVerbatim}
 }
 
@@ -2255,7 +2120,7 @@ As we already know, the \sphinxcode{\sphinxupquote{.shape}} attribute shows the 
 \sphinxsetup{VerbatimColor={named}{white}}
 \sphinxsetup{VerbatimBorderColor={named}{nbsphinx-code-border}}
 \begin{sphinxVerbatim}[commandchars=\\\{\}]
-\llap{\color{nbsphinxout}[10]:\,\hspace{\fboxrule}\hspace{\fboxsep}}(200809, 26)
+\llap{\color{nbsphinxout}[20]:\,\hspace{\fboxrule}\hspace{\fboxsep}}(200809, 26)
 \end{sphinxVerbatim}
 }
 
@@ -2265,7 +2130,7 @@ The \sphinxcode{\sphinxupquote{solos}} table contains 26 columns that cannot be 
 \sphinxsetup{VerbatimColor={named}{nbsphinx-code-bg}}
 \sphinxsetup{VerbatimBorderColor={named}{nbsphinx-code-border}}
 \begin{sphinxVerbatim}[commandchars=\\\{\}]
-\llap{\color{nbsphinxin}[11]:\,\hspace{\fboxrule}\hspace{\fboxsep}}\PYG{n}{solos}\PYG{o}{.}\PYG{n}{columns}
+\llap{\color{nbsphinxin}[21]:\,\hspace{\fboxrule}\hspace{\fboxsep}}\PYG{n}{solos}\PYG{o}{.}\PYG{n}{columns}
 \end{sphinxVerbatim}
 }
 
@@ -2278,7 +2143,7 @@ The \sphinxcode{\sphinxupquote{solos}} table contains 26 columns that cannot be 
 \sphinxsetup{VerbatimColor={named}{white}}
 \sphinxsetup{VerbatimBorderColor={named}{nbsphinx-code-border}}
 \begin{sphinxVerbatim}[commandchars=\\\{\}]
-\llap{\color{nbsphinxout}[11]:\,\hspace{\fboxrule}\hspace{\fboxsep}}Index(['eventid', 'melid', 'onset', 'pitch', 'duration', 'period', 'division',
+\llap{\color{nbsphinxout}[21]:\,\hspace{\fboxrule}\hspace{\fboxsep}}Index(['eventid', 'melid', 'onset', 'pitch', 'duration', 'period', 'division',
        'bar', 'beat', 'tatum', 'subtatum', 'num', 'denom', 'beatprops',
        'beatdur', 'tatumprops', 'f0\_mod', 'loud\_max', 'loud\_med', 'loud\_sd',
        'loud\_relpos', 'loud\_cent', 'loud\_s2b', 'f0\_range', 'f0\_freq\_hz',
@@ -2295,26 +2160,8 @@ For our analyses it will be usefull to have also the name of the performer in th
 \sphinxsetup{VerbatimColor={named}{nbsphinx-code-bg}}
 \sphinxsetup{VerbatimBorderColor={named}{nbsphinx-code-border}}
 \begin{sphinxVerbatim}[commandchars=\\\{\}]
-\llap{\color{nbsphinxin}[12]:\,\hspace{\fboxrule}\hspace{\fboxsep}}\PYG{n}{mapper} \PYG{o}{=} \PYG{n+nb}{dict}\PYG{p}{(}\PYG{n}{solos\PYGZus{}meta}\PYG{p}{[}\PYG{p}{[}\PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{melid}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{,} \PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{performer}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{]}\PYG{p}{]}\PYG{o}{.}\PYG{n}{values}\PYG{p}{)}
-\PYG{c+c1}{\PYGZsh{} mapper}
-\end{sphinxVerbatim}
-}
-
-We can now use this dictionary to create a new column \sphinxcode{\sphinxupquote{performer}} in the \sphinxcode{\sphinxupquote{solos}} DataFrame.
-
-{
-\sphinxsetup{VerbatimColor={named}{nbsphinx-code-bg}}
-\sphinxsetup{VerbatimBorderColor={named}{nbsphinx-code-border}}
-\begin{sphinxVerbatim}[commandchars=\\\{\}]
-\llap{\color{nbsphinxin}[117]:\,\hspace{\fboxrule}\hspace{\fboxsep}}\PYG{n}{solos}\PYG{p}{[}\PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{performer}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{]} \PYG{o}{=} \PYG{n}{solos}\PYG{p}{[}\PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{melid}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{]}\PYG{o}{.}\PYG{n}{map}\PYG{p}{(}\PYG{n}{mapper}\PYG{p}{)}
-\end{sphinxVerbatim}
-}
-
-{
-\sphinxsetup{VerbatimColor={named}{nbsphinx-code-bg}}
-\sphinxsetup{VerbatimBorderColor={named}{nbsphinx-code-border}}
-\begin{sphinxVerbatim}[commandchars=\\\{\}]
-\llap{\color{nbsphinxin}[14]:\,\hspace{\fboxrule}\hspace{\fboxsep}}\PYG{n}{solos}\PYG{o}{.}\PYG{n}{head}\PYG{p}{(}\PYG{p}{)}
+\llap{\color{nbsphinxin}[26]:\,\hspace{\fboxrule}\hspace{\fboxsep}}\PYG{n}{mapper} \PYG{o}{=} \PYG{n+nb}{dict}\PYG{p}{(} \PYG{n}{solos\PYGZus{}meta}\PYG{p}{[}\PYG{p}{[}\PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{melid}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{,} \PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{performer}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{]}\PYG{p}{]}\PYG{o}{.}\PYG{n}{values} \PYG{p}{)}
+\PYG{n}{mapper}
 \end{sphinxVerbatim}
 }
 
@@ -2327,7 +2174,493 @@ We can now use this dictionary to create a new column \sphinxcode{\sphinxupquote
 \sphinxsetup{VerbatimColor={named}{white}}
 \sphinxsetup{VerbatimBorderColor={named}{nbsphinx-code-border}}
 \begin{sphinxVerbatim}[commandchars=\\\{\}]
-\llap{\color{nbsphinxout}[14]:\,\hspace{\fboxrule}\hspace{\fboxsep}}   eventid  melid      onset  pitch  duration  period  division  bar  beat  \textbackslash{}
+\llap{\color{nbsphinxout}[26]:\,\hspace{\fboxrule}\hspace{\fboxsep}}\{1: 'Art Pepper',
+ 2: 'Art Pepper',
+ 3: 'Art Pepper',
+ 4: 'Art Pepper',
+ 5: 'Art Pepper',
+ 6: 'Art Pepper',
+ 7: 'Benny Carter',
+ 8: 'Benny Carter',
+ 9: 'Benny Carter',
+ 10: 'Benny Carter',
+ 11: 'Benny Carter',
+ 12: 'Benny Carter',
+ 13: 'Benny Carter',
+ 14: 'Benny Goodman',
+ 15: 'Benny Goodman',
+ 16: 'Benny Goodman',
+ 17: 'Benny Goodman',
+ 18: 'Benny Goodman',
+ 19: 'Benny Goodman',
+ 20: 'Benny Goodman',
+ 21: 'Ben Webster',
+ 22: 'Ben Webster',
+ 23: 'Ben Webster',
+ 24: 'Ben Webster',
+ 25: 'Ben Webster',
+ 26: 'Bix Beiderbecke',
+ 27: 'Bix Beiderbecke',
+ 28: 'Bix Beiderbecke',
+ 29: 'Bix Beiderbecke',
+ 30: 'Bix Beiderbecke',
+ 31: 'Bob Berg',
+ 32: 'Bob Berg',
+ 33: 'Bob Berg',
+ 34: 'Bob Berg',
+ 35: 'Bob Berg',
+ 36: 'Bob Berg',
+ 37: 'Bob Berg',
+ 38: 'Branford Marsalis',
+ 39: 'Branford Marsalis',
+ 40: 'Branford Marsalis',
+ 41: 'Branford Marsalis',
+ 42: 'Branford Marsalis',
+ 43: 'Branford Marsalis',
+ 44: 'Buck Clayton',
+ 45: 'Buck Clayton',
+ 46: 'Buck Clayton',
+ 47: 'Cannonball Adderley',
+ 48: 'Cannonball Adderley',
+ 49: 'Cannonball Adderley',
+ 50: 'Cannonball Adderley',
+ 51: 'Cannonball Adderley',
+ 52: 'Charlie Parker',
+ 53: 'Charlie Parker',
+ 54: 'Charlie Parker',
+ 55: 'Charlie Parker',
+ 56: 'Charlie Parker',
+ 57: 'Charlie Parker',
+ 58: 'Charlie Parker',
+ 59: 'Charlie Parker',
+ 60: 'Charlie Parker',
+ 61: 'Charlie Parker',
+ 62: 'Charlie Parker',
+ 63: 'Charlie Parker',
+ 64: 'Charlie Parker',
+ 65: 'Charlie Parker',
+ 66: 'Charlie Parker',
+ 67: 'Charlie Parker',
+ 68: 'Charlie Parker',
+ 69: 'Charlie Shavers',
+ 70: 'Chet Baker',
+ 71: 'Chet Baker',
+ 72: 'Chet Baker',
+ 73: 'Chet Baker',
+ 74: 'Chet Baker',
+ 75: 'Chet Baker',
+ 76: 'Chet Baker',
+ 77: 'Chet Baker',
+ 78: 'Chris Potter',
+ 79: 'Chris Potter',
+ 80: 'Chris Potter',
+ 81: 'Chris Potter',
+ 82: 'Chris Potter',
+ 83: 'Chris Potter',
+ 84: 'Chris Potter',
+ 85: 'Chu Berry',
+ 86: 'Chu Berry',
+ 87: 'Clifford Brown',
+ 88: 'Clifford Brown',
+ 89: 'Clifford Brown',
+ 90: 'Clifford Brown',
+ 91: 'Clifford Brown',
+ 92: 'Clifford Brown',
+ 93: 'Clifford Brown',
+ 94: 'Clifford Brown',
+ 95: 'Clifford Brown',
+ 96: 'Coleman Hawkins',
+ 97: 'Coleman Hawkins',
+ 98: 'Coleman Hawkins',
+ 99: 'Coleman Hawkins',
+ 100: 'Coleman Hawkins',
+ 101: 'Coleman Hawkins',
+ 102: 'Curtis Fuller',
+ 103: 'Curtis Fuller',
+ 104: 'David Liebman',
+ 105: 'David Liebman',
+ 106: 'David Liebman',
+ 107: 'David Liebman',
+ 108: 'David Liebman',
+ 109: 'David Liebman',
+ 110: 'David Liebman',
+ 111: 'David Liebman',
+ 112: 'David Liebman',
+ 113: 'David Liebman',
+ 114: 'David Liebman',
+ 115: 'David Murray',
+ 116: 'David Murray',
+ 117: 'David Murray',
+ 118: 'David Murray',
+ 119: 'David Murray',
+ 120: 'David Murray',
+ 121: 'Dexter Gordon',
+ 122: 'Dexter Gordon',
+ 123: 'Dexter Gordon',
+ 124: 'Dexter Gordon',
+ 125: 'Dexter Gordon',
+ 126: 'Dexter Gordon',
+ 127: 'Dickie Wells',
+ 128: 'Dickie Wells',
+ 129: 'Dickie Wells',
+ 130: 'Dickie Wells',
+ 131: 'Dickie Wells',
+ 132: 'Dickie Wells',
+ 133: 'Dizzy Gillespie',
+ 134: 'Dizzy Gillespie',
+ 135: 'Dizzy Gillespie',
+ 136: 'Dizzy Gillespie',
+ 137: 'Dizzy Gillespie',
+ 138: 'Dizzy Gillespie',
+ 139: 'Don Byas',
+ 140: 'Don Byas',
+ 141: 'Don Byas',
+ 142: 'Don Byas',
+ 143: 'Don Byas',
+ 144: 'Don Byas',
+ 145: 'Don Byas',
+ 146: 'Don Byas',
+ 147: 'Don Ellis',
+ 148: 'Don Ellis',
+ 149: 'Don Ellis',
+ 150: 'Don Ellis',
+ 151: 'Don Ellis',
+ 152: 'Don Ellis',
+ 153: 'Eric Dolphy',
+ 154: 'Eric Dolphy',
+ 155: 'Eric Dolphy',
+ 156: 'Eric Dolphy',
+ 157: 'Eric Dolphy',
+ 158: 'Eric Dolphy',
+ 159: 'Fats Navarro',
+ 160: 'Fats Navarro',
+ 161: 'Fats Navarro',
+ 162: 'Fats Navarro',
+ 163: 'Fats Navarro',
+ 164: 'Fats Navarro',
+ 165: 'Freddie Hubbard',
+ 166: 'Freddie Hubbard',
+ 167: 'Freddie Hubbard',
+ 168: 'Freddie Hubbard',
+ 169: 'Freddie Hubbard',
+ 170: 'Freddie Hubbard',
+ 171: 'George Coleman',
+ 172: 'Gerry Mulligan',
+ 173: 'Gerry Mulligan',
+ 174: 'Gerry Mulligan',
+ 175: 'Gerry Mulligan',
+ 176: 'Gerry Mulligan',
+ 177: 'Gerry Mulligan',
+ 178: 'Hank Mobley',
+ 179: 'Hank Mobley',
+ 180: 'Hank Mobley',
+ 181: 'Hank Mobley',
+ 182: 'Harry Edison',
+ 183: 'Henry Allen',
+ 184: 'Herbie Hancock',
+ 185: 'Herbie Hancock',
+ 186: 'Herbie Hancock',
+ 187: 'Herbie Hancock',
+ 188: 'Herbie Hancock',
+ 189: 'J.C. Higginbotham',
+ 190: 'J.J. Johnson',
+ 191: 'J.J. Johnson',
+ 192: 'J.J. Johnson',
+ 193: 'J.J. Johnson',
+ 194: 'J.J. Johnson',
+ 195: 'J.J. Johnson',
+ 196: 'J.J. Johnson',
+ 197: 'J.J. Johnson',
+ 198: 'Joe Henderson',
+ 199: 'Joe Henderson',
+ 200: 'Joe Henderson',
+ 201: 'Joe Henderson',
+ 202: 'Joe Henderson',
+ 203: 'Joe Henderson',
+ 204: 'Joe Henderson',
+ 205: 'Joe Henderson',
+ 206: 'Joe Lovano',
+ 207: 'Joe Lovano',
+ 208: 'Joe Lovano',
+ 209: 'Joe Lovano',
+ 210: 'Joe Lovano',
+ 211: 'Joe Lovano',
+ 212: 'Joe Lovano',
+ 213: 'Joe Lovano',
+ 214: 'John Abercrombie',
+ 215: 'John Coltrane',
+ 216: 'John Coltrane',
+ 217: 'John Coltrane',
+ 218: 'John Coltrane',
+ 219: 'John Coltrane',
+ 220: 'John Coltrane',
+ 221: 'John Coltrane',
+ 222: 'John Coltrane',
+ 223: 'John Coltrane',
+ 224: 'John Coltrane',
+ 225: 'John Coltrane',
+ 226: 'John Coltrane',
+ 227: 'John Coltrane',
+ 228: 'John Coltrane',
+ 229: 'John Coltrane',
+ 230: 'John Coltrane',
+ 231: 'John Coltrane',
+ 232: 'John Coltrane',
+ 233: 'John Coltrane',
+ 234: 'John Coltrane',
+ 235: 'Johnny Dodds',
+ 236: 'Johnny Dodds',
+ 237: 'Johnny Dodds',
+ 238: 'Johnny Dodds',
+ 239: 'Johnny Dodds',
+ 240: 'Johnny Dodds',
+ 241: 'Johnny Hodges',
+ 242: 'Johnny Hodges',
+ 243: 'Joshua Redman',
+ 244: 'Joshua Redman',
+ 245: 'Joshua Redman',
+ 246: 'Joshua Redman',
+ 247: 'Joshua Redman',
+ 248: 'Kai Winding',
+ 249: 'Kenny Dorham',
+ 250: 'Kenny Dorham',
+ 251: 'Kenny Dorham',
+ 252: 'Kenny Dorham',
+ 253: 'Kenny Dorham',
+ 254: 'Kenny Dorham',
+ 255: 'Kenny Dorham',
+ 256: 'Kenny Garrett',
+ 257: 'Kenny Garrett',
+ 258: 'Kenny Wheeler',
+ 259: 'Kenny Wheeler',
+ 260: 'Kenny Wheeler',
+ 261: 'Kid Ory',
+ 262: 'Kid Ory',
+ 263: 'Kid Ory',
+ 264: 'Kid Ory',
+ 265: 'Kid Ory',
+ 266: 'Lee Konitz',
+ 267: 'Lee Konitz',
+ 268: 'Lee Konitz',
+ 269: 'Lee Konitz',
+ 270: 'Lee Konitz',
+ 271: 'Lee Konitz',
+ 272: 'Lee Konitz',
+ 273: 'Lee Konitz',
+ 274: 'Lee Morgan',
+ 275: 'Lee Morgan',
+ 276: 'Lee Morgan',
+ 277: 'Lee Morgan',
+ 278: 'Lester Young',
+ 279: 'Lester Young',
+ 280: 'Lester Young',
+ 281: 'Lester Young',
+ 282: 'Lester Young',
+ 283: 'Lester Young',
+ 284: 'Lester Young',
+ 285: 'Lionel Hampton',
+ 286: 'Lionel Hampton',
+ 287: 'Lionel Hampton',
+ 288: 'Lionel Hampton',
+ 289: 'Lionel Hampton',
+ 290: 'Lionel Hampton',
+ 291: 'Louis Armstrong',
+ 292: 'Louis Armstrong',
+ 293: 'Louis Armstrong',
+ 294: 'Louis Armstrong',
+ 295: 'Louis Armstrong',
+ 296: 'Louis Armstrong',
+ 297: 'Louis Armstrong',
+ 298: 'Louis Armstrong',
+ 299: 'Michael Brecker',
+ 300: 'Michael Brecker',
+ 301: 'Michael Brecker',
+ 302: 'Michael Brecker',
+ 303: 'Michael Brecker',
+ 304: 'Michael Brecker',
+ 305: 'Michael Brecker',
+ 306: 'Michael Brecker',
+ 307: 'Michael Brecker',
+ 308: 'Michael Brecker',
+ 309: 'Miles Davis',
+ 310: 'Miles Davis',
+ 311: 'Miles Davis',
+ 312: 'Miles Davis',
+ 313: 'Miles Davis',
+ 314: 'Miles Davis',
+ 315: 'Miles Davis',
+ 316: 'Miles Davis',
+ 317: 'Miles Davis',
+ 318: 'Miles Davis',
+ 319: 'Miles Davis',
+ 320: 'Miles Davis',
+ 321: 'Miles Davis',
+ 322: 'Miles Davis',
+ 323: 'Miles Davis',
+ 324: 'Miles Davis',
+ 325: 'Miles Davis',
+ 326: 'Miles Davis',
+ 327: 'Miles Davis',
+ 328: 'Milt Jackson',
+ 329: 'Milt Jackson',
+ 330: 'Milt Jackson',
+ 331: 'Milt Jackson',
+ 332: 'Milt Jackson',
+ 333: 'Milt Jackson',
+ 334: 'Nat Adderley',
+ 335: 'Nat Adderley',
+ 336: 'Ornette Coleman',
+ 337: 'Ornette Coleman',
+ 338: 'Ornette Coleman',
+ 339: 'Ornette Coleman',
+ 340: 'Ornette Coleman',
+ 341: 'Pat Martino',
+ 342: 'Pat Metheny',
+ 343: 'Pat Metheny',
+ 344: 'Pat Metheny',
+ 345: 'Pat Metheny',
+ 346: 'Paul Desmond',
+ 347: 'Paul Desmond',
+ 348: 'Paul Desmond',
+ 349: 'Paul Desmond',
+ 350: 'Paul Desmond',
+ 351: 'Paul Desmond',
+ 352: 'Paul Desmond',
+ 353: 'Paul Desmond',
+ 354: 'Pepper Adams',
+ 355: 'Pepper Adams',
+ 356: 'Pepper Adams',
+ 357: 'Pepper Adams',
+ 358: 'Pepper Adams',
+ 359: 'Phil Woods',
+ 360: 'Phil Woods',
+ 361: 'Phil Woods',
+ 362: 'Phil Woods',
+ 363: 'Phil Woods',
+ 364: 'Phil Woods',
+ 365: 'Red Garland',
+ 366: 'Rex Stewart',
+ 367: 'Roy Eldridge',
+ 368: 'Roy Eldridge',
+ 369: 'Roy Eldridge',
+ 370: 'Roy Eldridge',
+ 371: 'Roy Eldridge',
+ 372: 'Roy Eldridge',
+ 373: 'Sidney Bechet',
+ 374: 'Sidney Bechet',
+ 375: 'Sidney Bechet',
+ 376: 'Sidney Bechet',
+ 377: 'Sidney Bechet',
+ 378: 'Sonny Rollins',
+ 379: 'Sonny Rollins',
+ 380: 'Sonny Rollins',
+ 381: 'Sonny Rollins',
+ 382: 'Sonny Rollins',
+ 383: 'Sonny Rollins',
+ 384: 'Sonny Rollins',
+ 385: 'Sonny Rollins',
+ 386: 'Sonny Rollins',
+ 387: 'Sonny Rollins',
+ 388: 'Sonny Rollins',
+ 389: 'Sonny Rollins',
+ 390: 'Sonny Rollins',
+ 391: 'Sonny Stitt',
+ 392: 'Sonny Stitt',
+ 393: 'Sonny Stitt',
+ 394: 'Sonny Stitt',
+ 395: 'Sonny Stitt',
+ 396: 'Sonny Stitt',
+ 397: 'Stan Getz',
+ 398: 'Stan Getz',
+ 399: 'Stan Getz',
+ 400: 'Stan Getz',
+ 401: 'Stan Getz',
+ 402: 'Stan Getz',
+ 403: 'Steve Coleman',
+ 404: 'Steve Coleman',
+ 405: 'Steve Coleman',
+ 406: 'Steve Coleman',
+ 407: 'Steve Coleman',
+ 408: 'Steve Coleman',
+ 409: 'Steve Coleman',
+ 410: 'Steve Coleman',
+ 411: 'Steve Coleman',
+ 412: 'Steve Coleman',
+ 413: 'Steve Lacy',
+ 414: 'Steve Lacy',
+ 415: 'Steve Lacy',
+ 416: 'Steve Lacy',
+ 417: 'Steve Lacy',
+ 418: 'Steve Lacy',
+ 419: 'Steve Turre',
+ 420: 'Steve Turre',
+ 421: 'Steve Turre',
+ 422: 'Von Freeman',
+ 423: 'Warne Marsh',
+ 424: 'Warne Marsh',
+ 425: 'Warne Marsh',
+ 426: 'Wayne Shorter',
+ 427: 'Wayne Shorter',
+ 428: 'Wayne Shorter',
+ 429: 'Wayne Shorter',
+ 430: 'Wayne Shorter',
+ 431: 'Wayne Shorter',
+ 432: 'Wayne Shorter',
+ 433: 'Wayne Shorter',
+ 434: 'Wayne Shorter',
+ 435: 'Wayne Shorter',
+ 436: 'Woody Shaw',
+ 437: 'Woody Shaw',
+ 438: 'Woody Shaw',
+ 439: 'Woody Shaw',
+ 440: 'Woody Shaw',
+ 441: 'Woody Shaw',
+ 442: 'Woody Shaw',
+ 443: 'Woody Shaw',
+ 444: 'Wynton Marsalis',
+ 445: 'Wynton Marsalis',
+ 446: 'Wynton Marsalis',
+ 447: 'Wynton Marsalis',
+ 448: 'Wynton Marsalis',
+ 449: 'Wynton Marsalis',
+ 450: 'Wynton Marsalis',
+ 451: 'Zoot Sims',
+ 452: 'Zoot Sims',
+ 453: 'Zoot Sims',
+ 454: 'Zoot Sims',
+ 455: 'Zoot Sims',
+ 456: 'Zoot Sims'\}
+\end{sphinxVerbatim}
+}
+
+We can now use this dictionary to create a new column \sphinxcode{\sphinxupquote{performer}} in the \sphinxcode{\sphinxupquote{solos}} DataFrame.
+
+{
+\sphinxsetup{VerbatimColor={named}{nbsphinx-code-bg}}
+\sphinxsetup{VerbatimBorderColor={named}{nbsphinx-code-border}}
+\begin{sphinxVerbatim}[commandchars=\\\{\}]
+\llap{\color{nbsphinxin}[28]:\,\hspace{\fboxrule}\hspace{\fboxsep}}\PYG{n}{solos}\PYG{p}{[}\PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{performer}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{]} \PYG{o}{=} \PYG{n}{solos}\PYG{p}{[}\PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{melid}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{]}\PYG{o}{.}\PYG{n}{map}\PYG{p}{(}\PYG{n}{mapper}\PYG{p}{)}
+\end{sphinxVerbatim}
+}
+
+{
+\sphinxsetup{VerbatimColor={named}{nbsphinx-code-bg}}
+\sphinxsetup{VerbatimBorderColor={named}{nbsphinx-code-border}}
+\begin{sphinxVerbatim}[commandchars=\\\{\}]
+\llap{\color{nbsphinxin}[29]:\,\hspace{\fboxrule}\hspace{\fboxsep}}\PYG{n}{solos}\PYG{o}{.}\PYG{n}{head}\PYG{p}{(}\PYG{p}{)}
+\end{sphinxVerbatim}
+}
+
+{
+
+\kern-\sphinxverbatimsmallskipamount\kern-\baselineskip
+\kern+\FrameHeightAdjust\kern-\fboxrule
+\vspace{\nbsphinxcodecellspacing}
+
+\sphinxsetup{VerbatimColor={named}{white}}
+\sphinxsetup{VerbatimBorderColor={named}{nbsphinx-code-border}}
+\begin{sphinxVerbatim}[commandchars=\\\{\}]
+\llap{\color{nbsphinxout}[29]:\,\hspace{\fboxrule}\hspace{\fboxsep}}   eventid  melid      onset  pitch  duration  period  division  bar  beat  \textbackslash{}
 0        1      1  10.343492   65.0  0.138776       4         1    0     1
 1        2      1  10.637642   63.0  0.171247       4         4    0     2
 2        3      1  10.843719   58.0  0.081270       4         4    0     2
@@ -2356,7 +2689,7 @@ We can now use this dictionary to create a new column \sphinxcode{\sphinxupquote
 \sphinxsetup{VerbatimColor={named}{nbsphinx-code-bg}}
 \sphinxsetup{VerbatimBorderColor={named}{nbsphinx-code-border}}
 \begin{sphinxVerbatim}[commandchars=\\\{\}]
-\llap{\color{nbsphinxin}[15]:\,\hspace{\fboxrule}\hspace{\fboxsep}}\PYG{n}{solos}\PYG{o}{.}\PYG{n}{tail}\PYG{p}{(}\PYG{p}{)}
+\llap{\color{nbsphinxin}[30]:\,\hspace{\fboxrule}\hspace{\fboxsep}}\PYG{n}{solos}\PYG{o}{.}\PYG{n}{tail}\PYG{p}{(}\PYG{p}{)}
 \end{sphinxVerbatim}
 }
 
@@ -2369,7 +2702,7 @@ We can now use this dictionary to create a new column \sphinxcode{\sphinxupquote
 \sphinxsetup{VerbatimColor={named}{white}}
 \sphinxsetup{VerbatimBorderColor={named}{nbsphinx-code-border}}
 \begin{sphinxVerbatim}[commandchars=\\\{\}]
-\llap{\color{nbsphinxout}[15]:\,\hspace{\fboxrule}\hspace{\fboxsep}}        eventid  melid      onset  pitch  duration  period  division  bar  \textbackslash{}
+\llap{\color{nbsphinxout}[30]:\,\hspace{\fboxrule}\hspace{\fboxsep}}        eventid  melid      onset  pitch  duration  period  division  bar  \textbackslash{}
 200804   200805    456  63.135057   57.0  0.168345       4         2   53
 200805   200806    456  63.303401   55.0  0.087075       4         3   54
 200806   200807    456  63.390476   57.0  0.191565       4         3   54
@@ -2403,7 +2736,7 @@ Does the melodic arc also appear in the Jazz solos?
 \sphinxsetup{VerbatimColor={named}{nbsphinx-code-bg}}
 \sphinxsetup{VerbatimBorderColor={named}{nbsphinx-code-border}}
 \begin{sphinxVerbatim}[commandchars=\\\{\}]
-\llap{\color{nbsphinxin}[16]:\,\hspace{\fboxrule}\hspace{\fboxsep}}\PYG{k}{def} \PYG{n+nf}{notelist}\PYG{p}{(}\PYG{n}{melid}\PYG{p}{)}\PYG{p}{:}
+\llap{\color{nbsphinxin}[31]:\,\hspace{\fboxrule}\hspace{\fboxsep}}\PYG{k}{def} \PYG{n+nf}{notelist}\PYG{p}{(}\PYG{n}{melid}\PYG{p}{)}\PYG{p}{:}
 
     \PYG{n}{solo} \PYG{o}{=} \PYG{n}{solos}\PYG{p}{[}\PYG{n}{solos}\PYG{p}{[}\PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{melid}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{]} \PYG{o}{==} \PYG{n}{melid}\PYG{p}{]}
 
@@ -2417,7 +2750,7 @@ Does the melodic arc also appear in the Jazz solos?
 \sphinxsetup{VerbatimColor={named}{nbsphinx-code-bg}}
 \sphinxsetup{VerbatimBorderColor={named}{nbsphinx-code-border}}
 \begin{sphinxVerbatim}[commandchars=\\\{\}]
-\llap{\color{nbsphinxin}[17]:\,\hspace{\fboxrule}\hspace{\fboxsep}}\PYG{n}{notelist}\PYG{p}{(}\PYG{l+m+mi}{1}\PYG{p}{)}
+\llap{\color{nbsphinxin}[32]:\,\hspace{\fboxrule}\hspace{\fboxsep}}\PYG{n}{notelist}\PYG{p}{(}\PYG{l+m+mi}{1}\PYG{p}{)}
 \end{sphinxVerbatim}
 }
 
@@ -2430,7 +2763,7 @@ Does the melodic arc also appear in the Jazz solos?
 \sphinxsetup{VerbatimColor={named}{white}}
 \sphinxsetup{VerbatimBorderColor={named}{nbsphinx-code-border}}
 \begin{sphinxVerbatim}[commandchars=\\\{\}]
-\llap{\color{nbsphinxout}[17]:\,\hspace{\fboxrule}\hspace{\fboxsep}}     pitch  duration      onset
+\llap{\color{nbsphinxout}[32]:\,\hspace{\fboxrule}\hspace{\fboxsep}}     pitch  duration      onset
 0     65.0  0.138776   0.138776
 1     63.0  0.171247   0.310023
 2     58.0  0.081270   0.391293
@@ -2451,7 +2784,7 @@ Does the melodic arc also appear in the Jazz solos?
 \sphinxsetup{VerbatimColor={named}{nbsphinx-code-bg}}
 \sphinxsetup{VerbatimBorderColor={named}{nbsphinx-code-border}}
 \begin{sphinxVerbatim}[commandchars=\\\{\}]
-\llap{\color{nbsphinxin}[18]:\,\hspace{\fboxrule}\hspace{\fboxsep}}\PYG{k}{def} \PYG{n+nf}{plot\PYGZus{}melodic\PYGZus{}profile}\PYG{p}{(}\PYG{n}{notelist}\PYG{p}{,} \PYG{n}{ax}\PYG{o}{=}\PYG{k+kc}{None}\PYG{p}{,} \PYG{n}{c}\PYG{o}{=}\PYG{k+kc}{None}\PYG{p}{,} \PYG{n}{mean}\PYG{o}{=}\PYG{k+kc}{False}\PYG{p}{,} \PYG{n}{Z}\PYG{o}{=}\PYG{k+kc}{False}\PYG{p}{,} \PYG{n}{sections}\PYG{o}{=}\PYG{k+kc}{False}\PYG{p}{,} \PYG{n}{standardized}\PYG{o}{=}\PYG{k+kc}{False}\PYG{p}{)}\PYG{p}{:}
+\llap{\color{nbsphinxin}[33]:\,\hspace{\fboxrule}\hspace{\fboxsep}}\PYG{k}{def} \PYG{n+nf}{plot\PYGZus{}melodic\PYGZus{}profile}\PYG{p}{(}\PYG{n}{notelist}\PYG{p}{,} \PYG{n}{ax}\PYG{o}{=}\PYG{k+kc}{None}\PYG{p}{,} \PYG{n}{c}\PYG{o}{=}\PYG{k+kc}{None}\PYG{p}{,} \PYG{n}{mean}\PYG{o}{=}\PYG{k+kc}{False}\PYG{p}{,} \PYG{n}{Z}\PYG{o}{=}\PYG{k+kc}{False}\PYG{p}{,} \PYG{n}{sections}\PYG{o}{=}\PYG{k+kc}{False}\PYG{p}{,} \PYG{n}{standardized}\PYG{o}{=}\PYG{k+kc}{False}\PYG{p}{)}\PYG{p}{:}
 
     \PYG{k}{if} \PYG{n}{ax} \PYG{o}{==} \PYG{k+kc}{None}\PYG{p}{:}
         \PYG{n}{ax} \PYG{o}{=} \PYG{n}{plt}\PYG{o}{.}\PYG{n}{gca}\PYG{p}{(}\PYG{p}{)}
@@ -2478,11 +2811,11 @@ Does the melodic arc also appear in the Jazz solos?
 \sphinxsetup{VerbatimColor={named}{nbsphinx-code-bg}}
 \sphinxsetup{VerbatimBorderColor={named}{nbsphinx-code-border}}
 \begin{sphinxVerbatim}[commandchars=\\\{\}]
-\llap{\color{nbsphinxin}[97]:\,\hspace{\fboxrule}\hspace{\fboxsep}}\PYG{n}{fig}\PYG{p}{,} \PYG{n}{axes} \PYG{o}{=} \PYG{n}{plt}\PYG{o}{.}\PYG{n}{subplots}\PYG{p}{(}\PYG{l+m+mi}{2}\PYG{p}{,}\PYG{l+m+mi}{2}\PYG{p}{,} \PYG{n}{figsize}\PYG{o}{=}\PYG{p}{(}\PYG{l+m+mi}{20}\PYG{p}{,}\PYG{l+m+mi}{9}\PYG{p}{)}\PYG{p}{)}
+\llap{\color{nbsphinxin}[34]:\,\hspace{\fboxrule}\hspace{\fboxsep}}\PYG{n}{fig}\PYG{p}{,} \PYG{n}{axes} \PYG{o}{=} \PYG{n}{plt}\PYG{o}{.}\PYG{n}{subplots}\PYG{p}{(}\PYG{l+m+mi}{2}\PYG{p}{,}\PYG{l+m+mi}{2}\PYG{p}{,} \PYG{n}{figsize}\PYG{o}{=}\PYG{p}{(}\PYG{l+m+mi}{20}\PYG{p}{,}\PYG{l+m+mi}{9}\PYG{p}{)}\PYG{p}{)}
 \PYG{n}{axes} \PYG{o}{=} \PYG{n}{axes}\PYG{o}{.}\PYG{n}{flatten}\PYG{p}{(}\PYG{p}{)}
 
 \PYG{n}{plot\PYGZus{}melodic\PYGZus{}profile}\PYG{p}{(}\PYG{n}{notelist}\PYG{p}{(}\PYG{l+m+mi}{1}\PYG{p}{)}\PYG{p}{,} \PYG{n}{ax}\PYG{o}{=}\PYG{n}{axes}\PYG{p}{[}\PYG{l+m+mi}{0}\PYG{p}{]}\PYG{p}{,} \PYG{n}{mean}\PYG{o}{=}\PYG{k+kc}{True}\PYG{p}{)}
-\PYG{n}{plot\PYGZus{}melodic\PYGZus{}profile}\PYG{p}{(}\PYG{n}{notelist}\PYG{p}{(}\PYG{l+m+mi}{10}\PYG{p}{)}\PYG{p}{,} \PYG{n}{ax}\PYG{o}{=}\PYG{n}{axes}\PYG{p}{[}\PYG{l+m+mi}{1}\PYG{p}{]}\PYG{p}{,} \PYG{n}{mean}\PYG{o}{=}\PYG{k+kc}{True}\PYG{p}{)}
+\PYG{n}{plot\PYGZus{}melodic\PYGZus{}profile}\PYG{p}{(}\PYG{n}{notelist}\PYG{p}{(}\PYG{l+m+mi}{77}\PYG{p}{)}\PYG{p}{,} \PYG{n}{ax}\PYG{o}{=}\PYG{n}{axes}\PYG{p}{[}\PYG{l+m+mi}{1}\PYG{p}{]}\PYG{p}{,} \PYG{n}{mean}\PYG{o}{=}\PYG{k+kc}{True}\PYG{p}{)}
 \PYG{n}{plot\PYGZus{}melodic\PYGZus{}profile}\PYG{p}{(}\PYG{n}{notelist}\PYG{p}{(}\PYG{l+m+mi}{50}\PYG{p}{)}\PYG{p}{,} \PYG{n}{ax}\PYG{o}{=}\PYG{n}{axes}\PYG{p}{[}\PYG{l+m+mi}{2}\PYG{p}{]}\PYG{p}{,} \PYG{n}{mean}\PYG{o}{=}\PYG{k+kc}{True}\PYG{p}{)}
 \PYG{n}{plot\PYGZus{}melodic\PYGZus{}profile}\PYG{p}{(}\PYG{n}{notelist}\PYG{p}{(}\PYG{l+m+mi}{233}\PYG{p}{)}\PYG{p}{,} \PYG{n}{ax}\PYG{o}{=}\PYG{n}{axes}\PYG{p}{[}\PYG{l+m+mi}{3}\PYG{p}{]}\PYG{p}{,} \PYG{n}{mean}\PYG{o}{=}\PYG{k+kc}{True}\PYG{p}{)}
 \end{sphinxVerbatim}
@@ -2503,7 +2836,7 @@ Does the melodic arc also appear in the Jazz solos?
 \sphinxsetup{VerbatimColor={named}{nbsphinx-code-bg}}
 \sphinxsetup{VerbatimBorderColor={named}{nbsphinx-code-border}}
 \begin{sphinxVerbatim}[commandchars=\\\{\}]
-\llap{\color{nbsphinxin}[20]:\,\hspace{\fboxrule}\hspace{\fboxsep}}\PYG{k}{def} \PYG{n+nf}{standardize}\PYG{p}{(}\PYG{n}{notelist}\PYG{p}{)}\PYG{p}{:}
+\llap{\color{nbsphinxin}[35]:\,\hspace{\fboxrule}\hspace{\fboxsep}}\PYG{k}{def} \PYG{n+nf}{standardize}\PYG{p}{(}\PYG{n}{notelist}\PYG{p}{)}\PYG{p}{:}
     \PYG{l+s+sd}{\PYGZdq{}\PYGZdq{}\PYGZdq{}}
 \PYG{l+s+sd}{    Takes a notelist as input and returns a standardized version.}
 \PYG{l+s+sd}{    \PYGZdq{}\PYGZdq{}\PYGZdq{}}
@@ -2520,7 +2853,7 @@ Does the melodic arc also appear in the Jazz solos?
 \sphinxsetup{VerbatimColor={named}{nbsphinx-code-bg}}
 \sphinxsetup{VerbatimBorderColor={named}{nbsphinx-code-border}}
 \begin{sphinxVerbatim}[commandchars=\\\{\}]
-\llap{\color{nbsphinxin}[21]:\,\hspace{\fboxrule}\hspace{\fboxsep}}\PYG{n}{standardize}\PYG{p}{(}\PYG{n}{notelist}\PYG{p}{(}\PYG{l+m+mi}{5}\PYG{p}{)}\PYG{p}{)}
+\llap{\color{nbsphinxin}[37]:\,\hspace{\fboxrule}\hspace{\fboxsep}}\PYG{n}{standardize}\PYG{p}{(}\PYG{n}{notelist}\PYG{p}{(}\PYG{l+m+mi}{1}\PYG{p}{)}\PYG{p}{)}
 \end{sphinxVerbatim}
 }
 
@@ -2533,20 +2866,20 @@ Does the melodic arc also appear in the Jazz solos?
 \sphinxsetup{VerbatimColor={named}{white}}
 \sphinxsetup{VerbatimBorderColor={named}{nbsphinx-code-border}}
 \begin{sphinxVerbatim}[commandchars=\\\{\}]
-\llap{\color{nbsphinxout}[21]:\,\hspace{\fboxrule}\hspace{\fboxsep}}      pitch  duration       onset  Rel. MIDI Pitch  Rel. Duration  Rel. Onset
-2134   62.0  0.187755    0.187755        -0.485734       0.001194    0.001194
-2135   63.0  0.261224    0.448980        -0.323822       0.001662    0.002856
-2136   64.0  0.232200    0.681179        -0.161911       0.001477    0.004333
-2137   60.0  0.092880    0.774059        -0.809556       0.000591    0.004923
-2138   65.0  1.120363    1.894422         0.000000       0.007126    0.012050
-{\ldots}     {\ldots}       {\ldots}         {\ldots}              {\ldots}            {\ldots}         {\ldots}
-2720   70.0  0.150000  156.117506         0.809556       0.000954    0.993003
-2721   72.0  0.162245  156.279751         1.133378       0.001032    0.994035
-2722   68.0  0.196939  156.476689         0.485734       0.001253    0.995288
-2723   63.0  0.177551  156.654240        -0.323822       0.001129    0.996417
-2724   63.0  0.563265  157.217506        -0.323822       0.003583    1.000000
+\llap{\color{nbsphinxout}[37]:\,\hspace{\fboxrule}\hspace{\fboxsep}}     pitch  duration      onset  Rel. MIDI Pitch  Rel. Duration  Rel. Onset
+0     65.0  0.138776   0.138776        -0.460594       0.001710    0.001710
+1     63.0  0.171247   0.310023        -0.697714       0.002110    0.003820
+2     58.0  0.081270   0.391293        -1.290513       0.001001    0.004822
+3     61.0  0.235102   0.626395        -0.934833       0.002897    0.007719
+4     63.0  0.130612   0.757007        -0.697714       0.001610    0.009329
+..     {\ldots}       {\ldots}        {\ldots}              {\ldots}            {\ldots}         {\ldots}
+525   66.0  0.137143  80.645238        -0.342034       0.001690    0.993794
+526   65.0  0.101587  80.746825        -0.460594       0.001252    0.995046
+527   63.0  0.104490  80.851315        -0.697714       0.001288    0.996334
+528   62.0  0.110295  80.961610        -0.816274       0.001359    0.997693
+529   70.0  0.187211  81.148821         0.132205       0.002307    1.000000
 
-[591 rows x 6 columns]
+[530 rows x 6 columns]
 \end{sphinxVerbatim}
 }
 
@@ -2554,7 +2887,7 @@ Does the melodic arc also appear in the Jazz solos?
 \sphinxsetup{VerbatimColor={named}{nbsphinx-code-bg}}
 \sphinxsetup{VerbatimBorderColor={named}{nbsphinx-code-border}}
 \begin{sphinxVerbatim}[commandchars=\\\{\}]
-\llap{\color{nbsphinxin}[93]:\,\hspace{\fboxrule}\hspace{\fboxsep}}\PYG{n}{fig}\PYG{p}{,} \PYG{n}{ax} \PYG{o}{=} \PYG{n}{plt}\PYG{o}{.}\PYG{n}{subplots}\PYG{p}{(}\PYG{n}{figsize}\PYG{o}{=}\PYG{p}{(}\PYG{l+m+mi}{20}\PYG{p}{,}\PYG{l+m+mi}{5}\PYG{p}{)}\PYG{p}{)}
+\llap{\color{nbsphinxin}[51]:\,\hspace{\fboxrule}\hspace{\fboxsep}}\PYG{n}{fig}\PYG{p}{,} \PYG{n}{ax} \PYG{o}{=} \PYG{n}{plt}\PYG{o}{.}\PYG{n}{subplots}\PYG{p}{(}\PYG{n}{figsize}\PYG{o}{=}\PYG{p}{(}\PYG{l+m+mi}{20}\PYG{p}{,}\PYG{l+m+mi}{5}\PYG{p}{)}\PYG{p}{)}
 
 \PYG{k}{for} \PYG{n}{i} \PYG{o+ow}{in} \PYG{n+nb}{range}\PYG{p}{(}\PYG{l+m+mi}{4}\PYG{p}{)}\PYG{p}{:}
     \PYG{n}{plot\PYGZus{}melodic\PYGZus{}profile}\PYG{p}{(}\PYG{n}{standardize}\PYG{p}{(}\PYG{n}{notelist}\PYG{p}{(}\PYG{n}{i}\PYG{p}{)}\PYG{p}{)}\PYG{p}{,}
@@ -2580,7 +2913,7 @@ Does the melodic arc also appear in the Jazz solos?
 \sphinxsetup{VerbatimColor={named}{nbsphinx-code-bg}}
 \sphinxsetup{VerbatimBorderColor={named}{nbsphinx-code-border}}
 \begin{sphinxVerbatim}[commandchars=\\\{\}]
-\llap{\color{nbsphinxin}[23]:\,\hspace{\fboxrule}\hspace{\fboxsep}}\PYG{n}{big\PYGZus{}df} \PYG{o}{=} \PYG{n}{pd}\PYG{o}{.}\PYG{n}{concat}\PYG{p}{(}\PYG{p}{[}\PYG{n}{standardize}\PYG{p}{(}\PYG{n}{notelist}\PYG{p}{(}\PYG{n}{i}\PYG{p}{)}\PYG{p}{)} \PYG{k}{for} \PYG{n}{i} \PYG{o+ow}{in} \PYG{n+nb}{range}\PYG{p}{(}\PYG{n}{solos\PYGZus{}meta}\PYG{o}{.}\PYG{n}{shape}\PYG{p}{[}\PYG{l+m+mi}{0}\PYG{p}{]}\PYG{p}{)}\PYG{p}{]}\PYG{p}{)}
+\llap{\color{nbsphinxin}[41]:\,\hspace{\fboxrule}\hspace{\fboxsep}}\PYG{n}{big\PYGZus{}df} \PYG{o}{=} \PYG{n}{pd}\PYG{o}{.}\PYG{n}{concat}\PYG{p}{(}\PYG{p}{[}\PYG{n}{standardize}\PYG{p}{(}\PYG{n}{notelist}\PYG{p}{(}\PYG{n}{i}\PYG{p}{)}\PYG{p}{)} \PYG{k}{for} \PYG{n}{i} \PYG{o+ow}{in} \PYG{n+nb}{range}\PYG{p}{(}\PYG{n}{solos\PYGZus{}meta}\PYG{o}{.}\PYG{n}{shape}\PYG{p}{[}\PYG{l+m+mi}{0}\PYG{p}{]}\PYG{p}{)}\PYG{p}{]}\PYG{p}{)}
 \end{sphinxVerbatim}
 }
 
@@ -2588,7 +2921,7 @@ Does the melodic arc also appear in the Jazz solos?
 \sphinxsetup{VerbatimColor={named}{nbsphinx-code-bg}}
 \sphinxsetup{VerbatimBorderColor={named}{nbsphinx-code-border}}
 \begin{sphinxVerbatim}[commandchars=\\\{\}]
-\llap{\color{nbsphinxin}[24]:\,\hspace{\fboxrule}\hspace{\fboxsep}}\PYG{n}{big\PYGZus{}df}\PYG{o}{.}\PYG{n}{head}\PYG{p}{(}\PYG{p}{)}
+\llap{\color{nbsphinxin}[44]:\,\hspace{\fboxrule}\hspace{\fboxsep}}\PYG{n}{solos}
 \end{sphinxVerbatim}
 }
 
@@ -2601,238 +2934,7 @@ Does the melodic arc also appear in the Jazz solos?
 \sphinxsetup{VerbatimColor={named}{white}}
 \sphinxsetup{VerbatimBorderColor={named}{nbsphinx-code-border}}
 \begin{sphinxVerbatim}[commandchars=\\\{\}]
-\llap{\color{nbsphinxout}[24]:\,\hspace{\fboxrule}\hspace{\fboxsep}}   pitch  duration     onset  Rel. MIDI Pitch  Rel. Duration  Rel. Onset
-0   65.0  0.138776  0.138776        -0.460594       0.001710    0.001710
-1   63.0  0.171247  0.310023        -0.697714       0.002110    0.003820
-2   58.0  0.081270  0.391293        -1.290513       0.001001    0.004822
-3   61.0  0.235102  0.626395        -0.934833       0.002897    0.007719
-4   63.0  0.130612  0.757007        -0.697714       0.001610    0.009329
-\end{sphinxVerbatim}
-}
-
-{
-\sphinxsetup{VerbatimColor={named}{nbsphinx-code-bg}}
-\sphinxsetup{VerbatimBorderColor={named}{nbsphinx-code-border}}
-\begin{sphinxVerbatim}[commandchars=\\\{\}]
-\llap{\color{nbsphinxin}[25]:\,\hspace{\fboxrule}\hspace{\fboxsep}}\PYG{o}{\PYGZpc{}\PYGZpc{}time}
-
-\PYG{n}{fig}\PYG{p}{,} \PYG{n}{ax} \PYG{o}{=} \PYG{n}{plt}\PYG{o}{.}\PYG{n}{subplots}\PYG{p}{(}\PYG{n}{figsize}\PYG{o}{=}\PYG{p}{(}\PYG{l+m+mi}{12}\PYG{p}{,}\PYG{l+m+mi}{8}\PYG{p}{)}\PYG{p}{)}
-
-\PYG{k}{for} \PYG{n}{ID} \PYG{o+ow}{in} \PYG{n+nb}{range}\PYG{p}{(}\PYG{n}{solos\PYGZus{}meta}\PYG{o}{.}\PYG{n}{shape}\PYG{p}{[}\PYG{l+m+mi}{0}\PYG{p}{]}\PYG{p}{)}\PYG{p}{:}
-    \PYG{n}{solo} \PYG{o}{=} \PYG{n}{standardize}\PYG{p}{(}\PYG{n}{notelist}\PYG{p}{(}\PYG{n}{ID}\PYG{p}{)}\PYG{p}{)}
-    \PYG{n}{x} \PYG{o}{=} \PYG{n}{solo}\PYG{p}{[}\PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{Rel. Onset}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{]}
-    \PYG{n}{y} \PYG{o}{=} \PYG{n}{solo}\PYG{p}{[}\PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{Rel. MIDI Pitch}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{]}
-    \PYG{n}{ax}\PYG{o}{.} \PYG{n}{plot}\PYG{p}{(}\PYG{n}{x}\PYG{p}{,}\PYG{n}{y}\PYG{p}{,} \PYG{n}{lw}\PYG{o}{=}\PYG{o}{.}\PYG{l+m+mi}{5}\PYG{p}{,} \PYG{n}{c}\PYG{o}{=}\PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{tab:red}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{,} \PYG{n}{alpha}\PYG{o}{=}\PYG{o}{.}\PYG{l+m+mi}{05}\PYG{p}{)}
-
-\PYG{n}{ax}\PYG{o}{.}\PYG{n}{axvline}\PYG{p}{(}\PYG{o}{.}\PYG{l+m+mi}{25}\PYG{p}{,} \PYG{n}{lw}\PYG{o}{=}\PYG{l+m+mi}{2}\PYG{p}{,} \PYG{n}{ls}\PYG{o}{=}\PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{\PYGZhy{}\PYGZhy{}}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{,} \PYG{n}{c}\PYG{o}{=}\PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{gray}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{)}
-\PYG{n}{ax}\PYG{o}{.}\PYG{n}{axvline}\PYG{p}{(}\PYG{o}{.}\PYG{l+m+mi}{5}\PYG{p}{,} \PYG{n}{lw}\PYG{o}{=}\PYG{l+m+mi}{2}\PYG{p}{,} \PYG{n}{ls}\PYG{o}{=}\PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{\PYGZhy{}\PYGZhy{}}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{,} \PYG{n}{c}\PYG{o}{=}\PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{gray}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{)}
-\PYG{n}{ax}\PYG{o}{.}\PYG{n}{axvline}\PYG{p}{(}\PYG{o}{.}\PYG{l+m+mi}{75}\PYG{p}{,} \PYG{n}{lw}\PYG{o}{=}\PYG{l+m+mi}{2}\PYG{p}{,} \PYG{n}{ls}\PYG{o}{=}\PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{\PYGZhy{}\PYGZhy{}}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{,} \PYG{n}{c}\PYG{o}{=}\PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{gray}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{)}
-\PYG{n}{ax}\PYG{o}{.}\PYG{n}{axhline}\PYG{p}{(}\PYG{l+m+mi}{0}\PYG{p}{,} \PYG{n}{lw}\PYG{o}{=}\PYG{l+m+mi}{2}\PYG{p}{,} \PYG{n}{ls}\PYG{o}{=}\PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{\PYGZhy{}\PYGZhy{}}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{,} \PYG{n}{c}\PYG{o}{=}\PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{gray}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{)}
-
-\PYG{n}{lowess} \PYG{o}{=} \PYG{n}{sm}\PYG{o}{.}\PYG{n}{nonparametric}\PYG{o}{.}\PYG{n}{lowess}
-\PYG{n}{big\PYGZus{}x} \PYG{o}{=} \PYG{n}{big\PYGZus{}df}\PYG{p}{[}\PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{Rel. Onset}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{]}
-\PYG{n}{big\PYGZus{}y} \PYG{o}{=} \PYG{n}{big\PYGZus{}df}\PYG{p}{[}\PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{Rel. MIDI Pitch}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{]}
-\PYG{n}{big\PYGZus{}z} \PYG{o}{=} \PYG{n}{lowess}\PYG{p}{(}\PYG{n}{big\PYGZus{}y}\PYG{p}{,} \PYG{n}{big\PYGZus{}x}\PYG{p}{,} \PYG{n}{frac}\PYG{o}{=}\PYG{l+m+mi}{1}\PYG{o}{/}\PYG{l+m+mi}{10}\PYG{p}{,} \PYG{n}{delta}\PYG{o}{=}\PYG{l+m+mi}{1}\PYG{o}{/}\PYG{l+m+mi}{20}\PYG{p}{)}
-\PYG{n}{ax}\PYG{o}{.}\PYG{n}{plot}\PYG{p}{(}\PYG{n}{big\PYGZus{}z}\PYG{p}{[}\PYG{p}{:}\PYG{p}{,}\PYG{l+m+mi}{0}\PYG{p}{]}\PYG{p}{,} \PYG{n}{big\PYGZus{}z}\PYG{p}{[}\PYG{p}{:}\PYG{p}{,}\PYG{l+m+mi}{1}\PYG{p}{]}\PYG{p}{,} \PYG{n}{c}\PYG{o}{=}\PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{black}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{,} \PYG{n}{lw}\PYG{o}{=}\PYG{l+m+mi}{3}\PYG{p}{)}
-
-\PYG{n}{plt}\PYG{o}{.}\PYG{n}{title}\PYG{p}{(}\PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{Solo wave}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{)}
-\PYG{n}{plt}\PYG{o}{.}\PYG{n}{xlabel}\PYG{p}{(}\PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{Relative onset}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{)}
-\PYG{n}{plt}\PYG{o}{.}\PYG{n}{ylabel}\PYG{p}{(}\PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{Pitch deviation}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{)}
-\PYG{n}{plt}\PYG{o}{.}\PYG{n}{xticks}\PYG{p}{(}\PYG{n}{np}\PYG{o}{.}\PYG{n}{linspace}\PYG{p}{(}\PYG{l+m+mi}{0}\PYG{p}{,}\PYG{l+m+mi}{1}\PYG{p}{,}\PYG{l+m+mi}{5}\PYG{p}{)}\PYG{p}{)}
-\PYG{n}{plt}\PYG{o}{.}\PYG{n}{yticks}\PYG{p}{(}\PYG{n}{np}\PYG{o}{.}\PYG{n}{linspace}\PYG{p}{(}\PYG{o}{\PYGZhy{}}\PYG{l+m+mi}{5}\PYG{p}{,}\PYG{l+m+mi}{5}\PYG{p}{,}\PYG{l+m+mi}{11}\PYG{p}{)}\PYG{p}{)}
-\PYG{n}{plt}\PYG{o}{.}\PYG{n}{xlim}\PYG{p}{(}\PYG{l+m+mi}{0}\PYG{p}{,}\PYG{l+m+mi}{1}\PYG{p}{)}
-
-\PYG{n}{plt}\PYG{o}{.}\PYG{n}{tight\PYGZus{}layout}\PYG{p}{(}\PYG{p}{)}
-\PYG{n}{plt}\PYG{o}{.}\PYG{n}{savefig}\PYG{p}{(}\PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{img/jazz\PYGZus{}melodic\PYGZus{}arc.png}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{)}
-\PYG{n}{plt}\PYG{o}{.}\PYG{n}{show}\PYG{p}{(}\PYG{p}{)}
-\end{sphinxVerbatim}
-}
-
-\hrule height -\fboxrule\relax
-\vspace{\nbsphinxcodecellspacing}
-
-\makeatletter\setbox\nbsphinxpromptbox\box\voidb@x\makeatother
-
-\begin{nbsphinxfancyoutput}
-
-\noindent\sphinxincludegraphics[width=839\sphinxpxdimen,height=551\sphinxpxdimen]{{04_jazz_solos_40_0}.png}
-
-\end{nbsphinxfancyoutput}
-
-{
-
-\kern-\sphinxverbatimsmallskipamount\kern-\baselineskip
-\kern+\FrameHeightAdjust\kern-\fboxrule
-\vspace{\nbsphinxcodecellspacing}
-
-\sphinxsetup{VerbatimColor={named}{white}}
-\sphinxsetup{VerbatimBorderColor={named}{nbsphinx-code-border}}
-\begin{sphinxVerbatim}[commandchars=\\\{\}]
-Wall time: 4.7 s
-\end{sphinxVerbatim}
-}
-
-
-\section{Pitch vs loudness}
-\label{\detokenize{04_jazz_solos:Pitch-vs-loudness}}
-Above we have already analyzed some melodic profiles and seen that, on average, the Jazz solos tend not to follow the melodic arch on a global scale. Now, we ask whether the pitch of the notes in the solos are related to another important feature of performance: loudness. The WJazzD contains several measures for loudness (compare the columns in the \sphinxcode{\sphinxupquote{solos}} DataFrame). Here, we focus on the “Median loudness” which is stored in the \sphinxcode{\sphinxupquote{loud\_med}} column.
-
-Let us look at an example.
-
-{
-\sphinxsetup{VerbatimColor={named}{nbsphinx-code-bg}}
-\sphinxsetup{VerbatimBorderColor={named}{nbsphinx-code-border}}
-\begin{sphinxVerbatim}[commandchars=\\\{\}]
-\llap{\color{nbsphinxin}[105]:\,\hspace{\fboxrule}\hspace{\fboxsep}}\PYG{n}{example\PYGZus{}solo} \PYG{o}{=} \PYG{n}{solos}\PYG{p}{[} \PYG{n}{solos}\PYG{p}{[}\PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{melid}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{]} \PYG{o}{==} \PYG{l+m+mi}{233} \PYG{p}{]}\PYG{p}{[}\PYG{p}{[}\PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{pitch}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{,} \PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{loud\PYGZus{}med}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{]}\PYG{p}{]}
-\end{sphinxVerbatim}
-}
-
-{
-\sphinxsetup{VerbatimColor={named}{nbsphinx-code-bg}}
-\sphinxsetup{VerbatimBorderColor={named}{nbsphinx-code-border}}
-\begin{sphinxVerbatim}[commandchars=\\\{\}]
-\llap{\color{nbsphinxin}[106]:\,\hspace{\fboxrule}\hspace{\fboxsep}}\PYG{n}{example\PYGZus{}solo}
-\end{sphinxVerbatim}
-}
-
-{
-
-\kern-\sphinxverbatimsmallskipamount\kern-\baselineskip
-\kern+\FrameHeightAdjust\kern-\fboxrule
-\vspace{\nbsphinxcodecellspacing}
-
-\sphinxsetup{VerbatimColor={named}{white}}
-\sphinxsetup{VerbatimBorderColor={named}{nbsphinx-code-border}}
-\begin{sphinxVerbatim}[commandchars=\\\{\}]
-\llap{\color{nbsphinxout}[106]:\,\hspace{\fboxrule}\hspace{\fboxsep}}        pitch   loud\_med
-115075   62.0  67.082700
-115076   65.0  65.345677
-115077   67.0  66.323539
-115078   69.0  69.204257
-115079   62.0  69.059581
-{\ldots}       {\ldots}        {\ldots}
-115549   59.0  61.083907
-115550   57.0  58.345887
-115551   55.0  65.132786
-115552   54.0  59.595735
-115553   53.0  58.390132
-
-[479 rows x 2 columns]
-\end{sphinxVerbatim}
-}
-
-We can get a visual impression of whether there might be a direct relation between the two features by plotting it and drawing a regression line. For this, the \sphinxcode{\sphinxupquote{regplot()}} function of the \sphinxcode{\sphinxupquote{seaborn}} library is well\sphinxhyphen{}suited.
-
-{
-\sphinxsetup{VerbatimColor={named}{nbsphinx-code-bg}}
-\sphinxsetup{VerbatimBorderColor={named}{nbsphinx-code-border}}
-\begin{sphinxVerbatim}[commandchars=\\\{\}]
-\llap{\color{nbsphinxin}[110]:\,\hspace{\fboxrule}\hspace{\fboxsep}}\PYG{n}{sns}\PYG{o}{.}\PYG{n}{regplot}\PYG{p}{(}\PYG{n}{data}\PYG{o}{=}\PYG{n}{example\PYGZus{}solo}\PYG{p}{,} \PYG{n}{x}\PYG{o}{=}\PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{pitch}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{,} \PYG{n}{y}\PYG{o}{=}\PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{loud\PYGZus{}med}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{)}\PYG{p}{;}
-\end{sphinxVerbatim}
-}
-
-\hrule height -\fboxrule\relax
-\vspace{\nbsphinxcodecellspacing}
-
-\makeatletter\setbox\nbsphinxpromptbox\box\voidb@x\makeatother
-
-\begin{nbsphinxfancyoutput}
-
-\noindent\sphinxincludegraphics[width=411\sphinxpxdimen,height=281\sphinxpxdimen]{{04_jazz_solos_46_0}.png}
-
-\end{nbsphinxfancyoutput}
-
-There seems to be no clear relation; no matter how high the pitch, the loudness stays more or less the same. Let’s look at another example!
-
-{
-\sphinxsetup{VerbatimColor={named}{nbsphinx-code-bg}}
-\sphinxsetup{VerbatimBorderColor={named}{nbsphinx-code-border}}
-\begin{sphinxVerbatim}[commandchars=\\\{\}]
-\llap{\color{nbsphinxin}[111]:\,\hspace{\fboxrule}\hspace{\fboxsep}}\PYG{n}{example\PYGZus{}solo2} \PYG{o}{=} \PYG{n}{solos}\PYG{p}{[} \PYG{n}{solos}\PYG{p}{[}\PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{melid}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{]} \PYG{o}{==} \PYG{l+m+mi}{333} \PYG{p}{]}\PYG{p}{[}\PYG{p}{[}\PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{pitch}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{,} \PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{loud\PYGZus{}med}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{]}\PYG{p}{]}
-
-\PYG{n}{sns}\PYG{o}{.}\PYG{n}{regplot}\PYG{p}{(}\PYG{n}{data}\PYG{o}{=}\PYG{n}{example\PYGZus{}solo2}\PYG{p}{,} \PYG{n}{x}\PYG{o}{=}\PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{pitch}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{,} \PYG{n}{y}\PYG{o}{=}\PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{loud\PYGZus{}med}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{)}\PYG{p}{;}
-\end{sphinxVerbatim}
-}
-
-\hrule height -\fboxrule\relax
-\vspace{\nbsphinxcodecellspacing}
-
-\makeatletter\setbox\nbsphinxpromptbox\box\voidb@x\makeatother
-
-\begin{nbsphinxfancyoutput}
-
-\noindent\sphinxincludegraphics[width=402\sphinxpxdimen,height=281\sphinxpxdimen]{{04_jazz_solos_48_0}.png}
-
-\end{nbsphinxfancyoutput}
-
-In this case, there is a positive trend. The higher the pitch, the louder the performer plays. Since we have now two different examples \sphinxhyphen{} in one case no relation, in the other case a positive correlation \sphinxhyphen{} we should now look at whether there is a trend emerging from all solos taken together.
-
-
-\section{The “rain cloud” of Jazz solos}
-\label{\detokenize{04_jazz_solos:The-_u201crain-cloud_u201d-of-Jazz-solos}}
-We now take all 200’809 notes from all solos and look at the relation between their pitch and their median loudness.
-
-{
-\sphinxsetup{VerbatimColor={named}{nbsphinx-code-bg}}
-\sphinxsetup{VerbatimBorderColor={named}{nbsphinx-code-border}}
-\begin{sphinxVerbatim}[commandchars=\\\{\}]
-\llap{\color{nbsphinxin}[112]:\,\hspace{\fboxrule}\hspace{\fboxsep}}\PYG{n}{X} \PYG{o}{=} \PYG{n}{solos}\PYG{p}{[}\PYG{p}{[}\PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{pitch}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{,} \PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{loud\PYGZus{}med}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{]}\PYG{p}{]}\PYG{o}{.}\PYG{n}{values}
-\PYG{n}{x} \PYG{o}{=} \PYG{n}{X}\PYG{p}{[}\PYG{p}{:}\PYG{p}{,}\PYG{l+m+mi}{0}\PYG{p}{]}
-\PYG{n}{y} \PYG{o}{=} \PYG{n}{X}\PYG{p}{[}\PYG{p}{:}\PYG{p}{,}\PYG{l+m+mi}{1}\PYG{p}{]}
-
-\PYG{n}{fig}\PYG{p}{,} \PYG{n}{ax} \PYG{o}{=} \PYG{n}{plt}\PYG{o}{.}\PYG{n}{subplots}\PYG{p}{(}\PYG{n}{figsize}\PYG{o}{=}\PYG{p}{(}\PYG{l+m+mi}{16}\PYG{p}{,}\PYG{l+m+mi}{9}\PYG{p}{)}\PYG{p}{)}
-\PYG{n}{ax}\PYG{o}{.}\PYG{n}{scatter}\PYG{p}{(}\PYG{n}{x}\PYG{p}{,}\PYG{n}{y}\PYG{p}{,} \PYG{n}{alpha}\PYG{o}{=}\PYG{l+m+mf}{0.01}\PYG{p}{)}
-
-\PYG{n}{plt}\PYG{o}{.}\PYG{n}{xlabel}\PYG{p}{(}\PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{Pitch}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{)}
-\PYG{n}{plt}\PYG{o}{.}\PYG{n}{ylabel}\PYG{p}{(}\PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{Median loudness [dB]}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{)}
-\PYG{n}{plt}\PYG{o}{.}\PYG{n}{show}\PYG{p}{(}\PYG{p}{)}
-\end{sphinxVerbatim}
-}
-
-\hrule height -\fboxrule\relax
-\vspace{\nbsphinxcodecellspacing}
-
-\makeatletter\setbox\nbsphinxpromptbox\box\voidb@x\makeatother
-
-\begin{nbsphinxfancyoutput}
-
-\noindent\sphinxincludegraphics[width=982\sphinxpxdimen,height=553\sphinxpxdimen]{{04_jazz_solos_52_0}.png}
-
-\end{nbsphinxfancyoutput}
-
-The visual impression is that of a cloud from which rain drops down and forms a puddle. Which trends can we observe?
-
-
-\section{Comparing performers}
-\label{\detokenize{04_jazz_solos:Comparing-performers}}
-Taking all pieces together was not really informative. Maybe a somewhat closer look brings more to the front. Let us some specific performers whose solos we want to compare.
-
-{
-\sphinxsetup{VerbatimColor={named}{nbsphinx-code-bg}}
-\sphinxsetup{VerbatimBorderColor={named}{nbsphinx-code-border}}
-\begin{sphinxVerbatim}[commandchars=\\\{\}]
-\llap{\color{nbsphinxin}[114]:\,\hspace{\fboxrule}\hspace{\fboxsep}}\PYG{n}{selected\PYGZus{}performers} \PYG{o}{=} \PYG{p}{[}\PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{Charlie Parker}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{,} \PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{Miles Davis}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{,} \PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{Louis Armstrong}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{,} \PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{Herbie Hancock}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{,} \PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{Von Freeman}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{,} \PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{Red Garland}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{]}
-\end{sphinxVerbatim}
-}
-
-{
-\sphinxsetup{VerbatimColor={named}{nbsphinx-code-bg}}
-\sphinxsetup{VerbatimBorderColor={named}{nbsphinx-code-border}}
-\begin{sphinxVerbatim}[commandchars=\\\{\}]
-\llap{\color{nbsphinxin}[118]:\,\hspace{\fboxrule}\hspace{\fboxsep}}\PYG{n}{solos}
-\end{sphinxVerbatim}
-}
-
-{
-
-\kern-\sphinxverbatimsmallskipamount\kern-\baselineskip
-\kern+\FrameHeightAdjust\kern-\fboxrule
-\vspace{\nbsphinxcodecellspacing}
-
-\sphinxsetup{VerbatimColor={named}{white}}
-\sphinxsetup{VerbatimBorderColor={named}{nbsphinx-code-border}}
-\begin{sphinxVerbatim}[commandchars=\\\{\}]
-\llap{\color{nbsphinxout}[118]:\,\hspace{\fboxrule}\hspace{\fboxsep}}        eventid  melid      onset  pitch  duration  period  division  bar  \textbackslash{}
+\llap{\color{nbsphinxout}[44]:\,\hspace{\fboxrule}\hspace{\fboxsep}}        eventid  melid      onset  pitch  duration  period  division  bar  \textbackslash{}
 0             1      1  10.343492   65.0  0.138776       4         1    0
 1             2      1  10.637642   63.0  0.171247       4         4    0
 2             3      1  10.843719   58.0  0.081270       4         4    0
@@ -2879,7 +2981,33 @@ Taking all pieces together was not really informative. Maybe a somewhat closer l
 \sphinxsetup{VerbatimColor={named}{nbsphinx-code-bg}}
 \sphinxsetup{VerbatimBorderColor={named}{nbsphinx-code-border}}
 \begin{sphinxVerbatim}[commandchars=\\\{\}]
-\llap{\color{nbsphinxin}[119]:\,\hspace{\fboxrule}\hspace{\fboxsep}}\PYG{n}{grouped\PYGZus{}df} \PYG{o}{=} \PYG{n}{solos}\PYG{o}{.}\PYG{n}{groupby}\PYG{p}{(}\PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{performer}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{)}
+\llap{\color{nbsphinxin}[43]:\,\hspace{\fboxrule}\hspace{\fboxsep}}\PYG{n}{big\PYGZus{}df}
+\end{sphinxVerbatim}
+}
+
+{
+
+\kern-\sphinxverbatimsmallskipamount\kern-\baselineskip
+\kern+\FrameHeightAdjust\kern-\fboxrule
+\vspace{\nbsphinxcodecellspacing}
+
+\sphinxsetup{VerbatimColor={named}{white}}
+\sphinxsetup{VerbatimBorderColor={named}{nbsphinx-code-border}}
+\begin{sphinxVerbatim}[commandchars=\\\{\}]
+\llap{\color{nbsphinxout}[43]:\,\hspace{\fboxrule}\hspace{\fboxsep}}        pitch  duration      onset  Rel. MIDI Pitch  Rel. Duration  Rel. Onset
+0        65.0  0.138776   0.138776        -0.460594       0.001710    0.001710
+1        63.0  0.171247   0.310023        -0.697714       0.002110    0.003820
+2        58.0  0.081270   0.391293        -1.290513       0.001001    0.004822
+3        61.0  0.235102   0.626395        -0.934833       0.002897    0.007719
+4        63.0  0.130612   0.757007        -0.697714       0.001610    0.009329
+{\ldots}       {\ldots}       {\ldots}        {\ldots}              {\ldots}            {\ldots}         {\ldots}
+200585   62.0  0.870748  68.588934         0.014206       0.012540    0.987794
+200586   57.0  0.133515  68.722449        -0.896471       0.001923    0.989717
+200587   62.0  0.139320  68.861769         0.014206       0.002006    0.991723
+200588   61.0  0.133515  68.995283        -0.167930       0.001923    0.993646
+200589   60.0  0.441179  69.436463        -0.350065       0.006354    1.000000
+
+[200590 rows x 6 columns]
 \end{sphinxVerbatim}
 }
 
@@ -2887,7 +3015,271 @@ Taking all pieces together was not really informative. Maybe a somewhat closer l
 \sphinxsetup{VerbatimColor={named}{nbsphinx-code-bg}}
 \sphinxsetup{VerbatimBorderColor={named}{nbsphinx-code-border}}
 \begin{sphinxVerbatim}[commandchars=\\\{\}]
-\llap{\color{nbsphinxin}[120]:\,\hspace{\fboxrule}\hspace{\fboxsep}}\PYG{n}{fig}\PYG{p}{,} \PYG{n}{ax} \PYG{o}{=} \PYG{n}{plt}\PYG{o}{.}\PYG{n}{subplots}\PYG{p}{(}\PYG{n}{figsize}\PYG{o}{=}\PYG{p}{(}\PYG{l+m+mi}{10}\PYG{p}{,}\PYG{l+m+mi}{10}\PYG{p}{)}\PYG{p}{)}
+\llap{\color{nbsphinxin}[62]:\,\hspace{\fboxrule}\hspace{\fboxsep}}\PYG{n}{solos\PYGZus{}meta}\PYG{p}{[}\PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{performer}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{]}\PYG{o}{.}\PYG{n}{unique}\PYG{p}{(}\PYG{p}{)}
+\end{sphinxVerbatim}
+}
+
+{
+
+\kern-\sphinxverbatimsmallskipamount\kern-\baselineskip
+\kern+\FrameHeightAdjust\kern-\fboxrule
+\vspace{\nbsphinxcodecellspacing}
+
+\sphinxsetup{VerbatimColor={named}{white}}
+\sphinxsetup{VerbatimBorderColor={named}{nbsphinx-code-border}}
+\begin{sphinxVerbatim}[commandchars=\\\{\}]
+\llap{\color{nbsphinxout}[62]:\,\hspace{\fboxrule}\hspace{\fboxsep}}array(['Art Pepper', 'Benny Carter', 'Benny Goodman', 'Ben Webster',
+       'Bix Beiderbecke', 'Bob Berg', 'Branford Marsalis', 'Buck Clayton',
+       'Cannonball Adderley', 'Charlie Parker', 'Charlie Shavers',
+       'Chet Baker', 'Chris Potter', 'Chu Berry', 'Clifford Brown',
+       'Coleman Hawkins', 'Curtis Fuller', 'David Liebman',
+       'David Murray', 'Dexter Gordon', 'Dickie Wells', 'Dizzy Gillespie',
+       'Don Byas', 'Don Ellis', 'Eric Dolphy', 'Fats Navarro',
+       'Freddie Hubbard', 'George Coleman', 'Gerry Mulligan',
+       'Hank Mobley', 'Harry Edison', 'Henry Allen', 'Herbie Hancock',
+       'J.C. Higginbotham', 'J.J. Johnson', 'Joe Henderson', 'Joe Lovano',
+       'John Abercrombie', 'John Coltrane', 'Johnny Dodds',
+       'Johnny Hodges', 'Joshua Redman', 'Kai Winding', 'Kenny Dorham',
+       'Kenny Garrett', 'Kenny Wheeler', 'Kid Ory', 'Lee Konitz',
+       'Lee Morgan', 'Lester Young', 'Lionel Hampton', 'Louis Armstrong',
+       'Michael Brecker', 'Miles Davis', 'Milt Jackson', 'Nat Adderley',
+       'Ornette Coleman', 'Pat Martino', 'Pat Metheny', 'Paul Desmond',
+       'Pepper Adams', 'Phil Woods', 'Red Garland', 'Rex Stewart',
+       'Roy Eldridge', 'Sidney Bechet', 'Sonny Rollins', 'Sonny Stitt',
+       'Stan Getz', 'Steve Coleman', 'Steve Lacy', 'Steve Turre',
+       'Von Freeman', 'Warne Marsh', 'Wayne Shorter', 'Woody Shaw',
+       'Wynton Marsalis', 'Zoot Sims'], dtype=object)
+\end{sphinxVerbatim}
+}
+
+{
+\sphinxsetup{VerbatimColor={named}{nbsphinx-code-bg}}
+\sphinxsetup{VerbatimBorderColor={named}{nbsphinx-code-border}}
+\begin{sphinxVerbatim}[commandchars=\\\{\}]
+\llap{\color{nbsphinxin}[67]:\,\hspace{\fboxrule}\hspace{\fboxsep}}\PYG{o}{\PYGZpc{}\PYGZpc{}time}
+
+\PYG{n}{fig}\PYG{p}{,} \PYG{n}{ax} \PYG{o}{=} \PYG{n}{plt}\PYG{o}{.}\PYG{n}{subplots}\PYG{p}{(}\PYG{n}{figsize}\PYG{o}{=}\PYG{p}{(}\PYG{l+m+mi}{12}\PYG{p}{,}\PYG{l+m+mi}{8}\PYG{p}{)}\PYG{p}{)}
+
+\PYG{n}{artists} \PYG{o}{=} \PYG{p}{[}\PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{Louis Armstrong}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{]}
+
+\PYG{c+c1}{\PYGZsh{} for i, (artist, group) in enumerate(solos.groupby(\PYGZdq{}performer\PYGZdq{})):}
+\PYG{c+c1}{\PYGZsh{}     if artist in artists:}
+\PYG{c+c1}{\PYGZsh{}         for j, group in group.groupby(\PYGZdq{}melid\PYGZdq{}):}
+\PYG{c+c1}{\PYGZsh{}             solo = standardize(notelist(j))}
+\PYG{c+c1}{\PYGZsh{}             x = solo[\PYGZdq{}Rel. Onset\PYGZdq{}]}
+\PYG{c+c1}{\PYGZsh{}             y = solo[\PYGZdq{}Rel. MIDI Pitch\PYGZdq{}]}
+\PYG{c+c1}{\PYGZsh{}             ax. plot(x,y, lw=.5, c=\PYGZdq{}tab:red\PYGZdq{}, alpha=.5)}
+
+\PYG{k}{for} \PYG{n}{ID} \PYG{o+ow}{in} \PYG{n+nb}{range}\PYG{p}{(}\PYG{n}{solos\PYGZus{}meta}\PYG{o}{.}\PYG{n}{shape}\PYG{p}{[}\PYG{l+m+mi}{0}\PYG{p}{]}\PYG{p}{)}\PYG{p}{:}
+    \PYG{n}{solo} \PYG{o}{=} \PYG{n}{standardize}\PYG{p}{(}\PYG{n}{notelist}\PYG{p}{(}\PYG{n}{ID}\PYG{p}{)}\PYG{p}{)}
+    \PYG{n}{x} \PYG{o}{=} \PYG{n}{solo}\PYG{p}{[}\PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{Rel. Onset}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{]}
+    \PYG{n}{y} \PYG{o}{=} \PYG{n}{solo}\PYG{p}{[}\PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{Rel. MIDI Pitch}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{]}
+    \PYG{n}{ax}\PYG{o}{.} \PYG{n}{plot}\PYG{p}{(}\PYG{n}{x}\PYG{p}{,}\PYG{n}{y}\PYG{p}{,} \PYG{n}{lw}\PYG{o}{=}\PYG{o}{.}\PYG{l+m+mi}{5}\PYG{p}{,} \PYG{n}{c}\PYG{o}{=}\PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{tab:red}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{,} \PYG{n}{alpha}\PYG{o}{=}\PYG{o}{.}\PYG{l+m+mi}{05}\PYG{p}{)}
+
+\PYG{n}{ax}\PYG{o}{.}\PYG{n}{axvline}\PYG{p}{(}\PYG{o}{.}\PYG{l+m+mi}{25}\PYG{p}{,} \PYG{n}{lw}\PYG{o}{=}\PYG{l+m+mi}{2}\PYG{p}{,} \PYG{n}{ls}\PYG{o}{=}\PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{\PYGZhy{}\PYGZhy{}}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{,} \PYG{n}{c}\PYG{o}{=}\PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{gray}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{)}
+\PYG{n}{ax}\PYG{o}{.}\PYG{n}{axvline}\PYG{p}{(}\PYG{o}{.}\PYG{l+m+mi}{5}\PYG{p}{,} \PYG{n}{lw}\PYG{o}{=}\PYG{l+m+mi}{2}\PYG{p}{,} \PYG{n}{ls}\PYG{o}{=}\PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{\PYGZhy{}\PYGZhy{}}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{,} \PYG{n}{c}\PYG{o}{=}\PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{gray}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{)}
+\PYG{n}{ax}\PYG{o}{.}\PYG{n}{axvline}\PYG{p}{(}\PYG{o}{.}\PYG{l+m+mi}{75}\PYG{p}{,} \PYG{n}{lw}\PYG{o}{=}\PYG{l+m+mi}{2}\PYG{p}{,} \PYG{n}{ls}\PYG{o}{=}\PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{\PYGZhy{}\PYGZhy{}}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{,} \PYG{n}{c}\PYG{o}{=}\PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{gray}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{)}
+\PYG{n}{ax}\PYG{o}{.}\PYG{n}{axhline}\PYG{p}{(}\PYG{l+m+mi}{0}\PYG{p}{,} \PYG{n}{lw}\PYG{o}{=}\PYG{l+m+mi}{2}\PYG{p}{,} \PYG{n}{ls}\PYG{o}{=}\PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{\PYGZhy{}\PYGZhy{}}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{,} \PYG{n}{c}\PYG{o}{=}\PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{gray}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{)}
+
+\PYG{n}{lowess} \PYG{o}{=} \PYG{n}{sm}\PYG{o}{.}\PYG{n}{nonparametric}\PYG{o}{.}\PYG{n}{lowess}
+\PYG{n}{big\PYGZus{}x} \PYG{o}{=} \PYG{n}{big\PYGZus{}df}\PYG{p}{[}\PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{Rel. Onset}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{]}
+\PYG{n}{big\PYGZus{}y} \PYG{o}{=} \PYG{n}{big\PYGZus{}df}\PYG{p}{[}\PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{Rel. MIDI Pitch}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{]}
+\PYG{n}{big\PYGZus{}z} \PYG{o}{=} \PYG{n}{lowess}\PYG{p}{(}\PYG{n}{big\PYGZus{}y}\PYG{p}{,} \PYG{n}{big\PYGZus{}x}\PYG{p}{,} \PYG{n}{frac}\PYG{o}{=}\PYG{l+m+mi}{1}\PYG{o}{/}\PYG{l+m+mi}{10}\PYG{p}{,} \PYG{n}{delta}\PYG{o}{=}\PYG{l+m+mi}{1}\PYG{o}{/}\PYG{l+m+mi}{20}\PYG{p}{)}
+\PYG{n}{ax}\PYG{o}{.}\PYG{n}{plot}\PYG{p}{(}\PYG{n}{big\PYGZus{}z}\PYG{p}{[}\PYG{p}{:}\PYG{p}{,}\PYG{l+m+mi}{0}\PYG{p}{]}\PYG{p}{,} \PYG{n}{big\PYGZus{}z}\PYG{p}{[}\PYG{p}{:}\PYG{p}{,}\PYG{l+m+mi}{1}\PYG{p}{]}\PYG{p}{,} \PYG{n}{c}\PYG{o}{=}\PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{black}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{,} \PYG{n}{lw}\PYG{o}{=}\PYG{l+m+mi}{3}\PYG{p}{)}
+
+\PYG{n}{plt}\PYG{o}{.}\PYG{n}{title}\PYG{p}{(}\PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{Solo wave}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{)}
+\PYG{n}{plt}\PYG{o}{.}\PYG{n}{xlabel}\PYG{p}{(}\PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{Relative onset}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{)}
+\PYG{n}{plt}\PYG{o}{.}\PYG{n}{ylabel}\PYG{p}{(}\PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{Pitch deviation}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{)}
+\PYG{n}{plt}\PYG{o}{.}\PYG{n}{xticks}\PYG{p}{(}\PYG{n}{np}\PYG{o}{.}\PYG{n}{linspace}\PYG{p}{(}\PYG{l+m+mi}{0}\PYG{p}{,}\PYG{l+m+mi}{1}\PYG{p}{,}\PYG{l+m+mi}{5}\PYG{p}{)}\PYG{p}{)}
+\PYG{n}{plt}\PYG{o}{.}\PYG{n}{yticks}\PYG{p}{(}\PYG{n}{np}\PYG{o}{.}\PYG{n}{linspace}\PYG{p}{(}\PYG{o}{\PYGZhy{}}\PYG{l+m+mi}{5}\PYG{p}{,}\PYG{l+m+mi}{5}\PYG{p}{,}\PYG{l+m+mi}{11}\PYG{p}{)}\PYG{p}{)}
+\PYG{n}{plt}\PYG{o}{.}\PYG{n}{xlim}\PYG{p}{(}\PYG{l+m+mi}{0}\PYG{p}{,}\PYG{l+m+mi}{1}\PYG{p}{)}
+
+\PYG{n}{plt}\PYG{o}{.}\PYG{n}{tight\PYGZus{}layout}\PYG{p}{(}\PYG{p}{)}
+\PYG{n}{plt}\PYG{o}{.}\PYG{n}{savefig}\PYG{p}{(}\PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{img/jazz\PYGZus{}melodic\PYGZus{}arc.png}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{)}
+\PYG{n}{plt}\PYG{o}{.}\PYG{n}{show}\PYG{p}{(}\PYG{p}{)}
+\end{sphinxVerbatim}
+}
+
+\hrule height -\fboxrule\relax
+\vspace{\nbsphinxcodecellspacing}
+
+\makeatletter\setbox\nbsphinxpromptbox\box\voidb@x\makeatother
+
+\begin{nbsphinxfancyoutput}
+
+\noindent\sphinxincludegraphics[width=839\sphinxpxdimen,height=551\sphinxpxdimen]{{04_jazz_solos_42_0}.png}
+
+\end{nbsphinxfancyoutput}
+
+{
+
+\kern-\sphinxverbatimsmallskipamount\kern-\baselineskip
+\kern+\FrameHeightAdjust\kern-\fboxrule
+\vspace{\nbsphinxcodecellspacing}
+
+\sphinxsetup{VerbatimColor={named}{white}}
+\sphinxsetup{VerbatimBorderColor={named}{nbsphinx-code-border}}
+\begin{sphinxVerbatim}[commandchars=\\\{\}]
+Wall time: 7.76 s
+\end{sphinxVerbatim}
+}
+
+
+\section{Pitch vs loudness}
+\label{\detokenize{04_jazz_solos:Pitch-vs-loudness}}
+Above we have already analyzed some melodic profiles and seen that, on average, the Jazz solos tend not to follow the melodic arch on a global scale. Now, we ask whether the pitch of the notes in the solos are related to another important feature of performance: loudness. The WJazzD contains several measures for loudness (compare the columns in the \sphinxcode{\sphinxupquote{solos}} DataFrame). Here, we focus on the “Median loudness” which is stored in the \sphinxcode{\sphinxupquote{loud\_med}} column.
+
+Let us look at an example.
+
+{
+\sphinxsetup{VerbatimColor={named}{nbsphinx-code-bg}}
+\sphinxsetup{VerbatimBorderColor={named}{nbsphinx-code-border}}
+\begin{sphinxVerbatim}[commandchars=\\\{\}]
+\llap{\color{nbsphinxin}[68]:\,\hspace{\fboxrule}\hspace{\fboxsep}}\PYG{n}{example\PYGZus{}solo} \PYG{o}{=} \PYG{n}{solos}\PYG{p}{[} \PYG{n}{solos}\PYG{p}{[}\PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{melid}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{]} \PYG{o}{==} \PYG{l+m+mi}{233} \PYG{p}{]}\PYG{p}{[}\PYG{p}{[}\PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{pitch}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{,} \PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{loud\PYGZus{}med}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{]}\PYG{p}{]}
+\end{sphinxVerbatim}
+}
+
+{
+\sphinxsetup{VerbatimColor={named}{nbsphinx-code-bg}}
+\sphinxsetup{VerbatimBorderColor={named}{nbsphinx-code-border}}
+\begin{sphinxVerbatim}[commandchars=\\\{\}]
+\llap{\color{nbsphinxin}[69]:\,\hspace{\fboxrule}\hspace{\fboxsep}}\PYG{n}{example\PYGZus{}solo}
+\end{sphinxVerbatim}
+}
+
+{
+
+\kern-\sphinxverbatimsmallskipamount\kern-\baselineskip
+\kern+\FrameHeightAdjust\kern-\fboxrule
+\vspace{\nbsphinxcodecellspacing}
+
+\sphinxsetup{VerbatimColor={named}{white}}
+\sphinxsetup{VerbatimBorderColor={named}{nbsphinx-code-border}}
+\begin{sphinxVerbatim}[commandchars=\\\{\}]
+\llap{\color{nbsphinxout}[69]:\,\hspace{\fboxrule}\hspace{\fboxsep}}        pitch   loud\_med
+115075   62.0  67.082700
+115076   65.0  65.345677
+115077   67.0  66.323539
+115078   69.0  69.204257
+115079   62.0  69.059581
+{\ldots}       {\ldots}        {\ldots}
+115549   59.0  61.083907
+115550   57.0  58.345887
+115551   55.0  65.132786
+115552   54.0  59.595735
+115553   53.0  58.390132
+
+[479 rows x 2 columns]
+\end{sphinxVerbatim}
+}
+
+We can get a visual impression of whether there might be a direct relation between the two features by plotting it and drawing a regression line. For this, the \sphinxcode{\sphinxupquote{regplot()}} function of the \sphinxcode{\sphinxupquote{seaborn}} library is well\sphinxhyphen{}suited.
+
+{
+\sphinxsetup{VerbatimColor={named}{nbsphinx-code-bg}}
+\sphinxsetup{VerbatimBorderColor={named}{nbsphinx-code-border}}
+\begin{sphinxVerbatim}[commandchars=\\\{\}]
+\llap{\color{nbsphinxin}[71]:\,\hspace{\fboxrule}\hspace{\fboxsep}}\PYG{n}{sns}\PYG{o}{.}\PYG{n}{regplot}\PYG{p}{(}\PYG{n}{data}\PYG{o}{=}\PYG{n}{example\PYGZus{}solo}\PYG{p}{,} \PYG{n}{x}\PYG{o}{=}\PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{pitch}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{,} \PYG{n}{y}\PYG{o}{=}\PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{loud\PYGZus{}med}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{,} \PYG{n}{line\PYGZus{}kws}\PYG{o}{=}\PYG{p}{\PYGZob{}}\PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{color}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{:}\PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{black}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{\PYGZcb{}}\PYG{p}{)}\PYG{p}{;}
+\end{sphinxVerbatim}
+}
+
+\hrule height -\fboxrule\relax
+\vspace{\nbsphinxcodecellspacing}
+
+\makeatletter\setbox\nbsphinxpromptbox\box\voidb@x\makeatother
+
+\begin{nbsphinxfancyoutput}
+
+\noindent\sphinxincludegraphics[width=411\sphinxpxdimen,height=281\sphinxpxdimen]{{04_jazz_solos_48_0}.png}
+
+\end{nbsphinxfancyoutput}
+
+There seems to be no clear relation; no matter how high the pitch, the loudness stays more or less the same. Let’s look at another example!
+
+{
+\sphinxsetup{VerbatimColor={named}{nbsphinx-code-bg}}
+\sphinxsetup{VerbatimBorderColor={named}{nbsphinx-code-border}}
+\begin{sphinxVerbatim}[commandchars=\\\{\}]
+\llap{\color{nbsphinxin}[73]:\,\hspace{\fboxrule}\hspace{\fboxsep}}\PYG{n}{example\PYGZus{}solo2} \PYG{o}{=} \PYG{n}{solos}\PYG{p}{[} \PYG{n}{solos}\PYG{p}{[}\PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{melid}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{]} \PYG{o}{==} \PYG{l+m+mi}{333} \PYG{p}{]}\PYG{p}{[}\PYG{p}{[}\PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{pitch}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{,} \PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{loud\PYGZus{}med}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{]}\PYG{p}{]}
+
+\PYG{n}{sns}\PYG{o}{.}\PYG{n}{regplot}\PYG{p}{(}\PYG{n}{data}\PYG{o}{=}\PYG{n}{example\PYGZus{}solo2}\PYG{p}{,} \PYG{n}{x}\PYG{o}{=}\PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{pitch}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{,} \PYG{n}{y}\PYG{o}{=}\PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{loud\PYGZus{}med}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{,} \PYG{n}{line\PYGZus{}kws}\PYG{o}{=}\PYG{p}{\PYGZob{}}\PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{color}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{:}\PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{black}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{\PYGZcb{}}\PYG{p}{)}\PYG{p}{;}
+\end{sphinxVerbatim}
+}
+
+\hrule height -\fboxrule\relax
+\vspace{\nbsphinxcodecellspacing}
+
+\makeatletter\setbox\nbsphinxpromptbox\box\voidb@x\makeatother
+
+\begin{nbsphinxfancyoutput}
+
+\noindent\sphinxincludegraphics[width=402\sphinxpxdimen,height=281\sphinxpxdimen]{{04_jazz_solos_50_0}.png}
+
+\end{nbsphinxfancyoutput}
+
+In this case, there is a positive trend. The higher the pitch, the louder the performer plays. Since we have now two different examples \sphinxhyphen{} in one case no relation, in the other case a positive correlation \sphinxhyphen{} we should now look at whether there is a trend emerging from all solos taken together.
+
+
+\section{The “rain cloud” of Jazz solos}
+\label{\detokenize{04_jazz_solos:The-_u201crain-cloud_u201d-of-Jazz-solos}}
+We now take all 200’809 notes from all solos and look at the relation between their pitch and their median loudness.
+
+{
+\sphinxsetup{VerbatimColor={named}{nbsphinx-code-bg}}
+\sphinxsetup{VerbatimBorderColor={named}{nbsphinx-code-border}}
+\begin{sphinxVerbatim}[commandchars=\\\{\}]
+\llap{\color{nbsphinxin}[75]:\,\hspace{\fboxrule}\hspace{\fboxsep}}\PYG{n}{X} \PYG{o}{=} \PYG{n}{solos}\PYG{p}{[}\PYG{p}{[}\PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{pitch}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{,} \PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{loud\PYGZus{}med}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{]}\PYG{p}{]}\PYG{o}{.}\PYG{n}{values}
+\PYG{n}{x} \PYG{o}{=} \PYG{n}{X}\PYG{p}{[}\PYG{p}{:}\PYG{p}{,}\PYG{l+m+mi}{0}\PYG{p}{]}
+\PYG{n}{y} \PYG{o}{=} \PYG{n}{X}\PYG{p}{[}\PYG{p}{:}\PYG{p}{,}\PYG{l+m+mi}{1}\PYG{p}{]}
+
+\PYG{n}{fig}\PYG{p}{,} \PYG{n}{ax} \PYG{o}{=} \PYG{n}{plt}\PYG{o}{.}\PYG{n}{subplots}\PYG{p}{(}\PYG{n}{figsize}\PYG{o}{=}\PYG{p}{(}\PYG{l+m+mi}{16}\PYG{p}{,}\PYG{l+m+mi}{9}\PYG{p}{)}\PYG{p}{)}
+\PYG{n}{ax}\PYG{o}{.}\PYG{n}{scatter}\PYG{p}{(}\PYG{n}{x}\PYG{p}{,}\PYG{n}{y}\PYG{p}{,} \PYG{n}{alpha}\PYG{o}{=}\PYG{l+m+mf}{0.05}\PYG{p}{)}
+
+\PYG{n}{plt}\PYG{o}{.}\PYG{n}{xlabel}\PYG{p}{(}\PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{Pitch}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{)}
+\PYG{n}{plt}\PYG{o}{.}\PYG{n}{ylabel}\PYG{p}{(}\PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{Median loudness [dB]}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{)}
+\PYG{n}{plt}\PYG{o}{.}\PYG{n}{show}\PYG{p}{(}\PYG{p}{)}
+\end{sphinxVerbatim}
+}
+
+\hrule height -\fboxrule\relax
+\vspace{\nbsphinxcodecellspacing}
+
+\makeatletter\setbox\nbsphinxpromptbox\box\voidb@x\makeatother
+
+\begin{nbsphinxfancyoutput}
+
+\noindent\sphinxincludegraphics[width=982\sphinxpxdimen,height=553\sphinxpxdimen]{{04_jazz_solos_54_0}.png}
+
+\end{nbsphinxfancyoutput}
+
+The visual impression is that of a cloud from which rain drops down and forms a puddle. Which trends can we observe?
+
+
+\section{Comparing performers}
+\label{\detokenize{04_jazz_solos:Comparing-performers}}
+Taking all pieces together was not really informative. Maybe a somewhat closer look brings more to the front. Let us some specific performers whose solos we want to compare.
+
+{
+\sphinxsetup{VerbatimColor={named}{nbsphinx-code-bg}}
+\sphinxsetup{VerbatimBorderColor={named}{nbsphinx-code-border}}
+\begin{sphinxVerbatim}[commandchars=\\\{\}]
+\llap{\color{nbsphinxin}[76]:\,\hspace{\fboxrule}\hspace{\fboxsep}}\PYG{n}{selected\PYGZus{}performers} \PYG{o}{=} \PYG{p}{[}\PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{Charlie Parker}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{,} \PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{Miles Davis}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{,} \PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{Louis Armstrong}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{,} \PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{Herbie Hancock}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{,} \PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{Von Freeman}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{,} \PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{Red Garland}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{]}
+\end{sphinxVerbatim}
+}
+
+{
+\sphinxsetup{VerbatimColor={named}{nbsphinx-code-bg}}
+\sphinxsetup{VerbatimBorderColor={named}{nbsphinx-code-border}}
+\begin{sphinxVerbatim}[commandchars=\\\{\}]
+\llap{\color{nbsphinxin}[78]:\,\hspace{\fboxrule}\hspace{\fboxsep}}\PYG{n}{grouped\PYGZus{}df} \PYG{o}{=} \PYG{n}{solos}\PYG{o}{.}\PYG{n}{groupby}\PYG{p}{(}\PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{performer}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{)}
+\end{sphinxVerbatim}
+}
+
+{
+\sphinxsetup{VerbatimColor={named}{nbsphinx-code-bg}}
+\sphinxsetup{VerbatimBorderColor={named}{nbsphinx-code-border}}
+\begin{sphinxVerbatim}[commandchars=\\\{\}]
+\llap{\color{nbsphinxin}[79]:\,\hspace{\fboxrule}\hspace{\fboxsep}}\PYG{n}{fig}\PYG{p}{,} \PYG{n}{ax} \PYG{o}{=} \PYG{n}{plt}\PYG{o}{.}\PYG{n}{subplots}\PYG{p}{(}\PYG{n}{figsize}\PYG{o}{=}\PYG{p}{(}\PYG{l+m+mi}{10}\PYG{p}{,}\PYG{l+m+mi}{10}\PYG{p}{)}\PYG{p}{)}
 
 \PYG{k}{for} \PYG{n}{performer}\PYG{p}{,} \PYG{n}{df} \PYG{o+ow}{in} \PYG{n}{grouped\PYGZus{}df}\PYG{p}{:}
     \PYG{k}{if} \PYG{n}{performer} \PYG{o+ow}{in} \PYG{n}{selected\PYGZus{}performers}\PYG{p}{:}
@@ -2918,7 +3310,7 @@ Taking all pieces together was not really informative. Maybe a somewhat closer l
 
 \begin{nbsphinxfancyoutput}
 
-\noindent\sphinxincludegraphics[width=625\sphinxpxdimen,height=607\sphinxpxdimen]{{04_jazz_solos_59_0}.png}
+\noindent\sphinxincludegraphics[width=625\sphinxpxdimen,height=607\sphinxpxdimen]{{04_jazz_solos_60_0}.png}
 
 \end{nbsphinxfancyoutput}
 

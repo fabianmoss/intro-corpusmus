@@ -80,15 +80,15 @@ and metric patterns in Malian drum music (see :numref:`tab_overview`).
    * - 6 
      - 
      - 14:40-16:00 Uhr
-     - Harmony I: Beethoven's string quartets
+     - Beethoven's string quartets
    * - 7 
      - Fr., 11.12.2020 
-     - 10:00-11:20 Uhr
-     - Harmony II: Brazilian Choro / Pop charts (Billboard 100)
+     - 16:00-17:20 Uhr
+     - Cadences in Renaissance polyphony (guest: `Richard Freedman <https://www.haverford.edu/users/rfreedma>`_)
    * - 8
      - 
-     - 11:40-13:00 Uhr
-     - Harmony III: Cadences in Renaissance polyphony (guest: `Richard Freedman <https://www.haverford.edu/users/rfreedma>`_)
+     - 17:40-19:00 Uhr
+     - 
    * - 9 
      - Sa., 12.12.2020 
      - 09:00-10:20 Uhr

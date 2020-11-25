@@ -550,7 +550,7 @@ div.rendered_html tbody tr:hover {
 </div>
 <div class="output_area docutils container">
 <div class="highlight"><pre>
-&lt;music21.stream.Score 0x1f2c8035a30&gt;
+&lt;music21.stream.Score 0x1898a474340&gt;
 </pre></div></div>
 </div>
 <p>It returns a somewhat cryptic statement that says that the variable countains a <code class="docutils literal notranslate"><span class="pre">music21.stream.Score</span></code> object. Understanding the internal organization of <code class="docutils literal notranslate"><span class="pre">music21</span></code> goes beyond this class. For us, it is suffient to know that these objects have certain associated functions, called <strong>methods</strong>, that we can use on them. To look at the score of this example song, we use the method <code class="docutils literal notranslate"><span class="pre">.show()</span></code>.</p>
@@ -673,7 +673,7 @@ WindowsPath(&#39;C:/Users/fabianmoss/anaconda3/Lib/site-packages/music21/corpus/
 </div>
 <div class="output_area docutils container">
 <div class="highlight"><pre>
-&lt;music21.stream.Opus 0x1f2c91ba130&gt;
+&lt;music21.stream.Opus 0x1898b5ff4c0&gt;
 </pre></div></div>
 </div>
 <p>If we would call the <code class="docutils literal notranslate"><span class="pre">.show()</span></code> method on <code class="docutils literal notranslate"><span class="pre">first_corpus</span></code>, we would see the scores of all pieces that are in this particular corpus. But we don’t know how many these are. It there are only three songs, it would not be a problem, but if there were thousands of songs, it could take a very long time to parse and display them all. Fortunately, all pieces in the collection have the <code class="docutils literal notranslate"><span class="pre">X:n</span></code> line that we saw above, so that we can directly reference them. With which number would we have to replace
@@ -951,7 +951,7 @@ require(['music21'], function() {
 <p>Note that we added another column, “Onset”. What does it represent?</p>
 <p>This allows us now to look at the <strong>melodic profile</strong> of a particular song.</p>
 <div class="nbinput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[31]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[25]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
@@ -979,7 +979,7 @@ require(['music21'], function() {
 </div>
 </div>
 <div class="nbinput docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[32]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[26]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
@@ -996,7 +996,7 @@ require(['music21'], function() {
 </div>
 <p>Likewise, we can as easily plot the melodic contour of the Chinese song (we will use a different color).</p>
 <div class="nbinput docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[33]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[27]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
@@ -1021,7 +1021,7 @@ require(['music21'], function() {
 <p>But still, it is quite difficult to compare them directly. They differ both with respect to their length (see the numbers on the “Onset” axis) and their pitches (see “MIDI Pitch” axis).</p>
 <p>We need to transform them in a way that makes them directly comparable. To that end, we define a new function <code class="docutils literal notranslate"><span class="pre">standardize()</span></code>.</p>
 <div class="nbinput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[34]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[28]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
@@ -1039,7 +1039,7 @@ require(['music21'], function() {
 </div>
 </div>
 <div class="nbinput docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[35]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[29]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
@@ -1048,7 +1048,7 @@ require(['music21'], function() {
 </div>
 </div>
 <div class="nboutput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[35]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[29]:
 </pre></div>
 </div>
 <div class="output_area rendered_html docutils container">
@@ -1156,7 +1156,7 @@ require(['music21'], function() {
 </div></div>
 </div>
 <div class="nbinput docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[36]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[30]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
@@ -1175,11 +1175,11 @@ require(['music21'], function() {
 <p>Standardizing the songs makes it possible to compare them directly: They have now the same length 1 and their pitches are centered around the mean 0 with a standard deviation of 1.</p>
 <p>However, already with two pieces this plot is quite crowded.</p>
 <div class="nbinput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[37]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[31]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">dfs</span> <span class="o">=</span> <span class="p">[]</span>
+<span></span><span class="n">dfs</span> <span class="o">=</span> <span class="p">[</span> <span class="p">]</span>
 
 <span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="n">song</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">songs</span><span class="p">):</span>
     <span class="n">df</span> <span class="o">=</span> <span class="n">standardize</span><span class="p">(</span><span class="n">notelist</span><span class="p">(</span><span class="n">song</span><span class="p">))</span>
@@ -1191,7 +1191,7 @@ require(['music21'], function() {
 </div>
 </div>
 <div class="nbinput docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[38]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[53]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
@@ -1200,7 +1200,7 @@ require(['music21'], function() {
 </div>
 </div>
 <div class="nboutput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[38]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[53]:
 </pre></div>
 </div>
 <div class="output_area rendered_html docutils container">
@@ -1229,6 +1229,8 @@ require(['music21'], function() {
       <th>Rel. Duration</th>
       <th>Rel. Onset</th>
       <th>Song ID</th>
+      <th>Avg. MIDI Pitch</th>
+      <th>shifted_pitch</th>
     </tr>
   </thead>
   <tbody>
@@ -1241,6 +1243,8 @@ require(['music21'], function() {
       <td>0.013158</td>
       <td>0.013158</td>
       <td>0</td>
+      <td>72</td>
+      <td>-5</td>
     </tr>
     <tr>
       <th>1</th>
@@ -1251,6 +1255,8 @@ require(['music21'], function() {
       <td>0.013158</td>
       <td>0.026316</td>
       <td>0</td>
+      <td>72</td>
+      <td>-2</td>
     </tr>
     <tr>
       <th>2</th>
@@ -1261,6 +1267,8 @@ require(['music21'], function() {
       <td>0.013158</td>
       <td>0.039474</td>
       <td>0</td>
+      <td>72</td>
+      <td>-1</td>
     </tr>
     <tr>
       <th>3</th>
@@ -1270,6 +1278,8 @@ require(['music21'], function() {
       <td>-0.023935</td>
       <td>0.013158</td>
       <td>0.052632</td>
+      <td>0</td>
+      <td>72</td>
       <td>0</td>
     </tr>
     <tr>
@@ -1281,9 +1291,13 @@ require(['music21'], function() {
       <td>0.013158</td>
       <td>0.065789</td>
       <td>0</td>
+      <td>72</td>
+      <td>0</td>
     </tr>
     <tr>
       <th>...</th>
+      <td>...</td>
+      <td>...</td>
       <td>...</td>
       <td>...</td>
       <td>...</td>
@@ -1301,6 +1315,8 @@ require(['music21'], function() {
       <td>0.008197</td>
       <td>0.934426</td>
       <td>8513</td>
+      <td>68</td>
+      <td>3</td>
     </tr>
     <tr>
       <th>450592</th>
@@ -1311,6 +1327,8 @@ require(['music21'], function() {
       <td>0.008197</td>
       <td>0.942623</td>
       <td>8513</td>
+      <td>68</td>
+      <td>1</td>
     </tr>
     <tr>
       <th>450593</th>
@@ -1321,6 +1339,8 @@ require(['music21'], function() {
       <td>0.008197</td>
       <td>0.950820</td>
       <td>8513</td>
+      <td>68</td>
+      <td>5</td>
     </tr>
     <tr>
       <th>450594</th>
@@ -1331,6 +1351,8 @@ require(['music21'], function() {
       <td>0.032787</td>
       <td>0.983607</td>
       <td>8513</td>
+      <td>68</td>
+      <td>3</td>
     </tr>
     <tr>
       <th>450595</th>
@@ -1341,172 +1363,37 @@ require(['music21'], function() {
       <td>0.016393</td>
       <td>1.000000</td>
       <td>8513</td>
+      <td>68</td>
+      <td>1</td>
     </tr>
   </tbody>
 </table>
-<p>450596 rows × 7 columns</p>
+<p>450596 rows × 9 columns</p>
 </div></div>
 </div>
 <div class="nbinput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[39]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[63]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">big_df</span><span class="o">.</span><span class="n">to_csv</span><span class="p">(</span><span class="s2">&quot;data/big_df.csv&quot;</span><span class="p">)</span>
+<span></span><span class="n">big_df</span><span class="o">.</span><span class="n">to_csv</span><span class="p">(</span><span class="s2">&quot;data/big_df.csv&quot;</span><span class="p">)</span> <span class="c1"># comma-separated values</span>
 </pre></div>
 </div>
 </div>
-<div class="nbinput docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[40]:
+<div class="nbinput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[66]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">big_df</span><span class="o">.</span><span class="n">sample</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span>
+<span></span><span class="n">big_df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s2">&quot;data/big_df.csv&quot;</span><span class="p">)</span>
 </pre></div>
 </div>
-</div>
-<div class="nboutput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[40]:
-</pre></div>
-</div>
-<div class="output_area rendered_html docutils container">
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>MIDI Pitch</th>
-      <th>Duration</th>
-      <th>Onset</th>
-      <th>Rel. MIDI Pitch</th>
-      <th>Rel. Duration</th>
-      <th>Rel. Onset</th>
-      <th>Song ID</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>359288</th>
-      <td>67</td>
-      <td>1.00</td>
-      <td>28.00</td>
-      <td>-0.583532</td>
-      <td>0.020833</td>
-      <td>0.583333</td>
-      <td>6758</td>
-    </tr>
-    <tr>
-      <th>182773</th>
-      <td>67</td>
-      <td>0.50</td>
-      <td>1.00</td>
-      <td>-0.485583</td>
-      <td>0.012987</td>
-      <td>0.025974</td>
-      <td>3932</td>
-    </tr>
-    <tr>
-      <th>271324</th>
-      <td>69</td>
-      <td>0.25</td>
-      <td>19.00</td>
-      <td>-0.058631</td>
-      <td>0.010417</td>
-      <td>0.791667</td>
-      <td>5414</td>
-    </tr>
-    <tr>
-      <th>99448</th>
-      <td>62</td>
-      <td>0.75</td>
-      <td>1.25</td>
-      <td>-1.352735</td>
-      <td>0.018750</td>
-      <td>0.031250</td>
-      <td>2215</td>
-    </tr>
-    <tr>
-      <th>423838</th>
-      <td>74</td>
-      <td>1.00</td>
-      <td>25.00</td>
-      <td>2.104515</td>
-      <td>0.012821</td>
-      <td>0.320513</td>
-      <td>8015</td>
-    </tr>
-    <tr>
-      <th>265098</th>
-      <td>73</td>
-      <td>0.50</td>
-      <td>61.50</td>
-      <td>0.120664</td>
-      <td>0.003115</td>
-      <td>0.383178</td>
-      <td>5340</td>
-    </tr>
-    <tr>
-      <th>449173</th>
-      <td>71</td>
-      <td>0.50</td>
-      <td>66.50</td>
-      <td>0.731803</td>
-      <td>0.006757</td>
-      <td>0.898649</td>
-      <td>8484</td>
-    </tr>
-    <tr>
-      <th>230007</th>
-      <td>67</td>
-      <td>0.50</td>
-      <td>14.50</td>
-      <td>-1.089903</td>
-      <td>0.013514</td>
-      <td>0.391892</td>
-      <td>4829</td>
-    </tr>
-    <tr>
-      <th>198109</th>
-      <td>70</td>
-      <td>0.50</td>
-      <td>14.00</td>
-      <td>0.097330</td>
-      <td>0.031250</td>
-      <td>0.875000</td>
-      <td>4213</td>
-    </tr>
-    <tr>
-      <th>194711</th>
-      <td>66</td>
-      <td>0.50</td>
-      <td>5.50</td>
-      <td>-0.659489</td>
-      <td>0.008475</td>
-      <td>0.093220</td>
-      <td>4146</td>
-    </tr>
-  </tbody>
-</table>
-</div></div>
 </div>
 </div>
 <div class="section" id="The-melodic-arc">
 <h2><span class="section-number">3.4. </span>The melodic arc<a class="headerlink" href="#The-melodic-arc" title="Permalink to this headline">¶</a></h2>
 <div class="nbinput docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[61]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[35]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
@@ -1529,7 +1416,7 @@ require(['music21'], function() {
 <span class="n">lowess</span> <span class="o">=</span> <span class="n">sm</span><span class="o">.</span><span class="n">nonparametric</span><span class="o">.</span><span class="n">lowess</span>
 <span class="n">big_x</span> <span class="o">=</span> <span class="n">big_df</span><span class="p">[</span><span class="s2">&quot;Rel. Onset&quot;</span><span class="p">]</span>
 <span class="n">big_y</span> <span class="o">=</span> <span class="n">big_df</span><span class="p">[</span><span class="s2">&quot;Rel. MIDI Pitch&quot;</span><span class="p">]</span>
-<span class="n">big_z</span> <span class="o">=</span> <span class="n">lowess</span><span class="p">(</span><span class="n">big_y</span><span class="p">,</span> <span class="n">big_x</span><span class="p">,</span> <span class="n">frac</span><span class="o">=</span><span class="mi">5</span><span class="o">/</span><span class="mi">100</span><span class="p">,</span> <span class="n">delta</span><span class="o">=</span><span class="mi">1</span><span class="o">/</span><span class="mi">20</span><span class="p">)</span>
+<span class="n">big_z</span> <span class="o">=</span> <span class="n">lowess</span><span class="p">(</span><span class="n">big_y</span><span class="p">,</span> <span class="n">big_x</span><span class="p">,</span> <span class="n">frac</span><span class="o">=</span><span class="mi">5</span><span class="o">/</span><span class="mi">100</span><span class="p">,</span> <span class="n">delta</span><span class="o">=</span><span class="mi">1</span><span class="o">/</span><span class="mi">20</span><span class="p">)</span> <span class="c1"># Locally-Weighted Scatterplot Smoothing</span>
 <span class="n">ax</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">big_z</span><span class="p">[:,</span><span class="mi">0</span><span class="p">],</span> <span class="n">big_z</span><span class="p">[:,</span><span class="mi">1</span><span class="p">],</span> <span class="n">c</span><span class="o">=</span><span class="s2">&quot;black&quot;</span><span class="p">,</span> <span class="n">lw</span><span class="o">=</span><span class="mi">3</span><span class="p">)</span>
 
 <span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s2">&quot;Melodic arc&quot;</span><span class="p">)</span>
@@ -1557,7 +1444,7 @@ require(['music21'], function() {
 </div>
 <div class="output_area docutils container">
 <div class="highlight"><pre>
-Wall time: 21.2 s
+Wall time: 24.1 s
 </pre></div></div>
 </div>
 </div>
@@ -1566,7 +1453,7 @@ Wall time: 21.2 s
 <p>We have seen that the melodic arc emerges as a stable shape over the entire EFC, and that sub-phrases of the songs likewise have an arc-like shape. In the remainder of this section, we look at <strong>intervals</strong>, the distance between two notes.</p>
 <p>Let’s come back to the song <em>Die plappernden Junggesellen</em></p>
 <div class="nbinput docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[42]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[36]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
@@ -1583,16 +1470,16 @@ Wall time: 21.2 s
 </div>
 <p>We have already extracted its notes and stored them in a DataFrame:</p>
 <div class="nbinput docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[43]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[69]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">big_df</span><span class="p">[</span><span class="n">big_df</span><span class="p">[</span><span class="s2">&quot;Song ID&quot;</span><span class="p">]</span> <span class="o">==</span> <span class="mi">70</span><span class="p">]</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">8</span><span class="p">)</span>
+<span></span><span class="n">big_df</span><span class="p">[</span> <span class="n">big_df</span><span class="p">[</span><span class="s2">&quot;Song ID&quot;</span><span class="p">]</span> <span class="o">==</span> <span class="mi">70</span><span class="p">]</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">8</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
 <div class="nboutput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[43]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[69]:
 </pre></div>
 </div>
 <div class="output_area rendered_html docutils container">
@@ -1614,6 +1501,8 @@ Wall time: 21.2 s
   <thead>
     <tr style="text-align: right;">
       <th></th>
+      <th>Unnamed: 0</th>
+      <th>Unnamed: 0.1</th>
       <th>MIDI Pitch</th>
       <th>Duration</th>
       <th>Onset</th>
@@ -1626,6 +1515,8 @@ Wall time: 21.2 s
   <tbody>
     <tr>
       <th>2969</th>
+      <td>2969</td>
+      <td>2969</td>
       <td>62</td>
       <td>1.0</td>
       <td>1.0</td>
@@ -1636,6 +1527,8 @@ Wall time: 21.2 s
     </tr>
     <tr>
       <th>2970</th>
+      <td>2970</td>
+      <td>2970</td>
       <td>67</td>
       <td>2.0</td>
       <td>3.0</td>
@@ -1646,6 +1539,8 @@ Wall time: 21.2 s
     </tr>
     <tr>
       <th>2971</th>
+      <td>2971</td>
+      <td>2971</td>
       <td>71</td>
       <td>2.0</td>
       <td>5.0</td>
@@ -1656,6 +1551,8 @@ Wall time: 21.2 s
     </tr>
     <tr>
       <th>2972</th>
+      <td>2972</td>
+      <td>2972</td>
       <td>74</td>
       <td>3.0</td>
       <td>8.0</td>
@@ -1666,6 +1563,8 @@ Wall time: 21.2 s
     </tr>
     <tr>
       <th>2973</th>
+      <td>2973</td>
+      <td>2973</td>
       <td>72</td>
       <td>1.0</td>
       <td>9.0</td>
@@ -1676,6 +1575,8 @@ Wall time: 21.2 s
     </tr>
     <tr>
       <th>2974</th>
+      <td>2974</td>
+      <td>2974</td>
       <td>71</td>
       <td>2.0</td>
       <td>11.0</td>
@@ -1686,6 +1587,8 @@ Wall time: 21.2 s
     </tr>
     <tr>
       <th>2975</th>
+      <td>2975</td>
+      <td>2975</td>
       <td>69</td>
       <td>2.0</td>
       <td>13.0</td>
@@ -1696,6 +1599,8 @@ Wall time: 21.2 s
     </tr>
     <tr>
       <th>2976</th>
+      <td>2976</td>
+      <td>2976</td>
       <td>67</td>
       <td>2.0</td>
       <td>15.0</td>
@@ -1721,7 +1626,7 @@ Wall time: 21.2 s
 </ul>
 <p>The sequence of intervals in this phrase is thus <code class="docutils literal notranslate"><span class="pre">[+5,</span> <span class="pre">+4,</span> <span class="pre">+3,</span> <span class="pre">-2,</span> <span class="pre">-1,</span> <span class="pre">-2,</span> <span class="pre">-2]</span></code>. The signs (+ or -) also reflect the arc-like shape of this first phrase, but the sizes of the intervals are not perfecly balanced. Note that <code class="docutils literal notranslate"><span class="pre">-2</span></code> (two descending semitones, or one descending whole tone) is the most frequent interval.</p>
 <div class="nbinput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[44]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[38]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
@@ -1732,7 +1637,7 @@ Wall time: 21.2 s
 </div>
 </div>
 <div class="nbinput docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[45]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[39]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
@@ -1741,7 +1646,7 @@ Wall time: 21.2 s
 </div>
 </div>
 <div class="nboutput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[45]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[39]:
 </pre></div>
 </div>
 <div class="output_area docutils container">
@@ -1750,7 +1655,7 @@ Wall time: 21.2 s
 </pre></div></div>
 </div>
 <div class="nbinput docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[46]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[40]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
@@ -1759,7 +1664,7 @@ Wall time: 21.2 s
 </div>
 </div>
 <div class="nboutput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[46]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[40]:
 </pre></div>
 </div>
 <div class="output_area docutils container">
@@ -1768,7 +1673,7 @@ Wall time: 21.2 s
 </pre></div></div>
 </div>
 <div class="nbinput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[47]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[41]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
@@ -1783,16 +1688,16 @@ Wall time: 21.2 s
 </div>
 </div>
 <div class="nbinput docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[48]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[73]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">ints_df</span>
+<span></span><span class="n">ints_df</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="o">-</span><span class="mi">10</span><span class="p">:</span><span class="mi">10</span><span class="p">,</span> <span class="o">-</span><span class="mi">10</span><span class="p">:</span><span class="mi">10</span><span class="p">]</span>
 </pre></div>
 </div>
 </div>
 <div class="nboutput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[48]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[73]:
 </pre></div>
 </div>
 <div class="output_area rendered_html docutils container">
@@ -1814,390 +1719,30 @@ Wall time: 21.2 s
   <thead>
     <tr style="text-align: right;">
       <th></th>
-      <th>-25</th>
-      <th>-24</th>
-      <th>-23</th>
-      <th>-22</th>
-      <th>-21</th>
-      <th>-20</th>
-      <th>-19</th>
-      <th>-18</th>
-      <th>-17</th>
-      <th>-16</th>
+      <th>-10</th>
+      <th>-9</th>
+      <th>-8</th>
+      <th>-7</th>
+      <th>-6</th>
+      <th>-5</th>
+      <th>-4</th>
+      <th>-3</th>
+      <th>-2</th>
+      <th>-1</th>
       <th>...</th>
-      <th>16</th>
-      <th>17</th>
-      <th>18</th>
-      <th>19</th>
-      <th>20</th>
-      <th>21</th>
-      <th>22</th>
-      <th>23</th>
-      <th>24</th>
-      <th>25</th>
+      <th>1</th>
+      <th>2</th>
+      <th>3</th>
+      <th>4</th>
+      <th>5</th>
+      <th>6</th>
+      <th>7</th>
+      <th>8</th>
+      <th>9</th>
+      <th>10</th>
     </tr>
   </thead>
   <tbody>
-    <tr>
-      <th>-25</th>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>...</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-    </tr>
-    <tr>
-      <th>-24</th>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>...</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-    </tr>
-    <tr>
-      <th>-23</th>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>...</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-    </tr>
-    <tr>
-      <th>-22</th>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>...</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-    </tr>
-    <tr>
-      <th>-21</th>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>...</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>4</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-    </tr>
-    <tr>
-      <th>-20</th>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>...</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-    </tr>
-    <tr>
-      <th>-19</th>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>...</td>
-      <td>3</td>
-      <td>0</td>
-      <td>0</td>
-      <td>10</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-    </tr>
-    <tr>
-      <th>-18</th>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>...</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-    </tr>
-    <tr>
-      <th>-17</th>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>...</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-    </tr>
-    <tr>
-      <th>-16</th>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>...</td>
-      <td>4</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-    </tr>
-    <tr>
-      <th>-15</th>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>...</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-    </tr>
-    <tr>
-      <th>-14</th>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>...</td>
-      <td>0</td>
-      <td>1</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-    </tr>
-    <tr>
-      <th>-13</th>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>...</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-    </tr>
-    <tr>
-      <th>-12</th>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>...</td>
-      <td>13</td>
-      <td>2</td>
-      <td>0</td>
-      <td>1</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-    </tr>
-    <tr>
-      <th>-11</th>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>...</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-    </tr>
     <tr>
       <th>-10</th>
       <td>0</td>
@@ -2205,94 +1750,94 @@ Wall time: 21.2 s
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
+      <td>2</td>
+      <td>3</td>
+      <td>2</td>
+      <td>34</td>
       <td>0</td>
       <td>...</td>
+      <td>16</td>
+      <td>174</td>
+      <td>219</td>
+      <td>60</td>
+      <td>91</td>
       <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>2</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
+      <td>78</td>
+      <td>67</td>
+      <td>29</td>
+      <td>243</td>
     </tr>
     <tr>
       <th>-9</th>
       <td>0</td>
       <td>0</td>
       <td>0</td>
+      <td>6</td>
       <td>0</td>
+      <td>3</td>
       <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
+      <td>39</td>
+      <td>10</td>
+      <td>31</td>
       <td>...</td>
+      <td>5</td>
+      <td>159</td>
+      <td>39</td>
+      <td>40</td>
+      <td>313</td>
+      <td>2</td>
+      <td>30</td>
       <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
+      <td>111</td>
+      <td>27</td>
     </tr>
     <tr>
       <th>-8</th>
       <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>1</td>
       <td>0</td>
       <td>0</td>
+      <td>19</td>
       <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
+      <td>319</td>
+      <td>5</td>
       <td>...</td>
+      <td>302</td>
+      <td>66</td>
+      <td>605</td>
+      <td>3</td>
+      <td>159</td>
+      <td>2</td>
+      <td>4</td>
+      <td>73</td>
       <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
+      <td>32</td>
     </tr>
     <tr>
       <th>-7</th>
       <td>0</td>
       <td>0</td>
+      <td>2</td>
+      <td>14</td>
       <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
+      <td>37</td>
+      <td>2</td>
+      <td>91</td>
+      <td>96</td>
+      <td>103</td>
       <td>...</td>
-      <td>5</td>
-      <td>0</td>
-      <td>0</td>
-      <td>5</td>
-      <td>4</td>
+      <td>17</td>
+      <td>859</td>
+      <td>300</td>
+      <td>527</td>
+      <td>651</td>
       <td>1</td>
-      <td>1</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
+      <td>399</td>
+      <td>18</td>
+      <td>219</td>
+      <td>141</td>
     </tr>
     <tr>
       <th>-6</th>
@@ -2302,302 +1847,302 @@ Wall time: 21.2 s
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
+      <td>12</td>
+      <td>11</td>
+      <td>8</td>
+      <td>21</td>
       <td>...</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
+      <td>274</td>
+      <td>7</td>
+      <td>132</td>
+      <td>25</td>
+      <td>10</td>
+      <td>19</td>
+      <td>6</td>
+      <td>3</td>
+      <td>3</td>
+      <td>4</td>
     </tr>
     <tr>
       <th>-5</th>
+      <td>1</td>
       <td>0</td>
+      <td>1</td>
+      <td>49</td>
       <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
+      <td>75</td>
+      <td>32</td>
+      <td>866</td>
+      <td>1361</td>
+      <td>25</td>
       <td>...</td>
-      <td>0</td>
-      <td>4</td>
-      <td>0</td>
-      <td>5</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
+      <td>230</td>
+      <td>1906</td>
+      <td>1272</td>
+      <td>148</td>
+      <td>2131</td>
+      <td>22</td>
+      <td>252</td>
+      <td>87</td>
+      <td>368</td>
+      <td>160</td>
     </tr>
     <tr>
       <th>-4</th>
+      <td>3</td>
       <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
+      <td>27</td>
+      <td>11</td>
+      <td>5</td>
+      <td>461</td>
+      <td>18</td>
+      <td>692</td>
+      <td>167</td>
+      <td>1099</td>
       <td>...</td>
-      <td>7</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
+      <td>129</td>
+      <td>2738</td>
+      <td>40</td>
+      <td>1610</td>
+      <td>616</td>
+      <td>13</td>
+      <td>884</td>
+      <td>8</td>
+      <td>269</td>
+      <td>31</td>
     </tr>
     <tr>
       <th>-3</th>
+      <td>1</td>
+      <td>91</td>
       <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
+      <td>192</td>
+      <td>2</td>
+      <td>215</td>
+      <td>2490</td>
+      <td>416</td>
+      <td>9478</td>
+      <td>134</td>
       <td>...</td>
-      <td>1</td>
-      <td>4</td>
-      <td>0</td>
-      <td>1</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>1</td>
+      <td>2547</td>
+      <td>1467</td>
+      <td>6274</td>
+      <td>109</td>
+      <td>1684</td>
+      <td>13</td>
+      <td>403</td>
+      <td>508</td>
+      <td>59</td>
+      <td>261</td>
     </tr>
     <tr>
       <th>-2</th>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>1</td>
-      <td>0</td>
+      <td>67</td>
+      <td>14</td>
+      <td>260</td>
+      <td>858</td>
+      <td>132</td>
+      <td>1964</td>
+      <td>113</td>
+      <td>8871</td>
+      <td>21285</td>
+      <td>13896</td>
       <td>...</td>
-      <td>11</td>
-      <td>13</td>
-      <td>0</td>
-      <td>1</td>
-      <td>0</td>
-      <td>1</td>
-      <td>1</td>
-      <td>0</td>
-      <td>1</td>
-      <td>0</td>
+      <td>454</td>
+      <td>14883</td>
+      <td>1115</td>
+      <td>2616</td>
+      <td>3216</td>
+      <td>63</td>
+      <td>1681</td>
+      <td>88</td>
+      <td>537</td>
+      <td>407</td>
     </tr>
     <tr>
       <th>-1</th>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
+      <td>5</td>
+      <td>174</td>
+      <td>4</td>
+      <td>68</td>
+      <td>47</td>
+      <td>32</td>
+      <td>1679</td>
+      <td>91</td>
+      <td>13445</td>
+      <td>205</td>
       <td>...</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
+      <td>5410</td>
+      <td>396</td>
+      <td>2878</td>
+      <td>58</td>
+      <td>477</td>
+      <td>44</td>
+      <td>23</td>
+      <td>241</td>
+      <td>3</td>
+      <td>52</td>
     </tr>
     <tr>
       <th>0</th>
-      <td>1</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>13</td>
-      <td>0</td>
-      <td>4</td>
-      <td>0</td>
+      <td>186</td>
+      <td>130</td>
+      <td>310</td>
+      <td>1022</td>
+      <td>80</td>
+      <td>2270</td>
+      <td>1440</td>
+      <td>5506</td>
+      <td>16887</td>
+      <td>4603</td>
       <td>...</td>
-      <td>4</td>
-      <td>4</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>1</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
+      <td>2578</td>
+      <td>12142</td>
+      <td>4947</td>
+      <td>3340</td>
+      <td>5203</td>
+      <td>30</td>
+      <td>1353</td>
+      <td>292</td>
+      <td>824</td>
+      <td>478</td>
     </tr>
     <tr>
       <th>1</th>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>4</td>
-      <td>0</td>
+      <td>55</td>
+      <td>6</td>
+      <td>174</td>
+      <td>43</td>
+      <td>110</td>
+      <td>944</td>
+      <td>165</td>
+      <td>2564</td>
+      <td>501</td>
+      <td>3765</td>
       <td>...</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
+      <td>747</td>
+      <td>7649</td>
+      <td>193</td>
+      <td>1470</td>
+      <td>132</td>
+      <td>26</td>
+      <td>172</td>
+      <td>9</td>
+      <td>59</td>
+      <td>2</td>
     </tr>
     <tr>
       <th>2</th>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>4</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>6</td>
+      <td>138</td>
+      <td>294</td>
+      <td>29</td>
+      <td>1288</td>
+      <td>15</td>
+      <td>1361</td>
+      <td>3754</td>
+      <td>2562</td>
+      <td>15795</td>
+      <td>254</td>
       <td>...</td>
-      <td>0</td>
+      <td>8404</td>
+      <td>11261</td>
+      <td>5249</td>
+      <td>86</td>
+      <td>1695</td>
       <td>2</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
+      <td>187</td>
+      <td>171</td>
+      <td>57</td>
+      <td>61</td>
     </tr>
     <tr>
       <th>3</th>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>4</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
+      <td>272</td>
+      <td>23</td>
+      <td>373</td>
+      <td>655</td>
+      <td>122</td>
+      <td>1755</td>
+      <td>24</td>
+      <td>5509</td>
+      <td>3397</td>
+      <td>2400</td>
       <td>...</td>
+      <td>295</td>
+      <td>4128</td>
+      <td>231</td>
+      <td>519</td>
+      <td>1523</td>
+      <td>35</td>
+      <td>180</td>
       <td>0</td>
-      <td>2</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
+      <td>122</td>
+      <td>11</td>
     </tr>
     <tr>
       <th>4</th>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
+      <td>5</td>
+      <td>164</td>
+      <td>3</td>
+      <td>130</td>
+      <td>11</td>
+      <td>51</td>
+      <td>1026</td>
+      <td>64</td>
+      <td>4217</td>
+      <td>60</td>
+      <td>...</td>
+      <td>1133</td>
+      <td>67</td>
+      <td>3153</td>
+      <td>20</td>
+      <td>102</td>
+      <td>7</td>
       <td>1</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
+      <td>14</td>
       <td>0</td>
       <td>2</td>
-      <td>...</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
     </tr>
     <tr>
       <th>5</th>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>1</td>
+      <td>116</td>
+      <td>23</td>
+      <td>505</td>
+      <td>330</td>
+      <td>13</td>
+      <td>1996</td>
+      <td>82</td>
+      <td>2375</td>
+      <td>2834</td>
+      <td>1868</td>
       <td>...</td>
-      <td>0</td>
+      <td>102</td>
+      <td>2557</td>
+      <td>270</td>
+      <td>1355</td>
+      <td>160</td>
       <td>1</td>
+      <td>94</td>
       <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
+      <td>16</td>
+      <td>5</td>
     </tr>
     <tr>
       <th>6</th>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
+      <td>2</td>
+      <td>4</td>
+      <td>1</td>
+      <td>4</td>
+      <td>23</td>
+      <td>1</td>
+      <td>14</td>
+      <td>18</td>
+      <td>44</td>
+      <td>34</td>
       <td>...</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
+      <td>42</td>
+      <td>8</td>
+      <td>20</td>
       <td>0</td>
       <td>0</td>
       <td>0</td>
@@ -2608,430 +2153,94 @@ Wall time: 21.2 s
     </tr>
     <tr>
       <th>7</th>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>1</td>
+      <td>31</td>
+      <td>18</td>
+      <td>11</td>
+      <td>273</td>
+      <td>3</td>
+      <td>167</td>
+      <td>128</td>
+      <td>665</td>
+      <td>1338</td>
+      <td>59</td>
       <td>...</td>
+      <td>119</td>
+      <td>566</td>
+      <td>249</td>
+      <td>12</td>
+      <td>166</td>
       <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
+      <td>8</td>
+      <td>2</td>
+      <td>6</td>
       <td>0</td>
     </tr>
     <tr>
       <th>8</th>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
+      <td>47</td>
+      <td>1</td>
+      <td>88</td>
+      <td>7</td>
+      <td>19</td>
+      <td>149</td>
+      <td>4</td>
+      <td>370</td>
+      <td>33</td>
+      <td>384</td>
       <td>...</td>
+      <td>23</td>
+      <td>159</td>
       <td>0</td>
+      <td>23</td>
+      <td>6</td>
       <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
+      <td>1</td>
       <td>0</td>
       <td>0</td>
       <td>0</td>
     </tr>
     <tr>
       <th>9</th>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
+      <td>1</td>
+      <td>61</td>
+      <td>1</td>
+      <td>20</td>
+      <td>3</td>
+      <td>20</td>
+      <td>442</td>
+      <td>18</td>
+      <td>1024</td>
+      <td>4</td>
       <td>...</td>
+      <td>122</td>
+      <td>13</td>
+      <td>129</td>
+      <td>1</td>
+      <td>8</td>
       <td>0</td>
       <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
+      <td>5</td>
       <td>0</td>
       <td>0</td>
     </tr>
     <tr>
       <th>10</th>
+      <td>267</td>
       <td>0</td>
+      <td>56</td>
+      <td>23</td>
+      <td>28</td>
+      <td>58</td>
       <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
+      <td>517</td>
+      <td>163</td>
+      <td>295</td>
       <td>...</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-    </tr>
-    <tr>
-      <th>11</th>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>1</td>
-      <td>...</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-    </tr>
-    <tr>
-      <th>12</th>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>...</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-    </tr>
-    <tr>
-      <th>13</th>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>...</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-    </tr>
-    <tr>
-      <th>14</th>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>...</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-    </tr>
-    <tr>
-      <th>15</th>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>1</td>
-      <td>0</td>
-      <td>...</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-    </tr>
-    <tr>
-      <th>16</th>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>...</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-    </tr>
-    <tr>
-      <th>17</th>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>...</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-    </tr>
-    <tr>
-      <th>18</th>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>...</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-    </tr>
-    <tr>
-      <th>19</th>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>...</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-    </tr>
-    <tr>
-      <th>20</th>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>...</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-    </tr>
-    <tr>
-      <th>21</th>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>...</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-    </tr>
-    <tr>
-      <th>22</th>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>...</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-    </tr>
-    <tr>
-      <th>23</th>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>...</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-    </tr>
-    <tr>
-      <th>24</th>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>...</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
+      <td>3</td>
+      <td>78</td>
+      <td>0</td>
+      <td>4</td>
+      <td>5</td>
       <td>0</td>
       <td>0</td>
       <td>0</td>
@@ -3040,16 +2249,18 @@ Wall time: 21.2 s
     </tr>
   </tbody>
 </table>
-<p>50 rows × 51 columns</p>
+<p>21 rows × 21 columns</p>
 </div></div>
 </div>
 <div class="nbinput docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[49]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[74]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
 <span></span><span class="n">fig</span><span class="p">,</span> <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span><span class="mi">10</span><span class="p">))</span>
 <span class="n">sns</span><span class="o">.</span><span class="n">heatmap</span><span class="p">(</span><span class="n">ints_df</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="o">-</span><span class="mi">12</span><span class="p">:</span><span class="mi">13</span><span class="p">,</span><span class="o">-</span><span class="mi">12</span><span class="p">:</span><span class="mi">13</span><span class="p">],</span> <span class="n">cmap</span><span class="o">=</span><span class="s2">&quot;coolwarm&quot;</span><span class="p">,</span> <span class="n">square</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">linewidths</span><span class="o">=</span><span class="mf">0.01</span><span class="p">,</span><span class="n">ax</span><span class="o">=</span><span class="n">ax</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s2">&quot;First interval&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s2">&quot;Second interval&quot;</span><span class="p">)</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
 </pre></div>
 </div>
@@ -3064,7 +2275,7 @@ Wall time: 21.2 s
 <p>The two most common interval pairs are <code class="docutils literal notranslate"><span class="pre">(0,0)</span></code> and <code class="docutils literal notranslate"><span class="pre">(-2,-2)</span></code>. A much less frequent pair of intervals is <code class="docutils literal notranslate"><span class="pre">(5,0)</span></code>, but this is still much more frequent than, for example, <code class="docutils literal notranslate"><span class="pre">(9,9)</span></code>.</p>
 <p>To which melodic fragments do these correspond?</p>
 <div class="nbinput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[50]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[44]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
@@ -3077,7 +2288,7 @@ Wall time: 21.2 s
 </div>
 </div>
 <div class="nbinput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[51]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[45]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
@@ -3086,7 +2297,7 @@ Wall time: 21.2 s
 </div>
 </div>
 <div class="nbinput docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[52]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[46]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
@@ -3095,7 +2306,7 @@ Wall time: 21.2 s
 </div>
 </div>
 <div class="nboutput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[52]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[46]:
 </pre></div>
 </div>
 <div class="output_area rendered_html docutils container">
@@ -3194,7 +2405,7 @@ Wall time: 21.2 s
 </div></div>
 </div>
 <div class="nbinput docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[53]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[47]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
@@ -3204,7 +2415,7 @@ Wall time: 21.2 s
 </div>
 </div>
 <div class="nboutput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[53]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[47]:
 </pre></div>
 </div>
 <div class="output_area docutils container">
@@ -3215,7 +2426,7 @@ array([-16, -15, -14, -13, -12, -11, -10,  -9,  -8,  -7,  -6,  -5,  -4,
 </pre></div></div>
 </div>
 <div class="nbinput docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[54]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[48]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
@@ -3225,7 +2436,7 @@ array([-16, -15, -14, -13, -12, -11, -10,  -9,  -8,  -7,  -6,  -5,  -4,
 </div>
 </div>
 <div class="nboutput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[54]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[48]:
 </pre></div>
 </div>
 <div class="output_area rendered_html docutils container">
@@ -4093,7 +3304,7 @@ array([-16, -15, -14, -13, -12, -11, -10,  -9,  -8,  -7,  -6,  -5,  -4,
 </div></div>
 </div>
 <div class="nbinput docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[55]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[49]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
@@ -4110,11 +3321,11 @@ array([-16, -15, -14, -13, -12, -11, -10,  -9,  -8,  -7,  -6,  -5,  -4,
 </div>
 <div class="output_area docutils container">
 <div class="highlight"><pre>
-Wall time: 1min 17s
+Wall time: 1min 29s
 </pre></div></div>
 </div>
 <div class="nbinput docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[56]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[50]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
@@ -4131,7 +3342,7 @@ There are 442082 intervals in total in the corpus.
 </pre></div></div>
 </div>
 <div class="nbinput docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[57]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[51]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>

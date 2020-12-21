@@ -215,7 +215,7 @@
 
 
 \title{Introduction to Musical Corpus Studies}
-\date{Nov 25, 2020}
+\date{Dec 21, 2020}
 \release{0.0.1}
 \author{Fabian C.\@{} Moss}
 \newcommand{\sphinxlogo}{\vbox{}}
@@ -3335,6 +3335,2908 @@ Red Garland (p) plays generally lower than Herbie Hancock (p) but does show a po
 \end{enumerate}
 
 Does this tell us something about performer styles or about instruments?
+
+
+\chapter{Exercise I: The Annotated Beethoven Corpus and the \sphinxstyleliteralintitle{\sphinxupquote{pandas}} library}
+\label{\detokenize{exercises/01_exercise:Exercise-I:-The-Annotated-Beethoven-Corpus-and-the-pandas-library}}\label{\detokenize{exercises/01_exercise::doc}}
+In the first exercise, you learn how to interact with \sphinxcode{\sphinxupquote{pandas}} library that is very useful for deadling with tabular data. Moreover, you will have a first look at the data that we work with in the next session, the \sphinxstyleemphasis{Annotated Beethoven Corpus} (ABC). The ABC contains harmonic annotations for all string quartets by Ludwig van Beethoven. The corpus is described in
+\begin{itemize}
+\item {} 
+Neuwirth, M., Harasim, D., Moss, F. C., \& Rohrmeier, M. (2018). The Annotated Beethoven Corpus (ABC): A Dataset of Harmonic Analyses of All Beethoven String Quartets. \sphinxstyleemphasis{Frontiers in Digital Humanities}. \sphinxurl{https://doi.org/10.3389/fdigh.2018.00016}
+
+\end{itemize}
+
+A study based on this corpus is
+\begin{itemize}
+\item {} 
+Moss, F. C., Harasim, D., Neuwirth, M., \& Rohrmeier, M. (2019). Statistical characteristics of tonal harmony: A corpus study of Beethoven’s string quartets. \sphinxstyleemphasis{PLOS ONE}. \sphinxurl{https://doi.org/10.1371/journal.pone.0217242}
+
+\end{itemize}
+
+\sphinxstylestrong{Preparation}
+\begin{enumerate}
+\sphinxsetlistlabels{\arabic}{enumi}{enumii}{}{.}%
+\item {} 
+Select one member of your team who shares her/his screen (maybe someone with \sphinxstyleemphasis{some} programming experience).
+
+\item {} 
+Do all the exercises in that person’s notebook together.
+
+\end{enumerate}
+
+If you are not sure how to solve a task, Google is your friend. If you have any questions at any point, don’t hesitate to ask me or Sebastian for help.
+
+First, import the \sphinxcode{\sphinxupquote{pandas}} library in the cell below. It is customary to abbreviate it with \sphinxcode{\sphinxupquote{pd}}. If you are not sure how to do this, have a look at the \sphinxhref{https://pandas.pydata.org/pandas-docs/stable/user\_guide/10min.html}{“10 minutes to pandas”} tutorial or ask Google.
+
+{
+\sphinxsetup{VerbatimColor={named}{nbsphinx-code-bg}}
+\sphinxsetup{VerbatimBorderColor={named}{nbsphinx-code-border}}
+\begin{sphinxVerbatim}[commandchars=\\\{\}]
+\llap{\color{nbsphinxin}[1]:\,\hspace{\fboxrule}\hspace{\fboxsep}}\PYG{k+kn}{import} \PYG{n+nn}{pandas} \PYG{k}{as} \PYG{n+nn}{pd}
+\end{sphinxVerbatim}
+}
+
+You can check which version of \sphinxcode{\sphinxupquote{pandas}} you are using by using the \sphinxcode{\sphinxupquote{.\_\_version\_\_}} attribute of \sphinxcode{\sphinxupquote{pd}}(two underscores on each side).
+
+{
+\sphinxsetup{VerbatimColor={named}{nbsphinx-code-bg}}
+\sphinxsetup{VerbatimBorderColor={named}{nbsphinx-code-border}}
+\begin{sphinxVerbatim}[commandchars=\\\{\}]
+\llap{\color{nbsphinxin}[ ]:\,\hspace{\fboxrule}\hspace{\fboxsep}}
+\end{sphinxVerbatim}
+}
+
+The best way to learn how \sphinxcode{\sphinxupquote{pandas}} works is to use it! The ABC is stored at the following address:
+
+{
+\sphinxsetup{VerbatimColor={named}{nbsphinx-code-bg}}
+\sphinxsetup{VerbatimBorderColor={named}{nbsphinx-code-border}}
+\begin{sphinxVerbatim}[commandchars=\\\{\}]
+\llap{\color{nbsphinxin}[2]:\,\hspace{\fboxrule}\hspace{\fboxsep}}\PYG{n}{url} \PYG{o}{=} \PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{https://raw.githubusercontent.com/DCMLab/ABC/master/data/all\PYGZus{}annotations.tsv}\PYG{l+s+s2}{\PYGZdq{}}
+\end{sphinxVerbatim}
+}
+
+The most important object in \sphinxcode{\sphinxupquote{pandas}} is a \sphinxstylestrong{DataFrame} which is basically just another word for a table.
+
+We can load the ABC from the address that is stored in the variable \sphinxcode{\sphinxupquote{url}} by passing it to the \sphinxcode{\sphinxupquote{.read\_table()}} method. Assign it to a variable called \sphinxcode{\sphinxupquote{abc}}. The code for doing this is \sphinxcode{\sphinxupquote{abc = pd.read\_table(url)}}.
+
+{
+\sphinxsetup{VerbatimColor={named}{nbsphinx-code-bg}}
+\sphinxsetup{VerbatimBorderColor={named}{nbsphinx-code-border}}
+\begin{sphinxVerbatim}[commandchars=\\\{\}]
+\llap{\color{nbsphinxin}[6]:\,\hspace{\fboxrule}\hspace{\fboxsep}}\PYG{n}{abc} \PYG{o}{=} \PYG{n}{pd}\PYG{o}{.}\PYG{n}{read\PYGZus{}csv}\PYG{p}{(}\PYG{n}{url}\PYG{p}{,} \PYG{n}{sep}\PYG{o}{=}\PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+se}{\PYGZbs{}t}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{)}
+\end{sphinxVerbatim}
+}
+
+{
+\sphinxsetup{VerbatimColor={named}{nbsphinx-code-bg}}
+\sphinxsetup{VerbatimBorderColor={named}{nbsphinx-code-border}}
+\begin{sphinxVerbatim}[commandchars=\\\{\}]
+\llap{\color{nbsphinxin}[7]:\,\hspace{\fboxrule}\hspace{\fboxsep}}\PYG{n}{abc}\PYG{o}{.}\PYG{n}{tail}\PYG{p}{(}\PYG{p}{)}
+\end{sphinxVerbatim}
+}
+
+{
+
+\kern-\sphinxverbatimsmallskipamount\kern-\baselineskip
+\kern+\FrameHeightAdjust\kern-\fboxrule
+\vspace{\nbsphinxcodecellspacing}
+
+\sphinxsetup{VerbatimColor={named}{white}}
+\sphinxsetup{VerbatimBorderColor={named}{nbsphinx-code-border}}
+\begin{sphinxVerbatim}[commandchars=\\\{\}]
+\llap{\color{nbsphinxout}[7]:\,\hspace{\fboxrule}\hspace{\fboxsep}}       chord altchord  measure  beat  totbeat timesig  op  no  mov  length  \textbackslash{}
+28090      I      NaN      171   1.0    542.5     2/2  95  11    4     4.0
+28091     V7      NaN      172   1.0    546.5     2/2  95  11    4     4.0
+28092      I      NaN      173   1.0    550.5     2/2  95  11    4     4.0
+28093      V      NaN      174   1.0    554.5     2/2  95  11    4     4.0
+28094  I\textbackslash{}\textbackslash{}\textbackslash{}\textbackslash{}      NaN      175   1.0    558.5     2/2  95  11    4     4.0
+
+      global\_key local\_key pedal numeral form  figbass changes relativeroot  \textbackslash{}
+28090      false         I   NaN       I  NaN      NaN     NaN          NaN
+28091      false         I   NaN       V  NaN      7.0     NaN          NaN
+28092      false         I   NaN       I  NaN      NaN     NaN          NaN
+28093      false         I   NaN       V  NaN      NaN     NaN          NaN
+28094      false         I   NaN       I  NaN      NaN     NaN          NaN
+
+       phraseend
+28090      False
+28091      False
+28092      False
+28093      False
+28094       True
+\end{sphinxVerbatim}
+}
+
+Call the variable \sphinxcode{\sphinxupquote{abc}} in the next cell.
+
+{
+\sphinxsetup{VerbatimColor={named}{nbsphinx-code-bg}}
+\sphinxsetup{VerbatimBorderColor={named}{nbsphinx-code-border}}
+\begin{sphinxVerbatim}[commandchars=\\\{\}]
+\llap{\color{nbsphinxin}[ ]:\,\hspace{\fboxrule}\hspace{\fboxsep}}
+\end{sphinxVerbatim}
+}
+
+As you can see, \sphinxcode{\sphinxupquote{pandas}} displays the first and the last five rows, and a lot of columns of the table. A very handy way to know how large the table is, is to use the \sphinxcode{\sphinxupquote{.shape}} attribute of the \sphinxcode{\sphinxupquote{abc}} DataFrame. It returns a pair \sphinxcode{\sphinxupquote{(number\_of\_rows, number\_of\_columns)}}. Use this attribute in the cell below and compare it to the numbers of rows and columns that are displayed directly below the DataFrame.
+
+{
+\sphinxsetup{VerbatimColor={named}{nbsphinx-code-bg}}
+\sphinxsetup{VerbatimBorderColor={named}{nbsphinx-code-border}}
+\begin{sphinxVerbatim}[commandchars=\\\{\}]
+\llap{\color{nbsphinxin}[ ]:\,\hspace{\fboxrule}\hspace{\fboxsep}}
+\end{sphinxVerbatim}
+}
+
+Now, try to figure out what the following columns could mean and write it to the code (like the example for \sphinxcode{\sphinxupquote{chord}}).
+
+{
+\sphinxsetup{VerbatimColor={named}{nbsphinx-code-bg}}
+\sphinxsetup{VerbatimBorderColor={named}{nbsphinx-code-border}}
+\begin{sphinxVerbatim}[commandchars=\\\{\}]
+\llap{\color{nbsphinxin}[ ]:\,\hspace{\fboxrule}\hspace{\fboxsep}}\PYG{n}{column\PYGZus{}meanings} \PYG{o}{=} \PYG{l+s+s2}{\PYGZdq{}\PYGZdq{}\PYGZdq{}}
+\PYG{l+s+s2}{chord: }\PYG{l+s+s2}{\PYGZsq{}}\PYG{l+s+s2}{A chord symbol}\PYG{l+s+s2}{\PYGZsq{}}
+\PYG{l+s+s2}{measure:}
+\PYG{l+s+s2}{beat:}
+\PYG{l+s+s2}{totbeat:}
+\PYG{l+s+s2}{timesig:}
+\PYG{l+s+s2}{op:}
+\PYG{l+s+s2}{no:}
+\PYG{l+s+s2}{mov:}
+\PYG{l+s+s2}{length:}
+\PYG{l+s+s2}{global\PYGZus{}key:}
+\PYG{l+s+s2}{local\PYGZus{}key:}
+\PYG{l+s+s2}{numeral:}
+\PYG{l+s+s2}{figbass:}
+\PYG{l+s+s2}{\PYGZdq{}\PYGZdq{}\PYGZdq{}}
+\end{sphinxVerbatim}
+}
+
+We can look at individual columns of the DataFrame by \sphinxstylestrong{selecting} them. For example, if we had a DataFrame called \sphinxcode{\sphinxupquote{df}} with a column named \sphinxcode{\sphinxupquote{temperature}}, we could look at only this column by writing \sphinxcode{\sphinxupquote{df{[}"temperature"{]}}}. In the cell below, select the \sphinxcode{\sphinxupquote{chord}} column of the DataFrame \sphinxcode{\sphinxupquote{abc}}.
+
+{
+\sphinxsetup{VerbatimColor={named}{nbsphinx-code-bg}}
+\sphinxsetup{VerbatimBorderColor={named}{nbsphinx-code-border}}
+\begin{sphinxVerbatim}[commandchars=\\\{\}]
+\llap{\color{nbsphinxin}[ ]:\,\hspace{\fboxrule}\hspace{\fboxsep}}
+\end{sphinxVerbatim}
+}
+
+Again, we see only the first and last five entries.
+
+We know now how many chords are annotated in this corpus and how we can select individual columns. But how many \sphinxstyleemphasis{different} chords are there? \sphinxcode{\sphinxupquote{pandas}} has a very useful method for this task, called \sphinxcode{\sphinxupquote{.value\_counts()}}. If you select the \sphinxcode{\sphinxupquote{chord}} column in the DataFrame \sphinxcode{\sphinxupquote{abc}} and append the \sphinxcode{\sphinxupquote{.value\_counts()}} method to it, it will show you the number of times each chord appears in the corpus in descending order.
+
+{
+\sphinxsetup{VerbatimColor={named}{nbsphinx-code-bg}}
+\sphinxsetup{VerbatimBorderColor={named}{nbsphinx-code-border}}
+\begin{sphinxVerbatim}[commandchars=\\\{\}]
+\llap{\color{nbsphinxin}[ ]:\,\hspace{\fboxrule}\hspace{\fboxsep}}
+\end{sphinxVerbatim}
+}
+
+What are the five most common chords? Can you interpret it?
+
+Now, in the big table that we have stored in the variable \sphinxcode{\sphinxupquote{abc}} there are \sphinxstyleemphasis{all} chords in \sphinxstyleemphasis{all} of Beethoven’s string quartets. What if we wanted to look only at a single of these quartets, for example the string quartet no. 11, op. 95 in F minor? The following code shows how we would do it:
+
+\begin{sphinxVerbatim}[commandchars=\\\{\}]
+\PYG{n}{abc}\PYG{p}{[} \PYG{n}{abc}\PYG{p}{[}\PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{op}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{]} \PYG{o}{==} \PYG{l+m+mi}{95} \PYG{p}{]}
+\end{sphinxVerbatim}
+
+This reads as “Show me the \sphinxcode{\sphinxupquote{abc}} where the \sphinxcode{\sphinxupquote{op}} column of the \sphinxcode{\sphinxupquote{abc}} is equal to 95 (note the double \sphinxcode{\sphinxupquote{==}}). In the cell below, show only the rows of the table that belong to the string quartet no. 10, op. 74 in E\(\flat\) major.
+
+{
+\sphinxsetup{VerbatimColor={named}{nbsphinx-code-bg}}
+\sphinxsetup{VerbatimBorderColor={named}{nbsphinx-code-border}}
+\begin{sphinxVerbatim}[commandchars=\\\{\}]
+\llap{\color{nbsphinxin}[ ]:\,\hspace{\fboxrule}\hspace{\fboxsep}}
+\end{sphinxVerbatim}
+}
+
+How could we now count all the chords in op. 74?
+
+{
+\sphinxsetup{VerbatimColor={named}{nbsphinx-code-bg}}
+\sphinxsetup{VerbatimBorderColor={named}{nbsphinx-code-border}}
+\begin{sphinxVerbatim}[commandchars=\\\{\}]
+\llap{\color{nbsphinxin}[ ]:\,\hspace{\fboxrule}\hspace{\fboxsep}}
+\end{sphinxVerbatim}
+}
+
+How many different chords are in op. 74? (Hint: You don’t need to write code for that, the \sphinxcode{\sphinxupquote{.value\_counts()}} method already states it.
+
+Above we have seen that the \sphinxcode{\sphinxupquote{global\_key}} contains the key of the entire piece, while \sphinxcode{\sphinxupquote{local\_key}} contains the keys to which a piece \sphinxstylestrong{modulates}. If we wanted to know which chords occur how often \sphinxstyleemphasis{either} in major \sphinxstyleemphasis{or} minor keys, we have to select them explicitly, similarly to how we selected an opus number.
+
+However, the DataFrame does not contain a \sphinxcode{\sphinxupquote{mode}} column that would contain whether a chord occurs in a major or in a minor segment. But we can work around that! Let us first see, which local keys there are in all string quartets. This can be achieved by first selecting the \sphinxcode{\sphinxupquote{local\_key}} column and then calling the \sphinxcode{\sphinxupquote{.unique()}} method on it.
+
+{
+\sphinxsetup{VerbatimColor={named}{nbsphinx-code-bg}}
+\sphinxsetup{VerbatimBorderColor={named}{nbsphinx-code-border}}
+\begin{sphinxVerbatim}[commandchars=\\\{\}]
+\llap{\color{nbsphinxin}[ ]:\,\hspace{\fboxrule}\hspace{\fboxsep}}
+\end{sphinxVerbatim}
+}
+
+Apparently, there is a great variety of keys in Beethoven’s string quartes. If we only want to select the major keys, we have to select all keys that start with an uppercase letter, e.g. \sphinxcode{\sphinxupquote{\textquotesingle{}VI\textquotesingle{}}} \sphinxstylestrong{or} that start with a flat (\(\flat\), here represented by the letter \sphinxcode{\sphinxupquote{b}}) \sphinxstylestrong{and} have uppercase letters following, for example \sphinxcode{\sphinxupquote{\textquotesingle{}bIV\textquotesingle{}}}. This is a quite complicated condition. For tasks like this, one can use so\sphinxhyphen{}called \sphinxstylestrong{regular expressions} (not necessary to know exactly what this means
+yet). The condition mentioned above would be expressed as follows:
+
+{
+\sphinxsetup{VerbatimColor={named}{nbsphinx-code-bg}}
+\sphinxsetup{VerbatimBorderColor={named}{nbsphinx-code-border}}
+\begin{sphinxVerbatim}[commandchars=\\\{\}]
+\llap{\color{nbsphinxin}[ ]:\,\hspace{\fboxrule}\hspace{\fboxsep}}\PYG{n}{major\PYGZus{}condition} \PYG{o}{=} \PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{\PYGZca{}b?[A\PYGZhy{}Z]}\PYG{l+s+s2}{\PYGZdq{}}
+\end{sphinxVerbatim}
+}
+
+The \sphinxcode{\sphinxupquote{\textasciicircum{}b?}} part means “has the letter ‘b’ at the beginning but only once”, and the \sphinxcode{\sphinxupquote{{[}A\sphinxhyphen{}Z{]}}} part means “any uppercase letter”. Consequently, we can select all pieces in the major mode by
+
+{
+\sphinxsetup{VerbatimColor={named}{nbsphinx-code-bg}}
+\sphinxsetup{VerbatimBorderColor={named}{nbsphinx-code-border}}
+\begin{sphinxVerbatim}[commandchars=\\\{\}]
+\llap{\color{nbsphinxin}[ ]:\,\hspace{\fboxrule}\hspace{\fboxsep}}\PYG{n}{abc}\PYG{p}{[} \PYG{n}{abc}\PYG{p}{[}\PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{local\PYGZus{}key}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{]}\PYG{o}{.}\PYG{n}{str}\PYG{o}{.}\PYG{n}{match}\PYG{p}{(}\PYG{n}{major\PYGZus{}condition}\PYG{p}{)} \PYG{p}{]}
+\end{sphinxVerbatim}
+}
+
+Take the above expression and count the chords in all major keys in the cell below.
+
+{
+\sphinxsetup{VerbatimColor={named}{nbsphinx-code-bg}}
+\sphinxsetup{VerbatimBorderColor={named}{nbsphinx-code-border}}
+\begin{sphinxVerbatim}[commandchars=\\\{\}]
+\llap{\color{nbsphinxin}[ ]:\,\hspace{\fboxrule}\hspace{\fboxsep}}
+\end{sphinxVerbatim}
+}
+
+How would we have to change \sphinxcode{\sphinxupquote{major\_condition}} so that it selects only minor keys? Save the condition for minor keys in a variable \sphinxcode{\sphinxupquote{minor\_condition}} in the cell below.
+
+{
+\sphinxsetup{VerbatimColor={named}{nbsphinx-code-bg}}
+\sphinxsetup{VerbatimBorderColor={named}{nbsphinx-code-border}}
+\begin{sphinxVerbatim}[commandchars=\\\{\}]
+\llap{\color{nbsphinxin}[ ]:\,\hspace{\fboxrule}\hspace{\fboxsep}}
+\end{sphinxVerbatim}
+}
+
+Now, we are in the position to select all minor\sphinxhyphen{}key segments from the string quartets and count the chords!
+
+{
+\sphinxsetup{VerbatimColor={named}{nbsphinx-code-bg}}
+\sphinxsetup{VerbatimBorderColor={named}{nbsphinx-code-border}}
+\begin{sphinxVerbatim}[commandchars=\\\{\}]
+\llap{\color{nbsphinxin}[ ]:\,\hspace{\fboxrule}\hspace{\fboxsep}}
+\end{sphinxVerbatim}
+}
+
+Compare the first couple of chords in major and minor. Can you interpret it?
+
+\sphinxstylestrong{Congratulations! You completely solved the first exercise!}
+
+
+\chapter{Renaissance Cadences}
+\label{\detokenize{04_renaissance_cadences:renaissance-cadences}}\label{\detokenize{04_renaissance_cadences::doc}}
+This part of the course was taught by \sphinxhref{https://www.haverford.edu/users/rfreedma}{Prof. Richard Freedman, Haverford College}
+who introduced the \sphinxhref{http://digitalduchemin.org/}{Lost Voices project} and in particular how one can use this corpus for both close and distant reading analyses.
+Richard’s sides can be accessed \sphinxhref{https://docs.google.com/presentation/d/16f1EmFpyXRw8dqBteX9bu9XFN8YL3Aa--BCWH8A4YZ4/edit?usp=sharing}{here}.
+
+
+\chapter{Exercise II: Lost Voices Cadence Data}
+\label{\detokenize{exercises/02_exercise:Exercise-II:-Lost-Voices-Cadence-Data}}\label{\detokenize{exercises/02_exercise::doc}}
+\sphinxstyleemphasis{Notebook by Richard Freedman (adapted by Fabian Moss)}
+
+see \sphinxurl{https://digitalduchemin.org}
+
+As always, we start by importing a number of libraries that contain certain functions which we will use later in the analyses.
+
+{
+\sphinxsetup{VerbatimColor={named}{nbsphinx-code-bg}}
+\sphinxsetup{VerbatimBorderColor={named}{nbsphinx-code-border}}
+\begin{sphinxVerbatim}[commandchars=\\\{\}]
+\llap{\color{nbsphinxin}[19]:\,\hspace{\fboxrule}\hspace{\fboxsep}}\PYG{k+kn}{import} \PYG{n+nn}{pandas} \PYG{k}{as} \PYG{n+nn}{pd} \PYG{c+c1}{\PYGZsh{} working with tabular data}
+\PYG{k+kn}{import} \PYG{n+nn}{altair} \PYG{k}{as} \PYG{n+nn}{alt} \PYG{c+c1}{\PYGZsh{} visualization library; see https://altair\PYGZhy{}viz.github.io/}
+\PYG{n}{alt}\PYG{o}{.}\PYG{n}{renderers}\PYG{o}{.}\PYG{n}{enable}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{altair\PYGZus{}viewer}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{,} \PYG{n}{inline}\PYG{o}{=}\PYG{k+kc}{True}\PYG{p}{)} \PYG{c+c1}{\PYGZsh{} to display the charts inline}
+\PYG{k+kn}{import} \PYG{n+nn}{altair\PYGZus{}viewer} \PYG{k}{as} \PYG{n+nn}{av}
+\PYG{k+kn}{from} \PYG{n+nn}{pathlib} \PYG{k+kn}{import} \PYG{n}{Path} \PYG{c+c1}{\PYGZsh{} to handle files}
+\PYG{k+kn}{import} \PYG{n+nn}{requests} \PYG{c+c1}{\PYGZsh{} to communicate with web servers}
+\end{sphinxVerbatim}
+}
+
+
+\section{Get the Cadence Metadata from github as DataFrame}
+\label{\detokenize{exercises/02_exercise:Get-the-Cadence-Metadata-from-github-as-DataFrame}}
+The cadence data from the Digital DuChemin project are available on GitHub. Conveniently, the cadence data is already stored in a CSV file that we can download and store in a table. The function below encapsulates these steps so that when we call it, it returns a dataframe with the stored cadence data.
+
+{
+\sphinxsetup{VerbatimColor={named}{nbsphinx-code-bg}}
+\sphinxsetup{VerbatimBorderColor={named}{nbsphinx-code-border}}
+\begin{sphinxVerbatim}[commandchars=\\\{\}]
+\llap{\color{nbsphinxin}[20]:\,\hspace{\fboxrule}\hspace{\fboxsep}}\PYG{c+c1}{\PYGZsh{} get the data function}
+\PYG{k}{def} \PYG{n+nf}{get\PYGZus{}data}\PYG{p}{(}\PYG{p}{)}\PYG{p}{:}
+    \PYG{n}{url} \PYG{o}{=} \PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{https://raw.githubusercontent.com/RichardFreedman/LostVoicesCadenceViewer/main/LV\PYGZus{}CadenceData.csv}\PYG{l+s+s2}{\PYGZdq{}}
+    \PYG{n}{cadence\PYGZus{}data\PYGZus{}raw} \PYG{o}{=} \PYG{n}{pd}\PYG{o}{.}\PYG{n}{read\PYGZus{}csv}\PYG{p}{(}\PYG{n}{url}\PYG{p}{)}
+    \PYG{c+c1}{\PYGZsh{} The following adds the list of \PYGZsq{}similar\PYGZsq{} cadences to the DF}
+    \PYG{n}{cadence\PYGZus{}json} \PYG{o}{=}  \PYG{n}{requests}\PYG{o}{.}\PYG{n}{get}\PYG{p}{(}\PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{https://raw.githubusercontent.com/bmill42/DuChemin/master/phase1/data/duchemin.similarities.json}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{)}\PYG{o}{.}\PYG{n}{json}\PYG{p}{(}\PYG{p}{)}
+    \PYG{n}{cadence\PYGZus{}data\PYGZus{}raw}\PYG{p}{[}\PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{similarity}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{]} \PYG{o}{=} \PYG{n}{cadence\PYGZus{}json}
+    \PYG{k}{return}  \PYG{n}{cadence\PYGZus{}data\PYGZus{}raw}
+
+\PYG{n}{cadence\PYGZus{}data\PYGZus{}raw} \PYG{o}{=} \PYG{n}{get\PYGZus{}data}\PYG{p}{(}\PYG{p}{)}
+\end{sphinxVerbatim}
+}
+
+The variable \sphinxcode{\sphinxupquote{cadence\_data\_raw}} now contains the cadence data. Remember that we can use the \sphinxcode{\sphinxupquote{.head()}} method to desplay the first couple of rows. Display the first 10 rows in the next cell.
+
+{
+\sphinxsetup{VerbatimColor={named}{nbsphinx-code-bg}}
+\sphinxsetup{VerbatimBorderColor={named}{nbsphinx-code-border}}
+\begin{sphinxVerbatim}[commandchars=\\\{\}]
+\llap{\color{nbsphinxin}[21]:\,\hspace{\fboxrule}\hspace{\fboxsep}}\PYG{n}{cadence\PYGZus{}data\PYGZus{}raw}\PYG{o}{.}\PYG{n}{head}\PYG{p}{(}\PYG{l+m+mi}{10}\PYG{p}{)}
+\end{sphinxVerbatim}
+}
+
+{
+
+\kern-\sphinxverbatimsmallskipamount\kern-\baselineskip
+\kern+\FrameHeightAdjust\kern-\fboxrule
+\vspace{\nbsphinxcodecellspacing}
+
+\sphinxsetup{VerbatimColor={named}{white}}
+\sphinxsetup{VerbatimBorderColor={named}{nbsphinx-code-border}}
+\begin{sphinxVerbatim}[commandchars=\\\{\}]
+\llap{\color{nbsphinxout}[21]:\,\hspace{\fboxrule}\hspace{\fboxsep}}                                       phrase\_number  \textbackslash{}
+0  DC0625.8: Dont nous serons plus contentz qu'eulx.
+1         DC0625.6: Ami perfaict plus que les dieux,
+2  DC0625.5: Mais ne fault point que doubte on face,
+3        DC0625.2: Non plus que j'ay de bonne grace,
+4                DC0625.1: Si je n'avois de fermeté,
+5  DC0624.10: Par ton amour si fais cesser la mie{\ldots}
+6  DC0624.8: C'est pour t'aimer pour Dieu il t'en{\ldots}
+7  DC0624.6: Qui ne penetre au plus profond de l'{\ldots}
+8     DC0624.2: Je me suis mis comme ami en debvoir,
+9   DC0623.8: Mais la vostre est par peur estaincte.
+
+                                composition\_number cadence\_role\_cantz  \textbackslash{}
+0                 DC0625: Si je n'avois de fermeté                  S
+1                 DC0625: Si je n'avois de fermeté                  S
+2                 DC0625: Si je n'avois de fermeté               None
+3                 DC0625: Si je n'avois de fermeté                  S
+4                 DC0625: Si je n'avois de fermeté                  T
+5  DC0624: Si tu as veu que pour ton feu estaindre                  S
+6  DC0624: Si tu as veu que pour ton feu estaindre                  T
+7  DC0624: Si tu as veu que pour ton feu estaindre               None
+8  DC0624: Si tu as veu que pour ton feu estaindre                  T
+9           DC0623: Vous souvient-il ; ma mignonne                  S
+
+                 cadence\_alter cadence\_final\_tone cadence\_role\_tenz  \textbackslash{}
+0                          NaN                  G                 T
+1                          NaN                  A                 T
+2                          NaN                  D              None
+3                          NaN                  G                 T
+4  Displaced, Inverted, Evaded                  C                Ct
+5                          NaN                  G                 T
+6  Displaced, Inverted, Evaded                  C                Ct
+7                          NaN                  G              None
+8             Inverted, Evaded                  C                 S
+9                          NaN                  G                 T
+
+  cadence\_kind cadence\_final\_tone\_before cadence\_final\_tone\_after  \textbackslash{}
+0    Authentic                         A                     None
+1    Authentic                         D                        G
+2       Plagal                         G                        A
+3    Authentic                         C                        D
+4    Authentic                      None                        G
+5    Authentic                         C                     None
+6    Authentic                         G                        G
+7       Plagal                         C                        C
+8    Authentic                      None                        G
+9    Authentic                         C                     None
+
+  cadence\_kind\_before cadence\_kind\_after final\_cadence  \textbackslash{}
+0           Authentic               None             G
+1              Plagal          Authentic             G
+2           Authentic          Authentic             G
+3           Authentic             Plagal             G
+4                None          Authentic             G
+5           Authentic               None             G
+6              Plagal          Authentic             G
+7           Authentic          Authentic             G
+8                None             Plagal             G
+9           Authentic               None             G
+
+                                          similarity
+0  [5, 9, 13, 15, 48, 64, 74, 77, 82, 85, 107, 11{\ldots}
+1                                          [87, 122]
+2                                     [88, 335, 512]
+3                                              [493]
+4                                              [624]
+5  [0, 9, 13, 15, 48, 64, 74, 77, 82, 85, 107, 11{\ldots}
+6                                                 []
+7                                              [373]
+8                                                 []
+9  [0, 5, 13, 15, 48, 64, 74, 77, 82, 85, 107, 11{\ldots}
+\end{sphinxVerbatim}
+}
+
+Do you understand what kind of information each column contains? Interpret the contents of the following columns:
+\begin{itemize}
+\item {} 
+\sphinxcode{\sphinxupquote{final\_cadence}}
+
+\item {} 
+\sphinxcode{\sphinxupquote{cadence\_final\_tone}}
+
+\item {} 
+\sphinxcode{\sphinxupquote{cadence\_role\_cantz}} / \sphinxcode{\sphinxupquote{cadence\_role\_tenz}}
+
+\item {} 
+\sphinxcode{\sphinxupquote{cadence\_kind}} / \sphinxcode{\sphinxupquote{cadence\_kind\_before}} / \sphinxcode{\sphinxupquote{cadence\_kind\_after}}
+
+\item {} 
+\sphinxcode{\sphinxupquote{similarity}} (looking back at the definition of the \sphinxcode{\sphinxupquote{get\_data}} function might help)
+
+\end{itemize}
+
+
+\subsection{Get “Counts” for Values of a Particular Column}
+\label{\detokenize{exercises/02_exercise:Get-_u201cCounts_u201d-for-Values-of-a-Particular-Column}}
+Use the \sphinxcode{\sphinxupquote{value\_counts()}} method to count the occurrences in the \sphinxcode{\sphinxupquote{cadence\_kind}} column of the DataFrame. Remember that you can select a column of a DataFrame like this: \sphinxcode{\sphinxupquote{df{[}col\_name{]}}} where \sphinxcode{\sphinxupquote{df}} is the name of the variable that stores the DataFrame and \sphinxcode{\sphinxupquote{col\_name}} is the name of the column. Which cadence types are most frequent in this repertoire? Do you understand each cadence type?
+
+{
+\sphinxsetup{VerbatimColor={named}{nbsphinx-code-bg}}
+\sphinxsetup{VerbatimBorderColor={named}{nbsphinx-code-border}}
+\begin{sphinxVerbatim}[commandchars=\\\{\}]
+\llap{\color{nbsphinxin}[22]:\,\hspace{\fboxrule}\hspace{\fboxsep}}\PYG{n}{cadence\PYGZus{}data\PYGZus{}raw}\PYG{p}{[}\PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{cadence\PYGZus{}kind}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{]}\PYG{o}{.}\PYG{n}{value\PYGZus{}counts}\PYG{p}{(}\PYG{p}{)}
+\end{sphinxVerbatim}
+}
+
+{
+
+\kern-\sphinxverbatimsmallskipamount\kern-\baselineskip
+\kern+\FrameHeightAdjust\kern-\fboxrule
+\vspace{\nbsphinxcodecellspacing}
+
+\sphinxsetup{VerbatimColor={named}{white}}
+\sphinxsetup{VerbatimBorderColor={named}{nbsphinx-code-border}}
+\begin{sphinxVerbatim}[commandchars=\\\{\}]
+\llap{\color{nbsphinxout}[22]:\,\hspace{\fboxrule}\hspace{\fboxsep}}Authentic    882
+Plagal       158
+Phrygian      98
+CadInCad      37
+CAD NDLT      20
+Name: cadence\_kind, dtype: int64
+\end{sphinxVerbatim}
+}
+
+
+\subsection{Sort Data According to Selected Columns}
+\label{\detokenize{exercises/02_exercise:Sort-Data-According-to-Selected-Columns}}
+Use the \sphinxcode{\sphinxupquote{.sort\_values()}} method to sort the raw cadence data by the final tone of the cadence \sphinxstylestrong{and} by the candence kind. Remember that this method takes either a column name or a list of column names as input.
+
+The \sphinxcode{\sphinxupquote{.sort\_values()}} method is documented here: \sphinxurl{https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.sort\_values.html} As described there, you can reverse the ascending order (default) of the sorted values by changing a keyword to the method. Store the result in a variable named \sphinxcode{\sphinxupquote{Sorted}} (uppercase S!) and inspect its first 5 rows.
+
+{
+\sphinxsetup{VerbatimColor={named}{nbsphinx-code-bg}}
+\sphinxsetup{VerbatimBorderColor={named}{nbsphinx-code-border}}
+\begin{sphinxVerbatim}[commandchars=\\\{\}]
+\llap{\color{nbsphinxin}[23]:\,\hspace{\fboxrule}\hspace{\fboxsep}}\PYG{n}{Sorted} \PYG{o}{=} \PYG{n}{cadence\PYGZus{}data\PYGZus{}raw}\PYG{o}{.}\PYG{n}{sort\PYGZus{}values}\PYG{p}{(}\PYG{p}{[}\PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{cadence\PYGZus{}final\PYGZus{}tone}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{,}\PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{cadence\PYGZus{}kind}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{]}\PYG{p}{,} \PYG{n}{ascending}\PYG{o}{=}\PYG{k+kc}{False}\PYG{p}{)}
+\PYG{n}{Sorted}\PYG{o}{.}\PYG{n}{head}\PYG{p}{(}\PYG{l+m+mi}{5}\PYG{p}{)}
+\end{sphinxVerbatim}
+}
+
+{
+
+\kern-\sphinxverbatimsmallskipamount\kern-\baselineskip
+\kern+\FrameHeightAdjust\kern-\fboxrule
+\vspace{\nbsphinxcodecellspacing}
+
+\sphinxsetup{VerbatimColor={named}{white}}
+\sphinxsetup{VerbatimBorderColor={named}{nbsphinx-code-border}}
+\begin{sphinxVerbatim}[commandchars=\\\{\}]
+\llap{\color{nbsphinxout}[23]:\,\hspace{\fboxrule}\hspace{\fboxsep}}                                          phrase\_number  \textbackslash{}
+703            DC0511.3: Et vous tuez le corps et l’ame
+1109      DC0114.9: Elle me paist ceste seconde Heleine
+7     DC0624.6: Qui ne penetre au plus profond de l'{\ldots}
+16     DC0621.5: Ne pensez pas que ferois tel deffault?
+66              DC0609.7: Demander le fault à mon cœur,
+
+                                   composition\_number cadence\_role\_cantz  \textbackslash{}
+703                  DC0511: Ce disoit une jeune dame                  B
+1109   DC0114: Trop justement je forme une complainte                  S
+7     DC0624: Si tu as veu que pour ton feu estaindre               None
+16          DC0621: Un gay berger prioit une bergiere               None
+66               DC0609: Je ne suis devin ne prophète               None
+
+            cadence\_alter cadence\_final\_tone cadence\_role\_tenz cadence\_kind  \textbackslash{}
+703   Inverted, Displaced               None                Ct    Authentic
+1109    Displaced, Evaded               None                Ct    Authentic
+7                     NaN                  G              None       Plagal
+16                    NaN                  G              None       Plagal
+66                    NaN                  G              None       Plagal
+
+     cadence\_final\_tone\_before cadence\_final\_tone\_after cadence\_kind\_before  \textbackslash{}
+703                          D                        D           Authentic
+1109                         C                        A           Authentic
+7                            C                        C           Authentic
+16                           G                        G           Authentic
+66                      B-flat                        G           Authentic
+
+     cadence\_kind\_after final\_cadence           similarity
+703            Phrygian             G                   []
+1109          Authentic             A                   []
+7             Authentic             G                [373]
+16            Authentic             G  [66, 132, 335, 512]
+66            Authentic             G                 [16]
+\end{sphinxVerbatim}
+}
+
+\sphinxcode{\sphinxupquote{Sorted}} now contains the phrases sorted according to the tone of the final cadence and the kind of the cadence. As you can see, there are a lot of repeating values adjacent to each other.
+
+A better overview is obtained by \sphinxstylestrong{grouping} the data with the \sphinxcode{\sphinxupquote{.groupby()}} method. Like \sphinxcode{\sphinxupquote{.value\_counts()}} this method takes a column name or a list of column names as input.
+
+
+\section{Grouping}
+\label{\detokenize{exercises/02_exercise:Grouping}}
+Group the data by the same two columns as before and store the result in a variable \sphinxcode{\sphinxupquote{grouped}}.
+
+{
+\sphinxsetup{VerbatimColor={named}{nbsphinx-code-bg}}
+\sphinxsetup{VerbatimBorderColor={named}{nbsphinx-code-border}}
+\begin{sphinxVerbatim}[commandchars=\\\{\}]
+\llap{\color{nbsphinxin}[24]:\,\hspace{\fboxrule}\hspace{\fboxsep}}\PYG{n}{grouped} \PYG{o}{=} \PYG{n}{cadence\PYGZus{}data\PYGZus{}raw}\PYG{o}{.}\PYG{n}{groupby}\PYG{p}{(}\PYG{p}{[}\PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{cadence\PYGZus{}final\PYGZus{}tone}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{,} \PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{final\PYGZus{}cadence}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{]}\PYG{p}{)}
+\end{sphinxVerbatim}
+}
+
+What happens if you want to inspect the grouped data?
+
+{
+\sphinxsetup{VerbatimColor={named}{nbsphinx-code-bg}}
+\sphinxsetup{VerbatimBorderColor={named}{nbsphinx-code-border}}
+\begin{sphinxVerbatim}[commandchars=\\\{\}]
+\llap{\color{nbsphinxin}[25]:\,\hspace{\fboxrule}\hspace{\fboxsep}}\PYG{n}{grouped}
+\end{sphinxVerbatim}
+}
+
+{
+
+\kern-\sphinxverbatimsmallskipamount\kern-\baselineskip
+\kern+\FrameHeightAdjust\kern-\fboxrule
+\vspace{\nbsphinxcodecellspacing}
+
+\sphinxsetup{VerbatimColor={named}{white}}
+\sphinxsetup{VerbatimBorderColor={named}{nbsphinx-code-border}}
+\begin{sphinxVerbatim}[commandchars=\\\{\}]
+\llap{\color{nbsphinxout}[25]:\,\hspace{\fboxrule}\hspace{\fboxsep}}<pandas.core.groupby.generic.DataFrameGroupBy object at 0x00000225571E6C10>
+\end{sphinxVerbatim}
+}
+
+Most likely, you didn’t see anything. That is because you didn’t yet specify in which way the grouped data should be displayed. Here, we would like to count the cadences. Thus, we apply the \sphinxcode{\sphinxupquote{.count()}} method to the grouped data.
+
+{
+\sphinxsetup{VerbatimColor={named}{nbsphinx-code-bg}}
+\sphinxsetup{VerbatimBorderColor={named}{nbsphinx-code-border}}
+\begin{sphinxVerbatim}[commandchars=\\\{\}]
+\llap{\color{nbsphinxin}[26]:\,\hspace{\fboxrule}\hspace{\fboxsep}}\PYG{n}{grouped}\PYG{o}{.}\PYG{n}{count}\PYG{p}{(}\PYG{p}{)}
+\end{sphinxVerbatim}
+}
+
+{
+
+\kern-\sphinxverbatimsmallskipamount\kern-\baselineskip
+\kern+\FrameHeightAdjust\kern-\fboxrule
+\vspace{\nbsphinxcodecellspacing}
+
+\sphinxsetup{VerbatimColor={named}{white}}
+\sphinxsetup{VerbatimBorderColor={named}{nbsphinx-code-border}}
+\begin{sphinxVerbatim}[commandchars=\\\{\}]
+\llap{\color{nbsphinxout}[26]:\,\hspace{\fboxrule}\hspace{\fboxsep}}                                  phrase\_number  composition\_number  \textbackslash{}
+cadence\_final\_tone final\_cadence
+A                  A                         30                  30
+                   B-flat                     1                   1
+                   C                          2                   2
+                   D                         48                  48
+                   E                          6                   6
+                   F                         26                  26
+                   G                         27                  27
+B-flat             A                          1                   1
+                   B-flat                     4                   4
+                   D                          8                   8
+                   F                          2                   2
+                   G                         68                  68
+C                  A                         11                  11
+                   B-flat                     1                   1
+                   C                         54                  54
+                   D                          5                   5
+                   E                          4                   4
+                   F                         72                  72
+                   G                         44                  44
+D                  A                          2                   2
+                   B-flat                     6                   6
+                   C                          1                   1
+                   D                         89                  89
+                   E                          1                   1
+                   F                         11                  11
+                   G                        167                 167
+E                  A                         11                  11
+                   C                          4                   4
+                   D                          4                   4
+                   E                          4                   4
+                   F                          1                   1
+                   G                          7                   7
+F                  B-flat                     1                   1
+                   C                          9                   9
+                   D                         14                  14
+                   E                          1                   1
+                   F                        136                 136
+                   G                          5                   5
+G                  A                          7                   7
+                   B-flat                     7                   7
+                   C                         28                  28
+                   D                         23                  23
+                   E                          1                   1
+                   F                         14                  14
+                   G                        225                 225
+None               A                          1                   1
+                   G                          1                   1
+
+                                  cadence\_role\_cantz  cadence\_alter  \textbackslash{}
+cadence\_final\_tone final\_cadence
+A                  A                              30             25
+                   B-flat                          0              0
+                   C                               2              0
+                   D                              47             29
+                   E                               6              2
+                   F                              25             15
+                   G                              27             16
+B-flat             A                               1              1
+                   B-flat                          4              3
+                   D                               8              5
+                   F                               2              2
+                   G                              68             45
+C                  A                              11             10
+                   B-flat                          1              1
+                   C                              52             32
+                   D                               5              3
+                   E                               4              2
+                   F                              71             64
+                   G                              44             32
+D                  A                               2              1
+                   B-flat                          5              5
+                   C                               1              0
+                   D                              85             56
+                   E                               1              1
+                   F                              10              7
+                   G                             159             98
+E                  A                              10              9
+                   C                               4              2
+                   D                               4              1
+                   E                               4              2
+                   F                               1              1
+                   G                               6              3
+F                  B-flat                          1              1
+                   C                               9              3
+                   D                              14             11
+                   E                               1              1
+                   F                             136            104
+                   G                               5              5
+G                  A                               7              7
+                   B-flat                          7              3
+                   C                              28             17
+                   D                              21             11
+                   E                               1              1
+                   F                              14              8
+                   G                             222            106
+None               A                               1              1
+                   G                               1              1
+
+                                  cadence\_role\_tenz  cadence\_kind  \textbackslash{}
+cadence\_final\_tone final\_cadence
+A                  A                             30            30
+                   B-flat                         0             1
+                   C                              2             2
+                   D                             47            48
+                   E                              6             6
+                   F                             25            26
+                   G                             27            27
+B-flat             A                              1             1
+                   B-flat                         4             4
+                   D                              8             8
+                   F                              2             2
+                   G                             68            68
+C                  A                             11            11
+                   B-flat                         1             1
+                   C                             51            54
+                   D                              5             5
+                   E                              4             4
+                   F                             71            72
+                   G                             44            44
+D                  A                              2             2
+                   B-flat                         5             6
+                   C                              1             1
+                   D                             85            89
+                   E                              1             1
+                   F                             10            11
+                   G                            159           167
+E                  A                             11            11
+                   C                              4             4
+                   D                              4             4
+                   E                              4             4
+                   F                              1             1
+                   G                              6             7
+F                  B-flat                         1             1
+                   C                              9             9
+                   D                             14            14
+                   E                              1             1
+                   F                            136           136
+                   G                              5             5
+G                  A                              7             7
+                   B-flat                         7             7
+                   C                             28            28
+                   D                             21            23
+                   E                              1             1
+                   F                             14            14
+                   G                            222           225
+None               A                              1             1
+                   G                              1             1
+
+                                  cadence\_final\_tone\_before  \textbackslash{}
+cadence\_final\_tone final\_cadence
+A                  A                                     30
+                   B-flat                                 1
+                   C                                      2
+                   D                                     48
+                   E                                      6
+                   F                                     26
+                   G                                     27
+B-flat             A                                      1
+                   B-flat                                 4
+                   D                                      8
+                   F                                      2
+                   G                                     68
+C                  A                                     11
+                   B-flat                                 1
+                   C                                     54
+                   D                                      5
+                   E                                      4
+                   F                                     72
+                   G                                     44
+D                  A                                      2
+                   B-flat                                 6
+                   C                                      1
+                   D                                     89
+                   E                                      1
+                   F                                     11
+                   G                                    167
+E                  A                                     11
+                   C                                      4
+                   D                                      4
+                   E                                      4
+                   F                                      1
+                   G                                      7
+F                  B-flat                                 1
+                   C                                      9
+                   D                                     14
+                   E                                      1
+                   F                                    136
+                   G                                      5
+G                  A                                      7
+                   B-flat                                 7
+                   C                                     28
+                   D                                     23
+                   E                                      1
+                   F                                     14
+                   G                                    225
+None               A                                      1
+                   G                                      1
+
+                                  cadence\_final\_tone\_after  \textbackslash{}
+cadence\_final\_tone final\_cadence
+A                  A                                    30
+                   B-flat                                1
+                   C                                     2
+                   D                                    48
+                   E                                     6
+                   F                                    26
+                   G                                    27
+B-flat             A                                     1
+                   B-flat                                4
+                   D                                     8
+                   F                                     2
+                   G                                    68
+C                  A                                    11
+                   B-flat                                1
+                   C                                    54
+                   D                                     5
+                   E                                     4
+                   F                                    72
+                   G                                    44
+D                  A                                     2
+                   B-flat                                6
+                   C                                     1
+                   D                                    89
+                   E                                     1
+                   F                                    11
+                   G                                   167
+E                  A                                    11
+                   C                                     4
+                   D                                     4
+                   E                                     4
+                   F                                     1
+                   G                                     7
+F                  B-flat                                1
+                   C                                     9
+                   D                                    14
+                   E                                     1
+                   F                                   136
+                   G                                     5
+G                  A                                     7
+                   B-flat                                7
+                   C                                    28
+                   D                                    23
+                   E                                     1
+                   F                                    14
+                   G                                   225
+None               A                                     1
+                   G                                     1
+
+                                  cadence\_kind\_before  cadence\_kind\_after  \textbackslash{}
+cadence\_final\_tone final\_cadence
+A                  A                               30                  30
+                   B-flat                           1                   1
+                   C                                2                   2
+                   D                               48                  48
+                   E                                6                   6
+                   F                               26                  26
+                   G                               27                  27
+B-flat             A                                1                   1
+                   B-flat                           4                   4
+                   D                                8                   8
+                   F                                2                   2
+                   G                               68                  68
+C                  A                               11                  11
+                   B-flat                           1                   1
+                   C                               54                  54
+                   D                                5                   5
+                   E                                4                   4
+                   F                               72                  72
+                   G                               44                  44
+D                  A                                2                   2
+                   B-flat                           6                   6
+                   C                                1                   1
+                   D                               89                  89
+                   E                                1                   1
+                   F                               11                  11
+                   G                              167                 167
+E                  A                               11                  11
+                   C                                4                   4
+                   D                                4                   4
+                   E                                4                   4
+                   F                                1                   1
+                   G                                7                   7
+F                  B-flat                           1                   1
+                   C                                9                   9
+                   D                               14                  14
+                   E                                1                   1
+                   F                              136                 136
+                   G                                5                   5
+G                  A                                7                   7
+                   B-flat                           7                   7
+                   C                               28                  28
+                   D                               23                  23
+                   E                                1                   1
+                   F                               14                  14
+                   G                              225                 225
+None               A                                1                   1
+                   G                                1                   1
+
+                                  similarity
+cadence\_final\_tone final\_cadence
+A                  A                      30
+                   B-flat                  1
+                   C                       2
+                   D                      48
+                   E                       6
+                   F                      26
+                   G                      27
+B-flat             A                       1
+                   B-flat                  4
+                   D                       8
+                   F                       2
+                   G                      68
+C                  A                      11
+                   B-flat                  1
+                   C                      54
+                   D                       5
+                   E                       4
+                   F                      72
+                   G                      44
+D                  A                       2
+                   B-flat                  6
+                   C                       1
+                   D                      89
+                   E                       1
+                   F                      11
+                   G                     167
+E                  A                      11
+                   C                       4
+                   D                       4
+                   E                       4
+                   F                       1
+                   G                       7
+F                  B-flat                  1
+                   C                       9
+                   D                      14
+                   E                       1
+                   F                     136
+                   G                       5
+G                  A                       7
+                   B-flat                  7
+                   C                      28
+                   D                      23
+                   E                       1
+                   F                      14
+                   G                     225
+None               A                       1
+                   G                       1
+\end{sphinxVerbatim}
+}
+\begin{itemize}
+\item {} 
+Compare the result of the \sphinxcode{\sphinxupquote{.count()}} method to the one you already know for displaying the first 5 rows.
+
+\end{itemize}
+
+{
+\sphinxsetup{VerbatimColor={named}{nbsphinx-code-bg}}
+\sphinxsetup{VerbatimBorderColor={named}{nbsphinx-code-border}}
+\begin{sphinxVerbatim}[commandchars=\\\{\}]
+\llap{\color{nbsphinxin}[27]:\,\hspace{\fboxrule}\hspace{\fboxsep}}\PYG{n}{grouped}\PYG{o}{.}\PYG{n}{head}\PYG{p}{(}\PYG{p}{)}
+\end{sphinxVerbatim}
+}
+
+{
+
+\kern-\sphinxverbatimsmallskipamount\kern-\baselineskip
+\kern+\FrameHeightAdjust\kern-\fboxrule
+\vspace{\nbsphinxcodecellspacing}
+
+\sphinxsetup{VerbatimColor={named}{white}}
+\sphinxsetup{VerbatimBorderColor={named}{nbsphinx-code-border}}
+\begin{sphinxVerbatim}[commandchars=\\\{\}]
+\llap{\color{nbsphinxout}[27]:\,\hspace{\fboxrule}\hspace{\fboxsep}}                                          phrase\_number  \textbackslash{}
+0     DC0625.8: Dont nous serons plus contentz qu'eulx.
+1            DC0625.6: Ami perfaict plus que les dieux,
+2     DC0625.5: Mais ne fault point que doubte on face,
+3           DC0625.2: Non plus que j'ay de bonne grace,
+4                   DC0625.1: Si je n'avois de fermeté,
+{\ldots}                                                 {\ldots}
+996         DC0207.3: L’on en veit oncques de si belle,
+1082  DC0118.9: Vous les ferez tous vifz crever de r{\ldots}
+1083   DC0118.8: Besongnez donc et de jour et de nuict.
+1097     DC0116.8: As tu osé luy faire un tel oultrage?
+1109      DC0114.9: Elle me paist ceste seconde Heleine
+
+                                    composition\_number cadence\_role\_cantz  \textbackslash{}
+0                     DC0625: Si je n'avois de fermeté                  S
+1                     DC0625: Si je n'avois de fermeté                  S
+2                     DC0625: Si je n'avois de fermeté               None
+3                     DC0625: Si je n'avois de fermeté                  S
+4                     DC0625: Si je n'avois de fermeté                  T
+{\ldots}                                                {\ldots}                {\ldots}
+996               DC0207: Joye et santé, ma demoiselle                  S
+1082        DC0118: Vrais amateurs du plaisir de Vénus                  S
+1083        DC0118: Vrais amateurs du plaisir de Vénus                 Ct
+1097  DC0116: Maistre Ambrelin, confesseur de nonettes                  B
+1109    DC0114: Trop justement je forme une complainte                  S
+
+                    cadence\_alter cadence\_final\_tone cadence\_role\_tenz  \textbackslash{}
+0                             NaN                  G                 T
+1                             NaN                  A                 T
+2                             NaN                  D              None
+3                             NaN                  G                 T
+4     Displaced, Inverted, Evaded                  C                Ct
+{\ldots}                           {\ldots}                {\ldots}               {\ldots}
+996                        Evaded                  D                 T
+1082                         None                  G                 T
+1083                    Displaced                  E                 B
+1097          Displaced, Inverted                  E                Ct
+1109            Displaced, Evaded               None                Ct
+
+     cadence\_kind cadence\_final\_tone\_before cadence\_final\_tone\_after  \textbackslash{}
+0       Authentic                         A                     None
+1       Authentic                         D                        G
+2          Plagal                         G                        A
+3       Authentic                         C                        D
+4       Authentic                      None                        G
+{\ldots}           {\ldots}                       {\ldots}                      {\ldots}
+996      Phrygian                         G                        G
+1082    Authentic                         E                        A
+1083     Phrygian                         A                        G
+1097     Phrygian                         E                        C
+1109    Authentic                         C                        A
+
+     cadence\_kind\_before cadence\_kind\_after final\_cadence  \textbackslash{}
+0              Authentic               None             G
+1                 Plagal          Authentic             G
+2              Authentic          Authentic             G
+3              Authentic             Plagal             G
+4                   None          Authentic             G
+{\ldots}                  {\ldots}                {\ldots}           {\ldots}
+996            Authentic          Authentic        B-flat
+1082            Phrygian          Authentic             A
+1083           Authentic          Authentic             A
+1097              Plagal          Authentic             A
+1109           Authentic          Authentic             A
+
+                                             similarity
+0     [5, 9, 13, 15, 48, 64, 74, 77, 82, 85, 107, 11{\ldots}
+1                                             [87, 122]
+2                                        [88, 335, 512]
+3                                                 [493]
+4                                                 [624]
+{\ldots}                                                 {\ldots}
+996                                                  []
+1082                                             [1115]
+1083                                                 []
+1097                                                 []
+1109                                                 []
+
+[177 rows x 13 columns]
+\end{sphinxVerbatim}
+}
+\begin{itemize}
+\item {} 
+What are the main differences between these two? Describe them in the cell below.
+
+\end{itemize}
+\begin{itemize}
+\item {} 
+\item {} 
+\item {} 
+\end{itemize}
+
+
+\subsection{Visualizations}
+\label{\detokenize{exercises/02_exercise:Visualizations}}
+In the following, you see a number of visualizations of the cadence data. For each of these figures, write down what it shows and interpret what you see (e.g. the most interesting observation).
+
+
+\section{Synoptic View of Cadence Types, Tones, and Last Cadence of Piece}
+\label{\detokenize{exercises/02_exercise:Synoptic-View-of-Cadence-Types,-Tones,-and-Last-Cadence-of-Piece}}
+{
+\sphinxsetup{VerbatimColor={named}{nbsphinx-code-bg}}
+\sphinxsetup{VerbatimBorderColor={named}{nbsphinx-code-border}}
+\begin{sphinxVerbatim}[commandchars=\\\{\}]
+\llap{\color{nbsphinxin}[39]:\,\hspace{\fboxrule}\hspace{\fboxsep}}\PYG{c+c1}{\PYGZsh{}Now the generic views and full data sets}
+
+\PYG{n}{all\PYGZus{}tone\PYGZus{}1} \PYG{o}{=} \PYG{n}{alt}\PYG{o}{.}\PYG{n}{Chart}\PYG{p}{(}\PYG{n}{cadence\PYGZus{}data\PYGZus{}raw}\PYG{p}{)}\PYG{o}{.}\PYG{n}{mark\PYGZus{}circle}\PYG{p}{(}\PYG{p}{)}\PYG{o}{.}\PYG{n}{encode}\PYG{p}{(}
+    \PYG{n}{x}\PYG{o}{=}\PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{cadence\PYGZus{}final\PYGZus{}tone}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{,}
+    \PYG{n}{y}\PYG{o}{=}\PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{final\PYGZus{}cadence}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{,}
+    \PYG{n}{color}\PYG{o}{=}\PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{cadence\PYGZus{}kind}\PYG{l+s+s1}{\PYGZsq{}}
+\PYG{p}{)}\PYG{o}{.}\PYG{n}{properties}\PYG{p}{(}
+    \PYG{n}{width}\PYG{o}{=}\PYG{l+m+mi}{400}\PYG{p}{,}
+    \PYG{n}{title}\PYG{o}{=}\PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{All Cadence Tones, Types, and Finals}\PYG{l+s+s1}{\PYGZsq{}}
+\PYG{p}{)}
+
+\PYG{n}{all\PYGZus{}tone\PYGZus{}1}\PYG{o}{.}\PYG{n}{save}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{img/chart.html}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{,} \PYG{n}{embed\PYGZus{}options}\PYG{o}{=}\PYG{p}{\PYGZob{}}\PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{renderer}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{:}\PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{svg}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{\PYGZcb{}}\PYG{p}{)}
+\PYG{n}{all\PYGZus{}tone\PYGZus{}1}
+\end{sphinxVerbatim}
+}
+
+{
+
+\kern-\sphinxverbatimsmallskipamount\kern-\baselineskip
+\kern+\FrameHeightAdjust\kern-\fboxrule
+\vspace{\nbsphinxcodecellspacing}
+
+\sphinxsetup{VerbatimColor={named}{white}}
+\sphinxsetup{VerbatimBorderColor={named}{nbsphinx-code-border}}
+\begin{sphinxVerbatim}[commandchars=\\\{\}]
+\llap{\color{nbsphinxout}[39]:\,\hspace{\fboxrule}\hspace{\fboxsep}}alt.Chart({\ldots})
+\end{sphinxVerbatim}
+}
+
+\sphinxstylestrong{Observations}
+\begin{itemize}
+\item {} 
+\item {} 
+\end{itemize}
+
+
+\section{Histograms by Cadence Type}
+\label{\detokenize{exercises/02_exercise:Histograms-by-Cadence-Type}}
+{
+\sphinxsetup{VerbatimColor={named}{nbsphinx-code-bg}}
+\sphinxsetup{VerbatimBorderColor={named}{nbsphinx-code-border}}
+\begin{sphinxVerbatim}[commandchars=\\\{\}]
+\llap{\color{nbsphinxin}[29]:\,\hspace{\fboxrule}\hspace{\fboxsep}}
+\PYG{c+c1}{\PYGZsh{} Summary stacked bar chart listed by cadence tone}
+
+\PYG{n}{chartA} \PYG{o}{=} \PYG{n}{alt}\PYG{o}{.}\PYG{n}{Chart}\PYG{p}{(}\PYG{n}{cadence\PYGZus{}data\PYGZus{}raw}\PYG{p}{)}\PYG{o}{.}\PYG{n}{mark\PYGZus{}bar}\PYG{p}{(}\PYG{p}{)}\PYG{o}{.}\PYG{n}{encode}\PYG{p}{(}
+    \PYG{n}{alt}\PYG{o}{.}\PYG{n}{X}\PYG{p}{(}\PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{cadence\PYGZus{}final\PYGZus{}tone}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{)}\PYG{p}{,}
+    \PYG{n}{y}\PYG{o}{=}\PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{count()}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{,}
+    \PYG{n}{color}\PYG{o}{=}\PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{cadence\PYGZus{}kind}\PYG{l+s+s1}{\PYGZsq{}}
+\PYG{p}{)}\PYG{o}{.}\PYG{n}{properties}\PYG{p}{(}
+    \PYG{n}{width}\PYG{o}{=}\PYG{l+m+mi}{600}\PYG{p}{,}
+    \PYG{n}{height}\PYG{o}{=}\PYG{l+m+mi}{300}\PYG{p}{,}
+    \PYG{n}{title}\PYG{o}{=}\PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{Summary of Cadence Tones by Type}\PYG{l+s+s1}{\PYGZsq{}}
+\PYG{p}{)}
+
+\PYG{n}{chartA}
+\end{sphinxVerbatim}
+}
+
+{
+
+\kern-\sphinxverbatimsmallskipamount\kern-\baselineskip
+\kern+\FrameHeightAdjust\kern-\fboxrule
+\vspace{\nbsphinxcodecellspacing}
+
+\sphinxsetup{VerbatimColor={named}{white}}
+\sphinxsetup{VerbatimBorderColor={named}{nbsphinx-code-border}}
+\begin{sphinxVerbatim}[commandchars=\\\{\}]
+\llap{\color{nbsphinxout}[29]:\,\hspace{\fboxrule}\hspace{\fboxsep}}alt.Chart({\ldots})
+\end{sphinxVerbatim}
+}
+
+\sphinxstylestrong{Observations}
+\begin{itemize}
+\item {} 
+\item {} 
+\end{itemize}
+
+
+\section{Histogram of Types by Tone}
+\label{\detokenize{exercises/02_exercise:Histogram-of-Types-by-Tone}}
+{
+\sphinxsetup{VerbatimColor={named}{nbsphinx-code-bg}}
+\sphinxsetup{VerbatimBorderColor={named}{nbsphinx-code-border}}
+\begin{sphinxVerbatim}[commandchars=\\\{\}]
+\llap{\color{nbsphinxin}[30]:\,\hspace{\fboxrule}\hspace{\fboxsep}}
+\PYG{c+c1}{\PYGZsh{} Summary stacked bar chart listed by cadence kind}
+
+\PYG{n}{chartB} \PYG{o}{=} \PYG{n}{alt}\PYG{o}{.}\PYG{n}{Chart}\PYG{p}{(}\PYG{n}{cadence\PYGZus{}data\PYGZus{}raw}\PYG{p}{)}\PYG{o}{.}\PYG{n}{mark\PYGZus{}bar}\PYG{p}{(}\PYG{p}{)}\PYG{o}{.}\PYG{n}{encode}\PYG{p}{(}
+    \PYG{n}{alt}\PYG{o}{.}\PYG{n}{X}\PYG{p}{(}\PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{cadence\PYGZus{}kind}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{)}\PYG{p}{,}
+    \PYG{n}{y}\PYG{o}{=}\PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{count()}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{,}
+    \PYG{n}{color}\PYG{o}{=}\PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{cadence\PYGZus{}final\PYGZus{}tone}\PYG{l+s+s1}{\PYGZsq{}}
+\PYG{p}{)}\PYG{o}{.}\PYG{n}{properties}\PYG{p}{(}
+    \PYG{n}{width}\PYG{o}{=}\PYG{l+m+mi}{600}\PYG{p}{,}
+    \PYG{n}{height}\PYG{o}{=}\PYG{l+m+mi}{300}\PYG{p}{,}
+    \PYG{n}{title}\PYG{o}{=}\PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{Summary of Cadence Type by Tone}\PYG{l+s+s1}{\PYGZsq{}}
+\PYG{p}{)}
+\PYG{n}{chartB}
+
+
+
+\end{sphinxVerbatim}
+}
+
+{
+
+\kern-\sphinxverbatimsmallskipamount\kern-\baselineskip
+\kern+\FrameHeightAdjust\kern-\fboxrule
+\vspace{\nbsphinxcodecellspacing}
+
+\sphinxsetup{VerbatimColor={named}{white}}
+\sphinxsetup{VerbatimBorderColor={named}{nbsphinx-code-border}}
+\begin{sphinxVerbatim}[commandchars=\\\{\}]
+\llap{\color{nbsphinxout}[30]:\,\hspace{\fboxrule}\hspace{\fboxsep}}alt.Chart({\ldots})
+\end{sphinxVerbatim}
+}
+
+\sphinxstylestrong{Observations}
+\begin{itemize}
+\item {} 
+\item {} 
+\end{itemize}
+
+
+\subsection{Filter Cadences by Final Tones}
+\label{\detokenize{exercises/02_exercise:Filter-Cadences-by-Final-Tones}}
+{
+\sphinxsetup{VerbatimColor={named}{nbsphinx-code-bg}}
+\sphinxsetup{VerbatimBorderColor={named}{nbsphinx-code-border}}
+\begin{sphinxVerbatim}[commandchars=\\\{\}]
+\llap{\color{nbsphinxin}[31]:\,\hspace{\fboxrule}\hspace{\fboxsep}}\PYG{c+c1}{\PYGZsh{} here just pulling a selection of the complete dataframe\PYGZhy{}\PYGZhy{}some columns}
+
+\PYG{n}{cadence\PYGZus{}data\PYGZus{}short} \PYG{o}{=} \PYG{n}{cadence\PYGZus{}data\PYGZus{}raw}\PYG{p}{[}\PYG{p}{[}\PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{cadence\PYGZus{}final\PYGZus{}tone}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{,} \PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{cadence\PYGZus{}kind}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{,} \PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{final\PYGZus{}cadence}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{,} \PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{composition\PYGZus{}number}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{,} \PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{phrase\PYGZus{}number}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{]}\PYG{p}{]}
+
+\PYG{c+c1}{\PYGZsh{} Create a list of possible values and multiselect menu with them in it.}
+
+\PYG{n}{cadence\PYGZus{}list\PYGZus{}1} \PYG{o}{=} \PYG{n}{cadence\PYGZus{}data\PYGZus{}short}\PYG{p}{[}\PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{cadence\PYGZus{}final\PYGZus{}tone}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{]}\PYG{o}{.}\PYG{n}{unique}\PYG{p}{(}\PYG{p}{)}
+
+\PYG{c+c1}{\PYGZsh{} Select Cadence Tones Here}
+\PYG{c+c1}{\PYGZsh{} Possible values:  A, B\PYGZhy{}flat, C, D, E, F, G}
+
+\PYG{n}{cadences\PYGZus{}selected\PYGZus{}1} \PYG{o}{=} \PYG{p}{[}\PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{B\PYGZhy{}flat}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{]}
+
+\PYG{c+c1}{\PYGZsh{} Mask to filter dataframe:  returns only those \PYGZdq{}selected\PYGZdq{} in previous step}
+\PYG{n}{mask\PYGZus{}cadences\PYGZus{}1} \PYG{o}{=} \PYG{n}{cadence\PYGZus{}data\PYGZus{}short}\PYG{p}{[}\PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{cadence\PYGZus{}final\PYGZus{}tone}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{]}\PYG{o}{.}\PYG{n}{isin}\PYG{p}{(}\PYG{n}{cadences\PYGZus{}selected\PYGZus{}1}\PYG{p}{)}
+
+\PYG{c+c1}{\PYGZsh{} And now a new dataframe with only the elements that statisfy the conditions}
+
+\PYG{n}{cadence\PYGZus{}data\PYGZus{}masked\PYGZus{}1} \PYG{o}{=} \PYG{n}{cadence\PYGZus{}data\PYGZus{}short}\PYG{p}{[}\PYG{n}{mask\PYGZus{}cadences\PYGZus{}1}\PYG{p}{]}
+
+\PYG{c+c1}{\PYGZsh{} Display Result}
+\PYG{n}{cadence\PYGZus{}data\PYGZus{}masked\PYGZus{}1}\PYG{o}{.}\PYG{n}{head}\PYG{p}{(}\PYG{p}{)}
+
+\end{sphinxVerbatim}
+}
+
+{
+
+\kern-\sphinxverbatimsmallskipamount\kern-\baselineskip
+\kern+\FrameHeightAdjust\kern-\fboxrule
+\vspace{\nbsphinxcodecellspacing}
+
+\sphinxsetup{VerbatimColor={named}{white}}
+\sphinxsetup{VerbatimBorderColor={named}{nbsphinx-code-border}}
+\begin{sphinxVerbatim}[commandchars=\\\{\}]
+\llap{\color{nbsphinxout}[31]:\,\hspace{\fboxrule}\hspace{\fboxsep}}    cadence\_final\_tone cadence\_kind final\_cadence  \textbackslash{}
+51              B-flat    Authentic             G
+61              B-flat       Plagal             G
+67              B-flat    Authentic             G
+75              B-flat    Authentic             G
+121             B-flat    Authentic             G
+
+                                  composition\_number  \textbackslash{}
+51   DC0612: Puisque voulez que de vous je m'absente
+61   DC0610: Un bon vieillard qui n'avoit que le bec
+67              DC0609: Je ne suis devin ne prophète
+75                    DC0607: Si m'amie a de fermeté
+121          DC0716: En ce verd moys, temps opportun
+
+                                         phrase\_number
+51   DC0612.5: Trop plus seray satisfaict en mes pl{\ldots}
+61   DC0610.7: Plus de cent fois, et ne peult desla{\ldots}
+67        DC0609.6: Que ce qu'elle faict pour le seur,
+75    DC0607.5: Mais quoy fault il que doubte en face,
+121                  DC0716.5: La à gogo la serviroye,
+\end{sphinxVerbatim}
+}
+
+\sphinxstylestrong{Observations}
+\begin{itemize}
+\item {} 
+\item {} 
+\end{itemize}
+
+
+\subsection{Chart for Filtered Cadence Tones}
+\label{\detokenize{exercises/02_exercise:Chart-for-Filtered-Cadence-Tones}}
+{
+\sphinxsetup{VerbatimColor={named}{nbsphinx-code-bg}}
+\sphinxsetup{VerbatimBorderColor={named}{nbsphinx-code-border}}
+\begin{sphinxVerbatim}[commandchars=\\\{\}]
+\llap{\color{nbsphinxin}[32]:\,\hspace{\fboxrule}\hspace{\fboxsep}}\PYG{c+c1}{\PYGZsh{}This is for filtered tones based on settings of the previous}
+\PYG{n}{diagram\PYGZus{}1} \PYG{o}{=} \PYG{n}{alt}\PYG{o}{.}\PYG{n}{Chart}\PYG{p}{(}\PYG{n}{cadence\PYGZus{}data\PYGZus{}masked\PYGZus{}1}\PYG{p}{)}\PYG{o}{.}\PYG{n}{mark\PYGZus{}circle}\PYG{p}{(}\PYG{p}{)}\PYG{o}{.}\PYG{n}{encode}\PYG{p}{(}
+    \PYG{n}{x}\PYG{o}{=}\PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{cadence\PYGZus{}kind}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{,}
+    \PYG{n}{y}\PYG{o}{=}\PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{composition\PYGZus{}number}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{,}
+    \PYG{n}{color}\PYG{o}{=}\PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{final\PYGZus{}cadence}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{,}
+    \PYG{n}{tooltip}\PYG{o}{=}\PYG{p}{[}\PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{phrase\PYGZus{}number}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{,} \PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{cadence\PYGZus{}kind}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{,} \PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{final\PYGZus{}cadence}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{]}
+\PYG{p}{)}\PYG{o}{.}\PYG{n}{properties}\PYG{p}{(}
+    \PYG{n}{width}\PYG{o}{=}\PYG{l+m+mi}{400}\PYG{p}{,}
+    \PYG{n}{title}\PYG{o}{=}\PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{Cadence Final Tones}\PYG{l+s+s1}{\PYGZsq{}}
+\PYG{p}{)}
+
+\PYG{n}{diagram\PYGZus{}1}
+
+\end{sphinxVerbatim}
+}
+
+{
+
+\kern-\sphinxverbatimsmallskipamount\kern-\baselineskip
+\kern+\FrameHeightAdjust\kern-\fboxrule
+\vspace{\nbsphinxcodecellspacing}
+
+\sphinxsetup{VerbatimColor={named}{white}}
+\sphinxsetup{VerbatimBorderColor={named}{nbsphinx-code-border}}
+\begin{sphinxVerbatim}[commandchars=\\\{\}]
+\llap{\color{nbsphinxout}[32]:\,\hspace{\fboxrule}\hspace{\fboxsep}}alt.Chart({\ldots})
+\end{sphinxVerbatim}
+}
+
+\sphinxstylestrong{Observations}
+\begin{itemize}
+\item {} 
+\item {} 
+\end{itemize}
+
+
+\subsection{Filter Cadences by Kind}
+\label{\detokenize{exercises/02_exercise:Filter-Cadences-by-Kind}}
+{
+\sphinxsetup{VerbatimColor={named}{nbsphinx-code-bg}}
+\sphinxsetup{VerbatimBorderColor={named}{nbsphinx-code-border}}
+\begin{sphinxVerbatim}[commandchars=\\\{\}]
+\llap{\color{nbsphinxin}[33]:\,\hspace{\fboxrule}\hspace{\fboxsep}}\PYG{c+c1}{\PYGZsh{} here just pulling a selection of the complete dataframe\PYGZhy{}\PYGZhy{}some columns}
+
+\PYG{n}{cadence\PYGZus{}data\PYGZus{}short} \PYG{o}{=} \PYG{n}{cadence\PYGZus{}data\PYGZus{}raw}\PYG{p}{[}\PYG{p}{[}\PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{cadence\PYGZus{}final\PYGZus{}tone}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{,} \PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{cadence\PYGZus{}kind}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{,} \PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{final\PYGZus{}cadence}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{,} \PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{composition\PYGZus{}number}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{,} \PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{phrase\PYGZus{}number}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{]}\PYG{p}{]}
+\PYG{n}{cadence\PYGZus{}list\PYGZus{}2} \PYG{o}{=} \PYG{n}{cadence\PYGZus{}data\PYGZus{}short}\PYG{p}{[}\PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{cadence\PYGZus{}kind}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{]}\PYG{o}{.}\PYG{n}{unique}\PYG{p}{(}\PYG{p}{)}
+
+\PYG{c+c1}{\PYGZsh{} Select Cadence Kinds Here}
+\PYG{c+c1}{\PYGZsh{} Possible values:  Authentic, Plagal, Phrygian, CadInCad, CAD NDLT}
+
+\PYG{n}{cadences\PYGZus{}selected\PYGZus{}2} \PYG{o}{=} \PYG{p}{[}\PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{Plagal}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{]}
+
+\PYG{c+c1}{\PYGZsh{} Mask to filter dataframe}
+\PYG{n}{mask\PYGZus{}cadences\PYGZus{}2} \PYG{o}{=} \PYG{n}{cadence\PYGZus{}data\PYGZus{}short}\PYG{p}{[}\PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{cadence\PYGZus{}kind}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{]}\PYG{o}{.}\PYG{n}{isin}\PYG{p}{(}\PYG{n}{cadences\PYGZus{}selected\PYGZus{}2}\PYG{p}{)}
+
+\PYG{n}{cadence\PYGZus{}data\PYGZus{}masked\PYGZus{}2}\PYG{o}{=} \PYG{n}{cadence\PYGZus{}data\PYGZus{}short}\PYG{p}{[}\PYG{n}{mask\PYGZus{}cadences\PYGZus{}2}\PYG{p}{]}
+
+
+\PYG{n}{cadence\PYGZus{}data\PYGZus{}masked\PYGZus{}2}\PYG{o}{.}\PYG{n}{head}\PYG{p}{(}\PYG{p}{)}
+
+
+
+
+
+
+\end{sphinxVerbatim}
+}
+
+{
+
+\kern-\sphinxverbatimsmallskipamount\kern-\baselineskip
+\kern+\FrameHeightAdjust\kern-\fboxrule
+\vspace{\nbsphinxcodecellspacing}
+
+\sphinxsetup{VerbatimColor={named}{white}}
+\sphinxsetup{VerbatimBorderColor={named}{nbsphinx-code-border}}
+\begin{sphinxVerbatim}[commandchars=\\\{\}]
+\llap{\color{nbsphinxout}[33]:\,\hspace{\fboxrule}\hspace{\fboxsep}}   cadence\_final\_tone cadence\_kind final\_cadence  \textbackslash{}
+2                   D       Plagal             G
+7                   G       Plagal             G
+12                  D       Plagal             G
+16                  G       Plagal             G
+21                  C       Plagal             F
+
+                                 composition\_number  \textbackslash{}
+2                  DC0625: Si je n'avois de fermeté
+7   DC0624: Si tu as veu que pour ton feu estaindre
+12           DC0623: Vous souvient-il ; ma mignonne
+16        DC0621: Un gay berger prioit une bergiere
+21                  DC0620: En amour y a du plaisir
+
+                                        phrase\_number
+2   DC0625.5: Mais ne fault point que doubte on face,
+7   DC0624.6: Qui ne penetre au plus profond de l'{\ldots}
+12      DC0623.1: Vous souvient il point ma mignonne,
+16   DC0621.5: Ne pensez pas que ferois tel deffault?
+21        DC0620.7: Quicter le plaisir pour la peine,
+\end{sphinxVerbatim}
+}
+
+
+\subsection{Chart for Filtered Cadence Kinds}
+\label{\detokenize{exercises/02_exercise:Chart-for-Filtered-Cadence-Kinds}}
+{
+\sphinxsetup{VerbatimColor={named}{nbsphinx-code-bg}}
+\sphinxsetup{VerbatimBorderColor={named}{nbsphinx-code-border}}
+\begin{sphinxVerbatim}[commandchars=\\\{\}]
+\llap{\color{nbsphinxin}[34]:\,\hspace{\fboxrule}\hspace{\fboxsep}}\PYG{c+c1}{\PYGZsh{} This diagram for filtered tones (just oned)}
+\PYG{n}{diagram\PYGZus{}2} \PYG{o}{=} \PYG{n}{alt}\PYG{o}{.}\PYG{n}{Chart}\PYG{p}{(}\PYG{n}{cadence\PYGZus{}data\PYGZus{}masked\PYGZus{}2}\PYG{p}{)}\PYG{o}{.}\PYG{n}{mark\PYGZus{}circle}\PYG{p}{(}\PYG{p}{)}\PYG{o}{.}\PYG{n}{encode}\PYG{p}{(}
+    \PYG{n}{x}\PYG{o}{=}\PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{cadence\PYGZus{}final\PYGZus{}tone}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{,}
+    \PYG{n}{y}\PYG{o}{=}\PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{composition\PYGZus{}number}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{,}
+    \PYG{n}{color}\PYG{o}{=}\PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{final\PYGZus{}cadence}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{,}
+    \PYG{n}{tooltip}\PYG{o}{=}\PYG{p}{[}\PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{phrase\PYGZus{}number}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{,} \PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{cadence\PYGZus{}final\PYGZus{}tone}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{,} \PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{final\PYGZus{}cadence}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{]}
+\PYG{p}{)}\PYG{o}{.}\PYG{n}{properties}\PYG{p}{(}
+    \PYG{n}{width}\PYG{o}{=}\PYG{l+m+mi}{400}\PYG{p}{,}
+    \PYG{n}{title}\PYG{o}{=}\PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{Cadence Kinds}\PYG{l+s+s1}{\PYGZsq{}}
+\PYG{p}{)}
+
+\PYG{n}{diagram\PYGZus{}2}
+
+\end{sphinxVerbatim}
+}
+
+{
+
+\kern-\sphinxverbatimsmallskipamount\kern-\baselineskip
+\kern+\FrameHeightAdjust\kern-\fboxrule
+\vspace{\nbsphinxcodecellspacing}
+
+\sphinxsetup{VerbatimColor={named}{white}}
+\sphinxsetup{VerbatimBorderColor={named}{nbsphinx-code-border}}
+\begin{sphinxVerbatim}[commandchars=\\\{\}]
+\llap{\color{nbsphinxout}[34]:\,\hspace{\fboxrule}\hspace{\fboxsep}}alt.Chart({\ldots})
+\end{sphinxVerbatim}
+}
+
+
+\subsection{Filter by Last Cadence of Piece}
+\label{\detokenize{exercises/02_exercise:Filter-by-Last-Cadence-of-Piece}}
+{
+\sphinxsetup{VerbatimColor={named}{nbsphinx-code-bg}}
+\sphinxsetup{VerbatimBorderColor={named}{nbsphinx-code-border}}
+\begin{sphinxVerbatim}[commandchars=\\\{\}]
+\llap{\color{nbsphinxin}[35]:\,\hspace{\fboxrule}\hspace{\fboxsep}}\PYG{c+c1}{\PYGZsh{} Dialogue to Select Last Cadence of Piece}
+\PYG{c+c1}{\PYGZsh{}}
+
+\PYG{c+c1}{\PYGZsh{} Create a list of possible values and multiselect menu with them in it.}
+\PYG{c+c1}{\PYGZsh{} here just pulling a selection of the complete dataframe\PYGZhy{}\PYGZhy{}some columns}
+
+\PYG{n}{cadence\PYGZus{}data\PYGZus{}short} \PYG{o}{=} \PYG{n}{cadence\PYGZus{}data\PYGZus{}raw}\PYG{p}{[}\PYG{p}{[}\PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{cadence\PYGZus{}final\PYGZus{}tone}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{,} \PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{cadence\PYGZus{}kind}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{,} \PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{final\PYGZus{}cadence}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{,} \PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{composition\PYGZus{}number}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{,} \PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{phrase\PYGZus{}number}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{]}\PYG{p}{]}
+\PYG{n}{cadence\PYGZus{}list\PYGZus{}3} \PYG{o}{=} \PYG{n}{cadence\PYGZus{}data\PYGZus{}short}\PYG{p}{[}\PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{final\PYGZus{}cadence}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{]}\PYG{o}{.}\PYG{n}{unique}\PYG{p}{(}\PYG{p}{)}
+
+\PYG{c+c1}{\PYGZsh{} Select Final Cadence Tones Kinds Here}
+\PYG{c+c1}{\PYGZsh{} Select Cadence Tones Here}
+\PYG{c+c1}{\PYGZsh{} Possible values:  A, B\PYGZhy{}flat, C, D, E, F, G}
+
+\PYG{n}{cadences\PYGZus{}selected\PYGZus{}3} \PYG{o}{=} \PYG{p}{[}\PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{B\PYGZhy{}flat}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{]}
+
+\PYG{c+c1}{\PYGZsh{} Mask to filter dataframe}
+\PYG{n}{mask\PYGZus{}cadences\PYGZus{}3} \PYG{o}{=} \PYG{n}{cadence\PYGZus{}data\PYGZus{}short}\PYG{p}{[}\PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{final\PYGZus{}cadence}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{]}\PYG{o}{.}\PYG{n}{isin}\PYG{p}{(}\PYG{n}{cadences\PYGZus{}selected\PYGZus{}3}\PYG{p}{)}
+
+\PYG{n}{cadence\PYGZus{}data\PYGZus{}masked\PYGZus{}3} \PYG{o}{=} \PYG{n}{cadence\PYGZus{}data\PYGZus{}short}\PYG{p}{[}\PYG{n}{mask\PYGZus{}cadences\PYGZus{}3}\PYG{p}{]}
+
+\PYG{n}{cadence\PYGZus{}data\PYGZus{}masked\PYGZus{}3}\PYG{o}{.}\PYG{n}{head}\PYG{p}{(}\PYG{p}{)}
+
+\end{sphinxVerbatim}
+}
+
+{
+
+\kern-\sphinxverbatimsmallskipamount\kern-\baselineskip
+\kern+\FrameHeightAdjust\kern-\fboxrule
+\vspace{\nbsphinxcodecellspacing}
+
+\sphinxsetup{VerbatimColor={named}{white}}
+\sphinxsetup{VerbatimBorderColor={named}{nbsphinx-code-border}}
+\begin{sphinxVerbatim}[commandchars=\\\{\}]
+\llap{\color{nbsphinxout}[35]:\,\hspace{\fboxrule}\hspace{\fboxsep}}    cadence\_final\_tone cadence\_kind final\_cadence  \textbackslash{}
+378             B-flat    Authentic        B-flat
+379                  G    Authentic        B-flat
+380                  D       Plagal        B-flat
+381                  G    Authentic        B-flat
+382                  D     Phrygian        B-flat
+
+                                   composition\_number  \textbackslash{}
+378  DC0405: La grant doulceur de vostre cler visaige
+379  DC0405: La grant doulceur de vostre cler visaige
+380  DC0405: La grant doulceur de vostre cler visaige
+381  DC0405: La grant doulceur de vostre cler visaige
+382  DC0405: La grant doulceur de vostre cler visaige
+
+                                         phrase\_number
+378  DC0405.1: La grant doulceur de vostre cler vis{\ldots}
+379     DC0405.2: Me donne espoir de mercy recepvoir ,
+380  DC0405.5: N'ayez donc plus merveilles de me ve{\ldots}
+381  DC0405.8: Je vis sans vie, et sans mourir je m{\ldots}
+382   DC0405.7: Car soubz espoir de vie et mort avoir,
+\end{sphinxVerbatim}
+}
+
+
+\subsection{Diagram by Last Cadence of Piece}
+\label{\detokenize{exercises/02_exercise:Diagram-by-Last-Cadence-of-Piece}}
+{
+\sphinxsetup{VerbatimColor={named}{nbsphinx-code-bg}}
+\sphinxsetup{VerbatimBorderColor={named}{nbsphinx-code-border}}
+\begin{sphinxVerbatim}[commandchars=\\\{\}]
+\llap{\color{nbsphinxin}[36]:\,\hspace{\fboxrule}\hspace{\fboxsep}}\PYG{c+c1}{\PYGZsh{} This is for filtered tones (just oned)}
+\PYG{n}{diagram\PYGZus{}3} \PYG{o}{=} \PYG{n}{alt}\PYG{o}{.}\PYG{n}{Chart}\PYG{p}{(}\PYG{n}{cadence\PYGZus{}data\PYGZus{}masked\PYGZus{}3}\PYG{p}{)}\PYG{o}{.}\PYG{n}{mark\PYGZus{}circle}\PYG{p}{(}\PYG{p}{)}\PYG{o}{.}\PYG{n}{encode}\PYG{p}{(}
+    \PYG{n}{x}\PYG{o}{=}\PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{cadence\PYGZus{}final\PYGZus{}tone}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{,}
+    \PYG{n}{y}\PYG{o}{=}\PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{composition\PYGZus{}number}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{,}
+    \PYG{n}{color}\PYG{o}{=}\PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{cadence\PYGZus{}kind}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{,}
+    \PYG{n}{tooltip}\PYG{o}{=}\PYG{p}{[}\PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{phrase\PYGZus{}number}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{,} \PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{cadence\PYGZus{}final\PYGZus{}tone}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{,} \PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{final\PYGZus{}cadence}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{]}
+\PYG{p}{)}\PYG{o}{.}\PYG{n}{properties}\PYG{p}{(}
+    \PYG{n}{width}\PYG{o}{=}\PYG{l+m+mi}{400}\PYG{p}{,}
+    \PYG{n}{title}\PYG{o}{=}\PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{Final Cadence of Piece}\PYG{l+s+s1}{\PYGZsq{}}
+\PYG{p}{)}
+
+\PYG{n}{diagram\PYGZus{}3}
+
+
+
+\end{sphinxVerbatim}
+}
+
+{
+
+\kern-\sphinxverbatimsmallskipamount\kern-\baselineskip
+\kern+\FrameHeightAdjust\kern-\fboxrule
+\vspace{\nbsphinxcodecellspacing}
+
+\sphinxsetup{VerbatimColor={named}{white}}
+\sphinxsetup{VerbatimBorderColor={named}{nbsphinx-code-border}}
+\begin{sphinxVerbatim}[commandchars=\\\{\}]
+\llap{\color{nbsphinxout}[36]:\,\hspace{\fboxrule}\hspace{\fboxsep}}alt.Chart({\ldots})
+\end{sphinxVerbatim}
+}
+
+
+\subsection{Distribution of Cadence Tones, Types and Finals for Corpus}
+\label{\detokenize{exercises/02_exercise:Distribution-of-Cadence-Tones,-Types-and-Finals-for-Corpus}}
+{
+\sphinxsetup{VerbatimColor={named}{nbsphinx-code-bg}}
+\sphinxsetup{VerbatimBorderColor={named}{nbsphinx-code-border}}
+\begin{sphinxVerbatim}[commandchars=\\\{\}]
+\llap{\color{nbsphinxin}[37]:\,\hspace{\fboxrule}\hspace{\fboxsep}}\PYG{c+c1}{\PYGZsh{} table of pieces with details via hover}
+
+\PYG{n}{tone\PYGZus{}diagram} \PYG{o}{=} \PYG{n}{alt}\PYG{o}{.}\PYG{n}{Chart}\PYG{p}{(}\PYG{n}{cadence\PYGZus{}data\PYGZus{}raw}\PYG{p}{)}\PYG{o}{.}\PYG{n}{mark\PYGZus{}circle}\PYG{p}{(}\PYG{p}{)}\PYG{o}{.}\PYG{n}{encode}\PYG{p}{(}
+    \PYG{n}{x}\PYG{o}{=}\PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{cadence\PYGZus{}kind}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{,}
+    \PYG{n}{y}\PYG{o}{=}\PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{composition\PYGZus{}number}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{,}
+    \PYG{n}{color}\PYG{o}{=}\PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{final\PYGZus{}cadence}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{,}
+    \PYG{n}{tooltip}\PYG{o}{=}\PYG{p}{[}\PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{phrase\PYGZus{}number}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{,} \PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{cadence\PYGZus{}final\PYGZus{}tone}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{,} \PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{cadence\PYGZus{}kind}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{]}
+\PYG{p}{)}\PYG{o}{.}\PYG{n}{properties}\PYG{p}{(}
+    \PYG{n}{width}\PYG{o}{=}\PYG{l+m+mi}{400}\PYG{p}{,}
+    \PYG{n}{title}\PYG{o}{=}\PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{All Cadence Tones, Types, and Finals}\PYG{l+s+s1}{\PYGZsq{}}
+\PYG{p}{)}
+
+\PYG{n}{tone\PYGZus{}diagram}
+\end{sphinxVerbatim}
+}
+
+{
+
+\kern-\sphinxverbatimsmallskipamount\kern-\baselineskip
+\kern+\FrameHeightAdjust\kern-\fboxrule
+\vspace{\nbsphinxcodecellspacing}
+
+\sphinxsetup{VerbatimColor={named}{white}}
+\sphinxsetup{VerbatimBorderColor={named}{nbsphinx-code-border}}
+\begin{sphinxVerbatim}[commandchars=\\\{\}]
+\llap{\color{nbsphinxout}[37]:\,\hspace{\fboxrule}\hspace{\fboxsep}}alt.Chart({\ldots})
+\end{sphinxVerbatim}
+}
+
+
+\chapter{Data\sphinxhyphen{}Driven Music History}
+\label{\detokenize{05_data-driven_music_history:Data-Driven-Music-History}}\label{\detokenize{05_data-driven_music_history::doc}}
+{
+\sphinxsetup{VerbatimColor={named}{nbsphinx-code-bg}}
+\sphinxsetup{VerbatimBorderColor={named}{nbsphinx-code-border}}
+\begin{sphinxVerbatim}[commandchars=\\\{\}]
+\llap{\color{nbsphinxin}[1]:\,\hspace{\fboxrule}\hspace{\fboxsep}}\PYG{k+kn}{import} \PYG{n+nn}{pandas} \PYG{k}{as} \PYG{n+nn}{pd} \PYG{c+c1}{\PYGZsh{} for working with tabular data}
+\PYG{n}{pd}\PYG{o}{.}\PYG{n}{set\PYGZus{}option}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{display.max\PYGZus{}columns}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{,} \PYG{l+m+mi}{500}\PYG{p}{)}
+\PYG{k+kn}{import} \PYG{n+nn}{matplotlib}\PYG{n+nn}{.}\PYG{n+nn}{pyplot} \PYG{k}{as} \PYG{n+nn}{plt} \PYG{c+c1}{\PYGZsh{} for plotting}
+\PYG{n}{plt}\PYG{o}{.}\PYG{n}{style}\PYG{o}{.}\PYG{n}{use}\PYG{p}{(}\PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{fivethirtyeight}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{)} \PYG{c+c1}{\PYGZsh{} select specific plotting style}
+\PYG{k+kn}{import} \PYG{n+nn}{seaborn} \PYG{k}{as} \PYG{n+nn}{sns}\PYG{p}{;} \PYG{n}{sns}\PYG{o}{.}\PYG{n}{set\PYGZus{}context}\PYG{p}{(}\PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{talk}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{)}
+\PYG{k+kn}{import} \PYG{n+nn}{numpy} \PYG{k}{as} \PYG{n+nn}{np}
+\end{sphinxVerbatim}
+}
+
+
+\section{Research Questions}
+\label{\detokenize{05_data-driven_music_history:Research-Questions}}\begin{itemize}
+\item {} 
+General: How can we study historical changes quantitatively?
+
+\item {} 
+Specific: What can we say about the history of tonality based on a dataset of musical pieces?
+
+\end{itemize}
+
+
+\section{A bit of theory}
+\label{\detokenize{05_data-driven_music_history:A-bit-of-theory}}
+{
+\sphinxsetup{VerbatimColor={named}{nbsphinx-code-bg}}
+\sphinxsetup{VerbatimBorderColor={named}{nbsphinx-code-border}}
+\begin{sphinxVerbatim}[commandchars=\\\{\}]
+\llap{\color{nbsphinxin}[2]:\,\hspace{\fboxrule}\hspace{\fboxsep}}\PYG{n}{note\PYGZus{}names} \PYG{o}{=} \PYG{n+nb}{list}\PYG{p}{(}\PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{FCGDAEB}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{)} \PYG{c+c1}{\PYGZsh{} diatonic note names in fifths ordering}
+\PYG{n}{note\PYGZus{}names}
+\end{sphinxVerbatim}
+}
+
+{
+
+\kern-\sphinxverbatimsmallskipamount\kern-\baselineskip
+\kern+\FrameHeightAdjust\kern-\fboxrule
+\vspace{\nbsphinxcodecellspacing}
+
+\sphinxsetup{VerbatimColor={named}{white}}
+\sphinxsetup{VerbatimBorderColor={named}{nbsphinx-code-border}}
+\begin{sphinxVerbatim}[commandchars=\\\{\}]
+\llap{\color{nbsphinxout}[2]:\,\hspace{\fboxrule}\hspace{\fboxsep}}['F', 'C', 'G', 'D', 'A', 'E', 'B']
+\end{sphinxVerbatim}
+}
+
+{
+\sphinxsetup{VerbatimColor={named}{nbsphinx-code-bg}}
+\sphinxsetup{VerbatimBorderColor={named}{nbsphinx-code-border}}
+\begin{sphinxVerbatim}[commandchars=\\\{\}]
+\llap{\color{nbsphinxin}[3]:\,\hspace{\fboxrule}\hspace{\fboxsep}}\PYG{n}{accidentals} \PYG{o}{=} \PYG{p}{[}\PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{bb}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{,} \PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{b}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{,} \PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{,} \PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{\PYGZsh{}}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{,} \PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{\PYGZsh{}\PYGZsh{}}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{]} \PYG{c+c1}{\PYGZsh{} up to two accidentals is suffient here}
+\PYG{n}{accidentals}
+\end{sphinxVerbatim}
+}
+
+{
+
+\kern-\sphinxverbatimsmallskipamount\kern-\baselineskip
+\kern+\FrameHeightAdjust\kern-\fboxrule
+\vspace{\nbsphinxcodecellspacing}
+
+\sphinxsetup{VerbatimColor={named}{white}}
+\sphinxsetup{VerbatimBorderColor={named}{nbsphinx-code-border}}
+\begin{sphinxVerbatim}[commandchars=\\\{\}]
+\llap{\color{nbsphinxout}[3]:\,\hspace{\fboxrule}\hspace{\fboxsep}}['bb', 'b', '', '\#', '\#\#']
+\end{sphinxVerbatim}
+}
+
+{
+\sphinxsetup{VerbatimColor={named}{nbsphinx-code-bg}}
+\sphinxsetup{VerbatimBorderColor={named}{nbsphinx-code-border}}
+\begin{sphinxVerbatim}[commandchars=\\\{\}]
+\llap{\color{nbsphinxin}[4]:\,\hspace{\fboxrule}\hspace{\fboxsep}}\PYG{n}{lof} \PYG{o}{=} \PYG{p}{[} \PYG{n}{n} \PYG{o}{+} \PYG{n}{a} \PYG{k}{for} \PYG{n}{a} \PYG{o+ow}{in} \PYG{n}{accidentals} \PYG{k}{for} \PYG{n}{n} \PYG{o+ow}{in} \PYG{n}{note\PYGZus{}names} \PYG{p}{]} \PYG{c+c1}{\PYGZsh{} lof = \PYGZdq{}Line of Fifths\PYGZdq{}}
+\PYG{n+nb}{print}\PYG{p}{(}\PYG{n}{lof}\PYG{p}{)}
+\end{sphinxVerbatim}
+}
+
+{
+
+\kern-\sphinxverbatimsmallskipamount\kern-\baselineskip
+\kern+\FrameHeightAdjust\kern-\fboxrule
+\vspace{\nbsphinxcodecellspacing}
+
+\sphinxsetup{VerbatimColor={named}{white}}
+\sphinxsetup{VerbatimBorderColor={named}{nbsphinx-code-border}}
+\begin{sphinxVerbatim}[commandchars=\\\{\}]
+['Fbb', 'Cbb', 'Gbb', 'Dbb', 'Abb', 'Ebb', 'Bbb', 'Fb', 'Cb', 'Gb', 'Db', 'Ab', 'Eb', 'Bb', 'F', 'C', 'G', 'D', 'A', 'E', 'B', 'F\#', 'C\#', 'G\#', 'D\#', 'A\#', 'E\#', 'B\#', 'F\#\#', 'C\#\#', 'G\#\#', 'D\#\#', 'A\#\#', 'E\#\#', 'B\#\#']
+\end{sphinxVerbatim}
+}
+
+{
+\sphinxsetup{VerbatimColor={named}{nbsphinx-code-bg}}
+\sphinxsetup{VerbatimBorderColor={named}{nbsphinx-code-border}}
+\begin{sphinxVerbatim}[commandchars=\\\{\}]
+\llap{\color{nbsphinxin}[5]:\,\hspace{\fboxrule}\hspace{\fboxsep}}\PYG{n+nb}{len}\PYG{p}{(}\PYG{n}{lof}\PYG{p}{)} \PYG{c+c1}{\PYGZsh{} how long is this line\PYGZhy{}of\PYGZhy{}fifths segment?}
+\end{sphinxVerbatim}
+}
+
+{
+
+\kern-\sphinxverbatimsmallskipamount\kern-\baselineskip
+\kern+\FrameHeightAdjust\kern-\fboxrule
+\vspace{\nbsphinxcodecellspacing}
+
+\sphinxsetup{VerbatimColor={named}{white}}
+\sphinxsetup{VerbatimBorderColor={named}{nbsphinx-code-border}}
+\begin{sphinxVerbatim}[commandchars=\\\{\}]
+\llap{\color{nbsphinxout}[5]:\,\hspace{\fboxrule}\hspace{\fboxsep}}35
+\end{sphinxVerbatim}
+}
+
+We call the elements on the line of fifths \sphinxstylestrong{tonal pitch\sphinxhyphen{}classes}
+
+
+\section{Data}
+\label{\detokenize{05_data-driven_music_history:Data}}
+
+\subsection{A (kind of) large corpus: TP3C}
+\label{\detokenize{05_data-driven_music_history:A-(kind-of)-large-corpus:-TP3C}}
+Here, we use a dataset that was specifically compiled for this kind of analysis, the \sphinxhref{https://github.com/DCMLab/TP3C}{Tonal pitch\sphinxhyphen{}class counts corpus (TP3C)} (Moss, Neuwirth, Rohrmeier, 2020)
+\begin{itemize}
+\item {} 
+2,012 pieces
+
+\item {} 
+75 composers
+
+\item {} 
+approx. spans 600 years of music history
+
+\item {} 
+does not contain complete pieces but only counts of tonal pitch\sphinxhyphen{}classes
+
+\end{itemize}
+
+{
+\sphinxsetup{VerbatimColor={named}{nbsphinx-code-bg}}
+\sphinxsetup{VerbatimBorderColor={named}{nbsphinx-code-border}}
+\begin{sphinxVerbatim}[commandchars=\\\{\}]
+\llap{\color{nbsphinxin}[6]:\,\hspace{\fboxrule}\hspace{\fboxsep}}\PYG{k+kn}{import} \PYG{n+nn}{pandas} \PYG{k}{as} \PYG{n+nn}{pd} \PYG{c+c1}{\PYGZsh{} to work with tabular data}
+
+\PYG{n}{url} \PYG{o}{=} \PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{https://raw.githubusercontent.com/DCMLab/TP3C/master/tp3c.tsv}\PYG{l+s+s2}{\PYGZdq{}}
+\PYG{n}{data} \PYG{o}{=} \PYG{n}{pd}\PYG{o}{.}\PYG{n}{read\PYGZus{}table}\PYG{p}{(}\PYG{n}{url}\PYG{p}{)}
+
+\PYG{n}{data}\PYG{o}{.}\PYG{n}{sample}\PYG{p}{(}\PYG{l+m+mi}{10}\PYG{p}{)}
+\end{sphinxVerbatim}
+}
+
+{
+
+\kern-\sphinxverbatimsmallskipamount\kern-\baselineskip
+\kern+\FrameHeightAdjust\kern-\fboxrule
+\vspace{\nbsphinxcodecellspacing}
+
+\sphinxsetup{VerbatimColor={named}{white}}
+\sphinxsetup{VerbatimBorderColor={named}{nbsphinx-code-border}}
+\begin{sphinxVerbatim}[commandchars=\\\{\}]
+\llap{\color{nbsphinxout}[6]:\,\hspace{\fboxrule}\hspace{\fboxsep}}      composer    composer\_first                   work\_group work\_catalogue  \textbackslash{}
+1742   Corelli         Arcangelo              12 Trio Sonatas           Op.
+468       Bach  Johann Sebastian     Inventions and Sinfonias            BWV
+1630    Chopin          Frédéric                     Mazurkas            Op.
+1604    Joplin             Scott                     Ragtimes            NaN
+137       Bach  Johann Sebastian  Wohltemperiertes Klavier II            BWV
+1231  Schubert             Franz          Die schöne Müllerin         D. 795
+530     Brahms          Johannes              8 Klavierstücke            Op.
+1311  Schumann            Robert                 Dichterliebe            Op.
+338       Bach  Johann Sebastian   Wohltemperiertes Klavier I            BWV
+713      Fauré           Gabriel                          NaN            Op.
+
+     opus   no  mov                           title  composition  publication  \textbackslash{}
+1742    3    4  1.0                             NaN          NaN       1689.0
+468   779  NaN  NaN                             NaN          NaN       1723.0
+1630   33    2  NaN                             NaN       1837.0       1838.0
+1604  NaN  NaN  NaN                      Lily Queen          NaN       1907.0
+137   888    2  NaN                             NaN       1740.0          NaN
+1231  NaN   18  NaN                  Trockne Blumen          NaN       1823.0
+530    76    4  NaN                      Intermezzo       1878.0          NaN
+1311   48    3  NaN  Die Rose, die Lilie, die Taube       1840.0          NaN
+338   863    1  NaN                             NaN       1722.0          NaN
+713     6    2  NaN                       Tristesse          NaN       1880.0
+
+     source  display\_year  Fbb  Cbb  Gbb  Dbb  Abb  Ebb  Bbb  Fb  Cb  Gb  Db  \textbackslash{}
+1742  CCARH        1689.0    0    0    0    0    0    0    0   0   0   0   0
+468      MS        1723.0    0    0    0    0    0    0    0   0   0   0   0
+1630  CCARH        1837.0    0    0    0    0    0    0    0   0   0  24  16
+1604  CCARH        1907.0    0    0    0    0    0    0    0   0   0   0   5
+137      MS        1740.0    0    0    0    0    0    0    0   0   0   0   0
+1231   OSLC        1823.0    0    0    0    0    0    0    0   0   0   0   0
+530    DCML        1878.0    0    0    0    0    0    0    0  43  18  64  21
+1311   OSLC        1840.0    0    0    0    0    0    0    0   0   0   0   0
+338      MS        1722.0    0    0    0    0    0    0    0   0   0   0   0
+713      MS        1880.0    0    0    0    0    0    0    0   0   7   0  43
+
+       Ab   Eb   Bb    F    C    G    D    A    E    B   F\#   C\#   G\#  D\#  A\#  \textbackslash{}
+1742    0    0    0    0    0   33   75   47   70  107  108   56    7   8  24
+468     0   17   68   98   92   77   82   81   56   17    3    7    0   0   0
+1630   15   17   44   48   32  117  397  388  251  123  153  155   54   0   0
+1604   23   19   51  180  353  252  134  188  162   75   55   14   17  17   7
+137     0    0    0    0    3   13   69  108  101  112  105  114  101  45  16
+1231    0    0    4    0   14   86   34   65  214  309  117   57  115  60  20
+530    31  213  113   65   62   42   70   34    9   20    4   26    6   0   0
+1311    0    0    0    0    5   52   69   61   40   45   52   48    3   1   0
+338     0    0    0    0    0    0    1    9   62   72   65   90   89  81  74
+713   172  126   90  174  202  169   85    0    9   68    0    1    3   1   0
+
+      E\#  B\#  F\#\#  C\#\#  G\#\#  D\#\#  A\#\#  E\#\#  B\#\#
+1742   3   0    0    0    0    0    0    0    0
+468    0   0    0    0    0    0    0    0    0
+1630  10   0    0    0    0    0    0    0    0
+1604   0   0    0    0    0    0    0    0    0
+137   10   7    0    0    0    0    0    0    0
+1231   0  16    0    0    0    0    0    0    0
+530    0   0    0    0    0    0    0    0    0
+1311   0   0    0    0    0    0    0    0    0
+338   29  12   19    8    0    0    0    0    0
+713    1   0    0    0    0    0    0    0    0
+\end{sphinxVerbatim}
+}
+
+{
+\sphinxsetup{VerbatimColor={named}{nbsphinx-code-bg}}
+\sphinxsetup{VerbatimBorderColor={named}{nbsphinx-code-border}}
+\begin{sphinxVerbatim}[commandchars=\\\{\}]
+\llap{\color{nbsphinxin}[8]:\,\hspace{\fboxrule}\hspace{\fboxsep}}\PYG{n}{data}\PYG{p}{[}\PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{display\PYGZus{}year}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{]}\PYG{o}{.}\PYG{n}{plot}\PYG{p}{(}\PYG{n}{kind}\PYG{o}{=}\PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{hist}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{,} \PYG{n}{bins}\PYG{o}{=}\PYG{l+m+mi}{50}\PYG{p}{,} \PYG{n}{figsize}\PYG{o}{=}\PYG{p}{(}\PYG{l+m+mi}{15}\PYG{p}{,}\PYG{l+m+mi}{6}\PYG{p}{)}\PYG{p}{)}\PYG{p}{;} \PYG{c+c1}{\PYGZsh{} historical overview}
+\end{sphinxVerbatim}
+}
+
+\hrule height -\fboxrule\relax
+\vspace{\nbsphinxcodecellspacing}
+
+\makeatletter\setbox\nbsphinxpromptbox\box\voidb@x\makeatother
+
+\begin{nbsphinxfancyoutput}
+
+\noindent\sphinxincludegraphics[width=1020\sphinxpxdimen,height=391\sphinxpxdimen]{{05_data-driven_music_history_12_0}.png}
+
+\end{nbsphinxfancyoutput}
+\begin{itemize}
+\item {} 
+it can be seen that there are large gaps and that some historical periods are underrepresented
+
+\item {} 
+however, it is not so obvious how to fix that
+
+\item {} 
+do we want a uniform distribution over time?
+
+\item {} 
+do we want a “historically accurate” distribution?
+
+\item {} 
+do we want to remove geographical/gender/class/instrument/etc. biases?
+
+\item {} 
+on one hand, balanced datasets are likely not to reflect historical realities
+
+\item {} 
+on the other hand, such datasets rather represent the “canon”, that is a contemporary selection of “valuable” compositions that may differ greatly from what was considered relevant at the time
+
+\end{itemize}
+
+\textendash{}\textgreater{} There is no unique objective answer to these questions. It is important to be aware of these limitations and take them into account when interpreting the results
+
+For this workshop we ignore all the metadata about the pieces (titles, composer names etc.) but only focus on their tonal material. Therefore, we don’t need all the columns of the table.
+
+{
+\sphinxsetup{VerbatimColor={named}{nbsphinx-code-bg}}
+\sphinxsetup{VerbatimBorderColor={named}{nbsphinx-code-border}}
+\begin{sphinxVerbatim}[commandchars=\\\{\}]
+\llap{\color{nbsphinxin}[9]:\,\hspace{\fboxrule}\hspace{\fboxsep}}\PYG{n}{tpc\PYGZus{}counts} \PYG{o}{=} \PYG{n}{data}\PYG{o}{.}\PYG{n}{loc}\PYG{p}{[}\PYG{p}{:}\PYG{p}{,} \PYG{n}{lof}\PYG{p}{]} \PYG{c+c1}{\PYGZsh{} select all rows (\PYGZdq{}:\PYGZdq{}) and the lof columns}
+\PYG{n}{tpc\PYGZus{}counts}\PYG{o}{.}\PYG{n}{sample}\PYG{p}{(}\PYG{l+m+mi}{20}\PYG{p}{)}
+\end{sphinxVerbatim}
+}
+
+{
+
+\kern-\sphinxverbatimsmallskipamount\kern-\baselineskip
+\kern+\FrameHeightAdjust\kern-\fboxrule
+\vspace{\nbsphinxcodecellspacing}
+
+\sphinxsetup{VerbatimColor={named}{white}}
+\sphinxsetup{VerbatimBorderColor={named}{nbsphinx-code-border}}
+\begin{sphinxVerbatim}[commandchars=\\\{\}]
+\llap{\color{nbsphinxout}[9]:\,\hspace{\fboxrule}\hspace{\fboxsep}}      Fbb  Cbb  Gbb  Dbb  Abb  Ebb  Bbb  Fb   Cb   Gb   Db   Ab   Eb   Bb  \textbackslash{}
+155     0    0    0    0    0    0    0   0    0    0    0    0    0    0
+1073    0    0    0    0    0    0    0   0   11   23   83  189  219  114
+1975    0    0    0    0    0    0    0   0    0    0    0    0    0    0
+1178    0    0    0    0    0    0    0   0    0    0    0    0   11   84
+402     0    0    0    0    0    0    0   0    1    2    1    2    2    9
+98      0    0    0    0    2    0    4   2    6   41  118  144  114  164
+11      0    0    0    0    0    0    0   0    0    0    0    0    0    0
+344     0    0    0    0    0    0    0   0    0    0    0    0    0    0
+1784    0    0    0    0    0    0    0   0    0    0    0    0    0    0
+407     0    0    0    0    0    0    0   0    0    0    0    3    0   11
+1992    0    0    0    0    0    0    0   0    3    4   27  138  315  155
+543     0    0    0    0    0    0    0   0    0   17    3    0   28   61
+1046    0    0    0    0    0    0    0   0    0    0    0    0    0    0
+1032    0    0    0    0    0    1    5   4   18   35   47  132   95  205
+737     0    0    0    0   19   22   16  41  103  101   33   48  251  183
+186     0    0    0    0    0    0    0   0    0    0    4    2   16   97
+1653    0    0    0    0    0    0    0   0    0    0    1    2    0   16
+1115    0    0    0    0    0    0    0   0    0   10    8    6   41   64
+1886    0    0    0    0    0    0    0   0    0    0    6  149  233  174
+343     0    0    0    0    0    0    0   0    0    0    0    1   19   53
+
+        F    C    G    D    A    E    B   F\#   C\#   G\#   D\#   A\#  E\#  B\#  F\#\#  \textbackslash{}
+155     0    0    0    8   32  149  224  179  194  212  191  161  52  22   28
+1073  229  225  323  163   41   58  126   72   26    0    0    0   0   0    0
+1975    0    0    0   24   42   70   31   16   36   21    1    0   0   0    0
+1178  101   77  111  149  110   29    9   26    2    0    0    0   0   0    0
+402    13  100  214  103  179  347  337  250  153   83  150   87  36  18   11
+98    241  340  142   44   78   60   29    8    1    2    0    0   0   0    0
+11     52  193  249  123   54  124  103   10    0   28    4    1   0   0    0
+344     3    2    6   38  133   76   16   21   85   27    7    0   0   0    0
+1784    0    0    0   36   71   68   45   39   48   33   10    0   2   0    0
+407   148  180  168  162  111  161  105   30    5   13    0    0   0   0    0
+1992  253  327  490  223   54   54  135   58    4    0    4    0   1   0    0
+543    36   52  120  136   59   14    2    0    0    0    0    0   0   0    0
+1046    0    7   11   15    4   20   32   17   14    4    3   14   3   0    0
+1032  173  155  347  361  401  499  530  626  491  263  262  232  86  35   25
+737    97   31    9   48   92    4    1    0    0    0    0    0   0   0    0
+186   176  198  138   97  128   88   41   21   13    2    0    0   0   0    0
+1653  123  237  223  172   98  112   87   29    2    9    2    0   0   0    0
+1115   42   20   48   25   19    2    6    0    0    0    0    0   0   0    0
+1886  230  269  408  203   38   24   68   22    0    0    0    0   0   0    0
+343   102  146  102  292  549  729  483  235  377  285  109   52   9   6    0
+
+      C\#\#  G\#\#  D\#\#  A\#\#  E\#\#  B\#\#
+155    13    1    0    0    0    0
+1073    0    0    0    0    0    0
+1975    0    0    0    0    0    0
+1178    0    0    0    0    0    0
+402     6    4    0    0    0    0
+98      0    0    0    0    0    0
+11      0    0    0    0    0    0
+344     0    0    0    0    0    0
+1784    0    0    0    0    0    0
+407     0    0    0    0    0    0
+1992    0    0    0    0    0    0
+543     0    0    0    0    0    0
+1046    0    0    0    0    0    0
+1032   26   10    2    0    0    0
+737     0    0    0    0    0    0
+186     0    0    0    0    0    0
+1653    0    0    0    0    0    0
+1115    0    0    0    0    0    0
+1886    0    0    0    0    0    0
+343     0    0    0    0    0    0
+\end{sphinxVerbatim}
+}
+
+{
+\sphinxsetup{VerbatimColor={named}{nbsphinx-code-bg}}
+\sphinxsetup{VerbatimBorderColor={named}{nbsphinx-code-border}}
+\begin{sphinxVerbatim}[commandchars=\\\{\}]
+\llap{\color{nbsphinxin}[11]:\,\hspace{\fboxrule}\hspace{\fboxsep}}\PYG{n}{piece} \PYG{o}{=} \PYG{n}{tpc\PYGZus{}counts}\PYG{o}{.}\PYG{n}{iloc}\PYG{p}{[}\PYG{l+m+mi}{10}\PYG{p}{]}
+
+\PYG{n}{fig}\PYG{p}{,} \PYG{n}{axes} \PYG{o}{=} \PYG{n}{plt}\PYG{o}{.}\PYG{n}{subplots}\PYG{p}{(}\PYG{l+m+mi}{2}\PYG{p}{,} \PYG{l+m+mi}{1}\PYG{p}{,} \PYG{n}{figsize}\PYG{o}{=}\PYG{p}{(}\PYG{l+m+mi}{20}\PYG{p}{,}\PYG{l+m+mi}{10}\PYG{p}{)}\PYG{p}{)}
+
+\PYG{n}{axes}\PYG{p}{[}\PYG{l+m+mi}{0}\PYG{p}{]}\PYG{o}{.}\PYG{n}{bar}\PYG{p}{(}\PYG{n}{piece}\PYG{o}{.}\PYG{n}{sort\PYGZus{}values}\PYG{p}{(}\PYG{n}{ascending}\PYG{o}{=}\PYG{k+kc}{False}\PYG{p}{)}\PYG{o}{.}\PYG{n}{index}\PYG{p}{,} \PYG{n}{piece}\PYG{o}{.}\PYG{n}{sort\PYGZus{}values}\PYG{p}{(}\PYG{n}{ascending}\PYG{o}{=}\PYG{k+kc}{False}\PYG{p}{)}\PYG{p}{)}
+\PYG{n}{axes}\PYG{p}{[}\PYG{l+m+mi}{0}\PYG{p}{]}\PYG{o}{.}\PYG{n}{set\PYGZus{}title}\PYG{p}{(}\PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{\PYGZsq{}}\PYG{l+s+s2}{without theory}\PYG{l+s+s2}{\PYGZsq{}}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{)}
+
+\PYG{n}{axes}\PYG{p}{[}\PYG{l+m+mi}{1}\PYG{p}{]}\PYG{o}{.}\PYG{n}{bar}\PYG{p}{(}\PYG{n}{piece}\PYG{o}{.}\PYG{n}{index}\PYG{p}{,} \PYG{n}{piece}\PYG{p}{)}
+\PYG{n}{axes}\PYG{p}{[}\PYG{l+m+mi}{1}\PYG{p}{]}\PYG{o}{.}\PYG{n}{set\PYGZus{}title}\PYG{p}{(}\PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{\PYGZsq{}}\PYG{l+s+s2}{with theory}\PYG{l+s+s2}{\PYGZsq{}}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{)}
+
+\PYG{c+c1}{\PYGZsh{} plt.savefig(\PYGZdq{}img/random\PYGZus{}piece.png\PYGZdq{})}
+\PYG{c+c1}{\PYGZsh{} plt.show()}
+\end{sphinxVerbatim}
+}
+
+{
+
+\kern-\sphinxverbatimsmallskipamount\kern-\baselineskip
+\kern+\FrameHeightAdjust\kern-\fboxrule
+\vspace{\nbsphinxcodecellspacing}
+
+\sphinxsetup{VerbatimColor={named}{white}}
+\sphinxsetup{VerbatimBorderColor={named}{nbsphinx-code-border}}
+\begin{sphinxVerbatim}[commandchars=\\\{\}]
+\llap{\color{nbsphinxout}[11]:\,\hspace{\fboxrule}\hspace{\fboxsep}}Text(0.5, 1.0, "'with theory'")
+\end{sphinxVerbatim}
+}
+
+\hrule height -\fboxrule\relax
+\vspace{\nbsphinxcodecellspacing}
+
+\makeatletter\setbox\nbsphinxpromptbox\box\voidb@x\makeatother
+
+\begin{nbsphinxfancyoutput}
+
+\noindent\sphinxincludegraphics[width=1311\sphinxpxdimen,height=645\sphinxpxdimen]{{05_data-driven_music_history_16_1}.png}
+
+\end{nbsphinxfancyoutput}
+
+Let us have an overview of the note counts in these pieces!
+
+If we would just look at the raw counts of the tonal pitch\sphinxhyphen{}classe, we could not learn much from it. Using a theoretical model (the line of fifths) shows that the notes in pieces are usually come from few adjacent keys (you don’t say!).
+
+We probably have very long pieces (sonatas) and very short pieces (songs) in the dataset. Since we don’t want length (or the absolute number of notes in a piece) to have an effect, we rather consider tonal pitch\sphinxhyphen{}class distributions instead counts, by normalizing all pieces to sum to one.
+
+{
+\sphinxsetup{VerbatimColor={named}{nbsphinx-code-bg}}
+\sphinxsetup{VerbatimBorderColor={named}{nbsphinx-code-border}}
+\begin{sphinxVerbatim}[commandchars=\\\{\}]
+\llap{\color{nbsphinxin}[12]:\,\hspace{\fboxrule}\hspace{\fboxsep}}\PYG{n}{tpc\PYGZus{}dists} \PYG{o}{=} \PYG{n}{tpc\PYGZus{}counts}\PYG{o}{.}\PYG{n}{div}\PYG{p}{(}\PYG{n}{tpc\PYGZus{}counts}\PYG{o}{.}\PYG{n}{sum}\PYG{p}{(}\PYG{n}{axis}\PYG{o}{=}\PYG{l+m+mi}{1}\PYG{p}{)}\PYG{p}{,} \PYG{n}{axis}\PYG{o}{=}\PYG{l+m+mi}{0}\PYG{p}{)}
+\PYG{n}{tpc\PYGZus{}dists}\PYG{o}{.}\PYG{n}{sample}\PYG{p}{(}\PYG{l+m+mi}{20}\PYG{p}{)}
+\end{sphinxVerbatim}
+}
+
+{
+
+\kern-\sphinxverbatimsmallskipamount\kern-\baselineskip
+\kern+\FrameHeightAdjust\kern-\fboxrule
+\vspace{\nbsphinxcodecellspacing}
+
+\sphinxsetup{VerbatimColor={named}{white}}
+\sphinxsetup{VerbatimBorderColor={named}{nbsphinx-code-border}}
+\begin{sphinxVerbatim}[commandchars=\\\{\}]
+\llap{\color{nbsphinxout}[12]:\,\hspace{\fboxrule}\hspace{\fboxsep}}      Fbb  Cbb  Gbb  Dbb       Abb       Ebb       Bbb        Fb        Cb  \textbackslash{}
+606   0.0  0.0  0.0  0.0  0.000000  0.000000  0.000000  0.000000  0.000000
+1844  0.0  0.0  0.0  0.0  0.000000  0.000000  0.000000  0.000000  0.000000
+251   0.0  0.0  0.0  0.0  0.000000  0.000000  0.000000  0.000000  0.000000
+737   0.0  0.0  0.0  0.0  0.017288  0.020018  0.014559  0.037307  0.093722
+10    0.0  0.0  0.0  0.0  0.000000  0.000000  0.000000  0.000000  0.000000
+822   0.0  0.0  0.0  0.0  0.000000  0.000000  0.000000  0.000000  0.000000
+202   0.0  0.0  0.0  0.0  0.000000  0.000000  0.000000  0.000000  0.000000
+850   0.0  0.0  0.0  0.0  0.000000  0.000000  0.000000  0.000000  0.000000
+1609  0.0  0.0  0.0  0.0  0.000000  0.000000  0.000000  0.000000  0.000000
+555   0.0  0.0  0.0  0.0  0.000000  0.000000  0.000000  0.000000  0.000000
+940   0.0  0.0  0.0  0.0  0.000000  0.000000  0.000000  0.005703  0.002852
+1165  0.0  0.0  0.0  0.0  0.000000  0.000000  0.000000  0.000000  0.000000
+1438  0.0  0.0  0.0  0.0  0.000000  0.000000  0.000000  0.000000  0.000000
+1548  0.0  0.0  0.0  0.0  0.000000  0.000000  0.000000  0.000000  0.000000
+1265  0.0  0.0  0.0  0.0  0.000000  0.000000  0.000000  0.000000  0.005924
+1169  0.0  0.0  0.0  0.0  0.000000  0.000000  0.000000  0.000000  0.000000
+1368  0.0  0.0  0.0  0.0  0.000000  0.000000  0.000000  0.000000  0.000000
+1741  0.0  0.0  0.0  0.0  0.000000  0.000000  0.000000  0.000000  0.000000
+1302  0.0  0.0  0.0  0.0  0.000000  0.000000  0.000000  0.000000  0.000000
+80    0.0  0.0  0.0  0.0  0.001965  0.002947  0.000000  0.008841  0.030452
+
+            Gb        Db        Ab        Eb        Bb         F         C  \textbackslash{}
+606   0.000000  0.000000  0.000000  0.000000  0.059524  0.059524  0.061905
+1844  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000
+251   0.000000  0.000000  0.000000  0.000000  0.000424  0.027107  0.044473
+737   0.091902  0.030027  0.043676  0.228389  0.166515  0.088262  0.028207
+10    0.000000  0.001466  0.003908  0.012702  0.013679  0.063019  0.200293
+822   0.000000  0.000000  0.000000  0.000000  0.022222  0.133333  0.155556
+202   0.003268  0.011438  0.024510  0.003268  0.039216  0.091503  0.207516
+850   0.000000  0.000000  0.000000  0.000000  0.000000  0.081545  0.184549
+1609  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000
+555   0.000000  0.000000  0.000000  0.000000  0.002088  0.083507  0.171190
+940   0.004753  0.046578  0.057034  0.125475  0.039924  0.109316  0.135932
+1165  0.000000  0.000000  0.000000  0.000000  0.000000  0.002660  0.000000
+1438  0.000000  0.000000  0.000000  0.000000  0.038251  0.077869  0.099727
+1548  0.000000  0.011111  0.011111  0.044444  0.077778  0.088889  0.088889
+1265  0.000000  0.004739  0.077014  0.158768  0.055687  0.084123  0.261848
+1169  0.011472  0.024857  0.042065  0.055449  0.082218  0.084130  0.149140
+1368  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000
+1741  0.000000  0.000000  0.003036  0.090081  0.178138  0.176113  0.153846
+1302  0.002725  0.013624  0.005450  0.087193  0.141689  0.040872  0.111717
+80    0.051081  0.090373  0.123772  0.140472  0.125737  0.080550  0.055992
+
+             G         D         A         E         B        F\#        C\#  \textbackslash{}
+606   0.235714  0.161905  0.147619  0.104762  0.057143  0.054762  0.045238
+1844  0.005330  0.089552  0.171642  0.173774  0.143923  0.119403  0.148188
+251   0.035578  0.077086  0.159255  0.213892  0.154172  0.058026  0.085133
+737   0.008189  0.043676  0.083712  0.003640  0.000910  0.000000  0.000000
+10    0.208109  0.128481  0.079140  0.132389  0.100147  0.034196  0.004885
+822   0.044444  0.266667  0.155556  0.133333  0.088889  0.000000  0.000000
+202   0.160131  0.065359  0.096405  0.169935  0.063725  0.014706  0.013072
+850   0.184549  0.180258  0.124464  0.098712  0.133047  0.008584  0.004292
+1609  0.000000  0.000000  0.027883  0.093790  0.016477  0.062104  0.130545
+555   0.118998  0.068894  0.204593  0.173278  0.125261  0.006263  0.004175
+940   0.221483  0.135932  0.038023  0.013308  0.051331  0.010456  0.001901
+1165  0.106383  0.292553  0.156915  0.079787  0.130319  0.117021  0.063830
+1438  0.112022  0.140710  0.143443  0.158470  0.092896  0.068306  0.038251
+1548  0.100000  0.088889  0.088889  0.088889  0.077778  0.077778  0.066667
+1265  0.164692  0.082938  0.011848  0.020142  0.058057  0.014218  0.000000
+1169  0.128107  0.051625  0.080306  0.057361  0.051625  0.068834  0.045889
+1368  0.008929  0.041667  0.107143  0.230655  0.196429  0.117560  0.105655
+1741  0.135628  0.122470  0.103239  0.012146  0.018219  0.007085  0.000000
+1302  0.212534  0.171662  0.130790  0.000000  0.024523  0.046322  0.010899
+80    0.049116  0.053045  0.028487  0.051081  0.057957  0.010806  0.006876
+
+            G\#        D\#        A\#        E\#        B\#       F\#\#       C\#\#  \textbackslash{}
+606   0.007143  0.004762  0.000000  0.000000  0.000000  0.000000  0.000000
+1844  0.101279  0.023454  0.007463  0.011727  0.004264  0.000000  0.000000
+251   0.087251  0.043626  0.008895  0.002541  0.002118  0.000424  0.000000
+737   0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000
+10    0.014656  0.002931  0.000000  0.000000  0.000000  0.000000  0.000000
+822   0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000
+202   0.016340  0.011438  0.008170  0.000000  0.000000  0.000000  0.000000
+850   0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000
+1609  0.309252  0.177440  0.032953  0.020279  0.102662  0.016477  0.010139
+555   0.033403  0.006263  0.002088  0.000000  0.000000  0.000000  0.000000
+940   0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000
+1165  0.042553  0.007979  0.000000  0.000000  0.000000  0.000000  0.000000
+1438  0.013661  0.002732  0.013661  0.000000  0.000000  0.000000  0.000000
+1548  0.066667  0.022222  0.000000  0.000000  0.000000  0.000000  0.000000
+1265  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000
+1169  0.026769  0.013384  0.015296  0.009560  0.001912  0.000000  0.000000
+1368  0.117560  0.044643  0.020833  0.005952  0.000000  0.002976  0.000000
+1741  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000
+1302  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000
+80    0.016699  0.011788  0.000000  0.001965  0.000000  0.000000  0.000000
+
+      G\#\#  D\#\#  A\#\#  E\#\#  B\#\#
+606   0.0  0.0  0.0  0.0  0.0
+1844  0.0  0.0  0.0  0.0  0.0
+251   0.0  0.0  0.0  0.0  0.0
+737   0.0  0.0  0.0  0.0  0.0
+10    0.0  0.0  0.0  0.0  0.0
+822   0.0  0.0  0.0  0.0  0.0
+202   0.0  0.0  0.0  0.0  0.0
+850   0.0  0.0  0.0  0.0  0.0
+1609  0.0  0.0  0.0  0.0  0.0
+555   0.0  0.0  0.0  0.0  0.0
+940   0.0  0.0  0.0  0.0  0.0
+1165  0.0  0.0  0.0  0.0  0.0
+1438  0.0  0.0  0.0  0.0  0.0
+1548  0.0  0.0  0.0  0.0  0.0
+1265  0.0  0.0  0.0  0.0  0.0
+1169  0.0  0.0  0.0  0.0  0.0
+1368  0.0  0.0  0.0  0.0  0.0
+1741  0.0  0.0  0.0  0.0  0.0
+1302  0.0  0.0  0.0  0.0  0.0
+80    0.0  0.0  0.0  0.0  0.0
+\end{sphinxVerbatim}
+}
+
+For further numerical analysis, we extract the data from this table and assign it to a variable \sphinxcode{\sphinxupquote{X}}.
+
+{
+\sphinxsetup{VerbatimColor={named}{nbsphinx-code-bg}}
+\sphinxsetup{VerbatimBorderColor={named}{nbsphinx-code-border}}
+\begin{sphinxVerbatim}[commandchars=\\\{\}]
+\llap{\color{nbsphinxin}[14]:\,\hspace{\fboxrule}\hspace{\fboxsep}}\PYG{c+c1}{\PYGZsh{} extract values of table to matrix}
+\PYG{n}{X} \PYG{o}{=} \PYG{n}{tpc\PYGZus{}dists}\PYG{o}{.}\PYG{n}{values}
+
+\PYG{n}{X}\PYG{o}{.}\PYG{n}{shape} \PYG{c+c1}{\PYGZsh{} shows (\PYGZsh{}rows, \PYGZsh{}columns) of X}
+\end{sphinxVerbatim}
+}
+
+{
+
+\kern-\sphinxverbatimsmallskipamount\kern-\baselineskip
+\kern+\FrameHeightAdjust\kern-\fboxrule
+\vspace{\nbsphinxcodecellspacing}
+
+\sphinxsetup{VerbatimColor={named}{white}}
+\sphinxsetup{VerbatimBorderColor={named}{nbsphinx-code-border}}
+\begin{sphinxVerbatim}[commandchars=\\\{\}]
+\llap{\color{nbsphinxout}[14]:\,\hspace{\fboxrule}\hspace{\fboxsep}}(2012, 35)
+\end{sphinxVerbatim}
+}
+
+Now, \sphinxcode{\sphinxupquote{X}} is a 2012 \(\times\) 35 matrix where the rows represent the pieces and the columns (also called “features” or “dimensions”) represent the relative frequency of tonal pitch\sphinxhyphen{}classes.
+
+Thinking in 35 dimensions is quite difficult for most people. Without trying to imagine what this would look like, what can we already say about this data?
+
+Since each piece is a point in this 35\sphinxhyphen{}D space and pieces are represented as vectors, pieces that have similar tonal pitch\sphinxhyphen{}class distributions must be close in this space (whatever this looks like).
+
+What groups of pieces that cluster together? Maybe pieces of the same composer are similar to each other? Maybe pieces from a similar time? Maybe pieces for the same instruments?
+
+If we find clusters, these would still be in 35\sphinxhyphen{}D and thus difficult to interpret. Luckily, there are a range of so\sphinxhyphen{}called \sphinxstyleemphasis{dimensionality reduction} methods that transform the data into lower\sphinxhyphen{}dimensional spaces so that we actually can look at them.
+
+A very common dimensionality reduction method is \sphinxstylestrong{Principal Components Analysis (PCA)}.
+
+The basic idea of PCA is:
+\begin{itemize}
+\item {} 
+find dimensions in the data that maximize the variance in this direction
+
+\item {} 
+these dimensions have to be orthogonal to each other (mutually independent)
+
+\item {} 
+these dimensions are called the \sphinxstyleemphasis{principal components}
+
+\item {} 
+each principal component is associated with how much of the data variance it explains
+
+\end{itemize}
+
+{
+\sphinxsetup{VerbatimColor={named}{nbsphinx-code-bg}}
+\sphinxsetup{VerbatimBorderColor={named}{nbsphinx-code-border}}
+\begin{sphinxVerbatim}[commandchars=\\\{\}]
+\llap{\color{nbsphinxin}[15]:\,\hspace{\fboxrule}\hspace{\fboxsep}}\PYG{k+kn}{import} \PYG{n+nn}{numpy} \PYG{k}{as} \PYG{n+nn}{np} \PYG{c+c1}{\PYGZsh{} for numerical computations}
+\PYG{k+kn}{import} \PYG{n+nn}{sklearn}
+\PYG{k+kn}{from} \PYG{n+nn}{sklearn}\PYG{n+nn}{.}\PYG{n+nn}{decomposition} \PYG{k+kn}{import} \PYG{n}{PCA} \PYG{c+c1}{\PYGZsh{} for dimensionality reduction}
+
+\PYG{n}{pca} \PYG{o}{=} \PYG{n}{sklearn}\PYG{o}{.}\PYG{n}{decomposition}\PYG{o}{.}\PYG{n}{PCA}\PYG{p}{(}\PYG{n}{n\PYGZus{}components}\PYG{o}{=}\PYG{l+m+mi}{35}\PYG{p}{)} \PYG{c+c1}{\PYGZsh{} initialize PCA with 35 dimensions}
+\PYG{n}{pca}\PYG{o}{.}\PYG{n}{fit}\PYG{p}{(}\PYG{n}{X}\PYG{p}{)} \PYG{c+c1}{\PYGZsh{} apply it to the data}
+\PYG{n}{variance} \PYG{o}{=} \PYG{n}{pca}\PYG{o}{.}\PYG{n}{explained\PYGZus{}variance\PYGZus{}ratio\PYGZus{}} \PYG{c+c1}{\PYGZsh{} assign explained variance to variable}
+\end{sphinxVerbatim}
+}
+
+{
+\sphinxsetup{VerbatimColor={named}{nbsphinx-code-bg}}
+\sphinxsetup{VerbatimBorderColor={named}{nbsphinx-code-border}}
+\begin{sphinxVerbatim}[commandchars=\\\{\}]
+\llap{\color{nbsphinxin}[16]:\,\hspace{\fboxrule}\hspace{\fboxsep}}\PYG{n}{fig}\PYG{p}{,} \PYG{n}{ax} \PYG{o}{=} \PYG{n}{plt}\PYG{o}{.}\PYG{n}{subplots}\PYG{p}{(}\PYG{n}{figsize}\PYG{o}{=}\PYG{p}{(}\PYG{l+m+mi}{14}\PYG{p}{,}\PYG{l+m+mi}{5}\PYG{p}{)}\PYG{p}{)}
+\PYG{n}{x} \PYG{o}{=} \PYG{n}{np}\PYG{o}{.}\PYG{n}{arange}\PYG{p}{(}\PYG{l+m+mi}{35}\PYG{p}{)}
+\PYG{n}{ax}\PYG{o}{.}\PYG{n}{plot}\PYG{p}{(}\PYG{n}{x}\PYG{p}{,} \PYG{n}{variance}\PYG{p}{,} \PYG{n}{label}\PYG{o}{=}\PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{relative}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{,} \PYG{n}{marker}\PYG{o}{=}\PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{o}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{)}
+\PYG{n}{ax}\PYG{o}{.}\PYG{n}{plot}\PYG{p}{(}\PYG{n}{x}\PYG{p}{,} \PYG{n}{variance}\PYG{o}{.}\PYG{n}{cumsum}\PYG{p}{(}\PYG{p}{)}\PYG{p}{,} \PYG{n}{label}\PYG{o}{=}\PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{cumulative}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{,} \PYG{n}{marker}\PYG{o}{=}\PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{o}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{)}
+\PYG{n}{ax}\PYG{o}{.}\PYG{n}{set\PYGZus{}xlim}\PYG{p}{(}\PYG{o}{\PYGZhy{}}\PYG{l+m+mf}{0.5}\PYG{p}{,} \PYG{l+m+mi}{35}\PYG{p}{)}
+\PYG{n}{ax}\PYG{o}{.}\PYG{n}{set\PYGZus{}ylim}\PYG{p}{(}\PYG{o}{\PYGZhy{}}\PYG{l+m+mf}{0.1}\PYG{p}{,} \PYG{l+m+mf}{1.1}\PYG{p}{)}
+\PYG{n}{ax}\PYG{o}{.}\PYG{n}{set\PYGZus{}xlabel}\PYG{p}{(}\PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{Principal Components}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{)}
+\PYG{n}{ax}\PYG{o}{.}\PYG{n}{set\PYGZus{}ylabel}\PYG{p}{(}\PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{Explained variance}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{)}
+\PYG{n}{plt}\PYG{o}{.}\PYG{n}{xticks}\PYG{p}{(}\PYG{n}{np}\PYG{o}{.}\PYG{n}{arange}\PYG{p}{(}\PYG{n+nb}{len}\PYG{p}{(}\PYG{n}{lof}\PYG{p}{)}\PYG{p}{)}\PYG{p}{,} \PYG{n}{np}\PYG{o}{.}\PYG{n}{arange}\PYG{p}{(}\PYG{n+nb}{len}\PYG{p}{(}\PYG{n}{lof}\PYG{p}{)}\PYG{p}{)} \PYG{o}{+} \PYG{l+m+mi}{1}\PYG{p}{)} \PYG{c+c1}{\PYGZsh{} because Pyhon starts counting at 0}
+
+\PYG{n}{plt}\PYG{o}{.}\PYG{n}{legend}\PYG{p}{(}\PYG{n}{loc}\PYG{o}{=}\PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{center right}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{)}
+\PYG{n}{plt}\PYG{o}{.}\PYG{n}{tight\PYGZus{}layout}\PYG{p}{(}\PYG{p}{)}
+\PYG{c+c1}{\PYGZsh{} plt.savefig(\PYGZdq{}img/explained\PYGZus{}variance.png\PYGZdq{})}
+\PYG{c+c1}{\PYGZsh{} plt.show()}
+\end{sphinxVerbatim}
+}
+
+\hrule height -\fboxrule\relax
+\vspace{\nbsphinxcodecellspacing}
+
+\makeatletter\setbox\nbsphinxpromptbox\box\voidb@x\makeatother
+
+\begin{nbsphinxfancyoutput}
+
+\noindent\sphinxincludegraphics[width=983\sphinxpxdimen,height=335\sphinxpxdimen]{{05_data-driven_music_history_28_0}.png}
+
+\end{nbsphinxfancyoutput}
+
+{
+\sphinxsetup{VerbatimColor={named}{nbsphinx-code-bg}}
+\sphinxsetup{VerbatimBorderColor={named}{nbsphinx-code-border}}
+\begin{sphinxVerbatim}[commandchars=\\\{\}]
+\llap{\color{nbsphinxin}[17]:\,\hspace{\fboxrule}\hspace{\fboxsep}}\PYG{n}{variance}\PYG{p}{[}\PYG{p}{:}\PYG{l+m+mi}{5}\PYG{p}{]}
+\end{sphinxVerbatim}
+}
+
+{
+
+\kern-\sphinxverbatimsmallskipamount\kern-\baselineskip
+\kern+\FrameHeightAdjust\kern-\fboxrule
+\vspace{\nbsphinxcodecellspacing}
+
+\sphinxsetup{VerbatimColor={named}{white}}
+\sphinxsetup{VerbatimBorderColor={named}{nbsphinx-code-border}}
+\begin{sphinxVerbatim}[commandchars=\\\{\}]
+\llap{\color{nbsphinxout}[17]:\,\hspace{\fboxrule}\hspace{\fboxsep}}array([0.41144591, 0.23410347, 0.09063507, 0.07574242, 0.04436989])
+\end{sphinxVerbatim}
+}
+
+The first principal component explains 41.1\% of the variance of the data, the second explains 23.4\% and the third 9\%. Together, this amounts to 73.6\%.
+
+Almost three quarters of the variance in the dataset is retained by reducing the dimensionality from 35 to 3 dimensions (8.6\%)! If we reduce the data to two dimensions, we still can explain \(\approx\) 65\% of the variance.
+
+This is great because it means that we can look at the data in 2 or 3 dimensions without loosing too much information.
+
+
+\section{Recovering the line of fifths from data}
+\label{\detokenize{05_data-driven_music_history:Recovering-the-line-of-fifths-from-data}}
+{
+\sphinxsetup{VerbatimColor={named}{nbsphinx-code-bg}}
+\sphinxsetup{VerbatimBorderColor={named}{nbsphinx-code-border}}
+\begin{sphinxVerbatim}[commandchars=\\\{\}]
+\llap{\color{nbsphinxin}[18]:\,\hspace{\fboxrule}\hspace{\fboxsep}}\PYG{n}{pca3d} \PYG{o}{=} \PYG{n}{PCA}\PYG{p}{(}\PYG{n}{n\PYGZus{}components}\PYG{o}{=}\PYG{l+m+mi}{3}\PYG{p}{)}
+\PYG{n}{pca3d}\PYG{o}{.}\PYG{n}{fit}\PYG{p}{(}\PYG{n}{X}\PYG{p}{)}
+
+\PYG{n}{X\PYGZus{}} \PYG{o}{=} \PYG{n}{pca3d}\PYG{o}{.}\PYG{n}{transform}\PYG{p}{(}\PYG{n}{X}\PYG{p}{)}
+\PYG{n}{X\PYGZus{}}\PYG{o}{.}\PYG{n}{shape}
+\end{sphinxVerbatim}
+}
+
+{
+
+\kern-\sphinxverbatimsmallskipamount\kern-\baselineskip
+\kern+\FrameHeightAdjust\kern-\fboxrule
+\vspace{\nbsphinxcodecellspacing}
+
+\sphinxsetup{VerbatimColor={named}{white}}
+\sphinxsetup{VerbatimBorderColor={named}{nbsphinx-code-border}}
+\begin{sphinxVerbatim}[commandchars=\\\{\}]
+\llap{\color{nbsphinxout}[18]:\,\hspace{\fboxrule}\hspace{\fboxsep}}(2012, 3)
+\end{sphinxVerbatim}
+}
+
+{
+\sphinxsetup{VerbatimColor={named}{nbsphinx-code-bg}}
+\sphinxsetup{VerbatimBorderColor={named}{nbsphinx-code-border}}
+\begin{sphinxVerbatim}[commandchars=\\\{\}]
+\llap{\color{nbsphinxin}[20]:\,\hspace{\fboxrule}\hspace{\fboxsep}}\PYG{k+kn}{from} \PYG{n+nn}{mpl\PYGZus{}toolkits}\PYG{n+nn}{.}\PYG{n+nn}{mplot3d} \PYG{k+kn}{import} \PYG{n}{Axes3D}
+
+\PYG{n}{fig} \PYG{o}{=} \PYG{n}{plt}\PYG{o}{.}\PYG{n}{figure}\PYG{p}{(}\PYG{n}{figsize}\PYG{o}{=}\PYG{p}{(}\PYG{l+m+mi}{6}\PYG{p}{,}\PYG{l+m+mi}{6}\PYG{p}{)}\PYG{p}{)}
+
+\PYG{n}{ax} \PYG{o}{=} \PYG{n}{fig}\PYG{o}{.}\PYG{n}{add\PYGZus{}subplot}\PYG{p}{(}\PYG{l+m+mi}{111}\PYG{p}{,} \PYG{n}{projection}\PYG{o}{=}\PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{3d}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{)}
+\PYG{n}{ax}\PYG{o}{.}\PYG{n}{scatter}\PYG{p}{(}\PYG{n}{X\PYGZus{}}\PYG{p}{[}\PYG{p}{:}\PYG{p}{,}\PYG{l+m+mi}{0}\PYG{p}{]}\PYG{p}{,} \PYG{n}{X\PYGZus{}}\PYG{p}{[}\PYG{p}{:}\PYG{p}{,}\PYG{l+m+mi}{1}\PYG{p}{]}\PYG{p}{,} \PYG{n}{X\PYGZus{}}\PYG{p}{[}\PYG{p}{:}\PYG{p}{,}\PYG{l+m+mi}{2}\PYG{p}{]}\PYG{p}{,} \PYG{n}{s}\PYG{o}{=}\PYG{l+m+mi}{50}\PYG{p}{,} \PYG{n}{alpha}\PYG{o}{=}\PYG{o}{.}\PYG{l+m+mi}{25}\PYG{p}{)} \PYG{c+c1}{\PYGZsh{} c=cs,}
+\PYG{n}{ax}\PYG{o}{.}\PYG{n}{set\PYGZus{}xlabel}\PYG{p}{(}\PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{PC 1}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{,} \PYG{n}{labelpad}\PYG{o}{=}\PYG{l+m+mi}{30}\PYG{p}{)}
+\PYG{n}{ax}\PYG{o}{.}\PYG{n}{set\PYGZus{}ylabel}\PYG{p}{(}\PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{PC 2}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{,} \PYG{n}{labelpad}\PYG{o}{=}\PYG{l+m+mi}{30}\PYG{p}{)}
+\PYG{n}{ax}\PYG{o}{.}\PYG{n}{set\PYGZus{}zlabel}\PYG{p}{(}\PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{PC 3}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{,} \PYG{n}{labelpad}\PYG{o}{=}\PYG{l+m+mi}{30}\PYG{p}{)}
+
+\PYG{n}{plt}\PYG{o}{.}\PYG{n}{tight\PYGZus{}layout}\PYG{p}{(}\PYG{p}{)}
+\PYG{c+c1}{\PYGZsh{} plt.savefig(\PYGZdq{}img/3d\PYGZus{}scatter.png\PYGZdq{})}
+\PYG{c+c1}{\PYGZsh{} plt.show()}
+\end{sphinxVerbatim}
+}
+
+\hrule height -\fboxrule\relax
+\vspace{\nbsphinxcodecellspacing}
+
+\makeatletter\setbox\nbsphinxpromptbox\box\voidb@x\makeatother
+
+\begin{nbsphinxfancyoutput}
+
+\noindent\sphinxincludegraphics[width=488\sphinxpxdimen,height=426\sphinxpxdimen]{{05_data-driven_music_history_35_0}.png}
+
+\end{nbsphinxfancyoutput}
+
+Each piece in this plot is represented by a point in 3\sphinxhyphen{}D space. But remember that this location represents \textasciitilde{}75\% of the information contained in the full tonal pitch\sphinxhyphen{}class distribution. In 35\sphinxhyphen{}D space each dimension corresponded to the relative frequency of a tonal pitch\sphinxhyphen{}class in a piece.
+\begin{itemize}
+\item {} 
+What do these three dimensions signify?
+
+\item {} 
+How can we interpret them?
+
+\end{itemize}
+
+Fortunately, we can inspect them individually and try to interpret what we see.
+
+{
+\sphinxsetup{VerbatimColor={named}{nbsphinx-code-bg}}
+\sphinxsetup{VerbatimBorderColor={named}{nbsphinx-code-border}}
+\begin{sphinxVerbatim}[commandchars=\\\{\}]
+\llap{\color{nbsphinxin}[21]:\,\hspace{\fboxrule}\hspace{\fboxsep}}\PYG{k+kn}{from} \PYG{n+nn}{itertools} \PYG{k+kn}{import} \PYG{n}{combinations}
+
+\PYG{n}{fig}\PYG{p}{,} \PYG{n}{axes} \PYG{o}{=} \PYG{n}{plt}\PYG{o}{.}\PYG{n}{subplots}\PYG{p}{(}\PYG{l+m+mi}{1}\PYG{p}{,}\PYG{l+m+mi}{3}\PYG{p}{,} \PYG{n}{sharey}\PYG{o}{=}\PYG{k+kc}{True}\PYG{p}{,} \PYG{n}{figsize}\PYG{o}{=}\PYG{p}{(}\PYG{l+m+mi}{24}\PYG{p}{,}\PYG{l+m+mi}{8}\PYG{p}{)}\PYG{p}{)}
+
+\PYG{k}{for} \PYG{n}{k}\PYG{p}{,} \PYG{p}{(}\PYG{n}{i}\PYG{p}{,} \PYG{n}{j}\PYG{p}{)} \PYG{o+ow}{in} \PYG{n+nb}{enumerate}\PYG{p}{(}\PYG{n}{combinations}\PYG{p}{(}\PYG{n+nb}{range}\PYG{p}{(}\PYG{l+m+mi}{3}\PYG{p}{)}\PYG{p}{,} \PYG{l+m+mi}{2}\PYG{p}{)}\PYG{p}{)}\PYG{p}{:}
+
+    \PYG{n}{axes}\PYG{p}{[}\PYG{n}{k}\PYG{p}{]}\PYG{o}{.}\PYG{n}{scatter}\PYG{p}{(}\PYG{n}{X\PYGZus{}}\PYG{p}{[}\PYG{p}{:}\PYG{p}{,}\PYG{n}{i}\PYG{p}{]}\PYG{p}{,} \PYG{n}{X\PYGZus{}}\PYG{p}{[}\PYG{p}{:}\PYG{p}{,}\PYG{n}{j}\PYG{p}{]}\PYG{p}{,} \PYG{n}{s}\PYG{o}{=}\PYG{l+m+mi}{50}\PYG{p}{,} \PYG{n}{alpha}\PYG{o}{=}\PYG{o}{.}\PYG{l+m+mi}{25}\PYG{p}{,} \PYG{n}{edgecolor}\PYG{o}{=}\PYG{k+kc}{None}\PYG{p}{)}
+    \PYG{n}{axes}\PYG{p}{[}\PYG{n}{k}\PYG{p}{]}\PYG{o}{.}\PYG{n}{set\PYGZus{}xlabel}\PYG{p}{(}\PYG{l+s+sa}{f}\PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{PC }\PYG{l+s+si}{\PYGZob{}}\PYG{n}{i}\PYG{o}{+}\PYG{l+m+mi}{1}\PYG{l+s+si}{\PYGZcb{}}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{)}
+    \PYG{n}{axes}\PYG{p}{[}\PYG{n}{k}\PYG{p}{]}\PYG{o}{.}\PYG{n}{set\PYGZus{}ylabel}\PYG{p}{(}\PYG{l+s+sa}{f}\PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{PC }\PYG{l+s+si}{\PYGZob{}}\PYG{n}{j}\PYG{o}{+}\PYG{l+m+mi}{1}\PYG{l+s+si}{\PYGZcb{}}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{)}
+    \PYG{n}{axes}\PYG{p}{[}\PYG{n}{k}\PYG{p}{]}\PYG{o}{.}\PYG{n}{set\PYGZus{}aspect}\PYG{p}{(}\PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{equal}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{)}
+
+\PYG{n}{plt}\PYG{o}{.}\PYG{n}{tight\PYGZus{}layout}\PYG{p}{(}\PYG{p}{)}
+\PYG{c+c1}{\PYGZsh{} plt.savefig(\PYGZdq{}img/3d\PYGZus{}dimension\PYGZus{}pairs.png\PYGZdq{})}
+\PYG{c+c1}{\PYGZsh{} plt.show()}
+\end{sphinxVerbatim}
+}
+
+\hrule height -\fboxrule\relax
+\vspace{\nbsphinxcodecellspacing}
+
+\makeatletter\setbox\nbsphinxpromptbox\box\voidb@x\makeatother
+
+\begin{nbsphinxfancyoutput}
+
+\noindent\sphinxincludegraphics[width=1665\sphinxpxdimen,height=551\sphinxpxdimen]{{05_data-driven_music_history_37_0}.png}
+
+\end{nbsphinxfancyoutput}
+
+Clearly, looking at two principal components at a time shows that there is some latent structure in the data. How can we understand it better?
+
+One way to see whether the pieces are clustered together systematically be coloring them according to some criterion.
+
+As always, many different options are available. For the present purpose we will use the most simple summary of the piece: its most frequent note (which is the \sphinxstyleemphasis{mode} of its pitch\sphinxhyphen{}class distribution in statistical terms) and call this note its \sphinxstylestrong{tonal center}.
+
+This will also allow to map the tonal pitch\sphinxhyphen{}classes on the line of fifths to colors.
+
+{
+\sphinxsetup{VerbatimColor={named}{nbsphinx-code-bg}}
+\sphinxsetup{VerbatimBorderColor={named}{nbsphinx-code-border}}
+\begin{sphinxVerbatim}[commandchars=\\\{\}]
+\llap{\color{nbsphinxin}[22]:\,\hspace{\fboxrule}\hspace{\fboxsep}}\PYG{n}{tpc\PYGZus{}dists}\PYG{p}{[}\PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{tonal\PYGZus{}center}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{]} \PYG{o}{=} \PYG{n}{tpc\PYGZus{}dists}\PYG{o}{.}\PYG{n}{apply}\PYG{p}{(}\PYG{k}{lambda} \PYG{n}{piece}\PYG{p}{:} \PYG{n}{np}\PYG{o}{.}\PYG{n}{argmax}\PYG{p}{(}\PYG{n}{piece}\PYG{p}{[}\PYG{n}{lof}\PYG{p}{]}\PYG{o}{.}\PYG{n}{values}\PYG{p}{)} \PYG{o}{\PYGZhy{}} \PYG{l+m+mi}{15}\PYG{p}{,} \PYG{n}{axis}\PYG{o}{=}\PYG{l+m+mi}{1}\PYG{p}{)}
+\PYG{n}{tpc\PYGZus{}dists}\PYG{o}{.}\PYG{n}{sample}\PYG{p}{(}\PYG{l+m+mi}{10}\PYG{p}{)}
+\end{sphinxVerbatim}
+}
+
+{
+
+\kern-\sphinxverbatimsmallskipamount\kern-\baselineskip
+\kern+\FrameHeightAdjust\kern-\fboxrule
+\vspace{\nbsphinxcodecellspacing}
+
+\sphinxsetup{VerbatimColor={named}{white}}
+\sphinxsetup{VerbatimBorderColor={named}{nbsphinx-code-border}}
+\begin{sphinxVerbatim}[commandchars=\\\{\}]
+\llap{\color{nbsphinxout}[22]:\,\hspace{\fboxrule}\hspace{\fboxsep}}      Fbb  Cbb  Gbb  Dbb  Abb  Ebb  Bbb       Fb        Cb        Gb  \textbackslash{}
+1990  0.0  0.0  0.0  0.0  0.0  0.0  0.0  0.00000  0.002752  0.004587
+364   0.0  0.0  0.0  0.0  0.0  0.0  0.0  0.00000  0.001026  0.006028
+1857  0.0  0.0  0.0  0.0  0.0  0.0  0.0  0.00000  0.000000  0.000000
+1045  0.0  0.0  0.0  0.0  0.0  0.0  0.0  0.00000  0.000000  0.000000
+1246  0.0  0.0  0.0  0.0  0.0  0.0  0.0  0.01232  0.020534  0.008214
+214   0.0  0.0  0.0  0.0  0.0  0.0  0.0  0.00000  0.000000  0.000000
+167   0.0  0.0  0.0  0.0  0.0  0.0  0.0  0.00000  0.000000  0.000000
+570   0.0  0.0  0.0  0.0  0.0  0.0  0.0  0.00000  0.000000  0.000000
+586   0.0  0.0  0.0  0.0  0.0  0.0  0.0  0.00000  0.000000  0.000000
+684   0.0  0.0  0.0  0.0  0.0  0.0  0.0  0.00000  0.000000  0.000000
+
+            Db        Ab        Eb        Bb         F         C         G  \textbackslash{}
+1990  0.015138  0.088991  0.138991  0.086239  0.117431  0.145413  0.195413
+364   0.020521  0.037194  0.037450  0.016673  0.087598  0.158138  0.225728
+1857  0.000000  0.007370  0.031322  0.103639  0.081069  0.051589  0.111469
+1045  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.004902
+1246  0.131417  0.185832  0.320329  0.091376  0.030801  0.128337  0.070842
+214   0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.001401
+167   0.000000  0.000000  0.000000  0.000388  0.028306  0.053121  0.065142
+570   0.000000  0.000000  0.000000  0.004454  0.028211  0.006682  0.092799
+586   0.001506  0.006274  0.041405  0.095609  0.121957  0.107152  0.117440
+684   0.000000  0.000000  0.000000  0.001412  0.072034  0.159605  0.190678
+
+             D         A         E         B        F\#        C\#        G\#  \textbackslash{}
+1990  0.094037  0.015596  0.021560  0.055505  0.016972  0.001376  0.000000
+364   0.106579  0.106066  0.094395  0.078107  0.013467  0.002693  0.004232
+1857  0.177338  0.224781  0.087517  0.038692  0.030401  0.037310  0.017503
+1045  0.000000  0.000000  0.122549  0.166667  0.151961  0.117647  0.127451
+1246  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000
+214   0.022409  0.082633  0.122549  0.086835  0.147759  0.169468  0.156863
+167   0.099651  0.153160  0.186506  0.141528  0.075611  0.089182  0.072896
+570   0.171492  0.178916  0.163326  0.086117  0.112843  0.121752  0.029696
+586   0.169887  0.146048  0.090088  0.039649  0.021330  0.025094  0.016562
+684   0.176554  0.105932  0.149718  0.103107  0.026836  0.011299  0.002825
+
+            D\#        A\#        E\#        B\#       F\#\#       C\#\#  G\#\#  D\#\#  \textbackslash{}
+1990  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.0  0.0
+364   0.003335  0.000770  0.000000  0.000000  0.000000  0.000000  0.0  0.0
+1857  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.0  0.0
+1045  0.142157  0.102941  0.019608  0.019608  0.009804  0.014706  0.0  0.0
+1246  0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.0  0.0
+214   0.111345  0.032913  0.020308  0.037815  0.007003  0.000700  0.0  0.0
+167   0.031020  0.001939  0.000775  0.000775  0.000000  0.000000  0.0  0.0
+570   0.003712  0.000000  0.000000  0.000000  0.000000  0.000000  0.0  0.0
+586   0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.0  0.0
+684   0.000000  0.000000  0.000000  0.000000  0.000000  0.000000  0.0  0.0
+
+      A\#\#  E\#\#  B\#\#  tonal\_center
+1990  0.0  0.0  0.0             1
+364   0.0  0.0  0.0             1
+1857  0.0  0.0  0.0             3
+1045  0.0  0.0  0.0             5
+1246  0.0  0.0  0.0            -3
+214   0.0  0.0  0.0             7
+167   0.0  0.0  0.0             4
+570   0.0  0.0  0.0             3
+586   0.0  0.0  0.0             2
+684   0.0  0.0  0.0             1
+\end{sphinxVerbatim}
+}
+
+{
+\sphinxsetup{VerbatimColor={named}{nbsphinx-code-bg}}
+\sphinxsetup{VerbatimBorderColor={named}{nbsphinx-code-border}}
+\begin{sphinxVerbatim}[commandchars=\\\{\}]
+\llap{\color{nbsphinxin}[23]:\,\hspace{\fboxrule}\hspace{\fboxsep}}\PYG{k+kn}{from} \PYG{n+nn}{matplotlib} \PYG{k+kn}{import} \PYG{n}{cm}
+\PYG{k+kn}{from} \PYG{n+nn}{matplotlib}\PYG{n+nn}{.}\PYG{n+nn}{colors} \PYG{k+kn}{import} \PYG{n}{Normalize}
+
+\PYG{c+c1}{\PYGZsh{}normalize item number values to colormap}
+\PYG{n}{norm} \PYG{o}{=} \PYG{n}{Normalize}\PYG{p}{(}\PYG{n}{vmin}\PYG{o}{=}\PYG{o}{\PYGZhy{}}\PYG{l+m+mi}{15}\PYG{p}{,} \PYG{n}{vmax}\PYG{o}{=}\PYG{l+m+mi}{20}\PYG{p}{)}
+
+\PYG{c+c1}{\PYGZsh{} cs = [ cm.seismic(norm(c)) for c in data[\PYGZdq{}tonal\PYGZus{}center\PYGZdq{}]]}
+\PYG{n}{cs} \PYG{o}{=} \PYG{p}{[} \PYG{n}{cm}\PYG{o}{.}\PYG{n}{seismic}\PYG{p}{(}\PYG{n}{norm}\PYG{p}{(}\PYG{n}{c}\PYG{p}{)}\PYG{p}{)} \PYG{k}{for} \PYG{n}{c} \PYG{o+ow}{in} \PYG{n}{tpc\PYGZus{}dists}\PYG{p}{[}\PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{tonal\PYGZus{}center}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{]}\PYG{p}{]}
+\end{sphinxVerbatim}
+}
+
+{
+\sphinxsetup{VerbatimColor={named}{nbsphinx-code-bg}}
+\sphinxsetup{VerbatimBorderColor={named}{nbsphinx-code-border}}
+\begin{sphinxVerbatim}[commandchars=\\\{\}]
+\llap{\color{nbsphinxin}[24]:\,\hspace{\fboxrule}\hspace{\fboxsep}}\PYG{k+kn}{from} \PYG{n+nn}{itertools} \PYG{k+kn}{import} \PYG{n}{combinations}
+
+\PYG{n}{fig}\PYG{p}{,} \PYG{n}{axes} \PYG{o}{=} \PYG{n}{plt}\PYG{o}{.}\PYG{n}{subplots}\PYG{p}{(}\PYG{l+m+mi}{1}\PYG{p}{,}\PYG{l+m+mi}{3}\PYG{p}{,} \PYG{n}{sharey}\PYG{o}{=}\PYG{k+kc}{True}\PYG{p}{,} \PYG{n}{figsize}\PYG{o}{=}\PYG{p}{(}\PYG{l+m+mi}{24}\PYG{p}{,}\PYG{l+m+mi}{8}\PYG{p}{)}\PYG{p}{)}
+
+\PYG{k}{for} \PYG{n}{k}\PYG{p}{,} \PYG{p}{(}\PYG{n}{i}\PYG{p}{,} \PYG{n}{j}\PYG{p}{)} \PYG{o+ow}{in} \PYG{n+nb}{enumerate}\PYG{p}{(}\PYG{n}{combinations}\PYG{p}{(}\PYG{n+nb}{range}\PYG{p}{(}\PYG{l+m+mi}{3}\PYG{p}{)}\PYG{p}{,} \PYG{l+m+mi}{2}\PYG{p}{)}\PYG{p}{)}\PYG{p}{:}
+
+    \PYG{n}{axes}\PYG{p}{[}\PYG{n}{k}\PYG{p}{]}\PYG{o}{.}\PYG{n}{scatter}\PYG{p}{(}\PYG{n}{X\PYGZus{}}\PYG{p}{[}\PYG{p}{:}\PYG{p}{,}\PYG{n}{i}\PYG{p}{]}\PYG{p}{,} \PYG{n}{X\PYGZus{}}\PYG{p}{[}\PYG{p}{:}\PYG{p}{,}\PYG{n}{j}\PYG{p}{]}\PYG{p}{,} \PYG{n}{s}\PYG{o}{=}\PYG{l+m+mi}{50}\PYG{p}{,} \PYG{n}{c}\PYG{o}{=}\PYG{p}{[} \PYG{n}{np}\PYG{o}{.}\PYG{n}{abs}\PYG{p}{(}\PYG{n}{c}\PYG{p}{)} \PYG{k}{for} \PYG{n}{c} \PYG{o+ow}{in} \PYG{n}{cs}\PYG{p}{]}\PYG{p}{,} \PYG{n}{edgecolor}\PYG{o}{=}\PYG{k+kc}{None}\PYG{p}{)}
+    \PYG{n}{axes}\PYG{p}{[}\PYG{n}{k}\PYG{p}{]}\PYG{o}{.}\PYG{n}{set\PYGZus{}xlabel}\PYG{p}{(}\PYG{l+s+sa}{f}\PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{PC }\PYG{l+s+si}{\PYGZob{}}\PYG{n}{i}\PYG{l+s+si}{\PYGZcb{}}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{)}
+    \PYG{n}{axes}\PYG{p}{[}\PYG{n}{k}\PYG{p}{]}\PYG{o}{.}\PYG{n}{set\PYGZus{}ylabel}\PYG{p}{(}\PYG{l+s+sa}{f}\PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{PC }\PYG{l+s+si}{\PYGZob{}}\PYG{n}{j}\PYG{l+s+si}{\PYGZcb{}}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{)}
+    \PYG{n}{axes}\PYG{p}{[}\PYG{n}{k}\PYG{p}{]}\PYG{o}{.}\PYG{n}{set\PYGZus{}aspect}\PYG{p}{(}\PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{equal}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{)}
+
+\PYG{n}{plt}\PYG{o}{.}\PYG{n}{tight\PYGZus{}layout}\PYG{p}{(}\PYG{p}{)}
+\PYG{c+c1}{\PYGZsh{} plt.savefig(\PYGZdq{}img/3d\PYGZus{}dimension\PYGZus{}pairs\PYGZus{}colored.png\PYGZdq{})}
+\PYG{c+c1}{\PYGZsh{} plt.show()}
+\end{sphinxVerbatim}
+}
+
+\hrule height -\fboxrule\relax
+\vspace{\nbsphinxcodecellspacing}
+
+\makeatletter\setbox\nbsphinxpromptbox\box\voidb@x\makeatother
+
+\begin{nbsphinxfancyoutput}
+
+\noindent\sphinxincludegraphics[width=1665\sphinxpxdimen,height=551\sphinxpxdimen]{{05_data-driven_music_history_43_0}.png}
+
+\end{nbsphinxfancyoutput}
+
+
+\section{Historical development of tonality}
+\label{\detokenize{05_data-driven_music_history:Historical-development-of-tonality}}
+The line of fifths is an important underlying structure for pitch\sphinxhyphen{}class distributions in tonal compositions
+
+But we have treated all pieces in our dataset as synchronic and have not yet taken their historical location into account.
+
+Let’s assume the pitch\sphinxhyphen{}class content of a piece spreads on the line of fifths from F to A\(\sharp\). This means, its range on the line of fifths is \(10 - (-1) = 11\). The piece covers eleven consecutive fifths on the lof.
+
+We can generalize this calculation and write a function that calculates the range for each piece in the dataset.
+
+{
+\sphinxsetup{VerbatimColor={named}{nbsphinx-code-bg}}
+\sphinxsetup{VerbatimBorderColor={named}{nbsphinx-code-border}}
+\begin{sphinxVerbatim}[commandchars=\\\{\}]
+\llap{\color{nbsphinxin}[25]:\,\hspace{\fboxrule}\hspace{\fboxsep}}\PYG{k}{def} \PYG{n+nf}{lof\PYGZus{}range}\PYG{p}{(}\PYG{n}{piece}\PYG{p}{)}\PYG{p}{:}
+    \PYG{n}{l} \PYG{o}{=} \PYG{p}{[}\PYG{n}{i} \PYG{k}{for} \PYG{n}{i}\PYG{p}{,} \PYG{n}{v} \PYG{o+ow}{in} \PYG{n+nb}{enumerate}\PYG{p}{(}\PYG{n}{piece}\PYG{p}{)} \PYG{k}{if} \PYG{n}{v}\PYG{o}{!=}\PYG{l+m+mi}{0}\PYG{p}{]}
+    \PYG{k}{return} \PYG{n+nb}{max}\PYG{p}{(}\PYG{n}{l}\PYG{p}{)} \PYG{o}{\PYGZhy{}} \PYG{n+nb}{min}\PYG{p}{(}\PYG{n}{l}\PYG{p}{)}
+\end{sphinxVerbatim}
+}
+
+{
+\sphinxsetup{VerbatimColor={named}{nbsphinx-code-bg}}
+\sphinxsetup{VerbatimBorderColor={named}{nbsphinx-code-border}}
+\begin{sphinxVerbatim}[commandchars=\\\{\}]
+\llap{\color{nbsphinxin}[26]:\,\hspace{\fboxrule}\hspace{\fboxsep}}\PYG{n}{data}\PYG{p}{[}\PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{lof\PYGZus{}range}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{]} \PYG{o}{=} \PYG{n}{data}\PYG{o}{.}\PYG{n}{loc}\PYG{p}{[}\PYG{p}{:}\PYG{p}{,} \PYG{n}{lof}\PYG{p}{]}\PYG{o}{.}\PYG{n}{apply}\PYG{p}{(}\PYG{n}{lof\PYGZus{}range}\PYG{p}{,} \PYG{n}{axis}\PYG{o}{=}\PYG{l+m+mi}{1}\PYG{p}{)} \PYG{c+c1}{\PYGZsh{} create a new column}
+\PYG{n}{data}\PYG{o}{.}\PYG{n}{sample}\PYG{p}{(}\PYG{l+m+mi}{20}\PYG{p}{)}
+\end{sphinxVerbatim}
+}
+
+{
+
+\kern-\sphinxverbatimsmallskipamount\kern-\baselineskip
+\kern+\FrameHeightAdjust\kern-\fboxrule
+\vspace{\nbsphinxcodecellspacing}
+
+\sphinxsetup{VerbatimColor={named}{white}}
+\sphinxsetup{VerbatimBorderColor={named}{nbsphinx-code-border}}
+\begin{sphinxVerbatim}[commandchars=\\\{\}]
+\llap{\color{nbsphinxout}[26]:\,\hspace{\fboxrule}\hspace{\fboxsep}}         composer    composer\_first                             work\_group  \textbackslash{}
+992      Agricola         Alexander                   Missa Malheur me bat
+1772      Corelli         Arcangelo                        12 Trio Sonatas
+1199    Scarlatti          Domenico                                 Sonata
+1361     Scriabin         Alexander                               Préludes
+1490  Tchaikovsky             Pyotr                            The Seasons
+387        Chopin          Frédéric                               Préludes
+290         Alkan  Charles Valentin                               Préludes
+478          Bach  Johann Sebastian               Inventions and Sinfonias
+1947       Mozart  Wolfgang Amadeus                                Sonaten
+601      Couperin          François  Troisième livre de pièces de Clavecin
+974      Ockeghem            JeanDe                   Missa Fors Seulement
+1430     Victoria       TomasLuisde                                    NaN
+528        Brahms          Johannes                        8 Klavierstücke
+1765      Corelli         Arcangelo                        12 Trio Sonatas
+1300     Schumann             Clara                           Sechs Lieder
+204         Liszt             Franz               12 Transcendental Etudes
+1858        Grieg            Edvard                         Lyrical Pieces
+468          Bach  Johann Sebastian               Inventions and Sinfonias
+439      Victoria       TomasLuisde                                    NaN
+441         Alkan  Charles Valentin                                    NaN
+
+     work\_catalogue opus   no  mov                             title  \textbackslash{}
+992             NaN  NaN  NaN  NaN                            Gloria
+1772           Op.     4    1  3.0                               NaN
+1199              K   64  NaN  NaN                               NaN
+1361            Op.   13    2  NaN                        6 Preludes
+1490            Op.  37a    3  NaN           March: Song of the Lark
+387             Op.   28    6  NaN                       24 Préludes
+290             Op.   31   13  NaN                               NaN
+478             BWV  789  NaN  NaN                               NaN
+1947             KV  283    5  3.0                               NaN
+601             NaN  NaN   18  4.0                     Le petit rien
+974             NaN  NaN  NaN  NaN                             Kyrie
+1430            NaN  NaN  NaN  NaN                    Sepulto Domino
+528             Op.   76    2  NaN                         Capriccio
+1765           Op.     3    8  4.0                               NaN
+1300            Op.   23    5  NaN  Das ist der Tag, der klingen mag
+204              S.  139    3  NaN                           Paysage
+1858            Op.   65    6  NaN                       Bryllupsdag
+468             BWV  779  NaN  NaN                               NaN
+439             NaN  NaN  NaN  NaN         Aleph. Quomodo obscuratum
+441             Op.   25  NaN  NaN                          Alleluia
+
+      composition  publication source  display\_year  Fbb  Cbb  Gbb  Dbb  Abb  \textbackslash{}
+992           NaN       1506.0  ELVIS        1506.0    0    0    0    0    0
+1772          NaN       1694.0  CCARH        1694.0    0    0    0    0    0
+1199          NaN          NaN     MS        1721.0    0    0    0    0    0
+1361       1895.0          NaN   DCML        1895.0    0    0    0    0    0
+1490       1876.0          NaN     MS        1876.0    0    0    0    0    0
+387        1839.0          NaN     MS        1839.0    0    0    0    0    0
+290        1846.0          NaN     MS        1846.0    0    0    0    0    1
+478           NaN       1723.0     MS        1723.0    0    0    0    0    0
+1947       1774.0          NaN  CCARH        1774.0    0    0    0    0    0
+601           NaN       1722.0     MS        1722.0    0    0    0    0    0
+974        1497.0          NaN  ELVIS        1497.0    0    0    0    0    0
+1430          NaN       1585.0  ELVIS        1585.0    0    0    0    0    0
+528        1878.0          NaN   DCML        1878.0    0    0    0    0    0
+1765          NaN       1689.0  CCARH        1689.0    0    0    0    0    0
+1300       1853.0          NaN   OSLC        1853.0    0    0    0    0    0
+204        1851.0          NaN     MS        1851.0    0    0    0    0    0
+1858       1896.0       1897.0   DCML        1896.0    0    0    0    0    0
+468           NaN       1723.0     MS        1723.0    0    0    0    0    0
+439           NaN       1585.0  ELVIS        1585.0    0    0    0    0    0
+441           NaN       1844.0     MS        1844.0    0    0    0    0    0
+
+      Ebb  Bbb  Fb   Cb   Gb   Db   Ab   Eb   Bb    F    C    G    D    A  \textbackslash{}
+992     0    0   0    0    0    0    0    0    3  218  386  327  274  333
+1772    0    0   0    0    0    0    0    0    0   28   50   47   27   39
+1199    0    0   0    0    0    0    0    0   30   62   32   60   89  129
+1361    0    0   0    0    0    0    0    8    6   78   61   27   40   91
+1490    0    0   0    0    3    0    0   24  107   17   48  126  158   71
+387     0    0   0    0    0    0    0    0    0    1   20   41   80    4
+290     7   22   3  108  201  263  110   69  228  150   10    1   20    6
+478     0    0   0    0    0    0    0    0    0    1   23   82   77  103
+1947    0    0   0    0    0    0    0    8    9   29  183  367  317  245
+601     0    0   0    0    0    0    0    0    0    0    1   29   55   56
+974     0    0   0    0    0    0    0    0   25  131  124  106  158  167
+1430    0    0   0    0   13    1    0   19   56   30   47   79  108   49
+528     0    0   0    0    1    2    2    8   18   44   53  147  144  116
+1765    0    0   0    0    0    0    0    0    5  163  156  207  106  170
+1300    0    0   0    0    0    0    0    0    0    0    0   29  126  174
+204    10    2   3   10   36  109   66   72  168  519  243  124  173  279
+1858    0    0   0   12   52   68  236  256  104  112  243  415  582  555
+468     0    0   0    0    0    0    0   17   68   98   92   77   82   81
+439     0    0   0    0    0   11   33    0    2   82  117   82   73  195
+441     0    0   0    0    0  140    0   17  231  420  309  269  166  552
+
+        E    B   F\#   C\#  G\#  D\#  A\#  E\#  B\#  F\#\#  C\#\#  G\#\#  D\#\#  A\#\#  E\#\#  \textbackslash{}
+992   351  298    5    3   7   0   0   0   0    0    0    0    0    0    0
+1772   53   38    4    2   7   2   0   0   0    0    0    0    0    0    0
+1199   72   17    3   22  11   0   0   0   0    0    0    0    0    0    0
+1361   70   46    4    3  12  16   4   0   0    0    0    0    0    0    0
+1490    1    4   52   13   2   0   0   0   0    0    0    0    0    0    0
+387    28  106   66   33   3   0  22   2   0    1    0    0    0    0    0
+290     1    0    0    0   0   0   0   0   0    0    0    0    0    0    0
+478    98  101  109   68  23  13   8   5   0    0    0    0    0    0    0
+1947  184  269  199   70  33  32  38   1   0    0    0    0    0    0    0
+601    51   28   44   29   4   0   0   0   0    0    0    0    0    0    0
+974   104   60    0    5   1   0   0   0   0    0    0    0    0    0    0
+1430   15    9    0    0   0   0   0   0   0    0    0    0    0    0    0
+528   197  233  307  203  88  83  95  50   9    0    2    0    1    0    0
+1765  195  127   12    0   6   7   0   0   0    0    0    0    0    0    0
+1300   93   79  106   58  30   7   2   0   0    0    0    0    0    0    0
+204   115   42   13   20  14   1   0   0   0    0    0    0    0    0    0
+1858  254  346  315  110  33  13   7   1   1    0    0    0    0    0    0
+468    56   17    3    7   0   0   0   0   0    0    0    0    0    0    0
+439   149   77   15    0   0   0   0   0   0    0    0    0    0    0    0
+441   235   82   35    9  35  13   0   0   0    0    0    0    0    0    0
+
+      B\#\#  lof\_range
+992     0         10
+1772    0         10
+1199    0         10
+1361    0         13
+1490    0         14
+387     0         14
+290     0         15
+478     0         12
+1947    0         14
+601     0          8
+974     0         10
+1430    0         11
+528     0         22
+1765    0         11
+1300    0          9
+204     0         19
+1858    0         19
+468     0         10
+439     0         11
+441     0         14
+\end{sphinxVerbatim}
+}
+
+This allows us now to take the \sphinxcode{\sphinxupquote{display\_year}} (composition or publication) and \sphinxcode{\sphinxupquote{lof\_range}} (range on the line of fifths) features to observe historical changes.
+
+{
+\sphinxsetup{VerbatimColor={named}{nbsphinx-code-bg}}
+\sphinxsetup{VerbatimBorderColor={named}{nbsphinx-code-border}}
+\begin{sphinxVerbatim}[commandchars=\\\{\}]
+\llap{\color{nbsphinxin}[30]:\,\hspace{\fboxrule}\hspace{\fboxsep}}\PYG{n}{fig}\PYG{p}{,} \PYG{n}{ax} \PYG{o}{=} \PYG{n}{plt}\PYG{o}{.}\PYG{n}{subplots}\PYG{p}{(}\PYG{n}{figsize}\PYG{o}{=}\PYG{p}{(}\PYG{l+m+mi}{18}\PYG{p}{,}\PYG{l+m+mi}{9}\PYG{p}{)}\PYG{p}{)}
+\PYG{n}{ax}\PYG{o}{.}\PYG{n}{scatter}\PYG{p}{(}\PYG{n}{data}\PYG{p}{[}\PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{display\PYGZus{}year}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{]}\PYG{o}{.}\PYG{n}{values}\PYG{p}{,} \PYG{n}{data}\PYG{p}{[}\PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{lof\PYGZus{}range}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{]}\PYG{o}{.}\PYG{n}{values}\PYG{p}{,} \PYG{n}{alpha}\PYG{o}{=}\PYG{o}{.}\PYG{l+m+mi}{5}\PYG{p}{,} \PYG{n}{s}\PYG{o}{=}\PYG{l+m+mi}{50}\PYG{p}{)}
+\PYG{n}{ax}\PYG{o}{.}\PYG{n}{set\PYGZus{}ylim}\PYG{p}{(}\PYG{l+m+mi}{0}\PYG{p}{,}\PYG{l+m+mi}{35}\PYG{p}{)}
+\PYG{n}{ax}\PYG{o}{.}\PYG{n}{set\PYGZus{}xlabel}\PYG{p}{(}\PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{year}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{)}
+\PYG{n}{ax}\PYG{o}{.}\PYG{n}{set\PYGZus{}ylabel}\PYG{p}{(}\PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{line\PYGZhy{}of\PYGZhy{}fifths range}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{)}\PYG{p}{;}
+\PYG{c+c1}{\PYGZsh{} plt.savefig(\PYGZdq{}img/hist\PYGZus{}scatter.png\PYGZdq{});}
+\end{sphinxVerbatim}
+}
+
+\hrule height -\fboxrule\relax
+\vspace{\nbsphinxcodecellspacing}
+
+\makeatletter\setbox\nbsphinxpromptbox\box\voidb@x\makeatother
+
+\begin{nbsphinxfancyoutput}
+
+\noindent\sphinxincludegraphics[width=1197\sphinxpxdimen,height=594\sphinxpxdimen]{{05_data-driven_music_history_51_0}.png}
+
+\end{nbsphinxfancyoutput}
+
+We could try to fit a line to this data to see whether there is a trend (kinda obvious here).
+
+{
+\sphinxsetup{VerbatimColor={named}{nbsphinx-code-bg}}
+\sphinxsetup{VerbatimBorderColor={named}{nbsphinx-code-border}}
+\begin{sphinxVerbatim}[commandchars=\\\{\}]
+\llap{\color{nbsphinxin}[32]:\,\hspace{\fboxrule}\hspace{\fboxsep}}\PYG{n}{g} \PYG{o}{=} \PYG{n}{sns}\PYG{o}{.}\PYG{n}{lmplot}\PYG{p}{(}
+    \PYG{n}{data}\PYG{o}{=}\PYG{n}{data}\PYG{p}{,}
+    \PYG{n}{x}\PYG{o}{=}\PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{display\PYGZus{}year}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{,}
+    \PYG{n}{y}\PYG{o}{=}\PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{lof\PYGZus{}range}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{,}
+    \PYG{n}{line\PYGZus{}kws}\PYG{o}{=}\PYG{p}{\PYGZob{}}\PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{color}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{:}\PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{k}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{\PYGZcb{}}\PYG{p}{,}
+    \PYG{n}{scatter\PYGZus{}kws}\PYG{o}{=}\PYG{p}{\PYGZob{}}\PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{alpha}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{:}\PYG{o}{.}\PYG{l+m+mi}{5}\PYG{p}{\PYGZcb{}}\PYG{p}{,}
+\PYG{c+c1}{\PYGZsh{}     lowess=True,}
+    \PYG{n}{height}\PYG{o}{=}\PYG{l+m+mi}{8}\PYG{p}{,}
+    \PYG{n}{aspect}\PYG{o}{=}\PYG{l+m+mi}{2}
+\PYG{p}{)}\PYG{p}{;}
+\PYG{c+c1}{\PYGZsh{} g.savefig(\PYGZdq{}img/hist\PYGZus{}scatter\PYGZus{}line.png\PYGZdq{});}
+\end{sphinxVerbatim}
+}
+
+\hrule height -\fboxrule\relax
+\vspace{\nbsphinxcodecellspacing}
+
+\makeatletter\setbox\nbsphinxpromptbox\box\voidb@x\makeatother
+
+\begin{nbsphinxfancyoutput}
+
+\noindent\sphinxincludegraphics[width=1127\sphinxpxdimen,height=551\sphinxpxdimen]{{05_data-driven_music_history_53_0}.png}
+
+\end{nbsphinxfancyoutput}
+
+But actually, this is not the best idea. Why should any historical process be linear? More complex models might make more sense.
+
+A more versatile technique is \sphinxstyleemphasis{Locally Weighted Scatterplot Smoothing} (LOWESS) that locally fits a polynomial. Using this method, we see that a non\sphinxhyphen{}linear process is displayed.
+
+{
+\sphinxsetup{VerbatimColor={named}{nbsphinx-code-bg}}
+\sphinxsetup{VerbatimBorderColor={named}{nbsphinx-code-border}}
+\begin{sphinxVerbatim}[commandchars=\\\{\}]
+\llap{\color{nbsphinxin}[34]:\,\hspace{\fboxrule}\hspace{\fboxsep}}\PYG{k+kn}{from} \PYG{n+nn}{statsmodels}\PYG{n+nn}{.}\PYG{n+nn}{nonparametric}\PYG{n+nn}{.}\PYG{n+nn}{smoothers\PYGZus{}lowess} \PYG{k+kn}{import} \PYG{n}{lowess}
+
+\PYG{n}{x} \PYG{o}{=} \PYG{n}{data}\PYG{o}{.}\PYG{n}{display\PYGZus{}year}
+\PYG{n}{y} \PYG{o}{=} \PYG{n}{data}\PYG{o}{.}\PYG{n}{lof\PYGZus{}range}
+\PYG{n}{l} \PYG{o}{=} \PYG{n}{lowess}\PYG{p}{(}\PYG{n}{y}\PYG{p}{,}\PYG{n}{x}\PYG{p}{)}
+
+\PYG{n}{fig}\PYG{p}{,} \PYG{n}{ax} \PYG{o}{=} \PYG{n}{plt}\PYG{o}{.}\PYG{n}{subplots}\PYG{p}{(}\PYG{n}{figsize}\PYG{o}{=}\PYG{p}{(}\PYG{l+m+mi}{15}\PYG{p}{,}\PYG{l+m+mi}{10}\PYG{p}{)}\PYG{p}{)}
+
+\PYG{n}{ax}\PYG{o}{.}\PYG{n}{scatter}\PYG{p}{(}\PYG{n}{x}\PYG{p}{,}\PYG{n}{y}\PYG{p}{,} \PYG{n}{s}\PYG{o}{=}\PYG{l+m+mi}{50}\PYG{p}{)}
+\PYG{n}{ax}\PYG{o}{.}\PYG{n}{plot}\PYG{p}{(}\PYG{n}{l}\PYG{p}{[}\PYG{p}{:}\PYG{p}{,}\PYG{l+m+mi}{0}\PYG{p}{]}\PYG{p}{,} \PYG{n}{l}\PYG{p}{[}\PYG{p}{:}\PYG{p}{,}\PYG{l+m+mi}{1}\PYG{p}{]}\PYG{p}{,} \PYG{n}{c}\PYG{o}{=}\PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{k}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{)}
+\PYG{n}{ax}\PYG{o}{.}\PYG{n}{set\PYGZus{}ylabel}\PYG{p}{(}\PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{line\PYGZhy{}of\PYGZhy{}fifths range}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{)}\PYG{p}{;}
+\PYG{c+c1}{\PYGZsh{} plt.savefig(\PYGZdq{}img/hist\PYGZus{}scatter\PYGZus{}lowess.png\PYGZdq{})}
+\PYG{c+c1}{\PYGZsh{} plt.show()}
+\end{sphinxVerbatim}
+}
+
+\hrule height -\fboxrule\relax
+\vspace{\nbsphinxcodecellspacing}
+
+\makeatletter\setbox\nbsphinxpromptbox\box\voidb@x\makeatother
+
+\begin{nbsphinxfancyoutput}
+
+\noindent\sphinxincludegraphics[width=1009\sphinxpxdimen,height=625\sphinxpxdimen]{{05_data-driven_music_history_56_0}.png}
+
+\end{nbsphinxfancyoutput}
+
+
+\section{If there is time: some more advanced stuff}
+\label{\detokenize{05_data-driven_music_history:If-there-is-time:-some-more-advanced-stuff}}
+{
+\sphinxsetup{VerbatimColor={named}{nbsphinx-code-bg}}
+\sphinxsetup{VerbatimBorderColor={named}{nbsphinx-code-border}}
+\begin{sphinxVerbatim}[commandchars=\\\{\}]
+\llap{\color{nbsphinxin}[35]:\,\hspace{\fboxrule}\hspace{\fboxsep}}\PYG{n}{B} \PYG{o}{=} \PYG{l+m+mi}{200}
+\PYG{n}{delta} \PYG{o}{=} \PYG{l+m+mi}{1}\PYG{o}{/}\PYG{l+m+mi}{10}
+
+\PYG{n}{fig}\PYG{p}{,} \PYG{n}{ax} \PYG{o}{=} \PYG{n}{plt}\PYG{o}{.}\PYG{n}{subplots}\PYG{p}{(}\PYG{n}{figsize}\PYG{o}{=}\PYG{p}{(}\PYG{l+m+mi}{16}\PYG{p}{,}\PYG{l+m+mi}{9}\PYG{p}{)}\PYG{p}{)}
+
+\PYG{n}{x} \PYG{o}{=} \PYG{n}{data}\PYG{o}{.}\PYG{n}{display\PYGZus{}year}
+\PYG{n}{y} \PYG{o}{=} \PYG{n}{data}\PYG{o}{.}\PYG{n}{lof\PYGZus{}range}
+\PYG{n}{l} \PYG{o}{=} \PYG{n}{lowess}\PYG{p}{(}\PYG{n}{y}\PYG{p}{,}\PYG{n}{x}\PYG{p}{,} \PYG{n}{frac}\PYG{o}{=}\PYG{n}{delta}\PYG{p}{)}
+
+\PYG{n}{ax}\PYG{o}{.}\PYG{n}{scatter}\PYG{p}{(}\PYG{n}{x}\PYG{p}{,}\PYG{n}{y}\PYG{p}{,} \PYG{n}{s}\PYG{o}{=}\PYG{l+m+mi}{50}\PYG{p}{,} \PYG{n}{alpha}\PYG{o}{=}\PYG{o}{.}\PYG{l+m+mi}{25}\PYG{p}{)}
+
+\PYG{k}{for} \PYG{n}{\PYGZus{}} \PYG{o+ow}{in} \PYG{n+nb}{range}\PYG{p}{(}\PYG{n}{B}\PYG{p}{)}\PYG{p}{:}
+    \PYG{n}{resampled} \PYG{o}{=} \PYG{n}{data}\PYG{o}{.}\PYG{n}{sample}\PYG{p}{(}\PYG{n}{data}\PYG{o}{.}\PYG{n}{shape}\PYG{p}{[}\PYG{l+m+mi}{0}\PYG{p}{]}\PYG{p}{,} \PYG{n}{replace}\PYG{o}{=}\PYG{k+kc}{True}\PYG{p}{)}
+
+    \PYG{n}{xx} \PYG{o}{=} \PYG{n}{resampled}\PYG{o}{.}\PYG{n}{display\PYGZus{}year}
+    \PYG{n}{yy} \PYG{o}{=} \PYG{n}{resampled}\PYG{o}{.}\PYG{n}{lof\PYGZus{}range}
+    \PYG{n}{ll} \PYG{o}{=} \PYG{n}{lowess}\PYG{p}{(}\PYG{n}{yy}\PYG{p}{,}\PYG{n}{xx}\PYG{p}{,} \PYG{n}{frac}\PYG{o}{=}\PYG{n}{delta}\PYG{p}{)}
+
+    \PYG{n}{ax}\PYG{o}{.}\PYG{n}{plot}\PYG{p}{(}\PYG{n}{ll}\PYG{p}{[}\PYG{p}{:}\PYG{p}{,}\PYG{l+m+mi}{0}\PYG{p}{]}\PYG{p}{,} \PYG{n}{ll}\PYG{p}{[}\PYG{p}{:}\PYG{p}{,}\PYG{l+m+mi}{1}\PYG{p}{]}\PYG{p}{,} \PYG{n}{c}\PYG{o}{=}\PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{k}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{,} \PYG{n}{alpha}\PYG{o}{=}\PYG{o}{.}\PYG{l+m+mi}{05}\PYG{p}{)}
+
+\PYG{n}{ax}\PYG{o}{.}\PYG{n}{plot}\PYG{p}{(}\PYG{n}{l}\PYG{p}{[}\PYG{p}{:}\PYG{p}{,}\PYG{l+m+mi}{0}\PYG{p}{]}\PYG{p}{,} \PYG{n}{l}\PYG{p}{[}\PYG{p}{:}\PYG{p}{,}\PYG{l+m+mi}{1}\PYG{p}{]}\PYG{p}{,} \PYG{n}{c}\PYG{o}{=}\PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{yellow}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{)}
+
+\PYG{c+c1}{\PYGZsh{}\PYGZsh{} REGIONS}
+\PYG{k+kn}{from} \PYG{n+nn}{matplotlib}\PYG{n+nn}{.}\PYG{n+nn}{patches} \PYG{k+kn}{import} \PYG{n}{Rectangle}
+
+\PYG{n}{text\PYGZus{}kws} \PYG{o}{=} \PYG{p}{\PYGZob{}}
+    \PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{rotation}\PYG{l+s+s2}{\PYGZdq{}} \PYG{p}{:} \PYG{l+m+mi}{90}\PYG{p}{,}
+    \PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{fontsize}\PYG{l+s+s2}{\PYGZdq{}} \PYG{p}{:} \PYG{l+m+mi}{16}\PYG{p}{,}
+    \PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{bbox}\PYG{l+s+s2}{\PYGZdq{}} \PYG{p}{:} \PYG{n+nb}{dict}\PYG{p}{(}
+        \PYG{n}{facecolor}\PYG{o}{=}\PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{white}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{,}
+        \PYG{n}{boxstyle}\PYG{o}{=}\PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{round}\PYG{l+s+s2}{\PYGZdq{}}
+    \PYG{p}{)}\PYG{p}{,}
+    \PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{horizontalalignment}\PYG{l+s+s2}{\PYGZdq{}} \PYG{p}{:} \PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{center}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{,}
+    \PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{verticalalignment}\PYG{l+s+s2}{\PYGZdq{}} \PYG{p}{:} \PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{center}\PYG{l+s+s2}{\PYGZdq{}}
+\PYG{p}{\PYGZcb{}}
+
+\PYG{n}{rect\PYGZus{}props} \PYG{o}{=} \PYG{p}{\PYGZob{}}
+    \PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{width}\PYG{l+s+s2}{\PYGZdq{}} \PYG{p}{:} \PYG{l+m+mi}{40}\PYG{p}{,}
+    \PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{zorder}\PYG{l+s+s2}{\PYGZdq{}} \PYG{p}{:} \PYG{o}{\PYGZhy{}}\PYG{l+m+mi}{1}\PYG{p}{,}
+    \PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{alpha}\PYG{l+s+s2}{\PYGZdq{}} \PYG{p}{:} \PYG{l+m+mf}{1.}
+\PYG{p}{\PYGZcb{}}
+
+\PYG{n}{stylecolors} \PYG{o}{=} \PYG{n}{plt}\PYG{o}{.}\PYG{n}{rcParams}\PYG{p}{[}\PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{axes.prop\PYGZus{}cycle}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{]}\PYG{o}{.}\PYG{n}{by\PYGZus{}key}\PYG{p}{(}\PYG{p}{)}\PYG{p}{[}\PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{color}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{]}
+
+\PYG{n}{ax}\PYG{o}{.}\PYG{n}{text}\PYG{p}{(}\PYG{l+m+mi}{1980}\PYG{p}{,} \PYG{l+m+mi}{3}\PYG{p}{,} \PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{diatonic}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{,} \PYG{o}{*}\PYG{o}{*}\PYG{n}{text\PYGZus{}kws}\PYG{p}{)}
+\PYG{n}{ax}\PYG{o}{.}\PYG{n}{axhline}\PYG{p}{(}\PYG{l+m+mf}{6.5}\PYG{p}{,} \PYG{n}{c}\PYG{o}{=}\PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{gray}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{,} \PYG{n}{linestyle}\PYG{o}{=}\PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{\PYGZhy{}\PYGZhy{}}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{,} \PYG{n}{lw}\PYG{o}{=}\PYG{l+m+mi}{2}\PYG{p}{)} \PYG{c+c1}{\PYGZsh{} dia / chrom.}
+\PYG{n}{ax}\PYG{o}{.}\PYG{n}{add\PYGZus{}patch}\PYG{p}{(}\PYG{n}{Rectangle}\PYG{p}{(}\PYG{p}{(}\PYG{l+m+mi}{1960}\PYG{p}{,}\PYG{l+m+mi}{0}\PYG{p}{)}\PYG{p}{,} \PYG{n}{height}\PYG{o}{=}\PYG{l+m+mf}{6.5}\PYG{p}{,} \PYG{n}{facecolor}\PYG{o}{=}\PYG{n}{stylecolors}\PYG{p}{[}\PYG{l+m+mi}{0}\PYG{p}{]}\PYG{p}{,} \PYG{o}{*}\PYG{o}{*}\PYG{n}{rect\PYGZus{}props}\PYG{p}{)}\PYG{p}{)}
+
+\PYG{n}{ax}\PYG{o}{.}\PYG{n}{text}\PYG{p}{(}\PYG{l+m+mi}{1980}\PYG{p}{,} \PYG{l+m+mf}{9.5}\PYG{p}{,} \PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{chromatic}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{,} \PYG{o}{*}\PYG{o}{*}\PYG{n}{text\PYGZus{}kws}\PYG{p}{)}
+\PYG{n}{ax}\PYG{o}{.}\PYG{n}{axhline}\PYG{p}{(}\PYG{l+m+mf}{12.5}\PYG{p}{,} \PYG{n}{c}\PYG{o}{=}\PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{gray}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{,} \PYG{n}{linestyle}\PYG{o}{=}\PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{\PYGZhy{}\PYGZhy{}}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{,} \PYG{n}{lw}\PYG{o}{=}\PYG{l+m+mi}{2}\PYG{p}{)} \PYG{c+c1}{\PYGZsh{} chr. / enh.}
+\PYG{n}{ax}\PYG{o}{.}\PYG{n}{add\PYGZus{}patch}\PYG{p}{(}\PYG{n}{Rectangle}\PYG{p}{(}\PYG{p}{(}\PYG{l+m+mi}{1960}\PYG{p}{,}\PYG{l+m+mf}{6.5}\PYG{p}{)}\PYG{p}{,} \PYG{n}{height}\PYG{o}{=}\PYG{l+m+mi}{6}\PYG{p}{,} \PYG{n}{facecolor}\PYG{o}{=}\PYG{n}{stylecolors}\PYG{p}{[}\PYG{l+m+mi}{1}\PYG{p}{]}\PYG{p}{,} \PYG{o}{*}\PYG{o}{*}\PYG{n}{rect\PYGZus{}props}\PYG{p}{)}\PYG{p}{)}
+
+\PYG{n}{ax}\PYG{o}{.}\PYG{n}{text}\PYG{p}{(}\PYG{l+m+mi}{1980}\PYG{p}{,} \PYG{l+m+mf}{23.5}\PYG{p}{,} \PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{enharmonic}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{,} \PYG{o}{*}\PYG{o}{*}\PYG{n}{text\PYGZus{}kws}\PYG{p}{)}
+\PYG{n}{ax}\PYG{o}{.}\PYG{n}{add\PYGZus{}patch}\PYG{p}{(}\PYG{n}{Rectangle}\PYG{p}{(}\PYG{p}{(}\PYG{l+m+mi}{1960}\PYG{p}{,}\PYG{l+m+mf}{12.5}\PYG{p}{)}\PYG{p}{,} \PYG{n}{height}\PYG{o}{=}\PYG{l+m+mi}{28}\PYG{p}{,} \PYG{n}{facecolor}\PYG{o}{=}\PYG{n}{stylecolors}\PYG{p}{[}\PYG{l+m+mi}{2}\PYG{p}{]}\PYG{p}{,} \PYG{o}{*}\PYG{o}{*}\PYG{n}{rect\PYGZus{}props}\PYG{p}{)}\PYG{p}{)}
+
+\PYG{n}{ax}\PYG{o}{.}\PYG{n}{set\PYGZus{}ylim}\PYG{p}{(}\PYG{l+m+mi}{0}\PYG{p}{,}\PYG{l+m+mi}{35}\PYG{p}{)}
+\PYG{n}{ax}\PYG{o}{.}\PYG{n}{set\PYGZus{}xlim}\PYG{p}{(}\PYG{l+m+mi}{1300}\PYG{p}{,}\PYG{l+m+mi}{2000}\PYG{p}{)}
+
+\PYG{n}{ax}\PYG{o}{.}\PYG{n}{set\PYGZus{}ylabel}\PYG{p}{(}\PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{line\PYGZhy{}of\PYGZhy{}fifths range}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{)}\PYG{p}{;}
+\PYG{c+c1}{\PYGZsh{} plt.savefig(\PYGZdq{}img/final.png\PYGZdq{}, dpi=300)}
+\PYG{c+c1}{\PYGZsh{} plt.show()}
+\end{sphinxVerbatim}
+}
+
+\hrule height -\fboxrule\relax
+\vspace{\nbsphinxcodecellspacing}
+
+\makeatletter\setbox\nbsphinxpromptbox\box\voidb@x\makeatother
+
+\begin{nbsphinxfancyoutput}
+
+\noindent\sphinxincludegraphics[width=1093\sphinxpxdimen,height=572\sphinxpxdimen]{{05_data-driven_music_history_58_0}.png}
+
+\end{nbsphinxfancyoutput}
+
+Usung bootstrap sampling we achieve an estimation of the local varience of the data and thus of the diversity in the note usage of the musical pieces.
+
+We also can distinguish three regions in terms of line\sphinxhyphen{}of\sphinxhyphen{}fifth range: diatonic, chromatic, and enharmonic.
+
+Grouping the data together in these three regions, we see a clear change from diatonic and chromatic to chromatic and enharmonic pieces over the course of history.
+
+{
+\sphinxsetup{VerbatimColor={named}{nbsphinx-code-bg}}
+\sphinxsetup{VerbatimBorderColor={named}{nbsphinx-code-border}}
+\begin{sphinxVerbatim}[commandchars=\\\{\}]
+\llap{\color{nbsphinxin}[36]:\,\hspace{\fboxrule}\hspace{\fboxsep}}\PYG{n}{epochs} \PYG{o}{=} \PYG{p}{\PYGZob{}}
+    \PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{Renaissance}\PYG{l+s+s2}{\PYGZdq{}} \PYG{p}{:} \PYG{p}{[}\PYG{l+m+mi}{1300}\PYG{p}{,} \PYG{l+m+mi}{1549}\PYG{p}{]}\PYG{p}{,}
+    \PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{Baroque}\PYG{l+s+s2}{\PYGZdq{}} \PYG{p}{:} \PYG{p}{[}\PYG{l+m+mi}{1550}\PYG{p}{,} \PYG{l+m+mi}{1649}\PYG{p}{]}\PYG{p}{,}
+    \PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{Classical}\PYG{l+s+s2}{\PYGZdq{}} \PYG{p}{:} \PYG{p}{[}\PYG{l+m+mi}{1650}\PYG{p}{,} \PYG{l+m+mi}{1749}\PYG{p}{]}\PYG{p}{,}
+    \PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{Early}\PYG{l+s+se}{\PYGZbs{}n}\PYG{l+s+s2}{Romantic}\PYG{l+s+s2}{\PYGZdq{}} \PYG{p}{:} \PYG{p}{[}\PYG{l+m+mi}{1750}\PYG{p}{,} \PYG{l+m+mi}{1819}\PYG{p}{]}\PYG{p}{,}
+    \PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{Late Romantic/}\PYG{l+s+se}{\PYGZbs{}n}\PYG{l+s+s2}{Modern}\PYG{l+s+s2}{\PYGZdq{}} \PYG{p}{:} \PYG{p}{[}\PYG{l+m+mi}{1820}\PYG{p}{,} \PYG{l+m+mi}{2000}\PYG{p}{]}
+\PYG{p}{\PYGZcb{}}
+
+\PYG{n}{strata} \PYG{o}{=} \PYG{p}{[}
+    \PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{diatonic}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{,}
+    \PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{chromatic}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{,}
+    \PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{enharmonic}\PYG{l+s+s2}{\PYGZdq{}}
+\PYG{p}{]}
+
+\PYG{n}{widths} \PYG{o}{=} \PYG{n}{data}\PYG{p}{[}\PYG{p}{[}\PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{display\PYGZus{}year}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{,} \PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{lof\PYGZus{}range}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{]}\PYG{p}{]}\PYG{o}{.}\PYG{n}{sort\PYGZus{}values}\PYG{p}{(}\PYG{n}{by}\PYG{o}{=}\PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{display\PYGZus{}year}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{)}\PYG{o}{.}\PYG{n}{reset\PYGZus{}index}\PYG{p}{(}\PYG{n}{drop}\PYG{o}{=}\PYG{k+kc}{True}\PYG{p}{)}
+
+\PYG{n}{df} \PYG{o}{=} \PYG{n}{pd}\PYG{o}{.}\PYG{n}{concat}\PYG{p}{(}
+    \PYG{p}{[}
+        \PYG{n}{widths}\PYG{p}{[}
+            \PYG{p}{(}\PYG{n}{widths}\PYG{o}{.}\PYG{n}{display\PYGZus{}year} \PYG{o}{\PYGZgt{}}\PYG{o}{=} \PYG{n}{epochs}\PYG{p}{[}\PYG{n}{e}\PYG{p}{]}\PYG{p}{[}\PYG{l+m+mi}{0}\PYG{p}{]}\PYG{p}{)} \PYG{o}{\PYGZam{}} \PYG{p}{(}\PYG{n}{widths}\PYG{o}{.}\PYG{n}{display\PYGZus{}year} \PYG{o}{\PYGZlt{}}\PYG{o}{=} \PYG{n}{epochs}\PYG{p}{[}\PYG{n}{e}\PYG{p}{]}\PYG{p}{[}\PYG{l+m+mi}{1}\PYG{p}{]}\PYG{p}{)}
+        \PYG{p}{]}\PYG{p}{[}\PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{lof\PYGZus{}range}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{]}\PYG{o}{.}\PYG{n}{value\PYGZus{}counts}\PYG{p}{(}\PYG{n}{normalize}\PYG{o}{=}\PYG{k+kc}{True}\PYG{p}{)}\PYG{o}{.}\PYG{n}{sort\PYGZus{}index}\PYG{p}{(}\PYG{p}{)}\PYG{o}{.}\PYG{n}{groupby}\PYG{p}{(}
+            \PYG{k}{lambda} \PYG{n}{x}\PYG{p}{:} \PYG{n}{strata}\PYG{p}{[}\PYG{l+m+mi}{0}\PYG{p}{]} \PYG{k}{if} \PYG{n}{x} \PYG{o}{\PYGZlt{}}\PYG{o}{=} \PYG{l+m+mi}{6} \PYG{k}{else} \PYG{n}{strata}\PYG{p}{[}\PYG{l+m+mi}{1}\PYG{p}{]} \PYG{k}{if} \PYG{n}{x} \PYG{o}{\PYGZlt{}}\PYG{o}{=} \PYG{l+m+mi}{12} \PYG{k}{else} \PYG{n}{strata}\PYG{p}{[}\PYG{l+m+mi}{2}\PYG{p}{]}
+        \PYG{p}{)}\PYG{o}{.}\PYG{n}{sum}\PYG{p}{(}\PYG{p}{)} \PYG{k}{for} \PYG{n}{e} \PYG{o+ow}{in} \PYG{n}{epochs}
+    \PYG{p}{]}\PYG{p}{,} \PYG{n}{axis}\PYG{o}{=}\PYG{l+m+mi}{1}\PYG{p}{,} \PYG{n}{sort}\PYG{o}{=}\PYG{k+kc}{True}
+\PYG{p}{)}
+
+\PYG{n}{df}\PYG{o}{.}\PYG{n}{columns} \PYG{o}{=} \PYG{n}{epochs}\PYG{o}{.}\PYG{n}{keys}\PYG{p}{(}\PYG{p}{)}
+\PYG{n}{df} \PYG{o}{=} \PYG{n}{df}\PYG{o}{.}\PYG{n}{reindex}\PYG{p}{(}\PYG{n}{strata}\PYG{p}{)}
+\PYG{n}{df}\PYG{o}{.}\PYG{n}{T}\PYG{o}{.}\PYG{n}{plot}\PYG{p}{(}\PYG{n}{kind}\PYG{o}{=}\PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{bar}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{,} \PYG{n}{stacked}\PYG{o}{=}\PYG{k+kc}{True}\PYG{p}{,} \PYG{n}{figsize}\PYG{o}{=}\PYG{p}{(}\PYG{l+m+mi}{12}\PYG{p}{,}\PYG{l+m+mi}{5}\PYG{p}{)}\PYG{p}{)}
+\PYG{c+c1}{\PYGZsh{} plt.title(\PYGZdq{}Epochs\PYGZdq{})}
+\PYG{n}{plt}\PYG{o}{.}\PYG{n}{legend}\PYG{p}{(}\PYG{n}{bbox\PYGZus{}to\PYGZus{}anchor}\PYG{o}{=}\PYG{p}{(}\PYG{l+m+mf}{1.3}\PYG{p}{,}\PYG{l+m+mf}{0.75}\PYG{p}{)}\PYG{p}{)}
+\PYG{n}{plt}\PYG{o}{.}\PYG{n}{gca}\PYG{p}{(}\PYG{p}{)}\PYG{o}{.}\PYG{n}{set\PYGZus{}xticklabels}\PYG{p}{(}\PYG{n}{epochs}\PYG{o}{.}\PYG{n}{keys}\PYG{p}{(}\PYG{p}{)}\PYG{p}{,} \PYG{n}{rotation}\PYG{o}{=}\PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{horizontal}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{)}
+\PYG{n}{plt}\PYG{o}{.}\PYG{n}{tight\PYGZus{}layout}\PYG{p}{(}\PYG{p}{)}
+\PYG{c+c1}{\PYGZsh{} plt.savefig(\PYGZdq{}img/epochs\PYGZus{}regions.png\PYGZdq{})}
+\PYG{n}{plt}\PYG{o}{.}\PYG{n}{show}\PYG{p}{(}\PYG{p}{)}
+\end{sphinxVerbatim}
+}
+
+\hrule height -\fboxrule\relax
+\vspace{\nbsphinxcodecellspacing}
+
+\makeatletter\setbox\nbsphinxpromptbox\box\voidb@x\makeatother
+
+\begin{nbsphinxfancyoutput}
+
+\noindent\sphinxincludegraphics[width=784\sphinxpxdimen,height=335\sphinxpxdimen]{{05_data-driven_music_history_61_0}.png}
+
+\end{nbsphinxfancyoutput}
+\begin{itemize}
+\item {} 
+Renaissance: largest diatonic proportion overall but mostly chromatic
+
+\item {} 
+Baroque: alost completely chromatic
+
+\item {} 
+Classical: enharmonic proportion increases \sphinxhyphen{}\textgreater{} more distant modulations
+
+\item {} 
+This trend continues through the Romantic eras
+
+\end{itemize}
+
+
+\section{Summary}
+\label{\detokenize{05_data-driven_music_history:Summary}}\begin{enumerate}
+\sphinxsetlistlabels{\arabic}{enumi}{enumii}{}{.}%
+\item {} 
+We have analyzed a very specific aspect of Western classical music.
+
+\item {} 
+We have used a large(\sphinxhyphen{}ish) corpus to answer our research question.
+
+\item {} 
+We have operationalized musical pieces as vectors that represent distributions of tonal pitch\sphinxhyphen{}classes.
+
+\item {} 
+We have used the dimensionality\sphinxhyphen{}reduction technique Principal Component Analysis (PCA) in order to visually inspect the distribution of the data in 2 and 3 dimensions.
+
+\item {} 
+We have used music\sphinxhyphen{}theoretical domain knowledge to find meaningful structure in this space.
+
+\item {} 
+We have seen that pieces are largely distributed along the line of fifths.
+
+\item {} 
+We have used Locally Weighted Scatterplot Smoothing (LOWESS) to estimate the variance in this historical process.
+
+\item {} 
+We have seen that, historically, composers explore ever larger regions on this line and that the variance also increases.
+
+\end{enumerate}
+
+{
+\sphinxsetup{VerbatimColor={named}{nbsphinx-code-bg}}
+\sphinxsetup{VerbatimBorderColor={named}{nbsphinx-code-border}}
+\begin{sphinxVerbatim}[commandchars=\\\{\}]
+\llap{\color{nbsphinxin}[ ]:\,\hspace{\fboxrule}\hspace{\fboxsep}}
+\end{sphinxVerbatim}
+}
 
 
 

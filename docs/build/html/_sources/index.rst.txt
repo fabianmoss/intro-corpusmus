@@ -61,6 +61,10 @@ about quantitative approaches to musicology.
    02_introduction.rst
    03_melody_I.ipynb 
    04_jazz_solos.ipynb
+   exercises/01_exercise.ipynb
+   04_renaissance_cadences.rst
+   exercises/02_exercise.ipynb
+   05_data-driven_music_history.ipynb
 
 .. Indices and tables
 .. ==================

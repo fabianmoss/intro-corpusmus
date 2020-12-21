@@ -16,3 +16,30 @@
 \contentsline {section}{\numberline {4.2}Pitch vs loudness}{46}{section.4.2}%
 \contentsline {section}{\numberline {4.3}The “rain cloud” of Jazz solos}{47}{section.4.3}%
 \contentsline {section}{\numberline {4.4}Comparing performers}{48}{section.4.4}%
+\contentsline {chapter}{\numberline {5}Exercise I: The Annotated Beethoven Corpus and the \sphinxstyleliteralintitle {\sphinxupquote {pandas}} library}{51}{chapter.5}%
+\contentsline {chapter}{\numberline {6}Renaissance Cadences}{55}{chapter.6}%
+\contentsline {chapter}{\numberline {7}Exercise II: Lost Voices Cadence Data}{57}{chapter.7}%
+\contentsline {section}{\numberline {7.1}Get the Cadence Metadata from github as DataFrame}{57}{section.7.1}%
+\contentsline {subsection}{\numberline {7.1.1}Get “Counts” for Values of a Particular Column}{59}{subsection.7.1.1}%
+\contentsline {subsection}{\numberline {7.1.2}Sort Data According to Selected Columns}{59}{subsection.7.1.2}%
+\contentsline {section}{\numberline {7.2}Grouping}{60}{section.7.2}%
+\contentsline {subsection}{\numberline {7.2.1}Visualizations}{69}{subsection.7.2.1}%
+\contentsline {section}{\numberline {7.3}Synoptic View of Cadence Types, Tones, and Last Cadence of Piece}{69}{section.7.3}%
+\contentsline {section}{\numberline {7.4}Histograms by Cadence Type}{69}{section.7.4}%
+\contentsline {section}{\numberline {7.5}Histogram of Types by Tone}{70}{section.7.5}%
+\contentsline {subsection}{\numberline {7.5.1}Filter Cadences by Final Tones}{70}{subsection.7.5.1}%
+\contentsline {subsection}{\numberline {7.5.2}Chart for Filtered Cadence Tones}{71}{subsection.7.5.2}%
+\contentsline {subsection}{\numberline {7.5.3}Filter Cadences by Kind}{72}{subsection.7.5.3}%
+\contentsline {subsection}{\numberline {7.5.4}Chart for Filtered Cadence Kinds}{73}{subsection.7.5.4}%
+\contentsline {subsection}{\numberline {7.5.5}Filter by Last Cadence of Piece}{73}{subsection.7.5.5}%
+\contentsline {subsection}{\numberline {7.5.6}Diagram by Last Cadence of Piece}{74}{subsection.7.5.6}%
+\contentsline {subsection}{\numberline {7.5.7}Distribution of Cadence Tones, Types and Finals for Corpus}{74}{subsection.7.5.7}%
+\contentsline {chapter}{\numberline {8}Data\sphinxhyphen {}Driven Music History}{75}{chapter.8}%
+\contentsline {section}{\numberline {8.1}Research Questions}{75}{section.8.1}%
+\contentsline {section}{\numberline {8.2}A bit of theory}{75}{section.8.2}%
+\contentsline {section}{\numberline {8.3}Data}{76}{section.8.3}%
+\contentsline {subsection}{\numberline {8.3.1}A (kind of) large corpus: TP3C}{76}{subsection.8.3.1}%
+\contentsline {section}{\numberline {8.4}Recovering the line of fifths from data}{83}{section.8.4}%
+\contentsline {section}{\numberline {8.5}Historical development of tonality}{87}{section.8.5}%
+\contentsline {section}{\numberline {8.6}If there is time: some more advanced stuff}{92}{section.8.6}%
+\contentsline {section}{\numberline {8.7}Summary}{95}{section.8.7}%

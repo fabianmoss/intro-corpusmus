@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7380 64-bit) (preloaded format=pdflatex 2020.4.27)  25 NOV 2020 18:23
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7380 64-bit) (preloaded format=pdflatex 2020.4.27)  21 DEC 2020 12:30
 entering extended mode
 **./introductiontomusicalcorpusstudies.tex
 (introductiontomusicalcorpusstudies.tex
@@ -755,28 +755,28 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 {C:/Users/fabianmoss/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}] [2
 
 
-] (introductiontomusicalcorpusstudies.toc)
-\tf@toc=\write6
-\openout6 = `introductiontomusicalcorpusstudies.toc'.
-
- [1
-
-] [2
-
-]
-<pattern.jpg, id=115, 6022.5pt x 4015.0pt>
-LaTeX Font Info:    Trying to load font information for T1+pcr on input line 23
-4.
+] (introductiontomusicalcorpusstudies.toc
+LaTeX Font Info:    Trying to load font information for T1+pcr on input line 19
+.
 
 ("C:\Users\fabianmoss\AppData\Local\Programs\MiKTeX 2.9\tex/latex/psnfss\t1pcr.
 fd"
 File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
-)
+) [1
+
+])
+\tf@toc=\write6
+\openout6 = `introductiontomusicalcorpusstudies.toc'.
+
+ [2]
+<pattern.jpg, id=251, 6022.5pt x 4015.0pt>
 File: pattern.jpg Graphic file (type jpg)
 <use pattern.jpg>
 Package pdftex.def Info: pattern.jpg  used on input line 234.
 (pdftex.def)             Requested size: 469.75502pt x 313.11974pt.
- [1 <./pattern.jpg>] [2
+ [1
+
+ <./pattern.jpg>] [2
 
 ]
 Chapter 1.
@@ -784,7 +784,7 @@ Chapter 1.
 
 ]
 Chapter 2.
-<abstract_bg.jpg, id=163, 2601.72pt x 1734.48pt>
+<abstract_bg.jpg, id=299, 2601.72pt x 1734.48pt>
 File: abstract_bg.jpg Graphic file (type jpg)
 <use abstract_bg.jpg>
 Package pdftex.def Info: abstract_bg.jpg  used on input line 499.
@@ -809,24 +809,24 @@ LaTeX Font Info:    Font shape `T1/phv/b/it' in size <14.4> not available
  [9
 
 ] [10] [11]
-<03_melody_I_21_0.png, id=196, 544.1931pt x 301.00455pt>
+<03_melody_I_21_0.png, id=331, 544.1931pt x 301.00455pt>
 File: 03_melody_I_21_0.png Graphic file (type png)
 <use 03_melody_I_21_0.png>
 Package pdftex.def Info: 03_melody_I_21_0.png  used on input line 721.
 (pdftex.def)             Requested size: 469.75732pt x 259.83255pt.
  [12 <./03_melody_I_21_0.png>]
-<03_melody_I_34_0.png, id=204, 544.1931pt x 206.6922pt>
+<03_melody_I_34_0.png, id=339, 544.1931pt x 206.6922pt>
 File: 03_melody_I_34_0.png Graphic file (type png)
 <use 03_melody_I_34_0.png>
 Package pdftex.def Info: 03_melody_I_34_0.png  used on input line 858.
 (pdftex.def)             Requested size: 469.75732pt x 178.42043pt.
  [13 <./03_melody_I_34_0.png>]
-<03_melody_I_47_0.png, id=210, 544.1931pt x 206.6922pt>
+<03_melody_I_47_0.png, id=345, 544.1931pt x 206.6922pt>
 File: 03_melody_I_47_0.png Graphic file (type png)
 <use 03_melody_I_47_0.png>
 Package pdftex.def Info: 03_melody_I_47_0.png  used on input line 955.
 (pdftex.def)             Requested size: 469.75732pt x 178.42043pt.
-<03_melody_I_48_0.png, id=211, 544.1931pt x 206.6922pt>
+<03_melody_I_48_0.png, id=346, 544.1931pt x 206.6922pt>
 File: 03_melody_I_48_0.png Graphic file (type png)
 <use 03_melody_I_48_0.png>
 Package pdftex.def Info: 03_melody_I_48_0.png  used on input line 974.
@@ -836,13 +836,13 @@ Underfull \vbox (badness 6016) detected at line 976
  []
 
 [14 <./03_melody_I_47_0.png>]
-<midi_pitch.png, id=217, 2175.12625pt x 466.74374pt>
+<midi_pitch.png, id=352, 2175.12625pt x 466.74374pt>
 File: midi_pitch.png Graphic file (type png)
 <use midi_pitch.png>
 Package pdftex.def Info: midi_pitch.png  used on input line 1010.
 (pdftex.def)             Requested size: 469.734pt x 100.79663pt.
  [15 <./03_melody_I_48_0.png> <./midi_pitch.png>]
-<03_melody_I_60_0.png, id=225, 373.395pt x 251.94125pt>
+<03_melody_I_60_0.png, id=360, 373.395pt x 251.94125pt>
 File: 03_melody_I_60_0.png Graphic file (type png)
 <use 03_melody_I_60_0.png>
 Package pdftex.def Info: 03_melody_I_60_0.png  used on input line 1112.
@@ -852,25 +852,25 @@ Underfull \vbox (badness 7722) detected at line 1114
  []
 
 [16]
-<03_melody_I_62_0.png, id=230, 576.1525pt x 421.575pt>
+<03_melody_I_62_0.png, id=365, 576.1525pt x 421.575pt>
 File: 03_melody_I_62_0.png Graphic file (type png)
 <use 03_melody_I_62_0.png>
 Package pdftex.def Info: 03_melody_I_62_0.png  used on input line 1139.
 (pdftex.def)             Requested size: 432.13089pt x 316.18689pt.
  [17 <./03_melody_I_60_0.png> <./03_melody_I_62_0.png>]
-<03_melody_I_66_0.png, id=237, 375.4025pt x 251.94125pt>
+<03_melody_I_66_0.png, id=372, 375.4025pt x 251.94125pt>
 File: 03_melody_I_66_0.png Graphic file (type png)
 <use 03_melody_I_66_0.png>
 Package pdftex.def Info: 03_melody_I_66_0.png  used on input line 1211.
 (pdftex.def)             Requested size: 281.56836pt x 188.95546pt.
  [18 <./03_melody_I_66_0.png>] [19]
-<03_melody_I_73_0.png, id=247, 855.195pt x 566.115pt>
+<03_melody_I_73_0.png, id=382, 855.195pt x 566.115pt>
 File: 03_melody_I_73_0.png Graphic file (type png)
 <use 03_melody_I_73_0.png>
 Package pdftex.def Info: 03_melody_I_73_0.png  used on input line 1346.
 (pdftex.def)             Requested size: 469.7454pt x 310.9582pt.
  [20 <./03_melody_I_73_0.png>]
-<03_melody_I_76_0.png, id=253, 544.1931pt x 206.6922pt>
+<03_melody_I_76_0.png, id=388, 544.1931pt x 206.6922pt>
 File: 03_melody_I_76_0.png Graphic file (type png)
 <use 03_melody_I_76_0.png>
 Package pdftex.def Info: 03_melody_I_76_0.png  used on input line 1385.
@@ -882,7 +882,7 @@ LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 1
 .fd"
 File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
 ) [21 <./03_melody_I_76_0.png>] [22]
-<03_melody_I_86_0.png, id=264, 606.265pt x 565.11125pt>
+<03_melody_I_86_0.png, id=399, 606.265pt x 565.11125pt>
 File: 03_melody_I_86_0.png Graphic file (type png)
 <use 03_melody_I_86_0.png>
 Package pdftex.def Info: 03_melody_I_86_0.png  used on input line 1611.
@@ -892,7 +892,7 @@ Underfull \vbox (badness 10000) detected at line 1613
  []
 
 [23] [24 <./03_melody_I_86_0.png>] [25] [26]
-<03_melody_I_95_0.png, id=282, 606.265pt x 567.11874pt>
+<03_melody_I_95_0.png, id=417, 606.265pt x 567.11874pt>
 File: 03_melody_I_95_0.png Graphic file (type png)
 <use 03_melody_I_95_0.png>
 Package pdftex.def Info: 03_melody_I_95_0.png  used on input line 1856.
@@ -963,7 +963,7 @@ Overfull \vbox (1.28165pt too high) detected at line 2685
  []
 
 [39] [40]
-<04_jazz_solos_34_0.png, id=348, 1172.38pt x 532.99126pt>
+<04_jazz_solos_34_0.png, id=483, 1172.38pt x 532.99126pt>
 File: 04_jazz_solos_34_0.png Graphic file (type png)
 <use 04_jazz_solos_34_0.png>
 Package pdftex.def Info: 04_jazz_solos_34_0.png  used on input line 2831.
@@ -973,7 +973,7 @@ Underfull \vbox (badness 10000) detected at line 2833
  []
 
 [41] [42 <./04_jazz_solos_34_0.png>]
-<04_jazz_solos_37_0.png, id=358, 1177.39874pt x 314.17375pt>
+<04_jazz_solos_37_0.png, id=493, 1177.39874pt x 314.17375pt>
 File: 04_jazz_solos_37_0.png Graphic file (type png)
 <use 04_jazz_solos_37_0.png>
 Package pdftex.def Info: 04_jazz_solos_37_0.png  used on input line 2908.
@@ -983,24 +983,24 @@ Overfull \vbox (2.72578pt too high) detected at line 3100
  []
 
 [44]
-<04_jazz_solos_42_0.png, id=368, 842.14626pt x 553.06625pt>
+<04_jazz_solos_42_0.png, id=503, 842.14626pt x 553.06625pt>
 File: 04_jazz_solos_42_0.png Graphic file (type png)
 <use 04_jazz_solos_42_0.png>
 Package pdftex.def Info: 04_jazz_solos_42_0.png  used on input line 3110.
 (pdftex.def)             Requested size: 469.76112pt x 308.5082pt.
  [45 <./04_jazz_solos_42_0.png>]
-<04_jazz_solos_48_0.png, id=375, 412.54124pt x 282.05376pt>
+<04_jazz_solos_48_0.png, id=510, 412.54124pt x 282.05376pt>
 File: 04_jazz_solos_48_0.png Graphic file (type png)
 <use 04_jazz_solos_48_0.png>
 Package pdftex.def Info: 04_jazz_solos_48_0.png  used on input line 3193.
 (pdftex.def)             Requested size: 309.40517pt x 211.53978pt.
  [46 <./04_jazz_solos_48_0.png>]
-<04_jazz_solos_50_0.png, id=381, 403.5075pt x 282.05376pt>
+<04_jazz_solos_50_0.png, id=516, 403.5075pt x 282.05376pt>
 File: 04_jazz_solos_50_0.png Graphic file (type png)
 <use 04_jazz_solos_50_0.png>
 Package pdftex.def Info: 04_jazz_solos_50_0.png  used on input line 3216.
 (pdftex.def)             Requested size: 302.62988pt x 211.53978pt.
-<04_jazz_solos_54_0.png, id=382, 985.6825pt x 555.07375pt>
+<04_jazz_solos_54_0.png, id=517, 985.6825pt x 555.07375pt>
 File: 04_jazz_solos_54_0.png Graphic file (type png)
 <use 04_jazz_solos_54_0.png>
 Package pdftex.def Info: 04_jazz_solos_54_0.png  used on input line 3251.
@@ -1010,52 +1010,246 @@ Underfull \vbox (badness 10000) detected at line 3253
  []
 
 [47 <./04_jazz_solos_50_0.png>] [48 <./04_jazz_solos_54_0.png>]
-<04_jazz_solos_60_0.png, id=393, 627.34375pt x 609.27625pt>
+<04_jazz_solos_60_0.png, id=528, 627.34375pt x 609.27625pt>
 File: 04_jazz_solos_60_0.png Graphic file (type png)
 <use 04_jazz_solos_60_0.png>
 Package pdftex.def Info: 04_jazz_solos_60_0.png  used on input line 3313.
 (pdftex.def)             Requested size: 469.76956pt x 456.2402pt.
- [49 <./04_jazz_solos_60_0.png>] (introductiontomusicalcorpusstudies.ind)
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 3343.
- [50]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 3343.
+ [49 <./04_jazz_solos_60_0.png>] [50]
+Chapter 5.
+[51
+
+] [52] [53] [54]
+Chapter 6.
+[55
+
+] [56
+
+]
+Chapter 7.
+[57]
+Underfull \vbox (badness 10000) detected at line 3755
+ []
+
+
+Overfull \vbox (2.68169pt too high) detected at line 3755
+ []
+
+[58] [59] [60]
+Underfull \vbox (badness 10000) detected at line 4278
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 4278
+ []
+
+[61]
+Underfull \vbox (badness 10000) detected at line 4278
+ []
+
+
+Overfull \vbox (2.68169pt too high) detected at line 4278
+ []
+
+[62]
+Underfull \vbox (badness 10000) detected at line 4278
+ []
+
+
+Overfull \vbox (2.68169pt too high) detected at line 4278
+ []
+
+[63]
+Underfull \vbox (badness 10000) detected at line 4278
+ []
+
+
+Overfull \vbox (2.68169pt too high) detected at line 4278
+ []
+
+[64]
+Underfull \vbox (badness 10000) detected at line 4278
+ []
+
+
+Overfull \vbox (2.68169pt too high) detected at line 4278
+ []
+
+[65]
+Underfull \vbox (badness 10000) detected at line 4278
+ []
+
+
+Overfull \vbox (2.68169pt too high) detected at line 4278
+ []
+
+[66] [67] [68] [69] [70] [71] [72] [73] [74]
+Chapter 8.
+[75
+
+] [76]
+<05_data-driven_music_history_12_0.png, id=668, 1023.825pt x 392.46625pt>
+File: 05_data-driven_music_history_12_0.png Graphic file (type png)
+<use 05_data-driven_music_history_12_0.png>
+Package pdftex.def Info: 05_data-driven_music_history_12_0.png  used on input l
+ine 5122.
+(pdftex.def)             Requested size: 469.74667pt x 180.06955pt.
+ [77 <./05_data-driven_music_history_12_0.png>] [78]
+<05_data-driven_music_history_16_1.png, id=678, 1315.91624pt x 647.41875pt>
+File: 05_data-driven_music_history_16_1.png Graphic file (type png)
+<use 05_data-driven_music_history_16_1.png>
+Package pdftex.def Info: 05_data-driven_music_history_16_1.png  used on input l
+ine 5278.
+(pdftex.def)             Requested size: 469.7538pt x 231.11456pt.
+ [79 <./05_data-driven_music_history_16_1.png>]
+Underfull \vbox (badness 5008) detected at line 5415
+ []
+
+[80]
+Underfull \vbox (badness 10000) detected at line 5415
+ []
+
+
+Overfull \vbox (2.68169pt too high) detected at line 5415
+ []
+
+[81] [82]
+<05_data-driven_music_history_28_0.png, id=698, 986.68625pt x 336.25626pt>
+File: 05_data-driven_music_history_28_0.png Graphic file (type png)
+<use 05_data-driven_music_history_28_0.png>
+Package pdftex.def Info: 05_data-driven_music_history_28_0.png  used on input l
+ine 5514.
+(pdftex.def)             Requested size: 469.76485pt x 160.09279pt.
+<05_data-driven_music_history_35_0.png, id=699, 489.83pt x 427.5975pt>
+File: 05_data-driven_music_history_35_0.png Graphic file (type png)
+<use 05_data-driven_music_history_35_0.png>
+Package pdftex.def Info: 05_data-driven_music_history_35_0.png  used on input l
+ine 5600.
+(pdftex.def)             Requested size: 367.37906pt x 320.69733pt.
+ [83 <./05_data-driven_music_history_28_0.png>]
+<05_data-driven_music_history_37_0.png, id=705, 1671.24374pt x 553.06625pt>
+File: 05_data-driven_music_history_37_0.png Graphic file (type png)
+<use 05_data-driven_music_history_37_0.png>
+Package pdftex.def Info: 05_data-driven_music_history_37_0.png  used on input l
+ine 5644.
+(pdftex.def)             Requested size: 469.75565pt x 155.45667pt.
+
+Underfull \vbox (badness 10000) detected at line 5646
+ []
+
+[84 <./05_data-driven_music_history_35_0.png>] [85 <./05_data-driven_music_hist
+ory_37_0.png>] [86]
+<05_data-driven_music_history_43_0.png, id=720, 1671.24374pt x 553.06625pt>
+File: 05_data-driven_music_history_43_0.png Graphic file (type png)
+<use 05_data-driven_music_history_43_0.png>
+Package pdftex.def Info: 05_data-driven_music_history_43_0.png  used on input l
+ine 5779.
+(pdftex.def)             Requested size: 469.75565pt x 155.45667pt.
+ [87 <./05_data-driven_music_history_43_0.png>]
+Underfull \vbox (badness 10000) detected at line 5953
+ []
+
+
+Overfull \vbox (2.68169pt too high) detected at line 5953
+ []
+
+[88]
+Underfull \vbox (badness 3503) detected at line 5968
+ []
+
+[89]
+<05_data-driven_music_history_51_0.png, id=736, 1201.48875pt x 596.2275pt>
+File: 05_data-driven_music_history_51_0.png Graphic file (type png)
+<use 05_data-driven_music_history_51_0.png>
+Package pdftex.def Info: 05_data-driven_music_history_51_0.png  used on input l
+ine 5978.
+(pdftex.def)             Requested size: 469.75206pt x 233.11003pt.
+<05_data-driven_music_history_53_0.png, id=737, 1131.22626pt x 553.06625pt>
+File: 05_data-driven_music_history_53_0.png Graphic file (type png)
+<use 05_data-driven_music_history_53_0.png>
+Package pdftex.def Info: 05_data-driven_music_history_53_0.png  used on input l
+ine 6009.
+(pdftex.def)             Requested size: 469.74359pt x 229.66168pt.
+
+Underfull \vbox (badness 10000) detected at line 6011
+ []
+
+[90 <./05_data-driven_music_history_51_0.png>]
+<05_data-driven_music_history_56_0.png, id=743, 1012.78375pt x 627.34375pt>
+File: 05_data-driven_music_history_56_0.png Graphic file (type png)
+<use 05_data-driven_music_history_56_0.png>
+Package pdftex.def Info: 05_data-driven_music_history_56_0.png  used on input l
+ine 6044.
+(pdftex.def)             Requested size: 469.74963pt x 290.97475pt.
+
+Underfull \vbox (badness 10000) detected at line 6046
+ []
+
+[91 <./05_data-driven_music_history_53_0.png>] [92 <./05_data-driven_music_hist
+ory_56_0.png>]
+<05_data-driven_music_history_58_0.png, id=754, 1097.09875pt x 574.145pt>
+File: 05_data-driven_music_history_58_0.png Graphic file (type png)
+<use 05_data-driven_music_history_58_0.png>
+Package pdftex.def Info: 05_data-driven_music_history_58_0.png  used on input l
+ine 6126.
+(pdftex.def)             Requested size: 469.75117pt x 245.835pt.
+
+Underfull \vbox (badness 10000) detected at line 6128
+ []
+
+[93] [94 <./05_data-driven_music_history_58_0.png>]
+<05_data-driven_music_history_61_0.png, id=765, 786.94pt x 336.25626pt>
+File: 05_data-driven_music_history_61_0.png Graphic file (type png)
+<use 05_data-driven_music_history_61_0.png>
+Package pdftex.def Info: 05_data-driven_music_history_61_0.png  used on input l
+ine 6185.
+(pdftex.def)             Requested size: 469.75409pt x 200.724pt.
+ [95 <./05_data-driven_music_history_61_0.png>] (introductiontomusicalcorpusstu
+dies.ind)
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 6245.
+ [96]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 6245.
 
 (introductiontomusicalcorpusstudies.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 3343.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 3343.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 6245.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 6245.
 
 Package rerunfilecheck Info: File `introductiontomusicalcorpusstudies.out' has 
 not changed.
-(rerunfilecheck)             Checksum: 5611456D8CA044B5974F485D633D31D0;2636.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 3343.
+(rerunfilecheck)             Checksum: 623A0A74E1299ED37B5AF0CF20D98743;8729.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 6245.
  ) 
 Here is how much of TeX's memory you used:
- 13748 strings out of 480896
- 202101 string characters out of 2895750
- 949709 words of memory out of 3000000
- 29185 multiletter control sequences out of 15000+200000
- 585727 words of font info for 88 fonts, out of 3000000 for 9000
+ 13969 strings out of 480896
+ 207792 string characters out of 2895750
+ 2506987 words of memory out of 3000000
+ 29306 multiletter control sequences out of 15000+200000
+ 590642 words of font info for 95 fonts, out of 3000000 for 9000
  1142 hyphenation exceptions out of 8191
- 38i,11n,49p,780b,568s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 38i,12n,49p,807b,568s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Users/fabianmoss/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/base/8
 r.enc}<C:/Users/fabianmoss/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public
-/amsfonts/cm/cmmi5.pfb><C:/Users/fabianmoss/AppData/Local/Programs/MiKTeX 2.9/f
-onts/type1/public/amsfonts/cm/cmsy5.pfb><C:/Users/fabianmoss/AppData/Local/Prog
-rams/MiKTeX 2.9/fonts/type1/urw/courier/ucrb8a.pfb><C:/Users/fabianmoss/AppData
-/Local/Programs/MiKTeX 2.9/fonts/type1/urw/courier/ucrr8a.pfb><C:/Users/fabianm
-oss/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/courier/ucrro8a.pfb><C:/U
-sers/fabianmoss/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/helvetic/uhvb
-8a.pfb><C:/Users/fabianmoss/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/h
-elvetic/uhvbo8a.pfb><C:/Users/fabianmoss/AppData/Local/Programs/MiKTeX 2.9/font
-s/type1/urw/helvetic/uhvr8a.pfb><C:/Users/fabianmoss/AppData/Local/Programs/MiK
-TeX 2.9/fonts/type1/urw/times/utmb8a.pfb><C:/Users/fabianmoss/AppData/Local/Pro
-grams/MiKTeX 2.9/fonts/type1/urw/times/utmbi8a.pfb><C:/Users/fabianmoss/AppData
-/Local/Programs/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb><C:/Users/fabianmos
-s/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/times/utmri8a.pfb>
-Output written on introductiontomusicalcorpusstudies.pdf (54 pages, 5743087 byt
-es).
+/amsfonts/cm/cmmi10.pfb><C:/Users/fabianmoss/AppData/Local/Programs/MiKTeX 2.9/
+fonts/type1/public/amsfonts/cm/cmmi5.pfb><C:/Users/fabianmoss/AppData/Local/Pro
+grams/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/fabianmoss/
+AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:
+/Users/fabianmoss/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts
+/cm/cmsy5.pfb><C:/Users/fabianmoss/AppData/Local/Programs/MiKTeX 2.9/fonts/type
+1/urw/courier/ucrb8a.pfb><C:/Users/fabianmoss/AppData/Local/Programs/MiKTeX 2.9
+/fonts/type1/urw/courier/ucrr8a.pfb><C:/Users/fabianmoss/AppData/Local/Programs
+/MiKTeX 2.9/fonts/type1/urw/courier/ucrro8a.pfb><C:/Users/fabianmoss/AppData/Lo
+cal/Programs/MiKTeX 2.9/fonts/type1/urw/helvetic/uhvb8a.pfb><C:/Users/fabianmos
+s/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/helvetic/uhvbo8a.pfb><C:/Us
+ers/fabianmoss/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/helvetic/uhvr8
+a.pfb><C:/Users/fabianmoss/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/ti
+mes/utmb8a.pfb><C:/Users/fabianmoss/AppData/Local/Programs/MiKTeX 2.9/fonts/typ
+e1/urw/times/utmbi8a.pfb><C:/Users/fabianmoss/AppData/Local/Programs/MiKTeX 2.9
+/fonts/type1/urw/times/utmr8a.pfb><C:/Users/fabianmoss/AppData/Local/Programs/M
+iKTeX 2.9/fonts/type1/urw/times/utmri8a.pfb>
+Output written on introductiontomusicalcorpusstudies.pdf (100 pages, 6843552 by
+tes).
 PDF statistics:
- 469 PDF objects out of 1000 (max. 8388607)
- 83 named destinations out of 1000 (max. 500000)
- 262 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 870 PDF objects out of 1000 (max. 8388607)
+ 166 named destinations out of 1000 (max. 500000)
+ 533 words of extra memory for PDF output out of 10000 (max. 10000000)
 

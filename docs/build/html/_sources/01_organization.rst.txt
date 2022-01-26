@@ -36,7 +36,7 @@ This year's course takes place on two weekends (13-14 November and 11-12 Decembe
 comprising twelve sessions in total. The topics cover a broad range of musicological topics, 
 from folk melodies and Jazz solos, over harmonies in Beethoven's string 
 quartets and 20th century Pop music, to Renaissance candences 
-and metric patterns in Malian drum music (see :numref:`tab_overview`).
+and metric patterns in Malian drum music (see :numref:`tab:overview`).
 
 .. 10 15 15 60 
 
@@ -44,10 +44,10 @@ and metric patterns in Malian drum music (see :numref:`tab_overview`).
 
     <br>
 
-.. list-table:: 
+.. list-table:: Course overview.
    :header-rows: 1
    :widths: auto
-   :name: tab_overview
+   :name: tab:overview
 
    * - No.
      - Date
@@ -153,7 +153,8 @@ and help each other in the understanding of some of the concepts that are introd
 
 .. rubric:: Report
 
-After the course has ended, your group will be randomly assigned a course topic (one of the twelve sessions in :numref:`tab_overview`). 
+After the course has ended, your group will be randomly assigned a course topic (one of the twelve sessions in :numref:`tab:overview`). 
+
 It is your task to write a report on this theme. The should be 6--8 pages long.
 
 Questions that you could address are: 

@@ -1,195 +1,229 @@
-<!DOCTYPE html>
-<html >
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-      <title>3. Melodies in Folk Songs</title>
+<!doctype html>
+<html class="no-js">
+  <head><meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <meta name="color-scheme" content="light dark"><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+<link rel="index" title="Index" href="genindex.html" /><link rel="search" title="Search" href="search.html" /><link rel="next" title="4. Solos in the Weimar Jazz Database" href="04_jazz_solos.html" /><link rel="prev" title="2. Introduction and Background" href="02_introduction.html" />
+
+    <meta name="generator" content="sphinx-4.4.0, furo 2022.01.02"/>
+        <title>3. Melodies in Folk Songs - Introduction to Musical Corpus Studies 0.0.1 documentation</title>
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="_static/styles/furo.css?digest=df49af52631e7917044a9c21a57f7b83170a6dd0" />
+    <link rel="stylesheet" type="text/css" href="_static/styles/furo-extensions.css?digest=fade93df149f7c5fedb3ff897f799dc7d283b420" />
     
-      <link rel="stylesheet" href="_static/pygments.css">
-      <link rel="stylesheet" href="_static/theme.css">
-      <link rel="stylesheet" href="_static/sphinx_press_theme.css">
-      
-      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
-
-      <!-- sphinx script_files -->
-        <script src="_static/jquery.js"></script>
-        <script src="_static/underscore.js"></script>
-        <script src="_static/doctools.js"></script>
-        <script src="_static/language_data.js"></script>
-        <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
-        <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
-        <script type="text/x-mathjax-config">MathJax.Hub.Config({"tex2jax": {"inlineMath": [["$", "$"], ["\\(", "\\)"]], "processEscapes": true, "ignoreClass": "document", "processClass": "math|output_area"}})</script>
-
-      
-      <script src="_static/theme-vendors.js"></script>
-      <script src="_static/theme.js" defer></script>
     
-  <link rel="index" title="Index" href="genindex.html" />
-  <link rel="search" title="Search" href="search.html" />
-  <link rel="next" title="4. Solos in the Weimar Jazz Database" href="04_jazz_solos.html" />
-  <link rel="prev" title="2. Introduction and Background" href="02_introduction.html" /> 
-  </head>
 
+
+<style>
+  body {
+    --color-code-background: #f8f8f8;
+  --color-code-foreground: black;
+  
+  }
+  body[data-theme="dark"] {
+    --color-code-background: #202020;
+  --color-code-foreground: #d0d0d0;
+  
+  }
+  @media (prefers-color-scheme: dark) {
+    body:not([data-theme="light"]) {
+      --color-code-background: #202020;
+  --color-code-foreground: #d0d0d0;
+  
+    }
+  }
+</style></head>
   <body>
-    <div id="app" class="theme-container" :class="pageClasses"><navbar @toggle-sidebar="toggleSidebar">
-  <router-link to="index.html" class="home-link">
+    <script>
+      document.body.dataset.theme = localStorage.getItem("theme") || "auto";
+    </script>
     
-      <span class="site-name">Introduction to Musical Corpus Studies</span>
-    
-  </router-link>
+<svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+  <symbol id="svg-toc" viewBox="0 0 24 24">
+    <title>Contents</title>
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+      <path stroke="none" d="M0 0h24v24H0z" />
+      <line x1="4" y1="6" x2="20" y2="6" />
+      <line x1="10" y1="12" x2="20" y2="12" />
+      <line x1="6" y1="18" x2="20" y2="18" />
+    </svg>
+  </symbol>
+  <symbol id="svg-menu" viewBox="0 0 24 24">
+    <title>Menu</title>
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather-menu">
+      <line x1="3" y1="12" x2="21" y2="12"></line>
+      <line x1="3" y1="6" x2="21" y2="6"></line>
+      <line x1="3" y1="18" x2="21" y2="18"></line>
+    </svg>
+  </symbol>
+  <symbol id="svg-arrow-right" viewBox="0 0 24 24">
+    <title>Expand</title>
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather-chevron-right">
+      <polyline points="9 18 15 12 9 6"></polyline>
+    </svg>
+  </symbol>
+  <symbol id="svg-sun" viewBox="0 0 24 24">
+    <title>Light mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="feather-sun">
+      <circle cx="12" cy="12" r="5"></circle>
+      <line x1="12" y1="1" x2="12" y2="3"></line>
+      <line x1="12" y1="21" x2="12" y2="23"></line>
+      <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+      <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+      <line x1="1" y1="12" x2="3" y2="12"></line>
+      <line x1="21" y1="12" x2="23" y2="12"></line>
+      <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+      <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+    </svg>
+  </symbol>
+  <symbol id="svg-moon" viewBox="0 0 24 24">
+    <title>Dark mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="icon-tabler-moon">
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+      <path d="M12 3c.132 0 .263 0 .393 0a7.5 7.5 0 0 0 7.92 12.446a9 9 0 1 1 -8.313 -12.454z" />
+    </svg>
+  </symbol>
+  <symbol id="svg-sun-half" viewBox="0 0 24 24">
+    <title>Auto light/dark mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="icon-tabler-shadow">
+      <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+      <circle cx="12" cy="12" r="9" />
+      <path d="M13 12h5" />
+      <path d="M13 15h4" />
+      <path d="M13 18h1" />
+      <path d="M13 9h4" />
+      <path d="M13 6h1" />
+    </svg>
+  </symbol>
+</svg>
 
-  <div class="links">
-    <navlinks class="can-hide">
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation">
+<input type="checkbox" class="sidebar-toggle" name="__toc" id="__toc">
+<label class="overlay sidebar-overlay" for="__navigation">
+  <div class="visually-hidden">Hide navigation sidebar</div>
+</label>
+<label class="overlay toc-overlay" for="__toc">
+  <div class="visually-hidden">Hide table of contents sidebar</div>
+</label>
 
 
 
-    </navlinks>
-  </div>
-</navbar>
-
-      
-      <div class="sidebar-mask" @click="toggleSidebar(false)">
+<div class="page">
+  <header class="mobile-header">
+    <div class="header-left">
+      <label class="nav-overlay-icon" for="__navigation">
+        <div class="visually-hidden">Toggle site navigation sidebar</div>
+        <i class="icon"><svg><use href="#svg-menu"></use></svg></i>
+      </label>
+    </div>
+    <div class="header-center">
+      <a href="index.html"><div class="brand">Introduction to Musical Corpus Studies 0.0.1 documentation</div></a>
+    </div>
+    <div class="header-right">
+      <div class="theme-toggle-container theme-toggle-header">
+        <button class="theme-toggle">
+          <div class="visually-hidden">Toggle Light / Dark / Auto color theme</div>
+          <svg class="theme-icon-when-auto"><use href="#svg-sun-half"></use></svg>
+          <svg class="theme-icon-when-dark"><use href="#svg-moon"></use></svg>
+          <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
+        </button>
       </div>
-        <sidebar @toggle-sidebar="toggleSidebar">
-          
-          <navlinks>
-            
-
-
-
-            
-          </navlinks><div id="searchbox" class="searchbox" role="search">
-  <div class="caption"><span class="caption-text">Quick search</span>
-    <div class="searchformwrapper">
-      <form class="search" action="search.html" method="get">
-        <input type="text" name="q" />
-        <input type="submit" value="Search" />
-        <input type="hidden" name="check_keywords" value="yes" />
-        <input type="hidden" name="area" value="default" />
-      </form>
+      <label class="toc-overlay-icon toc-header-icon" for="__toc">
+        <div class="visually-hidden">Toggle table of contents sidebar</div>
+        <i class="icon"><svg><use href="#svg-toc"></use></svg></i>
+      </label>
     </div>
-  </div>
-</div><div class="sidebar-links" role="navigation" aria-label="main navigation">
+  </header>
+  <aside class="sidebar-drawer">
+    <div class="sidebar-container">
+      
+      <div class="sidebar-sticky"><a class="sidebar-brand" href="index.html">
   
-    <div class="sidebar-group">
-      <p class="caption">
-        <span class="caption-text"><a href="index.html#introduction-to-musical-corpus-studies">Content</a></span>
-      </p>
-      <ul class="current">
-        
-          <li class="toctree-l1 "><a href="01_organization.html" class="reference internal ">Organization</a>
-
-            
-          </li>
-
-        
-          <li class="toctree-l1 "><a href="02_introduction.html" class="reference internal ">Introduction and Background</a>
-
-            
-          </li>
-
-        
-          <li class="toctree-l1 current"><a href="#" class="reference internal current">Melodies in Folk Songs</a>
-
-            
-              <ul>
-                
-                  <li class="toctree-l2"><a href="#The-Essen-Folksong-Collection" class="reference internal">The Essen Folksong Collection</a></li>
-                
-                  <li class="toctree-l2"><a href="#Comparing-songs" class="reference internal">Comparing songs</a></li>
-                
-                  <li class="toctree-l2"><a href="#Computational-analysis" class="reference internal">Computational analysis</a></li>
-                
-                  <li class="toctree-l2"><a href="#The-melodic-arc" class="reference internal">The melodic arc</a></li>
-                
-                  <li class="toctree-l2"><a href="#Intervals" class="reference internal">Intervals</a></li>
-                
-              </ul>
-            
-          </li>
-
-        
-          <li class="toctree-l1 "><a href="04_jazz_solos.html" class="reference internal ">Solos in the Weimar Jazz Database</a>
-
-            
-          </li>
-
-        
-          <li class="toctree-l1 "><a href="exercises/01_exercise.html" class="reference internal ">Group work I</a>
-
-            
-          </li>
-
-        
-          <li class="toctree-l1 "><a href="04_renaissance_cadences.html" class="reference internal ">Renaissance Cadences</a>
-
-            
-          </li>
-
-        
-          <li class="toctree-l1 "><a href="exercises/02_exercise.html" class="reference internal ">Lost Voices Cadence Data: Filters and Diagrams</a>
-
-            
-          </li>
-
-        
-          <li class="toctree-l1 "><a href="05_data-driven_music_history.html" class="reference internal ">Data-Driven Music History</a>
-
-            
-          </li>
-
-        
-      </ul>
-    </div>
   
-</div>
-        </sidebar>
-
-      <page>
-          <div class="body-header" role="navigation" aria-label="navigation">
+  <span class="sidebar-brand-text">Introduction to Musical Corpus Studies 0.0.1 documentation</span>
   
-  <ul class="breadcrumbs">
-    <li><a href="index.html">Docs</a> &raquo;</li>
-    
-    <li><span class="section-number">3. </span>Melodies in Folk Songs</li>
-  </ul>
-  
-
-  <ul class="page-nav">
-  <li class="prev">
-    <a href="02_introduction.html"
-       title="previous chapter">← <span class="section-number">2. </span>Introduction and Background</a>
-  </li>
-  <li class="next">
-    <a href="04_jazz_solos.html"
-       title="next chapter"><span class="section-number">4. </span>Solos in the <em>Weimar Jazz Database</em> →</a>
-  </li>
+</a><form class="sidebar-search-container" method="get" action="search.html" role="search">
+  <input class="sidebar-search" placeholder=Search name="q" aria-label="Search">
+  <input type="hidden" name="check_keywords" value="yes">
+  <input type="hidden" name="area" value="default">
+</form>
+<div id="searchbox"></div><div class="sidebar-scroll"><div class="sidebar-tree">
+  <p class="caption" role="heading"><span class="caption-text">Content</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="01_organization.html">1. Organization</a></li>
+<li class="toctree-l1"><a class="reference internal" href="02_introduction.html">2. Introduction and Background</a></li>
+<li class="toctree-l1 current current-page"><a class="current reference internal" href="#">3. Melodies in Folk Songs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="04_jazz_solos.html">4. Solos in the <em>Weimar Jazz Database</em></a></li>
+<li class="toctree-l1"><a class="reference internal" href="exercises/01_exercise.html">5. Exercise I: The Annotated Beethoven Corpus and the <code class="docutils literal notranslate"><span class="pre">pandas</span></code> library</a></li>
+<li class="toctree-l1"><a class="reference internal" href="04_renaissance_cadences.html">6. Renaissance Cadences</a></li>
+<li class="toctree-l1"><a class="reference internal" href="exercises/02_exercise.html">7. Exercise II: Lost Voices Cadence Data</a></li>
+<li class="toctree-l1"><a class="reference internal" href="05_data-driven_music_history.html">8. Data-Driven Music History</a></li>
 </ul>
-  
+
 </div>
-<hr>
-          <div class="content" role="main">
-            
-  
+</div>
+      </div>
+      
+    </div>
+  </aside>
+  <div class="main">
+    <div class="content">
+      <div class="article-container">
+        <div class="content-icon-container">
+          <div class="theme-toggle-container theme-toggle-content">
+            <button class="theme-toggle">
+              <div class="visually-hidden">Toggle Light / Dark / Auto color theme</div>
+              <svg class="theme-icon-when-auto"><use href="#svg-sun-half"></use></svg>
+              <svg class="theme-icon-when-dark"><use href="#svg-moon"></use></svg>
+              <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
+            </button>
+          </div>
+          <label class="toc-overlay-icon toc-content-icon" for="__toc">
+            <div class="visually-hidden">Toggle table of contents sidebar</div>
+            <i class="icon"><svg><use href="#svg-toc"></use></svg></i>
+          </label>
+        </div>
+        <article role="main">
+          
 <style>
 /* CSS for nbsphinx extension */
 
 /* remove conflicting styling from Sphinx themes */
-div.nbinput.container,
-div.nbinput.container div.prompt,
-div.nbinput.container div.input_area,
-div.nbinput.container div[class*=highlight],
-div.nbinput.container div[class*=highlight] pre,
-div.nboutput.container,
-div.nboutput.container div.prompt,
-div.nboutput.container div.output_area,
-div.nboutput.container div[class*=highlight],
-div.nboutput.container div[class*=highlight] pre {
-    background: none;
+div.nbinput.container div.prompt *,
+div.nboutput.container div.prompt *,
+div.nbinput.container div.input_area pre,
+div.nboutput.container div.output_area pre,
+div.nbinput.container div.input_area .highlight,
+div.nboutput.container div.output_area .highlight {
     border: none;
-    padding: 0 0;
+    padding: 0;
     margin: 0;
     box-shadow: none;
+}
+
+div.nbinput.container > div[class*=highlight],
+div.nboutput.container > div[class*=highlight] {
+    margin: 0;
+}
+
+div.nbinput.container div.prompt *,
+div.nboutput.container div.prompt * {
+    background: none;
+}
+
+div.nboutput.container div.output_area .highlight,
+div.nboutput.container div.output_area pre {
+    background: unset;
+}
+
+div.nboutput.container div.output_area div.highlight {
+    color: unset;  /* override Pygments text color */
 }
 
 /* avoid gaps between output lines */
@@ -290,7 +324,7 @@ div.nboutput.container div.output_area {
 div.nbinput.container div.input_area {
     border: 1px solid #e0e0e0;
     border-radius: 2px;
-    background: #f5f5f5;
+    /*background: #f5f5f5;*/
 }
 
 /* override MathJax center alignment in output cells */
@@ -356,6 +390,7 @@ div.nboutput.container div.output_area.rendered_html,
 div.nboutput.container div.output_area > div.output_javascript,
 div.nboutput.container div.output_area:not(.rendered_html) > img{
     padding: 5px;
+    margin: 0;
 }
 
 /* fix copybtn overflow problem in chromium (needed for 'sphinx_copybutton') */
@@ -365,7 +400,7 @@ div.nboutput.container div.output_area > div[class^='highlight']{
 }
 
 /* hide copybtn icon on prompts (needed for 'sphinx_copybutton') */
-.prompt a.copybtn {
+.prompt .copybtn {
     display: none;
 }
 
@@ -403,15 +438,14 @@ div.rendered_html tbody tr:hover {
   background: rgba(66, 165, 245, 0.2);
 }
 </style>
-<div class="section" id="Melodies-in-Folk-Songs">
+<section id="Melodies-in-Folk-Songs">
 <h1><span class="section-number">3. </span>Melodies in Folk Songs<a class="headerlink" href="#Melodies-in-Folk-Songs" title="Permalink to this headline">¶</a></h1>
 <p><strong>On Jupyter Hub, change the kernel to Python 3.7!</strong></p>
 <div class="nbinput nblast docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[1]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
 <span class="kn">import</span> <span class="nn">music21</span> <span class="k">as</span> <span class="nn">m21</span>
 <span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
 <span class="kn">import</span> <span class="nn">statsmodels.api</span> <span class="k">as</span> <span class="nn">sm</span>
@@ -420,7 +454,7 @@ div.rendered_html tbody tr:hover {
 <span class="kn">import</span> <span class="nn">matplotlib</span> <span class="k">as</span> <span class="nn">mpl</span>
 
 <span class="kn">import</span> <span class="nn">seaborn</span> <span class="k">as</span> <span class="nn">sns</span>
-<span class="n">sns</span><span class="o">.</span><span class="n">set_context</span><span class="p">(</span><span class="s2">&quot;notebook&quot;</span><span class="p">)</span>
+<span class="n">sns</span><span class="o">.</span><span class="n">set_context</span><span class="p">(</span><span class="s2">"notebook"</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -428,20 +462,19 @@ div.rendered_html tbody tr:hover {
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[2]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="c1">## Tragen Sie hier bitte Ihren username ein:</span>
-<span class="c1"># USERNAME = &quot;fmoss&quot;</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">## Tragen Sie hier bitte Ihren username ein:</span>
+<span class="c1"># USERNAME = "fmoss"</span>
 
 <span class="c1">## for jupyter hubs</span>
 <span class="c1"># %env QT_QPA_PLATFORM=offscreen</span>
 <span class="c1"># # new user, create music21 environment variables.</span>
-<span class="c1"># m21.environment.set(&#39;musicxmlPath&#39;, value=&#39;/usr/bin/mscore&#39;)</span>
-<span class="c1"># m21.environment.set(&#39;musescoreDirectPNGPath&#39;, value=&#39;/usr/bin/mscore&#39;)</span>
-<span class="c1"># m21.environment.set(&#39;graphicsPath&#39;, value=f&#39;/home/{USERNAME}&#39;) # change accordingly for your own username!</span>
+<span class="c1"># m21.environment.set('musicxmlPath', value='/usr/bin/mscore')</span>
+<span class="c1"># m21.environment.set('musescoreDirectPNGPath', value='/usr/bin/mscore')</span>
+<span class="c1"># m21.environment.set('graphicsPath', value=f'/home/{USERNAME}') # change accordingly for your own username!</span>
 </pre></div>
 </div>
 </div>
-<div class="section" id="The-Essen-Folksong-Collection">
+<section id="The-Essen-Folksong-Collection">
 <h2><span class="section-number">3.1. </span>The <em>Essen Folksong Collection</em><a class="headerlink" href="#The-Essen-Folksong-Collection" title="Permalink to this headline">¶</a></h2>
 <p>In this session, we work with a corpus of melodies, the <em>Essen Folksong Collection</em> (EFC). There are several ways to access this corpus, for example through the interface provided by the Center for Computer Assisted Research in the Humanities (CCARH) at Stanford University: <a class="reference external" href="http://essen.themefinder.org/">http://essen.themefinder.org/</a> or via <a class="reference external" href="http://kern.ccarh.org/browse?l=essen">http://kern.ccarh.org/browse?l=essen</a>.</p>
 <p>A more convenient way to work with the pieces is by using the Python library <code class="docutils literal notranslate"><span class="pre">music21</span></code>. This library was developed and is maintaned my Mike Cuthbert at the MIT and is the most popular library for the computational analysis of symbolic music (i.e. scores). You can find its documentation here: <a class="reference external" href="http://web.mit.edu/music21/">http://web.mit.edu/music21/</a></p>
@@ -451,9 +484,8 @@ div.rendered_html tbody tr:hover {
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[3]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="c1"># load corpus</span>
-<span class="n">corpora</span> <span class="o">=</span> <span class="n">m21</span><span class="o">.</span><span class="n">corpus</span><span class="o">.</span><span class="n">getComposer</span><span class="p">(</span><span class="s1">&#39;essenFolksong&#39;</span><span class="p">)</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># load corpus</span>
+<span class="n">corpora</span> <span class="o">=</span> <span class="n">m21</span><span class="o">.</span><span class="n">corpus</span><span class="o">.</span><span class="n">getComposer</span><span class="p">(</span><span class="s1">'essenFolksong'</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -462,8 +494,7 @@ div.rendered_html tbody tr:hover {
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[4]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="nb">len</span><span class="p">(</span><span class="n">corpora</span><span class="p">)</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">len</span><span class="p">(</span><span class="n">corpora</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -481,8 +512,7 @@ div.rendered_html tbody tr:hover {
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[5]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">corpora</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">corpora</span>
 </pre></div>
 </div>
 </div>
@@ -492,37 +522,37 @@ div.rendered_html tbody tr:hover {
 </div>
 <div class="output_area docutils container">
 <div class="highlight"><pre>
-[WindowsPath(&#39;C:/Users/fabianmoss/anaconda3/Lib/site-packages/music21/corpus/essenFolksong/altdeu10.abc&#39;),
- WindowsPath(&#39;C:/Users/fabianmoss/anaconda3/Lib/site-packages/music21/corpus/essenFolksong/altdeu20.abc&#39;),
- WindowsPath(&#39;C:/Users/fabianmoss/anaconda3/Lib/site-packages/music21/corpus/essenFolksong/ballad10.abc&#39;),
- WindowsPath(&#39;C:/Users/fabianmoss/anaconda3/Lib/site-packages/music21/corpus/essenFolksong/ballad20.abc&#39;),
- WindowsPath(&#39;C:/Users/fabianmoss/anaconda3/Lib/site-packages/music21/corpus/essenFolksong/ballad30.abc&#39;),
- WindowsPath(&#39;C:/Users/fabianmoss/anaconda3/Lib/site-packages/music21/corpus/essenFolksong/ballad40.abc&#39;),
- WindowsPath(&#39;C:/Users/fabianmoss/anaconda3/Lib/site-packages/music21/corpus/essenFolksong/ballad50.abc&#39;),
- WindowsPath(&#39;C:/Users/fabianmoss/anaconda3/Lib/site-packages/music21/corpus/essenFolksong/ballad60.abc&#39;),
- WindowsPath(&#39;C:/Users/fabianmoss/anaconda3/Lib/site-packages/music21/corpus/essenFolksong/ballad70.abc&#39;),
- WindowsPath(&#39;C:/Users/fabianmoss/anaconda3/Lib/site-packages/music21/corpus/essenFolksong/ballad80.abc&#39;),
- WindowsPath(&#39;C:/Users/fabianmoss/anaconda3/Lib/site-packages/music21/corpus/essenFolksong/boehme10.abc&#39;),
- WindowsPath(&#39;C:/Users/fabianmoss/anaconda3/Lib/site-packages/music21/corpus/essenFolksong/boehme20.abc&#39;),
- WindowsPath(&#39;C:/Users/fabianmoss/anaconda3/Lib/site-packages/music21/corpus/essenFolksong/dva0.abc&#39;),
- WindowsPath(&#39;C:/Users/fabianmoss/anaconda3/Lib/site-packages/music21/corpus/essenFolksong/erk10.abc&#39;),
- WindowsPath(&#39;C:/Users/fabianmoss/anaconda3/Lib/site-packages/music21/corpus/essenFolksong/erk20.abc&#39;),
- WindowsPath(&#39;C:/Users/fabianmoss/anaconda3/Lib/site-packages/music21/corpus/essenFolksong/erk30.abc&#39;),
- WindowsPath(&#39;C:/Users/fabianmoss/anaconda3/Lib/site-packages/music21/corpus/essenFolksong/erk5.abc&#39;),
- WindowsPath(&#39;C:/Users/fabianmoss/anaconda3/Lib/site-packages/music21/corpus/essenFolksong/fink0.abc&#39;),
- WindowsPath(&#39;C:/Users/fabianmoss/anaconda3/Lib/site-packages/music21/corpus/essenFolksong/folkHaydn.abc&#39;),
- WindowsPath(&#39;C:/Users/fabianmoss/anaconda3/Lib/site-packages/music21/corpus/essenFolksong/han1.abc&#39;),
- WindowsPath(&#39;C:/Users/fabianmoss/anaconda3/Lib/site-packages/music21/corpus/essenFolksong/han2.abc&#39;),
- WindowsPath(&#39;C:/Users/fabianmoss/anaconda3/Lib/site-packages/music21/corpus/essenFolksong/irl.abc&#39;),
- WindowsPath(&#39;C:/Users/fabianmoss/anaconda3/Lib/site-packages/music21/corpus/essenFolksong/kinder0.abc&#39;),
- WindowsPath(&#39;C:/Users/fabianmoss/anaconda3/Lib/site-packages/music21/corpus/essenFolksong/lot.abc&#39;),
- WindowsPath(&#39;C:/Users/fabianmoss/anaconda3/Lib/site-packages/music21/corpus/essenFolksong/lux.abc&#39;),
- WindowsPath(&#39;C:/Users/fabianmoss/anaconda3/Lib/site-packages/music21/corpus/essenFolksong/test0.abc&#39;),
- WindowsPath(&#39;C:/Users/fabianmoss/anaconda3/Lib/site-packages/music21/corpus/essenFolksong/test1.abc&#39;),
- WindowsPath(&#39;C:/Users/fabianmoss/anaconda3/Lib/site-packages/music21/corpus/essenFolksong/testd.abc&#39;),
- WindowsPath(&#39;C:/Users/fabianmoss/anaconda3/Lib/site-packages/music21/corpus/essenFolksong/teste.abc&#39;),
- WindowsPath(&#39;C:/Users/fabianmoss/anaconda3/Lib/site-packages/music21/corpus/essenFolksong/variant0.abc&#39;),
- WindowsPath(&#39;C:/Users/fabianmoss/anaconda3/Lib/site-packages/music21/corpus/essenFolksong/zuccal0.abc&#39;)]
+[WindowsPath('C:/Users/fabianmoss/anaconda3/Lib/site-packages/music21/corpus/essenFolksong/altdeu10.abc'),
+ WindowsPath('C:/Users/fabianmoss/anaconda3/Lib/site-packages/music21/corpus/essenFolksong/altdeu20.abc'),
+ WindowsPath('C:/Users/fabianmoss/anaconda3/Lib/site-packages/music21/corpus/essenFolksong/ballad10.abc'),
+ WindowsPath('C:/Users/fabianmoss/anaconda3/Lib/site-packages/music21/corpus/essenFolksong/ballad20.abc'),
+ WindowsPath('C:/Users/fabianmoss/anaconda3/Lib/site-packages/music21/corpus/essenFolksong/ballad30.abc'),
+ WindowsPath('C:/Users/fabianmoss/anaconda3/Lib/site-packages/music21/corpus/essenFolksong/ballad40.abc'),
+ WindowsPath('C:/Users/fabianmoss/anaconda3/Lib/site-packages/music21/corpus/essenFolksong/ballad50.abc'),
+ WindowsPath('C:/Users/fabianmoss/anaconda3/Lib/site-packages/music21/corpus/essenFolksong/ballad60.abc'),
+ WindowsPath('C:/Users/fabianmoss/anaconda3/Lib/site-packages/music21/corpus/essenFolksong/ballad70.abc'),
+ WindowsPath('C:/Users/fabianmoss/anaconda3/Lib/site-packages/music21/corpus/essenFolksong/ballad80.abc'),
+ WindowsPath('C:/Users/fabianmoss/anaconda3/Lib/site-packages/music21/corpus/essenFolksong/boehme10.abc'),
+ WindowsPath('C:/Users/fabianmoss/anaconda3/Lib/site-packages/music21/corpus/essenFolksong/boehme20.abc'),
+ WindowsPath('C:/Users/fabianmoss/anaconda3/Lib/site-packages/music21/corpus/essenFolksong/dva0.abc'),
+ WindowsPath('C:/Users/fabianmoss/anaconda3/Lib/site-packages/music21/corpus/essenFolksong/erk10.abc'),
+ WindowsPath('C:/Users/fabianmoss/anaconda3/Lib/site-packages/music21/corpus/essenFolksong/erk20.abc'),
+ WindowsPath('C:/Users/fabianmoss/anaconda3/Lib/site-packages/music21/corpus/essenFolksong/erk30.abc'),
+ WindowsPath('C:/Users/fabianmoss/anaconda3/Lib/site-packages/music21/corpus/essenFolksong/erk5.abc'),
+ WindowsPath('C:/Users/fabianmoss/anaconda3/Lib/site-packages/music21/corpus/essenFolksong/fink0.abc'),
+ WindowsPath('C:/Users/fabianmoss/anaconda3/Lib/site-packages/music21/corpus/essenFolksong/folkHaydn.abc'),
+ WindowsPath('C:/Users/fabianmoss/anaconda3/Lib/site-packages/music21/corpus/essenFolksong/han1.abc'),
+ WindowsPath('C:/Users/fabianmoss/anaconda3/Lib/site-packages/music21/corpus/essenFolksong/han2.abc'),
+ WindowsPath('C:/Users/fabianmoss/anaconda3/Lib/site-packages/music21/corpus/essenFolksong/irl.abc'),
+ WindowsPath('C:/Users/fabianmoss/anaconda3/Lib/site-packages/music21/corpus/essenFolksong/kinder0.abc'),
+ WindowsPath('C:/Users/fabianmoss/anaconda3/Lib/site-packages/music21/corpus/essenFolksong/lot.abc'),
+ WindowsPath('C:/Users/fabianmoss/anaconda3/Lib/site-packages/music21/corpus/essenFolksong/lux.abc'),
+ WindowsPath('C:/Users/fabianmoss/anaconda3/Lib/site-packages/music21/corpus/essenFolksong/test0.abc'),
+ WindowsPath('C:/Users/fabianmoss/anaconda3/Lib/site-packages/music21/corpus/essenFolksong/test1.abc'),
+ WindowsPath('C:/Users/fabianmoss/anaconda3/Lib/site-packages/music21/corpus/essenFolksong/testd.abc'),
+ WindowsPath('C:/Users/fabianmoss/anaconda3/Lib/site-packages/music21/corpus/essenFolksong/teste.abc'),
+ WindowsPath('C:/Users/fabianmoss/anaconda3/Lib/site-packages/music21/corpus/essenFolksong/variant0.abc'),
+ WindowsPath('C:/Users/fabianmoss/anaconda3/Lib/site-packages/music21/corpus/essenFolksong/zuccal0.abc')]
 </pre></div></div>
 </div>
 <p>The variable <code class="docutils literal notranslate"><span class="pre">corpora</span></code> is a list of file paths, each of which points to a corpus in this collection. Note that the location depends on the location where <code class="docutils literal notranslate"><span class="pre">music21</span></code> is installed. If you would do this on your own computer, you would see different paths. The file names at the end of the file paths indicate what they contain, e.g. <code class="docutils literal notranslate"><span class="pre">altdeu10.abc</span></code> contains old German folksongs, <code class="docutils literal notranslate"><span class="pre">boehme10.abc</span></code> contains Czech folksongs, and <code class="docutils literal notranslate"><span class="pre">han1.abc</span></code> contains Chinese folksongs.</p>
@@ -532,8 +562,7 @@ div.rendered_html tbody tr:hover {
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[6]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">example_song</span> <span class="o">=</span> <span class="s2">&quot;&quot;&quot;</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">example_song</span> <span class="o">=</span> <span class="s2">"""</span>
 <span class="s2">X:1</span>
 <span class="s2">T:Speed the Plough</span>
 <span class="s2">M:4/4</span>
@@ -543,19 +572,18 @@ div.rendered_html tbody tr:hover {
 <span class="s2">  GABc dedB|dedB dedB|c2ec B2dB|A2F2 G4:|</span>
 <span class="s2">|:g2gf gdBd|g2f2 e2d2|c2ec B2dB|c2A2 A2df|</span>
 <span class="s2">  g2gf g2Bd|g2f2 e2d2|c2ec B2dB|A2F2 G4:|</span>
-<span class="s2">&quot;&quot;&quot;</span>
+<span class="s2">"""</span>
 </pre></div>
 </div>
 </div>
-<p>The tripple quotes (<code class="docutils literal notranslate"><span class="pre">&quot;&quot;&quot;</span></code>) surrounding the ABC notation are used by Python to store multi-line text.</p>
+<p>The tripple quotes (<code class="docutils literal notranslate"><span class="pre">"""</span></code>) surrounding the ABC notation are used by Python to store multi-line text.</p>
 <p>What can we already understand from this encoding?</p>
 <p><code class="docutils literal notranslate"><span class="pre">music21</span></code> can load this string and display a graphical output of the score. This is done by a <strong>parser</strong>. A parser is a program that reads a file and produces a structured output.</p>
 <div class="nbinput nblast docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[7]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">parsed_example_song</span> <span class="o">=</span> <span class="n">m21</span><span class="o">.</span><span class="n">converter</span><span class="o">.</span><span class="n">parse</span><span class="p">(</span><span class="n">example_song</span><span class="p">)</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">parsed_example_song</span> <span class="o">=</span> <span class="n">m21</span><span class="o">.</span><span class="n">converter</span><span class="o">.</span><span class="n">parse</span><span class="p">(</span><span class="n">example_song</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -565,8 +593,7 @@ div.rendered_html tbody tr:hover {
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[8]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">parsed_example_song</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">parsed_example_song</span>
 </pre></div>
 </div>
 </div>
@@ -584,8 +611,7 @@ div.rendered_html tbody tr:hover {
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[9]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">parsed_example_song</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">parsed_example_song</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
 </pre></div>
 </div>
 </div>
@@ -593,7 +619,7 @@ div.rendered_html tbody tr:hover {
 <div class="prompt empty docutils container">
 </div>
 <div class="output_area docutils container">
-<img alt="_images/03_melody_I_21_0.png" class="no-scaled-link" src="_images/03_melody_I_21_0.png" style="width: 753px; height: 416px;" />
+<img alt="_images/03_melody_I_21_0.png" class="no-scaled-link" src="_images/03_melody_I_21_0.png" style="width: 753px; height: 416px;"/>
 </div>
 </div>
 <p>Voilà, this is much better! Now, let us compare the score output to the ABC encoding of the song:</p>
@@ -601,8 +627,7 @@ div.rendered_html tbody tr:hover {
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[10]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="nb">print</span><span class="p">(</span><span class="n">example_song</span><span class="p">)</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">example_song</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -631,8 +656,7 @@ note names that are organized into bars with or without repetition signs.</p>
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[11]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">parsed_example_song</span><span class="o">.</span><span class="n">show</span><span class="p">(</span><span class="s2">&quot;midi&quot;</span><span class="p">)</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">parsed_example_song</span><span class="o">.</span><span class="n">show</span><span class="p">(</span><span class="s2">"midi"</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -640,9 +664,8 @@ note names that are organized into bars with or without repetition signs.</p>
 <div class="prompt empty docutils container">
 </div>
 <div class="output_area rendered_html docutils container">
-<div id='midiPlayerDiv2080'></div>
-<link rel="stylesheet" href="//cuthbertLab.github.io/music21j/css/m21.css"
-    type="text/css" />
+<div id="midiPlayerDiv2080"></div>
+<link href="//cuthbertLab.github.io/music21j/css/m21.css" rel="stylesheet" type="text/css"/>
 <script>
 require.config({
     paths: {'music21': '//cuthbertLab.github.io/music21j/src/music21'}
@@ -659,8 +682,7 @@ require(['music21'], function() {
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[12]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">corpora</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">corpora</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
 </pre></div>
 </div>
 </div>
@@ -670,7 +692,7 @@ require(['music21'], function() {
 </div>
 <div class="output_area docutils container">
 <div class="highlight"><pre>
-WindowsPath(&#39;C:/Users/fabianmoss/anaconda3/Lib/site-packages/music21/corpus/essenFolksong/altdeu10.abc&#39;)
+WindowsPath('C:/Users/fabianmoss/anaconda3/Lib/site-packages/music21/corpus/essenFolksong/altdeu10.abc')
 </pre></div></div>
 </div>
 <p>As you can see, this is just the first file path in the variable <code class="docutils literal notranslate"><span class="pre">corpora</span></code>. Let’s try to parse it!</p>
@@ -678,8 +700,7 @@ WindowsPath(&#39;C:/Users/fabianmoss/anaconda3/Lib/site-packages/music21/corpus/
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[13]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">first_corpus</span> <span class="o">=</span> <span class="n">m21</span><span class="o">.</span><span class="n">converter</span><span class="o">.</span><span class="n">parse</span><span class="p">(</span><span class="n">corpora</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">first_corpus</span> <span class="o">=</span> <span class="n">m21</span><span class="o">.</span><span class="n">converter</span><span class="o">.</span><span class="n">parse</span><span class="p">(</span><span class="n">corpora</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
 </pre></div>
 </div>
 </div>
@@ -688,8 +709,7 @@ WindowsPath(&#39;C:/Users/fabianmoss/anaconda3/Lib/site-packages/music21/corpus/
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[14]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">first_corpus</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">first_corpus</span>
 </pre></div>
 </div>
 </div>
@@ -708,8 +728,7 @@ WindowsPath(&#39;C:/Users/fabianmoss/anaconda3/Lib/site-packages/music21/corpus/
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[15]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">first_corpus</span><span class="p">[</span><span class="mi">70</span><span class="p">]</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">first_corpus</span><span class="p">[</span><span class="mi">70</span><span class="p">]</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
 </pre></div>
 </div>
 </div>
@@ -717,7 +736,7 @@ WindowsPath(&#39;C:/Users/fabianmoss/anaconda3/Lib/site-packages/music21/corpus/
 <div class="prompt empty docutils container">
 </div>
 <div class="output_area docutils container">
-<img alt="_images/03_melody_I_34_0.png" class="no-scaled-link" src="_images/03_melody_I_34_0.png" style="width: 753px; height: 286px;" />
+<img alt="_images/03_melody_I_34_0.png" class="no-scaled-link" src="_images/03_melody_I_34_0.png" style="width: 753px; height: 286px;"/>
 </div>
 </div>
 <p>A A B A’</p>
@@ -725,8 +744,7 @@ WindowsPath(&#39;C:/Users/fabianmoss/anaconda3/Lib/site-packages/music21/corpus/
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[16]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">first_corpus</span><span class="p">[</span><span class="mi">70</span><span class="p">]</span><span class="o">.</span><span class="n">show</span><span class="p">(</span><span class="s2">&quot;midi&quot;</span><span class="p">)</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">first_corpus</span><span class="p">[</span><span class="mi">70</span><span class="p">]</span><span class="o">.</span><span class="n">show</span><span class="p">(</span><span class="s2">"midi"</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -734,9 +752,8 @@ WindowsPath(&#39;C:/Users/fabianmoss/anaconda3/Lib/site-packages/music21/corpus/
 <div class="prompt empty docutils container">
 </div>
 <div class="output_area rendered_html docutils container">
-<div id='midiPlayerDiv27804'></div>
-<link rel="stylesheet" href="//cuthbertLab.github.io/music21j/css/m21.css"
-    type="text/css" />
+<div id="midiPlayerDiv27804"></div>
+<link href="//cuthbertLab.github.io/music21j/css/m21.css" rel="stylesheet" type="text/css"/>
 <script>
 require.config({
     paths: {'music21': '//cuthbertLab.github.io/music21j/src/music21'}
@@ -749,8 +766,8 @@ require(['music21'], function() {
 </script></div>
 </div>
 <p>We have seen that we can select items from lists by <strong>indexing</strong> them, <code class="docutils literal notranslate"><span class="pre">list[i]</span></code>. We can get ranges of lists by using the <code class="docutils literal notranslate"><span class="pre">:</span></code> character. For example, <code class="docutils literal notranslate"><span class="pre">list[:10]</span></code> shows the first ten elements, <code class="docutils literal notranslate"><span class="pre">list[10:]</span></code> shows everything after the ninth element, and <code class="docutils literal notranslate"><span class="pre">list[3:6]</span></code> shows elements 3, 4, and 5 (not 6!) of the list.</p>
-</div>
-<div class="section" id="Comparing-songs">
+</section>
+<section id="Comparing-songs">
 <h2><span class="section-number">3.2. </span>Comparing songs<a class="headerlink" href="#Comparing-songs" title="Permalink to this headline">¶</a></h2>
 <p>Looking at individual songs is interesting for music analysis but for that the computational approach is not really necessary. We could as easily do the same by just looking at a book of scores. The power of computational methods becomes clearer when we start comparing different songs, potentially in a large number.</p>
 <p>To facilitate this comparison, we will first load all songs in all corpora of the EFC into a single list, called <code class="docutils literal notranslate"><span class="pre">songs</span></code> (this might take a couple of minutes).</p>
@@ -758,8 +775,7 @@ require(['music21'], function() {
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[17]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">songs</span> <span class="o">=</span> <span class="p">[</span><span class="n">s</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">corpora</span><span class="p">))</span> <span class="k">for</span> <span class="n">s</span> <span class="ow">in</span> <span class="n">m21</span><span class="o">.</span><span class="n">converter</span><span class="o">.</span><span class="n">parse</span><span class="p">(</span><span class="n">corpora</span><span class="p">[</span><span class="n">i</span><span class="p">])</span> <span class="p">]</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">songs</span> <span class="o">=</span> <span class="p">[</span><span class="n">s</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">corpora</span><span class="p">))</span> <span class="k">for</span> <span class="n">s</span> <span class="ow">in</span> <span class="n">m21</span><span class="o">.</span><span class="n">converter</span><span class="o">.</span><span class="n">parse</span><span class="p">(</span><span class="n">corpora</span><span class="p">[</span><span class="n">i</span><span class="p">])</span> <span class="p">]</span>
 </pre></div>
 </div>
 </div>
@@ -769,8 +785,7 @@ require(['music21'], function() {
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[18]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="nb">len</span><span class="p">(</span><span class="n">songs</span><span class="p">)</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">len</span><span class="p">(</span><span class="n">songs</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -788,8 +803,7 @@ require(['music21'], function() {
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[19]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">german_song</span> <span class="o">=</span> <span class="n">songs</span><span class="p">[</span><span class="mi">70</span><span class="p">]</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">german_song</span> <span class="o">=</span> <span class="n">songs</span><span class="p">[</span><span class="mi">70</span><span class="p">]</span>
 <span class="n">chinese_song</span> <span class="o">=</span> <span class="n">songs</span><span class="p">[</span><span class="mi">6200</span><span class="p">]</span>
 </pre></div>
 </div>
@@ -799,8 +813,7 @@ require(['music21'], function() {
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[20]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">german_song</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">german_song</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
 </pre></div>
 </div>
 </div>
@@ -808,15 +821,14 @@ require(['music21'], function() {
 <div class="prompt empty docutils container">
 </div>
 <div class="output_area docutils container">
-<img alt="_images/03_melody_I_47_0.png" class="no-scaled-link" src="_images/03_melody_I_47_0.png" style="width: 753px; height: 286px;" />
+<img alt="_images/03_melody_I_47_0.png" class="no-scaled-link" src="_images/03_melody_I_47_0.png" style="width: 753px; height: 286px;"/>
 </div>
 </div>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[21]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">chinese_song</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">chinese_song</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
 </pre></div>
 </div>
 </div>
@@ -824,15 +836,14 @@ require(['music21'], function() {
 <div class="prompt empty docutils container">
 </div>
 <div class="output_area docutils container">
-<img alt="_images/03_melody_I_48_0.png" class="no-scaled-link" src="_images/03_melody_I_48_0.png" style="width: 753px; height: 286px;" />
+<img alt="_images/03_melody_I_48_0.png" class="no-scaled-link" src="_images/03_melody_I_48_0.png" style="width: 753px; height: 286px;"/>
 </div>
 </div>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[22]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">chinese_song</span><span class="o">.</span><span class="n">show</span><span class="p">(</span><span class="s2">&quot;midi&quot;</span><span class="p">)</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">chinese_song</span><span class="o">.</span><span class="n">show</span><span class="p">(</span><span class="s2">"midi"</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -840,9 +851,8 @@ require(['music21'], function() {
 <div class="prompt empty docutils container">
 </div>
 <div class="output_area rendered_html docutils container">
-<div id='midiPlayerDiv684563'></div>
-<link rel="stylesheet" href="//cuthbertLab.github.io/music21j/css/m21.css"
-    type="text/css" />
+<div id="midiPlayerDiv684563"></div>
+<link href="//cuthbertLab.github.io/music21j/css/m21.css" rel="stylesheet" type="text/css"/>
 <script>
 require.config({
     paths: {'music21': '//cuthbertLab.github.io/music21j/src/music21'}
@@ -855,28 +865,27 @@ require(['music21'], function() {
 </script></div>
 </div>
 <p>Analysis of songs…</p>
-</div>
-<div class="section" id="Computational-analysis">
+</section>
+<section id="Computational-analysis">
 <h2><span class="section-number">3.3. </span>Computational analysis<a class="headerlink" href="#Computational-analysis" title="Permalink to this headline">¶</a></h2>
 <p>We now go on to a computational analysis of these two and all the other songs. Specifically, we wil compare their <strong>melodic profiles</strong>. To make things a bit simpler, we will just look at the notes.</p>
 <p>A note can be easily represented as a pair of <strong>pitch</strong> (its height) and its <strong>duration</strong>. For example, the first note of the <em>Die plappernden Junggesellen</em> could be represented as <code class="docutils literal notranslate"><span class="pre">(D4,</span> <span class="pre">1/4)</span></code>; it is a quarter note on the pitch D4 (the 4 indicates the octave in which the note is).</p>
 <p>Another way to represent the pitch of notes is using <strong>MIDI numbers</strong>. MIDI stands for <em>Musical Instrument Digital Interface</em> and was developed for the communication between different electronic instruments such as keyboards. In MIDI, each note is simply associated with a number:</p>
-<p><img alt="MIDI Pitch" src="_images/midi_pitch.png" /> <em>Image from https://www.audiolabs-erlangen.de/resources/MIR/FMP/C1/C1S2_MIDI.html.</em></p>
+<p><img alt="MIDI Pitch" src="_images/midi_pitch.png"/> <em>Image from https://www.audiolabs-erlangen.de/resources/MIR/FMP/C1/C1S2_MIDI.html.</em></p>
 <p>We can see that D4 is associated with the number 62. The second note, the G4, is associated with 62+5=67 because G is five semitones above D.</p>
 <p>To make it easier to work with pieces in this way, we define a <strong>function</strong> that gives us a list of notes for each piece.</p>
 <div class="nbinput nblast docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[23]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="k">def</span> <span class="nf">notelist</span><span class="p">(</span><span class="n">piece</span><span class="p">):</span>
-    <span class="sd">&quot;&quot;&quot;</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">notelist</span><span class="p">(</span><span class="n">piece</span><span class="p">):</span>
+    <span class="sd">"""</span>
 <span class="sd">    This function takes a song as input and returns a list of (pitch, duration) pairs,</span>
 <span class="sd">    where the duration is given in quarter notes.</span>
-<span class="sd">    &quot;&quot;&quot;</span>
+<span class="sd">    """</span>
 
-    <span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">([</span> <span class="p">(</span><span class="n">note</span><span class="o">.</span><span class="n">pitch</span><span class="o">.</span><span class="n">midi</span><span class="p">,</span> <span class="n">note</span><span class="o">.</span><span class="n">quarterLength</span><span class="p">)</span> <span class="k">for</span> <span class="n">note</span> <span class="ow">in</span> <span class="n">piece</span><span class="o">.</span><span class="n">flat</span><span class="o">.</span><span class="n">notes</span> <span class="p">],</span> <span class="n">columns</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;MIDI Pitch&quot;</span><span class="p">,</span> <span class="s2">&quot;Duration&quot;</span><span class="p">])</span>
-    <span class="n">df</span><span class="p">[</span><span class="s2">&quot;Onset&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s2">&quot;Duration&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">cumsum</span><span class="p">()</span>
+    <span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">([</span> <span class="p">(</span><span class="n">note</span><span class="o">.</span><span class="n">pitch</span><span class="o">.</span><span class="n">midi</span><span class="p">,</span> <span class="n">note</span><span class="o">.</span><span class="n">quarterLength</span><span class="p">)</span> <span class="k">for</span> <span class="n">note</span> <span class="ow">in</span> <span class="n">piece</span><span class="o">.</span><span class="n">flat</span><span class="o">.</span><span class="n">notes</span> <span class="p">],</span> <span class="n">columns</span><span class="o">=</span><span class="p">[</span><span class="s2">"MIDI Pitch"</span><span class="p">,</span> <span class="s2">"Duration"</span><span class="p">])</span>
+    <span class="n">df</span><span class="p">[</span><span class="s2">"Onset"</span><span class="p">]</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s2">"Duration"</span><span class="p">]</span><span class="o">.</span><span class="n">cumsum</span><span class="p">()</span>
 
     <span class="k">return</span> <span class="n">df</span>
 </pre></div>
@@ -888,8 +897,7 @@ require(['music21'], function() {
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[24]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">notelist</span><span class="p">(</span><span class="n">german_song</span><span class="p">)[:</span><span class="mi">8</span><span class="p">]</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">notelist</span><span class="p">(</span><span class="n">german_song</span><span class="p">)[:</span><span class="mi">8</span><span class="p">]</span>
 </pre></div>
 </div>
 </div>
@@ -899,7 +907,7 @@ require(['music21'], function() {
 </div>
 <div class="output_area rendered_html docutils container">
 <div>
-<style scoped>
+<style scoped="">
     .dataframe tbody tr th:only-of-type {
         vertical-align: middle;
     }
@@ -912,66 +920,66 @@ require(['music21'], function() {
         text-align: right;
     }
 </style>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>MIDI Pitch</th>
-      <th>Duration</th>
-      <th>Onset</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>0</th>
-      <td>62</td>
-      <td>1.0</td>
-      <td>1.0</td>
-    </tr>
-    <tr>
-      <th>1</th>
-      <td>67</td>
-      <td>2.0</td>
-      <td>3.0</td>
-    </tr>
-    <tr>
-      <th>2</th>
-      <td>71</td>
-      <td>2.0</td>
-      <td>5.0</td>
-    </tr>
-    <tr>
-      <th>3</th>
-      <td>74</td>
-      <td>3.0</td>
-      <td>8.0</td>
-    </tr>
-    <tr>
-      <th>4</th>
-      <td>72</td>
-      <td>1.0</td>
-      <td>9.0</td>
-    </tr>
-    <tr>
-      <th>5</th>
-      <td>71</td>
-      <td>2.0</td>
-      <td>11.0</td>
-    </tr>
-    <tr>
-      <th>6</th>
-      <td>69</td>
-      <td>2.0</td>
-      <td>13.0</td>
-    </tr>
-    <tr>
-      <th>7</th>
-      <td>67</td>
-      <td>2.0</td>
-      <td>15.0</td>
-    </tr>
-  </tbody>
-</table>
+<div class="table-wrapper"><table border="1" class="dataframe">
+<thead>
+<tr style="text-align: right;">
+<th></th>
+<th>MIDI Pitch</th>
+<th>Duration</th>
+<th>Onset</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th>0</th>
+<td>62</td>
+<td>1.0</td>
+<td>1.0</td>
+</tr>
+<tr>
+<th>1</th>
+<td>67</td>
+<td>2.0</td>
+<td>3.0</td>
+</tr>
+<tr>
+<th>2</th>
+<td>71</td>
+<td>2.0</td>
+<td>5.0</td>
+</tr>
+<tr>
+<th>3</th>
+<td>74</td>
+<td>3.0</td>
+<td>8.0</td>
+</tr>
+<tr>
+<th>4</th>
+<td>72</td>
+<td>1.0</td>
+<td>9.0</td>
+</tr>
+<tr>
+<th>5</th>
+<td>71</td>
+<td>2.0</td>
+<td>11.0</td>
+</tr>
+<tr>
+<th>6</th>
+<td>69</td>
+<td>2.0</td>
+<td>13.0</td>
+</tr>
+<tr>
+<th>7</th>
+<td>67</td>
+<td>2.0</td>
+<td>15.0</td>
+</tr>
+</tbody>
+</table></div>
 </div></div>
 </div>
 <p>Note that we added another column, “Onset”. What does it represent?</p>
@@ -980,27 +988,26 @@ require(['music21'], function() {
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[25]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="k">def</span> <span class="nf">plot_melodic_profile</span><span class="p">(</span><span class="n">notelist</span><span class="p">,</span> <span class="n">ax</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">c</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">mean</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">Z</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">sections</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">standardized</span><span class="o">=</span><span class="kc">False</span><span class="p">):</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">plot_melodic_profile</span><span class="p">(</span><span class="n">notelist</span><span class="p">,</span> <span class="n">ax</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">c</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">mean</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">Z</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">sections</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">standardized</span><span class="o">=</span><span class="kc">False</span><span class="p">):</span>
 
     <span class="k">if</span> <span class="n">ax</span> <span class="o">==</span> <span class="kc">None</span><span class="p">:</span>
         <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">gca</span><span class="p">()</span>
 
     <span class="k">if</span> <span class="n">standardized</span><span class="p">:</span>
-        <span class="n">x</span> <span class="o">=</span> <span class="n">notelist</span><span class="p">[</span><span class="s2">&quot;Rel. Onset&quot;</span><span class="p">]</span>
-        <span class="n">y</span> <span class="o">=</span> <span class="n">notelist</span><span class="p">[</span><span class="s2">&quot;Rel. MIDI Pitch&quot;</span><span class="p">]</span>
+        <span class="n">x</span> <span class="o">=</span> <span class="n">notelist</span><span class="p">[</span><span class="s2">"Rel. Onset"</span><span class="p">]</span>
+        <span class="n">y</span> <span class="o">=</span> <span class="n">notelist</span><span class="p">[</span><span class="s2">"Rel. MIDI Pitch"</span><span class="p">]</span>
     <span class="k">else</span><span class="p">:</span>
-        <span class="n">x</span> <span class="o">=</span> <span class="n">notelist</span><span class="p">[</span><span class="s2">&quot;Onset&quot;</span><span class="p">]</span>
-        <span class="n">y</span> <span class="o">=</span> <span class="n">notelist</span><span class="p">[</span><span class="s2">&quot;MIDI Pitch&quot;</span><span class="p">]</span>
+        <span class="n">x</span> <span class="o">=</span> <span class="n">notelist</span><span class="p">[</span><span class="s2">"Onset"</span><span class="p">]</span>
+        <span class="n">y</span> <span class="o">=</span> <span class="n">notelist</span><span class="p">[</span><span class="s2">"MIDI Pitch"</span><span class="p">]</span>
 
     <span class="n">ax</span><span class="o">.</span><span class="n">step</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="n">y</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="n">c</span><span class="p">)</span>
 
     <span class="k">if</span> <span class="n">mean</span><span class="p">:</span>
-        <span class="n">ax</span><span class="o">.</span><span class="n">axhline</span><span class="p">(</span><span class="n">y</span><span class="o">.</span><span class="n">mean</span><span class="p">(),</span> <span class="n">color</span><span class="o">=</span><span class="s2">&quot;gray&quot;</span><span class="p">,</span> <span class="n">linestyle</span><span class="o">=</span><span class="s2">&quot;--&quot;</span><span class="p">)</span>
+        <span class="n">ax</span><span class="o">.</span><span class="n">axhline</span><span class="p">(</span><span class="n">y</span><span class="o">.</span><span class="n">mean</span><span class="p">(),</span> <span class="n">color</span><span class="o">=</span><span class="s2">"gray"</span><span class="p">,</span> <span class="n">linestyle</span><span class="o">=</span><span class="s2">"--"</span><span class="p">)</span>
 
     <span class="k">if</span> <span class="n">sections</span><span class="p">:</span>
         <span class="k">for</span> <span class="n">l</span> <span class="ow">in</span> <span class="p">[</span> <span class="n">x</span><span class="o">.</span><span class="n">max</span><span class="p">()</span> <span class="o">*</span> <span class="n">i</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="p">[</span> <span class="mi">1</span><span class="o">/</span><span class="mi">4</span><span class="p">,</span> <span class="mi">1</span><span class="o">/</span><span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="o">/</span><span class="mi">4</span><span class="p">]</span> <span class="p">]:</span>
-            <span class="n">ax</span><span class="o">.</span><span class="n">axvline</span><span class="p">(</span><span class="n">l</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s2">&quot;gray&quot;</span><span class="p">,</span> <span class="n">linewidth</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">linestyle</span><span class="o">=</span><span class="s2">&quot;--&quot;</span><span class="p">)</span>
+            <span class="n">ax</span><span class="o">.</span><span class="n">axvline</span><span class="p">(</span><span class="n">l</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s2">"gray"</span><span class="p">,</span> <span class="n">linewidth</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">linestyle</span><span class="o">=</span><span class="s2">"--"</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -1008,8 +1015,7 @@ require(['music21'], function() {
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[26]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">plot_melodic_profile</span><span class="p">(</span><span class="n">notelist</span><span class="p">(</span><span class="n">german_song</span><span class="p">))</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">plot_melodic_profile</span><span class="p">(</span><span class="n">notelist</span><span class="p">(</span><span class="n">german_song</span><span class="p">))</span>
 </pre></div>
 </div>
 </div>
@@ -1017,7 +1023,7 @@ require(['music21'], function() {
 <div class="prompt empty docutils container">
 </div>
 <div class="output_area docutils container">
-<img alt="_images/03_melody_I_60_0.png" src="_images/03_melody_I_60_0.png" />
+<img alt="_images/03_melody_I_60_0.png" src="_images/03_melody_I_60_0.png"/>
 </div>
 </div>
 <p>Likewise, we can as easily plot the melodic contour of the Chinese song (we will use a different color).</p>
@@ -1025,14 +1031,13 @@ require(['music21'], function() {
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[27]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">fig</span><span class="p">,</span> <span class="n">axes</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span> <span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">8</span><span class="p">,</span><span class="mi">6</span><span class="p">))</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">fig</span><span class="p">,</span> <span class="n">axes</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span> <span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">8</span><span class="p">,</span><span class="mi">6</span><span class="p">))</span>
 
 <span class="n">plot_melodic_profile</span><span class="p">(</span><span class="n">notelist</span><span class="p">(</span><span class="n">german_song</span><span class="p">),</span> <span class="n">ax</span><span class="o">=</span><span class="n">axes</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">mean</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
-<span class="n">plot_melodic_profile</span><span class="p">(</span><span class="n">notelist</span><span class="p">(</span><span class="n">chinese_song</span><span class="p">),</span> <span class="n">ax</span><span class="o">=</span><span class="n">axes</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">c</span><span class="o">=</span><span class="s2">&quot;firebrick&quot;</span><span class="p">,</span> <span class="n">mean</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="n">plot_melodic_profile</span><span class="p">(</span><span class="n">notelist</span><span class="p">(</span><span class="n">chinese_song</span><span class="p">),</span> <span class="n">ax</span><span class="o">=</span><span class="n">axes</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">c</span><span class="o">=</span><span class="s2">"firebrick"</span><span class="p">,</span> <span class="n">mean</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
 
 <span class="n">plt</span><span class="o">.</span><span class="n">tight_layout</span><span class="p">()</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">savefig</span><span class="p">(</span><span class="s2">&quot;img/melodic_profiles.png&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">savefig</span><span class="p">(</span><span class="s2">"img/melodic_profiles.png"</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -1040,7 +1045,7 @@ require(['music21'], function() {
 <div class="prompt empty docutils container">
 </div>
 <div class="output_area docutils container">
-<img alt="_images/03_melody_I_62_0.png" src="_images/03_melody_I_62_0.png" />
+<img alt="_images/03_melody_I_62_0.png" src="_images/03_melody_I_62_0.png"/>
 </div>
 </div>
 <p>The dashed grey lines in both plots show the average MIDI pitch of the song.</p>
@@ -1050,15 +1055,14 @@ require(['music21'], function() {
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[28]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="k">def</span> <span class="nf">standardize</span><span class="p">(</span><span class="n">notelist</span><span class="p">):</span>
-    <span class="sd">&quot;&quot;&quot;</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">standardize</span><span class="p">(</span><span class="n">notelist</span><span class="p">):</span>
+    <span class="sd">"""</span>
 <span class="sd">    Takes a notelist as input and returns a standardized version.</span>
-<span class="sd">    &quot;&quot;&quot;</span>
+<span class="sd">    """</span>
 
-    <span class="n">notelist</span><span class="p">[</span><span class="s2">&quot;Rel. MIDI Pitch&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="p">(</span><span class="n">notelist</span><span class="p">[</span><span class="s2">&quot;MIDI Pitch&quot;</span><span class="p">]</span> <span class="o">-</span> <span class="n">notelist</span><span class="p">[</span><span class="s2">&quot;MIDI Pitch&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">mean</span><span class="p">())</span> <span class="o">/</span> <span class="n">notelist</span><span class="p">[</span><span class="s2">&quot;MIDI Pitch&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">std</span><span class="p">()</span>
-    <span class="n">notelist</span><span class="p">[</span><span class="s2">&quot;Rel. Duration&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">notelist</span><span class="p">[</span><span class="s2">&quot;Duration&quot;</span><span class="p">]</span> <span class="o">/</span> <span class="n">notelist</span><span class="p">[</span><span class="s2">&quot;Duration&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span>
-    <span class="n">notelist</span><span class="p">[</span><span class="s2">&quot;Rel. Onset&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">notelist</span><span class="p">[</span><span class="s2">&quot;Onset&quot;</span><span class="p">]</span> <span class="o">/</span> <span class="n">notelist</span><span class="p">[</span><span class="s2">&quot;Onset&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">max</span><span class="p">()</span>
+    <span class="n">notelist</span><span class="p">[</span><span class="s2">"Rel. MIDI Pitch"</span><span class="p">]</span> <span class="o">=</span> <span class="p">(</span><span class="n">notelist</span><span class="p">[</span><span class="s2">"MIDI Pitch"</span><span class="p">]</span> <span class="o">-</span> <span class="n">notelist</span><span class="p">[</span><span class="s2">"MIDI Pitch"</span><span class="p">]</span><span class="o">.</span><span class="n">mean</span><span class="p">())</span> <span class="o">/</span> <span class="n">notelist</span><span class="p">[</span><span class="s2">"MIDI Pitch"</span><span class="p">]</span><span class="o">.</span><span class="n">std</span><span class="p">()</span>
+    <span class="n">notelist</span><span class="p">[</span><span class="s2">"Rel. Duration"</span><span class="p">]</span> <span class="o">=</span> <span class="n">notelist</span><span class="p">[</span><span class="s2">"Duration"</span><span class="p">]</span> <span class="o">/</span> <span class="n">notelist</span><span class="p">[</span><span class="s2">"Duration"</span><span class="p">]</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span>
+    <span class="n">notelist</span><span class="p">[</span><span class="s2">"Rel. Onset"</span><span class="p">]</span> <span class="o">=</span> <span class="n">notelist</span><span class="p">[</span><span class="s2">"Onset"</span><span class="p">]</span> <span class="o">/</span> <span class="n">notelist</span><span class="p">[</span><span class="s2">"Onset"</span><span class="p">]</span><span class="o">.</span><span class="n">max</span><span class="p">()</span>
 
     <span class="k">return</span> <span class="n">notelist</span>
 </pre></div>
@@ -1068,8 +1072,7 @@ require(['music21'], function() {
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[29]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">standardize</span><span class="p">(</span><span class="n">notelist</span><span class="p">(</span><span class="n">german_song</span><span class="p">))[:</span><span class="mi">8</span><span class="p">]</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">standardize</span><span class="p">(</span><span class="n">notelist</span><span class="p">(</span><span class="n">german_song</span><span class="p">))[:</span><span class="mi">8</span><span class="p">]</span>
 </pre></div>
 </div>
 </div>
@@ -1079,7 +1082,7 @@ require(['music21'], function() {
 </div>
 <div class="output_area rendered_html docutils container">
 <div>
-<style scoped>
+<style scoped="">
     .dataframe tbody tr th:only-of-type {
         vertical-align: middle;
     }
@@ -1092,102 +1095,101 @@ require(['music21'], function() {
         text-align: right;
     }
 </style>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>MIDI Pitch</th>
-      <th>Duration</th>
-      <th>Onset</th>
-      <th>Rel. MIDI Pitch</th>
-      <th>Rel. Duration</th>
-      <th>Rel. Onset</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>0</th>
-      <td>62</td>
-      <td>1.0</td>
-      <td>1.0</td>
-      <td>-2.543827</td>
-      <td>0.016667</td>
-      <td>0.016667</td>
-    </tr>
-    <tr>
-      <th>1</th>
-      <td>67</td>
-      <td>2.0</td>
-      <td>3.0</td>
-      <td>-0.949300</td>
-      <td>0.033333</td>
-      <td>0.050000</td>
-    </tr>
-    <tr>
-      <th>2</th>
-      <td>71</td>
-      <td>2.0</td>
-      <td>5.0</td>
-      <td>0.326322</td>
-      <td>0.033333</td>
-      <td>0.083333</td>
-    </tr>
-    <tr>
-      <th>3</th>
-      <td>74</td>
-      <td>3.0</td>
-      <td>8.0</td>
-      <td>1.283038</td>
-      <td>0.050000</td>
-      <td>0.133333</td>
-    </tr>
-    <tr>
-      <th>4</th>
-      <td>72</td>
-      <td>1.0</td>
-      <td>9.0</td>
-      <td>0.645227</td>
-      <td>0.016667</td>
-      <td>0.150000</td>
-    </tr>
-    <tr>
-      <th>5</th>
-      <td>71</td>
-      <td>2.0</td>
-      <td>11.0</td>
-      <td>0.326322</td>
-      <td>0.033333</td>
-      <td>0.183333</td>
-    </tr>
-    <tr>
-      <th>6</th>
-      <td>69</td>
-      <td>2.0</td>
-      <td>13.0</td>
-      <td>-0.311489</td>
-      <td>0.033333</td>
-      <td>0.216667</td>
-    </tr>
-    <tr>
-      <th>7</th>
-      <td>67</td>
-      <td>2.0</td>
-      <td>15.0</td>
-      <td>-0.949300</td>
-      <td>0.033333</td>
-      <td>0.250000</td>
-    </tr>
-  </tbody>
-</table>
+<div class="table-wrapper"><table border="1" class="dataframe">
+<thead>
+<tr style="text-align: right;">
+<th></th>
+<th>MIDI Pitch</th>
+<th>Duration</th>
+<th>Onset</th>
+<th>Rel. MIDI Pitch</th>
+<th>Rel. Duration</th>
+<th>Rel. Onset</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th>0</th>
+<td>62</td>
+<td>1.0</td>
+<td>1.0</td>
+<td>-2.543827</td>
+<td>0.016667</td>
+<td>0.016667</td>
+</tr>
+<tr>
+<th>1</th>
+<td>67</td>
+<td>2.0</td>
+<td>3.0</td>
+<td>-0.949300</td>
+<td>0.033333</td>
+<td>0.050000</td>
+</tr>
+<tr>
+<th>2</th>
+<td>71</td>
+<td>2.0</td>
+<td>5.0</td>
+<td>0.326322</td>
+<td>0.033333</td>
+<td>0.083333</td>
+</tr>
+<tr>
+<th>3</th>
+<td>74</td>
+<td>3.0</td>
+<td>8.0</td>
+<td>1.283038</td>
+<td>0.050000</td>
+<td>0.133333</td>
+</tr>
+<tr>
+<th>4</th>
+<td>72</td>
+<td>1.0</td>
+<td>9.0</td>
+<td>0.645227</td>
+<td>0.016667</td>
+<td>0.150000</td>
+</tr>
+<tr>
+<th>5</th>
+<td>71</td>
+<td>2.0</td>
+<td>11.0</td>
+<td>0.326322</td>
+<td>0.033333</td>
+<td>0.183333</td>
+</tr>
+<tr>
+<th>6</th>
+<td>69</td>
+<td>2.0</td>
+<td>13.0</td>
+<td>-0.311489</td>
+<td>0.033333</td>
+<td>0.216667</td>
+</tr>
+<tr>
+<th>7</th>
+<td>67</td>
+<td>2.0</td>
+<td>15.0</td>
+<td>-0.949300</td>
+<td>0.033333</td>
+<td>0.250000</td>
+</tr>
+</tbody>
+</table></div>
 </div></div>
 </div>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[30]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">plot_melodic_profile</span><span class="p">(</span><span class="n">standardize</span><span class="p">(</span><span class="n">notelist</span><span class="p">(</span><span class="n">german_song</span><span class="p">)),</span> <span class="n">mean</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">sections</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">standardized</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
-<span class="n">plot_melodic_profile</span><span class="p">(</span><span class="n">standardize</span><span class="p">(</span><span class="n">notelist</span><span class="p">(</span><span class="n">chinese_song</span><span class="p">)),</span> <span class="n">c</span><span class="o">=</span><span class="s2">&quot;firebrick&quot;</span><span class="p">,</span> <span class="n">standardized</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">plot_melodic_profile</span><span class="p">(</span><span class="n">standardize</span><span class="p">(</span><span class="n">notelist</span><span class="p">(</span><span class="n">german_song</span><span class="p">)),</span> <span class="n">mean</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">sections</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">standardized</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="n">plot_melodic_profile</span><span class="p">(</span><span class="n">standardize</span><span class="p">(</span><span class="n">notelist</span><span class="p">(</span><span class="n">chinese_song</span><span class="p">)),</span> <span class="n">c</span><span class="o">=</span><span class="s2">"firebrick"</span><span class="p">,</span> <span class="n">standardized</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -1195,7 +1197,7 @@ require(['music21'], function() {
 <div class="prompt empty docutils container">
 </div>
 <div class="output_area docutils container">
-<img alt="_images/03_melody_I_66_0.png" src="_images/03_melody_I_66_0.png" />
+<img alt="_images/03_melody_I_66_0.png" src="_images/03_melody_I_66_0.png"/>
 </div>
 </div>
 <p>Standardizing the songs makes it possible to compare them directly: They have now the same length 1 and their pitches are centered around the mean 0 with a standard deviation of 1.</p>
@@ -1204,12 +1206,11 @@ require(['music21'], function() {
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[31]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">dfs</span> <span class="o">=</span> <span class="p">[</span> <span class="p">]</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">dfs</span> <span class="o">=</span> <span class="p">[</span> <span class="p">]</span>
 
 <span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="n">song</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">songs</span><span class="p">):</span>
     <span class="n">df</span> <span class="o">=</span> <span class="n">standardize</span><span class="p">(</span><span class="n">notelist</span><span class="p">(</span><span class="n">song</span><span class="p">))</span>
-    <span class="n">df</span><span class="p">[</span><span class="s2">&quot;Song ID&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">i</span>
+    <span class="n">df</span><span class="p">[</span><span class="s2">"Song ID"</span><span class="p">]</span> <span class="o">=</span> <span class="n">i</span>
     <span class="n">dfs</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">df</span><span class="p">)</span>
 
 <span class="n">big_df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">concat</span><span class="p">(</span><span class="n">dfs</span><span class="p">)</span><span class="o">.</span><span class="n">reset_index</span><span class="p">(</span><span class="n">drop</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
@@ -1220,8 +1221,7 @@ require(['music21'], function() {
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[53]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">big_df</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">big_df</span>
 </pre></div>
 </div>
 </div>
@@ -1231,7 +1231,7 @@ require(['music21'], function() {
 </div>
 <div class="output_area rendered_html docutils container">
 <div>
-<style scoped>
+<style scoped="">
     .dataframe tbody tr th:only-of-type {
         vertical-align: middle;
     }
@@ -1244,156 +1244,156 @@ require(['music21'], function() {
         text-align: right;
     }
 </style>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>MIDI Pitch</th>
-      <th>Duration</th>
-      <th>Onset</th>
-      <th>Rel. MIDI Pitch</th>
-      <th>Rel. Duration</th>
-      <th>Rel. Onset</th>
-      <th>Song ID</th>
-      <th>Avg. MIDI Pitch</th>
-      <th>shifted_pitch</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>0</th>
-      <td>67</td>
-      <td>2.00</td>
-      <td>2.00</td>
-      <td>-1.819039</td>
-      <td>0.013158</td>
-      <td>0.013158</td>
-      <td>0</td>
-      <td>72</td>
-      <td>-5</td>
-    </tr>
-    <tr>
-      <th>1</th>
-      <td>70</td>
-      <td>2.00</td>
-      <td>4.00</td>
-      <td>-0.741977</td>
-      <td>0.013158</td>
-      <td>0.026316</td>
-      <td>0</td>
-      <td>72</td>
-      <td>-2</td>
-    </tr>
-    <tr>
-      <th>2</th>
-      <td>71</td>
-      <td>2.00</td>
-      <td>6.00</td>
-      <td>-0.382956</td>
-      <td>0.013158</td>
-      <td>0.039474</td>
-      <td>0</td>
-      <td>72</td>
-      <td>-1</td>
-    </tr>
-    <tr>
-      <th>3</th>
-      <td>72</td>
-      <td>2.00</td>
-      <td>8.00</td>
-      <td>-0.023935</td>
-      <td>0.013158</td>
-      <td>0.052632</td>
-      <td>0</td>
-      <td>72</td>
-      <td>0</td>
-    </tr>
-    <tr>
-      <th>4</th>
-      <td>72</td>
-      <td>2.00</td>
-      <td>10.00</td>
-      <td>-0.023935</td>
-      <td>0.013158</td>
-      <td>0.065789</td>
-      <td>0</td>
-      <td>72</td>
-      <td>0</td>
-    </tr>
-    <tr>
-      <th>...</th>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-    </tr>
-    <tr>
-      <th>450591</th>
-      <td>71</td>
-      <td>0.25</td>
-      <td>28.50</td>
-      <td>0.691456</td>
-      <td>0.008197</td>
-      <td>0.934426</td>
-      <td>8513</td>
-      <td>68</td>
-      <td>3</td>
-    </tr>
-    <tr>
-      <th>450592</th>
-      <td>69</td>
-      <td>0.25</td>
-      <td>28.75</td>
-      <td>0.098779</td>
-      <td>0.008197</td>
-      <td>0.942623</td>
-      <td>8513</td>
-      <td>68</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <th>450593</th>
-      <td>73</td>
-      <td>0.25</td>
-      <td>29.00</td>
-      <td>1.284133</td>
-      <td>0.008197</td>
-      <td>0.950820</td>
-      <td>8513</td>
-      <td>68</td>
-      <td>5</td>
-    </tr>
-    <tr>
-      <th>450594</th>
-      <td>71</td>
-      <td>1.00</td>
-      <td>30.00</td>
-      <td>0.691456</td>
-      <td>0.032787</td>
-      <td>0.983607</td>
-      <td>8513</td>
-      <td>68</td>
-      <td>3</td>
-    </tr>
-    <tr>
-      <th>450595</th>
-      <td>69</td>
-      <td>0.50</td>
-      <td>30.50</td>
-      <td>0.098779</td>
-      <td>0.016393</td>
-      <td>1.000000</td>
-      <td>8513</td>
-      <td>68</td>
-      <td>1</td>
-    </tr>
-  </tbody>
-</table>
+<div class="table-wrapper"><table border="1" class="dataframe">
+<thead>
+<tr style="text-align: right;">
+<th></th>
+<th>MIDI Pitch</th>
+<th>Duration</th>
+<th>Onset</th>
+<th>Rel. MIDI Pitch</th>
+<th>Rel. Duration</th>
+<th>Rel. Onset</th>
+<th>Song ID</th>
+<th>Avg. MIDI Pitch</th>
+<th>shifted_pitch</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th>0</th>
+<td>67</td>
+<td>2.00</td>
+<td>2.00</td>
+<td>-1.819039</td>
+<td>0.013158</td>
+<td>0.013158</td>
+<td>0</td>
+<td>72</td>
+<td>-5</td>
+</tr>
+<tr>
+<th>1</th>
+<td>70</td>
+<td>2.00</td>
+<td>4.00</td>
+<td>-0.741977</td>
+<td>0.013158</td>
+<td>0.026316</td>
+<td>0</td>
+<td>72</td>
+<td>-2</td>
+</tr>
+<tr>
+<th>2</th>
+<td>71</td>
+<td>2.00</td>
+<td>6.00</td>
+<td>-0.382956</td>
+<td>0.013158</td>
+<td>0.039474</td>
+<td>0</td>
+<td>72</td>
+<td>-1</td>
+</tr>
+<tr>
+<th>3</th>
+<td>72</td>
+<td>2.00</td>
+<td>8.00</td>
+<td>-0.023935</td>
+<td>0.013158</td>
+<td>0.052632</td>
+<td>0</td>
+<td>72</td>
+<td>0</td>
+</tr>
+<tr>
+<th>4</th>
+<td>72</td>
+<td>2.00</td>
+<td>10.00</td>
+<td>-0.023935</td>
+<td>0.013158</td>
+<td>0.065789</td>
+<td>0</td>
+<td>72</td>
+<td>0</td>
+</tr>
+<tr>
+<th>...</th>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+</tr>
+<tr>
+<th>450591</th>
+<td>71</td>
+<td>0.25</td>
+<td>28.50</td>
+<td>0.691456</td>
+<td>0.008197</td>
+<td>0.934426</td>
+<td>8513</td>
+<td>68</td>
+<td>3</td>
+</tr>
+<tr>
+<th>450592</th>
+<td>69</td>
+<td>0.25</td>
+<td>28.75</td>
+<td>0.098779</td>
+<td>0.008197</td>
+<td>0.942623</td>
+<td>8513</td>
+<td>68</td>
+<td>1</td>
+</tr>
+<tr>
+<th>450593</th>
+<td>73</td>
+<td>0.25</td>
+<td>29.00</td>
+<td>1.284133</td>
+<td>0.008197</td>
+<td>0.950820</td>
+<td>8513</td>
+<td>68</td>
+<td>5</td>
+</tr>
+<tr>
+<th>450594</th>
+<td>71</td>
+<td>1.00</td>
+<td>30.00</td>
+<td>0.691456</td>
+<td>0.032787</td>
+<td>0.983607</td>
+<td>8513</td>
+<td>68</td>
+<td>3</td>
+</tr>
+<tr>
+<th>450595</th>
+<td>69</td>
+<td>0.50</td>
+<td>30.50</td>
+<td>0.098779</td>
+<td>0.016393</td>
+<td>1.000000</td>
+<td>8513</td>
+<td>68</td>
+<td>1</td>
+</tr>
+</tbody>
+</table></div>
 <p>450596 rows × 9 columns</p>
 </div></div>
 </div>
@@ -1401,8 +1401,7 @@ require(['music21'], function() {
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[63]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">big_df</span><span class="o">.</span><span class="n">to_csv</span><span class="p">(</span><span class="s2">&quot;data/big_df.csv&quot;</span><span class="p">)</span> <span class="c1"># comma-separated values</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">big_df</span><span class="o">.</span><span class="n">to_csv</span><span class="p">(</span><span class="s2">"data/big_df.csv"</span><span class="p">)</span> <span class="c1"># comma-separated values</span>
 </pre></div>
 </div>
 </div>
@@ -1410,50 +1409,48 @@ require(['music21'], function() {
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[66]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">big_df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s2">&quot;data/big_df.csv&quot;</span><span class="p">)</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">big_df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s2">"data/big_df.csv"</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
-</div>
-<div class="section" id="The-melodic-arc">
+</section>
+<section id="The-melodic-arc">
 <h2><span class="section-number">3.4. </span>The melodic arc<a class="headerlink" href="#The-melodic-arc" title="Permalink to this headline">¶</a></h2>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[35]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="o">%%time</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">%%time</span>
 
 <span class="n">fig</span><span class="p">,</span> <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">12</span><span class="p">,</span><span class="mi">8</span><span class="p">))</span>
 
-<span class="n">grouped</span> <span class="o">=</span> <span class="n">big_df</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s2">&quot;Song ID&quot;</span><span class="p">)</span>
+<span class="n">grouped</span> <span class="o">=</span> <span class="n">big_df</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s2">"Song ID"</span><span class="p">)</span>
 
 <span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="n">g</span> <span class="ow">in</span> <span class="n">grouped</span><span class="p">:</span>
-    <span class="n">x</span> <span class="o">=</span> <span class="n">g</span><span class="p">[</span><span class="s2">&quot;Rel. Onset&quot;</span><span class="p">]</span>
-    <span class="n">y</span> <span class="o">=</span> <span class="n">g</span><span class="p">[</span><span class="s2">&quot;Rel. MIDI Pitch&quot;</span><span class="p">]</span>
-    <span class="n">ax</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="n">y</span><span class="p">,</span> <span class="n">lw</span><span class="o">=.</span><span class="mi">5</span><span class="p">,</span> <span class="n">c</span><span class="o">=</span><span class="s2">&quot;tab:red&quot;</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="mi">1</span><span class="o">/</span><span class="mi">100</span><span class="p">)</span>
+    <span class="n">x</span> <span class="o">=</span> <span class="n">g</span><span class="p">[</span><span class="s2">"Rel. Onset"</span><span class="p">]</span>
+    <span class="n">y</span> <span class="o">=</span> <span class="n">g</span><span class="p">[</span><span class="s2">"Rel. MIDI Pitch"</span><span class="p">]</span>
+    <span class="n">ax</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="n">y</span><span class="p">,</span> <span class="n">lw</span><span class="o">=</span><span class="mf">.5</span><span class="p">,</span> <span class="n">c</span><span class="o">=</span><span class="s2">"tab:red"</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="mi">1</span><span class="o">/</span><span class="mi">100</span><span class="p">)</span>
 
-<span class="n">ax</span><span class="o">.</span><span class="n">axvline</span><span class="p">(</span><span class="o">.</span><span class="mi">25</span><span class="p">,</span> <span class="n">lw</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">ls</span><span class="o">=</span><span class="s2">&quot;--&quot;</span><span class="p">,</span> <span class="n">c</span><span class="o">=</span><span class="s2">&quot;gray&quot;</span><span class="p">)</span>
-<span class="n">ax</span><span class="o">.</span><span class="n">axvline</span><span class="p">(</span><span class="o">.</span><span class="mi">5</span><span class="p">,</span> <span class="n">lw</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">ls</span><span class="o">=</span><span class="s2">&quot;--&quot;</span><span class="p">,</span> <span class="n">c</span><span class="o">=</span><span class="s2">&quot;gray&quot;</span><span class="p">)</span>
-<span class="n">ax</span><span class="o">.</span><span class="n">axvline</span><span class="p">(</span><span class="o">.</span><span class="mi">75</span><span class="p">,</span> <span class="n">lw</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">ls</span><span class="o">=</span><span class="s2">&quot;--&quot;</span><span class="p">,</span> <span class="n">c</span><span class="o">=</span><span class="s2">&quot;gray&quot;</span><span class="p">)</span>
-<span class="n">ax</span><span class="o">.</span><span class="n">axhline</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">lw</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">ls</span><span class="o">=</span><span class="s2">&quot;--&quot;</span><span class="p">,</span> <span class="n">c</span><span class="o">=</span><span class="s2">&quot;gray&quot;</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">axvline</span><span class="p">(</span><span class="mf">.25</span><span class="p">,</span> <span class="n">lw</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">ls</span><span class="o">=</span><span class="s2">"--"</span><span class="p">,</span> <span class="n">c</span><span class="o">=</span><span class="s2">"gray"</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">axvline</span><span class="p">(</span><span class="mf">.5</span><span class="p">,</span> <span class="n">lw</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">ls</span><span class="o">=</span><span class="s2">"--"</span><span class="p">,</span> <span class="n">c</span><span class="o">=</span><span class="s2">"gray"</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">axvline</span><span class="p">(</span><span class="mf">.75</span><span class="p">,</span> <span class="n">lw</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">ls</span><span class="o">=</span><span class="s2">"--"</span><span class="p">,</span> <span class="n">c</span><span class="o">=</span><span class="s2">"gray"</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">axhline</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">lw</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">ls</span><span class="o">=</span><span class="s2">"--"</span><span class="p">,</span> <span class="n">c</span><span class="o">=</span><span class="s2">"gray"</span><span class="p">)</span>
 
 <span class="n">lowess</span> <span class="o">=</span> <span class="n">sm</span><span class="o">.</span><span class="n">nonparametric</span><span class="o">.</span><span class="n">lowess</span>
-<span class="n">big_x</span> <span class="o">=</span> <span class="n">big_df</span><span class="p">[</span><span class="s2">&quot;Rel. Onset&quot;</span><span class="p">]</span>
-<span class="n">big_y</span> <span class="o">=</span> <span class="n">big_df</span><span class="p">[</span><span class="s2">&quot;Rel. MIDI Pitch&quot;</span><span class="p">]</span>
+<span class="n">big_x</span> <span class="o">=</span> <span class="n">big_df</span><span class="p">[</span><span class="s2">"Rel. Onset"</span><span class="p">]</span>
+<span class="n">big_y</span> <span class="o">=</span> <span class="n">big_df</span><span class="p">[</span><span class="s2">"Rel. MIDI Pitch"</span><span class="p">]</span>
 <span class="n">big_z</span> <span class="o">=</span> <span class="n">lowess</span><span class="p">(</span><span class="n">big_y</span><span class="p">,</span> <span class="n">big_x</span><span class="p">,</span> <span class="n">frac</span><span class="o">=</span><span class="mi">5</span><span class="o">/</span><span class="mi">100</span><span class="p">,</span> <span class="n">delta</span><span class="o">=</span><span class="mi">1</span><span class="o">/</span><span class="mi">20</span><span class="p">)</span> <span class="c1"># Locally-Weighted Scatterplot Smoothing</span>
-<span class="n">ax</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">big_z</span><span class="p">[:,</span><span class="mi">0</span><span class="p">],</span> <span class="n">big_z</span><span class="p">[:,</span><span class="mi">1</span><span class="p">],</span> <span class="n">c</span><span class="o">=</span><span class="s2">&quot;black&quot;</span><span class="p">,</span> <span class="n">lw</span><span class="o">=</span><span class="mi">3</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">big_z</span><span class="p">[:,</span><span class="mi">0</span><span class="p">],</span> <span class="n">big_z</span><span class="p">[:,</span><span class="mi">1</span><span class="p">],</span> <span class="n">c</span><span class="o">=</span><span class="s2">"black"</span><span class="p">,</span> <span class="n">lw</span><span class="o">=</span><span class="mi">3</span><span class="p">)</span>
 
-<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s2">&quot;Melodic arc&quot;</span><span class="p">)</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s2">&quot;Relative onset&quot;</span><span class="p">)</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s2">&quot;Pitch deviation&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s2">"Melodic arc"</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s2">"Relative onset"</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s2">"Pitch deviation"</span><span class="p">)</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">xticks</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">5</span><span class="p">))</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">yticks</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="o">-</span><span class="mi">5</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">11</span><span class="p">))</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">xlim</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">)</span>
 
 <span class="n">plt</span><span class="o">.</span><span class="n">tight_layout</span><span class="p">()</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">savefig</span><span class="p">(</span><span class="s2">&quot;img/melodic_arc.png&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">savefig</span><span class="p">(</span><span class="s2">"img/melodic_arc.png"</span><span class="p">)</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
 </pre></div>
 </div>
@@ -1462,7 +1459,7 @@ require(['music21'], function() {
 <div class="prompt empty docutils container">
 </div>
 <div class="output_area docutils container">
-<img alt="_images/03_melody_I_73_0.png" src="_images/03_melody_I_73_0.png" />
+<img alt="_images/03_melody_I_73_0.png" src="_images/03_melody_I_73_0.png"/>
 </div>
 </div>
 <div class="nboutput nblast docutils container">
@@ -1473,8 +1470,8 @@ require(['music21'], function() {
 Wall time: 24.1 s
 </pre></div></div>
 </div>
-</div>
-<div class="section" id="Intervals">
+</section>
+<section id="Intervals">
 <h2><span class="section-number">3.5. </span>Intervals<a class="headerlink" href="#Intervals" title="Permalink to this headline">¶</a></h2>
 <p>We have seen that the melodic arc emerges as a stable shape over the entire EFC, and that sub-phrases of the songs likewise have an arc-like shape. In the remainder of this section, we look at <strong>intervals</strong>, the distance between two notes.</p>
 <p>Let’s come back to the song <em>Die plappernden Junggesellen</em></p>
@@ -1482,8 +1479,7 @@ Wall time: 24.1 s
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[36]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">german_song</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">german_song</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
 </pre></div>
 </div>
 </div>
@@ -1491,7 +1487,7 @@ Wall time: 24.1 s
 <div class="prompt empty docutils container">
 </div>
 <div class="output_area docutils container">
-<img alt="_images/03_melody_I_76_0.png" class="no-scaled-link" src="_images/03_melody_I_76_0.png" style="width: 753px; height: 286px;" />
+<img alt="_images/03_melody_I_76_0.png" class="no-scaled-link" src="_images/03_melody_I_76_0.png" style="width: 753px; height: 286px;"/>
 </div>
 </div>
 <p>We have already extracted its notes and stored them in a DataFrame:</p>
@@ -1499,8 +1495,7 @@ Wall time: 24.1 s
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[69]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">big_df</span><span class="p">[</span> <span class="n">big_df</span><span class="p">[</span><span class="s2">&quot;Song ID&quot;</span><span class="p">]</span> <span class="o">==</span> <span class="mi">70</span><span class="p">]</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">8</span><span class="p">)</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">big_df</span><span class="p">[</span> <span class="n">big_df</span><span class="p">[</span><span class="s2">"Song ID"</span><span class="p">]</span> <span class="o">==</span> <span class="mi">70</span><span class="p">]</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">8</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -1510,7 +1505,7 @@ Wall time: 24.1 s
 </div>
 <div class="output_area rendered_html docutils container">
 <div>
-<style scoped>
+<style scoped="">
     .dataframe tbody tr th:only-of-type {
         vertical-align: middle;
     }
@@ -1523,120 +1518,120 @@ Wall time: 24.1 s
         text-align: right;
     }
 </style>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>Unnamed: 0</th>
-      <th>Unnamed: 0.1</th>
-      <th>MIDI Pitch</th>
-      <th>Duration</th>
-      <th>Onset</th>
-      <th>Rel. MIDI Pitch</th>
-      <th>Rel. Duration</th>
-      <th>Rel. Onset</th>
-      <th>Song ID</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>2969</th>
-      <td>2969</td>
-      <td>2969</td>
-      <td>62</td>
-      <td>1.0</td>
-      <td>1.0</td>
-      <td>-2.543827</td>
-      <td>0.016667</td>
-      <td>0.016667</td>
-      <td>70</td>
-    </tr>
-    <tr>
-      <th>2970</th>
-      <td>2970</td>
-      <td>2970</td>
-      <td>67</td>
-      <td>2.0</td>
-      <td>3.0</td>
-      <td>-0.949300</td>
-      <td>0.033333</td>
-      <td>0.050000</td>
-      <td>70</td>
-    </tr>
-    <tr>
-      <th>2971</th>
-      <td>2971</td>
-      <td>2971</td>
-      <td>71</td>
-      <td>2.0</td>
-      <td>5.0</td>
-      <td>0.326322</td>
-      <td>0.033333</td>
-      <td>0.083333</td>
-      <td>70</td>
-    </tr>
-    <tr>
-      <th>2972</th>
-      <td>2972</td>
-      <td>2972</td>
-      <td>74</td>
-      <td>3.0</td>
-      <td>8.0</td>
-      <td>1.283038</td>
-      <td>0.050000</td>
-      <td>0.133333</td>
-      <td>70</td>
-    </tr>
-    <tr>
-      <th>2973</th>
-      <td>2973</td>
-      <td>2973</td>
-      <td>72</td>
-      <td>1.0</td>
-      <td>9.0</td>
-      <td>0.645227</td>
-      <td>0.016667</td>
-      <td>0.150000</td>
-      <td>70</td>
-    </tr>
-    <tr>
-      <th>2974</th>
-      <td>2974</td>
-      <td>2974</td>
-      <td>71</td>
-      <td>2.0</td>
-      <td>11.0</td>
-      <td>0.326322</td>
-      <td>0.033333</td>
-      <td>0.183333</td>
-      <td>70</td>
-    </tr>
-    <tr>
-      <th>2975</th>
-      <td>2975</td>
-      <td>2975</td>
-      <td>69</td>
-      <td>2.0</td>
-      <td>13.0</td>
-      <td>-0.311489</td>
-      <td>0.033333</td>
-      <td>0.216667</td>
-      <td>70</td>
-    </tr>
-    <tr>
-      <th>2976</th>
-      <td>2976</td>
-      <td>2976</td>
-      <td>67</td>
-      <td>2.0</td>
-      <td>15.0</td>
-      <td>-0.949300</td>
-      <td>0.033333</td>
-      <td>0.250000</td>
-      <td>70</td>
-    </tr>
-  </tbody>
-</table>
+<div class="table-wrapper"><table border="1" class="dataframe">
+<thead>
+<tr style="text-align: right;">
+<th></th>
+<th>Unnamed: 0</th>
+<th>Unnamed: 0.1</th>
+<th>MIDI Pitch</th>
+<th>Duration</th>
+<th>Onset</th>
+<th>Rel. MIDI Pitch</th>
+<th>Rel. Duration</th>
+<th>Rel. Onset</th>
+<th>Song ID</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th>2969</th>
+<td>2969</td>
+<td>2969</td>
+<td>62</td>
+<td>1.0</td>
+<td>1.0</td>
+<td>-2.543827</td>
+<td>0.016667</td>
+<td>0.016667</td>
+<td>70</td>
+</tr>
+<tr>
+<th>2970</th>
+<td>2970</td>
+<td>2970</td>
+<td>67</td>
+<td>2.0</td>
+<td>3.0</td>
+<td>-0.949300</td>
+<td>0.033333</td>
+<td>0.050000</td>
+<td>70</td>
+</tr>
+<tr>
+<th>2971</th>
+<td>2971</td>
+<td>2971</td>
+<td>71</td>
+<td>2.0</td>
+<td>5.0</td>
+<td>0.326322</td>
+<td>0.033333</td>
+<td>0.083333</td>
+<td>70</td>
+</tr>
+<tr>
+<th>2972</th>
+<td>2972</td>
+<td>2972</td>
+<td>74</td>
+<td>3.0</td>
+<td>8.0</td>
+<td>1.283038</td>
+<td>0.050000</td>
+<td>0.133333</td>
+<td>70</td>
+</tr>
+<tr>
+<th>2973</th>
+<td>2973</td>
+<td>2973</td>
+<td>72</td>
+<td>1.0</td>
+<td>9.0</td>
+<td>0.645227</td>
+<td>0.016667</td>
+<td>0.150000</td>
+<td>70</td>
+</tr>
+<tr>
+<th>2974</th>
+<td>2974</td>
+<td>2974</td>
+<td>71</td>
+<td>2.0</td>
+<td>11.0</td>
+<td>0.326322</td>
+<td>0.033333</td>
+<td>0.183333</td>
+<td>70</td>
+</tr>
+<tr>
+<th>2975</th>
+<td>2975</td>
+<td>2975</td>
+<td>69</td>
+<td>2.0</td>
+<td>13.0</td>
+<td>-0.311489</td>
+<td>0.033333</td>
+<td>0.216667</td>
+<td>70</td>
+</tr>
+<tr>
+<th>2976</th>
+<td>2976</td>
+<td>2976</td>
+<td>67</td>
+<td>2.0</td>
+<td>15.0</td>
+<td>-0.949300</td>
+<td>0.033333</td>
+<td>0.250000</td>
+<td>70</td>
+</tr>
+</tbody>
+</table></div>
 </div></div>
 </div>
 <p>The code above reads as “Select all rows in <code class="docutils literal notranslate"><span class="pre">big_df</span></code> for which the column <code class="docutils literal notranslate"><span class="pre">Song</span> <span class="pre">ID</span></code> is equal to 70”. The <code class="docutils literal notranslate"><span class="pre">.head()</span></code> method displays the first 5 rows by default but you can specify the number of rows you want to be displayed (here 8).</p>
@@ -1655,8 +1650,7 @@ Wall time: 24.1 s
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[38]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">all_ints</span> <span class="o">=</span> <span class="p">[</span> <span class="n">p2</span> <span class="o">-</span> <span class="n">p1</span> <span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="n">g</span> <span class="ow">in</span> <span class="n">big_df</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s2">&quot;Song ID&quot;</span><span class="p">)</span> <span class="k">for</span> <span class="n">p1</span><span class="p">,</span> <span class="n">p2</span> <span class="ow">in</span> <span class="nb">zip</span><span class="p">(</span><span class="n">g</span><span class="p">[</span><span class="s2">&quot;MIDI Pitch&quot;</span><span class="p">],</span> <span class="n">g</span><span class="p">[</span><span class="s2">&quot;MIDI Pitch&quot;</span><span class="p">][</span><span class="mi">1</span><span class="p">:])</span> <span class="p">]</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">all_ints</span> <span class="o">=</span> <span class="p">[</span> <span class="n">p2</span> <span class="o">-</span> <span class="n">p1</span> <span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="n">g</span> <span class="ow">in</span> <span class="n">big_df</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s2">"Song ID"</span><span class="p">)</span> <span class="k">for</span> <span class="n">p1</span><span class="p">,</span> <span class="n">p2</span> <span class="ow">in</span> <span class="nb">zip</span><span class="p">(</span><span class="n">g</span><span class="p">[</span><span class="s2">"MIDI Pitch"</span><span class="p">],</span> <span class="n">g</span><span class="p">[</span><span class="s2">"MIDI Pitch"</span><span class="p">][</span><span class="mi">1</span><span class="p">:])</span> <span class="p">]</span>
 <span class="n">min_int</span> <span class="o">=</span> <span class="nb">min</span><span class="p">(</span><span class="n">all_ints</span><span class="p">)</span>
 <span class="n">max_int</span> <span class="o">=</span> <span class="nb">max</span><span class="p">(</span><span class="n">all_ints</span><span class="p">)</span>
 </pre></div>
@@ -1666,8 +1660,7 @@ Wall time: 24.1 s
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[39]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">min_int</span><span class="p">,</span> <span class="n">max_int</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">min_int</span><span class="p">,</span> <span class="n">max_int</span>
 </pre></div>
 </div>
 </div>
@@ -1684,8 +1677,7 @@ Wall time: 24.1 s
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[40]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="nb">len</span><span class="p">(</span><span class="n">all_ints</span><span class="p">)</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">len</span><span class="p">(</span><span class="n">all_ints</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -1702,11 +1694,10 @@ Wall time: 24.1 s
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[41]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">ints_df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">index</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="n">min_int</span><span class="p">,</span><span class="n">max_int</span><span class="p">),</span> <span class="n">columns</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="n">min_int</span><span class="p">,</span><span class="n">max_int</span><span class="o">+</span><span class="mi">1</span><span class="p">))</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">ints_df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">index</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="n">min_int</span><span class="p">,</span><span class="n">max_int</span><span class="p">),</span> <span class="n">columns</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="n">min_int</span><span class="p">,</span><span class="n">max_int</span><span class="o">+</span><span class="mi">1</span><span class="p">))</span>
 
-<span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="n">g</span> <span class="ow">in</span> <span class="n">big_df</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s2">&quot;Song ID&quot;</span><span class="p">):</span>
-    <span class="n">intervals</span> <span class="o">=</span> <span class="p">[</span> <span class="n">p2</span> <span class="o">-</span> <span class="n">p1</span> <span class="k">for</span> <span class="n">p1</span><span class="p">,</span> <span class="n">p2</span> <span class="ow">in</span> <span class="nb">zip</span><span class="p">(</span><span class="n">g</span><span class="p">[</span><span class="s2">&quot;MIDI Pitch&quot;</span><span class="p">],</span> <span class="n">g</span><span class="p">[</span><span class="s2">&quot;MIDI Pitch&quot;</span><span class="p">][</span><span class="mi">1</span><span class="p">:])]</span>
+<span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="n">g</span> <span class="ow">in</span> <span class="n">big_df</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s2">"Song ID"</span><span class="p">):</span>
+    <span class="n">intervals</span> <span class="o">=</span> <span class="p">[</span> <span class="n">p2</span> <span class="o">-</span> <span class="n">p1</span> <span class="k">for</span> <span class="n">p1</span><span class="p">,</span> <span class="n">p2</span> <span class="ow">in</span> <span class="nb">zip</span><span class="p">(</span><span class="n">g</span><span class="p">[</span><span class="s2">"MIDI Pitch"</span><span class="p">],</span> <span class="n">g</span><span class="p">[</span><span class="s2">"MIDI Pitch"</span><span class="p">][</span><span class="mi">1</span><span class="p">:])]</span>
 
     <span class="k">for</span> <span class="n">i1</span><span class="p">,</span> <span class="n">i2</span> <span class="ow">in</span> <span class="nb">zip</span><span class="p">(</span><span class="n">intervals</span><span class="p">,</span> <span class="n">intervals</span><span class="p">[</span><span class="mi">1</span><span class="p">:]):</span>
         <span class="n">ints_df</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">i1</span><span class="p">,</span><span class="n">i2</span><span class="p">]</span> <span class="o">+=</span> <span class="mi">1</span>
@@ -1717,8 +1708,7 @@ Wall time: 24.1 s
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[73]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">ints_df</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="o">-</span><span class="mi">10</span><span class="p">:</span><span class="mi">10</span><span class="p">,</span> <span class="o">-</span><span class="mi">10</span><span class="p">:</span><span class="mi">10</span><span class="p">]</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">ints_df</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="o">-</span><span class="mi">10</span><span class="p">:</span><span class="mi">10</span><span class="p">,</span> <span class="o">-</span><span class="mi">10</span><span class="p">:</span><span class="mi">10</span><span class="p">]</span>
 </pre></div>
 </div>
 </div>
@@ -1728,7 +1718,7 @@ Wall time: 24.1 s
 </div>
 <div class="output_area rendered_html docutils container">
 <div>
-<style scoped>
+<style scoped="">
     .dataframe tbody tr th:only-of-type {
         vertical-align: middle;
     }
@@ -1741,540 +1731,540 @@ Wall time: 24.1 s
         text-align: right;
     }
 </style>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>-10</th>
-      <th>-9</th>
-      <th>-8</th>
-      <th>-7</th>
-      <th>-6</th>
-      <th>-5</th>
-      <th>-4</th>
-      <th>-3</th>
-      <th>-2</th>
-      <th>-1</th>
-      <th>...</th>
-      <th>1</th>
-      <th>2</th>
-      <th>3</th>
-      <th>4</th>
-      <th>5</th>
-      <th>6</th>
-      <th>7</th>
-      <th>8</th>
-      <th>9</th>
-      <th>10</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>-10</th>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>2</td>
-      <td>3</td>
-      <td>2</td>
-      <td>34</td>
-      <td>0</td>
-      <td>...</td>
-      <td>16</td>
-      <td>174</td>
-      <td>219</td>
-      <td>60</td>
-      <td>91</td>
-      <td>0</td>
-      <td>78</td>
-      <td>67</td>
-      <td>29</td>
-      <td>243</td>
-    </tr>
-    <tr>
-      <th>-9</th>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>6</td>
-      <td>0</td>
-      <td>3</td>
-      <td>0</td>
-      <td>39</td>
-      <td>10</td>
-      <td>31</td>
-      <td>...</td>
-      <td>5</td>
-      <td>159</td>
-      <td>39</td>
-      <td>40</td>
-      <td>313</td>
-      <td>2</td>
-      <td>30</td>
-      <td>0</td>
-      <td>111</td>
-      <td>27</td>
-    </tr>
-    <tr>
-      <th>-8</th>
-      <td>0</td>
-      <td>1</td>
-      <td>0</td>
-      <td>1</td>
-      <td>0</td>
-      <td>0</td>
-      <td>19</td>
-      <td>0</td>
-      <td>319</td>
-      <td>5</td>
-      <td>...</td>
-      <td>302</td>
-      <td>66</td>
-      <td>605</td>
-      <td>3</td>
-      <td>159</td>
-      <td>2</td>
-      <td>4</td>
-      <td>73</td>
-      <td>0</td>
-      <td>32</td>
-    </tr>
-    <tr>
-      <th>-7</th>
-      <td>0</td>
-      <td>0</td>
-      <td>2</td>
-      <td>14</td>
-      <td>0</td>
-      <td>37</td>
-      <td>2</td>
-      <td>91</td>
-      <td>96</td>
-      <td>103</td>
-      <td>...</td>
-      <td>17</td>
-      <td>859</td>
-      <td>300</td>
-      <td>527</td>
-      <td>651</td>
-      <td>1</td>
-      <td>399</td>
-      <td>18</td>
-      <td>219</td>
-      <td>141</td>
-    </tr>
-    <tr>
-      <th>-6</th>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>12</td>
-      <td>11</td>
-      <td>8</td>
-      <td>21</td>
-      <td>...</td>
-      <td>274</td>
-      <td>7</td>
-      <td>132</td>
-      <td>25</td>
-      <td>10</td>
-      <td>19</td>
-      <td>6</td>
-      <td>3</td>
-      <td>3</td>
-      <td>4</td>
-    </tr>
-    <tr>
-      <th>-5</th>
-      <td>1</td>
-      <td>0</td>
-      <td>1</td>
-      <td>49</td>
-      <td>0</td>
-      <td>75</td>
-      <td>32</td>
-      <td>866</td>
-      <td>1361</td>
-      <td>25</td>
-      <td>...</td>
-      <td>230</td>
-      <td>1906</td>
-      <td>1272</td>
-      <td>148</td>
-      <td>2131</td>
-      <td>22</td>
-      <td>252</td>
-      <td>87</td>
-      <td>368</td>
-      <td>160</td>
-    </tr>
-    <tr>
-      <th>-4</th>
-      <td>3</td>
-      <td>0</td>
-      <td>27</td>
-      <td>11</td>
-      <td>5</td>
-      <td>461</td>
-      <td>18</td>
-      <td>692</td>
-      <td>167</td>
-      <td>1099</td>
-      <td>...</td>
-      <td>129</td>
-      <td>2738</td>
-      <td>40</td>
-      <td>1610</td>
-      <td>616</td>
-      <td>13</td>
-      <td>884</td>
-      <td>8</td>
-      <td>269</td>
-      <td>31</td>
-    </tr>
-    <tr>
-      <th>-3</th>
-      <td>1</td>
-      <td>91</td>
-      <td>0</td>
-      <td>192</td>
-      <td>2</td>
-      <td>215</td>
-      <td>2490</td>
-      <td>416</td>
-      <td>9478</td>
-      <td>134</td>
-      <td>...</td>
-      <td>2547</td>
-      <td>1467</td>
-      <td>6274</td>
-      <td>109</td>
-      <td>1684</td>
-      <td>13</td>
-      <td>403</td>
-      <td>508</td>
-      <td>59</td>
-      <td>261</td>
-    </tr>
-    <tr>
-      <th>-2</th>
-      <td>67</td>
-      <td>14</td>
-      <td>260</td>
-      <td>858</td>
-      <td>132</td>
-      <td>1964</td>
-      <td>113</td>
-      <td>8871</td>
-      <td>21285</td>
-      <td>13896</td>
-      <td>...</td>
-      <td>454</td>
-      <td>14883</td>
-      <td>1115</td>
-      <td>2616</td>
-      <td>3216</td>
-      <td>63</td>
-      <td>1681</td>
-      <td>88</td>
-      <td>537</td>
-      <td>407</td>
-    </tr>
-    <tr>
-      <th>-1</th>
-      <td>5</td>
-      <td>174</td>
-      <td>4</td>
-      <td>68</td>
-      <td>47</td>
-      <td>32</td>
-      <td>1679</td>
-      <td>91</td>
-      <td>13445</td>
-      <td>205</td>
-      <td>...</td>
-      <td>5410</td>
-      <td>396</td>
-      <td>2878</td>
-      <td>58</td>
-      <td>477</td>
-      <td>44</td>
-      <td>23</td>
-      <td>241</td>
-      <td>3</td>
-      <td>52</td>
-    </tr>
-    <tr>
-      <th>0</th>
-      <td>186</td>
-      <td>130</td>
-      <td>310</td>
-      <td>1022</td>
-      <td>80</td>
-      <td>2270</td>
-      <td>1440</td>
-      <td>5506</td>
-      <td>16887</td>
-      <td>4603</td>
-      <td>...</td>
-      <td>2578</td>
-      <td>12142</td>
-      <td>4947</td>
-      <td>3340</td>
-      <td>5203</td>
-      <td>30</td>
-      <td>1353</td>
-      <td>292</td>
-      <td>824</td>
-      <td>478</td>
-    </tr>
-    <tr>
-      <th>1</th>
-      <td>55</td>
-      <td>6</td>
-      <td>174</td>
-      <td>43</td>
-      <td>110</td>
-      <td>944</td>
-      <td>165</td>
-      <td>2564</td>
-      <td>501</td>
-      <td>3765</td>
-      <td>...</td>
-      <td>747</td>
-      <td>7649</td>
-      <td>193</td>
-      <td>1470</td>
-      <td>132</td>
-      <td>26</td>
-      <td>172</td>
-      <td>9</td>
-      <td>59</td>
-      <td>2</td>
-    </tr>
-    <tr>
-      <th>2</th>
-      <td>138</td>
-      <td>294</td>
-      <td>29</td>
-      <td>1288</td>
-      <td>15</td>
-      <td>1361</td>
-      <td>3754</td>
-      <td>2562</td>
-      <td>15795</td>
-      <td>254</td>
-      <td>...</td>
-      <td>8404</td>
-      <td>11261</td>
-      <td>5249</td>
-      <td>86</td>
-      <td>1695</td>
-      <td>2</td>
-      <td>187</td>
-      <td>171</td>
-      <td>57</td>
-      <td>61</td>
-    </tr>
-    <tr>
-      <th>3</th>
-      <td>272</td>
-      <td>23</td>
-      <td>373</td>
-      <td>655</td>
-      <td>122</td>
-      <td>1755</td>
-      <td>24</td>
-      <td>5509</td>
-      <td>3397</td>
-      <td>2400</td>
-      <td>...</td>
-      <td>295</td>
-      <td>4128</td>
-      <td>231</td>
-      <td>519</td>
-      <td>1523</td>
-      <td>35</td>
-      <td>180</td>
-      <td>0</td>
-      <td>122</td>
-      <td>11</td>
-    </tr>
-    <tr>
-      <th>4</th>
-      <td>5</td>
-      <td>164</td>
-      <td>3</td>
-      <td>130</td>
-      <td>11</td>
-      <td>51</td>
-      <td>1026</td>
-      <td>64</td>
-      <td>4217</td>
-      <td>60</td>
-      <td>...</td>
-      <td>1133</td>
-      <td>67</td>
-      <td>3153</td>
-      <td>20</td>
-      <td>102</td>
-      <td>7</td>
-      <td>1</td>
-      <td>14</td>
-      <td>0</td>
-      <td>2</td>
-    </tr>
-    <tr>
-      <th>5</th>
-      <td>116</td>
-      <td>23</td>
-      <td>505</td>
-      <td>330</td>
-      <td>13</td>
-      <td>1996</td>
-      <td>82</td>
-      <td>2375</td>
-      <td>2834</td>
-      <td>1868</td>
-      <td>...</td>
-      <td>102</td>
-      <td>2557</td>
-      <td>270</td>
-      <td>1355</td>
-      <td>160</td>
-      <td>1</td>
-      <td>94</td>
-      <td>0</td>
-      <td>16</td>
-      <td>5</td>
-    </tr>
-    <tr>
-      <th>6</th>
-      <td>2</td>
-      <td>4</td>
-      <td>1</td>
-      <td>4</td>
-      <td>23</td>
-      <td>1</td>
-      <td>14</td>
-      <td>18</td>
-      <td>44</td>
-      <td>34</td>
-      <td>...</td>
-      <td>42</td>
-      <td>8</td>
-      <td>20</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-    </tr>
-    <tr>
-      <th>7</th>
-      <td>31</td>
-      <td>18</td>
-      <td>11</td>
-      <td>273</td>
-      <td>3</td>
-      <td>167</td>
-      <td>128</td>
-      <td>665</td>
-      <td>1338</td>
-      <td>59</td>
-      <td>...</td>
-      <td>119</td>
-      <td>566</td>
-      <td>249</td>
-      <td>12</td>
-      <td>166</td>
-      <td>0</td>
-      <td>8</td>
-      <td>2</td>
-      <td>6</td>
-      <td>0</td>
-    </tr>
-    <tr>
-      <th>8</th>
-      <td>47</td>
-      <td>1</td>
-      <td>88</td>
-      <td>7</td>
-      <td>19</td>
-      <td>149</td>
-      <td>4</td>
-      <td>370</td>
-      <td>33</td>
-      <td>384</td>
-      <td>...</td>
-      <td>23</td>
-      <td>159</td>
-      <td>0</td>
-      <td>23</td>
-      <td>6</td>
-      <td>0</td>
-      <td>1</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-    </tr>
-    <tr>
-      <th>9</th>
-      <td>1</td>
-      <td>61</td>
-      <td>1</td>
-      <td>20</td>
-      <td>3</td>
-      <td>20</td>
-      <td>442</td>
-      <td>18</td>
-      <td>1024</td>
-      <td>4</td>
-      <td>...</td>
-      <td>122</td>
-      <td>13</td>
-      <td>129</td>
-      <td>1</td>
-      <td>8</td>
-      <td>0</td>
-      <td>0</td>
-      <td>5</td>
-      <td>0</td>
-      <td>0</td>
-    </tr>
-    <tr>
-      <th>10</th>
-      <td>267</td>
-      <td>0</td>
-      <td>56</td>
-      <td>23</td>
-      <td>28</td>
-      <td>58</td>
-      <td>0</td>
-      <td>517</td>
-      <td>163</td>
-      <td>295</td>
-      <td>...</td>
-      <td>3</td>
-      <td>78</td>
-      <td>0</td>
-      <td>4</td>
-      <td>5</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-    </tr>
-  </tbody>
-</table>
+<div class="table-wrapper"><table border="1" class="dataframe">
+<thead>
+<tr style="text-align: right;">
+<th></th>
+<th>-10</th>
+<th>-9</th>
+<th>-8</th>
+<th>-7</th>
+<th>-6</th>
+<th>-5</th>
+<th>-4</th>
+<th>-3</th>
+<th>-2</th>
+<th>-1</th>
+<th>...</th>
+<th>1</th>
+<th>2</th>
+<th>3</th>
+<th>4</th>
+<th>5</th>
+<th>6</th>
+<th>7</th>
+<th>8</th>
+<th>9</th>
+<th>10</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th>-10</th>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>2</td>
+<td>3</td>
+<td>2</td>
+<td>34</td>
+<td>0</td>
+<td>...</td>
+<td>16</td>
+<td>174</td>
+<td>219</td>
+<td>60</td>
+<td>91</td>
+<td>0</td>
+<td>78</td>
+<td>67</td>
+<td>29</td>
+<td>243</td>
+</tr>
+<tr>
+<th>-9</th>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>6</td>
+<td>0</td>
+<td>3</td>
+<td>0</td>
+<td>39</td>
+<td>10</td>
+<td>31</td>
+<td>...</td>
+<td>5</td>
+<td>159</td>
+<td>39</td>
+<td>40</td>
+<td>313</td>
+<td>2</td>
+<td>30</td>
+<td>0</td>
+<td>111</td>
+<td>27</td>
+</tr>
+<tr>
+<th>-8</th>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>19</td>
+<td>0</td>
+<td>319</td>
+<td>5</td>
+<td>...</td>
+<td>302</td>
+<td>66</td>
+<td>605</td>
+<td>3</td>
+<td>159</td>
+<td>2</td>
+<td>4</td>
+<td>73</td>
+<td>0</td>
+<td>32</td>
+</tr>
+<tr>
+<th>-7</th>
+<td>0</td>
+<td>0</td>
+<td>2</td>
+<td>14</td>
+<td>0</td>
+<td>37</td>
+<td>2</td>
+<td>91</td>
+<td>96</td>
+<td>103</td>
+<td>...</td>
+<td>17</td>
+<td>859</td>
+<td>300</td>
+<td>527</td>
+<td>651</td>
+<td>1</td>
+<td>399</td>
+<td>18</td>
+<td>219</td>
+<td>141</td>
+</tr>
+<tr>
+<th>-6</th>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>12</td>
+<td>11</td>
+<td>8</td>
+<td>21</td>
+<td>...</td>
+<td>274</td>
+<td>7</td>
+<td>132</td>
+<td>25</td>
+<td>10</td>
+<td>19</td>
+<td>6</td>
+<td>3</td>
+<td>3</td>
+<td>4</td>
+</tr>
+<tr>
+<th>-5</th>
+<td>1</td>
+<td>0</td>
+<td>1</td>
+<td>49</td>
+<td>0</td>
+<td>75</td>
+<td>32</td>
+<td>866</td>
+<td>1361</td>
+<td>25</td>
+<td>...</td>
+<td>230</td>
+<td>1906</td>
+<td>1272</td>
+<td>148</td>
+<td>2131</td>
+<td>22</td>
+<td>252</td>
+<td>87</td>
+<td>368</td>
+<td>160</td>
+</tr>
+<tr>
+<th>-4</th>
+<td>3</td>
+<td>0</td>
+<td>27</td>
+<td>11</td>
+<td>5</td>
+<td>461</td>
+<td>18</td>
+<td>692</td>
+<td>167</td>
+<td>1099</td>
+<td>...</td>
+<td>129</td>
+<td>2738</td>
+<td>40</td>
+<td>1610</td>
+<td>616</td>
+<td>13</td>
+<td>884</td>
+<td>8</td>
+<td>269</td>
+<td>31</td>
+</tr>
+<tr>
+<th>-3</th>
+<td>1</td>
+<td>91</td>
+<td>0</td>
+<td>192</td>
+<td>2</td>
+<td>215</td>
+<td>2490</td>
+<td>416</td>
+<td>9478</td>
+<td>134</td>
+<td>...</td>
+<td>2547</td>
+<td>1467</td>
+<td>6274</td>
+<td>109</td>
+<td>1684</td>
+<td>13</td>
+<td>403</td>
+<td>508</td>
+<td>59</td>
+<td>261</td>
+</tr>
+<tr>
+<th>-2</th>
+<td>67</td>
+<td>14</td>
+<td>260</td>
+<td>858</td>
+<td>132</td>
+<td>1964</td>
+<td>113</td>
+<td>8871</td>
+<td>21285</td>
+<td>13896</td>
+<td>...</td>
+<td>454</td>
+<td>14883</td>
+<td>1115</td>
+<td>2616</td>
+<td>3216</td>
+<td>63</td>
+<td>1681</td>
+<td>88</td>
+<td>537</td>
+<td>407</td>
+</tr>
+<tr>
+<th>-1</th>
+<td>5</td>
+<td>174</td>
+<td>4</td>
+<td>68</td>
+<td>47</td>
+<td>32</td>
+<td>1679</td>
+<td>91</td>
+<td>13445</td>
+<td>205</td>
+<td>...</td>
+<td>5410</td>
+<td>396</td>
+<td>2878</td>
+<td>58</td>
+<td>477</td>
+<td>44</td>
+<td>23</td>
+<td>241</td>
+<td>3</td>
+<td>52</td>
+</tr>
+<tr>
+<th>0</th>
+<td>186</td>
+<td>130</td>
+<td>310</td>
+<td>1022</td>
+<td>80</td>
+<td>2270</td>
+<td>1440</td>
+<td>5506</td>
+<td>16887</td>
+<td>4603</td>
+<td>...</td>
+<td>2578</td>
+<td>12142</td>
+<td>4947</td>
+<td>3340</td>
+<td>5203</td>
+<td>30</td>
+<td>1353</td>
+<td>292</td>
+<td>824</td>
+<td>478</td>
+</tr>
+<tr>
+<th>1</th>
+<td>55</td>
+<td>6</td>
+<td>174</td>
+<td>43</td>
+<td>110</td>
+<td>944</td>
+<td>165</td>
+<td>2564</td>
+<td>501</td>
+<td>3765</td>
+<td>...</td>
+<td>747</td>
+<td>7649</td>
+<td>193</td>
+<td>1470</td>
+<td>132</td>
+<td>26</td>
+<td>172</td>
+<td>9</td>
+<td>59</td>
+<td>2</td>
+</tr>
+<tr>
+<th>2</th>
+<td>138</td>
+<td>294</td>
+<td>29</td>
+<td>1288</td>
+<td>15</td>
+<td>1361</td>
+<td>3754</td>
+<td>2562</td>
+<td>15795</td>
+<td>254</td>
+<td>...</td>
+<td>8404</td>
+<td>11261</td>
+<td>5249</td>
+<td>86</td>
+<td>1695</td>
+<td>2</td>
+<td>187</td>
+<td>171</td>
+<td>57</td>
+<td>61</td>
+</tr>
+<tr>
+<th>3</th>
+<td>272</td>
+<td>23</td>
+<td>373</td>
+<td>655</td>
+<td>122</td>
+<td>1755</td>
+<td>24</td>
+<td>5509</td>
+<td>3397</td>
+<td>2400</td>
+<td>...</td>
+<td>295</td>
+<td>4128</td>
+<td>231</td>
+<td>519</td>
+<td>1523</td>
+<td>35</td>
+<td>180</td>
+<td>0</td>
+<td>122</td>
+<td>11</td>
+</tr>
+<tr>
+<th>4</th>
+<td>5</td>
+<td>164</td>
+<td>3</td>
+<td>130</td>
+<td>11</td>
+<td>51</td>
+<td>1026</td>
+<td>64</td>
+<td>4217</td>
+<td>60</td>
+<td>...</td>
+<td>1133</td>
+<td>67</td>
+<td>3153</td>
+<td>20</td>
+<td>102</td>
+<td>7</td>
+<td>1</td>
+<td>14</td>
+<td>0</td>
+<td>2</td>
+</tr>
+<tr>
+<th>5</th>
+<td>116</td>
+<td>23</td>
+<td>505</td>
+<td>330</td>
+<td>13</td>
+<td>1996</td>
+<td>82</td>
+<td>2375</td>
+<td>2834</td>
+<td>1868</td>
+<td>...</td>
+<td>102</td>
+<td>2557</td>
+<td>270</td>
+<td>1355</td>
+<td>160</td>
+<td>1</td>
+<td>94</td>
+<td>0</td>
+<td>16</td>
+<td>5</td>
+</tr>
+<tr>
+<th>6</th>
+<td>2</td>
+<td>4</td>
+<td>1</td>
+<td>4</td>
+<td>23</td>
+<td>1</td>
+<td>14</td>
+<td>18</td>
+<td>44</td>
+<td>34</td>
+<td>...</td>
+<td>42</td>
+<td>8</td>
+<td>20</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<th>7</th>
+<td>31</td>
+<td>18</td>
+<td>11</td>
+<td>273</td>
+<td>3</td>
+<td>167</td>
+<td>128</td>
+<td>665</td>
+<td>1338</td>
+<td>59</td>
+<td>...</td>
+<td>119</td>
+<td>566</td>
+<td>249</td>
+<td>12</td>
+<td>166</td>
+<td>0</td>
+<td>8</td>
+<td>2</td>
+<td>6</td>
+<td>0</td>
+</tr>
+<tr>
+<th>8</th>
+<td>47</td>
+<td>1</td>
+<td>88</td>
+<td>7</td>
+<td>19</td>
+<td>149</td>
+<td>4</td>
+<td>370</td>
+<td>33</td>
+<td>384</td>
+<td>...</td>
+<td>23</td>
+<td>159</td>
+<td>0</td>
+<td>23</td>
+<td>6</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<th>9</th>
+<td>1</td>
+<td>61</td>
+<td>1</td>
+<td>20</td>
+<td>3</td>
+<td>20</td>
+<td>442</td>
+<td>18</td>
+<td>1024</td>
+<td>4</td>
+<td>...</td>
+<td>122</td>
+<td>13</td>
+<td>129</td>
+<td>1</td>
+<td>8</td>
+<td>0</td>
+<td>0</td>
+<td>5</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<th>10</th>
+<td>267</td>
+<td>0</td>
+<td>56</td>
+<td>23</td>
+<td>28</td>
+<td>58</td>
+<td>0</td>
+<td>517</td>
+<td>163</td>
+<td>295</td>
+<td>...</td>
+<td>3</td>
+<td>78</td>
+<td>0</td>
+<td>4</td>
+<td>5</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+</tbody>
+</table></div>
 <p>21 rows × 21 columns</p>
 </div></div>
 </div>
@@ -2282,11 +2272,10 @@ Wall time: 24.1 s
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[74]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">fig</span><span class="p">,</span> <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span><span class="mi">10</span><span class="p">))</span>
-<span class="n">sns</span><span class="o">.</span><span class="n">heatmap</span><span class="p">(</span><span class="n">ints_df</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="o">-</span><span class="mi">12</span><span class="p">:</span><span class="mi">13</span><span class="p">,</span><span class="o">-</span><span class="mi">12</span><span class="p">:</span><span class="mi">13</span><span class="p">],</span> <span class="n">cmap</span><span class="o">=</span><span class="s2">&quot;coolwarm&quot;</span><span class="p">,</span> <span class="n">square</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">linewidths</span><span class="o">=</span><span class="mf">0.01</span><span class="p">,</span><span class="n">ax</span><span class="o">=</span><span class="n">ax</span><span class="p">)</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s2">&quot;First interval&quot;</span><span class="p">)</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s2">&quot;Second interval&quot;</span><span class="p">)</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">fig</span><span class="p">,</span> <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span><span class="mi">10</span><span class="p">))</span>
+<span class="n">sns</span><span class="o">.</span><span class="n">heatmap</span><span class="p">(</span><span class="n">ints_df</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="o">-</span><span class="mi">12</span><span class="p">:</span><span class="mi">13</span><span class="p">,</span><span class="o">-</span><span class="mi">12</span><span class="p">:</span><span class="mi">13</span><span class="p">],</span> <span class="n">cmap</span><span class="o">=</span><span class="s2">"coolwarm"</span><span class="p">,</span> <span class="n">square</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">linewidths</span><span class="o">=</span><span class="mf">0.01</span><span class="p">,</span><span class="n">ax</span><span class="o">=</span><span class="n">ax</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s2">"First interval"</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s2">"Second interval"</span><span class="p">)</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
 </pre></div>
 </div>
@@ -2295,7 +2284,7 @@ Wall time: 24.1 s
 <div class="prompt empty docutils container">
 </div>
 <div class="output_area docutils container">
-<img alt="_images/03_melody_I_86_0.png" src="_images/03_melody_I_86_0.png" />
+<img alt="_images/03_melody_I_86_0.png" src="_images/03_melody_I_86_0.png"/>
 </div>
 </div>
 <p>The two most common interval pairs are <code class="docutils literal notranslate"><span class="pre">(0,0)</span></code> and <code class="docutils literal notranslate"><span class="pre">(-2,-2)</span></code>. A much less frequent pair of intervals is <code class="docutils literal notranslate"><span class="pre">(5,0)</span></code>, but this is still much more frequent than, for example, <code class="docutils literal notranslate"><span class="pre">(9,9)</span></code>.</p>
@@ -2304,12 +2293,11 @@ Wall time: 24.1 s
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[44]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">big_df</span><span class="p">[</span><span class="s2">&quot;Avg. MIDI Pitch&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="mi">0</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">big_df</span><span class="p">[</span><span class="s2">"Avg. MIDI Pitch"</span><span class="p">]</span> <span class="o">=</span> <span class="mi">0</span>
 
-<span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="n">group</span> <span class="ow">in</span> <span class="n">big_df</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s2">&quot;Song ID&quot;</span><span class="p">):</span>
-    <span class="n">grp_mean_pitch</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">group</span><span class="p">[</span><span class="s2">&quot;MIDI Pitch&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">mean</span><span class="p">())</span>
-    <span class="n">big_df</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">big_df</span><span class="p">[</span><span class="s2">&quot;Song ID&quot;</span><span class="p">]</span> <span class="o">==</span> <span class="n">i</span><span class="p">,</span> <span class="s2">&quot;Avg. MIDI Pitch&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">grp_mean_pitch</span>
+<span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="n">group</span> <span class="ow">in</span> <span class="n">big_df</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s2">"Song ID"</span><span class="p">):</span>
+    <span class="n">grp_mean_pitch</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">group</span><span class="p">[</span><span class="s2">"MIDI Pitch"</span><span class="p">]</span><span class="o">.</span><span class="n">mean</span><span class="p">())</span>
+    <span class="n">big_df</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">big_df</span><span class="p">[</span><span class="s2">"Song ID"</span><span class="p">]</span> <span class="o">==</span> <span class="n">i</span><span class="p">,</span> <span class="s2">"Avg. MIDI Pitch"</span><span class="p">]</span> <span class="o">=</span> <span class="n">grp_mean_pitch</span>
 </pre></div>
 </div>
 </div>
@@ -2317,8 +2305,7 @@ Wall time: 24.1 s
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[45]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">big_df</span><span class="p">[</span><span class="s2">&quot;shifted_pitch&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">big_df</span><span class="p">[</span><span class="s2">&quot;MIDI Pitch&quot;</span><span class="p">]</span> <span class="o">-</span> <span class="n">big_df</span><span class="p">[</span><span class="s2">&quot;Avg. MIDI Pitch&quot;</span><span class="p">]</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">big_df</span><span class="p">[</span><span class="s2">"shifted_pitch"</span><span class="p">]</span> <span class="o">=</span> <span class="n">big_df</span><span class="p">[</span><span class="s2">"MIDI Pitch"</span><span class="p">]</span> <span class="o">-</span> <span class="n">big_df</span><span class="p">[</span><span class="s2">"Avg. MIDI Pitch"</span><span class="p">]</span>
 </pre></div>
 </div>
 </div>
@@ -2326,8 +2313,7 @@ Wall time: 24.1 s
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[46]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">big_df</span><span class="o">.</span><span class="n">tail</span><span class="p">()</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">big_df</span><span class="o">.</span><span class="n">tail</span><span class="p">()</span>
 </pre></div>
 </div>
 </div>
@@ -2337,7 +2323,7 @@ Wall time: 24.1 s
 </div>
 <div class="output_area rendered_html docutils container">
 <div>
-<style scoped>
+<style scoped="">
     .dataframe tbody tr th:only-of-type {
         vertical-align: middle;
     }
@@ -2350,92 +2336,91 @@ Wall time: 24.1 s
         text-align: right;
     }
 </style>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>MIDI Pitch</th>
-      <th>Duration</th>
-      <th>Onset</th>
-      <th>Rel. MIDI Pitch</th>
-      <th>Rel. Duration</th>
-      <th>Rel. Onset</th>
-      <th>Song ID</th>
-      <th>Avg. MIDI Pitch</th>
-      <th>shifted_pitch</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>450591</th>
-      <td>71</td>
-      <td>0.25</td>
-      <td>28.50</td>
-      <td>0.691456</td>
-      <td>0.008197</td>
-      <td>0.934426</td>
-      <td>8513</td>
-      <td>68</td>
-      <td>3</td>
-    </tr>
-    <tr>
-      <th>450592</th>
-      <td>69</td>
-      <td>0.25</td>
-      <td>28.75</td>
-      <td>0.098779</td>
-      <td>0.008197</td>
-      <td>0.942623</td>
-      <td>8513</td>
-      <td>68</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <th>450593</th>
-      <td>73</td>
-      <td>0.25</td>
-      <td>29.00</td>
-      <td>1.284133</td>
-      <td>0.008197</td>
-      <td>0.950820</td>
-      <td>8513</td>
-      <td>68</td>
-      <td>5</td>
-    </tr>
-    <tr>
-      <th>450594</th>
-      <td>71</td>
-      <td>1.00</td>
-      <td>30.00</td>
-      <td>0.691456</td>
-      <td>0.032787</td>
-      <td>0.983607</td>
-      <td>8513</td>
-      <td>68</td>
-      <td>3</td>
-    </tr>
-    <tr>
-      <th>450595</th>
-      <td>69</td>
-      <td>0.50</td>
-      <td>30.50</td>
-      <td>0.098779</td>
-      <td>0.016393</td>
-      <td>1.000000</td>
-      <td>8513</td>
-      <td>68</td>
-      <td>1</td>
-    </tr>
-  </tbody>
-</table>
+<div class="table-wrapper"><table border="1" class="dataframe">
+<thead>
+<tr style="text-align: right;">
+<th></th>
+<th>MIDI Pitch</th>
+<th>Duration</th>
+<th>Onset</th>
+<th>Rel. MIDI Pitch</th>
+<th>Rel. Duration</th>
+<th>Rel. Onset</th>
+<th>Song ID</th>
+<th>Avg. MIDI Pitch</th>
+<th>shifted_pitch</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th>450591</th>
+<td>71</td>
+<td>0.25</td>
+<td>28.50</td>
+<td>0.691456</td>
+<td>0.008197</td>
+<td>0.934426</td>
+<td>8513</td>
+<td>68</td>
+<td>3</td>
+</tr>
+<tr>
+<th>450592</th>
+<td>69</td>
+<td>0.25</td>
+<td>28.75</td>
+<td>0.098779</td>
+<td>0.008197</td>
+<td>0.942623</td>
+<td>8513</td>
+<td>68</td>
+<td>1</td>
+</tr>
+<tr>
+<th>450593</th>
+<td>73</td>
+<td>0.25</td>
+<td>29.00</td>
+<td>1.284133</td>
+<td>0.008197</td>
+<td>0.950820</td>
+<td>8513</td>
+<td>68</td>
+<td>5</td>
+</tr>
+<tr>
+<th>450594</th>
+<td>71</td>
+<td>1.00</td>
+<td>30.00</td>
+<td>0.691456</td>
+<td>0.032787</td>
+<td>0.983607</td>
+<td>8513</td>
+<td>68</td>
+<td>3</td>
+</tr>
+<tr>
+<th>450595</th>
+<td>69</td>
+<td>0.50</td>
+<td>30.50</td>
+<td>0.098779</td>
+<td>0.016393</td>
+<td>1.000000</td>
+<td>8513</td>
+<td>68</td>
+<td>1</td>
+</tr>
+</tbody>
+</table></div>
 </div></div>
 </div>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[47]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">idx</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="n">big_df</span><span class="p">[</span><span class="s2">&quot;shifted_pitch&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">min</span><span class="p">(),</span> <span class="n">big_df</span><span class="p">[</span><span class="s2">&quot;shifted_pitch&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">max</span><span class="p">()</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">idx</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="n">big_df</span><span class="p">[</span><span class="s2">"shifted_pitch"</span><span class="p">]</span><span class="o">.</span><span class="n">min</span><span class="p">(),</span> <span class="n">big_df</span><span class="p">[</span><span class="s2">"shifted_pitch"</span><span class="p">]</span><span class="o">.</span><span class="n">max</span><span class="p">()</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)</span>
 <span class="n">idx</span>
 </pre></div>
 </div>
@@ -2455,8 +2440,7 @@ array([-16, -15, -14, -13, -12, -11, -10,  -9,  -8,  -7,  -6,  -5,  -4,
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[48]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">transitions_df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">index</span><span class="o">=</span><span class="n">idx</span><span class="p">,</span> <span class="n">columns</span><span class="o">=</span><span class="n">idx</span><span class="p">)</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">transitions_df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">index</span><span class="o">=</span><span class="n">idx</span><span class="p">,</span> <span class="n">columns</span><span class="o">=</span><span class="n">idx</span><span class="p">)</span>
 <span class="n">transitions_df</span>
 </pre></div>
 </div>
@@ -2467,7 +2451,7 @@ array([-16, -15, -14, -13, -12, -11, -10,  -9,  -8,  -7,  -6,  -5,  -4,
 </div>
 <div class="output_area rendered_html docutils container">
 <div>
-<style scoped>
+<style scoped="">
     .dataframe tbody tr th:only-of-type {
         vertical-align: middle;
     }
@@ -2480,852 +2464,852 @@ array([-16, -15, -14, -13, -12, -11, -10,  -9,  -8,  -7,  -6,  -5,  -4,
         text-align: right;
     }
 </style>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>-16</th>
-      <th>-15</th>
-      <th>-14</th>
-      <th>-13</th>
-      <th>-12</th>
-      <th>-11</th>
-      <th>-10</th>
-      <th>-9</th>
-      <th>-8</th>
-      <th>-7</th>
-      <th>...</th>
-      <th>8</th>
-      <th>9</th>
-      <th>10</th>
-      <th>11</th>
-      <th>12</th>
-      <th>13</th>
-      <th>14</th>
-      <th>15</th>
-      <th>16</th>
-      <th>17</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>-16</th>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>...</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-    </tr>
-    <tr>
-      <th>-15</th>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>...</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-    </tr>
-    <tr>
-      <th>-14</th>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>...</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-    </tr>
-    <tr>
-      <th>-13</th>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>...</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-    </tr>
-    <tr>
-      <th>-12</th>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>...</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-    </tr>
-    <tr>
-      <th>-11</th>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>...</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-    </tr>
-    <tr>
-      <th>-10</th>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>...</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-    </tr>
-    <tr>
-      <th>-9</th>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>...</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-    </tr>
-    <tr>
-      <th>-8</th>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>...</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-    </tr>
-    <tr>
-      <th>-7</th>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>...</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-    </tr>
-    <tr>
-      <th>-6</th>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>...</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-    </tr>
-    <tr>
-      <th>-5</th>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>...</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-    </tr>
-    <tr>
-      <th>-4</th>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>...</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-    </tr>
-    <tr>
-      <th>-3</th>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>...</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-    </tr>
-    <tr>
-      <th>-2</th>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>...</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-    </tr>
-    <tr>
-      <th>-1</th>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>...</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-    </tr>
-    <tr>
-      <th>0</th>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>...</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-    </tr>
-    <tr>
-      <th>1</th>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>...</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-    </tr>
-    <tr>
-      <th>2</th>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>...</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-    </tr>
-    <tr>
-      <th>3</th>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>...</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-    </tr>
-    <tr>
-      <th>4</th>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>...</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-    </tr>
-    <tr>
-      <th>5</th>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>...</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-    </tr>
-    <tr>
-      <th>6</th>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>...</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-    </tr>
-    <tr>
-      <th>7</th>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>...</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-    </tr>
-    <tr>
-      <th>8</th>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>...</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-    </tr>
-    <tr>
-      <th>9</th>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>...</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-    </tr>
-    <tr>
-      <th>10</th>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>...</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-    </tr>
-    <tr>
-      <th>11</th>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>...</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-    </tr>
-    <tr>
-      <th>12</th>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>...</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-    </tr>
-    <tr>
-      <th>13</th>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>...</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-    </tr>
-    <tr>
-      <th>14</th>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>...</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-    </tr>
-    <tr>
-      <th>15</th>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>...</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-    </tr>
-    <tr>
-      <th>16</th>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>...</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-    </tr>
-    <tr>
-      <th>17</th>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>...</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-    </tr>
-  </tbody>
-</table>
+<div class="table-wrapper"><table border="1" class="dataframe">
+<thead>
+<tr style="text-align: right;">
+<th></th>
+<th>-16</th>
+<th>-15</th>
+<th>-14</th>
+<th>-13</th>
+<th>-12</th>
+<th>-11</th>
+<th>-10</th>
+<th>-9</th>
+<th>-8</th>
+<th>-7</th>
+<th>...</th>
+<th>8</th>
+<th>9</th>
+<th>10</th>
+<th>11</th>
+<th>12</th>
+<th>13</th>
+<th>14</th>
+<th>15</th>
+<th>16</th>
+<th>17</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th>-16</th>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>...</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<th>-15</th>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>...</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<th>-14</th>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>...</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<th>-13</th>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>...</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<th>-12</th>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>...</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<th>-11</th>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>...</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<th>-10</th>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>...</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<th>-9</th>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>...</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<th>-8</th>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>...</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<th>-7</th>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>...</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<th>-6</th>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>...</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<th>-5</th>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>...</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<th>-4</th>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>...</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<th>-3</th>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>...</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<th>-2</th>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>...</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<th>-1</th>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>...</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<th>0</th>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>...</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<th>1</th>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>...</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<th>2</th>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>...</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<th>3</th>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>...</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<th>4</th>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>...</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<th>5</th>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>...</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<th>6</th>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>...</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<th>7</th>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>...</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<th>8</th>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>...</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<th>9</th>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>...</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<th>10</th>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>...</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<th>11</th>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>...</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<th>12</th>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>...</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<th>13</th>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>...</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<th>14</th>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>...</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<th>15</th>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>...</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<th>16</th>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>...</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<th>17</th>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>...</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+</tbody>
+</table></div>
 <p>34 rows × 34 columns</p>
 </div></div>
 </div>
@@ -3333,11 +3317,10 @@ array([-16, -15, -14, -13, -12, -11, -10,  -9,  -8,  -7,  -6,  -5,  -4,
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[49]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="o">%%time</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">%%time</span>
 
-<span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="n">group</span> <span class="ow">in</span> <span class="n">big_df</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s2">&quot;Song ID&quot;</span><span class="p">):</span>
-    <span class="k">for</span> <span class="n">bg</span> <span class="ow">in</span> <span class="nb">zip</span><span class="p">(</span><span class="n">group</span><span class="p">[</span><span class="s2">&quot;shifted_pitch&quot;</span><span class="p">],</span> <span class="n">group</span><span class="p">[</span><span class="s2">&quot;shifted_pitch&quot;</span><span class="p">][</span><span class="mi">1</span><span class="p">:]):</span>
+<span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="n">group</span> <span class="ow">in</span> <span class="n">big_df</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s2">"Song ID"</span><span class="p">):</span>
+    <span class="k">for</span> <span class="n">bg</span> <span class="ow">in</span> <span class="nb">zip</span><span class="p">(</span><span class="n">group</span><span class="p">[</span><span class="s2">"shifted_pitch"</span><span class="p">],</span> <span class="n">group</span><span class="p">[</span><span class="s2">"shifted_pitch"</span><span class="p">][</span><span class="mi">1</span><span class="p">:]):</span>
         <span class="n">transitions_df</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">bg</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span><span class="n">bg</span><span class="p">[</span><span class="mi">1</span><span class="p">]]</span> <span class="o">+=</span><span class="mi">1</span>
 </pre></div>
 </div>
@@ -3354,8 +3337,7 @@ Wall time: 1min 29s
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[50]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;There are </span><span class="si">{</span><span class="n">transitions_df</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span><span class="si">}</span><span class="s2"> intervals in total in the corpus.&quot;</span><span class="p">)</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"There are </span><span class="si">{</span><span class="n">transitions_df</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span><span class="si">}</span><span class="s2"> intervals in total in the corpus."</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -3371,12 +3353,11 @@ There are 442082 intervals in total in the corpus.
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[51]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">fig</span><span class="p">,</span> <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span><span class="mi">10</span><span class="p">))</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">fig</span><span class="p">,</span> <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span><span class="mi">10</span><span class="p">))</span>
 
-<span class="n">g</span> <span class="o">=</span> <span class="n">sns</span><span class="o">.</span><span class="n">heatmap</span><span class="p">(</span><span class="n">transitions_df</span><span class="p">,</span> <span class="n">cmap</span><span class="o">=</span><span class="s2">&quot;coolwarm&quot;</span><span class="p">,</span> <span class="n">linewidths</span><span class="o">=.</span><span class="mi">01</span><span class="p">,</span> <span class="n">square</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s2">&quot;First interval&quot;</span><span class="p">)</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s2">&quot;Second interval&quot;</span><span class="p">)</span>
+<span class="n">g</span> <span class="o">=</span> <span class="n">sns</span><span class="o">.</span><span class="n">heatmap</span><span class="p">(</span><span class="n">transitions_df</span><span class="p">,</span> <span class="n">cmap</span><span class="o">=</span><span class="s2">"coolwarm"</span><span class="p">,</span> <span class="n">linewidths</span><span class="o">=</span><span class="mf">.01</span><span class="p">,</span> <span class="n">square</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s2">"First interval"</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s2">"Second interval"</span><span class="p">)</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
 </pre></div>
 </div>
@@ -3385,43 +3366,95 @@ There are 442082 intervals in total in the corpus.
 <div class="prompt empty docutils container">
 </div>
 <div class="output_area docutils container">
-<img alt="_images/03_melody_I_95_0.png" src="_images/03_melody_I_95_0.png" />
+<img alt="_images/03_melody_I_95_0.png" src="_images/03_melody_I_95_0.png"/>
 </div>
 </div>
 <div class="nbinput nblast docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[ ]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span>
 </pre></div>
 </div>
 </div>
-</div>
-</div>
+</section>
+</section>
 
+        </article>
+      </div>
+      <footer>
+        
+        <div class="related-pages">
+          <a class="next-page" href="04_jazz_solos.html">
+              <div class="page-info">
+                <div class="context">
+                  <span>Next</span>
+                </div>
+                <div class="title"><span class="section-number">4. </span>Solos in the <em>Weimar Jazz Database</em></div>
+              </div>
+              <svg><use href="#svg-arrow-right"></use></svg>
+            </a>
+          <a class="prev-page" href="02_introduction.html">
+              <svg><use href="#svg-arrow-right"></use></svg>
+              <div class="page-info">
+                <div class="context">
+                  <span>Previous</span>
+                </div>
+                
+                <div class="title"><span class="section-number">2. </span>Introduction and Background</div>
+                
+              </div>
+            </a>
+        </div>
 
-          </div>
-          <div class="page-nav">
-            <div class="inner"><ul class="page-nav">
-  <li class="prev">
-    <a href="02_introduction.html"
-       title="previous chapter">← <span class="section-number">2. </span>Introduction and Background</a>
-  </li>
-  <li class="next">
-    <a href="04_jazz_solos.html"
-       title="next chapter"><span class="section-number">4. </span>Solos in the <em>Weimar Jazz Database</em> →</a>
-  </li>
-</ul><div class="footer" role="contentinfo">
-      &#169; Copyright 2020, Fabian C. Moss.
-    <br>
-    Created using <a href="http://sphinx-doc.org/">Sphinx</a> 3.2.1 with <a href="https://github.com/schettino72/sphinx_press_theme">Press Theme</a>.
-</div>
-            </div>
-          </div>
-      </page>
+        <div class="related-information">
+              Copyright &#169; 2020, Fabian C. Moss |
+          Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> and <a class="muted-link" href="https://pradyunsg.me">@pradyunsg</a>'s
+          <a href="https://github.com/pradyunsg/furo">Furo theme</a>.
+            | <a class="muted-link" href="_sources/03_melody_I.ipynb.txt"
+               rel="nofollow">
+              Show Source
+            </a>
+        </div>
+        
+      </footer>
     </div>
-    
-    
-  </body>
+    <aside class="toc-drawer">
+      
+      
+      <div class="toc-sticky toc-scroll">
+        <div class="toc-title-container">
+          <span class="toc-title">
+            Contents
+          </span>
+        </div>
+        <div class="toc-tree-container">
+          <div class="toc-tree">
+            <ul>
+<li><a class="reference internal" href="#">3. Melodies in Folk Songs</a><ul>
+<li><a class="reference internal" href="#The-Essen-Folksong-Collection">3.1. The <em>Essen Folksong Collection</em></a></li>
+<li><a class="reference internal" href="#Comparing-songs">3.2. Comparing songs</a></li>
+<li><a class="reference internal" href="#Computational-analysis">3.3. Computational analysis</a></li>
+<li><a class="reference internal" href="#The-melodic-arc">3.4. The melodic arc</a></li>
+<li><a class="reference internal" href="#Intervals">3.5. Intervals</a></li>
+</ul>
+</li>
+</ul>
+
+          </div>
+        </div>
+      </div>
+      
+      
+    </aside>
+  </div>
+</div><script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/scripts/furo.js"></script>
+    <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    <script>window.MathJax = {"tex": {"inlineMath": [["$", "$"], ["\\(", "\\)"]], "processEscapes": true}, "options": {"ignoreHtmlClass": "tex2jax_ignore|mathjax_ignore|document", "processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    </body>
 </html>

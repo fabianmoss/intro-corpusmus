@@ -1,176 +1,198 @@
-<!DOCTYPE html>
-<html >
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-      <title>1. Organization</title>
+<!doctype html>
+<html class="no-js">
+  <head><meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <meta name="color-scheme" content="light dark"><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+<link rel="index" title="Index" href="genindex.html" /><link rel="search" title="Search" href="search.html" /><link rel="next" title="2. Introduction and Background" href="02_introduction.html" /><link rel="prev" title="Introduction to Musical Corpus Studies" href="index.html" />
+
+    <meta name="generator" content="sphinx-4.4.0, furo 2022.01.02"/>
+        <title>1. Organization - Introduction to Musical Corpus Studies 0.0.1 documentation</title>
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="_static/styles/furo.css?digest=df49af52631e7917044a9c21a57f7b83170a6dd0" />
+    <link rel="stylesheet" type="text/css" href="_static/styles/furo-extensions.css?digest=fade93df149f7c5fedb3ff897f799dc7d283b420" />
     
-      <link rel="stylesheet" href="_static/pygments.css">
-      <link rel="stylesheet" href="_static/theme.css">
-      <link rel="stylesheet" href="_static/sphinx_press_theme.css">
-      
-      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
-
-      <!-- sphinx script_files -->
-        <script src="_static/jquery.js"></script>
-        <script src="_static/underscore.js"></script>
-        <script src="_static/doctools.js"></script>
-        <script src="_static/language_data.js"></script>
-        <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
-        <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
-        <script type="text/x-mathjax-config">MathJax.Hub.Config({"tex2jax": {"inlineMath": [["$", "$"], ["\\(", "\\)"]], "processEscapes": true, "ignoreClass": "document", "processClass": "math|output_area"}})</script>
-
-      
-      <script src="_static/theme-vendors.js"></script>
-      <script src="_static/theme.js" defer></script>
     
-  <link rel="index" title="Index" href="genindex.html" />
-  <link rel="search" title="Search" href="search.html" />
-  <link rel="next" title="2. Introduction and Background" href="02_introduction.html" />
-  <link rel="prev" title="Introduction to Musical Corpus Studies" href="index.html" /> 
-  </head>
 
+
+<style>
+  body {
+    --color-code-background: #f8f8f8;
+  --color-code-foreground: black;
+  
+  }
+  body[data-theme="dark"] {
+    --color-code-background: #202020;
+  --color-code-foreground: #d0d0d0;
+  
+  }
+  @media (prefers-color-scheme: dark) {
+    body:not([data-theme="light"]) {
+      --color-code-background: #202020;
+  --color-code-foreground: #d0d0d0;
+  
+    }
+  }
+</style></head>
   <body>
-    <div id="app" class="theme-container" :class="pageClasses"><navbar @toggle-sidebar="toggleSidebar">
-  <router-link to="index.html" class="home-link">
+    <script>
+      document.body.dataset.theme = localStorage.getItem("theme") || "auto";
+    </script>
     
-      <span class="site-name">Introduction to Musical Corpus Studies</span>
-    
-  </router-link>
+<svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+  <symbol id="svg-toc" viewBox="0 0 24 24">
+    <title>Contents</title>
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+      <path stroke="none" d="M0 0h24v24H0z" />
+      <line x1="4" y1="6" x2="20" y2="6" />
+      <line x1="10" y1="12" x2="20" y2="12" />
+      <line x1="6" y1="18" x2="20" y2="18" />
+    </svg>
+  </symbol>
+  <symbol id="svg-menu" viewBox="0 0 24 24">
+    <title>Menu</title>
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather-menu">
+      <line x1="3" y1="12" x2="21" y2="12"></line>
+      <line x1="3" y1="6" x2="21" y2="6"></line>
+      <line x1="3" y1="18" x2="21" y2="18"></line>
+    </svg>
+  </symbol>
+  <symbol id="svg-arrow-right" viewBox="0 0 24 24">
+    <title>Expand</title>
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather-chevron-right">
+      <polyline points="9 18 15 12 9 6"></polyline>
+    </svg>
+  </symbol>
+  <symbol id="svg-sun" viewBox="0 0 24 24">
+    <title>Light mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="feather-sun">
+      <circle cx="12" cy="12" r="5"></circle>
+      <line x1="12" y1="1" x2="12" y2="3"></line>
+      <line x1="12" y1="21" x2="12" y2="23"></line>
+      <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+      <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+      <line x1="1" y1="12" x2="3" y2="12"></line>
+      <line x1="21" y1="12" x2="23" y2="12"></line>
+      <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+      <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+    </svg>
+  </symbol>
+  <symbol id="svg-moon" viewBox="0 0 24 24">
+    <title>Dark mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="icon-tabler-moon">
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+      <path d="M12 3c.132 0 .263 0 .393 0a7.5 7.5 0 0 0 7.92 12.446a9 9 0 1 1 -8.313 -12.454z" />
+    </svg>
+  </symbol>
+  <symbol id="svg-sun-half" viewBox="0 0 24 24">
+    <title>Auto light/dark mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="icon-tabler-shadow">
+      <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+      <circle cx="12" cy="12" r="9" />
+      <path d="M13 12h5" />
+      <path d="M13 15h4" />
+      <path d="M13 18h1" />
+      <path d="M13 9h4" />
+      <path d="M13 6h1" />
+    </svg>
+  </symbol>
+</svg>
 
-  <div class="links">
-    <navlinks class="can-hide">
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation">
+<input type="checkbox" class="sidebar-toggle" name="__toc" id="__toc">
+<label class="overlay sidebar-overlay" for="__navigation">
+  <div class="visually-hidden">Hide navigation sidebar</div>
+</label>
+<label class="overlay toc-overlay" for="__toc">
+  <div class="visually-hidden">Hide table of contents sidebar</div>
+</label>
 
 
 
-    </navlinks>
-  </div>
-</navbar>
-
-      
-      <div class="sidebar-mask" @click="toggleSidebar(false)">
+<div class="page">
+  <header class="mobile-header">
+    <div class="header-left">
+      <label class="nav-overlay-icon" for="__navigation">
+        <div class="visually-hidden">Toggle site navigation sidebar</div>
+        <i class="icon"><svg><use href="#svg-menu"></use></svg></i>
+      </label>
+    </div>
+    <div class="header-center">
+      <a href="index.html"><div class="brand">Introduction to Musical Corpus Studies 0.0.1 documentation</div></a>
+    </div>
+    <div class="header-right">
+      <div class="theme-toggle-container theme-toggle-header">
+        <button class="theme-toggle">
+          <div class="visually-hidden">Toggle Light / Dark / Auto color theme</div>
+          <svg class="theme-icon-when-auto"><use href="#svg-sun-half"></use></svg>
+          <svg class="theme-icon-when-dark"><use href="#svg-moon"></use></svg>
+          <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
+        </button>
       </div>
-        <sidebar @toggle-sidebar="toggleSidebar">
-          
-          <navlinks>
-            
-
-
-
-            
-          </navlinks><div id="searchbox" class="searchbox" role="search">
-  <div class="caption"><span class="caption-text">Quick search</span>
-    <div class="searchformwrapper">
-      <form class="search" action="search.html" method="get">
-        <input type="text" name="q" />
-        <input type="submit" value="Search" />
-        <input type="hidden" name="check_keywords" value="yes" />
-        <input type="hidden" name="area" value="default" />
-      </form>
+      <label class="toc-overlay-icon toc-header-icon" for="__toc">
+        <div class="visually-hidden">Toggle table of contents sidebar</div>
+        <i class="icon"><svg><use href="#svg-toc"></use></svg></i>
+      </label>
     </div>
-  </div>
-</div><div class="sidebar-links" role="navigation" aria-label="main navigation">
+  </header>
+  <aside class="sidebar-drawer">
+    <div class="sidebar-container">
+      
+      <div class="sidebar-sticky"><a class="sidebar-brand" href="index.html">
   
-    <div class="sidebar-group">
-      <p class="caption">
-        <span class="caption-text"><a href="index.html#introduction-to-musical-corpus-studies">Content</a></span>
-      </p>
-      <ul class="current">
-        
-          <li class="toctree-l1 current"><a href="#" class="reference internal current">Organization</a>
-
-            
-              <ul>
-                
-                  <li class="toctree-l2"><a href="#about-this-course" class="reference internal">About this course</a></li>
-                
-                  <li class="toctree-l2"><a href="#overview" class="reference internal">Overview</a></li>
-                
-                  <li class="toctree-l2"><a href="#credits" class="reference internal">Credits</a></li>
-                
-                  <li class="toctree-l2"><a href="#deliverables-and-learning-objectives" class="reference internal">Deliverables and learning objectives</a></li>
-                
-              </ul>
-            
-          </li>
-
-        
-          <li class="toctree-l1 "><a href="02_introduction.html" class="reference internal ">Introduction and Background</a>
-
-            
-          </li>
-
-        
-          <li class="toctree-l1 "><a href="03_melody_I.html" class="reference internal ">Melodies in Folk Songs</a>
-
-            
-          </li>
-
-        
-          <li class="toctree-l1 "><a href="04_jazz_solos.html" class="reference internal ">Solos in the Weimar Jazz Database</a>
-
-            
-          </li>
-
-        
-          <li class="toctree-l1 "><a href="exercises/01_exercise.html" class="reference internal ">Group work I</a>
-
-            
-          </li>
-
-        
-          <li class="toctree-l1 "><a href="04_renaissance_cadences.html" class="reference internal ">Renaissance Cadences</a>
-
-            
-          </li>
-
-        
-          <li class="toctree-l1 "><a href="exercises/02_exercise.html" class="reference internal ">Lost Voices Cadence Data: Filters and Diagrams</a>
-
-            
-          </li>
-
-        
-          <li class="toctree-l1 "><a href="05_data-driven_music_history.html" class="reference internal ">Data-Driven Music History</a>
-
-            
-          </li>
-
-        
-      </ul>
-    </div>
   
-</div>
-        </sidebar>
-
-      <page>
-          <div class="body-header" role="navigation" aria-label="navigation">
+  <span class="sidebar-brand-text">Introduction to Musical Corpus Studies 0.0.1 documentation</span>
   
-  <ul class="breadcrumbs">
-    <li><a href="index.html">Docs</a> &raquo;</li>
-    
-    <li><span class="section-number">1. </span>Organization</li>
-  </ul>
-  
-
-  <ul class="page-nav">
-  <li class="prev">
-    <a href="index.html"
-       title="previous chapter">← Introduction to Musical Corpus Studies</a>
-  </li>
-  <li class="next">
-    <a href="02_introduction.html"
-       title="next chapter"><span class="section-number">2. </span>Introduction and Background →</a>
-  </li>
+</a><form class="sidebar-search-container" method="get" action="search.html" role="search">
+  <input class="sidebar-search" placeholder=Search name="q" aria-label="Search">
+  <input type="hidden" name="check_keywords" value="yes">
+  <input type="hidden" name="area" value="default">
+</form>
+<div id="searchbox"></div><div class="sidebar-scroll"><div class="sidebar-tree">
+  <p class="caption" role="heading"><span class="caption-text">Content</span></p>
+<ul class="current">
+<li class="toctree-l1 current current-page"><a class="current reference internal" href="#">1. Organization</a></li>
+<li class="toctree-l1"><a class="reference internal" href="02_introduction.html">2. Introduction and Background</a></li>
+<li class="toctree-l1"><a class="reference internal" href="03_melody_I.html">3. Melodies in Folk Songs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="04_jazz_solos.html">4. Solos in the <em>Weimar Jazz Database</em></a></li>
+<li class="toctree-l1"><a class="reference internal" href="exercises/01_exercise.html">5. Exercise I: The Annotated Beethoven Corpus and the <code class="docutils literal notranslate"><span class="pre">pandas</span></code> library</a></li>
+<li class="toctree-l1"><a class="reference internal" href="04_renaissance_cadences.html">6. Renaissance Cadences</a></li>
+<li class="toctree-l1"><a class="reference internal" href="exercises/02_exercise.html">7. Exercise II: Lost Voices Cadence Data</a></li>
+<li class="toctree-l1"><a class="reference internal" href="05_data-driven_music_history.html">8. Data-Driven Music History</a></li>
 </ul>
-  
+
 </div>
-<hr>
-          <div class="content" role="main">
-            
-  <div class="section" id="organization">
+</div>
+      </div>
+      
+    </div>
+  </aside>
+  <div class="main">
+    <div class="content">
+      <div class="article-container">
+        <div class="content-icon-container">
+          <div class="theme-toggle-container theme-toggle-content">
+            <button class="theme-toggle">
+              <div class="visually-hidden">Toggle Light / Dark / Auto color theme</div>
+              <svg class="theme-icon-when-auto"><use href="#svg-sun-half"></use></svg>
+              <svg class="theme-icon-when-dark"><use href="#svg-moon"></use></svg>
+              <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
+            </button>
+          </div>
+          <label class="toc-overlay-icon toc-content-icon" for="__toc">
+            <div class="visually-hidden">Toggle table of contents sidebar</div>
+            <i class="icon"><svg><use href="#svg-toc"></use></svg></i>
+          </label>
+        </div>
+        <article role="main">
+          <section id="organization">
 <h1><span class="section-number">1. </span>Organization<a class="headerlink" href="#organization" title="Permalink to this headline">¶</a></h1>
-<div class="section" id="about-this-course">
+<section id="about-this-course">
 <h2><span class="section-number">1.1. </span>About this course<a class="headerlink" href="#about-this-course" title="Permalink to this headline">¶</a></h2>
 <p>This course aims at providing an example-based introduction to the rapidly developing field of Musical Corpus Studies (MCS).
 Introducing a field that relies equally on musicological domain knowledge and skills in computational and statistical methods
@@ -191,15 +213,16 @@ knowing what they are <em>for</em> and being motivated intrinsically.
 If you are not particularly interested in doing this kind of work yourself,
 you will still see a broad range of applications that are much more useful to you than
 learning (or not learning) programming basics.</p>
-</div>
-<div class="section" id="overview">
+</section>
+<section id="overview">
 <h2><span class="section-number">1.2. </span>Overview<a class="headerlink" href="#overview" title="Permalink to this headline">¶</a></h2>
 <p>This year’s course takes place on two weekends (13-14 November and 11-12 December 2020),
 comprising twelve sessions in total. The topics cover a broad range of musicological topics,
 from folk melodies and Jazz solos, over harmonies in Beethoven’s string
 quartets and 20th century Pop music, to Renaissance candences
 and metric patterns in Malian drum music (see <a class="reference internal" href="#tab-overview"><span class="std std-numref">Table 1.1</span></a>).</p>
-<table class="colwidths-auto docutils align-default" id="tab-overview">
+<div class="table-wrapper"><table class="colwidths-auto docutils align-default" id="tab-overview">
+<caption><span class="caption-number">Table 1.1 </span><span class="caption-text">Course overview.</span><a class="headerlink" href="#tab-overview" title="Permalink to this table">¶</a></caption>
 <thead>
 <tr class="row-odd"><th class="head"><p>No.</p></th>
 <th class="head"><p>Date</p></th>
@@ -279,17 +302,17 @@ and metric patterns in Malian drum music (see <a class="reference internal" href
 <td><p>Recapitulation and conclusion</p></td>
 </tr>
 </tbody>
-</table>
-</div>
-<div class="section" id="credits">
+</table></div>
+</section>
+<section id="credits">
 <h2><span class="section-number">1.3. </span>Credits<a class="headerlink" href="#credits" title="Permalink to this headline">¶</a></h2>
 <p>Active participation in this course is compensated with 3 credit points (CPs),
 <a class="reference external" href="https://verwaltung.uni-koeln.de/abteilung21/content/studienangebot/studiengaenge_u__abschluesse/bachelor__und_masterstudiengaenge/index_ger.html">equivalent to a work load of 90 hours</a>.
 These are distributed as follows: 24 SWS (à 45 minutes) are allocated to presence in the block seminar.
 Additionally, 24 SWS are dedicated to the preparation and follow-up of the material.
 The remainder of 42 SWS goes to the reading of the relevant literature.</p>
-</div>
-<div class="section" id="deliverables-and-learning-objectives">
+</section>
+<section id="deliverables-and-learning-objectives">
 <h2><span class="section-number">1.4. </span>Deliverables and learning objectives<a class="headerlink" href="#deliverables-and-learning-objectives" title="Permalink to this headline">¶</a></h2>
 <p>Apart from attending and following the presentations by the lecturer,
 course work consists of three main parts: preparing the relevant literature (reading),
@@ -314,8 +337,8 @@ you will work on a number of exercises during the course, e.g. in Zoom breakout 
 You will collaborate on specific tasks related to the topic at hand, discuss methodological questions,
 and help each other in the understanding of some of the concepts that are introduced in the course.</p>
 <p class="rubric">Report</p>
-<p>After the course has ended, your group will be randomly assigned a course topic (one of the twelve sessions in <a class="reference internal" href="#tab-overview"><span class="std std-numref">Table 1.1</span></a>).
-It is your task to write a report on this theme. The should be 6–8 pages long.</p>
+<p>After the course has ended, your group will be randomly assigned a course topic (one of the twelve sessions in <a class="reference internal" href="#tab-overview"><span class="std std-numref">Table 1.1</span></a>).</p>
+<p>It is your task to write a report on this theme. The should be 6–8 pages long.</p>
 <p>Questions that you could address are:
 What did you learn? Which concepts are not clear? Which methods did you (not) understand?
 What is missing? How can the textual descriptions be improved? Who in your group did what?
@@ -331,34 +354,84 @@ Please also write about the organization of your group, challenges and benefits.
 </ol>
 <div class="admonition important">
 <p class="admonition-title">Important</p>
-<p>Submit your report by <strong>31 January 2021, 23:59h</strong> to <a class="reference external" href="mailto:fabian&#46;moss&#37;&#52;&#48;epfl&#46;ch">fabian<span>&#46;</span>moss<span>&#64;</span>epfl<span>&#46;</span>ch</a>
+<p>Submit your report by <strong>31 January 2021, 23:59h</strong> to <a class="reference external" href="mailto:fabian.moss%40epfl.ch">fabian<span>.</span>moss<span>@</span>epfl<span>.</span>ch</a>
 as a single PDF file per group, named <cite>intro_corpusmus_&lt;group_number&gt;.pdf</cite>, e.g. <cite>intro_corpusmus_1.pdf</cite>.</p>
 </div>
-</div>
-</div>
+</section>
+</section>
 
+        </article>
+      </div>
+      <footer>
+        
+        <div class="related-pages">
+          <a class="next-page" href="02_introduction.html">
+              <div class="page-info">
+                <div class="context">
+                  <span>Next</span>
+                </div>
+                <div class="title"><span class="section-number">2. </span>Introduction and Background</div>
+              </div>
+              <svg><use href="#svg-arrow-right"></use></svg>
+            </a>
+          <a class="prev-page" href="index.html">
+              <svg><use href="#svg-arrow-right"></use></svg>
+              <div class="page-info">
+                <div class="context">
+                  <span>Previous</span>
+                </div>
+                
+                <div class="title">Home</div>
+                
+              </div>
+            </a>
+        </div>
 
-          </div>
-          <div class="page-nav">
-            <div class="inner"><ul class="page-nav">
-  <li class="prev">
-    <a href="index.html"
-       title="previous chapter">← Introduction to Musical Corpus Studies</a>
-  </li>
-  <li class="next">
-    <a href="02_introduction.html"
-       title="next chapter"><span class="section-number">2. </span>Introduction and Background →</a>
-  </li>
-</ul><div class="footer" role="contentinfo">
-      &#169; Copyright 2020, Fabian C. Moss.
-    <br>
-    Created using <a href="http://sphinx-doc.org/">Sphinx</a> 3.2.1 with <a href="https://github.com/schettino72/sphinx_press_theme">Press Theme</a>.
-</div>
-            </div>
-          </div>
-      </page>
+        <div class="related-information">
+              Copyright &#169; 2020, Fabian C. Moss |
+          Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> and <a class="muted-link" href="https://pradyunsg.me">@pradyunsg</a>'s
+          <a href="https://github.com/pradyunsg/furo">Furo theme</a>.
+            | <a class="muted-link" href="_sources/01_organization.rst.txt"
+               rel="nofollow">
+              Show Source
+            </a>
+        </div>
+        
+      </footer>
     </div>
-    
-    
-  </body>
+    <aside class="toc-drawer">
+      
+      
+      <div class="toc-sticky toc-scroll">
+        <div class="toc-title-container">
+          <span class="toc-title">
+            Contents
+          </span>
+        </div>
+        <div class="toc-tree-container">
+          <div class="toc-tree">
+            <ul>
+<li><a class="reference internal" href="#">1. Organization</a><ul>
+<li><a class="reference internal" href="#about-this-course">1.1. About this course</a></li>
+<li><a class="reference internal" href="#overview">1.2. Overview</a></li>
+<li><a class="reference internal" href="#credits">1.3. Credits</a></li>
+<li><a class="reference internal" href="#deliverables-and-learning-objectives">1.4. Deliverables and learning objectives</a></li>
+</ul>
+</li>
+</ul>
+
+          </div>
+        </div>
+      </div>
+      
+      
+    </aside>
+  </div>
+</div><script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/scripts/furo.js"></script>
+    <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    </body>
 </html>

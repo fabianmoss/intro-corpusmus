@@ -34,7 +34,12 @@ extensions = [
     'sphinxcontrib.bibtex',
     'nbsphinx',
     'sphinx.ext.mathjax',
+    'sphinx.ext.autosectionlabel',
     ]
+bibtex_bibfiles = ["references.bib"]
+
+# Make sure the target is unique
+autosectionlabel_prefix_document = True
 
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['_templates']
@@ -47,17 +52,21 @@ exclude_patterns = [
     # "exercises"
 ]
 
-
 # -- Options for HTML output -------------------------------------------------
 
 # The theme to use for HTML and HTML Help pages.  See the documentation for
 # a list of builtin themes.
 #
 # html_theme = "alabaster"
-html_theme = "press"
+# html_theme = "press"
+# html_theme = "insegel"
+# html_theme = "karma_sphinx_theme"
+html_theme = "furo"
+# more themes: https://sphinx-themes.org/
 
 # The name of the Pygments (syntax highlighting) style to use.
 # pygments_style = 'monokai'
+# pygments_style = 'dracula'
 
 # Add any paths that contain custom static files (such as style sheets) here,
 # relative to this directory. They are copied after the builtin static files,

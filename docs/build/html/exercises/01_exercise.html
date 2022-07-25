@@ -1,12 +1,11 @@
 <!doctype html>
-<html class="no-js">
+<html class="no-js" lang="en">
   <head><meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width,initial-scale=1"/>
-    <meta name="color-scheme" content="light dark"><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
-<link rel="index" title="Index" href="../genindex.html" /><link rel="search" title="Search" href="../search.html" /><link rel="next" title="6. Renaissance Cadences" href="../04_renaissance_cadences.html" /><link rel="prev" title="4. Solos in the Weimar Jazz Database" href="../04_jazz_solos.html" />
+    <meta name="color-scheme" content="light dark"><link rel="index" title="Index" href="../genindex.html" /><link rel="search" title="Search" href="../search.html" /><link rel="next" title="6. Renaissance Cadences" href="../04_renaissance_cadences.html" /><link rel="prev" title="4. Solos in the Weimar Jazz Database" href="../04_jazz_solos.html" />
 
-    <meta name="generator" content="sphinx-4.4.0, furo 2022.01.02"/>
-        <title>5. Exercise I: The Annotated Beethoven Corpus and the pandas library - Introduction to Musical Corpus Studies 0.0.1 documentation</title>
+    <meta name="generator" content="sphinx-5.2.0+, furo 2022.01.02"/>
+        <title>5. Exercise I: The Annotated Beethoven Corpus and the pandas library - Introduction to Musical Corpus Studies 0.2.0 documentation</title>
       <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
     <link rel="stylesheet" type="text/css" href="../_static/styles/furo.css?digest=df49af52631e7917044a9c21a57f7b83170a6dd0" />
     <link rel="stylesheet" type="text/css" href="../_static/styles/furo-extensions.css?digest=fade93df149f7c5fedb3ff897f799dc7d283b420" />
@@ -123,7 +122,7 @@
       </label>
     </div>
     <div class="header-center">
-      <a href="../index.html"><div class="brand">Introduction to Musical Corpus Studies 0.0.1 documentation</div></a>
+      <a href="../index.html"><div class="brand">Introduction to Musical Corpus Studies 0.2.0 documentation</div></a>
     </div>
     <div class="header-right">
       <div class="theme-toggle-container theme-toggle-header">
@@ -146,7 +145,7 @@
       <div class="sidebar-sticky"><a class="sidebar-brand" href="../index.html">
   
   
-  <span class="sidebar-brand-text">Introduction to Musical Corpus Studies 0.0.1 documentation</span>
+  <span class="sidebar-brand-text">Introduction to Musical Corpus Studies 0.2.0 documentation</span>
   
 </a><form class="sidebar-search-container" method="get" action="../search.html" role="search">
   <input class="sidebar-search" placeholder=Search name="q" aria-label="Search">
@@ -405,6 +404,7 @@ div.nboutput.container div.output_area > div[class^='highlight']{
 }
 
 /* Some additional styling taken form the Jupyter notebook CSS */
+.jp-RenderedHTMLCommon table,
 div.rendered_html table {
   border: none;
   border-collapse: collapse;
@@ -413,10 +413,14 @@ div.rendered_html table {
   font-size: 12px;
   table-layout: fixed;
 }
+.jp-RenderedHTMLCommon thead,
 div.rendered_html thead {
   border-bottom: 1px solid black;
   vertical-align: bottom;
 }
+.jp-RenderedHTMLCommon tr,
+.jp-RenderedHTMLCommon th,
+.jp-RenderedHTMLCommon td,
 div.rendered_html tr,
 div.rendered_html th,
 div.rendered_html td {
@@ -428,18 +432,21 @@ div.rendered_html td {
   max-width: none;
   border: none;
 }
+.jp-RenderedHTMLCommon th,
 div.rendered_html th {
   font-weight: bold;
 }
+.jp-RenderedHTMLCommon tbody tr:nth-child(odd),
 div.rendered_html tbody tr:nth-child(odd) {
   background: #f5f5f5;
 }
+.jp-RenderedHTMLCommon tbody tr:hover,
 div.rendered_html tbody tr:hover {
   background: rgba(66, 165, 245, 0.2);
 }
 </style>
-<section id="Exercise-I:-The-Annotated-Beethoven-Corpus-and-the-pandas-library">
-<h1><span class="section-number">5. </span>Exercise I: The Annotated Beethoven Corpus and the <code class="docutils literal notranslate"><span class="pre">pandas</span></code> library<a class="headerlink" href="#Exercise-I:-The-Annotated-Beethoven-Corpus-and-the-pandas-library" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="Exercise-I:-The-Annotated-Beethoven-Corpus-and-the-pandas-library">
+<h1><span class="section-number">5. </span>Exercise I: The Annotated Beethoven Corpus and the <code class="docutils literal notranslate"><span class="pre">pandas</span></code> library<a class="headerlink" href="#Exercise-I:-The-Annotated-Beethoven-Corpus-and-the-pandas-library" title="Permalink to this heading">¶</a></h1>
 <p>In the first exercise, you learn how to interact with <code class="docutils literal notranslate"><span class="pre">pandas</span></code> library that is very useful for deadling with tabular data. Moreover, you will have a first look at the data that we work with in the next session, the <em>Annotated Beethoven Corpus</em> (ABC). The ABC contains harmonic annotations for all string quartets by Ludwig van Beethoven. The corpus is described in</p>
 <ul class="simple">
 <li><p>Neuwirth, M., Harasim, D., Moss, F. C., &amp; Rohrmeier, M. (2018). The Annotated Beethoven Corpus (ABC): A Dataset of Harmonic Analyses of All Beethoven String Quartets. <em>Frontiers in Digital Humanities</em>. <a class="reference external" href="https://doi.org/10.3389/fdigh.2018.00016">https://doi.org/10.3389/fdigh.2018.00016</a></p></li>
@@ -800,7 +807,7 @@ yet). The condition mentioned above would be expressed as follows:</p>
 </div>
 <p>Compare the first couple of chords in major and minor. Can you interpret it?</p>
 <p><strong>Congratulations! You completely solved the first exercise!</strong></p>
-</section>
+</div>
 
         </article>
       </div>
@@ -830,7 +837,7 @@ yet). The condition mentioned above would be expressed as follows:</p>
         </div>
 
         <div class="related-information">
-              Copyright &#169; 2020, Fabian C. Moss |
+              Copyright &#169; 2022, Fabian C. Moss |
           Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> and <a class="muted-link" href="https://pradyunsg.me">@pradyunsg</a>'s
           <a href="https://github.com/pradyunsg/furo">Furo theme</a>.
             | <a class="muted-link" href="../_sources/exercises/01_exercise.ipynb.txt"
@@ -850,6 +857,7 @@ yet). The condition mentioned above would be expressed as follows:</p>
 </div><script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
     <script src="../_static/jquery.js"></script>
     <script src="../_static/underscore.js"></script>
+    <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
     <script src="../_static/doctools.js"></script>
     <script src="../_static/scripts/furo.js"></script>
     <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>

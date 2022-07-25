@@ -18,12 +18,15 @@
 # -- Project information -----------------------------------------------------
 
 project = 'Introduction to Musical Corpus Studies'
-copyright = '2020, Fabian C. Moss'
+copyright = '2022, Fabian C. Moss'
 author = 'Fabian C. Moss'
 
 # The full version, including alpha/beta/rc tags
-release = '0.0.1'
-
+release = '0.2.0'
+# Semantic versioning:
+# 1.X.X: first edition of book
+# X.1.X: first year of teaching
+# X.X.1: first changes
 
 # -- General configuration ---------------------------------------------------
 
@@ -34,7 +37,7 @@ extensions = [
     'sphinxcontrib.bibtex',
     'nbsphinx',
     'sphinx.ext.mathjax',
-    'sphinx.ext.autosectionlabel',
+    'sphinx.ext.autosectionlabel'
     ]
 bibtex_bibfiles = ["references.bib"]
 
@@ -49,6 +52,8 @@ templates_path = ['_templates']
 # This pattern also affects html_static_path and html_extra_path.
 exclude_patterns = [
     "_drafts",
+    '_build',
+    '**.ipynb_checkpoints'
     # "exercises"
 ]
 

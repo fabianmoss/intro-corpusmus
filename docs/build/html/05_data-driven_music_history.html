@@ -1,12 +1,11 @@
 <!doctype html>
-<html class="no-js">
+<html class="no-js" lang="en">
   <head><meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width,initial-scale=1"/>
-    <meta name="color-scheme" content="light dark"><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
-<link rel="index" title="Index" href="genindex.html" /><link rel="search" title="Search" href="search.html" /><link rel="prev" title="7. Exercise II: Lost Voices Cadence Data" href="exercises/02_exercise.html" />
+    <meta name="color-scheme" content="light dark"><link rel="index" title="Index" href="genindex.html" /><link rel="search" title="Search" href="search.html" /><link rel="prev" title="7. Exercise II: Lost Voices Cadence Data" href="exercises/02_exercise.html" />
 
-    <meta name="generator" content="sphinx-4.4.0, furo 2022.01.02"/>
-        <title>8. Data-Driven Music History - Introduction to Musical Corpus Studies 0.0.1 documentation</title>
+    <meta name="generator" content="sphinx-5.2.0+, furo 2022.01.02"/>
+        <title>8. Data-Driven Music History - Introduction to Musical Corpus Studies 0.2.0 documentation</title>
       <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
     <link rel="stylesheet" type="text/css" href="_static/styles/furo.css?digest=df49af52631e7917044a9c21a57f7b83170a6dd0" />
     <link rel="stylesheet" type="text/css" href="_static/styles/furo-extensions.css?digest=fade93df149f7c5fedb3ff897f799dc7d283b420" />
@@ -123,7 +122,7 @@
       </label>
     </div>
     <div class="header-center">
-      <a href="index.html"><div class="brand">Introduction to Musical Corpus Studies 0.0.1 documentation</div></a>
+      <a href="index.html"><div class="brand">Introduction to Musical Corpus Studies 0.2.0 documentation</div></a>
     </div>
     <div class="header-right">
       <div class="theme-toggle-container theme-toggle-header">
@@ -146,7 +145,7 @@
       <div class="sidebar-sticky"><a class="sidebar-brand" href="index.html">
   
   
-  <span class="sidebar-brand-text">Introduction to Musical Corpus Studies 0.0.1 documentation</span>
+  <span class="sidebar-brand-text">Introduction to Musical Corpus Studies 0.2.0 documentation</span>
   
 </a><form class="sidebar-search-container" method="get" action="search.html" role="search">
   <input class="sidebar-search" placeholder=Search name="q" aria-label="Search">
@@ -405,6 +404,7 @@ div.nboutput.container div.output_area > div[class^='highlight']{
 }
 
 /* Some additional styling taken form the Jupyter notebook CSS */
+.jp-RenderedHTMLCommon table,
 div.rendered_html table {
   border: none;
   border-collapse: collapse;
@@ -413,10 +413,14 @@ div.rendered_html table {
   font-size: 12px;
   table-layout: fixed;
 }
+.jp-RenderedHTMLCommon thead,
 div.rendered_html thead {
   border-bottom: 1px solid black;
   vertical-align: bottom;
 }
+.jp-RenderedHTMLCommon tr,
+.jp-RenderedHTMLCommon th,
+.jp-RenderedHTMLCommon td,
 div.rendered_html tr,
 div.rendered_html th,
 div.rendered_html td {
@@ -428,18 +432,21 @@ div.rendered_html td {
   max-width: none;
   border: none;
 }
+.jp-RenderedHTMLCommon th,
 div.rendered_html th {
   font-weight: bold;
 }
+.jp-RenderedHTMLCommon tbody tr:nth-child(odd),
 div.rendered_html tbody tr:nth-child(odd) {
   background: #f5f5f5;
 }
+.jp-RenderedHTMLCommon tbody tr:hover,
 div.rendered_html tbody tr:hover {
   background: rgba(66, 165, 245, 0.2);
 }
 </style>
-<section id="Data-Driven-Music-History">
-<h1><span class="section-number">8. </span>Data-Driven Music History<a class="headerlink" href="#Data-Driven-Music-History" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="Data-Driven-Music-History">
+<h1><span class="section-number">8. </span>Data-Driven Music History<a class="headerlink" href="#Data-Driven-Music-History" title="Permalink to this heading">¶</a></h1>
 <div class="nbinput nblast docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[1]:
 </pre></div>
@@ -453,15 +460,15 @@ div.rendered_html tbody tr:hover {
 </pre></div>
 </div>
 </div>
-<section id="Research-Questions">
-<h2><span class="section-number">8.1. </span>Research Questions<a class="headerlink" href="#Research-Questions" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="Research-Questions">
+<h2><span class="section-number">8.1. </span>Research Questions<a class="headerlink" href="#Research-Questions" title="Permalink to this heading">¶</a></h2>
 <ul class="simple">
 <li><p>General: How can we study historical changes quantitatively?</p></li>
 <li><p>Specific: What can we say about the history of tonality based on a dataset of musical pieces?</p></li>
 </ul>
-</section>
-<section id="A-bit-of-theory">
-<h2><span class="section-number">8.2. </span>A bit of theory<a class="headerlink" href="#A-bit-of-theory" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="A-bit-of-theory">
+<h2><span class="section-number">8.2. </span>A bit of theory<a class="headerlink" href="#A-bit-of-theory" title="Permalink to this heading">¶</a></h2>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[2]:
 </pre></div>
@@ -533,11 +540,11 @@ div.rendered_html tbody tr:hover {
 </pre></div></div>
 </div>
 <p>We call the elements on the line of fifths <strong>tonal pitch-classes</strong></p>
-</section>
-<section id="Data">
-<h2><span class="section-number">8.3. </span>Data<a class="headerlink" href="#Data" title="Permalink to this headline">¶</a></h2>
-<section id="A-(kind-of)-large-corpus:-TP3C">
-<h3><span class="section-number">8.3.1. </span>A (kind of) large corpus: TP3C<a class="headerlink" href="#A-(kind-of)-large-corpus:-TP3C" title="Permalink to this headline">¶</a></h3>
+</div>
+<div class="section" id="Data">
+<h2><span class="section-number">8.3. </span>Data<a class="headerlink" href="#Data" title="Permalink to this heading">¶</a></h2>
+<div class="section" id="A-(kind-of)-large-corpus:-TP3C">
+<h3><span class="section-number">8.3.1. </span>A (kind of) large corpus: TP3C<a class="headerlink" href="#A-(kind-of)-large-corpus:-TP3C" title="Permalink to this heading">¶</a></h3>
 <p>Here, we use a dataset that was specifically compiled for this kind of analysis, the <a class="reference external" href="https://github.com/DCMLab/TP3C">Tonal pitch-class counts corpus (TP3C)</a> (Moss, Neuwirth, Rohrmeier, 2020)</p>
 <ul class="simple">
 <li><p>2,012 pieces</p></li>
@@ -2963,10 +2970,10 @@ array([0.41144591, 0.23410347, 0.09063507, 0.07574242, 0.04436989])
 <p>The first principal component explains 41.1% of the variance of the data, the second explains 23.4% and the third 9%. Together, this amounts to 73.6%.</p>
 <p>Almost three quarters of the variance in the dataset is retained by reducing the dimensionality from 35 to 3 dimensions (8.6%)! If we reduce the data to two dimensions, we still can explain <span class="math notranslate nohighlight">\(\approx\)</span> 65% of the variance.</p>
 <p>This is great because it means that we can look at the data in 2 or 3 dimensions without loosing too much information.</p>
-</section>
-</section>
-<section id="Recovering-the-line-of-fifths-from-data">
-<h2><span class="section-number">8.4. </span>Recovering the line of fifths from data<a class="headerlink" href="#Recovering-the-line-of-fifths-from-data" title="Permalink to this headline">¶</a></h2>
+</div>
+</div>
+<div class="section" id="Recovering-the-line-of-fifths-from-data">
+<h2><span class="section-number">8.4. </span>Recovering the line of fifths from data<a class="headerlink" href="#Recovering-the-line-of-fifths-from-data" title="Permalink to this heading">¶</a></h2>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[18]:
 </pre></div>
@@ -3561,9 +3568,9 @@ array([0.41144591, 0.23410347, 0.09063507, 0.07574242, 0.04436989])
 <img alt="_images/05_data-driven_music_history_43_0.png" src="_images/05_data-driven_music_history_43_0.png"/>
 </div>
 </div>
-</section>
-<section id="Historical-development-of-tonality">
-<h2><span class="section-number">8.5. </span>Historical development of tonality<a class="headerlink" href="#Historical-development-of-tonality" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="Historical-development-of-tonality">
+<h2><span class="section-number">8.5. </span>Historical development of tonality<a class="headerlink" href="#Historical-development-of-tonality" title="Permalink to this heading">¶</a></h2>
 <p>The line of fifths is an important underlying structure for pitch-class distributions in tonal compositions</p>
 <p>But we have treated all pieces in our dataset as synchronic and have not yet taken their historical location into account.</p>
 <p>Let’s assume the pitch-class content of a piece spreads on the line of fifths from F to A<span class="math notranslate nohighlight">\(\sharp\)</span>. This means, its range on the line of fifths is <span class="math notranslate nohighlight">\(10 - (-1) = 11\)</span>. The piece covers eleven consecutive fifths on the lof.</p>
@@ -4761,9 +4768,9 @@ array([0.41144591, 0.23410347, 0.09063507, 0.07574242, 0.04436989])
 <img alt="_images/05_data-driven_music_history_56_0.png" src="_images/05_data-driven_music_history_56_0.png"/>
 </div>
 </div>
-</section>
-<section id="If-there-is-time:-some-more-advanced-stuff">
-<h2><span class="section-number">8.6. </span>If there is time: some more advanced stuff<a class="headerlink" href="#If-there-is-time:-some-more-advanced-stuff" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="If-there-is-time:-some-more-advanced-stuff">
+<h2><span class="section-number">8.6. </span>If there is time: some more advanced stuff<a class="headerlink" href="#If-there-is-time:-some-more-advanced-stuff" title="Permalink to this heading">¶</a></h2>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[35]:
 </pre></div>
@@ -4897,9 +4904,9 @@ array([0.41144591, 0.23410347, 0.09063507, 0.07574242, 0.04436989])
 <li><p>Classical: enharmonic proportion increases -&gt; more distant modulations</p></li>
 <li><p>This trend continues through the Romantic eras</p></li>
 </ul>
-</section>
-<section id="Summary">
-<h2><span class="section-number">8.7. </span>Summary<a class="headerlink" href="#Summary" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="Summary">
+<h2><span class="section-number">8.7. </span>Summary<a class="headerlink" href="#Summary" title="Permalink to this heading">¶</a></h2>
 <ol class="arabic simple">
 <li><p>We have analyzed a very specific aspect of Western classical music.</p></li>
 <li><p>We have used a large(-ish) corpus to answer our research question.</p></li>
@@ -4918,8 +4925,8 @@ array([0.41144591, 0.23410347, 0.09063507, 0.07574242, 0.04436989])
 </pre></div>
 </div>
 </div>
-</section>
-</section>
+</div>
+</div>
 
         </article>
       </div>
@@ -4941,7 +4948,7 @@ array([0.41144591, 0.23410347, 0.09063507, 0.07574242, 0.04436989])
         </div>
 
         <div class="related-information">
-              Copyright &#169; 2020, Fabian C. Moss |
+              Copyright &#169; 2022, Fabian C. Moss |
           Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> and <a class="muted-link" href="https://pradyunsg.me">@pradyunsg</a>'s
           <a href="https://github.com/pradyunsg/furo">Furo theme</a>.
             | <a class="muted-link" href="_sources/05_data-driven_music_history.ipynb.txt"
@@ -4989,6 +4996,7 @@ array([0.41144591, 0.23410347, 0.09063507, 0.07574242, 0.04436989])
 </div><script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
     <script src="_static/jquery.js"></script>
     <script src="_static/underscore.js"></script>
+    <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
     <script src="_static/doctools.js"></script>
     <script src="_static/scripts/furo.js"></script>
     <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>

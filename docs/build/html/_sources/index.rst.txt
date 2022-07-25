@@ -14,18 +14,18 @@ Introduction to Musical Corpus Studies
 
 .. warning::
 
-   This material is still (heavily) under construction and might change throughout the course!
+   These materials are still under development and might change throughout the course!
 
-   You can help improving the course and `let me know <mailto:fabian.moss@epfl.ch>`_ about any errors and inconsistencies that you find 
+   You can help improving the course by `letting me know <mailto:fabianmoss@gmail.com>`_ about any errors and inconsistencies that you find 
    or suggest other ways of improving the course.
 
 .. rubric:: Welcome!
 
-These pages present the content of the course "Introduction to Musical Corpus Studies" at the `Institute of Musicology`_, 
-given at `University of Cologne`_ in Fall 2020. 
+These pages present the content of the course "Introduction to Musical Corpus Studies", taught at the at the `Institute for Music Research`_, 
+at `Würzburg University`_ in Fall 2022. 
 
-.. _Institute of Musicology: http://musikwissenschaft.phil-fak.uni-koeln.de/
-.. _University of Cologne: https://uni-koeln.de/
+.. _Institute for Music Research: https://www.musikwissenschaft.uni-wuerzburg.de/
+.. _Würzburg University: https://uni-wuerzburg.de/
 
 In the last two decades *Musical Corpus Studies* evolved from a niche discipline into a veritable research area.
 The growing availability of digital and digitized musical data as well as the application and development of modern 

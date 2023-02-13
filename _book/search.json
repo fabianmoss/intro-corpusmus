@@ -1,0 +1,58 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "temp",
+    "section": "",
+    "text": "Preface\nThis is a Quarto book.\nTo learn more about Quarto books visit https://quarto.org/docs/books."
+  },
+  {
+    "objectID": "intro.html",
+    "href": "intro.html",
+    "title": "1  Introduction",
+    "section": "",
+    "text": "This is a book created from markdown and executable code.\nSee Knuth (1984) for additional discussion of literate programming.\n\n\n\n\nKnuth, Donald E. 1984. “Literate Programming.” Comput. J. 27 (2): 97–111. https://doi.org/10.1093/comjnl/27.2.97."
+  },
+  {
+    "objectID": "organization.html#about-this-course",
+    "href": "organization.html#about-this-course",
+    "title": "2  Organization",
+    "section": "2.1 About this course",
+    "text": "2.1 About this course\nThis course aims at providing an example-based introduction to the rapidly developing field of Musical Corpus Studies (MCS). Introducing a field that relies equally on musicological domain knowledge and skills in computational and statistical methods faces obvious challenges: while most people interested in this field come with a background in either area, few people are versed in both, and it can take years to bridge the musicological-computational gap.\nIn particular, systematic introductions to programming or specific musicological topics can be at times quite arduous, even boring, because it takes a long time to proceed from learning basic concepts to acually interesting problems. The problems and “toy examples” that are presented to introduce the basic concepts are necessarily remote from real-world applications and challenging research problems.\nThis course takes an alternative route. It does not start with an introduction to the programming language Python <http://python.org/>_ (which will be used throughout to carry out the computational analyses) but rather showcases a number of recent corpus studies that take on musicological research questions. The focus thus lies in understanding how aspects of music can be studied with computational methods and by analyzing musical corpora.\nIf this sparks your interest, it will be much easier to pick up the basics for yourself, knowing what they are for and being motivated intrinsically. If you are not particularly interested in doing this kind of work yourself, you will still see a broad range of applications that are much more useful to you than learning (or not learning) programming basics."
+  },
+  {
+    "objectID": "organization.html#overview",
+    "href": "organization.html#overview",
+    "title": "2  Organization",
+    "section": "2.2 Overview",
+    "text": "2.2 Overview\nThis year’s course takes place on two weekends (13-14 November and 11-12 December 2020), comprising twelve sessions in total. The topics cover a broad range of musicological topics, from folk melodies and Jazz solos, over harmonies in Beethoven’s string quartets and 20th century Pop music, to Renaissance candences and metric patterns in Malian drum music (see :numref:tab:overview).\n\nCourse overview. Dates marked with * are taught online.\n\n\n\n\n\n\n\nNo.\nDate\nTopic\n\n\n\n\n1\n19. April 2023\n12\n\n\n2\n26. April 2023\n123\n\n\n3\n3. Mai 2023\n1\n\n\n4\n10. Mai 2023\n1\n\n\n5\n17. Mai 2023\n1\n\n\n6\n24. Mai 2023*\n1\n\n\n7\n31. Mai 2023\n1\n\n\n8\n7. Juni 2023\n1\n\n\n9\n14. Juni 2023\n1\n\n\n10\n21. Juni 2023\n1\n\n\n11\n28. Juni 2023\n1\n\n\n12\n5. Juli 2023\n1\n\n\n13\n12. Juli 2023\n1\n\n\n14\n19. Juli 2023\n1"
+  },
+  {
+    "objectID": "organization.html#credits",
+    "href": "organization.html#credits",
+    "title": "2  Organization",
+    "section": "2.3 Credits",
+    "text": "2.3 Credits\nActive participation in this course is compensated with 3 credit points (CPs), equivalent to a work load of 90 hours <https://verwaltung.uni-koeln.de/abteilung21/content/studienangebot/studiengaenge_u__abschluesse/bachelor__und_masterstudiengaenge/index_ger.html>_. These are distributed as follows: 24 SWS (à 45 minutes) are allocated to presence in the block seminar. Additionally, 24 SWS are dedicated to the preparation and follow-up of the material. The remainder of 42 SWS goes to the reading of the relevant literature."
+  },
+  {
+    "objectID": "organization.html#deliverables-and-learning-objectives",
+    "href": "organization.html#deliverables-and-learning-objectives",
+    "title": "2  Organization",
+    "section": "2.4 Deliverables and learning objectives",
+    "text": "2.4 Deliverables and learning objectives\nApart from attending and following the presentations by the lecturer, course work consists of three main parts: preparing the relevant literature (reading), completing the assigned exercises (group work), and critically engaging with the course materials in the form of a report written together with your group (report).\nThese deliverables will broaden your knowledge and understanding of current musicological research, enhance your organizational and social skills, and help you to develop efficient work-load management strategies. Finally, compiling a report will advance your communication and writing abilities.\n\n2.4.1 Reading\nFor each session, the relevant literature is cited in the text and provided on WueCampus. Careful preparation of the reading material is required in order to be able to follow the content of the course. Because the course will mainly talk about methods and general points of musical corpus research, the content (and musical topic) will mainly be introduced by the literature.\nI am aware that the reading workload is relatively high since the course will be taught as a block seminar and doesn’t spread out over the entire semester. I hope that the fact that the course is finished before the end of the year compensates for this.\n\n\n2.4.2 Group work\nAt the beginning of the course, you will be randomly assigned to a group. Together with your group (which will stay fixed for the entire semester), you will work on a number of exercises during the course, e.g. in Zoom breakout rooms. You will collaborate on specific tasks related to the topic at hand, discuss methodological questions, and help each other in the understanding of some of the concepts that are introduced in the course.\n\n\n2.4.3 Report\nAfter the course has ended, your group will be randomly assigned a course topic (one of the twelve sessions in :numref:tab:overview).\nIt is your task to write a report on this theme. The should be 6–8 pages long.\nQuestions that you could address are: What did you learn? Which concepts are not clear? Which methods did you (not) understand? What is missing? How can the textual descriptions be improved? Who in your group did what? Was the presentation of the material adequate? If not, what was missing? Please also write about the organization of your group, challenges and benefits.\n.. - create issues on GitHub .. - writing academic reviews\nRecommended structure for the report\n\nIntroduction: general description and summary of the course and your assigned session in particular.\nDiscussion: summarize the main discussion, open questions, and how you would continue this line or research.\nIssues: describe in detail what was crucial for your understanding of the topic, what was missing, etc.\nVarious: anything that you would like to write in the report\nAuthor contributions: describe briefly how each of you specifically contributed to the report.\n\n.. important:: Submit your report by 31 January 2021, 23:59h to fabian.moss@uni-wuerzburg.de <mailto:fabian.moss@uni-wuerzburg.de>_ as a single PDF file per group, named intro_corpusmus_<group_number>.pdf, e.g. intro_corpusmus_1.pdf."
+  },
+  {
+    "objectID": "summary.html",
+    "href": "summary.html",
+    "title": "3  Summary",
+    "section": "",
+    "text": "In summary, this book has no content whatsoever."
+  },
+  {
+    "objectID": "references.html",
+    "href": "references.html",
+    "title": "References",
+    "section": "",
+    "text": "Knuth, Donald E. 1984. “Literate Programming.” Comput.\nJ. 27 (2): 97–111. https://doi.org/10.1093/comjnl/27.2.97."
+  }
+]

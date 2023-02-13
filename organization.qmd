@@ -33,7 +33,26 @@ from folk melodies and Jazz solos, over harmonies in Beethoven's string
 quartets and 20th century Pop music, to Renaissance candences 
 and metric patterns in Malian drum music (see :numref:`tab:overview`).
 
-.. 10 15 15 60 
+| No. | Date           | Topic |
+|----:|:---------------|:------|
+| 1   | 19. April 2023 |    12 |
+| 2   | 26. April 2023 |   123 |
+| 3   | 3. Mai 2023    |     1 |
+| 4   | 10. Mai 2023   |     1 |
+| 5   | 17. Mai 2023   |     1 |
+| 6   | 24. Mai 2023*  |     1 |
+| 7   | 31. Mai 2023   |     1 |
+| 8   | 7. Juni 2023   |     1 |
+| 9   | 14. Juni 2023  |     1 |
+| 10  | 21. Juni 2023  |     1 |
+| 11  | 28. Juni 2023  |     1 |
+| 12  | 5. Juli 2023   |     1 |
+| 13  | 12. Juli 2023  |     1 |
+| 14  | 19. Juli 2023  |     1 |
+
+: Course overview. Dates marked with * are taught online. {tbl-colwidths="[10,20,70]"}
+
+<!-- .. 10 15 15 60 
 
 .. |br| raw:: html
 
@@ -103,7 +122,7 @@ and metric patterns in Malian drum music (see :numref:`tab:overview`).
    * - 12 
      - 
      - 14:40-16:00 Uhr
-     - Recapitulation and conclusion
+     - Recapitulation and conclusion -->
 
 ## Credits
 
@@ -124,10 +143,10 @@ These deliverables will broaden your knowledge and understanding of current musi
 enhance your organizational and social skills, and help you to develop efficient work-load management strategies.
 Finally, compiling a report will advance your communication and writing abilities.
 
-.. rubric:: Reading
+### Reading
 
 For each session, the relevant literature is cited in the text and provided on 
-`ILIAS <https://www.ilias.uni-koeln.de/ilias/goto_uk_crs_3528627.html>`_. 
+[WueCampus](https://www.example.com). 
 Careful preparation of the reading material is required in order to be able to follow the content of the course.
 Because the course will mainly talk about methods and general points of musical corpus research,
 the content (and musical topic) will mainly be introduced by the literature. 
@@ -136,7 +155,7 @@ I am aware that the reading workload is relatively high since the course will be
 and doesn't spread out over the entire semester. I hope that the fact that the course is finished before the 
 end of the year compensates for this.
 
-.. rubric:: Group work
+### Group work
 
 At the beginning of the course, you will be randomly assigned to a group. 
 Together with your group (which will stay fixed for the entire semester), 
@@ -144,7 +163,7 @@ you will work on a number of exercises during the course, e.g. in Zoom breakout 
 You will collaborate on specific tasks related to the topic at hand, discuss methodological questions, 
 and help each other in the understanding of some of the concepts that are introduced in the course.
 
-.. rubric:: Report
+### Report
 
 After the course has ended, your group will be randomly assigned a course topic (one of the twelve sessions in :numref:`tab:overview`). 
 

@@ -33,11 +33,11 @@ from folk melodies and Jazz solos, over harmonies in Beethoven's string
 quartets and 20th century Pop music, to Renaissance candences 
 and metric patterns in Malian drum music (see :numref:`tab:overview`).
 
-| No. | Date           | Topic |
-|----:|:---------------|:------|
-| 1   | 19. April 2023 |    12 |
-| 2   | 26. April 2023 |   123 |
-| 3   | 3. Mai 2023    |     1 |
+| No. | Date           | Topic                 |
+|----:|:---------------|:----------------------|
+| 1   | 19. April 2023 | Introduction          |
+| 2   | 26. April 2023 | Melody I: Folks songs |
+| 3   | 3. Mai 2023    | Melody II: Jazz solos |
 | 4   | 10. Mai 2023   |     1 |
 | 5   | 17. Mai 2023   |     1 |
 | 6   | 24. Mai 2023*  |     1 |

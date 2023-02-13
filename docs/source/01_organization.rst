@@ -175,5 +175,5 @@ Please also write about the organization of your group, challenges and benefits.
 #. **Author contributions:** describe briefly how each of you specifically contributed to the report.
 
 .. important::
-   Submit your report by **31 January 2021, 23:59h** to `fabian.moss@epfl.ch <mailto:fabian.moss@epfl.ch>`_ 
+   Submit your report by **31 January 2021, 23:59h** to `fabian.moss@uni-wuerzburg.de <mailto:fabian.moss@uni-wuerzburg.de>`_ 
    as a single PDF file per group, named `intro_corpusmus_<group_number>.pdf`, e.g. `intro_corpusmus_1.pdf`. 

@@ -25,7 +25,7 @@ Introduction to Musical Corpus Studies
 These pages present the content of the course
 "Introduction to Musical Corpus Studies",
 taught at the at the `Institute for Music Research`_,
-at `Würzburg University`_ in Fall 2022.
+at `Würzburg University`_ in Spring 2023.
 
 .. _Institute for Music Research: https://www.musikwissenschaft.uni-wuerzburg.de/
 .. _Würzburg University: https://uni-wuerzburg.de/

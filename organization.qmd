@@ -13,7 +13,7 @@ The problems and "toy examples" that are presented to introduce the basic concep
 real-world applications and challenging research problems. 
 
 This course takes an alternative route. 
-It does not start with an introduction to the programming language `Python <http://python.org/>`_
+It does not start with an introduction to the programming language [Python](http://python.org/)
 (which will be used throughout to carry out the computational analyses)
 but rather showcases a number of recent corpus studies that take on musicological research questions. 
 The focus thus lies in understanding how aspects of music can be studied with computational methods 
@@ -27,30 +27,32 @@ learning (or not learning) programming basics.
 
 ## Overview
 
-This year's course takes place on two weekends (13-14 November and 11-12 December 2020), 
-comprising twelve sessions in total. The topics cover a broad range of musicological topics, 
+The course takes place in the summer term of 2023 
+on Wednesdays from 8:00-10:00 PM and 
+comprises 14 sessions in total (see @tbl-overview). 
+The topics cover a broad range of musicological topics, 
 from folk melodies and Jazz solos, over harmonies in Beethoven's string 
 quartets and 20th century Pop music, to Renaissance candences 
-and metric patterns in Malian drum music (see :numref:`tab:overview`).
+and metric patterns in Malian drum music.
 
 | No. | Date           | Topic                 |
 |----:|:---------------|:----------------------|
-| 1   | 19. April 2023 | Introduction          |
-| 2   | 26. April 2023 | Melody I: Folks songs |
-| 3   | 3. Mai 2023    | Melody II: Jazz solos |
-| 4   | 10. Mai 2023   |     1 |
-| 5   | 17. Mai 2023   |     1 |
-| 6   | 24. Mai 2023*  |     1 |
-| 7   | 31. Mai 2023   |     1 |
-| 8   | 7. Juni 2023   |     1 |
-| 9   | 14. Juni 2023  |     1 |
-| 10  | 21. Juni 2023  |     1 |
-| 11  | 28. Juni 2023  |     1 |
-| 12  | 5. Juli 2023   |     1 |
+| 1   | 19. April 2023 | Introduction          | 
+| 2   | 26. April 2023 | Melody I: Folks songs | 
+| 3   | 3. Mai 2023    | Melody II: Jazz solos | 
+| 4   | 10. Mai 2023   |     1 | 
+| 5   | 17. Mai 2023   |     1 | 
+| 6   | 24. Mai 2023*  |     1 | 
+| 7   | 31. Mai 2023   |     1 | 
+| 8   | 7. Juni 2023   |     1 | 
+| 9   | 14. Juni 2023  |     1 | 
+| 10  | 21. Juni 2023  |     1 | 
+| 11  | 28. Juni 2023  |     1 | 
+| 12  | 5. Juli 2023   |     1 | 
 | 13  | 12. Juli 2023  |     1 |
 | 14  | 19. Juli 2023  |     1 |
 
-: Course overview. Dates marked with * are taught online. {tbl-colwidths="[10,20,70]"}
+: Course overview. Dates marked with * are taught online. {#tbl-overview tbl-colwidths="[5,20,30,45]"}
 
 <!-- .. 10 15 15 60 
 

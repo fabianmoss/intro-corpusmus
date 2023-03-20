@@ -10,6 +10,7 @@ book:
     - intro.qmd
     - syllabus.qmd
     - organization.qmd
+    # - meter.qmd
     - summary.qmd
     - references.qmd
 

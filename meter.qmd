@@ -1,0 +1,21 @@
+---
+title: Meter
+---
+
+## Meter vs Rhythm
+
+Introduce basic concepts from @Lerdahl1983_GenerativeTheoryTonal, @London2012_HearingTimePsychological and @Clayton2020_InterpersonalEntrainmentMusic.
+
+## Learning from rhythm histograms
+
+[@Polak2016_BothIsochronousNonisochronous;@London2017_RhythmHistogramsMusical]
+
+## Corpus 
+
+[@Clayton2021_InterpersonalEntrainmentMusic]
+
+## Getting the data
+
+## Understanding the data 
+
+## Reproducing the results

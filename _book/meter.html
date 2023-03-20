@@ -6,10 +6,8 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="author" content="Jane Doe">
-<meta name="dcterms.date" content="2023-02-13">
 
-<title>temp</title>
+<title>temp - 4&nbsp; Meter</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -22,6 +20,25 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1.6em;
   vertical-align: middle;
 }
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}
 </style>
 
 
@@ -32,7 +49,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./intro.html" rel="next">
+<link href="./summary.html" rel="next">
+<link href="./organization.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -71,7 +89,7 @@ ul.task-list li input[type="checkbox"] {
   <header id="quarto-header" class="headroom fixed-top">
   <nav class="quarto-secondary-nav" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
     <div class="container-fluid d-flex justify-content-between">
-      <h1 class="quarto-secondary-nav-title">temp</h1>
+      <h1 class="quarto-secondary-nav-title"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Meter</span></h1>
       <button type="button" class="quarto-btn-toggle btn" aria-label="Show secondary navigation">
         <i class="bi bi-chevron-right"></i>
       </button>
@@ -96,7 +114,7 @@ ul.task-list li input[type="checkbox"] {
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./index.html" class="sidebar-item-text sidebar-link active">Preface</a>
+  <a href="./index.html" class="sidebar-item-text sidebar-link">Preface</a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -116,7 +134,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./meter.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Meter in Malian Jembe music</span></a>
+  <a href="./meter.html" class="sidebar-item-text sidebar-link active"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Meter</span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -138,7 +156,12 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#preface" id="toc-preface" class="nav-link active" data-scroll-target="#preface">Preface</a></li>
+  <li><a href="#meter-vs-rhythm" id="toc-meter-vs-rhythm" class="nav-link active" data-scroll-target="#meter-vs-rhythm"><span class="toc-section-number">4.1</span>  Meter vs Rhythm</a></li>
+  <li><a href="#learning-from-rhythm-histograms" id="toc-learning-from-rhythm-histograms" class="nav-link" data-scroll-target="#learning-from-rhythm-histograms"><span class="toc-section-number">4.2</span>  Learning from rhythm histograms</a></li>
+  <li><a href="#corpus" id="toc-corpus" class="nav-link" data-scroll-target="#corpus"><span class="toc-section-number">4.3</span>  Corpus</a></li>
+  <li><a href="#getting-the-data" id="toc-getting-the-data" class="nav-link" data-scroll-target="#getting-the-data"><span class="toc-section-number">4.4</span>  Getting the data</a></li>
+  <li><a href="#understanding-the-data" id="toc-understanding-the-data" class="nav-link" data-scroll-target="#understanding-the-data"><span class="toc-section-number">4.5</span>  Understanding the data</a></li>
+  <li><a href="#reproducing-the-results" id="toc-reproducing-the-results" class="nav-link" data-scroll-target="#reproducing-the-results"><span class="toc-section-number">4.6</span>  Reproducing the results</a></li>
   </ul>
 </nav>
     </div>
@@ -147,26 +170,14 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title d-none d-lg-block">temp</h1>
+<h1 class="title d-none d-lg-block"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Meter</span></h1>
 </div>
 
 
 
 <div class="quarto-title-meta">
 
-    <div>
-    <div class="quarto-title-meta-heading">Author</div>
-    <div class="quarto-title-meta-contents">
-             <p>Jane Doe </p>
-          </div>
-  </div>
     
-    <div>
-    <div class="quarto-title-meta-heading">Published</div>
-    <div class="quarto-title-meta-contents">
-      <p class="date">February 13, 2023</p>
-    </div>
-  </div>
   
     
   </div>
@@ -174,12 +185,48 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-<section id="preface" class="level1 unnumbered">
-<h1 class="unnumbered">Preface</h1>
-<p>This is a Quarto book.</p>
-<p>To learn more about Quarto books visit <a href="https://quarto.org/docs/books" class="uri">https://quarto.org/docs/books</a>.</p>
+<section id="meter-vs-rhythm" class="level2" data-number="4.1">
+<h2 data-number="4.1" class="anchored" data-anchor-id="meter-vs-rhythm"><span class="header-section-number">4.1</span> Meter vs Rhythm</h2>
+<p>Introduce basic concepts from <span class="citation" data-cites="Lerdahl1983_GenerativeTheoryTonal">Lerdahl and Jackendoff (<a href="references.html#ref-Lerdahl1983_GenerativeTheoryTonal" role="doc-biblioref">1983</a>)</span>, <span class="citation" data-cites="London2012_HearingTimePsychological">London (<a href="references.html#ref-London2012_HearingTimePsychological" role="doc-biblioref">2012</a>)</span> and <span class="citation" data-cites="Clayton2020_InterpersonalEntrainmentMusic">Clayton et al. (<a href="references.html#ref-Clayton2020_InterpersonalEntrainmentMusic" role="doc-biblioref">2020</a>)</span>.</p>
+</section>
+<section id="learning-from-rhythm-histograms" class="level2" data-number="4.2">
+<h2 data-number="4.2" class="anchored" data-anchor-id="learning-from-rhythm-histograms"><span class="header-section-number">4.2</span> Learning from rhythm histograms</h2>
+<p><span class="citation" data-cites="Polak2016_BothIsochronousNonisochronous London2017_RhythmHistogramsMusical">(<a href="references.html#ref-Polak2016_BothIsochronousNonisochronous" role="doc-biblioref">Polak, Jacoby, and London 2016</a>; <a href="references.html#ref-London2017_RhythmHistogramsMusical" role="doc-biblioref">London, Polak, and Jacoby 2017</a>)</span></p>
+</section>
+<section id="corpus" class="level2" data-number="4.3">
+<h2 data-number="4.3" class="anchored" data-anchor-id="corpus"><span class="header-section-number">4.3</span> Corpus</h2>
+<p><span class="citation" data-cites="Clayton2021_InterpersonalEntrainmentMusic">(<a href="references.html#ref-Clayton2021_InterpersonalEntrainmentMusic" role="doc-biblioref">Clayton et al. 2021</a>)</span></p>
+</section>
+<section id="getting-the-data" class="level2" data-number="4.4">
+<h2 data-number="4.4" class="anchored" data-anchor-id="getting-the-data"><span class="header-section-number">4.4</span> Getting the data</h2>
+</section>
+<section id="understanding-the-data" class="level2" data-number="4.5">
+<h2 data-number="4.5" class="anchored" data-anchor-id="understanding-the-data"><span class="header-section-number">4.5</span> Understanding the data</h2>
+</section>
+<section id="reproducing-the-results" class="level2" data-number="4.6">
+<h2 data-number="4.6" class="anchored" data-anchor-id="reproducing-the-results"><span class="header-section-number">4.6</span> Reproducing the results</h2>
 
 
+<div id="refs" class="references csl-bib-body hanging-indent" role="doc-bibliography" style="display: none">
+<div id="ref-Clayton2020_InterpersonalEntrainmentMusic" class="csl-entry" role="doc-biblioentry">
+Clayton, Martin, Kelly Jakubowski, Tuomas Eerola, Peter E. Keller, Antonio Camurri, Gualtiero Volpe, and Paolo Alborno. 2020. <span>“Interpersonal <span>Entrainment</span> in <span>Music Performance</span>: <span>Theory</span>, <span>Method</span>, and <span>Model</span>.”</span> <em>Music Perception</em> 38 (2): 136–94. <a href="https://doi.org/10.1525/mp.2020.38.2.136">https://doi.org/10.1525/mp.2020.38.2.136</a>.
+</div>
+<div id="ref-Clayton2021_InterpersonalEntrainmentMusic" class="csl-entry" role="doc-biblioentry">
+Clayton, Martin, Simone Tarsitani, Richard Jankowsky, Luis Jure, Laura Leante, Rainer Polak, Adrian Poole, et al. 2021. <span>“The <span>Interpersonal Entrainment</span> in <span>Music Performance Data Collection</span>.”</span> <em>Empirical Musicology Review</em> 16 (1): 65–84. <a href="https://doi.org/10.18061/emr.v16i1.7555">https://doi.org/10.18061/emr.v16i1.7555</a>.
+</div>
+<div id="ref-Lerdahl1983_GenerativeTheoryTonal" class="csl-entry" role="doc-biblioentry">
+Lerdahl, Fred, and Ray S. Jackendoff. 1983. <em>A <span>Generative Theory</span> of <span>Tonal Music</span></em>. <span>Cambridge, MA</span>: <span>MIT Press</span>.
+</div>
+<div id="ref-London2012_HearingTimePsychological" class="csl-entry" role="doc-biblioentry">
+London, Justin. 2012. <em>Hearing in Time: <span>Psychological Aspects</span> of <span>Musical Meter</span></em>. Second. <span>Oxford</span>: <span>Oxford University Press</span>.
+</div>
+<div id="ref-London2017_RhythmHistogramsMusical" class="csl-entry" role="doc-biblioentry">
+London, Justin, Rainer Polak, and Nori Jacoby. 2017. <span>“Rhythm Histograms and Musical Meter: <span>A</span> Corpus Study of <span>Malian</span> Percussion Music.”</span> <em>Psychonomic Bulletin &amp; Review</em> 24: 474–80. <a href="https://doi.org/10.3758/s13423-016-1093-7">https://doi.org/10.3758/s13423-016-1093-7</a>.
+</div>
+<div id="ref-Polak2016_BothIsochronousNonisochronous" class="csl-entry" role="doc-biblioentry">
+Polak, Rainer, Nori Jacoby, and Justin London. 2016. <span>“Both Isochronous and Non-Isochronous Metrical Subdivision Afford Precise and Stable Ensemble Entrainment: <span>A</span> Corpus Study of <span>Malian</span> Jembe Drumming.”</span> <em>Frontiers in Neuroscience</em>. <a href="https://doi.org/10.3389/fnins.2016.00285">https://doi.org/10.3389/fnins.2016.00285</a>.
+</div>
+</div>
 </section>
 
 </main> <!-- /main -->
@@ -318,10 +365,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
+      <a href="./organization.html" class="pagination-link">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Organization</span></span>
+      </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./intro.html" class="pagination-link">
-        <span class="nav-page-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Introduction</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./summary.html" class="pagination-link">
+        <span class="nav-page-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Summary</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

@@ -11,7 +11,7 @@
     "href": "intro.html",
     "title": "1  Introduction",
     "section": "",
-    "text": "This is a book created from markdown and executable code.\nSee Knuth (1984) for additional discussion of literate programming.\n\n\n\n\nKnuth, Donald E. 1984. “Literate Programming.” Comput. J. 27 (2): 97–111. https://doi.org/10.1093/comjnl/27.2.97."
+    "text": "This is a book created from markdown and executable code."
   },
   {
     "objectID": "organization.html#about-this-course",
@@ -53,7 +53,7 @@
     "href": "references.html",
     "title": "References",
     "section": "",
-    "text": "Knuth, Donald E. 1984. “Literate Programming.” Comput.\nJ. 27 (2): 97–111. https://doi.org/10.1093/comjnl/27.2.97."
+    "text": "Clayton, Martin, Kelly Jakubowski, Tuomas Eerola, Peter E. Keller,\nAntonio Camurri, Gualtiero Volpe, and Paolo Alborno. 2020.\n“Interpersonal Entrainment in Music\nPerformance: Theory, Method, and\nModel.” Music Perception 38 (2): 136–94. https://doi.org/10.1525/mp.2020.38.2.136.\n\n\nClayton, Martin, Simone Tarsitani, Richard Jankowsky, Luis Jure, Laura\nLeante, Rainer Polak, Adrian Poole, et al. 2021. “The\nInterpersonal Entrainment in Music Performance Data\nCollection.” Empirical Musicology Review 16 (1):\n65–84. https://doi.org/10.18061/emr.v16i1.7555.\n\n\nKnuth, Donald E. 1984. “Literate Programming.” Comput.\nJ. 27 (2): 97–111. https://doi.org/10.1093/comjnl/27.2.97.\n\n\nLerdahl, Fred, and Ray S. Jackendoff. 1983. A Generative\nTheory of Tonal Music. Cambridge,\nMA: MIT Press.\n\n\nLondon, Justin. 2012. Hearing in Time: Psychological\nAspects of Musical Meter. Second.\nOxford: Oxford University Press.\n\n\nLondon, Justin, Rainer Polak, and Nori Jacoby. 2017. “Rhythm\nHistograms and Musical Meter: A Corpus Study of\nMalian Percussion Music.” Psychonomic Bulletin\n& Review 24: 474–80. https://doi.org/10.3758/s13423-016-1093-7.\n\n\nPolak, Rainer, Nori Jacoby, and Justin London. 2016. “Both\nIsochronous and Non-Isochronous Metrical Subdivision Afford Precise and\nStable Ensemble Entrainment: A Corpus Study of\nMalian Jembe Drumming.” Frontiers in\nNeuroscience. https://doi.org/10.3389/fnins.2016.00285."
   },
   {
     "objectID": "syllabus.html",
@@ -75,5 +75,54 @@
     "title": "2  Syllabus",
     "section": "2.2 Week 2-4: Data Collection and Processing",
     "text": "2.2 Week 2-4: Data Collection and Processing\nOverview of audio feature extraction and transcription techniques Overview of musical annotation and data labeling Hands-on exercises to practice data collection and processing (45 min) Group project work (45 min) Week 5-7: Musical Analysis Techniques\nOverview of machine learning techniques for musical analysis Overview of statistical modeling and network analysis Hands-on exercises to practice different analysis techniques (45 min) Group project work (45 min) Week 8-11: Applications of Musical Corpus Studies\nOverview of the study of musical genre and style Overview of the use of musical corpora in musicology, music education, and music technology Guest lecture by a researcher in the field (45 min) Group project work (45 min) Week 12-14: Final Project Presentations\nStudent presentations of their course project (45 min) Feedback and Q&A (45 min)"
+  },
+  {
+    "objectID": "meter.html#meter-vs-rhythm",
+    "href": "meter.html#meter-vs-rhythm",
+    "title": "4  Meter",
+    "section": "4.1 Meter vs Rhythm",
+    "text": "4.1 Meter vs Rhythm\nIntroduce basic concepts from Lerdahl and Jackendoff (1983), London (2012) and Clayton et al. (2020)."
+  },
+  {
+    "objectID": "meter.html#corpus",
+    "href": "meter.html#corpus",
+    "title": "4  Meter",
+    "section": "4.3 Corpus",
+    "text": "4.3 Corpus\n(Clayton et al. 2021)"
+  },
+  {
+    "objectID": "meter.html#results",
+    "href": "meter.html#results",
+    "title": "4  Meter in Malian Jembe music",
+    "section": "4.3 Results",
+    "text": "4.3 Results\n(Polak, Jacoby, and London 2016; London, Polak, and Jacoby 2017)\n\n\n\n\nClayton, Martin, Kelly Jakubowski, Tuomas Eerola, Peter E. Keller, Antonio Camurri, Gualtiero Volpe, and Paolo Alborno. 2020. “Interpersonal Entrainment in Music Performance: Theory, Method, and Model.” Music Perception 38 (2): 136–94. https://doi.org/10.1525/mp.2020.38.2.136.\n\n\nClayton, Martin, Simone Tarsitani, Richard Jankowsky, Luis Jure, Laura Leante, Rainer Polak, Adrian Poole, et al. 2021. “The Interpersonal Entrainment in Music Performance Data Collection.” Empirical Musicology Review 16 (1): 65–84. https://doi.org/10.18061/emr.v16i1.7555.\n\n\nLondon, Justin. 2012. Hearing in Time: Psychological Aspects of Musical Meter. Second. Oxford: Oxford University Press.\n\n\nLondon, Justin, Rainer Polak, and Nori Jacoby. 2017. “Rhythm Histograms and Musical Meter: A Corpus Study of Malian Percussion Music.” Psychonomic Bulletin & Review 24: 474–80. https://doi.org/10.3758/s13423-016-1093-7.\n\n\nPolak, Rainer, Nori Jacoby, and Justin London. 2016. “Both Isochronous and Non-Isochronous Metrical Subdivision Afford Precise and Stable Ensemble Entrainment: A Corpus Study of Malian Jembe Drumming.” Frontiers in Neuroscience. https://doi.org/10.3389/fnins.2016.00285."
+  },
+  {
+    "objectID": "meter.html#learning-from-rhythm-histograms",
+    "href": "meter.html#learning-from-rhythm-histograms",
+    "title": "4  Meter",
+    "section": "4.2 Learning from rhythm histograms",
+    "text": "4.2 Learning from rhythm histograms\n(Polak, Jacoby, and London 2016; London, Polak, and Jacoby 2017)"
+  },
+  {
+    "objectID": "meter.html#getting-the-data",
+    "href": "meter.html#getting-the-data",
+    "title": "4  Meter",
+    "section": "4.4 Getting the data",
+    "text": "4.4 Getting the data"
+  },
+  {
+    "objectID": "meter.html#understanding-the-data",
+    "href": "meter.html#understanding-the-data",
+    "title": "4  Meter",
+    "section": "4.5 Understanding the data",
+    "text": "4.5 Understanding the data"
+  },
+  {
+    "objectID": "meter.html#reproducing-the-results",
+    "href": "meter.html#reproducing-the-results",
+    "title": "4  Meter",
+    "section": "4.6 Reproducing the results",
+    "text": "4.6 Reproducing the results\n\n\n\n\nClayton, Martin, Kelly Jakubowski, Tuomas Eerola, Peter E. Keller, Antonio Camurri, Gualtiero Volpe, and Paolo Alborno. 2020. “Interpersonal Entrainment in Music Performance: Theory, Method, and Model.” Music Perception 38 (2): 136–94. https://doi.org/10.1525/mp.2020.38.2.136.\n\n\nClayton, Martin, Simone Tarsitani, Richard Jankowsky, Luis Jure, Laura Leante, Rainer Polak, Adrian Poole, et al. 2021. “The Interpersonal Entrainment in Music Performance Data Collection.” Empirical Musicology Review 16 (1): 65–84. https://doi.org/10.18061/emr.v16i1.7555.\n\n\nLerdahl, Fred, and Ray S. Jackendoff. 1983. A Generative Theory of Tonal Music. Cambridge, MA: MIT Press.\n\n\nLondon, Justin. 2012. Hearing in Time: Psychological Aspects of Musical Meter. Second. Oxford: Oxford University Press.\n\n\nLondon, Justin, Rainer Polak, and Nori Jacoby. 2017. “Rhythm Histograms and Musical Meter: A Corpus Study of Malian Percussion Music.” Psychonomic Bulletin & Review 24: 474–80. https://doi.org/10.3758/s13423-016-1093-7.\n\n\nPolak, Rainer, Nori Jacoby, and Justin London. 2016. “Both Isochronous and Non-Isochronous Metrical Subdivision Afford Precise and Stable Ensemble Entrainment: A Corpus Study of Malian Jembe Drumming.” Frontiers in Neuroscience. https://doi.org/10.3389/fnins.2016.00285."
   }
 ]

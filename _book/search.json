@@ -2,9 +2,9 @@
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "temp",
+    "title": "Introduction to musical corpus studies",
     "section": "",
-    "text": "Preface\nThis is a Quarto book.\nTo learn more about Quarto books visit https://quarto.org/docs/books."
+    "text": "Welcome\nThese pages collect the materials for the course Musikalische Korpusforschung, taught in the spring term of 2023 at the Institut für Musikforschung at Julius-Maximilians-Universität Würzburg.\nThe course takes place on Wednesdays from 8 to 10 a.m. in room 107 (CIP Pool, Domerschulstr. 13). The materials will be updated weekly after the course."
   },
   {
     "objectID": "intro.html",
@@ -12,6 +12,13 @@
     "title": "1  Introduction",
     "section": "",
     "text": "This is a book created from markdown and executable code."
+  },
+  {
+    "objectID": "syllabus.html",
+    "href": "syllabus.html",
+    "title": "2  Syllabus",
+    "section": "",
+    "text": "This course will introduce students to the field of musical corpus studies, which involves the analysis of large collections of musical data to gain new insights into the structure and style of music. Over the course of 14 weeks, students will learn about various techniques for collecting and processing musical data, including audio feature extraction, transcription, and musical annotation. They will also learn about different approaches to analyzing musical data, including machine learning, statistical modeling, and network analysis. The course will cover practical applications of these techniques, including the study of musical genre, style, and expression, as well as the use of musical corpora in musicology, music education, and music technology. Throughout the course, students will work on hands-on projects to apply what they have learned and to gain a deeper understanding of the field. This course is designed for students with a background in music, computer science, or related fields, who are interested in exploring the exciting and rapidly-growing field of musical corpus studies.\nWeek 1: Introduction to Musical Corpus Studies\n\nOverview of the course and its objectives\nOverview of the field of musical corpus studies and its history\nOverview of the various types of musical corpora and their applications\nLecture (30 min)\nDiscussion and Q&A (30 min)\nIntroduction to the course project (30 min)\n\nWeek 2-4: Data Collection and Processing\n\nOverview of audio feature extraction and transcription techniques\nOverview of musical annotation and data labeling\nHands-on exercises to practice data collection and processing (45 min)\nGroup project work (45 min)\n\nWeek 5-7: Musical Analysis Techniques\n\nOverview of machine learning techniques for musical analysis\nOverview of statistical modeling and network analysis Hands-on exercises to practice different analysis techniques (45 min)\nGroup project work (45 min)\n\nWeek 8-10: Applications of Musical Corpus Studies\n\nOverview of the study of musical genre and style\nOverview of the use of musical corpora in musicology, music education, and music technology\nGuest lecture by a researcher in the field (45 min)\nGroup project work (45 min)\n\nWeek 11-13: Visualization and Sonification of Musical Data\n\nOverview of techniques for visualizing and sonifying musical data\nHands-on exercises to practice different visualization and sonification techniques (45 min)\nIndividual project work and consultations (45 min)\n\nWeek 14: Final Project Presentation\n\nStudent presentations of their course project (45 min)\nFeedback and Q&A (45 min)"
   },
   {
     "objectID": "organization.html#about-this-course",
@@ -32,49 +39,21 @@
     "href": "organization.html#credits",
     "title": "3  Organization",
     "section": "3.3 Credits",
-    "text": "3.3 Credits\nActive participation in this course is compensated with 3 credit points (CPs), equivalent to a work load of 90 hours <https://verwaltung.uni-koeln.de/abteilung21/content/studienangebot/studiengaenge_u__abschluesse/bachelor__und_masterstudiengaenge/index_ger.html>_. These are distributed as follows: 24 SWS (à 45 minutes) are allocated to presence in the block seminar. Additionally, 24 SWS are dedicated to the preparation and follow-up of the material. The remainder of 42 SWS goes to the reading of the relevant literature."
+    "text": "3.3 Credits\nActive participation in this course is compensated with 3 credit points (CPs), equivalent to a work load of 90 hours &lt;https://verwaltung.uni-koeln.de/abteilung21/content/studienangebot/studiengaenge_u__abschluesse/bachelor__und_masterstudiengaenge/index_ger.html&gt;_. These are distributed as follows: 24 SWS (à 45 minutes) are allocated to presence in the block seminar. Additionally, 24 SWS are dedicated to the preparation and follow-up of the material. The remainder of 42 SWS goes to the reading of the relevant literature."
   },
   {
     "objectID": "organization.html#deliverables-and-learning-objectives",
     "href": "organization.html#deliverables-and-learning-objectives",
     "title": "3  Organization",
     "section": "3.4 Deliverables and learning objectives",
-    "text": "3.4 Deliverables and learning objectives\nApart from attending and following the presentations by the lecturer, course work consists of three main parts: preparing the relevant literature (reading), completing the assigned exercises (group work), and critically engaging with the course materials in the form of a report written together with your group (report).\nThese deliverables will broaden your knowledge and understanding of current musicological research, enhance your organizational and social skills, and help you to develop efficient work-load management strategies. Finally, compiling a report will advance your communication and writing abilities.\n\n3.4.1 Reading\nFor each session, the relevant literature is cited in the text and provided on WueCampus. Careful preparation of the reading material is required in order to be able to follow the content of the course. Because the course will mainly talk about methods and general points of musical corpus research, the content (and musical topic) will mainly be introduced by the literature.\nI am aware that the reading workload is relatively high since the course will be taught as a block seminar and doesn’t spread out over the entire semester. I hope that the fact that the course is finished before the end of the year compensates for this.\n\n\n3.4.2 Group work\nAt the beginning of the course, you will be randomly assigned to a group. Together with your group (which will stay fixed for the entire semester), you will work on a number of exercises during the course, e.g. in Zoom breakout rooms. You will collaborate on specific tasks related to the topic at hand, discuss methodological questions, and help each other in the understanding of some of the concepts that are introduced in the course.\n\n\n3.4.3 Report\nAfter the course has ended, your group will be randomly assigned a course topic (one of the twelve sessions in :numref:tab:overview).\nIt is your task to write a report on this theme. The should be 6–8 pages long.\nQuestions that you could address are: What did you learn? Which concepts are not clear? Which methods did you (not) understand? What is missing? How can the textual descriptions be improved? Who in your group did what? Was the presentation of the material adequate? If not, what was missing? Please also write about the organization of your group, challenges and benefits.\n.. - create issues on GitHub .. - writing academic reviews\nRecommended structure for the report\n\nIntroduction: general description and summary of the course and your assigned session in particular.\nDiscussion: summarize the main discussion, open questions, and how you would continue this line or research.\nIssues: describe in detail what was crucial for your understanding of the topic, what was missing, etc.\nVarious: anything that you would like to write in the report\nAuthor contributions: describe briefly how each of you specifically contributed to the report.\n\n.. important:: Submit your report by 31 January 2021, 23:59h to fabian.moss@uni-wuerzburg.de <mailto:fabian.moss@uni-wuerzburg.de>_ as a single PDF file per group, named intro_corpusmus_<group_number>.pdf, e.g. intro_corpusmus_1.pdf."
+    "text": "3.4 Deliverables and learning objectives\nApart from attending and following the presentations by the lecturer, course work consists of three main parts: preparing the relevant literature (reading), completing the assigned exercises (group work), and critically engaging with the course materials in the form of a report written together with your group (report).\nThese deliverables will broaden your knowledge and understanding of current musicological research, enhance your organizational and social skills, and help you to develop efficient work-load management strategies. Finally, compiling a report will advance your communication and writing abilities.\n\n3.4.1 Reading\nFor each session, the relevant literature is cited in the text and provided on WueCampus. Careful preparation of the reading material is required in order to be able to follow the content of the course. Because the course will mainly talk about methods and general points of musical corpus research, the content (and musical topic) will mainly be introduced by the literature.\nI am aware that the reading workload is relatively high since the course will be taught as a block seminar and doesn’t spread out over the entire semester. I hope that the fact that the course is finished before the end of the year compensates for this.\n\n\n3.4.2 Group work\nAt the beginning of the course, you will be randomly assigned to a group. Together with your group (which will stay fixed for the entire semester), you will work on a number of exercises during the course, e.g. in Zoom breakout rooms. You will collaborate on specific tasks related to the topic at hand, discuss methodological questions, and help each other in the understanding of some of the concepts that are introduced in the course.\n\n\n3.4.3 Report\nAfter the course has ended, your group will be randomly assigned a course topic (one of the twelve sessions in :numref:tab:overview).\nIt is your task to write a report on this theme. The should be 6–8 pages long.\nQuestions that you could address are: What did you learn? Which concepts are not clear? Which methods did you (not) understand? What is missing? How can the textual descriptions be improved? Who in your group did what? Was the presentation of the material adequate? If not, what was missing? Please also write about the organization of your group, challenges and benefits.\n.. - create issues on GitHub .. - writing academic reviews\nRecommended structure for the report\n\nIntroduction: general description and summary of the course and your assigned session in particular.\nDiscussion: summarize the main discussion, open questions, and how you would continue this line or research.\nIssues: describe in detail what was crucial for your understanding of the topic, what was missing, etc.\nVarious: anything that you would like to write in the report\nAuthor contributions: describe briefly how each of you specifically contributed to the report.\n\n.. important:: Submit your report by 31 January 2021, 23:59h to fabian.moss@uni-wuerzburg.de &lt;mailto:fabian.moss@uni-wuerzburg.de&gt;_ as a single PDF file per group, named intro_corpusmus_&lt;group_number&gt;.pdf, e.g. intro_corpusmus_1.pdf."
   },
   {
     "objectID": "summary.html",
     "href": "summary.html",
-    "title": "3  Summary",
+    "title": "4  Summary",
     "section": "",
     "text": "In summary, this book has no content whatsoever."
-  },
-  {
-    "objectID": "references.html",
-    "href": "references.html",
-    "title": "References",
-    "section": "",
-    "text": "Clayton, Martin, Kelly Jakubowski, Tuomas Eerola, Peter E. Keller,\nAntonio Camurri, Gualtiero Volpe, and Paolo Alborno. 2020.\n“Interpersonal Entrainment in Music\nPerformance: Theory, Method, and\nModel.” Music Perception 38 (2): 136–94. https://doi.org/10.1525/mp.2020.38.2.136.\n\n\nClayton, Martin, Simone Tarsitani, Richard Jankowsky, Luis Jure, Laura\nLeante, Rainer Polak, Adrian Poole, et al. 2021. “The\nInterpersonal Entrainment in Music Performance Data\nCollection.” Empirical Musicology Review 16 (1):\n65–84. https://doi.org/10.18061/emr.v16i1.7555.\n\n\nKnuth, Donald E. 1984. “Literate Programming.” Comput.\nJ. 27 (2): 97–111. https://doi.org/10.1093/comjnl/27.2.97.\n\n\nLerdahl, Fred, and Ray S. Jackendoff. 1983. A Generative\nTheory of Tonal Music. Cambridge,\nMA: MIT Press.\n\n\nLondon, Justin. 2012. Hearing in Time: Psychological\nAspects of Musical Meter. Second.\nOxford: Oxford University Press.\n\n\nLondon, Justin, Rainer Polak, and Nori Jacoby. 2017. “Rhythm\nHistograms and Musical Meter: A Corpus Study of\nMalian Percussion Music.” Psychonomic Bulletin\n& Review 24: 474–80. https://doi.org/10.3758/s13423-016-1093-7.\n\n\nPolak, Rainer, Nori Jacoby, and Justin London. 2016. “Both\nIsochronous and Non-Isochronous Metrical Subdivision Afford Precise and\nStable Ensemble Entrainment: A Corpus Study of\nMalian Jembe Drumming.” Frontiers in\nNeuroscience. https://doi.org/10.3389/fnins.2016.00285."
-  },
-  {
-    "objectID": "syllabus.html",
-    "href": "syllabus.html",
-    "title": "2  Syllabus",
-    "section": "",
-    "text": "This course will introduce students to the field of musical corpus studies, which involves the analysis of large collections of musical data to gain new insights into the structure and style of music. Over the course of 14 weeks, students will learn about various techniques for collecting and processing musical data, including audio feature extraction, transcription, and musical annotation. They will also learn about different approaches to analyzing musical data, including machine learning, statistical modeling, and network analysis. The course will cover practical applications of these techniques, including the study of musical genre, style, and expression, as well as the use of musical corpora in musicology, music education, and music technology. Throughout the course, students will work on hands-on projects to apply what they have learned and to gain a deeper understanding of the field. This course is designed for students with a background in music, computer science, or related fields, who are interested in exploring the exciting and rapidly-growing field of musical corpus studies.\nWeek 1: Introduction to Musical Corpus Studies\n\nOverview of the course and its objectives\nOverview of the field of musical corpus studies and its history\nOverview of the various types of musical corpora and their applications\nLecture (30 min)\nDiscussion and Q&A (30 min)\nIntroduction to the course project (30 min)\n\nWeek 2-4: Data Collection and Processing\n\nOverview of audio feature extraction and transcription techniques\nOverview of musical annotation and data labeling\nHands-on exercises to practice data collection and processing (45 min)\nGroup project work (45 min)\n\nWeek 5-7: Musical Analysis Techniques\n\nOverview of machine learning techniques for musical analysis\nOverview of statistical modeling and network analysis Hands-on exercises to practice different analysis techniques (45 min)\nGroup project work (45 min)\n\nWeek 8-10: Applications of Musical Corpus Studies\n\nOverview of the study of musical genre and style\nOverview of the use of musical corpora in musicology, music education, and music technology\nGuest lecture by a researcher in the field (45 min)\nGroup project work (45 min)\n\nWeek 11-13: Visualization and Sonification of Musical Data\n\nOverview of techniques for visualizing and sonifying musical data\nHands-on exercises to practice different visualization and sonification techniques (45 min)\nIndividual project work and consultations (45 min)\n\nWeek 14: Final Project Presentation\n\nStudent presentations of their course project (45 min)\nFeedback and Q&A (45 min)"
-  },
-  {
-    "objectID": "syllabus.html#week-1-introduction-to-musical-corpus-studies",
-    "href": "syllabus.html#week-1-introduction-to-musical-corpus-studies",
-    "title": "2  Syllabus",
-    "section": "2.1 Week 1: Introduction to Musical Corpus Studies",
-    "text": "2.1 Week 1: Introduction to Musical Corpus Studies\nOverview of the course and its objectives Overview of the field of musical corpus studies and its history Overview of the various types of musical corpora and their applications Lecture (30 min) Discussion and Q&A (30 min) Introduction to the course project (30 min)\n\nWeek 2-4: Data Collection and Processing\n\nOverview of audio feature extraction and transcription techniques Overview of musical annotation and data labeling Hands-on exercises to practice data collection and processing (45 min) Group project work (45 min) Week 5-7: Musical Analysis Techniques\nOverview of machine learning techniques for musical analysis Overview of statistical modeling and network analysis Hands-on exercises to practice different analysis techniques (45 min) Group project work (45 min) Week 8-11: Applications of Musical Corpus Studies\nOverview of the study of musical genre and style Overview of the use of musical corpora in musicology, music education, and music technology Guest lecture by a researcher in the field (45 min) Group project work (45 min) Week 12-14: Final Project Presentations\nStudent presentations of their course project (45 min) Feedback and Q&A (45 min)"
-  },
-  {
-    "objectID": "syllabus.html#week-2-4-data-collection-and-processing",
-    "href": "syllabus.html#week-2-4-data-collection-and-processing",
-    "title": "2  Syllabus",
-    "section": "2.2 Week 2-4: Data Collection and Processing",
-    "text": "2.2 Week 2-4: Data Collection and Processing\nOverview of audio feature extraction and transcription techniques Overview of musical annotation and data labeling Hands-on exercises to practice data collection and processing (45 min) Group project work (45 min) Week 5-7: Musical Analysis Techniques\nOverview of machine learning techniques for musical analysis Overview of statistical modeling and network analysis Hands-on exercises to practice different analysis techniques (45 min) Group project work (45 min) Week 8-11: Applications of Musical Corpus Studies\nOverview of the study of musical genre and style Overview of the use of musical corpora in musicology, music education, and music technology Guest lecture by a researcher in the field (45 min) Group project work (45 min) Week 12-14: Final Project Presentations\nStudent presentations of their course project (45 min) Feedback and Q&A (45 min)"
   },
   {
     "objectID": "meter.html#meter-vs-rhythm",
@@ -84,25 +63,18 @@
     "text": "4.1 Meter vs Rhythm\nIntroduce basic concepts from Lerdahl and Jackendoff (1983), London (2012) and Clayton et al. (2020)."
   },
   {
-    "objectID": "meter.html#corpus",
-    "href": "meter.html#corpus",
-    "title": "4  Meter",
-    "section": "4.3 Corpus",
-    "text": "4.3 Corpus\n(Clayton et al. 2021)"
-  },
-  {
-    "objectID": "meter.html#results",
-    "href": "meter.html#results",
-    "title": "4  Meter in Malian Jembe music",
-    "section": "4.3 Results",
-    "text": "4.3 Results\n(Polak, Jacoby, and London 2016; London, Polak, and Jacoby 2017)\n\n\n\n\nClayton, Martin, Kelly Jakubowski, Tuomas Eerola, Peter E. Keller, Antonio Camurri, Gualtiero Volpe, and Paolo Alborno. 2020. “Interpersonal Entrainment in Music Performance: Theory, Method, and Model.” Music Perception 38 (2): 136–94. https://doi.org/10.1525/mp.2020.38.2.136.\n\n\nClayton, Martin, Simone Tarsitani, Richard Jankowsky, Luis Jure, Laura Leante, Rainer Polak, Adrian Poole, et al. 2021. “The Interpersonal Entrainment in Music Performance Data Collection.” Empirical Musicology Review 16 (1): 65–84. https://doi.org/10.18061/emr.v16i1.7555.\n\n\nLondon, Justin. 2012. Hearing in Time: Psychological Aspects of Musical Meter. Second. Oxford: Oxford University Press.\n\n\nLondon, Justin, Rainer Polak, and Nori Jacoby. 2017. “Rhythm Histograms and Musical Meter: A Corpus Study of Malian Percussion Music.” Psychonomic Bulletin & Review 24: 474–80. https://doi.org/10.3758/s13423-016-1093-7.\n\n\nPolak, Rainer, Nori Jacoby, and Justin London. 2016. “Both Isochronous and Non-Isochronous Metrical Subdivision Afford Precise and Stable Ensemble Entrainment: A Corpus Study of Malian Jembe Drumming.” Frontiers in Neuroscience. https://doi.org/10.3389/fnins.2016.00285."
-  },
-  {
     "objectID": "meter.html#learning-from-rhythm-histograms",
     "href": "meter.html#learning-from-rhythm-histograms",
     "title": "4  Meter",
     "section": "4.2 Learning from rhythm histograms",
     "text": "4.2 Learning from rhythm histograms\n(Polak, Jacoby, and London 2016; London, Polak, and Jacoby 2017)"
+  },
+  {
+    "objectID": "meter.html#corpus",
+    "href": "meter.html#corpus",
+    "title": "4  Meter",
+    "section": "4.3 Corpus",
+    "text": "4.3 Corpus\n(Clayton et al. 2021)"
   },
   {
     "objectID": "meter.html#getting-the-data",
@@ -124,5 +96,19 @@
     "title": "4  Meter",
     "section": "4.6 Reproducing the results",
     "text": "4.6 Reproducing the results\n\n\n\n\nClayton, Martin, Kelly Jakubowski, Tuomas Eerola, Peter E. Keller, Antonio Camurri, Gualtiero Volpe, and Paolo Alborno. 2020. “Interpersonal Entrainment in Music Performance: Theory, Method, and Model.” Music Perception 38 (2): 136–94. https://doi.org/10.1525/mp.2020.38.2.136.\n\n\nClayton, Martin, Simone Tarsitani, Richard Jankowsky, Luis Jure, Laura Leante, Rainer Polak, Adrian Poole, et al. 2021. “The Interpersonal Entrainment in Music Performance Data Collection.” Empirical Musicology Review 16 (1): 65–84. https://doi.org/10.18061/emr.v16i1.7555.\n\n\nLerdahl, Fred, and Ray S. Jackendoff. 1983. A Generative Theory of Tonal Music. Cambridge, MA: MIT Press.\n\n\nLondon, Justin. 2012. Hearing in Time: Psychological Aspects of Musical Meter. Second. Oxford: Oxford University Press.\n\n\nLondon, Justin, Rainer Polak, and Nori Jacoby. 2017. “Rhythm Histograms and Musical Meter: A Corpus Study of Malian Percussion Music.” Psychonomic Bulletin & Review 24: 474–80. https://doi.org/10.3758/s13423-016-1093-7.\n\n\nPolak, Rainer, Nori Jacoby, and Justin London. 2016. “Both Isochronous and Non-Isochronous Metrical Subdivision Afford Precise and Stable Ensemble Entrainment: A Corpus Study of Malian Jembe Drumming.” Frontiers in Neuroscience. https://doi.org/10.3389/fnins.2016.00285."
+  },
+  {
+    "objectID": "index.html#syllabus",
+    "href": "index.html#syllabus",
+    "title": "Introduction to musical corpus studies",
+    "section": "Syllabus",
+    "text": "Syllabus\nThis course introduces students to the research area of musical corpus studies, which involves the analysis of large collections of musical data to gain new insights into the structure and style of music. Over the course of 14 weeks, students will learn about various techniques for collecting and processing musical data, including audio feature extraction, transcription, and musical annotation. They will also learn about different approaches to analyzing musical data, including machine learning, statistical modeling, and network analysis. The course will cover practical applications of these techniques, including the study of musical genre, style, and expression, as well as the use of musical corpora in musicology, music education, and music technology. Throughout the course, students will work on hands-on projects to apply what they have learned and to gain a deeper understanding of the field. This course is designed for students with a background in music, computer science, or related fields, who are interested in exploring the exciting and rapidly-growing field of musical corpus studies.\nClasses will generally be structured as follows:\n\nLecture (~30 min.)\nQ&A and discussion of reading material (~30 min.)\nGroup work (~30 min.)\n\nWeek 1: Introduction to Musical Corpus Studies\n\nOverview of the course and its objectives\nOverview of the field of musical corpus studies and its history\nOverview of the various types of musical corpora and their applications \n\nWeek 2-4: Data Collection and Processing\n\nOverview of audio feature extraction and transcription techniques\nOverview of musical annotation and data labeling \n\nWeek 5-7: Musical Analysis Techniques\n\nOverview of machine learning techniques for musical analysis\nOverview of statistical modeling and network analysis \n\nWeek 8-10: Applications of Musical Corpus Studies\n\nOverview of the study of musical genre and style\nOverview of the use of musical corpora in musicology, music education, and music technology \n\nWeek 11-13: Visualization and Sonification of Musical Data\n\nOverview of techniques for visualizing and sonifying musical data \n\nWeek 14: Final Project Presentation\n\nStudent presentations of their course project (45 min)\nFeedback and Q&A (45 min)"
+  },
+  {
+    "objectID": "index.html#credit",
+    "href": "index.html#credit",
+    "title": "Introduction to musical corpus studies",
+    "section": "Credit",
+    "text": "Credit\nFor ungraded credit, active participation in the class discussions and group work are sufficient. For a graded credit, an additional essay commenting on a particular corpus study on the background of the course contents (about 8-10 pages) is required."
   }
 ]

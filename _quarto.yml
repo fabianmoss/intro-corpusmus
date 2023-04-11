@@ -2,8 +2,8 @@ project:
   type: book
 
 book:
-  title: "temp"
-  author: "Jane Doe"
+  title: "Introduction to musical corpus studies"
+  author: "Fabian C. Moss"
   date: "2/13/2023"
   chapters:
     - index.qmd

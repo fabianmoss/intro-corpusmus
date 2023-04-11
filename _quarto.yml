@@ -13,7 +13,7 @@ book:
       city: Würzburg, Germany
       postal-code: 97070
   
-  date: "2/13/2023"
+  date: "4/11/2023"
   chapters:
     - index.qmd
     # - 01_intro.qmd

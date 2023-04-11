@@ -7,11 +7,9 @@ book:
   date: "2/13/2023"
   chapters:
     - index.qmd
-    - intro.qmd
     - syllabus.qmd
-    - organization.qmd
+    - intro.qmd
     # - meter.qmd
-    - summary.qmd
     - references.qmd
 
 bibliography: references.bib

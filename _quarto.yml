@@ -3,13 +3,39 @@ project:
 
 book:
   title: "Introduction to musical corpus studies"
-  author: "Fabian C. Moss"
+  author:
+  - name:  "Fabian C. Moss"
+    orcid: 0000-0001-9377-2066
+    email: fabian.moss@uni-wuerzburg.de
+    affiliations: 
+    - name: Julius-Maximilians-Universität Würzburg
+      address: Domerschulstr. 13
+      city: Würzburg, Germany
+      postal-code: 97070
+  
   date: "2/13/2023"
   chapters:
     - index.qmd
-    - syllabus.qmd
-    - intro.qmd
-    # - meter.qmd
+    # - 01_intro.qmd
+    # - part: "Music as data"
+    #   chapters:
+    #     - 02_metadata.qmd
+    #     - 03_encoding_formats.qmd
+    #     - 04_corpus_building.qmd
+    # - part: "Methods and techniques"
+    #   chapters:
+    #     - 05_vector_space_model.qmd
+    #     - 06_statistical_methods.qmd
+    #     - 07_machine_learning.qmd
+    #     - 08_visualization.qmd
+    # - part: "Analyses"
+    #   chapters:
+    #     - 09_melody.qmd
+    #     - 10_harmony.qmd
+    #     - 11_meter.qmd
+    #     - 12_character_networks.qmd
+    #     - 13_authorship_attribution.qmd
+    # - 14_ethics.qmd
     - references.qmd
 
 bibliography: references.bib

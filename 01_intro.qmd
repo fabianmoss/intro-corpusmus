@@ -1,0 +1,31 @@
+# Introduction
+
+::: {.callout-tip}
+## Key concepts
+1. A
+2. B
+3. C
+:::
+
+## A definition
+
+[@London2012_HearingTimePsychological]
+
+## History 
+
+## Aims and research questions 
+
+## Methods
+
+::: {.callout-tip}
+## Homework
+Prepare X
+:::
+
+::: {.callout-note}
+## Recommended reading
+
+1. @temperley_introduction_2013; @vanhandel_introduction_2014
+2. @neuwirth_wie_2016
+
+:::

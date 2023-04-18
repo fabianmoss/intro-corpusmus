@@ -16,7 +16,7 @@ book:
   date: "4/11/2023"
   chapters:
     - index.qmd
-    # - 01_intro.qmd
+    - 01_intro.qmd
     # - part: "Music as data"
     #   chapters:
     #     - 02_metadata.qmd

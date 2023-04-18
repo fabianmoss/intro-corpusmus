@@ -1,17 +1,15 @@
 # Introduction
 
-::: {.callout-tip}
+<!-- ::: {.callout-tip}
 ## Key concepts
 1. A
 2. B
 3. C
-:::
+::: -->
 
-## A definition
+## Definition of Corpus Studies
 
-[@London2012_HearingTimePsychological]
-
-## History 
+## History of Corpus Studies
 
 ## Aims and research questions 
 
@@ -19,7 +17,7 @@
 
 ::: {.callout-tip}
 ## Homework
-Prepare X
+- Read [@pugin_challenge_2015]
 :::
 
 ::: {.callout-note}

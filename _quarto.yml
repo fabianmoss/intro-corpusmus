@@ -17,11 +17,11 @@ book:
   chapters:
     - index.qmd
     - 01_intro.qmd
-    # - part: "Music as data"
-    #   chapters:
-    #     - 02_metadata.qmd
-    #     - 03_encoding_formats.qmd
-    #     - 04_corpus_building.qmd
+    - part: "Music as data"
+      chapters:
+        - 02_metadata.qmd
+        - 03_encoding_formats.qmd
+        - 04_corpus_building.qmd
     # - part: "Methods and techniques"
     #   chapters:
     #     - 05_vector_space_model.qmd

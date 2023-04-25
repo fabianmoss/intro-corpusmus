@@ -2,6 +2,8 @@
 
 These pages collect the materials for the course _Musikalische Korpusforschung_, taught in the spring term of 2023 at the Institut für Musikforschung at Julius-Maximilians-Universität Würzburg.
 
+![](img/abstract_bg.jpg)
+
 ::: {.callout-note}
 
 The course takes place on Wednesdays from 8 to 10 a.m. in room 107 (CIP Pool, Domerschulstr. 13). The materials will be updated weekly after the course.
@@ -127,23 +129,23 @@ Hands-on exercises to practice different analysis techniques (45 min)
 
 | Week | Date          | Topic                                      |
 |----:|:---------------|:-------------------------------------------|
-| 1   | 19. April 2023 | Introduction to musical corpus studies     | 
-| 2   | 26. April 2023 | Music as data: metadata & data collection  | 
-| 3   | 03. Mai 2023   | Music as data: encoding formats            | 
-| 4   | 10. Mai 2023   | Music as data: corpus building & digital editions |
-| 5   | 17. Mai 2023   | Methods & techniques: the vector-space model   | 
-| 6   | 24. Mai 2023*  | Methods & techniques: statistical methods      | 
-| 7   | 31. Mai 2023   | Methods & techniques: machine-learning methods | 
-| 8   | 07. Juni 2023 | Methods & techniques: basics of visualization and sonification |
-| 9   | 14. Juni 2023  | Analysis: melodic shapes in folk songs & Jazz solos    | 
-| 10   | 21. Juni 2023  | Analysis: harmonic patterns in Mozart and Beethoven   | 
-| 11  | 28. Juni 2023  | Analysis: metrical regularities in Malian Djembe music | 
-| 12  | 05. Juli 2023  | Analysis: character networks in opera libretti | 
-| 13  | 12. Juli 2023  | Analysis: authorship attribution in Renaissance polyphony | 
-| 14  | 19. Juli 2023  | Ethics and biases: representativity and canon; feedback |     1 |
+| 1   | 26. April 2023 | Introduction to musical corpus studies     | 
+| 2   | 03. April 2023 | Music as data: metadata & data collection  | 
+| 3   | 10. Mai 2023   | Music as data: encoding formats            | 
+| 4   | 17. Mai 2023   | Music as data: corpus building & digital editions |
+| 5   | 24. Mai 2023*  | Methods & techniques: the vector-space model   | 
+| 6   | 31. Mai 2023   | Methods & techniques: statistical methods      | 
+| 7   | 07. Juni 2023  | Methods & techniques: machine-learning methods | 
+| 8   | 13. Juni 2023  | Methods & techniques: basics of visualization and sonification |
+| 9   | 21. Juni 2023  | Analysis: melodic shapes in folk songs & Jazz solos    | 
+| 10  | 28. Juni 2023  | Analysis: harmonic patterns in Mozart and Beethoven   | 
+| 11  | 05. Juni 2023  | Analysis: metrical regularities in Malian Djembe music | 
+| 12  | 12. Juli 2023  | Analysis: character networks in opera libretti | 
+| 13  | 19. Juli 2023  | Ethics and biases: representativity and canon; feedback |     1 |
 
 : Course overview. Dates marked with * are taught online. {#tbl-overview tbl-colwidths="[5,20,75]"}
 
+<!-- | 13  | 12. Juli 2023  | Analysis: authorship attribution in Renaissance polyphony |  -->
 
 ## Credits
 

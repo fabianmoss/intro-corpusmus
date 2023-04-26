@@ -7,13 +7,34 @@
 3. C
 ::: -->
 
-## Definition of Corpus Studies
+# On corpus studies in musicology
 
-## History of Corpus Studies
+Our in-class research has produced the following important aspects
+for music corpus studies.
 
-## Aims and research questions 
+Corpus studies is mostly associated with computational linguistics.
+Linguistics have earlier adopted computational methods in their research.
+This is possibly also due to the fact that there was and is a separation 
+between linguistics and literature studies, the latter only lately opening 
+up to computation in the context of digital humanities.
+In music research, there is no such distinction. 
 
-## Methods
+Part of the definition of corpus studies is the adherence to 
+quantitative methods and to working with machine-readable data,
+especially when using automated methods for analysis.
+Corpus studies can be seen as a sub-field of digital musicology.
+
+Several aspects play an important role for corpus research in music,
+e.g. corpus compilation, that is, assembling scores,recordings, 
+or other musical data that are sometimes deemed to be representative of a certain style or genre.
+
+Another type of data are annotations (or tags) and metadata.
+They can be useful for applications like querying the corpus.
+For this, several programming languages or software tools can be used.
+Corpus studies moreover frequently employ statistical methods in order 
+to identify patterns. A central distinction with respect to other 
+data analytical studies with music is that corpus studies are, in general,
+motivated by musicological or music theoretical research questions.
 
 ::: {.callout-tip}
 ## Homework

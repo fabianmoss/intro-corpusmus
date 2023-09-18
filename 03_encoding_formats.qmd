@@ -1,1 +1,38 @@
 # Encoding formats
+
+## Humdrum
+
+## MEI
+
+
+## Rendering with Verovio
+
+See [here](https://book.verovio.org/first-steps/getting-started.html).
+
+<script src="https://www.verovio.org/javascript/latest/verovio-toolkit-wasm.js" defer></script>
+<script>
+    document.addEventListener("DOMContentLoaded", (event) => {
+        verovio.module.onRuntimeInitialized = () => {
+        let tk = new verovio.toolkit();
+        let initialScale = 40;
+        let pageWidth = document.querySelector("#notation").offsetWidth;
+        let pageHeight = document.querySelector("#notation").offsetHeight;
+        let initialOptions = {
+            scale: initialScale,
+            pageWidth: pageWidth,
+            pageHeight: pageHeight,
+            scaleToPageSize: true
+        }
+        tk.setOptions(initialOptions);
+        console.log("Verovio has loaded!");
+        fetch("https://www.verovio.org/examples/downloads/Schubert_Lindenbaum.mei")
+            .then( (response) => response.text() )
+            .then( (meiXML) => {
+                let svg = tk.renderData(meiXML, {});
+                document.getElementById("notation").innerHTML = svg;
+            });
+        }
+    });
+</script>
+
+<div id="notation"></div>

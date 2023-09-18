@@ -1,1 +1,31 @@
 # Metadata and data collection
+
+## Dataset collections
+
+::: {.callout-tip}
+
+From the following two overview sites of music datasets, 
+try to get an overview of what is listed. Try to find good
+descriptors for the different entries.
+
+- [ISMIR datasets](https://www.ismir.net/resources/datasets/)
+- [Musical Corpora Register](https://github.com/dharasim/MCR/wiki)
+
+After you have a good overview, choose one or two items
+and have a closer look at them. Collaborate with a colleague
+on a more detailed description of the dataset, what it contains,
+and its potential usage in music research.
+:::
+
+
+## Metadata
+
+:::{.callout-tip}
+
+The [Répertoire International des Sources Musicales](https://rism.online/)
+is probably the largest music database worldwide. 
+Perform a couple of queries on their interface, note down what you can find 
+out about pieces, which information is contained in the database, 
+what other information you would be interested in, and how you would use it 
+to do a corpus study.
+:::

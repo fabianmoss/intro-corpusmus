@@ -138,7 +138,15 @@ ul.task-list li input[type="checkbox"] {
 </nav>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#humdrum" id="toc-humdrum" class="nav-link active" data-scroll-target="#humdrum"><span class="toc-section-number">3.1</span>  Humdrum</a></li>
+  <li><a href="#mei" id="toc-mei" class="nav-link" data-scroll-target="#mei"><span class="toc-section-number">3.2</span>  MEI</a></li>
+  <li><a href="#rendering-with-verovio" id="toc-rendering-with-verovio" class="nav-link" data-scroll-target="#rendering-with-verovio"><span class="toc-section-number">3.3</span>  Rendering with Verovio</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -160,8 +168,46 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
+<section id="humdrum" class="level2" data-number="3.1">
+<h2 data-number="3.1" class="anchored" data-anchor-id="humdrum"><span class="header-section-number">3.1</span> Humdrum</h2>
+</section>
+<section id="mei" class="level2" data-number="3.2">
+<h2 data-number="3.2" class="anchored" data-anchor-id="mei"><span class="header-section-number">3.2</span> MEI</h2>
+</section>
+<section id="rendering-with-verovio" class="level2" data-number="3.3">
+<h2 data-number="3.3" class="anchored" data-anchor-id="rendering-with-verovio"><span class="header-section-number">3.3</span> Rendering with Verovio</h2>
+<p>See <a href="https://book.verovio.org/first-steps/getting-started.html">here</a>.</p>
+<script src="https://www.verovio.org/javascript/latest/verovio-toolkit-wasm.js" defer=""></script>
+<script>
+    document.addEventListener("DOMContentLoaded", (event) => {
+        verovio.module.onRuntimeInitialized = () => {
+        let tk = new verovio.toolkit();
+        let initialScale = 40;
+        let pageWidth = document.querySelector("#notation").offsetWidth;
+        let pageHeight = document.querySelector("#notation").offsetHeight;
+        let initialOptions = {
+            scale: initialScale,
+            pageWidth: pageWidth,
+            pageHeight: pageHeight,
+            scaleToPageSize: true
+        }
+        tk.setOptions(initialOptions);
+        console.log("Verovio has loaded!");
+        fetch("https://www.verovio.org/examples/downloads/Schubert_Lindenbaum.mei")
+            .then( (response) => response.text() )
+            .then( (meiXML) => {
+                let svg = tk.renderData(meiXML, {});
+                document.getElementById("notation").innerHTML = svg;
+            });
+        }
+    });
+</script>
+<div id="notation">
+
+</div>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
